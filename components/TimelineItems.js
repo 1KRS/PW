@@ -10,9 +10,46 @@ const TimelineItems = ({ props }) => {
       <div className={styles['timeline-items']}>
         <div className={styles['timeline-item']}>
           <div className={styles['timeline-dot']}></div>
-          <div className={styles['timeline-date']}>1998</div>
           <div className={styles['timeline-content']}>
-            <h3>Λύκειο</h3>
+            <div className={styles['timeline-upper-line-odd']}>
+              <div className={styles['timeline-date']}>1999 - 2001</div>
+              <div className={styles['course-entity-odd']}>
+                <h3>Λύκειο</h3>
+                <h6>2o Ενιαίο Λύκειο Νεάπολης</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles['timeline-item']}>
+          <div className={styles['timeline-dot']}></div>
+          <div className={styles['timeline-content']}>
+            <div className={styles['timeline-upper-line-even']}>
+              <div className={styles['timeline-date']}>2001 - </div>
+              <div className={styles['course-entity-even']}>
+                <h3>Σχολή Έργων Υποδομής</h3>
+                <h6>Τ.Ε.Ι. Σίνδου Θεσσαλονίκης</h6>
+              </div>
+            </div>
+            <p>
+              Η πρώτη σχολή που πέρασα. Στο δεύτερο εξάμηνο της σχολής επέλεγα
+              να σταματήσω και ξαναέδωσα πανελλήνιες εξετάσεις όπου και πέρασα
+              στο Πολυτεχνείο στο Ηράκλειο της Κρήτης στην σχολή «Επιστήμης και
+              Τεχνολογίας Υλικών» όπου επίσης επέλεξα να μην πάω.
+            </p>
+          </div>
+        </div>
+
+        <div className={styles['timeline-item']}>
+          <div className={styles['timeline-dot']}></div>
+          <div className={styles['timeline-content']}>
+            <div className={styles['timeline-upper-line-odd']}>
+              <div className={styles['timeline-date']}>2003</div>
+              <div className={styles['course-entity-odd']}>
+                <h3>Πτυχίο Μηχανικού</h3>
+                <h6>Πανεπιστήμιο του Πόρτσμουθ</h6>
+              </div>
+            </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               non lectus dictum, dapibus ipsum in, lacinia lectus. Pellentesque
@@ -23,9 +60,14 @@ const TimelineItems = ({ props }) => {
 
         <div className={styles['timeline-item']}>
           <div className={styles['timeline-dot']}></div>
-          <div className={styles['timeline-date']}>2001</div>
           <div className={styles['timeline-content']}>
-            <h3>Τ.Ε.Ι.</h3>
+            <div className={styles['timeline-upper-line-even']}>
+              <div className={styles['timeline-date']}>2006</div>
+              <div className={styles['course-entity-even']}>
+                <h3>Μεταπτυχιακό Μηχανικού</h3>
+                <h6>Πανεπιστήμιο του Πόρτσμουθ</h6>
+              </div>
+            </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               non lectus dictum, dapibus ipsum in, lacinia lectus. Pellentesque
@@ -36,35 +78,14 @@ const TimelineItems = ({ props }) => {
 
         <div className={styles['timeline-item']}>
           <div className={styles['timeline-dot']}></div>
-          <div className={styles['timeline-date']}>2002</div>
           <div className={styles['timeline-content']}>
-            <h3>Πανεπιστήμιο (Πτυχίο)</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              non lectus dictum, dapibus ipsum in, lacinia lectus. Pellentesque
-              aliquam ac purus ac sagittis. Nullam gravida.
-            </p>
-          </div>
-        </div>
-
-        <div className={styles['timeline-item']}>
-          <div className={styles['timeline-dot']}></div>
-          <div className={styles['timeline-date']}>2006</div>
-          <div className={styles['timeline-content']}>
-            <h3>Πανεπιστήμιο (Μεταπτυχιακό)</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              non lectus dictum, dapibus ipsum in, lacinia lectus. Pellentesque
-              aliquam ac purus ac sagittis. Nullam gravida.
-            </p>
-          </div>
-        </div>
-
-        <div className={styles['timeline-item']}>
-          <div className={styles['timeline-dot']}></div>
-          <div className={styles['timeline-date']}>2022</div>
-          <div className={styles['timeline-content']}>
-            <h3>Πρόγραμμα Εκπαίδευσης Προγραμματισμού</h3>
+            <div className={styles['timeline-upper-line-odd']}>
+              <div className={styles['timeline-date']}>2022</div>
+              <div className={styles['course-entity-odd']}>
+                <h3>Υποτροφία</h3>
+                <h6>S.A.L.T.</h6>
+              </div>
+            </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               non lectus dictum, dapibus ipsum in, lacinia lectus. Pellentesque

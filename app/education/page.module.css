@@ -17,7 +17,8 @@
 
 
 .education {
-  padding: 100px;
+  padding-right: 150px;
+  padding-left: 150px;
   
 }
 
@@ -27,7 +28,7 @@
 
 .fixed {
   position: fixed;
-  top: 24rem;
+  top: 28rem;
   /* display: flex; */
   /* justify-content: center; */
   font-size: 8rem;

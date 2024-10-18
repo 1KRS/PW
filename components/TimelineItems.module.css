@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   padding: 20px;
   /* background: var(--second-bg-color-blurred); */
-  max-width: 1200px;
+  width: 1300px;
   margin: auto;
   border: 1px solid transparent;
   border-radius: 50px;
@@ -21,7 +21,6 @@
 
 .timeline-item {
   position: relative;
-  margin-bottom: 40px;
   width: 100%;
 }
 
@@ -29,6 +28,7 @@
   padding-right: calc(50% + 30px);
   text-align: right;
 }
+
 .timeline-item:nth-child(even) {
   padding-left: calc(50% + 30px);
   text-align: left;
@@ -44,22 +44,16 @@
   width: 22px;
   background-color: var(--second-bg-color-blurred);
   box-shadow: 0 0 25px var(--main-color) 0 0 50px var(--main-color);
+  top: calc(50% - 11px);
   left: calc(50% - 10px);
   border: 3px solid var(--main-color);
   border-radius: 50%;
-  top: 10px;
   z-index: -1;
-}
-
-.timeline-date {
-  font-size: 23px;
-  font-weight: 800;
-  color: var(--text-color);
-  margin: 6px 0 15px;
 }
 
 .timeline-content {
   background-color: var(--second-bg-color-blurred);
+  width: 600px;
   border: 3px solid var(--main-color);
   padding: 30px 50px;
   border-radius: 4rem;
@@ -74,11 +68,63 @@
   background-color: var(--second-bg-color);
 }
 
-.timeline-content h3 {
-  font-size: 20px;
+.timeline-upper-line-odd,
+.timeline-upper-line-even {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
   color: var(--text-color);
-  margin: 0 0 10px;
-  font-weight: 500;
+}
+
+.timeline-upper-line-odd {
+  flex-direction: row-reverse;
+  justify-content: end;
+}
+
+.timeline-upper-line-even {
+  flex-direction: row;
+  justify-content: start;
+}
+
+.timeline-upper-line-odd .timeline-date {
+  font-size: 40px;
+  padding-left: 15px;
+  border-left: 4px dashed var(--main-color);
+}
+
+.timeline-upper-line-even .timeline-date {
+  font-size: 40px;
+  padding-right: 15px;
+  border-right: 4px dashed var(--main-color);
+}
+
+.timeline-upper-line-odd h3,
+.timeline-upper-line-even h3 {
+  font-size: 30px;
+}
+.course-entity-odd,
+.course-entity-even {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
+  gap: 0.4rem;
+}
+
+.course-entity-odd {
+  align-items: end;
+}
+.course-entity-even {
+  align-items: start;
+}
+
+.course-entity-odd h3, 
+.course-entity-even h3 {
+  font-size: 28px;
+}
+.course-entity-odd h6, 
+.course-entity-even h6 {
+  font-size: 14px;
 }
 
 .timeline-content p {
@@ -86,4 +132,6 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+  margin-top: 15px;
+
 }
