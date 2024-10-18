@@ -1,0 +1,27 @@
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons .link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  width: 4.5rem;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  font-size: 2.5rem;
+  border-radius: 50%;
+  color: var(--main-color);
+  margin: 2.2rem 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icons .link:hover {
+  color: var(--text-color);
+  background: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  transform: scale(1.3) translateY(-5px);
+}
