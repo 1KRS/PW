@@ -1,95 +1,53 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import MainHeader from '@/components/MainHeader';
+import SideNav from '@/components/SideNav';
+import SocialIcons from '@/components/SocialIcons';
+import styles from './page.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
+import MainFooter from '@/components/MainFooter';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <>
+      <MainHeader />
+      <SideNav />
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <section className={styles.home} id="home">
+          <div className={styles['home-content']}>
+            <h1>
+              Χαίρεται, <span>Δημήτρης</span> εδώ
+            </h1>
+            <h3 className={styles['text-animation']}>
+              Είμαι <span></span>
+            </h3>
+            <p>
+              Ένας νεαρός Πλήρους-Εύρους Προγραμματιστής Ιστού με προσήλωση στην
+              εξέλιξη και στόχο την βέλτιστη λύση.
+            </p>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+           <SocialIcons />
+
+            <div className={styles['btn-group']}>
+              <Link href="#" className={styles.btn}>
+                Πρόσληψη
+              </Link>
+              <Link href="/contact" className={styles['btn-sec']}>
+                Επικοινωνία
+              </Link>
+            </div>
+          </div>
+          <div className={styles['home-img']}>
             <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              className={styles.img}
+              src="/icons/Φτερά Ικάρου (Λευκά Χωρίς Υπόβαθρο).png"
+              width={500}
+              height={500}
+              alt="Φτερά Ικάρου"
             />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
+          </div>
+        </section>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <MainFooter />
+    </>
   );
 }
