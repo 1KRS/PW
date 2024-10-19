@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './SideNav.module.css';
+import styles from './ProgrammingSideNav.module.css';
 
-const SideNav = () => {
+const ProgrammingSideNav = () => {
   return (
     <nav className={styles['home-side-nav']}>
       <ul className={styles['home-side-nav__items']}>
         <li className={styles['home-side-nav__item']}>
-          <Link href="/">
+          <Link href="/programming">
             <Image
               src="/icons/Φτερά Ικάρου (Λευκά Χωρίς Υπόβαθρο).png"
               width={45}
@@ -17,7 +17,7 @@ const SideNav = () => {
           </Link>
         </li>
         <li className={styles['home-side-nav__item']}>
-          <Link href="/education">
+          <Link href="/programming/education">
             <Image
               src="/icons/Φτερά Ικάρου (Λευκά Χωρίς Υπόβαθρο).png"
               width={45}
@@ -27,7 +27,7 @@ const SideNav = () => {
           </Link>
         </li>
         <li className={styles['home-side-nav__item']}>
-          <Link href="/services">
+          <Link href="/programming/services">
             <Image
               src="/icons/Φτερά Ικάρου (Λευκά Χωρίς Υπόβαθρο).png"
               width={45}
@@ -37,7 +37,7 @@ const SideNav = () => {
           </Link>
         </li>
         <li className={styles['home-side-nav__item']}>
-          <Link href="/testimonials">
+          <Link href="/programming/testimonials">
             <Image
               src="/icons/Φτερά Ικάρου (Λευκά Χωρίς Υπόβαθρο).png"
               width={45}
@@ -47,7 +47,7 @@ const SideNav = () => {
           </Link>
         </li>
         <li className={styles['home-side-nav__item']}>
-          <Link href="/contact">
+          <Link href="/programming/contact">
             <Image
               src="/icons/Φτερά Ικάρου (Λευκά Χωρίς Υπόβαθρο).png"
               width={45}
@@ -57,7 +57,7 @@ const SideNav = () => {
           </Link>
         </li>
         <li className={styles['home-side-nav__item']}>
-          <Link href="/">
+          <Link href="/programming">
             <Image
               src="/icons/Φτερά Ικάρου (Λευκά Χωρίς Υπόβαθρο).png"
               width={45}
@@ -67,7 +67,7 @@ const SideNav = () => {
           </Link>
         </li>
         <li className={styles['home-side-nav__item']}>
-          <Link href="/contact">
+          <Link href="/programming">
             <Image
               src="/icons/Φτερά Ικάρου (Λευκά Χωρίς Υπόβαθρο).png"
               width={45}
@@ -80,4 +80,4 @@ const SideNav = () => {
     </nav>
   );
 };
-export default SideNav;
+export default ProgrammingSideNav;

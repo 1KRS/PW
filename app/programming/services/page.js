@@ -1,14 +1,10 @@
-import MainHeader from '@/components/MainHeader';
-import SideNav from '@/components/SideNav';
+
 import styles from './page.module.css';
 import Heading from '@/components/Heading';
-import MainFooter from '@/components/MainFooter';
 
 const page = () => {
   return (
     <>
-      <MainHeader />
-      <SideNav />
       <main className={styles.main}>
         <section className={styles.services} id="services">
           <Heading text="Υπηρεσίες" />
@@ -60,7 +56,6 @@ const page = () => {
           </div>
         </section>
       </main>
-        <MainFooter />
     </>
   );
 };

@@ -1,16 +1,11 @@
-import MainHeader from '@/components/MainHeader';
-import SideNav from '@/components/SideNav';
 import styles from './page.module.css';
 import Image from 'next/image';
 import { FaStar } from 'react-icons/fa';
 import Heading from '@/components/Heading';
-import MainFooter from '@/components/MainFooter';
 
 const page = () => {
   return (
     <>
-      <MainHeader />
-      <SideNav />
       <main className={styles.main}>
         <Heading text="Αναγνώριση" />
         <section className={styles.testimonials} id="testimonials">
@@ -111,8 +106,8 @@ const page = () => {
           </div>
         </section>
       </main>
-      <MainFooter />
     </>
   );
 };
+
 export default page;

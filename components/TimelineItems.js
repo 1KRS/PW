@@ -83,7 +83,7 @@ const TimelineItems = ({ props }) => {
               <div className={styles['timeline-date']}>2022</div>
               <div className={styles['course-entity-odd']}>
                 <h3>Υποτροφία</h3>
-                <h6>S.A.L.T.</h6>
+                <h6>School of Applied Technologies</h6>
               </div>
             </div>
             <p>
