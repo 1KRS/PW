@@ -1,4 +1,3 @@
-
 import styles from './page.module.css';
 import Heading from '@/components/Heading';
 
@@ -6,11 +5,11 @@ const page = () => {
   return (
     <>
       <main className={styles.main}>
-        <section className={styles.services} id="services">
-          <Heading text="Υπηρεσίες" />
+        <Heading text="Υπηρεσίες" />
 
+        <section className={styles.services} id="services">
           <div className={styles['services-container']}>
-            <div className={styles['service-box']}>
+            <div className={styles['service-item']}>
               <div className={styles['service-info']}>
                 <h4>Υπηρεσία ΔΧ</h4>
                 <p>
@@ -21,7 +20,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className={styles['service-box']}>
+            <div className={styles['service-item']}>
               <div className={styles['service-info']}>
                 <h4>Υπηρεσία ΕΧ</h4>
                 <p>
@@ -32,7 +31,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className={styles['service-box']}>
+            <div className={styles['service-item']}>
               <div className={styles['service-info']}>
                 <h4>Ανάπτυξη Μπροστά Μέρους</h4>
                 <p>
@@ -43,7 +42,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className={styles['service-box']}>
+            <div className={styles['service-item']}>
               <div className={styles['service-info']}>
                 <h4>Ανάπτυξη Πίσω Μέρους</h4>
                 <p>

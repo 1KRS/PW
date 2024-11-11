@@ -1,0 +1,111 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-container {
+  display: grid;
+  position: absolute;
+  top: 26vh;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  height: 63vh;
+  width: 80vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.portfolio-item {
+  position: relative;
+  min-height: 250px;
+  max-height: 300px;
+  min-width: 330px;
+  max-width: 450px;
+  margin: 0.5rem;
+  background: var(--second-bg-color-blurred);
+  color: var(--text-color);
+  border: 2px solid var(--border-color-blurred);
+  border-radius: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.portfolio-item .img {
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.5s ease;
+  /* filter: blur(2px); */
+}
+.portfolio-item:hover .img {
+  transform: scale(1.1);
+}
+
+.portfolio-item .portfolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color);
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  padding: 0 4rem;
+  filter: drop-shadow(40px 40px 50px rgb(29, 29, 29));
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-layer {
+  transform: translateY(0);
+}
+
+.portfolio-layer h4 {
+  font-size: 2.2rem;
+}
+
+.portfolio-layer p {
+  font-size: 1.2rem;
+  padding: 0.3rem 0 1rem;
+}
+
+.link-icon {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  font-size: 25px;
+  animation: click-motion 3s linear infinite;
+  color: var(--text-color);
+}
+
+@keyframes click-motion {
+
+  5% {
+    transform: scale(0.7);
+  }
+  8% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(0.7);
+  }
+  18% {
+    transform: scale(1);
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.portfolio-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.portfolio-container {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
