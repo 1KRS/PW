@@ -1,0 +1,15 @@
+.fixed {
+  position: fixed;
+  top: 24rem;
+  /* display: flex; */
+  /* justify-content: center; */
+  font-size: 8rem;
+  text-align: center;
+}
+
+.flexed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
