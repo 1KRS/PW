@@ -1,0 +1,15 @@
+.timeline {
+  padding-right: 150px;
+  padding-left: 150px;
+}
+
+.timeline h2 {
+  margin-bottom: 5rem;
+}
+
+.fixed {
+  position: fixed;
+  top: 28rem;
+  font-size: 8rem;
+  text-align: center;
+}
