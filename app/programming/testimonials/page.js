@@ -3,14 +3,14 @@ import Image from 'next/image';
 import { FaStar } from 'react-icons/fa';
 import Heading from '@/components/Heading';
 
-const page = () => {
+const Testimonials = () => {
   return (
     <>
       <main className={styles.main}>
         <Heading text="Αναγνώριση" />
         <section className={styles.testimonials} id="testimonials">
-          <div className={styles['testimonials-box']}>
-            <div className={styles.wrapper}>
+          <div className={styles['testimonials-container']}>
+            {/* <div className={styles.wrapper}> */}
               <div className={styles['testimonial-item']}>
                 <Image
                   className={styles.img}
@@ -80,7 +80,7 @@ const page = () => {
                 </p>
               </div>
 
-              {/* <div className={styles['testimonial-item']}>
+              <div className={styles['testimonial-item']}>
                 <Image
                   className={styles.img}
                   src={'/images/γυναίκα.png'}
@@ -101,8 +101,8 @@ const page = () => {
                   Phasellus non lectus dictum, dapibus ipsum in, lacinia lectus.
                   Pellentesque aliquam ac purus ac sagittis. Nullam gravida.
                 </p>
-              </div> */}
-            </div>
+              </div>
+            {/* </div> */}
           </div>
         </section>
       </main>
@@ -110,4 +110,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Testimonials;
