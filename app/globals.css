@@ -9,6 +9,10 @@
   --main-color: #00fcfd;
   --secondary-color: #006eba;
   --border-color-blurred: #00fdfd33;
+  --slide-item-width: 85px;
+  --tech-number: 13;
+  --sidenav-icons-number: 6;
+  --sidenav-icon-size: 6vh;
 }
 
 * {
@@ -19,7 +23,7 @@
   border: none;
   outline: none;
   /* scroll-behavior: smooth; */
-  font-family: Play;
+  font-family: 'Play';
 }
 
 html,
@@ -30,27 +34,19 @@ body {
 }
 
 html {
-  font-size: 60%;
+  /* font-size: 60%; */
   height: 100vh;
 }
 
 body {
   display: flex;
-  /* grid-template-rows:  4fr 1fr;
-  grid-template-areas:
-    'main'; */
   justify-content: center;
   align-items: center;
   height: 100%;
-  
-  /* background: var(--bg-color); */
-  background: url('/images/background.jpg') center/cover;
-  /* background-attachment: fixed; */
   color: var(--text-color);
 }
 
 main {
-  /* grid-area: main; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,10 +55,11 @@ main {
 }
 
 section {
-  min-height: 100%;
+  height: 100%;
   padding: 0 12%;
 }
 
+/* Αποκρυψη βελών στο πεδίο τηλεφώνου */
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -73,4 +70,14 @@ section {
 
 ::-webkit-scrollbar-track {
   background-color: var(--main-color);
+}
+
+input[type='number'] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
