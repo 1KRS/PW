@@ -1,8 +1,9 @@
-
+// import ProgrammingBackground from '@/components/Backgrounds/ProgrammingBackground';
 import SocialIcons from '@/components/SocialIcons';
 import styles from './page.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import Slider from '@/components/Slider';
 
 export default function Home() {
   return (
@@ -21,7 +22,8 @@ export default function Home() {
               εξέλιξη και στόχο την βέλτιστη λύση.
             </p>
 
-           <SocialIcons />
+            {/* <SocialIcons /> */}
+            <Slider />
 
             <div className={styles['btn-group']}>
               <Link href="#" className={styles.btn}>
@@ -31,13 +33,14 @@ export default function Home() {
                 Επικοινωνία
               </Link>
             </div>
+            {/* <Slider /> */}
           </div>
           <div className={styles['home-img']}>
             <Image
               className={styles.img}
               src="/icons/Φτερά Ικάρου (Λευκά Χωρίς Υπόβαθρο).png"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               alt="Φτερά Ικάρου"
             />
           </div>
