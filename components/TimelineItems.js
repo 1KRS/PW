@@ -1,9 +1,7 @@
 'use client';
 import styles from './TimelineItems.module.css';
-// import { useRef } from 'react';
 
 const TimelineItems = ({ props }) => {
-  // const scrollRef = useRef(null);
 
   return (
     <>
@@ -75,13 +73,29 @@ const TimelineItems = ({ props }) => {
             </p>
           </div>
         </div>
-
         <div className={styles['timeline-item']}>
           <div className={styles['timeline-dot']}></div>
           <div className={styles['timeline-content']}>
             <div className={styles['timeline-upper-line-odd']}>
               <div className={styles['timeline-date']}>2022</div>
               <div className={styles['course-entity-odd']}>
+                <h3>Υποτροφία</h3>
+                <h6>School of Applied Technologies</h6>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              non lectus dictum, dapibus ipsum in, lacinia lectus. Pellentesque
+              aliquam ac purus ac sagittis. Nullam gravida.
+            </p>
+          </div>
+        </div>
+        <div className={styles['timeline-item']}>
+          <div className={styles['timeline-dot']}></div>
+          <div className={styles['timeline-content']}>
+            <div className={styles['timeline-upper-line-even']}>
+              <div className={styles['timeline-date']}>2022</div>
+              <div className={styles['course-entity-even']}>
                 <h3>Υποτροφία</h3>
                 <h6>School of Applied Technologies</h6>
               </div>
