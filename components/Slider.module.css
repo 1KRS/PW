@@ -1,0 +1,140 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max(32vw, 50%);
+  max-width: 1536px;
+  margin-inline: auto;
+  height: 10vh;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    var(--main-color) 20%,
+    var(--main-color) 80%,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.item {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5vh;
+  width: var(--slide-item-width);
+  height: calc(var(--slide-item-width) / 2);
+  background-color: var(--second-bg-color-blurred);
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  left: max(calc(var(--slide-item-width) * var(--tech-number)), 100%);
+  animation: scrollLeft 30s linear infinite;
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--position) - 1) * -1
+  );
+  mask-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    var(--main-color) 20%,
+    var(--main-color) 80%,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.wrapper:hover .item {
+  animation-play-state: paused;
+}
+
+.item:hover {
+  font-size: 0;
+}
+
+.item:hover::after {
+  content: attr(data-types);
+  font-size: 1rem;
+  text-align: center;
+  color: var(--main-color);
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -100px;
+  }
+}
+
+.item1 {
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--tech-number) - 1) * -1
+  );
+}
+.item2 {
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--tech-number) - 2) * -1
+  );
+}
+.item3 {
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--tech-number) - 3) * -1
+  );
+}
+.item4 {
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--tech-number) - 4) * -1
+  );
+}
+.item5 {
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--tech-number) - 5) * -1
+  );
+}
+.item6 {
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--tech-number) - 6) * -1
+  );
+}
+.item7 {
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--tech-number) - 7) * -1
+  );
+}
+.item8 {
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--tech-number) - 8) * -1
+  );
+}
+.item9 {
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--tech-number) - 9) * -1
+  );
+}
+.item10 {
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--tech-number) - 10) * -1
+  );
+}
+.item11 {
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--tech-number) - 11) * -1
+  );
+}
+.item12 {
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--tech-number) - 12) * -1
+  );
+}
+.item13 {
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--tech-number) - 13) * -1
+  );
+}
+/*.item14 {
+  animation-delay: calc((30s / var(--tech-number)) * (var(--tech-number) - 14) * -1);
+}
+.item15 {
+  animation-delay: calc((30s / var(--tech-number)) * (var(--tech-number) - 15) * -1);
+} */
+
+.tech-icon {
+  color: var(--main-color);
+}
