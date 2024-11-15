@@ -1,7 +1,7 @@
 import styles from './page.module.css';
 import Heading from '@/components/Heading';
 
-const page = () => {
+const Services = () => {
   return (
     <>
       <main className={styles.main}>
@@ -58,4 +58,4 @@ const page = () => {
     </>
   );
 };
-export default page;
+export default Services;
