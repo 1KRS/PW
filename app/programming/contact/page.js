@@ -1,7 +1,7 @@
 import styles from './page.module.css';
 import Heading from '@/components/Heading';
 
-export default function Home() {
+const Contact = () => {
   return (
     <>
       <main className={styles.main}>
@@ -15,6 +15,8 @@ export default function Home() {
                   className={styles.text}
                   placeholder="Πλήρες Όνομα"
                 />
+              </div>
+              <div className={styles['input-box']}>
                 <input
                   type="email"
                   className={styles.email}
@@ -27,17 +29,21 @@ export default function Home() {
                   className={styles['phone-number']}
                   placeholder="Αρ. Τηλεφώνου"
                 />
+              </div>
+              <div className={styles['input-box']}>
                 <input type="text" className={styles.text} placeholder="Θέμα" />
               </div>
             </div>
             <div className={styles['input-group-2']}>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Το μήνυμά σας"
-              ></textarea>
+              <div className={styles['input-box']}>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Γράψτε το μήνυμά σας στα ελληνικά."
+                ></textarea>
+              </div>
               <input
                 type="submit"
                 value="Αποστολή Μηνύματος"
@@ -49,4 +55,6 @@ export default function Home() {
       </main>
     </>
   );
-}
+};
+
+export default Contact;
