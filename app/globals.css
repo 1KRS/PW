@@ -13,6 +13,8 @@
   --tech-number: 13;
   --sidenav-icons-number: 6;
   --sidenav-icon-size: 6vh;
+  --not-found: #ffbb00;
+  --error: #ad0000;
 }
 
 * {
