@@ -4,6 +4,13 @@ import Image from 'next/image';
 import { FaRegHandPointer } from 'react-icons/fa6';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Το Χαρτοφυλάκιό μου',
+  description: 'Ο Προσωπικός Μου Ιστότοπος ως προγραμματιστής',
+  keywords: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NextJS'],
+  creator: 'Δημήτρης Μανωλόπουλος',
+  publisher: 'Δημήτρης Μανωλόπουλος',
+};
 
 const projects = [
     { id: 1, title: 'Εργασιομανία', text: 'Οργάνωσε το κυνήγι εργασίας σου με αυτήν την εφαρμογή ιχνηλάτησης.', link:'http://ergasiomania.onrender.com' , imageSrc: '/images/Εργασιομανία.png', imageAlt: 'Ιστότοπος Εργασιομανίας'},
