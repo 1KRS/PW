@@ -1,7 +1,7 @@
 import LandingMain from '@/components/Backgrounds/LandingMain';
 import Link from 'next/link';
 import styles from './page.module.css';
-import UnderConstructionRibbon from '@/components/UnderConstructionRibbon';
+import UnderConstructionRibbon from '@/components/UnderDevelopmentRibbon';
 // import Slider from '@/components/Slider';
 
 const Home = () => {
