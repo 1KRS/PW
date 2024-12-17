@@ -1,4 +1,10 @@
 .timeline-items {
+  --χρώμα-σπουδών: rgb(255, 128, 2);
+  --χρώμα-εργασίας: rgb(206, 175, 0);
+  --χρώμα-εν-αναμονή: rgb(88, 0, 196);
+  --χρώμα-εν-εξελίξει: rgb(190, 196, 0);
+  --χρώμα-παρατημένου: rgb(196, 0, 0);
+  --χρώμα-ολοκληρωμένου: rgb(0, 187, 0);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -21,26 +27,15 @@
   scrollbar-width: none; /* Firefox */
 }
 
-/* .timeline-items::before {
-  content: '';
-  position: absolute;
-  width: 0px;
-  height: 100px;
-  background-color: var(--main-color);
-  border: 2px dashed var(--main-color);
-  top: 0px;
-  left: calc(50% - 1px);
-} */
-
 .timeline-item {
   position: relative;
   width: 100%;
+  cursor: default;
 }
 
 .timeline-item:nth-child(odd) {
   padding-right: calc(50% + 1.5vw);
   text-align: right;
-  /* margin-right: 1vw; */
 }
 
 .timeline-item:nth-child(odd)::before {
@@ -84,23 +79,61 @@
   left: calc(50% - 0.5vw);
   border: 0.3vw solid var(--main-color);
   border-radius: 50px;
-  z-index: 0;
 }
 
 .timeline-content {
+  position: relative;
+  display: flex;
+  height: 9.5vh;
+  flex-direction: column;
   background-color: var(--second-bg-color-blurred);
-  border: 0.2vw solid var(--main-color);
+  border: 2px solid var(--border-color-blurred);
   padding: 2vh 2vw;
-  border-radius: 40px;
-  box-shadow: 0 0 10px var(--main-color);
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
+  border-radius: 30px;
+  /* overflow: hidden; */
 }
 
 .timeline-content:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px var(--main-color);
   background-color: var(--second-bg-color);
+  border: 2px solid var(--main-color);
+  transition: 0.5s ease-in-out;
+}
+
+.timeline-content:not(:hover) {
+  transition: 0.5s ease-in-out;
+}
+
+.timeline-content:hover.unfinished-with-text {
+  height: 16vh;
+  border: 2px solid var(--χρώμα-παρατημένου);
+  box-shadow: 0 0 50px var(--χρώμα-παρατημένου);
+}
+.timeline-content:hover.unfinished-without-text {
+  height: 9.5vh;
+  border: 2px solid var(--χρώμα-παρατημένου);
+  box-shadow: 0 0 50px var(--χρώμα-παρατημένου);
+}
+
+.timeline-content:hover.coming-with-text {
+  height: 16vh;
+  border: 2px solid var(--χρώμα-εν-εξελίξει);
+  box-shadow: 0 0 50px var(--χρώμα-εν-εξελίξει);
+}
+.timeline-content:hover.coming-without-text {
+  height: 9.5vh;
+  border: 2px solid var(--χρώμα-εν-εξελίξει);
+  box-shadow: 0 0 50px var(--χρώμα-εν-εξελίξει);
+}
+
+.timeline-content:hover.finished-with-text {
+  height: 16vh;
+  border: 2px solid var(--χρώμα-ολοκληρωμένου);
+  box-shadow: 0 0 50px var(--χρώμα-ολοκληρωμένου);
+}
+.timeline-content:hover.finished-without-text {
+  height: 9.5vh;
+  border: 2px solid var(--χρώμα-ολοκληρωμένου);
+  box-shadow: 0 0 50px var(--χρώμα-ολοκληρωμένου);
 }
 
 .timeline-upper-line-odd,
@@ -121,24 +154,66 @@
   justify-content: start;
 }
 
+.timeline-upper-line-odd .timeline-date,
+.timeline-upper-line-even .timeline-date{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0;
+}
 .timeline-upper-line-odd .timeline-date {
-  font-size: 2vw;
-  padding-left: 1vw;
-  border-left: 4px solid var(--main-color);
+  padding: 0 0 0 1vw;
+  border-left: 4px solid;
 }
 
 .timeline-upper-line-even .timeline-date {
-  font-size: 2vw;
-  padding-right: 1vw;
-  border-right: 4px solid var(--main-color);
+  padding: 0 1vw 0 0;
+  border-right: 4px solid;
+}
+
+.timeline-upper-line-odd .timeline-date-month-odd,
+.timeline-upper-line-even .timeline-date-month-even {
+  width: 10px;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateZ(270deg);
+}
+
+.timeline-upper-line-odd .timeline-date-month-odd {
+  padding: 0 3px 0 0;
+}
+
+.timeline-upper-line-even .timeline-date-month-even {
+  padding: 0 3px 6px 0;
+}
+
+.timeline-date-year {
+ font-size: 1.75vw;
+}
+
+.timeline-upper-line-odd .color-normal,
+.timeline-upper-line-even .color-normal {
+  border-color: var(--main-color);
+}
+.timeline-upper-line-odd .color-orange,
+.timeline-upper-line-even .color-orange {
+  border-color: var(--χρώμα-σπουδών);
+}
+.timeline-upper-line-odd .color-gold,
+.timeline-upper-line-even .color-gold {
+  border-color: var(--χρώμα-εργασίας);
 }
 
 .timeline-upper-line-odd h3,
 .timeline-upper-line-even h3 {
   font-size: 1.5vw;
+  width: 100%;
 }
-.course-entity-odd,
-.course-entity-even {
+.event-odd,
+.event-even {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,26 +221,351 @@
   gap: 0.15vw;
 }
 
-.course-entity-odd {
+.event-odd {
   align-items: end;
 }
-.course-entity-even {
+.event-even {
   align-items: start;
 }
 
-.course-entity-odd h3,
-.course-entity-even h3 {
-  font-size: 1.5vw;
+.event-odd h3,
+.event-even h3 {
+  font-size: 1.3vw;
 }
-.course-entity-odd h6,
-.course-entity-even h6 {
+
+.event-info {
+  display: flex;
+}
+
+.event-info .main-h6 {
+  font-size: 0.7vw;
+  width: auto;
+  cursor: pointer;
+}
+.event-info .sec-h6 {
+  font-size: 0.7vw;
+  width: auto;
+  cursor: pointer;
+}
+.event-info .middle-text {
   font-size: 0.7vw;
 }
 
-.timeline-content p {
+.event-info .main-h6:hover {
+  font-size: 0;
+}
+.event-info .sec-h6:hover {
+  font-size: 0;
+}
+
+.event-info .main-h6::after,
+.event-info .sec-h6::after {
+  font-size: 0.7vw;
+  text-align: center;
+}
+
+.event-info .main-h6:hover::after {
+  content: attr(data-types-main);
+}
+
+.event-info .sec-h6:hover::after {
+  content: attr(data-types-sec);
+}
+
+.event-info .sec-h6-normal:hover::after {
+  color: var(--main-color);
+}
+.event-info .sec-h6-orange:hover::after {
+  color: var(--χρώμα-σπουδών);
+}
+.event-info .sec-h6-gold:hover::after {
+  color: var(--χρώμα-εργασίας);
+}
+
+.timeline-content .event-text {
   color: var(--text-color);
   font-size: 0.8rem;
+  margin-top: 15px;
   font-weight: 300;
   line-height: 22px;
-  margin-top: 15px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.timeline-content:hover.unfinished-with-text .event-text,
+.timeline-content:hover.finished-with-text .event-text,
+.timeline-content:hover.coming-with-text .event-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icons-container {
+  --icons-container-length: 100%;
+  --icons-container-width: 2.5vw;
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: var(--icons-container-length);
+  width: var(--icons-container-width);
+  gap: clamp(0.5vw, 0.75vw, 1vw);
+  background-color: var(--second-bg-color-blurred);
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.icons-container-down {
+  bottom: 0;
+  left: calc(50% - 3vw);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.icons-container-right {
+  height: var(--icons-container-length);
+  top: 0;
+  left: 0;
+  padding: 5px 0 0 0;
+  border-right: 2px dotted var(--main-color);
+  border-top-left-radius: 27px;
+  border-bottom-left-radius: 27px;
+}
+
+.icons-container-left {
+  height: var(--icons-container-length);
+  top: 0;
+  right: 0;
+  padding: 5px 0 0 0;
+  border-left: 2px dotted var(--main-color);
+  border-top-right-radius: 27px;
+  border-bottom-right-radius: 27px;
+}
+
+.timeline-content:hover.unfinished-with-text .icons-container-left,
+.timeline-content:hover.unfinished-with-text .icons-container-right,
+.timeline-content:hover.finished-with-text .icons-container-left,
+.timeline-content:hover.finished-with-text .icons-container-right,
+.timeline-content:hover.coming-with-text .icons-container-left,
+.timeline-content:hover.coming-with-text .icons-container-right {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.timeline-content:hover.unfinished-without-text .icons-container-left,
+.timeline-content:hover.unfinished-without-text .icons-container-right,
+.timeline-content:hover.finished-without-text .icons-container-left,
+.timeline-content:hover.finished-without-text .icons-container-right,
+.timeline-content:hover.coming-without-text .icons-container-left,
+.timeline-content:hover.coming-without-text .icons-container-right {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.icon-active {
+  color: var(--main-color);
+  font-size: 1.3vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.icon-inactive {
+  color: grey;
+  font-size: 1.3vw;
+  font-weight: bold;
+  cursor: default;
+}
+
+.tech-container {
+  opacity: 1;
+  position: absolute;
+  right: calc(50% - 150px);
+  bottom: -13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 300px;
+  gap: 5px;
+  background-color: var(--second-bg-color);
+  border-bottom: 2px solid var(--border-color-blurred);
+  border-radius: 10px;
+  z-index: 5;
+  transform: rotateX(90deg);
+  transition: 0.5s ease-in-out;
+}
+
+.timeline-content:hover .tech-container {
+  opacity: 1;
+  bottom: -13px;
+  transform: rotateX(0);
+}
+
+.tech-container::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: 4px;
+  height: 5px;
+  width: 5px;
+  background-color: transparent;
+  border-top: 2px solid transparent;
+  border-top-right-radius: 5px;
+  transition: 0.7s ease-in-out;
+}
+.tech-container::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  bottom: 4px;
+  height: 5px;
+  width: 5px;
+  background-color: transparent;
+  border-top: 2px solid transparent;
+  border-top-left-radius: 5px;
+  transition: 0.7s ease-in-out;
+}
+
+.timeline-content:hover.unfinished-with-text .tech-container,
+.timeline-content:hover.unfinished-without-text .tech-container {
+  border-bottom: 2px solid var(--χρώμα-παρατημένου);
+}
+.timeline-content:hover.unfinished-with-text .tech-container::before,
+.timeline-content:hover.unfinished-with-text .tech-container::after,
+.timeline-content:hover.unfinished-without-text .tech-container::before,
+.timeline-content:hover.unfinished-without-text .tech-container::after {
+  border-top: 2px solid var(--χρώμα-παρατημένου);
+}
+
+.timeline-content:hover.coming-with-text .tech-container,
+.timeline-content:hover.coming-without-text .tech-container {
+  border-bottom: 2px solid var(--χρώμα-εν-εξελίξει);
+}
+.timeline-content:hover.coming-with-text .tech-container::before,
+.timeline-content:hover.coming-with-text .tech-container::after,
+.timeline-content:hover.coming-without-text .tech-container::before,
+.timeline-content:hover.coming-without-text .tech-container::after {
+  border-top: 2px solid var(--χρώμα-εν-εξελίξει);
+}
+
+.timeline-content:hover.finished-with-text .tech-container,
+.timeline-content:hover.finished-without-text .tech-container {
+  border-bottom: 2px solid var(--χρώμα-ολοκληρωμένου);
+}
+.timeline-content:hover.finished-with-text .tech-container::before,
+.timeline-content:hover.finished-with-text .tech-container::after,
+.timeline-content:hover.finished-without-text .tech-container::before,
+.timeline-content:hover.finished-without-text .tech-container::after {
+  border-top: 2px solid var(--χρώμα-ολοκληρωμένου);
+}
+
+/* .tech-container {
+  --slide-item-width: 90px;
+  position: absolute;
+  right: calc(50% - 30px);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  width: 60px;
+  height: 2vh;
+  border-top: 2px solid var(--border-color-blurred);
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  overflow: hidden;
+} */
+
+/* .icons-container {
+  --container-height: 40px;
+  --container-width: 200px;
+  --initial-position: -40px;
+  --final-position: -25px;
+  opacity: 0;
+  position: absolute;
+  bottom: var(--initial-position);
+  left: calc(50% - (var(--container-width) / 2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--container-height);
+  width: var(--container-width);
+  background-color: var(--second-bg-color);
+  border: 1px solid var(--main-color);
+  border-radius: 12px;
+  gap: 25px;
+  font-size: 1.2vw;
+  bottom: var(--final-position);
+  animation: 1s ease 0.5s forwards hide-icons;
+} */
+
+/* .icons-container:hover {
+  cursor: pointer; 
+} */
+
+/* .icons-button:hover + .icons-container{
+  opacity: 1;
+  bottom: var(--final-position);
+  animation: show-icons 1s forwards;
+  animation-delay: 0.3s;
+  transition: opacity 0.3s ease-in-out;
+  transition-delay: 0.3s;
+} */
+
+/* .timeline-content:hover .icons-container{
+  bottom: var(--final-position);
+  opacity: 1; 
+  bottom: var(--initial-position);
+  animation: 1s ease 0.5s forwards show-icons;
+}
+
+.timeline-content:not(:hover) .icons-container{
+  opacity: 1;
+  bottom: var(--final-position);
+  animation: 1s ease 0.5s forwards hide-icons;
+} */
+
+/* @keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes reapply-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+} */
+
+/* @keyframes show-icons {
+  50% {
+    bottom: 5px;
+  }
+  100% {
+    bottom: var(--final-position);
+  }
+}
+
+@keyframes hide-icons {
+  50% {
+    bottom: 5px;
+  }
+  100% {
+    bottom: var(--initial-position);
+  }
+} */
+
+@keyframes show-tech {
+  to {
+    opacity: 1;
+    bottom: -13px;
+    transform: rotateX(0);
+  }
 }
