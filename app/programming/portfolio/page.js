@@ -3,6 +3,7 @@ import styles from './page.module.css';
 import Image from 'next/image';
 import { FaRegHandPointer } from 'react-icons/fa6';
 import Link from 'next/link';
+import { έργα } from '@/db/έργα'
 
 export const metadata = {
   title: 'Το Χαρτοφυλάκιό μου',
@@ -12,10 +13,10 @@ export const metadata = {
   publisher: 'Δημήτρης Μανωλόπουλος',
 };
 
-const projects = [
-    { id: 1, title: 'Εργασιομανία', text: 'Οργάνωσε το κυνήγι εργασίας σου με αυτήν την εφαρμογή ιχνηλάτησης.', link:'http://ergasiomania.onrender.com' , imageSrc: '/images/Εργασιομανία.png', imageAlt: 'Ιστότοπος Εργασιομανίας'},
+// const projects = [
+//     { id: 1, title: 'Εργασιομανία', text: 'Οργάνωσε το κυνήγι εργασίας σου με αυτήν την εφαρμογή ιχνηλάτησης.', link:'http://ergasiomania.onrender.com' , imageSrc: '/images/Εργασιομανία.png', imageAlt: 'Ιστότοπος Εργασιομανίας'},
    
-  ];
+//   ];
 
 const Portfolio = () => {
   return (
@@ -27,7 +28,7 @@ const Portfolio = () => {
           <div className={styles['portfolio-container']}>
 
 
-{projects.map((project) => {
+{έργα.map((project) => {
         return (
           <div key={project.id} className={styles['portfolio-item']}>
               <Image
