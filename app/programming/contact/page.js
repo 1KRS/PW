@@ -1,5 +1,7 @@
 import styles from './page.module.css';
 import Heading from '@/components/Heading';
+import Input from '@/components/Inputs/Input';
+import Textarea from '@/components/Inputs/Textarea';
 
 const Contact = () => {
   return (
@@ -10,45 +12,37 @@ const Contact = () => {
           <form action="">
             <div className={styles['input-group']}>
               <div className={styles['input-box']}>
-                <input
-                  type="text"
-                  className={styles.text}
-                  placeholder="Πλήρες Όνομα"
-                />
+                <Input type="text" style="text" placeholder="Πλήρες Όνομα" />
               </div>
               <div className={styles['input-box']}>
-                <input
+                <Input
                   type="email"
-                  className={styles.email}
+                  style="email"
                   placeholder="Ηλ. Ταχυδρομείο"
                 />
               </div>
               <div className={styles['input-box']}>
-                <input
+                <Input
                   type="number"
-                  className={styles['phone-number']}
-                  placeholder="Αρ. Τηλεφώνου"
+                  style="phone-number"
+                  placeholder="Αριθμός Τηλεφώνου"
                 />
               </div>
               <div className={styles['input-box']}>
-                <input type="text" className={styles.text} placeholder="Θέμα" />
+                <Input type="text" style="text" placeholder="Θέμα" />
               </div>
             </div>
             <div className={styles['input-group-2']}>
               <div className={styles['input-box']}>
-                <textarea
+                <Textarea
                   name=""
                   id=""
                   cols="30"
                   rows="10"
                   placeholder="Γράψτε το μήνυμά σας στα ελληνικά."
-                ></textarea>
+                />
               </div>
-              <input
-                type="submit"
-                value="Αποστολή Μηνύματος"
-                className={styles.btn}
-              />
+              <Input type="submit" style="btn" value="Αποστολή Μηνύματος" />
             </div>
           </form>
         </section>
