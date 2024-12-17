@@ -1,4 +1,6 @@
 .wrapper {
+  --slide-item-width: 85px;
+  --tech-number: 14;
   position: relative;
   display: flex;
   justify-content: center;
@@ -6,6 +8,7 @@
   width: max(32vw, 50%);
   max-width: 1536px;
   margin-inline: auto;
+  width: 90%;
   height: 10vh;
   overflow: hidden;
   mask-image: linear-gradient(
@@ -28,6 +31,7 @@
   background-color: var(--second-bg-color-blurred);
   border: 1px solid var(--main-color);
   border-radius: 10px;
+  color: var(--main-color);
   left: max(calc(var(--slide-item-width) * var(--tech-number)), 100%);
   animation: scrollLeft 30s linear infinite;
   animation-delay: calc(
@@ -128,13 +132,13 @@
     (30s / var(--tech-number)) * (var(--tech-number) - 13) * -1
   );
 }
-/*.item14 {
-  animation-delay: calc((30s / var(--tech-number)) * (var(--tech-number) - 14) * -1);
+.item14 {
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--tech-number) - 14) * -1
+  );
 }
 .item15 {
-  animation-delay: calc((30s / var(--tech-number)) * (var(--tech-number) - 15) * -1);
-} */
-
-.tech-icon {
-  color: var(--main-color);
+  animation-delay: calc(
+    (30s / var(--tech-number)) * (var(--tech-number) - 15) * -1
+  );
 }
