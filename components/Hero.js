@@ -63,7 +63,7 @@ const Hero = () => {
         /> */}
         <Image
           className={styles.img}
-          src={'/images/Φτερά..png'}
+          src={'/images/Φτερά.png'}
           height={300}
           width={300}
           alt="Φτερά Ικάρου"
