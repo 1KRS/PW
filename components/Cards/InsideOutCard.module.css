@@ -1,0 +1,121 @@
+.card {
+  --card-width: 100%;
+  --image-width: 100%;
+  --icon-number: 4;
+  --icon-height: 25px;
+  --icon-width: 18px;
+  --gap-between-icons: 25px;
+  --container-padding-ver: 15px;
+  --container-padding-hor: 15px;
+  --container-height: calc((var(--icon-height) + (2 * var(--container-padding-ver))))
+  --container-height: calc((var(--icon-height) + (2 * var(--container-padding-ver))))
+  --container-width: calc(
+    var(--icon-number) * var(--icon-width) +
+      ((var(--icon-number) - 1) * var(--gap-between-icons)) +
+      (2 * var(--container-padding-hor))
+  );
+  --container-initial-position: calc(0px - (var(--icon-width) + var(--container-padding-ver)));
+  --container-final-position: calc(0px - (var(--icon-width) + (var(--container-padding-ver) / 3)));
+  position: relative;
+  /* display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center; */
+  background-color: var(--second-bg-color-blurred);
+  border: 2px solid var(--main-color);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-image-container {
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-color);
+  width: var(--image-width);
+  animation: intro 4s;
+  z-index: 20;
+}
+
+.card-image {
+  width: var(--image-width);
+  /* height: auto; */
+}
+
+.card-hidden-container {
+  position: absolute;
+  left: 0;
+  bottom: var(--container-initial-position);
+  right: 0;
+  margin-inline: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--icon-height);
+  /* width: var(--container-width); */
+  padding: var(--container-padding-ver) var(--container-padding-hor);
+  background-color: var(--second-bg-color);
+  border: 0.5px solid yellow;
+  border-radius: 10px;
+  font-size: var(--icon-width);
+  gap: var(--gap-between-icons);
+  /* opacity: 0; */
+  transition: opacity 1s 1s;
+}
+
+.card:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card:not(:hover) {
+  animation: reapply-overflow 2s forwards;
+}
+
+.card:hover .card-hidden-container {
+  animation: show-hidden-container 1s forwards;
+  opacity: 1;
+  transition: opacity 0.3s ;
+}
+
+.card:not(:hover) .card-hidden-container {
+  animation: hide-hidden-container 1s forwards;
+}
+
+
+@keyframes remove-overflow {
+  to{
+    overflow: initial;
+  }
+}
+
+@keyframes reapply-overflow {
+  0%{
+    overflow: initial;
+    pointer-events: none;
+  }
+  50%{
+    overflow: hidden;
+  }
+}
+
+@keyframes show-hidden-container {
+  50%{
+    bottom: 5px;
+  }
+  100%{
+    bottom: var(--container-final-position);
+  }
+}
+
+@keyframes hide-hidden-container {
+  0%{
+    bottom: var(--container-final-position);
+  }
+  50%{
+    bottom: 5px;
+  }
+  100%{
+    bottom: var(--container-initial-position);
+  }
+}
