@@ -3,8 +3,20 @@
 import { useRef, useEffect } from 'react';
 import styles from './BinaryRain.module.css';
 
-const BinaryRain = ({ rainColor, speed }) => {
+const BinaryRain = ({ screenType, fontSize, speed }) => {
   const canvasRef = useRef(null);
+
+  const characters = 'ΑΒΓΔΕϜΖΗΘΙΚΛΜΝΞΟΠϘΡΣΤΥΦΧΨΩͶ├┤ϚϛϻϟϡϠͳ';
+  let rainColor = '';
+  const rainSpeed = Number(speed);
+
+  if (screenType === 'not-found') {
+    rainColor = '#ffbb00';
+  } else if (screenType === 'error') {
+    rainColor = '#ad0000';
+  } else {
+    rainColor = '#00fcfd';
+  }
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -16,15 +28,12 @@ const BinaryRain = ({ rainColor, speed }) => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const fontSize = 14;
     const columns = canvas.width / fontSize;
 
     const drops = [];
     for (let i = 0; i < columns; i++) {
       drops[i] = 1;
     }
-
-    const characters = 'ΑΒΓΔΕϜΖΗΘΙΚΛΜΝΞΟΠϘΡΣΤΥΦΧΨΩͶ├┤ϚϛϻϟϡϠͳ';
 
     const draw = () => {
       if (!ctx || !canvas) return;
@@ -33,7 +42,6 @@ const BinaryRain = ({ rainColor, speed }) => {
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       ctx.fillStyle = `${rainColor}`;
-      // const randomFontSize = Math.floor(Math.random() * fontSize) + 8;
       ctx.font = `${fontSize}px monospace`;
 
       for (let i = 0; i < drops.length; i++) {
@@ -50,13 +58,14 @@ const BinaryRain = ({ rainColor, speed }) => {
       }
     };
 
-    const intervalId = setInterval(draw, 80);
+    const intervalId = setInterval(draw, rainSpeed);
 
     function handleResize() {
       if (!canvas) return;
 
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+
     }
 
     window.addEventListener('resize', handleResize);
@@ -67,9 +76,7 @@ const BinaryRain = ({ rainColor, speed }) => {
     };
   }, []);
 
-  return (
-    <canvas ref={canvasRef} className={styles.canvas}/>
-  );
+  return <canvas ref={canvasRef} className={styles.canvas} />;
 };
 
 export default BinaryRain;
