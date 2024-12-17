@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import styles from './Hero.module.css';
 import Image from 'next/image';
@@ -41,7 +41,7 @@ const Hero = () => {
         </p>
 
         {/* <SocialIcons /> */}
-        <Slider/>
+        <Slider />
 
         <div className={styles['btn-group']}>
           <Link href="#" className={styles.btn}>
@@ -54,12 +54,19 @@ const Hero = () => {
         {/* <Slider /> */}
       </div>
       <div className={styles['home-img']}>
-        <Image
+        {/* <Image
           className={styles.img}
           src="/images/γυναίκα.jpg"
           width={400}
           height={400}
           alt="Φτερά Ικάρου"
+        /> */}
+        <Image
+          className={styles.img}
+          src={'/images/γυναίκα.png'}
+          height={300}
+          width={300}
+          alt="Εικόνα Γυναίκας"
         />
       </div>
     </section>
