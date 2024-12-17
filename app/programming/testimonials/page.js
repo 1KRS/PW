@@ -1,13 +1,14 @@
-import styles from './page.module.css';
+import Heading from '@/components/Heading';
 import Image from 'next/image';
 import { FaStar } from 'react-icons/fa';
-import Heading from '@/components/Heading';
+import styles from './page.module.css';
 
 const Testimonials = () => {
   return (
     <>
       <main className={styles.main}>
-        <Heading text="Αναγνώριση" />
+        <Heading text="Μαρτυρίες" />
+
         <section className={styles.testimonials} id="testimonials">
           <div className={styles['testimonials-container']}>
             {/* <div className={styles.wrapper}> */}
