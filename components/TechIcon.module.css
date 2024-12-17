@@ -1,0 +1,27 @@
+.tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh;
+  /* width: var(--slide-item-width); */
+  /* height: calc(var(--slide-item-width) / 2); */
+  /* background-color: var(--second-bg-color-blurred); */
+  border-radius: 10px;
+  left: max(calc(var(--slide-item-width) * var(--tech-number)), 100%);
+}
+
+.tech:hover {
+  font-size: 0;
+}
+
+.tech:hover::after {
+  content: attr(data-types);
+  font-size: 1.3vh;
+  text-align: center;
+  padding: 0 0 1px 0;
+  color: var(--main-color);
+}
+
+.tech-icon {
+  color: var(--main-color);
+}
