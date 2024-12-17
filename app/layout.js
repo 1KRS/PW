@@ -1,5 +1,4 @@
 import { AppProvider } from '@/context/AppContext';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 
 export const metadata = {
@@ -16,7 +15,6 @@ export default function RootLayout({ children }) {
       <html lang="el">
         <body>
           {children}
-          <SpeedInsights />
         </body>
       </html>
     </AppProvider>
