@@ -1,8 +1,8 @@
+import styles from './page.module.css';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import LandingMain from '@/components/Backgrounds/LandingMain';
 import Link from 'next/link';
-import styles from './page.module.css';
 import UnderConstructionRibbon from '@/components/UnderDevelopmentRibbon';
-// import Slider from '@/components/Slider';
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
           npm start
         </button>
       </Link>
-      {/* <Slider /> */}
+      <SpeedInsights />
     </LandingMain>
   );
 };
