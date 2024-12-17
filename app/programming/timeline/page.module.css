@@ -1,15 +1,20 @@
 .timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-right: 150px;
   padding-left: 150px;
 }
 
-.timeline h2 {
-  margin-bottom: 5rem;
+.timeline-container {
+  position: absolute;
+  top: 26vh;
+  height: 63vh;
+  width: 80vw;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-.fixed {
-  position: fixed;
-  top: 28rem;
-  font-size: 8rem;
-  text-align: center;
-}
+
+
