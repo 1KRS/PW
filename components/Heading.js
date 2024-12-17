@@ -1,8 +1,11 @@
-import styles from './Heading.module.css'
+import styles from './Heading.module.css';
+import TranslatedText from './TranslatedText';
 
-const Heading = ({text}) => {
+const Heading = ({ text }) => {
   return (
-    <h2 className={styles.heading}>{text}</h2>
-  )
-}
-export default Heading
+    <h2 className={styles.heading}>
+      <TranslatedText>{text}</TranslatedText>
+    </h2>
+  );
+};
+export default Heading;
