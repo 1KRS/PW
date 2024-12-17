@@ -1,0 +1,76 @@
+.toggle {
+  display: none;
+}
+
+.toggle + label {
+  display: flex;
+  position: relative;
+  height: 2.9vh;
+  width: 5.95vw;
+  font-size: 1.3vh;
+  border: 2px solid var(--main-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle + label::before {
+  content: '';
+  position: absolute;
+  top: 0.3vh;
+  height: 1.05vw;
+  width: 1.05vw;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+.toggle + label::after {
+  position: absolute;
+  top: 1.15vh;
+  width: 65px;
+  font-weight: bold;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.toggle + label.rounded {
+  border-radius: 30px;
+}
+.toggle + label.rounded:before {
+  border-radius: 50%;
+}
+
+.toggle:checked + label {
+  text-align: left;
+  border-color: gold;
+}
+.toggle:checked + label::before {
+  left: 75px;
+  background-color: gold;
+}
+.toggle:checked + label:after {
+  content: attr(data-checked);
+  left: 6px;
+  right: auto;
+  opacity: 1;
+  color: gold;
+}
+.toggle:not(:checked) + label {
+  background-color: transparent;
+  text-align: right;
+}
+.toggle:not(:checked) + label::before {
+  left: 3px;
+  background-color: gold;
+}
+.toggle:not(:checked) + label::after {
+  content: attr(data-unchecked);
+  right: 0;
+  left: auto;
+  opacity: 1;
+  color: var(--main-color);
+}
