@@ -54,13 +54,6 @@ const Hero = () => {
         {/* <Slider /> */}
       </div>
       <div className={styles['home-img']}>
-        {/* <Image
-          className={styles.img}
-          src="/images/γυναίκα.jpg"
-          width={400}
-          height={400}
-          alt="Φτερά Ικάρου"
-        /> */}
         <Image
           className={styles.img}
           src={'/images/Φτερά.png'}
