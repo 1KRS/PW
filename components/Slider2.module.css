@@ -1,13 +1,12 @@
 .wrapper {
-  --slide-item-width: 85px;
-  --tech-number: 15;
+  --slide-item-width: 160px ;
+  --tech-number: 4;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5vh;
+  height: 4vh;
   width: 100%;
-  margin-inline: auto;
   overflow: hidden;
   mask-image: linear-gradient(
     to right,
@@ -23,18 +22,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3.5vh;
+  font-size: 1.5vh;
+  height: 2.2vh;
   width: var(--slide-item-width);
-  height: calc(var(--slide-item-width) / 2);
+  padding: 0 0 2px 0;
   background-color: var(--second-bg-color-blurred);
   border: 1px solid var(--main-color);
   border-radius: 10px;
   color: var(--main-color);
-  left: max(calc(var(--slide-item-width) * var(--tech-number)), 100%);
-  animation: scrollLeft 30s linear infinite;
-  animation-delay: calc(
-    (30s / var(--tech-number)) * (var(--position) - 1) * -1
-  );
+  right: max(calc(var(--slide-item-width) * var(--tech-number)), 100%);
+  animation: scrollRight 30s linear infinite;
   mask-image: linear-gradient(
     to right,
     rgba(255, 255, 255, 0),
@@ -48,20 +45,20 @@
   animation-play-state: paused;
 }
 
-.item:hover {
+/* .item:hover {
   font-size: 0;
-}
+} */
 
-.item:hover::after {
+/* .item:hover::after {
   content: attr(data-types);
   font-size: 1rem;
   text-align: center;
   color: var(--main-color);
-}
+} */
 
-@keyframes scrollLeft {
+@keyframes scrollRight {
   to {
-    left: -100px;
+    right: -100px;
   }
 }
 
@@ -138,30 +135,5 @@
 .item15 {
   animation-delay: calc(
     (30s / var(--tech-number)) * (var(--tech-number) - 15) * -1
-  );
-}
-.item16 {
-  animation-delay: calc(
-    (30s / var(--tech-number)) * (var(--tech-number) - 16) * -1
-  );
-}
-.item17 {
-  animation-delay: calc(
-    (30s / var(--tech-number)) * (var(--tech-number) - 17) * -1
-  );
-}
-.item18 {
-  animation-delay: calc(
-    (30s / var(--tech-number)) * (var(--tech-number) - 18) * -1
-  );
-}
-.item19 {
-  animation-delay: calc(
-    (30s / var(--tech-number)) * (var(--tech-number) - 19) * -1
-  );
-}
-.item20 {
-  animation-delay: calc(
-    (30s / var(--tech-number)) * (var(--tech-number) - 20) * -1
   );
 }

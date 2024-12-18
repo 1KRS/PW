@@ -156,6 +156,11 @@
     gap: 1.5vw;
   }
 
+  .sliders-container {
+    width: 95%;
+    margin: 2vh 0;
+  }
+
   .btn,
   .btn-sec {
     display: inline-block;

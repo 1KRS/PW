@@ -4,6 +4,7 @@ import styles from './Hero.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import Slider from '@/components/Slider';
+import Slider2 from '@/components/Slider2';
 import TranslatedText from '@/components/TranslatedText';
 
 import { useAppContext } from '@/context/AppContext';
@@ -41,7 +42,10 @@ const Hero = () => {
         </p>
 
         {/* <SocialIcons /> */}
-        <Slider />
+        <div className={styles['sliders-container']}>
+          <Slider />
+          <Slider2 />
+        </div>
 
         <div className={styles['btn-group']}>
           <Link href="#" className={styles.btn}>

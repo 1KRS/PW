@@ -9,7 +9,7 @@ import {
 } from 'react-icons/tb';
 import { IoLogoReact } from 'react-icons/io5';
 import { BiLogoMongodb, BiLogoPostgresql } from 'react-icons/bi';
-import { FaGitAlt, FaNodeJs } from 'react-icons/fa';
+import { FaGitAlt, FaBootstrap } from 'react-icons/fa';
 import { SiEjs, SiExpress } from 'react-icons/si';
 import { RiNpmjsFill } from 'react-icons/ri';
 import { IoLogoGithub, IoLogoNodejs } from 'react-icons/io';
@@ -170,6 +170,7 @@ const Slider = () => {
       <div className={styles.item + ' ' + styles.item12} data-types='NodeJS'><IoLogoNodejs className={styles['tech-icon']}/></div>
       <div className={styles.item + ' ' + styles.item13} data-types='NPM'><RiNpmjsFill className={styles['tech-icon']}/></div>
       <div className={styles.item + ' ' + styles.item14} data-types='Express'><SiExpress className={styles['tech-icon']}/></div>
+      <div className={styles.item + ' ' + styles.item15} data-types='Bootstrap'><FaBootstrap className={styles['tech-icon']}/></div>
     </div>
   );
 };
