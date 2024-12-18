@@ -1,21 +1,22 @@
 import styles from './ProgrammingTimelineSideNav.module.css';
 import { FaMinus } from 'react-icons/fa6';
 import { TbPoint } from 'react-icons/tb';
+import { TiMinusOutline } from "react-icons/ti";
 
 const ProgrammingTimelineSideNav = () => {
   return (
     <nav className={styles['timeline-side-nav']}>
       <ul className={styles['timeline-side-nav__items']}>
         <li className={styles['timeline-side-nav__item']}>
-          <TbPoint className={styles['χρώμα-εικονιδίου-ολοκληρωμένο']} />{' '}
+          <TiMinusOutline className={styles['χρώμα-εικονιδίου-ολοκληρωμένο']} />{' '}
           <div className={styles['κείμενο']}>Ολοκληρωμένα</div>
         </li>
         <li className={styles['timeline-side-nav__item']}>
-          <TbPoint className={styles['χρώμα-εικονιδίου-εν-εξελίξει']} />{' '}
+          <TiMinusOutline className={styles['χρώμα-εικονιδίου-εν-εξελίξει']} />{' '}
           <div className={styles['κείμενο']}>Σε εξέλιξη</div>
         </li>
         <li className={styles['timeline-side-nav__item']}>
-          <TbPoint className={styles['χρώμα-εικονιδίου-εν-αναμονή']} />{' '}
+          <TiMinusOutline className={styles['χρώμα-εικονιδίου-εν-αναμονή']} />{' '}
           <div className={styles['κείμενο']}>Εν αναμονή</div>
         </li>
         <li className={styles['timeline-side-nav__item']}>
