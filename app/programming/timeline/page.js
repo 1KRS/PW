@@ -8,7 +8,7 @@ const Timeline = () => {
     <>
       <main className={styles.main}>
         <Heading text="Χρονολόγιο" />
-        <ProgrammingTimelineSideNav />
+        <ProgrammingTimelineSideNav σελίδα='Χρονολόγιο'/>
         <section className={styles.timeline} id="timeline">
           <div className={styles['timeline-container']}>
             <TimelineItems />
