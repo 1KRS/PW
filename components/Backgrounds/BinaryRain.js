@@ -74,7 +74,7 @@ const BinaryRain = ({ screenType, fontSize, speed }) => {
       window.removeEventListener('resize', handleResize);
       clearInterval(intervalId);
     };
-  }, []);
+  }, [screenType, fontSize, speed]);
 
   return <canvas ref={canvasRef} className={styles.canvas} />;
 };
