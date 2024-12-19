@@ -13,7 +13,7 @@
     --χρώμα-ολοκληρωμένου: rgb(0, 187, 0);
     --list-items: 5;
     display: flex;
-    position: fixed;
+    position: absolute;
     left: 50px;
     top: 0;
     height: 100%;
@@ -23,12 +23,13 @@
   }
 
   .timeline-side-nav__items {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     height: fit-content;
-    width: fit-content;
+    width: 55px;
     padding: 15px;
     gap: 1.5vh;
     background-color: var(--second-bg-color-blurred);
@@ -38,7 +39,11 @@
     transition: 0.3s ease-in;
   }
 
- .timeline-side-nav__item {
+  .timeline-side-nav__items:hover {
+    width: 150px;
+  }
+
+  .timeline-side-nav__item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,20 +52,23 @@
     transition: 0.3s ease-in;
   }
 
-  .timeline-side-nav__item:hover {
-    transform: scale(125%);
-    transition: 0.3s ease-in;
-    cursor: pointer;
-  }
+  /* .timeline-side-nav__item:hover {
+      transform: scale(125%);
+      transition: 0.3s ease-in;
+      cursor: pointer;
+    } */
 
   .κείμενο {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    width: 100px;
+    font-size: 0.8rem;
   }
 
   .timeline-side-nav__items:hover .κείμενο {
-    display: block;
-    font-size: 0.8rem;
-
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in-out;
   }
 
   .χρώμα-εικονιδίου-ολοκληρωμένο {
@@ -83,5 +91,19 @@
   .χρώμα-εικονιδίου-έργα {
     color: var(--χρώμα-έργων);
     transform: rotateZ(90deg);
+  }
+
+  @keyframes fade-in {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    50% {
+      display: block;
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
