@@ -11,7 +11,7 @@
     --χρώμα-εν-εξελίξει: rgb(190, 196, 0);
     --χρώμα-παρατημένου: rgb(196, 0, 0);
     --χρώμα-ολοκληρωμένου: rgb(0, 187, 0);
-    --list-items: 5;
+    --list-items: 7;
     display: flex;
     position: absolute;
     left: 50px;
@@ -40,6 +40,7 @@
   }
 
   .timeline-side-nav__items:hover {
+    display: flex;
     width: 150px;
   }
 
@@ -58,10 +59,10 @@
       cursor: pointer;
     } */
 
-  .κείμενο {
+  .timeline-side-nav__items .κείμενο {
     visibility: hidden;
     opacity: 0;
-    width: 100px;
+    text-wrap: nowrap;
     font-size: 0.8rem;
   }
 
@@ -79,6 +80,9 @@
   }
   .χρώμα-εικονιδίου-εν-αναμονή {
     color: var(--χρώμα-εν-αναμονή);
+  }
+  .χρώμα-εικονιδίου-παρατημένο {
+    color: var(--χρώμα-παρατημένου);
   }
   .χρώμα-εικονιδίου-σπουδές {
     color: var(--χρώμα-σπουδών);
