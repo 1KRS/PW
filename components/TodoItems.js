@@ -26,7 +26,7 @@ const TodoItems = () => {
                 <h4 className={styles['επάνω-γραμμή']}>
                   <div>{τύπος}</div>
                   <div>για</div>
-                  <div> {μέρος}</div>
+                  <div> {μέρος === 'Ιστότοπος' ? 'Ιστότοπο' : μέρος}</div>
               </h4>
                 <h3 className={styles['κάτω-γραμμή']}>{κείμενο}</h3>
               </div>

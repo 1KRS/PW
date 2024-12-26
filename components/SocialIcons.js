@@ -7,12 +7,22 @@ const SocialIcons = () => {
   return (
     <>
       <div className={styles['social-icons']}>
-        <Link href="#" className={styles.link}>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/δημήτρης-μανωλόπουλος-86a19217a/"
+          rel="noopener noreferrer"
+          className={styles.link}
+        >
           <FaLinkedinIn />
-        </Link>
-        <Link href="#" className={styles.link}>
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/1KRS"
+          rel="noopener noreferrer"
+          className={styles.link}
+        >
           <FaGithub />
-        </Link>
+        </a>
       </div>
     </>
   );
