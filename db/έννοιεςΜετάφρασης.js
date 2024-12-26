@@ -19,6 +19,7 @@ export const έννοιες = [
   { ελληνικά: 'Αλλαγή Γραφήματος', αγγλικά: 'Change Chart', σουηδικά: 'Ändra Diagram' },
   { ελληνικά: 'Ανάπτυξη Εφαρμογών', αγγλικά: 'Application Development', σουηδικά: 'Applikationsutveckling' },
   { ελληνικά: 'Ανάπτυξη Ιστού', αγγλικά: 'Web Development', σουηδικά: 'Webbutveckling' },
+  { ελληνικά: 'Ανάπτυξη κώδικα φίλτρων', αγγλικά: 'Filter code development', σουηδικά: 'Utveckla filterkod' },
   { ελληνικά: 'Αναζήτηση', αγγλικά: 'Search', σουηδικά: 'Sök' },
   { ελληνικά: 'Παρατημένα', αγγλικά: 'Abandoned', σουηδικά: 'Övergiven' },
   { ελληνικά: 'Ανώτατο Εκπαιδευτικό Ίδρυμα', αγγλικά: 'Higher Educational Institution', σουηδικά: 'Högre Läroanstalt' },
@@ -128,11 +129,6 @@ export const έννοιες = [
     σουηδικά:
       'För många förfrågningar från denna IP-adress, försök igen om 15 minuter.',
   },
-  {
-    ελληνικά: 'Προσθήκη Πλήκτρου για «Έργα Μαθήματος» σε γεγονός',
-    αγγλικά: 'Add a Button for "Course Projects" to an event',
-    σουηδικά: 'Lägga till en "Kursprojekt"-knapp till ett evenemang',
-  },
   { ελληνικά: 'Πίνακας', αγγλικά: 'Dashboard', σουηδικά: 'Instrumentbräda' },
   { ελληνικά: 'Παλαιότερες', αγγλικά: 'Oldest', σουηδικά: 'Äldst' },
   { ελληνικά: 'Πανεπιστήμιο Κρήτης', αγγλικά: 'University of Crete', σουηδικά: 'Universitetet på Kreta' },
@@ -148,6 +144,21 @@ export const έννοιες = [
   { ελληνικά: 'Πρόγραμμα Εκκίνησης', αγγλικά: 'Bootcamp', σουηδικά: 'Bootcamp' },
   { ελληνικά: 'Προηγούμενη', αγγλικά: 'Previous ', σουηδικά: 'Tidigare' },
   { ελληνικά: 'Προς Υλοποίηση', αγγλικά: 'To Be Implemented', σουηδικά: 'För Implementering' },
+  {
+    ελληνικά: 'Προσθήκη επιλογών φίλτρου',
+    αγγλικά: 'Add filter options',
+    σουηδικά: 'Lägg till filteralternativ',
+  },
+  {
+    ελληνικά: 'Προσθήκη Πλήκτρου για «Έργα Μαθήματος» σε γεγονός',
+    αγγλικά: 'Add a Button for "Course Projects" to an event',
+    σουηδικά: 'Lägga till en "Kursprojekt"-knapp till ett evenemang',
+  },
+  {
+    ελληνικά: 'Προσθήκη χρόνου διάρκειας γεγονότος',
+    αγγλικά: 'Add event duration time',
+    σουηδικά: 'Lägg till händelsens varaktighetstid',
+  },
   { ελληνικά: 'Προσθήκη Εργασίας', αγγλικά: 'Add Job', σουηδικά: 'Lägg Τill Jobb' },
   { ελληνικά: 'Πρόσληψη', αγγλικά: 'Hire Me', σουηδικά: 'Αnställ Mig' },
   { ελληνικά: 'Ραβδόγραμμα', αγγλικά: 'Bar Chart', σουηδικά: 'Stapeldiagram' },
@@ -175,6 +186,11 @@ export const έννοιες = [
     ελληνικά: 'Συμπλήρωσε όλα τα πεδία!',
     αγγλικά: 'Fill in all fields!',
     σουηδικά: 'Fyll i alla fält!',
+  },
+  {
+    ελληνικά: 'Συμπλήρωση γεγονότων Χρονολογίου',
+    αγγλικά: 'Completing Timeline events',
+    σουηδικά: 'Fylla i tidslinjehändelser',
   },
   { ελληνικά: 'Συνέντευξη', αγγλικά: 'Interview', σουηδικά: 'Intervju' },
   { ελληνικά: 'Συνδέσου.', αγγλικά: 'Login.', σουηδικά: 'Logga In' },
