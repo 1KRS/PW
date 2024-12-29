@@ -24,7 +24,7 @@ const Event = ({ταυτότητα, μονός, μορφήΠεριβλήματο
   return (
       <article key={ταυτότητα} className={styles['timeline-item']}>
         <div className={styles['timeline-dot']}/>
-        <div className={styles['timeline-content'] + ' ' + styles[`${μεΉΧωρίςΔευτερεύουσαΓραμμή}`] + ' ' + styles[`${μορφήΠεριβλήματος}`]}>
+        <div className={styles['timeline-content'] + ' ' + styles[`${μορφήΠεριβλήματος}`] + ' ' + styles[`${μεΉΧωρίςΔευτερεύουσαΓραμμή}`]}>
           <div className={styles[`${μονόςΖυγόςΠάνωΓραμμή}`]}>
             <div className={styles['timeline-date'] + ' ' + styles[`color${χρώμαΕίδους}`]}>{κείμενοΧρονολογίας}</div>
             <div className={styles[`${μονόςΖυγόςΔευτερεύουσαΓραμμή}`] + ' ' + styles[`${μεΉΧωρίςΔευτερεύουσαΓραμμή}`]}>
