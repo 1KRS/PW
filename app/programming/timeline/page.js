@@ -5,17 +5,16 @@ import ProgrammingTimelineSideNav from '@/components/Navigations/ProgrammingTime
 
 const Timeline = () => {
   return (
-    <>
-      <main className={styles.main}>
-        <Heading text="Χρονολόγιο" />
-        <ProgrammingTimelineSideNav σελίδα='Χρονολόγιο'/>
-        <section className={styles.timeline} id="timeline">
-          <div className={styles['timeline-container']}>
-            <TimelineItems />
-          </div>
-        </section>
-      </main>
-    </>
+    <main className={styles.main}>
+      <Heading text="Χρονολόγιο" />
+      <ProgrammingTimelineSideNav σελίδα="Χρονολόγιο" />
+
+      <section className={styles.timeline} id="timeline">
+        <div className={styles['timeline-container']}>
+          <TimelineItems />
+        </div>
+      </section>
+    </main>
   );
 };
 
