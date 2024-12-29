@@ -5,7 +5,6 @@ import styles from './page.module.css';
 
 const Testimonials = () => {
   return (
-    <>
       <main className={styles.main}>
         <Heading text="Μαρτυρίες" />
 
@@ -107,7 +106,6 @@ const Testimonials = () => {
           </div>
         </section>
       </main>
-    </>
   );
 };
 
