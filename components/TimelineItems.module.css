@@ -171,22 +171,41 @@
   justify-content: start;
 }
 
-.timeline-upper-line-odd .timeline-date,
-.timeline-upper-line-even .timeline-date {
+.χρονολόγιο-ημερομηνία-και-διάρκεια {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  gap: 0;
+  height: min(2.5vw);
+  font-size: 0.6vw;
 }
-.timeline-upper-line-odd .timeline-date {
-  padding: 0 0 0 1vw;
+
+.timeline-upper-line-odd .χρονολόγιο-ημερομηνία-και-διάρκεια {
+  padding: 0 0 0 0.3vw;
   border-left: 4px solid;
 }
 
-.timeline-upper-line-even .timeline-date {
-  padding: 0 1vw 0 0;
+.timeline-upper-line-even .χρονολόγιο-ημερομηνία-και-διάρκεια {
+  padding: 0 0.3vw 0 0;
   border-right: 4px solid;
+}
+
+.timeline-date {
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  text-align: center;
+  height: 1.5vw;
+  width: 95px;
+  gap: 0;
+}
+
+.χρονολόγιο-διάρκεια {
+  display: none;
+}
+
+.χρονολόγιο-ημερομηνία-και-διάρκεια:hover .χρονολόγιο-διάρκεια {
+  display: block;
 }
 
 .timeline-upper-line-odd .timeline-date-month-odd,
@@ -204,7 +223,7 @@
 }
 
 .timeline-upper-line-even .timeline-date-month-even {
-  padding: 0 3px 6px 0;
+  padding: 0 3px 5px 0;
 }
 
 .timeline-date-year {
@@ -233,6 +252,7 @@
   font-size: 1.5vw;
   width: 100%;
 }
+
 .event-odd,
 .event-even {
   display: flex;
@@ -263,7 +283,6 @@
   padding: 0 1vw 0px;
 }
 
-
 .event-odd h3,
 .event-even h3 {
   font-size: 1.3vw;
@@ -271,7 +290,6 @@
 
 .event-info {
   display: flex;
-  /* padding: 4px 0 0 0; */
 }
 
 .event-info .main-h6 {
@@ -284,7 +302,7 @@
   width: auto;
   cursor: pointer;
 }
-.event-info .middle-text {
+.event-info .middle-line {
   font-size: 0.7vw;
 }
 

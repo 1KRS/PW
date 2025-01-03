@@ -14,10 +14,11 @@ import { CgWebsite } from "react-icons/cg";
 import { useAppContext } from '@/context/AppContext';
 
 
-const Event = ({ταυτότητα, μονός, μορφήΠεριβλήματος, μονόςΖυγόςΠάνωΓραμμή, χρώμαΕίδους, κείμενοΧρονολογίας, μονόςΖυγόςΔευτερεύουσαΓραμμή, κείμενοΔεδομένωνH3, μεΉΧωρίςΔευτερεύουσαΓραμμή, τύποςΔεδομένωνH6Βασικό, κείμενοΔεδομένωνH6Βασικό, κείμενοΔεδομένωνH6Δευτερεύον, τύποςΔεδομένωνH6Δευτερεύον, κείμενο, είδος, φωτογραφίαΠιστοποιητικού, ιστότοπος, τεχνολογίεςΓεγονότος}) => {
+const Event = ({ταυτότητα, μονός, μορφήΠεριβλήματος, μονόςΖυγόςΠάνωΓραμμή, χρώμαΕίδους, κείμενοΧρονολογίας, διάρκειαΓεγονότοςΣεΗμέρες, ημέρεςΕβδομάδεςΜήνες, μονόςΖυγόςΔευτερεύουσαΓραμμή, κείμενοΔεδομένωνH3, μεΉΧωρίςΔευτερεύουσαΓραμμή, τύποςΔεδομένωνH6Βασικό, κείμενοΔεδομένωνH6Βασικό, κείμενοΔεδομένωνH6Δευτερεύον, τύποςΔεδομένωνH6Δευτερεύον, κείμενο, είδος, φωτογραφίαΠιστοποιητικού, ιστότοπος, τεχνολογίεςΓεγονότος}) => {
   
   const { language } = useAppContext();  
 
+  const διάρκεια = `${διάρκειαΓεγονότοςΣεΗμέρες}${μετάφραση(ημέρεςΕβδομάδεςΜήνες, language)}`
   const τύποςH6Δευτερεύον = μετάφραση(τύποςΔεδομένωνH6Δευτερεύον, language)
   const τύποςH6Βασικό = μετάφραση(τύποςΔεδομένωνH6Βασικό, language)
 
@@ -26,19 +27,22 @@ const Event = ({ταυτότητα, μονός, μορφήΠεριβλήματο
         <div className={styles['timeline-dot']}/>
         <div className={styles['timeline-content'] + ' ' + styles[`${μορφήΠεριβλήματος}`] + ' ' + styles[`${μεΉΧωρίςΔευτερεύουσαΓραμμή}`]}>
           <div className={styles[`${μονόςΖυγόςΠάνωΓραμμή}`]}>
-            <div className={styles['timeline-date'] + ' ' + styles[`color${χρώμαΕίδους}`]}>{κείμενοΧρονολογίας}</div>
+            <div className={styles['χρονολόγιο-ημερομηνία-και-διάρκεια'] + ' ' + styles[`color${χρώμαΕίδους}`]}>
+              <div className={styles['timeline-date']}>{κείμενοΧρονολογίας}</div>
+              <div className={styles['χρονολόγιο-διάρκεια']}>{διάρκεια}</div>
+            </div>
             <div className={styles[`${μονόςΖυγόςΔευτερεύουσαΓραμμή}`] + ' ' + styles[`${μεΉΧωρίςΔευτερεύουσαΓραμμή}`]}>
               <h3><TranslatedText>{κείμενοΔεδομένωνH3}</TranslatedText></h3>
                 {μεΉΧωρίςΔευτερεύουσαΓραμμή === 'μεΔευτερεύουσαΓραμμή' && <div className={styles['event-info']}>
                 { μονός
                     ? <>
                       {<h6 data-types-main={τύποςH6Δευτερεύον} className={styles[`main-h6`] + ' ' + styles[`main-h6${χρώμαΕίδους}`]}><TranslatedText>{κείμενοΔεδομένωνH6Δευτερεύον}</TranslatedText></h6>}
-                      {κείμενοΔεδομένωνH6Δευτερεύον && <pre className={styles['middle-text']}>  |  </pre>}
+                      {κείμενοΔεδομένωνH6Δευτερεύον && <pre className={styles['middle-line']}>  |  </pre>}
                       {είδος !== '' && <h6 data-types-sec={τύποςH6Βασικό} className={styles[`sec-h6`] + ' ' + styles[`sec-h6${χρώμαΕίδους}`]}><TranslatedText>{`${κείμενοΔεδομένωνH6Βασικό}`}</TranslatedText></h6>}
                     </>
                     : <>
                       {είδος !== '' && <h6 data-types-sec={τύποςH6Βασικό} className={styles[`sec-h6`] + ' ' + styles[`sec-h6${χρώμαΕίδους}`]}><TranslatedText>{`${κείμενοΔεδομένωνH6Βασικό}`}</TranslatedText></h6>}
-                      {κείμενοΔεδομένωνH6Δευτερεύον && <pre className={styles['middle-text']}>  |  </pre>}
+                      {κείμενοΔεδομένωνH6Δευτερεύον && <pre className={styles['middle-line']}>  |  </pre>}
                       <h6 data-types-main={τύποςH6Δευτερεύον} className={styles[`main-h6`] + ' ' + styles[`main-h6${χρώμαΕίδους}`]}><TranslatedText>{κείμενοΔεδομένωνH6Δευτερεύον}</TranslatedText></h6>
                     </>
                 }

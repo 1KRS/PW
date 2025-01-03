@@ -5,13 +5,15 @@ import { χρονολόγιο } from '@/db/χρονολόγιο';
 import TechIcon from '@/components/TechIcon';
 import EventMonth from './EventMonth';
 import Event from './Event';
+import EventDuration from './EventDuration';
+import TranslatedText from './TranslatedText';
 
 const TimelineItems = () => {
   return (
     <>
       <div className={styles['timeline-items']}>
         {χρονολόγιο
-          .filter((todo) => todo.γεγονός.κατηγορία === 'Προγραμματισμός')
+          .filter((στιγμή) => στιγμή.γεγονός.κατηγορία === 'Προγραμματισμός')
           .map((στιγμή) => {
             const {
               ταυτότητα,
@@ -107,17 +109,45 @@ const TimelineItems = () => {
                 : DateTime.fromFormat(`${λήξη}`, 'LL/yyyy')
               : '';
 
-            const διάρκειαΓεγονότος = λήξη
+            let διάρκειαΓεγονότοςΣεΗμέρες = λήξη
               ? parseFloat(
                   Duration.fromObject({
                     seconds: (ημερομηνίαΛήξης - ημερομηνίαΈναρξης) / 1000,
-                  }).as('months')
-                ).toFixed(1)
-              : '-';
+                  })
+                    .as('days')
+                    .toFixed(0)
+                    .toString()
+                )
+              : 'Δ/Δ';
+              
+              let ημέρεςΕβδομάδεςΜήνες = ''
+
+              if (διάρκειαΓεγονότοςΣεΗμέρες === 'Δ/Δ') {
+                διάρκειαΓεγονότοςΣεΗμέρες = ''
+                ημέρεςΕβδομάδεςΜήνες = 'Εν Εξελίξει'
+              } else if (διάρκειαΓεγονότοςΣεΗμέρες % 30 === 0) {
+                διάρκειαΓεγονότοςΣεΗμέρες = διάρκειαΓεγονότοςΣεΗμέρες / 30
+                ημέρεςΕβδομάδεςΜήνες = 'Μ'
+              } else if (διάρκειαΓεγονότοςΣεΗμέρες % 7 === 0) {
+                διάρκειαΓεγονότοςΣεΗμέρες = διάρκειαΓεγονότοςΣεΗμέρες / 7
+                ημέρεςΕβδομάδεςΜήνες = 'Β'
+              } else if (διάρκειαΓεγονότοςΣεΗμέρες === 0) {
+                ημέρεςΕβδομάδεςΜήνες = ''
+              } else {
+                ημέρεςΕβδομάδεςΜήνες = 'Η'
+              }
+
+            const διάρκειαΓεγονότος = `${διάρκειαΓεγονότοςΣεΗμέρες}${ημέρεςΕβδομάδεςΜήνες}`
+
+
+            console.log('διάρκειαΓεγονότος2', διάρκειαΓεγονότος);
 
             const κείμενοΧρονολογίας = μονός ? (
               μήναςΈναρξης ? (
                 <>
+                  {/* <div className={styles['timeline-date-duration-odd']}>
+                    <EventDuration διάρκειαΓεγονότοςΣεΗμέρες={διάρκειαΓεγονότοςΣεΗμέρες} />
+                  </div> */}
                   <div className={styles['timeline-date-year']}>
                     {χρονολογίαΈναρξης}
                   </div>
@@ -125,25 +155,27 @@ const TimelineItems = () => {
                     <EventMonth έναρξη={έναρξη} />
                   </div>
                 </>
-                
               ) : (
                 <div className={styles['timeline-date-year']}>
                   {χρονολογίαΈναρξης}
                 </div>
               )
             ) : μήναςΈναρξης ? (
-                  <>
-                    <div className={styles['timeline-date-month-even']}>
-                      <EventMonth έναρξη={έναρξη} />
-                    </div>
-                    <div className={styles['timeline-date-year']}>
-                      {χρονολογίαΈναρξης}
-                    </div>
-                  </>
-                ) : (
-                  <div className={styles['timeline-date-year']}>
-                    {χρονολογίαΈναρξης}
-                  </div>
+              <>
+                <div className={styles['timeline-date-month-even']}>
+                  <EventMonth έναρξη={έναρξη} />
+                </div>
+                <div className={styles['timeline-date-year']}>
+                  {χρονολογίαΈναρξης}
+                </div>
+                {/* <div className={styles['timeline-date-duration-even']}>
+                  <EventDuration διάρκειαΓεγονότοςΣεΗμέρες={διάρκειαΓεγονότοςΣεΗμέρες} />
+                </div> */}
+              </>
+            ) : (
+              <div className={styles['timeline-date-year']}>
+                {χρονολογίαΈναρξης}
+              </div>
             );
 
             const κείμενοΔεδομένωνH3 =
@@ -183,7 +215,9 @@ const TimelineItems = () => {
               τεχνολογίες.length !== 0 ? (
                 <div
                   className={
-                    styles['tech-container'] + ' ' + styles[`tech-${τεχνολογίες.length}`]
+                    styles['tech-container'] +
+                    ' ' +
+                    styles[`tech-${τεχνολογίες.length}`]
                   }
                 >
                   {τεχνολογίες.map((τεχνολογία) => {
@@ -206,6 +240,8 @@ const TimelineItems = () => {
                 μονόςΖυγόςΠάνωΓραμμή={μονόςΖυγόςΠάνωΓραμμή}
                 χρώμαΕίδους={χρώμαΕίδους}
                 κείμενοΧρονολογίας={κείμενοΧρονολογίας}
+                διάρκειαΓεγονότοςΣεΗμέρες={διάρκειαΓεγονότοςΣεΗμέρες}
+                ημέρεςΕβδομάδεςΜήνες={ημέρεςΕβδομάδεςΜήνες}
                 μονόςΖυγόςΔευτερεύουσαΓραμμή={μονόςΖυγόςΔευτερεύουσαΓραμμή}
                 κείμενοΔεδομένωνH3={κείμενοΔεδομένωνH3}
                 μεΉΧωρίςΔευτερεύουσαΓραμμή={μεΉΧωρίςΔευτερεύουσαΓραμμή}
@@ -220,7 +256,7 @@ const TimelineItems = () => {
                 τεχνολογίεςΓεγονότος={τεχνολογίεςΓεγονότος}
               ></Event>
             );
-        })}
+          })}
       </div>
     </>
   );
