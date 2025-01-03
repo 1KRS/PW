@@ -5,8 +5,7 @@ import { χρονολόγιο } from '@/db/χρονολόγιο';
 import TechIcon from '@/components/TechIcon';
 import EventMonth from './EventMonth';
 import Event from './Event';
-import EventDuration from './EventDuration';
-import TranslatedText from './TranslatedText';
+
 
 const TimelineItems = () => {
   return (
