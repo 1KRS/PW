@@ -190,7 +190,7 @@
   justify-content: start;
 }
 
-.χρονολόγιο-ημερομηνία-και-διάρκεια {
+.χρονικές-πληροφορίες {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -199,17 +199,17 @@
   font-size: 0.6vw;
 }
 
-.timeline-upper-line-odd .χρονολόγιο-ημερομηνία-και-διάρκεια {
+.timeline-upper-line-odd .χρονικές-πληροφορίες {
   padding: 0 0 0 0.3vw;
   border-left: 4px solid;
 }
 
-.timeline-upper-line-even .χρονολόγιο-ημερομηνία-και-διάρκεια {
+.timeline-upper-line-even .χρονικές-πληροφορίες {
   padding: 0 0.3vw 0 0;
   border-right: 4px solid;
 }
 
-.timeline-date {
+.ημερομηνία-γεγονότος {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,7 +223,7 @@
   display: none;
 }
 
-.χρονολόγιο-ημερομηνία-και-διάρκεια:hover .χρονολόγιο-διάρκεια {
+.χρονικές-πληροφορίες:hover .χρονολόγιο-διάρκεια {
   display: block;
 }
 
@@ -354,6 +354,9 @@
 }
 .event-info .sec-h6-gold:hover::after {
   color: var(--χρώμα-εργασίας);
+}
+.event-info .sec-h6-tirquaz:hover::after {
+  color: var(--χρώμα-έργων);
 }
 
 .timeline-content .event-text {
@@ -691,3 +694,5 @@
     transform: rotateX(0);
   }
 }
+
+/* event-info */
