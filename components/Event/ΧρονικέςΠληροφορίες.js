@@ -1,59 +1,44 @@
 import styles from '@/components/TimelineItems.module.css';
 
-import { στοιχείαΗμερομηνιών } from '@/utils/στοιχείαΗμερομηνιών';
-
 import ΔιάρκειαΓεγονότος from '@/components/Event/ΔιάρκειαΓεγονότος';
-import TranslatedText from '../TranslatedText';
 import EventMonth from './EventMonth';
 
-const ΧρονικέςΠληροφορίες = ({ μονός, έναρξη, λήξη }) => {
+import { στοιχείαΗμερομηνιών } from '@/utils/στοιχείαΗμερομηνιών';
+
+const ΧρονικέςΠληροφορίες = ({ στιγμή }) => {
+  const { ταυτότητα, γεγονός } = στιγμή;
+
+  const { έναρξη, λήξη } = γεγονός;
+
+  const μονός = ταυτότητα % 2 !== 0 ? true : false;
 
   const {
-    τρέχουσαΗμερομηνία,
-    τρέχονΈτος,
-    τρέχονΜήνας,
-    τρέχουσαΗμέρα,
-    ημερομηνίαΈναρξης,
-    ημερομηνίαΛήξης,
     μήναςΈναρξης,
-    μήναςΛήξης,
     χρονολογίαΈναρξης,
-    χρονολογίαΛήξης,
-    μελλοντικόΉΠαρελθοντικόΓεγονός,
-    διάρκειαΓεγονότοςΣεΗμέρες,
     αριθμόςΗμερώνΕβδομάδωνΜηνώνΕτών,
     ημέρεςΕβδομάδεςΜήνεςΈτη,
-    κείμενοΔιάρκειαςΓεγονότος,
   } = στοιχείαΗμερομηνιών(έναρξη, λήξη);
 
   const κείμενοΧρονολογίας = μονός ? (
     μήναςΈναρξης ? (
       <>
-        <div className={styles['timeline-date-year']}>
-          {χρονολογίαΈναρξης}
-        </div>
+        <div className={styles['timeline-date-year']}>{χρονολογίαΈναρξης}</div>
         <div className={styles['timeline-date-month-odd']}>
           <EventMonth έναρξη={έναρξη} />
         </div>
       </>
     ) : (
-      <div className={styles['timeline-date-year']}>
-        {χρονολογίαΈναρξης}
-      </div>
+      <div className={styles['timeline-date-year']}>{χρονολογίαΈναρξης}</div>
     )
   ) : μήναςΈναρξης ? (
     <>
       <div className={styles['timeline-date-month-even']}>
         <EventMonth έναρξη={έναρξη} />
       </div>
-      <div className={styles['timeline-date-year']}>
-        {χρονολογίαΈναρξης}
-      </div>
+      <div className={styles['timeline-date-year']}>{χρονολογίαΈναρξης}</div>
     </>
   ) : (
-    <div className={styles['timeline-date-year']}>
-      {χρονολογίαΈναρξης}
-    </div>
+    <div className={styles['timeline-date-year']}>{χρονολογίαΈναρξης}</div>
   );
 
   return (

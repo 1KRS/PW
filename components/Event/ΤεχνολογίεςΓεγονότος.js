@@ -2,7 +2,10 @@ import styles from '@/components/TimelineItems.module.css';
 import TranslatedText from '../TranslatedText';
 import TechIcon from '../TechIcon';
 
-const ΤεχνολογίεςΓεγονότος = ({ τεχνολογίες }) => {
+const ΤεχνολογίεςΓεγονότος = ({ στιγμή }) => {
+
+  const { τεχνολογίες } = στιγμή;
+
   return τεχνολογίες.length !== 0 ? (
     <div
       className={
