@@ -82,7 +82,7 @@
   border-radius: 50px;
 }
 
-.timeline-content {
+.περιεχόμενο-γεγονότος {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -93,107 +93,106 @@
   /* overflow: hidden; */
 }
 
-.timeline-content.μεΔευτερεύουσαΓραμμή {
+.περιεχόμενο-γεγονότος.μεΔευτερεύουσαΓραμμή {
   height: 9.5vh;
 }
 
-.timeline-content.χωρίςΔευτερεύουσαΓραμμή {
+.περιεχόμενο-γεγονότος.χωρίςΔευτερεύουσαΓραμμή {
   height: 8.2vh;
   justify-content: center;
 }
 
 
-.timeline-content:hover {
+.περιεχόμενο-γεγονότος:hover {
   justify-content: default;
   background-color: var(--second-bg-color);
   border: 2px solid var(--main-color);
   transition: 0.5s ease-in-out;
 }
 
-.timeline-content:not(:hover) {
+.περιεχόμενο-γεγονότος:not(:hover) {
   transition: 0.5s ease-in-out;
 }
 
-.timeline-content.finished-with-text.μεΜόνιμαΧρώματα,
-.timeline-content.finished-without-text.μεΜόνιμαΧρώματα {
+.περιεχόμενο-γεγονότος.ολοκληρωμένο-με-κείμενο.μεΜόνιμαΧρώματα,
+.περιεχόμενο-γεγονότος.ολοκληρωμένο-χωρίς-κείμενο.μεΜόνιμαΧρώματα {
   border: 2px solid var(--χρώμα-ολοκληρωμένου);
   box-shadow: 0 0 50px var(--χρώμα-ολοκληρωμένου);
 }
-.timeline-content:hover.finished-with-text,
-.timeline-content:hover.finished-without-text {
+.περιεχόμενο-γεγονότος:hover.ολοκληρωμένο-με-κείμενο,
+.περιεχόμενο-γεγονότος:hover.ολοκληρωμένο-χωρίς-κείμενο {
   border: 2px solid var(--χρώμα-ολοκληρωμένου);
   box-shadow: 0 0 50px var(--χρώμα-ολοκληρωμένου);
 }
-.timeline-content:hover.finished-with-text {
+.περιεχόμενο-γεγονότος:hover.ολοκληρωμένο-με-κείμενο {
   height: 16vh;
 }
-.timeline-content:hover.finished-without-text {
+.περιεχόμενο-γεγονότος:hover.ολοκληρωμένο-χωρίς-κείμενο {
   height: 9.5vh;
 }
-.timeline-content:hover.χωρίςΔευτερεύουσαΓραμμή.finished-without-text {
+.περιεχόμενο-γεγονότος:hover.χωρίςΔευτερεύουσαΓραμμή.ολοκληρωμένο-χωρίς-κείμενο {
   height: 8.2vh;
 }
 
-.timeline-content.unfinished-with-text.μεΜόνιμαΧρώματα,
-.timeline-content.unfinished-without-text.μεΜόνιμαΧρώματα {
+.περιεχόμενο-γεγονότος.παρατημένο-με-κείμενο.μεΜόνιμαΧρώματα,
+.περιεχόμενο-γεγονότος.παρατημένο-χωρίς-κείμενο.μεΜόνιμαΧρώματα {
   border: 2px solid var(--χρώμα-παρατημένου);
   box-shadow: 0 0 50px var(--χρώμα-παρατημένου);
 }
-.timeline-content:hover.unfinished-with-text,
-.timeline-content:hover.unfinished-without-text {
+.περιεχόμενο-γεγονότος:hover.παρατημένο-με-κείμενο,
+.περιεχόμενο-γεγονότος:hover.παρατημένο-χωρίς-κείμενο {
   border: 2px solid var(--χρώμα-παρατημένου);
   box-shadow: 0 0 50px var(--χρώμα-παρατημένου);
 }
-.timeline-content:hover.unfinished-with-text {
+.περιεχόμενο-γεγονότος:hover.παρατημένο-με-κείμενο {
   height: 16vh;
 }
-.timeline-content:hover.unfinished-without-text {
+.περιεχόμενο-γεγονότος:hover.παρατημένο-χωρίς-κείμενο {
   height: 9.5vh;
 }
-.timeline-content:hover.χωρίςΔευτερεύουσαΓραμμή.unfinished-without-text {
+.περιεχόμενο-γεγονότος:hover.χωρίςΔευτερεύουσαΓραμμή.παρατημένο-χωρίς-κείμενο {
   height: 8.2vh;
 }
 
-.timeline-content.in-progress-with-text.μεΜόνιμαΧρώματα,
-.timeline-content.in-progress-without-text.μεΜόνιμαΧρώματα {
+.περιεχόμενο-γεγονότος.εν-εξελίξει-με-κείμενο.μεΜόνιμαΧρώματα,
+.περιεχόμενο-γεγονότος.εν-εξελίξει-χωρίς-κείμενο.μεΜόνιμαΧρώματα {
   border: 2px solid var(--χρώμα-εν-εξελίξει);
   box-shadow: 0 0 50px var(--χρώμα-εν-εξελίξει);
 }
-.timeline-content:hover.in-progress-with-text,
-.timeline-content:hover.in-progress-without-text {
+.περιεχόμενο-γεγονότος:hover.εν-εξελίξει-με-κείμενο,
+.περιεχόμενο-γεγονότος:hover.εν-εξελίξει-χωρίς-κείμενο {
   border: 2px solid var(--χρώμα-εν-εξελίξει);
   box-shadow: 0 0 50px var(--χρώμα-εν-εξελίξει);
 }
-.timeline-content:hover.in-progress-with-text {
+.περιεχόμενο-γεγονότος:hover.εν-εξελίξει-με-κείμενο {
   height: 16vh;
 }
-.timeline-content:hover.in-progress-without-text {
+.περιεχόμενο-γεγονότος:hover.εν-εξελίξει-χωρίς-κείμενο {
   height: 9.5vh;
 }
-.timeline-content:hover.χωρίςΔευτερεύουσαΓραμμή.in-progress-without-text {
+.περιεχόμενο-γεγονότος:hover.χωρίςΔευτερεύουσαΓραμμή.εν-εξελίξει-χωρίς-κείμενο {
   height: 8.2vh;
 }
 
-.timeline-content.pending-with-text.μεΜόνιμαΧρώματα,
-.timeline-content.pending-without-text.μεΜόνιμαΧρώματα {
+.περιεχόμενο-γεγονότος.εν-αναμονή-με-κείμενο.μεΜόνιμαΧρώματα,
+.περιεχόμενο-γεγονότος.εν-αναμονή-χωρίς-κείμενο.μεΜόνιμαΧρώματα {
   border: 2px solid var(--χρώμα-εν-αναμονή);
   box-shadow: 0 0 50px var(--χρώμα-εν-αναμονή);
 }
-.timeline-content:hover.pending-with-text,
-.timeline-content:hover.pending-without-text {
+.περιεχόμενο-γεγονότος:hover.εν-αναμονή-με-κείμενο,
+.περιεχόμενο-γεγονότος:hover.εν-αναμονή-χωρίς-κείμενο {
   border: 2px solid var(--χρώμα-εν-αναμονή);
   box-shadow: 0 0 50px var(--χρώμα-εν-αναμονή);
 }
-.timeline-content:hover.pending-with-text {
+.περιεχόμενο-γεγονότος:hover.εν-αναμονή-με-κείμενο {
   height: 16vh;
 }
-.timeline-content:hover.pending-without-text {
+.περιεχόμενο-γεγονότος:hover.εν-αναμονή-χωρίς-κείμενο {
   height: 9.5vh;
 }
-.timeline-content:hover.χωρίςΔευτερεύουσαΓραμμή.pending-without-text {
+.περιεχόμενο-γεγονότος:hover.χωρίςΔευτερεύουσαΓραμμή.εν-αναμονή-χωρίς-κείμενο {
   height: 8.2vh;
 }
-
 
 
 .timeline-upper-line-odd,
@@ -233,6 +232,7 @@
   border-right: 4px solid;
 }
 
+
 .ημερομηνία-γεγονότος {
   display: flex;
   justify-content: center;
@@ -243,11 +243,11 @@
   gap: 0;
 }
 
-.χρονολόγιο-διάρκεια {
+.διάρκεια-γεγονότος {
   display: none;
 }
 
-.χρονικές-πληροφορίες:hover .χρονολόγιο-διάρκεια {
+.χρονικές-πληροφορίες:hover .διάρκεια-γεγονότος {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,7 +384,8 @@
   color: var(--χρώμα-έργων);
 }
 
-.timeline-content .event-text {
+
+.περιεχόμενο-γεγονότος .κείμενο-γεγονότος {
   color: var(--text-color);
   font-size: 0.8rem;
   font-weight: 300;
@@ -394,15 +395,18 @@
   transition: opacity 0.4s ease-in-out;
   transition-delay: 0.3s;
 }
-
-.timeline-content:hover.unfinished-with-text .event-text,
-.timeline-content:hover.finished-with-text .event-text,
-.timeline-content:hover.in-progress-with-text .event-text,
-.timeline-content:hover.pending-with-text .event-text{
+.περιεχόμενο-γεγονότος:hover.μεΔευτερεύουσαΓραμμή .κείμενο-γεγονότος{
   visibility: visible;
-  margin-top: 15px;
+  margin: 15px;
   opacity: 1;
 }
+.περιεχόμενο-γεγονότος:hover.μεΔευτερεύουσαΓραμμή .γεγονός-μονού-αριθμού.κείμενο-γεγονότος {
+  margin: 15px 10px 0 30px;
+}
+.περιεχόμενο-γεγονότος:hover.μεΔευτερεύουσαΓραμμή .γεγονός-ζυγού-αριθμού.κείμενο-γεγονότος {
+  margin: 15px 30px 0 10px;
+}
+
 
 .icons-container {
   --icons-container-length: 100%;
@@ -448,26 +452,26 @@
   border-bottom-right-radius: 27px;
 }
 
-.timeline-content:hover.unfinished-with-text .icons-container-left,
-.timeline-content:hover.unfinished-with-text .icons-container-right,
-.timeline-content:hover.finished-with-text .icons-container-left,
-.timeline-content:hover.finished-with-text .icons-container-right,
-.timeline-content:hover.in-progress-with-text .icons-container-left,
-.timeline-content:hover.in-progress-with-text .icons-container-right,
-.timeline-content:hover.pending-with-text .icons-container-left,
-.timeline-content:hover.pending-with-text .icons-container-right {
+.περιεχόμενο-γεγονότος:hover.παρατημένο-με-κείμενο .icons-container-left,
+.περιεχόμενο-γεγονότος:hover.παρατημένο-με-κείμενο .icons-container-right,
+.περιεχόμενο-γεγονότος:hover.ολοκληρωμένο-με-κείμενο .icons-container-left,
+.περιεχόμενο-γεγονότος:hover.ολοκληρωμένο-με-κείμενο .icons-container-right,
+.περιεχόμενο-γεγονότος:hover.εν-εξελίξει-με-κείμενο .icons-container-left,
+.περιεχόμενο-γεγονότος:hover.εν-εξελίξει-με-κείμενο .icons-container-right,
+.περιεχόμενο-γεγονότος:hover.εν-αναμονή-με-κείμενο .icons-container-left,
+.περιεχόμενο-γεγονότος:hover.εν-αναμονή-με-κείμενο .icons-container-right {
   opacity: 1;
   transition-delay: 0.5s;
 }
 
-.timeline-content:hover.unfinished-without-text .icons-container-left,
-.timeline-content:hover.unfinished-without-text .icons-container-right,
-.timeline-content:hover.finished-without-text .icons-container-left,
-.timeline-content:hover.finished-without-text .icons-container-right,
-.timeline-content:hover.in-progress-without-text .icons-container-left,
-.timeline-content:hover.in-progress-without-text .icons-container-right,
-.timeline-content:hover.pending-without-text .icons-container-left,
-.timeline-content:hover.pending-without-text .icons-container-right {
+.περιεχόμενο-γεγονότος:hover.παρατημένο-χωρίς-κείμενο .icons-container-left,
+.περιεχόμενο-γεγονότος:hover.παρατημένο-χωρίς-κείμενο .icons-container-right,
+.περιεχόμενο-γεγονότος:hover.ολοκληρωμένο-χωρίς-κείμενο .icons-container-left,
+.περιεχόμενο-γεγονότος:hover.ολοκληρωμένο-χωρίς-κείμενο .icons-container-right,
+.περιεχόμενο-γεγονότος:hover.εν-εξελίξει-χωρίς-κείμενο .icons-container-left,
+.περιεχόμενο-γεγονότος:hover.εν-εξελίξει-χωρίς-κείμενο .icons-container-right,
+.περιεχόμενο-γεγονότος:hover.εν-αναμονή-χωρίς-κείμενο .icons-container-left,
+.περιεχόμενο-γεγονότος:hover.εν-αναμονή-χωρίς-κείμενο .icons-container-right {
   opacity: 1;
   transition-delay: 0.2s;
 }
@@ -533,7 +537,7 @@
   width: 450px;
 }
 
-.timeline-content:hover .tech-container {
+.περιεχόμενο-γεγονότος:hover .tech-container {
   opacity: 1;
   bottom: -13px;
   transform: rotateX(0);
@@ -564,47 +568,47 @@
   transition: 0.7s ease-in-out;
 }
 
-.timeline-content:hover.finished-with-text .tech-container,
-.timeline-content:hover.finished-without-text .tech-container {
+.περιεχόμενο-γεγονότος:hover.ολοκληρωμένο-με-κείμενο .tech-container,
+.περιεχόμενο-γεγονότος:hover.ολοκληρωμένο-χωρίς-κείμενο .tech-container {
   border-bottom: 2px solid var(--χρώμα-ολοκληρωμένου);
 }
-.timeline-content:hover.finished-with-text .tech-container::before,
-.timeline-content:hover.finished-with-text .tech-container::after,
-.timeline-content:hover.finished-without-text .tech-container::before,
-.timeline-content:hover.finished-without-text .tech-container::after {
+.περιεχόμενο-γεγονότος:hover.ολοκληρωμένο-με-κείμενο .tech-container::before,
+.περιεχόμενο-γεγονότος:hover.ολοκληρωμένο-με-κείμενο .tech-container::after,
+.περιεχόμενο-γεγονότος:hover.ολοκληρωμένο-χωρίς-κείμενο .tech-container::before,
+.περιεχόμενο-γεγονότος:hover.ολοκληρωμένο-χωρίς-κείμενο .tech-container::after {
   border-top: 2px solid var(--χρώμα-ολοκληρωμένου);
 }
 
-.timeline-content:hover.unfinished-with-text .tech-container,
-.timeline-content:hover.unfinished-without-text .tech-container {
+.περιεχόμενο-γεγονότος:hover.παρατημένο-με-κείμενο .tech-container,
+.περιεχόμενο-γεγονότος:hover.παρατημένο-χωρίς-κείμενο .tech-container {
   border-bottom: 2px solid var(--χρώμα-παρατημένου);
 }
-.timeline-content:hover.unfinished-with-text .tech-container::before,
-.timeline-content:hover.unfinished-with-text .tech-container::after,
-.timeline-content:hover.unfinished-without-text .tech-container::before,
-.timeline-content:hover.unfinished-without-text .tech-container::after {
+.περιεχόμενο-γεγονότος:hover.παρατημένο-με-κείμενο .tech-container::before,
+.περιεχόμενο-γεγονότος:hover.παρατημένο-με-κείμενο .tech-container::after,
+.περιεχόμενο-γεγονότος:hover.παρατημένο-χωρίς-κείμενο .tech-container::before,
+.περιεχόμενο-γεγονότος:hover.παρατημένο-χωρίς-κείμενο .tech-container::after {
   border-top: 2px solid var(--χρώμα-παρατημένου);
 }
 
-.timeline-content:hover.in-progress-with-text .tech-container,
-.timeline-content:hover.in-progress-without-text .tech-container {
+.περιεχόμενο-γεγονότος:hover.εν-εξελίξει-με-κείμενο .tech-container,
+.περιεχόμενο-γεγονότος:hover.εν-εξελίξει-χωρίς-κείμενο .tech-container {
   border-bottom: 2px solid var(--χρώμα-εν-εξελίξει);
 }
-.timeline-content:hover.in-progress-with-text .tech-container::before,
-.timeline-content:hover.in-progress-with-text .tech-container::after,
-.timeline-content:hover.in-progress-without-text .tech-container::before,
-.timeline-content:hover.in-progress-without-text .tech-container::after {
+.περιεχόμενο-γεγονότος:hover.εν-εξελίξει-με-κείμενο .tech-container::before,
+.περιεχόμενο-γεγονότος:hover.εν-εξελίξει-με-κείμενο .tech-container::after,
+.περιεχόμενο-γεγονότος:hover.εν-εξελίξει-χωρίς-κείμενο .tech-container::before,
+.περιεχόμενο-γεγονότος:hover.εν-εξελίξει-χωρίς-κείμενο .tech-container::after {
   border-top: 2px solid var(--χρώμα-εν-εξελίξει);
 }
 
-.timeline-content:hover.pending-with-text .tech-container,
-.timeline-content:hover.pending-without-text .tech-container {
+.περιεχόμενο-γεγονότος:hover.εν-αναμονή-με-κείμενο .tech-container,
+.περιεχόμενο-γεγονότος:hover.εν-αναμονή-χωρίς-κείμενο .tech-container {
   border-bottom: 2px solid var(--χρώμα-εν-αναμονή);
 }
-.timeline-content:hover.pending-with-text .tech-container::before,
-.timeline-content:hover.pending-with-text .tech-container::after,
-.timeline-content:hover.pending-without-text .tech-container::before,
-.timeline-content:hover.pending-without-text .tech-container::after {
+.περιεχόμενο-γεγονότος:hover.εν-αναμονή-με-κείμενο .tech-container::before,
+.περιεχόμενο-γεγονότος:hover.εν-αναμονή-με-κείμενο .tech-container::after,
+.περιεχόμενο-γεγονότος:hover.εν-αναμονή-χωρίς-κείμενο .tech-container::before,
+.περιεχόμενο-γεγονότος:hover.εν-αναμονή-χωρίς-κείμενο .tech-container::after {
   border-top: 2px solid var(--χρώμα-εν-αναμονή);
 }
 
@@ -665,14 +669,14 @@
   transition-delay: 0.3s;
 } */
 
-/* .timeline-content:hover .icons-container{
+/* .περιεχόμενο-γεγονότος:hover .icons-container{
   bottom: var(--final-position);
   opacity: 1; 
   bottom: var(--initial-position);
   animation: 1s ease 0.5s forwards show-icons;
 }
 
-.timeline-content:not(:hover) .icons-container{
+.περιεχόμενο-γεγονότος:not(:hover) .icons-container{
   opacity: 1;
   bottom: var(--final-position);
   animation: 1s ease 0.5s forwards hide-icons;
@@ -720,4 +724,3 @@
   }
 }
 
-/* διάρκεια */

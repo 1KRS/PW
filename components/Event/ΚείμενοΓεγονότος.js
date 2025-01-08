@@ -8,11 +8,11 @@ const ΚείμενοΓεγονότος = ({ στιγμή }) => {
   const μονόςΑριθμός = ταυτότητα % 2 !== 0 ? true : false;
 
   return κείμενο !== '' && μονόςΑριθμός ? (
-    <p className={styles['event-text'] + ' ' + styles['event-text-right']}>
+    <p className={styles['γεγονός-μονού-αριθμού'] + ' ' + styles['κείμενο-γεγονότος']}>
       <TranslatedText>{κείμενο}</TranslatedText>
     </p>
   ) : (
-    <p className={styles['event-text'] + ' ' + styles['event-text-left']}>
+    <p className={styles['γεγονός-ζυγού-αριθμού'] + ' ' + styles['κείμενο-γεγονότος']}>
       <TranslatedText>{κείμενο}</TranslatedText>
     </p>
   );

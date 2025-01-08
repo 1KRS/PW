@@ -15,7 +15,7 @@ const ΠερίβλημαΓεγονότος = ({
   return (
     <div
       className={
-        styles['timeline-content'] +
+        styles['περιεχόμενο-γεγονότος'] +
         ' ' +
         styles[`${μεΉΧωρίςΔευτερεύουσαΓραμμή}`] +
         ' ' +
