@@ -30,9 +30,17 @@ const AppProvider = ({ children }) => {
     });
   };
 
+  const toggleEventColors = (showEventColors) => {
+    localStorage.setItem('showEventColors', !showEventColors);
+    dispatch({
+      type: 'TOGGLE_EVENT_COLORS',
+    });
+  };
+
+
   return (
     <AppContext.Provider
-      value={{ ...state, displayAlert, changeLanguage, changeBackground }}
+      value={{ ...state, displayAlert, changeLanguage, changeBackground, toggleEventColors }}
     >
       {children}
     </AppContext.Provider>

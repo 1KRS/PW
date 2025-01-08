@@ -1,6 +1,7 @@
 const initialState = {
   language: 'ελληνικά',
   programmingBackground: 'static',
+  showEventColors: false,
   isLoading: false,
   showAlert: false,
   alertType: '',

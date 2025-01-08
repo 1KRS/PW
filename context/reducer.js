@@ -46,6 +46,13 @@ const reducer = (state, action) => {
     };
   }
 
+  if (action.type === 'TOGGLE_EVENT_COLORS') {
+    return {
+      ...state,
+      showEventColors: !state.showEventColors,
+    };
+  }
+
   if (action.type === 'GET_CURRENT_USER_BEGIN') {
     return {
       ...state,
