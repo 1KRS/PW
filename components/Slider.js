@@ -7,12 +7,13 @@ import {
   TbBrandNextjs,
   TbBrandReactNative,
 } from 'react-icons/tb';
-import { IoLogoReact } from 'react-icons/io5';
 import { BiLogoMongodb, BiLogoPostgresql } from 'react-icons/bi';
 import { FaGitAlt, FaBootstrap } from 'react-icons/fa';
-import { SiEjs, SiExpress } from 'react-icons/si';
-import { RiNpmjsFill } from 'react-icons/ri';
 import { IoLogoGithub, IoLogoNodejs } from 'react-icons/io';
+import { IoLogoReact } from 'react-icons/io5';
+import { RiNpmjsFill } from 'react-icons/ri';
+import { SiEjs, SiExpress } from 'react-icons/si';
+import { TbBrandVercel } from 'react-icons/tb';
 
 // const technologies = [
 //   {
@@ -96,10 +97,8 @@ import { IoLogoGithub, IoLogoNodejs } from 'react-icons/io';
 // ];
 
 const Slider = () => {
-
   return (
     <div className={styles.wrapper}>
-
       {/* {technologies.map((tech) => {
 
         return (
@@ -156,21 +155,60 @@ const Slider = () => {
         </div>;
       })} */}
 
-      <div className={styles.item + ' ' + styles.item1} data-types='HTML'><TbBrandHtml5 className={styles['tech-icon']}/></div>
-      <div className={styles.item + ' ' + styles.item2} data-types='CSS'><TbBrandCss3 className={styles['tech-icon']}/></div>
-      <div className={styles.item + ' ' + styles.item3} data-types='JavaScript'><TbBrandJavascript className={styles['tech-icon']}/></div>
-      <div className={styles.item + ' ' + styles.item4} data-types='EJS'><SiEjs className={styles['tech-icon']}/></div>
-      <div className={styles.item + ' ' + styles.item5} data-types='ReactJS'><IoLogoReact className={styles['tech-icon']}/></div>
-      <div className={styles.item + ' ' + styles.item6} data-types='NextJS'><TbBrandNextjs className={styles['tech-icon']}/></div>
-      <div className={styles.item + ' ' + styles.item7} data-types='React Native'><TbBrandReactNative className={styles['tech-icon']}/></div>
-      <div className={styles.item + ' ' + styles.item8} data-types='MongoDB'><BiLogoMongodb className={styles['tech-icon']}/></div>
-      <div className={styles.item + ' ' + styles.item9} data-types='PostGre SQL'><BiLogoPostgresql className={styles['tech-icon']}/></div>
-      <div className={styles.item + ' ' + styles.item10} data-types='GIT'><FaGitAlt className={styles['tech-icon']}/></div>
-      <div className={styles.item + ' ' + styles.item11} data-types='GitHub'><IoLogoGithub className={styles['tech-icon']}/></div>
-      <div className={styles.item + ' ' + styles.item12} data-types='NodeJS'><IoLogoNodejs className={styles['tech-icon']}/></div>
-      <div className={styles.item + ' ' + styles.item13} data-types='NPM'><RiNpmjsFill className={styles['tech-icon']}/></div>
-      <div className={styles.item + ' ' + styles.item14} data-types='Express'><SiExpress className={styles['tech-icon']}/></div>
-      <div className={styles.item + ' ' + styles.item15} data-types='Bootstrap'><FaBootstrap className={styles['tech-icon']}/></div>
+      <div className={styles.item + ' ' + styles.item1} data-types="HTML">
+        <TbBrandHtml5 className={styles['tech-icon']} />
+      </div>
+      <div className={styles.item + ' ' + styles.item2} data-types="CSS">
+        <TbBrandCss3 className={styles['tech-icon']} />
+      </div>
+      <div className={styles.item + ' ' + styles.item3} data-types="JavaScript">
+        <TbBrandJavascript className={styles['tech-icon']} />
+      </div>
+      <div className={styles.item + ' ' + styles.item4} data-types="EJS">
+        <SiEjs className={styles['tech-icon']} />
+      </div>
+      <div className={styles.item + ' ' + styles.item5} data-types="ReactJS">
+        <IoLogoReact className={styles['tech-icon']} />
+      </div>
+      <div className={styles.item + ' ' + styles.item6} data-types="NextJS">
+        <TbBrandNextjs className={styles['tech-icon']} />
+      </div>
+      <div
+        className={styles.item + ' ' + styles.item7}
+        data-types="React Native"
+      >
+        <TbBrandReactNative className={styles['tech-icon']} />
+      </div>
+      <div className={styles.item + ' ' + styles.item8} data-types="MongoDB">
+        <BiLogoMongodb className={styles['tech-icon']} />
+      </div>
+      <div
+        className={styles.item + ' ' + styles.item9}
+        data-types="PostGre SQL"
+      >
+        <BiLogoPostgresql className={styles['tech-icon']} />
+      </div>
+      <div className={styles.item + ' ' + styles.item10} data-types="GIT">
+        <FaGitAlt className={styles['tech-icon']} />
+      </div>
+      <div className={styles.item + ' ' + styles.item11} data-types="GitHub">
+        <IoLogoGithub className={styles['tech-icon']} />
+      </div>
+      <div className={styles.item + ' ' + styles.item12} data-types="NodeJS">
+        <IoLogoNodejs className={styles['tech-icon']} />
+      </div>
+      <div className={styles.item + ' ' + styles.item13} data-types="NPM">
+        <RiNpmjsFill className={styles['tech-icon']} />
+      </div>
+      <div className={styles.item + ' ' + styles.item14} data-types="Express">
+        <SiExpress className={styles['tech-icon']} />
+      </div>
+      <div className={styles.item + ' ' + styles.item15} data-types="Bootstrap">
+        <FaBootstrap className={styles['tech-icon']} />
+      </div>
+      <div className={styles.item + ' ' + styles.item16} data-types="Vercel">
+        <TbBrandVercel className={styles['tech-icon']} />
+      </div>
     </div>
   );
 };

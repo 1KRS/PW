@@ -1,6 +1,6 @@
 .wrapper {
   --slide-item-width: 85px;
-  --tech-number: 15;
+  --tech-number: 16;
   position: relative;
   display: flex;
   justify-content: center;
