@@ -1,7 +1,7 @@
 import styles from '@/components/TimelineItems.module.css';
 
 import ΔιάρκειαΓεγονότος from '@/components/Event/ΔιάρκειαΓεγονότος';
-import EventMonth from './EventMonth';
+import ΜήναςΓεγονότος from './ΜήναςΓεγονότος';
 
 import { στοιχείαΗμερομηνιών } from '@/utils/στοιχείαΗμερομηνιών';
 
@@ -24,7 +24,7 @@ const ΧρονικέςΠληροφορίες = ({ στιγμή }) => {
       <>
         <div className={styles['timeline-date-year']}>{χρονολογίαΈναρξης}</div>
         <div className={styles['timeline-date-month-odd']}>
-          <EventMonth έναρξη={έναρξη} />
+          <ΜήναςΓεγονότος έναρξη={έναρξη} />
         </div>
       </>
     ) : (
@@ -33,7 +33,7 @@ const ΧρονικέςΠληροφορίες = ({ στιγμή }) => {
   ) : μήναςΈναρξης ? (
     <>
       <div className={styles['timeline-date-month-even']}>
-        <EventMonth έναρξη={έναρξη} />
+        <ΜήναςΓεγονότος έναρξη={έναρξη} />
       </div>
       <div className={styles['timeline-date-year']}>{χρονολογίαΈναρξης}</div>
     </>
