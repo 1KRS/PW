@@ -51,7 +51,7 @@ const Hero = () => {
           <Link href="#" className={styles.btn}>
             <TranslatedText>Πρόσληψη</TranslatedText>
           </Link>
-          <Link href="/contact" className={styles['btn-sec']}>
+          <Link href="/programming/contact" className={styles['btn-sec']}>
             <TranslatedText>Επικοινωνία</TranslatedText>
           </Link>
         </div>
