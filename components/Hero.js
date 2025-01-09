@@ -33,7 +33,7 @@ const Hero = () => {
       >
         {language === 'english' ? (
           <h1>
-            Hi, it's<pre> </pre>
+            Hi, it&apos;s<pre> </pre>
             <span> Dimitris</span>
           </h1>
         ) : language === 'svenska' ? (
