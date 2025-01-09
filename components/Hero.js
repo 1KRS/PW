@@ -11,6 +11,7 @@ import { useAppContext } from '@/context/AppContext';
 
 const Hero = () => {
   const { language, programmingBackground } = useAppContext();
+  
 
   return (
     <section
@@ -50,8 +51,7 @@ const Hero = () => {
 
         <h3>
           <TranslatedText>
-            Είμαι ένας νεαρός Πλήρους-Εύρους Προγραμματιστής Ιστού με προσήλωση
-            στην εξέλιξη και στόχο την βέλτιστη λύση.
+            Είμαι ένας νεαρός Πλήρους-Εύρους Προγραμματιστής Ιστού με προσήλωση στην εξέλιξη και στόχο την βέλτιστη λύση.
           </TranslatedText>
         </h3>
 
