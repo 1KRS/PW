@@ -1,9 +1,11 @@
-import { CircleFlag } from 'react-circle-flags';
+'use client'
+
 import styles from './LanguagesContainer.module.css';
-// import { useAppContext } from '../context/appContext';
+import { useAppContext } from '@/context/AppContext';
+import { CircleFlag } from 'react-circle-flags';
 
 const LanguagesContainer = () => {
-  // const { changeLanguage, isLoading } = useAppContext();
+  const { changeLanguage } = useAppContext();
 
   return (
     <div className={styles['']}>
@@ -12,9 +14,10 @@ const LanguagesContainer = () => {
           type="button"
           className={styles['flag-btn']}
           // disabled={isLoading}
-          // onClick={() => {
-          //   changeLanguage('ελληνικά');
-          // }}
+          onClick={() => {
+            changeLanguage('ελληνικά');
+          }}
+         
         >
           <CircleFlag
             countryCode="gr"
@@ -26,9 +29,9 @@ const LanguagesContainer = () => {
           type="button"
           className={styles['flag-btn']}
           // disabled={isLoading}
-          // onClick={() => {
-          //   changeLanguage('svenska');
-          // }}
+          onClick={() => {
+            changeLanguage('svenska');
+          }}
         >
           <CircleFlag
             countryCode="se"
@@ -40,9 +43,9 @@ const LanguagesContainer = () => {
           type="button"
           className={styles['flag-btn']}
           // disabled={isLoading}
-          // onClick={() => {
-          //   changeLanguage('english');
-          // }}
+          onClick={() => {
+            changeLanguage('english');
+          }}
         >
           <CircleFlag
             countryCode="uk"
