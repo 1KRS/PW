@@ -109,7 +109,7 @@ export const έννοιες = [
   { ελληνικά: 'ΕΠΙΣΤΡΟΦΗ', αγγλικά: 'RETURN', σουηδικά: 'LÄMNA TILLBAKA' },
   { 
     ελληνικά: 'Είμαι ένας νεαρός Πλήρους-Εύρους Προγραμματιστής Ιστού με προσήλωση στην εξέλιξη και στόχο την βέλτιστη λύση.', 
-    αγγλικά: 'I am a junior Full-Stack Web Developer with a commitment to development and aiming for the best solution.', 
+    αγγλικά: 'I am a junior Full-Stack Web Developer with a commitment to evolution and a constant aim for the best solution.', 
     σουηδικά: 'Jag är en junior Full-Stack Webbutvecklare med ett stort engagemang för utveckling och som strävar efter den bästa lösningen.' 
   },
   { ελληνικά: 'Είσαι ήδη μέλος; ', αγγλικά: 'Already a member? ', σουηδικά: 'Redan medlem? ' },
