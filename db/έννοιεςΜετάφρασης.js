@@ -90,6 +90,11 @@ export const έννοιες = [
     σουηδικά: 'Skapa sidan "FAQ"',
   },
   { 
+    ελληνικά: 'Δημιουργία σελίδας «Ρυθμίσεις»', 
+    αγγλικά: 'Create "Settings" page', 
+    σουηδικά: 'Skapa sidan "Inställningar"',
+  },
+  { 
     ελληνικά: 'Δημιουργία σελίδας «Σχετικά με τον Ιστότοπο»', 
     αγγλικά: 'Create "About the Website" page', 
     σουηδικά: 'Skapa sidan "Om Webbplatsen"',
@@ -113,6 +118,7 @@ export const έννοιες = [
   { ελληνικά: 'Εκκρεμούν', αγγλικά: 'Pending', σουηδικά: 'I Väntan På' },
   { ελληνικά: 'Σε εξέλιξη', αγγλικά: 'In progress', σουηδικά: 'In progress' },
   { ελληνικά: 'Εν αναμονή', αγγλικά: 'Pending', σουηδικά: 'I Väntan På' },
+  { ελληνικά: 'Ενεργοποίηση εμφάνισης πιστοποιητικών', αγγλικά: 'Enable display of certificates', σουηδικά: 'Aktivera visning av certifikat' },
   { ελληνικά: 'Ενεργοποίηση πλήκτρου «Επικοινωνία»', αγγλικά: 'Activate "Contact" button', σουηδικά: 'Aktivera knappen "Kontakt"' },
   { ελληνικά: 'Ενεργοποίηση πλήκτρου «Πρόσληψη»', αγγλικά: 'Activate the "Hire Me" button', σουηδικά: 'Aktivera knappen "Anställ Mig"' },
   { ελληνικά: 'Ενεργοποίηση Φόρμας Επικοινωνίας', αγγλικά: 'Contact Form Activation', σουηδικά: 'Aktivering av Kontaktformulär' },
@@ -125,11 +131,13 @@ export const έννοιες = [
   { ελληνικά: 'Επιτυχής διαγραφή εργασίας!', αγγλικά: 'Job deleted successfully!', σουηδικά: 'Jobb raderades!' },
   { ελληνικά: 'Επόμενη', αγγλικά: 'Next', σουηδικά: 'Νästa' },
   { ελληνικά: 'Επιμονή κατάστασης', αγγλικά: 'State persistence', σουηδικά: 'Statlig uthållighet' },
+  { ελληνικά: 'Επιστροφή στην αρχική σελίδα', αγγλικά: 'Return to home page', σουηδικά: 'Återgå till hemsidan' },
   { ελληνικά: 'Επώνυμο', αγγλικά: 'Surname', σουηδικά: 'Efternamn' },
   { ελληνικά: 'Εργασία', αγγλικά: 'Job', σουηδικά: 'Jobb' },
   { ελληνικά: 'Εργασίες', αγγλικά: 'Jobs', σουηδικά: 'Jobb' },
   { ελληνικά: 'Εταιρεία', αγγλικά: 'Company', σουηδικά: 'Företag' },
   { ελληνικά: 'Εταιρεία Εκπαίδευσης Προγραμματιστών', αγγλικά: 'Developer Training Company', σουηδικά: 'Utbildningsföretag för Utvecklare' },
+  { ελληνικά: 'Εφαρμογή Υαλομορφισμού', αγγλικά: 'Glassmorphism Application', σουηδικά: 'Tillämpning av Glasmorfism' },
   // Ζ //
   // Η //
   { ελληνικά: 'Η Εργασία Ενημερώθηκε!', αγγλικά: 'Job Updated!', σουηδικά: 'Jobb uppdaterat!' },
@@ -137,6 +145,7 @@ export const έννοιες = [
   { ελληνικά: 'Η εργασία των ονείρων μου.', αγγλικά: 'My dream job.', σουηδικά: 'Mitt drömjobb.' },
   { ελληνικά: 'Η διαδρομή (route) δεν υπάρχει!', αγγλικά: 'The route does not exist!', σουηδικά: 'Rutten finns inte!' },
   { ελληνικά: 'Η πόλη μου', αγγλικά: 'My city', σουηδικά: 'Min stad' },
+  { ελληνικά: 'Η σελίδα δεν βρέθηκε', αγγλικά: 'Page not found', σουηδικά: 'Sidan hittades inte' },
   { ελληνικά: 'Ηλεκτρονικό Ταχυδρομείο', αγγλικά: 'Electronic Mail', σουηδικά: 'Elektronisk Post' },
   { ελληνικά: 'Ηλ. Ταχυδρομείο', αγγλικά: 'E-Mail', σουηδικά: 'E-Post' },
   { ελληνικά: 'Ημιαπασχόληση', αγγλικά: 'Part-Time', σουηδικά: 'Deltid' },
@@ -152,6 +161,7 @@ export const έννοιες = [
     αγγλικά: 'Cleaning & tidying up the code', 
     σουηδικά: 'Rengöring och ordning av koden' 
   },
+  { ελληνικά: 'Κάποιο λάθος προέκυψε', αγγλικά: 'An error occurred', σουηδικά: 'Ett fel uppstod' },
   { ελληνικά: 'Καθαρισμός Φίλτρων', αγγλικά: 'Clear Filters', σουηδικά: 'Rensa Filter' },
   { ελληνικά: 'Κατάσταση Αίτησης', αγγλικά: 'Application Status', σουηδικά: 'Ansökningsstatus' },
   { ελληνικά: 'Κενό', αγγλικά: 'Null', σουηδικά: 'Noll' },
