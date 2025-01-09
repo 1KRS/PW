@@ -107,17 +107,23 @@ export const έννοιες = [
   { ελληνικά: 'Δυναμικό', αγγλικά: 'Dynamic', σουηδικά: 'Dynamisk' },
   // Ε //
   { ελληνικά: 'ΕΠΙΣΤΡΟΦΗ', αγγλικά: 'RETURN', σουηδικά: 'LÄMNA TILLBAKA' },
+  { 
+    ελληνικά: 'Είμαι ένας νεαρός Πλήρους-Εύρους Προγραμματιστής Ιστού με προσήλωση στην εξέλιξη και στόχο την βέλτιστη λύση.', 
+    αγγλικά: 'I am a junior Full-Stack Web Developer with a commitment to development and aiming for the best solution.', 
+    σουηδικά: 'Jag är en junior Full-Stack Webbutvecklare med ett stort engagemang för utveckling och som strävar efter den bästa lösningen.' 
+  },
   { ελληνικά: 'Είσαι ήδη μέλος; ', αγγλικά: 'Already a member? ', σουηδικά: 'Redan medlem? ' },
   { ελληνικά: 'Είσοδος', αγγλικά: 'Login', σουηδικά: 'Logga In' },
   { ελληνικά: 'Εγγράψου.', αγγλικά: 'Register.', σουηδικά: 'Registrera' },
   { ελληνικά: 'Εγγραφή', αγγλικά: 'Register', σουηδικά: 'Registrera' },
   { ελληνικά: 'Εγκρίθηκαν', αγγλικά: 'Approved', σουηδικά: 'Godkänd' },
   { ελληνικά: 'Εγκρίθηκε', αγγλικά: 'Approved', σουηδικά: 'Godkänd' },
+  { ελληνικά: 'Είμαι', αγγλικά: "I'm", σουηδικά: 'Jag är' },
   { ελληνικά: 'Εκκαθάριση', αγγλικά: 'Clear', σουηδικά: 'Klar' },
   { ελληνικά: 'Εκκρεμεί', αγγλικά: 'Pending', σουηδικά: 'I Väntan På' },
   { ελληνικά: 'Εκκρεμούν', αγγλικά: 'Pending', σουηδικά: 'I Väntan På' },
-  { ελληνικά: 'Σε εξέλιξη', αγγλικά: 'In progress', σουηδικά: 'In progress' },
   { ελληνικά: 'Εν αναμονή', αγγλικά: 'Pending', σουηδικά: 'I Väntan På' },
+  { ελληνικά: 'Εν εξελίξει', αγγλικά: 'In progress', σουηδικά: 'In progress' },
   { ελληνικά: 'Ενεργοποίηση εμφάνισης πιστοποιητικών', αγγλικά: 'Enable display of certificates', σουηδικά: 'Aktivera visning av certifikat' },
   { ελληνικά: 'Ενεργοποίηση πλήκτρου «Επικοινωνία»', αγγλικά: 'Activate "Contact" button', σουηδικά: 'Aktivera knappen "Kontakt"' },
   { ελληνικά: 'Ενεργοποίηση πλήκτρου «Πρόσληψη»', αγγλικά: 'Activate the "Hire Me" button', σουηδικά: 'Aktivera knappen "Anställ Mig"' },
@@ -208,6 +214,10 @@ export const έννοιες = [
   { ελληνικά: 'Πλήρους-Εύρους Ανάπτυξη Ιστού 2024', αγγλικά: 'Full-Stack Web Development 2024', σουηδικά: 'Full-Stack Webbutveckling 2024' },
   { ελληνικά: 'Πλήρους-Εύρους Javascript', αγγλικά: 'Full-Stack Javascript', σουηδικά: 'Full-Stack Javascript' },
   { ελληνικά: 'Πρακτική', αγγλικά: 'Internship', σουηδικά: 'Praktik' },
+  { ελληνικά: 'Προγραμματιστής Εφαρμογών', αγγλικά: 'Application Developer', σουηδικά: 'Applikationsutvecklare' },
+  { ελληνικά: 'Προγραμματιστής Ιστού', αγγλικά: 'Web Developer', σουηδικά: 'Webbutvecklare' },
+  { ελληνικά: 'Προγραμματιστής Μπροστά Μέρους', αγγλικά: 'Frontend Developer', σουηδικά: 'Frontend Utvecklare' },
+  { ελληνικά: 'Προγραμματιστής Πίσω Μέρους', αγγλικά: 'Backend Developer', σουηδικά: 'Backend Utvecklare' },
   { ελληνικά: 'Προγραμματιστής Πλήρους-Εύρους', αγγλικά: 'Full-Stack Developer', σουηδικά: 'Full-Stack Utvecklare' },
   { ελληνικά: 'Πρόγραμμα Εκκίνησης', αγγλικά: 'Bootcamp', σουηδικά: 'Bootcamp' },
   { ελληνικά: 'Προηγούμενη', αγγλικά: 'Previous ', σουηδικά: 'Tidigare' },
@@ -276,6 +286,7 @@ export const έννοιες = [
   { ελληνικά: 'Σύνδεση', αγγλικά: 'Login', σουηδικά: 'Logga In' },
   { ελληνικά: 'Συχνές Ερωτήσεις', αγγλικά: 'FAQ', σουηδικά: 'Vanliga Frågor' },
   { ελληνικά: 'Σχετικά με εμένα', αγγλικά: 'About me', σουηδικά: 'Om mig' },
+  { ελληνικά: 'Σχεδιαστής ΔΧ / ΕΧ', αγγλικά: 'UI / UX Designer', σουηδικά: 'UI / UX Designer' },
   // Τ //
   {
     ελληνικά: 'Τα Στοιχεία Χρήστη Ενημερώθηκαν!',
