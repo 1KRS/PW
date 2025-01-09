@@ -1,0 +1,81 @@
+.περιέκτης {
+  --container-height: 25px;
+  --container-width: 40px;
+  --container-padding: 0px;
+  --button-margin: 6px;
+  --border-thickness: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  padding: 0;
+}
+
+.πεδίο-επιλογής {
+  display: none;
+}
+
+.περίβλημα-πλήκτρο {
+  height: var(--container-height);
+  width: var(--container-width);
+  height: fit-content;
+  width: fit-content;
+  margin: 0;
+  border: var(--border-thickness) solid var(--main-color);
+  border-radius: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.περίβλημα-πλήκτρο:hover {
+  box-shadow: 0px 0px 15px var(--main-color);
+  animation: παλμός 1.5s ease-in-out infinite;
+}
+
+.πεδίο-επιλογής:checked + .περίβλημα-πλήκτρο {
+  box-shadow: 0px 0px 15px var(--main-color);
+  transition: 0.5s;
+}
+
+.πεδίο-επιλογής:checked + .περίβλημα-πλήκτρο:hover {
+  animation: none;
+  transition: 0.5s;
+}
+
+@keyframes παλμός {
+  0% {
+    box-shadow: 0px 0px 0px var(--main-color);
+  }
+  10% {
+    box-shadow: 0px 0px 3px var(--main-color);
+  }
+  20% {
+    box-shadow: 0px 0px 6px var(--main-color);
+  }
+  30% {
+    box-shadow: 0px 0px 9px var(--main-color);
+  }
+  40% {
+    box-shadow: 0px 0px 12px var(--main-color);
+  }
+  50% {
+    box-shadow: 0px 0px 15px var(--main-color);
+  }
+  60% {
+    box-shadow: 0px 0px 12px var(--main-color);
+  }
+  70% {
+    box-shadow: 0px 0px 9px var(--main-color);
+  }
+  80% {
+    box-shadow: 0px 0px 6px var(--main-color);
+  }
+  90% {
+    box-shadow: 0px 0px 3px var(--main-color);
+  }
+  100% {
+    box-shadow: 0px 0px 0px var(--main-color);
+  }
+}
