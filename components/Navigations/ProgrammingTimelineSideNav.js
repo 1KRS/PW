@@ -8,7 +8,7 @@ const ProgrammingTimelineSideNav = ({ σελίδα }) => {
 
   return (
     <nav className={styles['timeline-side-nav']}>
-      <ΠερίβλημαΠλήκτροΕπιμονήςΧρωμάτωνΓεγονότος>
+      <ΠερίβλημαΠλήκτροΕπιμονήςΧρωμάτωνΓεγονότος σελίδα={σελίδα}>
         <ul className={styles['εικονίδια']}>
           {σελίδα === 'Χρονολόγιο' && (
             <li className={styles['εικονίδιο']}>

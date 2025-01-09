@@ -29,9 +29,14 @@
   overflow: hidden;
 }
 
-.περίβλημα-πλήκτρο:hover {
+.περίβλημα-πλήκτρο:hover.μεΠαλμό {
   box-shadow: 0px 0px 15px var(--main-color);
   animation: παλμός 1.5s ease-in-out infinite;
+}
+
+.περίβλημα-πλήκτρο:hover.χωρίςΠαλμό {
+  box-shadow: 0px 0px 15px var(--main-color);
+  transition: 0.5s;
 }
 
 .πεδίο-επιλογής:checked + .περίβλημα-πλήκτρο {
