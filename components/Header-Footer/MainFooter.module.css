@@ -47,7 +47,8 @@
   transform: scale(1.1);
 }
 
-.footer .copyright {
+.footer .copyright-container {
+  display: flex;
   margin: 10px 0 6px;
   text-align: center;
   font-size: 0.8rem;

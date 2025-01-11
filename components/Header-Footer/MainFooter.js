@@ -1,10 +1,14 @@
 import Link from 'next/link';
 import styles from './MainFooter.module.css';
 
+import { στοιχείαΗμερομηνιών } from '@/utils/στοιχείαΗμερομηνιών';
+
 import SocialIcons from '../SocialIcons';
 import TranslatedText from '../TranslatedText';
 
 const MainFooter = () => {
+  const { τρέχονΈτος } = στοιχείαΗμερομηνιών();
+
   return (
     <footer className={styles.footer}>
       <nav className={styles['home-bottom-nav']}>
@@ -18,12 +22,11 @@ const MainFooter = () => {
           </Link>
         </ul>
       </nav>
-
-      <p className={styles.copyright}>
-        <TranslatedText>
-          Δημήτρης Μανωλόπουλος 2024 © Επιφύλαξη Παντός Δικαιώματος
-        </TranslatedText>
-      </p>
+      <div className={styles['copyright-container']}>
+        <TranslatedText>Δημήτρης Μανωλόπουλος</TranslatedText>
+        {` © ${τρέχονΈτος} `}
+        <TranslatedText>Επιφύλαξη Παντός Δικαιώματος</TranslatedText>
+      </div>
     </footer>
   );
 };
