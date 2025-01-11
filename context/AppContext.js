@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useReducer } from 'react';
+import { createContext, useContext, useReducer, useEffect } from 'react';
 import initialState from './initialState';
 import reducer from './reducer';
 
@@ -10,7 +10,10 @@ const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const displayAlert = (language) => {
-    dispatch({ type: 'DISPLAY_ALERT', payload: { language } });
+    dispatch({
+      type: 'DISPLAY_ALERT',
+      payload: { language },
+    });
     clearAlert();
   };
 
@@ -37,10 +40,28 @@ const AppProvider = ({ children }) => {
     });
   };
 
+  useEffect(() => {
+    const αποθηκευμένηΓλώσσα = localStorage.getItem('language');
+    const αποθηκευμένοΥπόβαθρο = localStorage.getItem('programming-background');
+
+    if (αποθηκευμένηΓλώσσα) {
+      changeLanguage(αποθηκευμένηΓλώσσα);
+    }
+    
+    if (αποθηκευμένοΥπόβαθρο) {
+      changeBackground(αποθηκευμένοΥπόβαθρο);
+    }
+  }, []);
 
   return (
     <AppContext.Provider
-      value={{ ...state, displayAlert, changeLanguage, changeBackground, toggleEventColors }}
+      value={{
+        ...state,
+        displayAlert,
+        changeLanguage,
+        changeBackground,
+        toggleEventColors,
+      }}
     >
       {children}
     </AppContext.Provider>
