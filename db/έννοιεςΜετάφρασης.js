@@ -215,7 +215,7 @@ export const έννοιες = [
   { ελληνικά: 'Παρακαλώ Περιμένετε...', αγγλικά: 'Please Wait...', σουηδικά: 'Vänta Snäll...' },
   { ελληνικά: 'Πλήρες Όνομα', αγγλικά: 'Full Name', σουηδικά: 'Fullständigt Namn' },
   { ελληνικά: 'Πλήρης Απασχόληση', αγγλικά: 'Full-Time', σουηδικά: 'Heltid' },
-  { ελληνικά: 'Πλήρης Οδηγός React 2024', αγγλικά: 'Complete React 2024 Guide', σουηδικά: 'React 2024 Komplett Guide' },
+  { ελληνικά: 'Πλήρης Οδηγός React 2024 & 2025', αγγλικά: 'Complete React 2024 & 2025 Guide', σουηδικά: 'React 2024 & 2025 Komplett Guide' },
   { ελληνικά: 'Πλήρους-Εύρους Ανάπτυξη Ιστού 2024', αγγλικά: 'Full-Stack Web Development 2024', σουηδικά: 'Full-Stack Webbutveckling 2024' },
   { ελληνικά: 'Πλήρους-Εύρους Javascript', αγγλικά: 'Full-Stack Javascript', σουηδικά: 'Full-Stack Javascript' },
   { ελληνικά: 'Πρακτική', αγγλικά: 'Internship', σουηδικά: 'Praktik' },
