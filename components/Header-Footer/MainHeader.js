@@ -14,7 +14,6 @@ const MainHeader = () => {
       </Link>
       <nav className={styles['home-top-nav']}>
         <ul className={styles.items}>
-          {/* <BackgroundToggle2 /> */}
           <LanguagesDropdown />
           {/* <Link href="/" className={styles.item}>Ιστορικό Ανάπτυξης</Link> */}
         </ul>
