@@ -30,17 +30,18 @@
 }
 
 .περίβλημα-πλήκτρο:hover.μεΠαλμό {
-  box-shadow: 0px 0px 15px var(--main-color);
+  box-shadow: 0px 0px 15px gold;
   animation: παλμός 1.5s ease-in-out infinite;
 }
 
 .περίβλημα-πλήκτρο:hover.χωρίςΠαλμό {
-  box-shadow: 0px 0px 15px var(--main-color);
+  box-shadow: 0px 0px 15px gold;
   transition: 0.5s;
 }
 
 .πεδίο-επιλογής:checked + .περίβλημα-πλήκτρο {
-  box-shadow: 0px 0px 15px var(--main-color);
+  border-color: gold;
+  box-shadow: 0px 0px 15px gold;
   transition: 0.5s;
 }
 
@@ -51,36 +52,36 @@
 
 @keyframes παλμός {
   0% {
-    box-shadow: 0px 0px 0px var(--main-color);
+    box-shadow: 0px 0px 0px gold;
   }
   10% {
-    box-shadow: 0px 0px 3px var(--main-color);
+    box-shadow: 0px 0px 3px gold;
   }
   20% {
-    box-shadow: 0px 0px 6px var(--main-color);
+    box-shadow: 0px 0px 6px gold;
   }
   30% {
-    box-shadow: 0px 0px 9px var(--main-color);
+    box-shadow: 0px 0px 9px gold;
   }
   40% {
-    box-shadow: 0px 0px 12px var(--main-color);
+    box-shadow: 0px 0px 12px gold;
   }
   50% {
-    box-shadow: 0px 0px 15px var(--main-color);
+    box-shadow: 0px 0px 15px gold;
   }
   60% {
-    box-shadow: 0px 0px 12px var(--main-color);
+    box-shadow: 0px 0px 12px gold;
   }
   70% {
-    box-shadow: 0px 0px 9px var(--main-color);
+    box-shadow: 0px 0px 9px gold;
   }
   80% {
-    box-shadow: 0px 0px 6px var(--main-color);
+    box-shadow: 0px 0px 6px gold;
   }
   90% {
-    box-shadow: 0px 0px 3px var(--main-color);
+    box-shadow: 0px 0px 3px gold;
   }
   100% {
-    box-shadow: 0px 0px 0px var(--main-color);
+    box-shadow: 0px 0px 0px gold;
   }
 }
