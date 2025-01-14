@@ -25,7 +25,9 @@ const στοιχείαΗμερομηνιών = (έναρξη, λήξη) => {
     ημερομηνίαΈναρξης =
       έναρξη.length === 4
         ? έναρξη
-        : DateTime.fromFormat(`${έναρξη}`, 'LL/yyyy');
+        : έναρξη.length === 7
+        ? DateTime.fromFormat(`${έναρξη}`, 'LL/yyyy')
+        : DateTime.fromFormat(`${έναρξη}`, 'dd/LL/yyyy');
 
     ημέραΈναρξης = έναρξη.split('/').length === 3 ? έναρξη.split('/')[0] : '';
 
@@ -51,7 +53,9 @@ const στοιχείαΗμερομηνιών = (έναρξη, λήξη) => {
   const ημερομηνίαΛήξης = λήξη
     ? λήξη.length === 4
       ? λήξη
-      : DateTime.fromFormat(`${λήξη}`, 'LL/yyyy')
+      : λήξη.length === 7
+      ? DateTime.fromFormat(`${λήξη}`, 'LL/yyyy')
+      : DateTime.fromFormat(`${λήξη}`, 'dd/LL/yyyy')
     : '';
 
   if (λήξη) {
