@@ -1,5 +1,5 @@
-import styles from './Heading.module.css';
-import TranslatedText from './TranslatedText';
+import styles from '@/components/Heading.module.css';
+import TranslatedText from '@/components/TranslatedText';
 
 const Heading = ({ text }) => {
   return (
