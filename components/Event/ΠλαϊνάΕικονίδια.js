@@ -1,15 +1,15 @@
 import styles from '@/components/TimelineItems.module.css';
-import Link from 'next/link';
+
+import ΕικονίδιοΠιστοποιητικούΓεγονότος from '@/components/Event/ΕικονίδιοΠιστοποιητικούΓεγονότος';
 
 import { TbCertificate, TbWorldWww } from 'react-icons/tb';
 
 const ΠλαϊνάΕικονίδια = ({ στιγμή }) => {
-
   const { ταυτότητα, γεγονός, οντότητα, σπουδές } = στιγμή;
 
   const { είδος } = γεγονός;
   const { ιστότοπος } = οντότητα;
-  const { φωτογραφίαΠιστοποιητικού } = σπουδές;
+  const { φωτογραφίαΕγγράφου } = σπουδές;
 
   const μονόςΑριθμός = ταυτότητα % 2 !== 0 ? true : false;
 
@@ -19,10 +19,10 @@ const ΠλαϊνάΕικονίδια = ({ στιγμή }) => {
         styles[`icons-container`] + ' ' + styles['icons-container-right']
       }
     >
-      {είδος === 'Εργασία' ? null : φωτογραφίαΠιστοποιητικού ? (
-        <Link href="">
-          <TbCertificate className={styles['icon-active']} />
-        </Link>
+      {είδος === 'Εργασία' ? null : φωτογραφίαΕγγράφου ? (
+        <ΕικονίδιοΠιστοποιητικούΓεγονότος
+          φωτογραφίαΕγγράφου={φωτογραφίαΕγγράφου}
+        />
       ) : (
         <TbCertificate className={styles['icon-inactive']} />
       )}
@@ -40,10 +40,10 @@ const ΠλαϊνάΕικονίδια = ({ στιγμή }) => {
         styles[`icons-container`] + ' ' + styles['icons-container-left']
       }
     >
-      {είδος === 'Εργασία' ? null : φωτογραφίαΠιστοποιητικού ? (
-        <Link href="">
-          <TbCertificate className={styles['icon-active']} />
-        </Link>
+      {είδος === 'Εργασία' ? null : φωτογραφίαΕγγράφου ? (
+        <ΕικονίδιοΠιστοποιητικούΓεγονότος
+          φωτογραφίαΕγγράφου={φωτογραφίαΕγγράφου}
+        />
       ) : (
         <TbCertificate className={styles['icon-inactive']} />
       )}
