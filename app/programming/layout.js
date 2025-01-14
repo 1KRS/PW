@@ -4,6 +4,8 @@ import ProgrammingSideNav from '@/components/Navigations/ProgrammingSideNav';
 import MainFooter from '@/components/Header-Footer/MainFooter';
 // import MainSubheader from '@/components/MainSubheader';
 import UnderConstructionRibbon from '@/components/UnderDevelopmentRibbon';
+import ΠιστοποιητικόΣεΠαράθυρο from '@/components/Modals/ΠιστοποιητικόΣεΠαράθυρο';
+
 
 export const metadata = {
   title: 'ΔΜ',
@@ -18,6 +20,8 @@ const ProgrammingLayout = ({ children }) => {
     <ProgrammingBackground>
       <MainHeader />
       <UnderConstructionRibbon />
+      <ΠιστοποιητικόΣεΠαράθυρο />
+
       {/* <MainSubheader /> */}
       <ProgrammingSideNav />
       {children}
