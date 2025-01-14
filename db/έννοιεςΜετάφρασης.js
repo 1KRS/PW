@@ -213,6 +213,7 @@ export const έννοιες = [
   { ελληνικά: 'Πανεπιστήμιο Κρήτης', αγγλικά: 'University of Crete', σουηδικά: 'Universitetet på Kreta' },
   { ελληνικά: 'Πανεπιστήμιο του Πόρτσμουθ', αγγλικά: 'University of Portsmouth', σουηδικά: 'Universitetet på Portsmouth' },
   { ελληνικά: 'Παρακαλώ Περιμένετε...', αγγλικά: 'Please Wait...', σουηδικά: 'Vänta Snäll...' },
+  { ελληνικά: 'Πιστοποιητικό', αγγλικά: 'Certificate', σουηδικά: 'Intyg' },
   { ελληνικά: 'Πλήρες Όνομα', αγγλικά: 'Full Name', σουηδικά: 'Fullständigt Namn' },
   { ελληνικά: 'Πλήρης Απασχόληση', αγγλικά: 'Full-Time', σουηδικά: 'Heltid' },
   { ελληνικά: 'Πλήρης Οδηγός React 2024 & 2025', αγγλικά: 'Complete React 2024 & 2025 Guide', σουηδικά: 'React 2024 & 2025 Komplett Guide' },
