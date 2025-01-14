@@ -9,6 +9,7 @@ const initialState = {
   showSidebar: false,
   technologies: [],
   totalTechnologies: 0,
+  certificate: '',
   search: '',
   searchStatus: 'Όλα',
   searchType: 'Όλα',

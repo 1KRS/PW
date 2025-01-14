@@ -40,6 +40,14 @@ const AppProvider = ({ children }) => {
     });
   };
 
+  const toggleCertificateModal = (certificate) => {
+    const paperLink = certificate ? certificate : '';
+    dispatch({
+      type: 'TOGGLE_CERTIFICATE_MODAL',
+      payload: { paperLink },
+    });
+  };
+
   useEffect(() => {
     const αποθηκευμένηΓλώσσα = localStorage.getItem('language');
     const αποθηκευμένοΥπόβαθρο = localStorage.getItem('programming-background');
@@ -47,7 +55,7 @@ const AppProvider = ({ children }) => {
     if (αποθηκευμένηΓλώσσα) {
       changeLanguage(αποθηκευμένηΓλώσσα);
     }
-    
+
     if (αποθηκευμένοΥπόβαθρο) {
       changeBackground(αποθηκευμένοΥπόβαθρο);
     }
@@ -61,6 +69,7 @@ const AppProvider = ({ children }) => {
         changeLanguage,
         changeBackground,
         toggleEventColors,
+        toggleCertificateModal,
       }}
     >
       {children}

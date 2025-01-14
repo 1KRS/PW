@@ -53,6 +53,13 @@ const reducer = (state, action) => {
     };
   }
 
+  if (action.type === 'TOGGLE_CERTIFICATE_MODAL') {
+    return {
+      ...state,
+      certificate: action.payload.paperLink,
+    };
+  }
+
   if (action.type === 'GET_CURRENT_USER_BEGIN') {
     return {
       ...state,
