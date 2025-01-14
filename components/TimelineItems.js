@@ -1,7 +1,6 @@
 import styles from '@/components/TimelineItems.module.css';
-import ΠεριεχόμενοΓεγονότος from '@/components/Event/ΠεριεχόμενοΓεγονότος';
 
-import ΤελείαΓεγονότος from '@/components/Event/ΤελείαΓεγονότος';
+import Γεγονός from '@/components/Event/Γεγονός';
 
 import { χρονολόγιο } from '@/db/χρονολόγιο';
 
@@ -13,10 +12,7 @@ const TimelineItems = () => {
           .filter((στιγμή) => στιγμή.γεγονός.κατηγορία === 'Προγραμματισμός')
           .map((στιγμή) => {
             return (
-              <article key={στιγμή.ταυτότητα} className={styles['timeline-item']}>
-                <ΤελείαΓεγονότος />
-                <ΠεριεχόμενοΓεγονότος στιγμή={στιγμή} />
-              </article>
+              <Γεγονός key={στιγμή.ταυτότητα} στιγμή={στιγμή} />
             );
           })}
       </div>
@@ -24,3 +20,4 @@ const TimelineItems = () => {
   );
 };
 export default TimelineItems;
+
