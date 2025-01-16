@@ -1,4 +1,4 @@
-.timeline-items {
+.στοιχεία-χρονολογίου {
   --χρώμα-σπουδών:rgb(197, 68, 84); 
   --χρώμα-εργασίας: rgb(0, 128, 255);
   --χρώμα-έργων: rgb(88, 0, 196);
@@ -23,28 +23,28 @@
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.timeline-items::-webkit-scrollbar {
+.στοιχεία-χρονολογίου::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.timeline-items {
+.στοιχεία-χρονολογίου {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
 
-.timeline-item {
+.γεγονός-χρονολογίου {
   position: relative;
   width: 100%;
   cursor: default;
 }
 
-.timeline-item:nth-child(odd) {
+.γεγονός-χρονολογίου:nth-child(odd) {
   padding-right: calc(50% + 1.5vw);
   text-align: right;
 }
 
-.timeline-item:nth-child(odd)::before {
+.γεγονός-χρονολογίου:nth-child(odd)::before {
   content: '';
   position: absolute;
   width: 0;
@@ -53,12 +53,12 @@
   left: calc(50%);
 }
 
-.timeline-item:nth-child(even) {
+.γεγονός-χρονολογίου:nth-child(even) {
   padding-left: calc(50% + 1.8vw);
   text-align: left;
 }
 
-.timeline-item:nth-child(even)::before {
+.γεγονός-χρονολογίου:nth-child(even)::before {
   content: '';
   position: absolute;
   width: 0;
@@ -67,11 +67,11 @@
   left: calc(50%);
 }
 
-.timeline-item:first-child {
+.γεγονός-χρονολογίου:first-child {
   margin-top: 0;
 }
 
-.timeline-item:last-child {
+.γεγονός-χρονολογίου:last-child {
   margin-bottom: 0;
 }
 

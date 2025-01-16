@@ -48,6 +48,13 @@ const AppProvider = ({ children }) => {
     });
   };
 
+  const changeEventFilter = (filterName) => {
+    dispatch({
+      type: 'CHANGE_EVENT_FILTER',
+      payload: { filterName },
+    });
+  };
+
   useEffect(() => {
     const αποθηκευμένηΓλώσσα = localStorage.getItem('language');
     const αποθηκευμένοΥπόβαθρο = localStorage.getItem('programming-background');
@@ -70,6 +77,7 @@ const AppProvider = ({ children }) => {
         changeBackground,
         toggleEventColors,
         toggleCertificateModal,
+        changeEventFilter,
       }}
     >
       {children}

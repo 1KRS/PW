@@ -1,15 +1,15 @@
 'use client';
 
-import styles from '@/components/TimelineItems.module.css';
+import styles from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου.module.css';
 import TranslatedText from '../TranslatedText';
 import { useAppContext } from '@/context/AppContext';
 
 import { μετάφραση } from '@/utils/μετάφραση';
 
-const ΠληροφορίεςΔευτερεύουσαςΓραμμής = ({ στιγμή, χρώμαΕίδους }) => {
+const ΠληροφορίεςΔευτερεύουσαςΓραμμής = ({ στιγμή, γεγονόςΣεΜονόΑριθμό, χρώμαΕίδους }) => {
   const { language } = useAppContext();
 
-  const { ταυτότητα, γεγονός, οντότητα, σπουδές, εργασία, τοποθεσία } = στιγμή;
+  const { γεγονός, οντότητα, σπουδές, εργασία, τοποθεσία } = στιγμή;
 
   const { είδος } = γεγονός;
   const { όνομα, τύπος } = οντότητα;
@@ -17,8 +17,6 @@ const ΠληροφορίεςΔευτερεύουσαςΓραμμής = ({ στι
   const { τύποςΣπουδών } = σπουδές;
 
   const { τομέαςΕργασίας } = εργασία;
-
-  const μονόςΑριθμός = ταυτότητα % 2 !== 0 ? true : false;
 
   const κείμενοΔεδομένωνH6Βασικό =
     είδος === 'Σπουδές' || είδος === 'Εργασία' ? όνομα : null;
@@ -44,7 +42,7 @@ const ΠληροφορίεςΔευτερεύουσαςΓραμμής = ({ στι
       ? null
       : null;
 
-  return μονόςΑριθμός ? (
+  return γεγονόςΣεΜονόΑριθμό ? (
     <>
       {
         <h6

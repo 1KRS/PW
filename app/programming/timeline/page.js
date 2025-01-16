@@ -1,8 +1,9 @@
 import styles from './page.module.css';
 
 import Heading from '@/components/Heading';
-import TimelineItems from '@/components/TimelineItems';
+import ΣτοιχείαΧρονολογίου from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου';
 import ProgrammingTimelineSideNav from '@/components/Navigations/ProgrammingTimelineSideNav';
+
 
 const Timeline = () => {
   return (
@@ -13,7 +14,7 @@ const Timeline = () => {
 
         <section className={styles.timeline} id="timeline">
           <div className={styles['timeline-container']}>
-            <TimelineItems />
+            <ΣτοιχείαΧρονολογίου />
           </div>
         </section>
       </main>

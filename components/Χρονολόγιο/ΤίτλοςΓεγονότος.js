@@ -1,5 +1,4 @@
-import styles from '@/components/TimelineItems.module.css';
-import TranslatedText from '../TranslatedText';
+import TranslatedText from '@/components/TranslatedText';
 
 const ΤίτλοςΓεγονότος = ({ στιγμή }) => {
   const { γεγονός, σπουδές, εργασία, έργο } = στιγμή;

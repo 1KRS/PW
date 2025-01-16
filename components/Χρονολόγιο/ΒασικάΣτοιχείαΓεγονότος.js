@@ -1,15 +1,13 @@
-import styles from '@/components/TimelineItems.module.css';
+import styles from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου.module.css';
 
 const ΒασικάΣτοιχείαΓεγονότος = ({
-  στιγμή,
+  γεγονόςΣεΜονόΑριθμό = { γεγονόςΣεΜονόΑριθμό },
   μεΉΧωρίςΔευτερεύουσαΓραμμή,
   children,
 }) => {
-  const { ταυτότητα } = στιγμή;
-
-  const μονόςΑριθμός = ταυτότητα % 2 !== 0 ? true : false;
-
-  const μονόςΖυγόςΔευτερεύουσαΓραμμή = μονόςΑριθμός ? 'event-odd' : 'event-even';
+  const μονόςΖυγόςΔευτερεύουσαΓραμμή = γεγονόςΣεΜονόΑριθμό
+    ? 'event-odd'
+    : 'event-even';
 
   return (
     <div

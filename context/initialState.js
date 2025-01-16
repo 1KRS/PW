@@ -2,6 +2,7 @@ const initialState = {
   language: 'ελληνικά',
   programmingBackground: 'static',
   showEventColors: false,
+  φίλτροΚατάστασηςΓεγονότωνΧρονολογίου: '',
   isLoading: false,
   showAlert: false,
   alertType: '',

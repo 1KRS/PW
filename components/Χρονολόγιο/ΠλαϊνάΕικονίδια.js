@@ -1,19 +1,17 @@
-import styles from '@/components/TimelineItems.module.css';
+import styles from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου.module.css';
 
-import ΕικονίδιοΠιστοποιητικούΓεγονότος from '@/components/Event/ΕικονίδιοΠιστοποιητικούΓεγονότος';
+import ΕικονίδιοΠιστοποιητικούΓεγονότος from '@/components/Χρονολόγιο/ΕικονίδιοΠιστοποιητικούΓεγονότος';
 
 import { TbCertificate, TbWorldWww } from 'react-icons/tb';
 
-const ΠλαϊνάΕικονίδια = ({ στιγμή }) => {
-  const { ταυτότητα, γεγονός, οντότητα, σπουδές } = στιγμή;
+const ΠλαϊνάΕικονίδια = ({ στιγμή, γεγονόςΣεΜονόΑριθμό }) => {
+  const { γεγονός, οντότητα, σπουδές } = στιγμή;
 
   const { είδος } = γεγονός;
   const { ιστότοπος } = οντότητα;
   const { φωτογραφίαΕγγράφου } = σπουδές;
 
-  const μονόςΑριθμός = ταυτότητα % 2 !== 0 ? true : false;
-
-  return μονόςΑριθμός ? (
+  return γεγονόςΣεΜονόΑριθμό ? (
     <div
       className={
         styles[`icons-container`] + ' ' + styles['icons-container-right']

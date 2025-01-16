@@ -60,6 +60,13 @@ const reducer = (state, action) => {
     };
   }
 
+  if (action.type === 'CHANGE_EVENT_FILTER') {
+    return {
+      ...state,
+      φίλτροΚατάστασηςΓεγονότωνΧρονολογίου: action.payload.filterName,
+    };
+  }
+
   if (action.type === 'GET_CURRENT_USER_BEGIN') {
     return {
       ...state,

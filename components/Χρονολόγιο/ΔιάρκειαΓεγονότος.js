@@ -1,4 +1,4 @@
-import styles from '@/components/TimelineItems.module.css';
+import styles from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου.module.css';
 
 import TranslatedText from '@/components/TranslatedText';
 import ΠοσοστόΥλοποίησης from '@/components/Ποσοστά/ΠοσοστόΥλοποίησης';

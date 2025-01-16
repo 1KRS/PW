@@ -1,4 +1,4 @@
-import styles from '@/components/TimelineItems.module.css';
+import styles from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου.module.css';
 
 const ΤελείαΓεγονότος = () => {
 

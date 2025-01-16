@@ -1,13 +1,11 @@
-import styles from '@/components/TimelineItems.module.css';
+import styles from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου.module.css';
 import TranslatedText from '../TranslatedText';
 
-const ΚείμενοΓεγονότος = ({ στιγμή }) => {
+const ΚείμενοΓεγονότος = ({ στιγμή, γεγονόςΣεΜονόΑριθμό }) => {
 
-  const { ταυτότητα, κείμενο } = στιγμή;
+  const { κείμενο } = στιγμή;
 
-  const μονόςΑριθμός = ταυτότητα % 2 !== 0 ? true : false;
-
-  return κείμενο !== '' && μονόςΑριθμός ? (
+  return κείμενο !== '' && γεγονόςΣεΜονόΑριθμό ? (
     <p className={styles['γεγονός-μονού-αριθμού'] + ' ' + styles['κείμενο-γεγονότος']}>
       <TranslatedText>{κείμενο}</TranslatedText>
     </p>

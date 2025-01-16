@@ -1,6 +1,6 @@
 'use client';
 
-import styles from '@/components/TimelineItems.module.css';
+import styles from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου.module.css';
 import { useAppContext } from '@/context/AppContext';
 
 const ΠερίβλημαΓεγονότος = ({
@@ -9,7 +9,7 @@ const ΠερίβλημαΓεγονότος = ({
   children,
 }) => {
   const { showEventColors } = useAppContext();
-  
+
   const μόνιμαΧρώματαΉΠροσωρινά = showEventColors ? 'μεΜόνιμαΧρώματα' : '';
 
   return (
