@@ -4,7 +4,7 @@
 
 @media (min-width: 40rem) {
   .timeline-side-nav {
-    --χρώμα-σπουδών:rgb(197, 68, 84); 
+    --χρώμα-σπουδών: rgb(197, 68, 84);
     --χρώμα-εργασίας: rgb(0, 128, 255);
     --χρώμα-έργων: rgb(88, 0, 196);
     --χρώμα-ολοκληρωμένου: rgb(0, 187, 0);
@@ -48,21 +48,6 @@
     width: 150px;
   }
 
-  .εικονίδιο {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    gap: 5px;
-    transition: 0.3s ease-in;
-  }
-
-  .εικονίδιο:hover {
-    transform: scale(115%);
-    transition: 0.3s ease-in;
-    cursor: pointer;
-  }
-
   .εικονίδια .κείμενο {
     visibility: hidden;
     opacity: 0;
@@ -100,6 +85,4 @@
     color: var(--χρώμα-έργων);
     transform: rotateZ(90deg);
   }
-
- 
 }
