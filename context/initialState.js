@@ -2,7 +2,6 @@ const initialState = {
   language: 'ελληνικά',
   programmingBackground: 'static',
   showEventColors: false,
-  // φίλτροΚατηγορίαςΧρονολογίου: 'Προγραμματισμός',
   φίλτροΚατάστασηςΓεγονότωνΧρονολογίου: '',
   isLoading: false,
   showAlert: false,
