@@ -27,7 +27,7 @@
     height: 100%;
     z-index: 150;
   }
-
+  
   .εικονίδια {
     position: relative;
     display: flex;
@@ -38,6 +38,7 @@
     width: 55px;
     padding: 15px;
     gap: 1.5vh;
+    background-color: var(--second-bg-color-blurred);
     list-style: none;
     transition: 0.3s ease-in;
   }
