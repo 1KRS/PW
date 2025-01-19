@@ -31,8 +31,16 @@ export const έννοιες = [
   { ελληνικά: 'Α -> Ω', αγγλικά: 'A -> Z', σουηδικά: 'A -> Ö' },
   { ελληνικά: 'Αιτήσεις', αγγλικά: 'Applications', σουηδικά: 'Applikationer' },
   { ελληνικά: 'Αλλαγή', αγγλικά: 'Edit', σουηδικά: 'Redigera' },
-  { ελληνικά: 'Αλλαγή Γραφήματος', αγγλικά: 'Change Chart', σουηδικά: 'Ändra Diagram' },
-  { ελληνικά: 'Ανάπτυξη Εφαρμογών', αγγλικά: 'Application Development', σουηδικά: 'Applikationsutveckling' },
+  {
+    ελληνικά: 'Αλλαγή Γραφήματος',
+    αγγλικά: 'Change Chart',
+    σουηδικά: 'Ändra Diagram',
+  },
+  {
+    ελληνικά: 'Ανάπτυξη Εφαρμογών',
+    αγγλικά: 'Application Development',
+    σουηδικά: 'Applikationsutveckling',
+  },
   {
     ελληνικά: 'Αλλαγή εμφάνισης πλήκτρου δυναμικού υποβάθρου',
     αγγλικά: 'Change the appearance of the dynamic background button',
@@ -43,76 +51,155 @@ export const έννοιες = [
     αγγλικά: 'Change background color of dynamic background',
     σουηδικά: 'Ändra bakgrundsfärgen för den dynamiska bakgrunden',
   },
-  { ελληνικά: 'Ανάπτυξη Ιστού', αγγλικά: 'Web Development', σουηδικά: 'Webbutveckling' },
-  { ελληνικά: 'Ανάπτυξη κώδικα φίλτρων', αγγλικά: 'Filter code development', σουηδικά: 'Utveckla filterkod' },
+  {
+    ελληνικά: 'Ανάπτυξη Ιστού',
+    αγγλικά: 'Web Development',
+    σουηδικά: 'Webbutveckling',
+  },
+  {
+    ελληνικά: 'Ανάπτυξη κώδικα φίλτρων',
+    αγγλικά: 'Filter code development',
+    σουηδικά: 'Utveckla filterkod',
+  },
   { ελληνικά: 'Αναζήτηση', αγγλικά: 'Search', σουηδικά: 'Sök' },
   { ελληνικά: 'Παρατημένα', αγγλικά: 'Abandoned', σουηδικά: 'Övergiven' },
-  { ελληνικά: 'Ανώτατο Εκπαιδευτικό Ίδρυμα', αγγλικά: 'Higher Educational Institution', σουηδικά: 'Högre Läroanstalt' },
+  {
+    ελληνικά: 'Ανώτατο Εκπαιδευτικό Ίδρυμα',
+    αγγλικά: 'Higher Educational Institution',
+    σουηδικά: 'Högre Läroanstalt',
+  },
   { ελληνικά: 'Αποθήκευση', αγγλικά: 'Submit', σουηδικά: 'Skicka In' },
-  { ελληνικά: 'Αποθήκευση Αλλαγών', αγγλικά: 'Save Changes', σουηδικά: 'Spara Ändringar' },
-  { ελληνικά: 'Αποκρινόμενος σχεδιασμός', αγγλικά: 'Responsive design', σουηδικά: 'Responsiv design' },
+  {
+    ελληνικά: 'Αποθήκευση Αλλαγών',
+    αγγλικά: 'Save Changes',
+    σουηδικά: 'Spara Ändringar',
+  },
+  {
+    ελληνικά: 'Αποκρινόμενος σχεδιασμός',
+    αγγλικά: 'Responsive design',
+    σουηδικά: 'Responsiv design',
+  },
   { ελληνικά: 'Απομακρυσμένα', αγγλικά: 'Remotely', σουηδικά: 'Avlägset' },
   { ελληνικά: 'Απομακρυσμένη', αγγλικά: 'Remote', σουηδικά: 'Avlägsen' },
   { ελληνικά: 'Απορρίφθηκαν', αγγλικά: 'Rejected', σουηδικά: 'Avvisade' },
   { ελληνικά: 'Απορρίφθηκε', αγγλικά: 'Rejected', σουηδικά: 'Avvisade' },
-  { ελληνικά: 'Αποστολή Μηνύματος', αγγλικά: 'Send Message', σουηδικά: 'Skicka Meddelande' },
-  { ελληνικά: 'Αποτυχία Αυθεντικοποίησης', αγγλικά: 'Authentication Failure', σουηδικά: 'Misslyckad autentisering' },
-  { ελληνικά: 'Αρ. Τηλεφώνου', αγγλικά: 'Ph. Number', σουηδικά: 'Telefonnummer' },
-  { ελληνικά: 'Αριθμός Τηλεφώνου', αγγλικά: 'Phone Number', σουηδικά: 'Telefonnummer' },
+  {
+    ελληνικά: 'Αποστολή Μηνύματος',
+    αγγλικά: 'Send Message',
+    σουηδικά: 'Skicka Meddelande',
+  },
+  {
+    ελληνικά: 'Αποτυχία Αυθεντικοποίησης',
+    αγγλικά: 'Authentication Failure',
+    σουηδικά: 'Misslyckad autentisering',
+  },
+  {
+    ελληνικά: 'Αρ. Τηλεφώνου',
+    αγγλικά: 'Ph. Number',
+    σουηδικά: 'Telefonnummer',
+  },
+  {
+    ελληνικά: 'Αριθμός Τηλεφώνου',
+    αγγλικά: 'Phone Number',
+    σουηδικά: 'Telefonnummer',
+  },
   { ελληνικά: 'Αρχική Σελίδα', αγγλικά: 'Home Page', σουηδικά: 'Hemsida' },
-  { ελληνικά: 'Αυτοκινητοβιομηχανία', αγγλικά: 'Automotive Industry', σουηδικά: 'Bilindustrin' },
+  {
+    ελληνικά: 'Αυτοκινητοβιομηχανία',
+    αγγλικά: 'Automotive Industry',
+    σουηδικά: 'Bilindustrin',
+  },
   // Β //
   { ελληνικά: 'Βάση Δεδομένων', αγγλικά: 'Database', σουηδικά: 'Databas' },
   // Γ //
   { ελληνικά: 'για', αγγλικά: 'for', σουηδικά: 'för' },
-  { ελληνικά: 'Γράφημα Περιοχής', αγγλικά: 'Area Chart', σουηδικά: 'Områdesdiagram' },
-  { ελληνικά: 'Γράψτε το μήνυμά σας στα ελληνικά.', αγγλικά: 'Write your message in greek or in english.', σουηδικά: 'Skriv ditt meddelande på grekiska eller engelska.' },
+  {
+    ελληνικά: 'Γράφημα Περιοχής',
+    αγγλικά: 'Area Chart',
+    σουηδικά: 'Områdesdiagram',
+  },
+  {
+    ελληνικά: 'Γράψτε το μήνυμά σας στα ελληνικά.',
+    αγγλικά: 'Write your message in greek or in english.',
+    σουηδικά: 'Skriv ditt meddelande på grekiska eller engelska.',
+  },
   { ελληνικά: 'Γραφείο', αγγλικά: 'Office', σουηδικά: 'Kontor' },
   // Δ //
-  { ελληνικά: 'Δεν βρέθηκαν εργασίες...', αγγλικά: 'No jobs found...', σουηδικά: 'Inga jobb hittades...' },
-  { ελληνικά: 'Δεν είσαι μέλος; ', αγγλικά: 'Not a member? ', σουηδικά: 'Inte en medlem? ' },
+  {
+    ελληνικά: 'Δεν βρέθηκαν εργασίες...',
+    αγγλικά: 'No jobs found...',
+    σουηδικά: 'Inga jobb hittades...',
+  },
+  {
+    ελληνικά: 'Δεν είσαι μέλος; ',
+    αγγλικά: 'Not a member? ',
+    σουηδικά: 'Inte en medlem? ',
+  },
   {
     ελληνικά: 'Δεν επιτρέπονται οι αλλαγές στην «Λειτουργία Επίδειξης».',
     αγγλικά: 'Changes are not allowed in «Demo Mode».',
     σουηδικά: 'Ändringar är inte tillåtna i «Demoläge».',
   },
-  { ελληνικά: 'Δευτεροβάθμια Εκπαίδευση', αγγλικά: 'Secondary Education', σουηδικά: 'Gymnasieutbildning' },
-  { 
-    ελληνικά: 'Δημήτρης Μανωλόπουλος', 
-    αγγλικά: 'Dimitris Manolopoulos', 
+  {
+    ελληνικά: 'Δευτεροβάθμια Εκπαίδευση',
+    αγγλικά: 'Secondary Education',
+    σουηδικά: 'Gymnasieutbildning',
+  },
+  {
+    ελληνικά: 'Δημήτρης Μανωλόπουλος',
+    αγγλικά: 'Dimitris Manolopoulos',
     σουηδικά: 'Dimitris Manolopoulos',
   },
-  { ελληνικά: 'Δημιουργία Λογότυπου', αγγλικά: 'Logo Creation', σουηδικά: 'Skapa En Logotyp' },
-  { ελληνικά: 'Δημιουργία πλήκτρου μόνιμης εμφάνισης χρωμάτων', αγγλικά: 'Create a color permanent display button', σουηδικά: 'Skapa en permanent färgdisplaynyckel' },
-  { 
-    ελληνικά: 'Δημιουργία σελίδας «Συχνές Ερωτήσεις»', 
-    αγγλικά: 'Create "FAQ" page', 
+  {
+    ελληνικά: 'Δημιουργία Λογότυπου',
+    αγγλικά: 'Logo Creation',
+    σουηδικά: 'Skapa En Logotyp',
+  },
+  {
+    ελληνικά: 'Δημιουργία πλήκτρου μόνιμης εμφάνισης χρωμάτων',
+    αγγλικά: 'Create a color permanent display button',
+    σουηδικά: 'Skapa en permanent färgdisplaynyckel',
+  },
+  {
+    ελληνικά: 'Δημιουργία σελίδας «Συχνές Ερωτήσεις»',
+    αγγλικά: 'Create "FAQ" page',
     σουηδικά: 'Skapa sidan "FAQ"',
   },
-  { 
-    ελληνικά: 'Δημιουργία σελίδας «Ρυθμίσεις»', 
-    αγγλικά: 'Create "Settings" page', 
+  {
+    ελληνικά: 'Δημιουργία σελίδας «Ρυθμίσεις»',
+    αγγλικά: 'Create "Settings" page',
     σουηδικά: 'Skapa sidan "Inställningar"',
   },
-  { 
-    ελληνικά: 'Δημιουργία σελίδας «Σχετικά με τον Ιστότοπο»', 
-    αγγλικά: 'Create "About the Website" page', 
+  {
+    ελληνικά: 'Δημιουργία σελίδας «Σχετικά με τον Ιστότοπο»',
+    αγγλικά: 'Create "About the Website" page',
     σουηδικά: 'Skapa sidan "Om Webbplatsen"',
   },
   { ελληνικά: 'Διαγραφή', αγγλικά: 'Delete', σουηδικά: 'Radera' },
   { ελληνικά: 'Δοκιμής', αγγλικά: 'Test', σουηδικά: 'Testa' },
-  { ελληνικά: 'Διαδικτυακή Βιβλιοθήκη Εκμάθησης', αγγλικά: 'Online Learning Library', σουηδικά: 'Online Lärande Bibliotek' },
+  {
+    ελληνικά: 'Διαδικτυακή Βιβλιοθήκη Εκμάθησης',
+    αγγλικά: 'Online Learning Library',
+    σουηδικά: 'Online Lärande Bibliotek',
+  },
   { ελληνικά: 'Δια ζώσης', αγγλικά: 'In person', σουηδικά: 'För livet' },
   { ελληνικά: 'Δυναμική', αγγλικά: 'Dynamic', σουηδικά: 'Dynamisk' },
   { ελληνικά: 'Δυναμικό', αγγλικά: 'Dynamic', σουηδικά: 'Dynamisk' },
   // Ε //
   { ελληνικά: 'ΕΠΙΣΤΡΟΦΗ', αγγλικά: 'RETURN', σουηδικά: 'LÄMNA TILLBAKA' },
-  { 
-    ελληνικά: 'Είμαι ένας νεαρός Πλήρους-Εύρους Προγραμματιστής Ιστού με προσήλωση στην εξέλιξη και στόχο την βέλτιστη λύση.', 
-    αγγλικά: 'I am a junior Full-Stack Web Developer with a commitment to evolution and a constant aim for the best solution.', 
-    σουηδικά: 'Jag är en junior Full-Stack Webbutvecklare med ett stort engagemang för utveckling och som strävar efter den bästa lösningen.' 
+  {
+    ελληνικά:
+      'Είμαι ένας νεαρός Πλήρους-Εύρους Προγραμματιστής Ιστού με προσήλωση στην εξέλιξη και στόχο την βέλτιστη λύση.',
+    αγγλικά:
+      'I am a junior Full-Stack Web Developer with a commitment to evolution and a constant aim for the best solution.',
+    σουηδικά:
+      'Jag är en junior Full-Stack Webbutvecklare med ett stort engagemang för utveckling och som strävar efter den bästa lösningen.',
   },
-  { ελληνικά: 'Είσαι ήδη μέλος; ', αγγλικά: 'Already a member? ', σουηδικά: 'Redan medlem? ' },
+  {
+    ελληνικά: 'Είσαι ήδη μέλος; ',
+    αγγλικά: 'Already a member? ',
+    σουηδικά: 'Redan medlem? ',
+  },
   { ελληνικά: 'Είσοδος', αγγλικά: 'Login', σουηδικά: 'Logga In' },
   { ελληνικά: 'Εγγράψου.', αγγλικά: 'Register.', σουηδικά: 'Registrera' },
   { ελληνικά: 'Εγγραφή', αγγλικά: 'Register', σουηδικά: 'Registrera' },
@@ -124,68 +211,184 @@ export const έννοιες = [
   { ελληνικά: 'Εκκρεμούν', αγγλικά: 'Pending', σουηδικά: 'I Väntan På' },
   { ελληνικά: 'Εν αναμονή', αγγλικά: 'Pending', σουηδικά: 'I Väntan På' },
   { ελληνικά: 'Εν εξελίξει', αγγλικά: 'In progress', σουηδικά: 'Pågår' },
-  { ελληνικά: 'Ενεργοποίηση εμφάνισης πιστοποιητικών', αγγλικά: 'Enable display of certificates', σουηδικά: 'Aktivera visning av certifikat' },
-  { ελληνικά: 'Ενεργοποίηση πλήκτρου «Επικοινωνία»', αγγλικά: 'Activate "Contact" button', σουηδικά: 'Aktivera knappen "Kontakt"' },
-  { ελληνικά: 'Ενεργοποίηση πλήκτρου «Πρόσληψη»', αγγλικά: 'Activate the "Hire Me" button', σουηδικά: 'Aktivera knappen "Anställ Mig"' },
-  { ελληνικά: 'Ενεργοποίηση Φόρμας Επικοινωνίας', αγγλικά: 'Contact Form Activation', σουηδικά: 'Aktivering av Kontaktformulär' },
-  { ελληνικά: 'Επίδειξη Εφαρμογής', αγγλικά: 'Application Demo', σουηδικά: 'Applikationsdemo' },
-  { ελληνικά: 'Επεξεργασία Εργασίας', αγγλικά: 'Edit Job', σουηδικά: 'Redigera Jobb' },
-  { ελληνικά: 'Επιδιόρθωση τρεμοπαίγματος σε safari', αγγλικά: 'Fix flickering in safari', σουηδικά: 'Åtgärda flimmer i safari' },
+  {
+    ελληνικά: 'Ενεργοποίηση εμφάνισης πιστοποιητικών',
+    αγγλικά: 'Enable display of certificates',
+    σουηδικά: 'Aktivera visning av certifikat',
+  },
+  {
+    ελληνικά: 'Ενεργοποίηση πλήκτρου «Επικοινωνία»',
+    αγγλικά: 'Activate "Contact" button',
+    σουηδικά: 'Aktivera knappen "Kontakt"',
+  },
+  {
+    ελληνικά: 'Ενεργοποίηση πλήκτρου «Πρόσληψη»',
+    αγγλικά: 'Activate the "Hire Me" button',
+    σουηδικά: 'Aktivera knappen "Anställ Mig"',
+  },
+  {
+    ελληνικά: 'Ενεργοποίηση Φόρμας Επικοινωνίας',
+    αγγλικά: 'Contact Form Activation',
+    σουηδικά: 'Aktivering av Kontaktformulär',
+  },
+  {
+    ελληνικά: 'Επίδειξη Εφαρμογής',
+    αγγλικά: 'Application Demo',
+    σουηδικά: 'Applikationsdemo',
+  },
+  {
+    ελληνικά: 'Επεξεργασία Εργασίας',
+    αγγλικά: 'Edit Job',
+    σουηδικά: 'Redigera Jobb',
+  },
+  {
+    ελληνικά: 'Επιδιόρθωση τρεμοπαίγματος σε safari',
+    αγγλικά: 'Fix flickering in safari',
+    σουηδικά: 'Åtgärda flimmer i safari',
+  },
   { ελληνικά: 'Επικοινωνία', αγγλικά: 'Contact', σουηδικά: 'Kontakt' },
-  { ελληνικά: 'Επιτυχής Έξοδος Χρήστη!', αγγλικά: 'User Logout Successful!', σουηδικά: 'Utloggning av användare lyckades!' },
-  { ελληνικά: 'Επιτυχής Είσοδος! Ανακατεύθυνση...', αγγλικά: 'Login Successful! Redirect...', σουηδικά: 'Inloggningen lyckades! Dirigera om...' },
-  { ελληνικά: 'Επιτυχής διαγραφή εργασίας!', αγγλικά: 'Job deleted successfully!', σουηδικά: 'Jobb raderades!' },
-  { 
-    ελληνικά: 'Επιφύλαξη Παντός Δικαιώματος', 
-    αγγλικά: 'All Rights Reserved', 
+  {
+    ελληνικά: 'Επιτυχής Έξοδος Χρήστη!',
+    αγγλικά: 'User Logout Successful!',
+    σουηδικά: 'Utloggning av användare lyckades!',
+  },
+  {
+    ελληνικά: 'Επιτυχής Είσοδος! Ανακατεύθυνση...',
+    αγγλικά: 'Login Successful! Redirect...',
+    σουηδικά: 'Inloggningen lyckades! Dirigera om...',
+  },
+  {
+    ελληνικά: 'Επιτυχής διαγραφή εργασίας!',
+    αγγλικά: 'Job deleted successfully!',
+    σουηδικά: 'Jobb raderades!',
+  },
+  {
+    ελληνικά: 'Επιφύλαξη Παντός Δικαιώματος',
+    αγγλικά: 'All Rights Reserved',
     σουηδικά: 'Med Ensamrätt',
   },
   { ελληνικά: 'Επόμενη', αγγλικά: 'Next', σουηδικά: 'Νästa' },
-  { ελληνικά: 'Επιμονή κατάστασης', αγγλικά: 'State persistence', σουηδικά: 'Statlig uthållighet' },
-  { ελληνικά: 'Επιστροφή στην αρχική σελίδα', αγγλικά: 'Return to home page', σουηδικά: 'Återgå till hemsidan' },
+  {
+    ελληνικά: 'Επιμονή κατάστασης',
+    αγγλικά: 'State persistence',
+    σουηδικά: 'Statlig uthållighet',
+  },
+  {
+    ελληνικά: 'Επιστροφή στην αρχική σελίδα',
+    αγγλικά: 'Return to home page',
+    σουηδικά: 'Återgå till hemsidan',
+  },
   { ελληνικά: 'Επώνυμο', αγγλικά: 'Surname', σουηδικά: 'Efternamn' },
   { ελληνικά: 'Εργασία', αγγλικά: 'Job', σουηδικά: 'Jobb' },
   { ελληνικά: 'Εργασίες', αγγλικά: 'Jobs', σουηδικά: 'Jobb' },
   { ελληνικά: 'Εταιρεία', αγγλικά: 'Company', σουηδικά: 'Företag' },
-  { ελληνικά: 'Εταιρεία Εκπαίδευσης Προγραμματιστών', αγγλικά: 'Developer Training Company', σουηδικά: 'Utbildningsföretag för Utvecklare' },
-  { ελληνικά: 'Εφαρμογή Υαλομορφισμού', αγγλικά: 'Glassmorphism Application', σουηδικά: 'Tillämpning av Glasmorfism' },
+  {
+    ελληνικά: 'Εταιρεία Εκπαίδευσης Προγραμματιστών',
+    αγγλικά: 'Developer Training Company',
+    σουηδικά: 'Utbildningsföretag för Utvecklare',
+  },
+  {
+    ελληνικά: 'Εφαρμογή Υαλομορφισμού',
+    αγγλικά: 'Glassmorphism Application',
+    σουηδικά: 'Tillämpning av Glasmorfism',
+  },
   // Ζ //
   // Η //
-  { ελληνικά: 'Η Εργασία Ενημερώθηκε!', αγγλικά: 'Job Updated!', σουηδικά: 'Jobb uppdaterat!' },
-  { ελληνικά: 'Η Εργασία Προστέθηκε!', αγγλικά: 'Job Added!', σουηδικά: 'Jobb tillagt!' },
-  { ελληνικά: 'Η εργασία των ονείρων μου.', αγγλικά: 'My dream job.', σουηδικά: 'Mitt drömjobb.' },
-  { ελληνικά: 'Η διαδρομή (route) δεν υπάρχει!', αγγλικά: 'The route does not exist!', σουηδικά: 'Rutten finns inte!' },
+  {
+    ελληνικά: 'Η Εργασία Ενημερώθηκε!',
+    αγγλικά: 'Job Updated!',
+    σουηδικά: 'Jobb uppdaterat!',
+  },
+  {
+    ελληνικά: 'Η Εργασία Προστέθηκε!',
+    αγγλικά: 'Job Added!',
+    σουηδικά: 'Jobb tillagt!',
+  },
+  {
+    ελληνικά: 'Η εργασία των ονείρων μου.',
+    αγγλικά: 'My dream job.',
+    σουηδικά: 'Mitt drömjobb.',
+  },
+  {
+    ελληνικά: 'Η διαδρομή (route) δεν υπάρχει!',
+    αγγλικά: 'The route does not exist!',
+    σουηδικά: 'Rutten finns inte!',
+  },
   { ελληνικά: 'Η πόλη μου', αγγλικά: 'My city', σουηδικά: 'Min stad' },
-  { ελληνικά: 'Η σελίδα δεν βρέθηκε', αγγλικά: 'Page not found', σουηδικά: 'Sidan hittades inte' },
-  { ελληνικά: 'Ηλεκτρονικό Ταχυδρομείο', αγγλικά: 'Electronic Mail', σουηδικά: 'Elektronisk Post' },
+  {
+    ελληνικά: 'Η σελίδα δεν βρέθηκε',
+    αγγλικά: 'Page not found',
+    σουηδικά: 'Sidan hittades inte',
+  },
+  {
+    ελληνικά: 'Ηλεκτρονικό Ταχυδρομείο',
+    αγγλικά: 'Electronic Mail',
+    σουηδικά: 'Elektronisk Post',
+  },
   { ελληνικά: 'Ηλ. Ταχυδρομείο', αγγλικά: 'E-Mail', σουηδικά: 'E-Post' },
   { ελληνικά: 'Ημιαπασχόληση', αγγλικά: 'Part-Time', σουηδικά: 'Deltid' },
   // Θ //
   { ελληνικά: 'Θέμα', αγγλικά: 'Subject', σουηδικά: 'Ämne' },
-  { ελληνικά: 'Θέση Εργασίας', αγγλικά: 'Job Position', σουηδικά: 'Befattning' },
-  { ελληνικά: 'Θετικών & Τεχνολογικών Επιστημών', αγγλικά: 'Sciences & Technology', σουηδικά: 'Positiva & Tekniska Vetenskaper' },
+  {
+    ελληνικά: 'Θέση Εργασίας',
+    αγγλικά: 'Job Position',
+    σουηδικά: 'Befattning',
+  },
+  {
+    ελληνικά: 'Θετικών & Τεχνολογικών Επιστημών',
+    αγγλικά: 'Sciences & Technology',
+    σουηδικά: 'Positiva & Tekniska Vetenskaper',
+  },
   // Ι //
   { ελληνικά: 'Ιστότοπο', αγγλικά: 'Website', σουηδικά: 'Webbplats' },
   // Κ //
-  { 
-    ελληνικά: 'Καθαρισμός & τακτοποίηση του κώδικα', 
-    αγγλικά: 'Cleaning & tidying up the code', 
-    σουηδικά: 'Rengöring och ordning av koden' 
+  {
+    ελληνικά: 'Καθαρισμός & τακτοποίηση του κώδικα',
+    αγγλικά: 'Cleaning & tidying up the code',
+    σουηδικά: 'Rengöring och ordning av koden',
   },
-  { ελληνικά: 'Κάποιο λάθος προέκυψε', αγγλικά: 'An error occurred', σουηδικά: 'Ett fel uppstod' },
-  { ελληνικά: 'Καθαρισμός Φίλτρων', αγγλικά: 'Clear Filters', σουηδικά: 'Rensa Filter' },
-  { ελληνικά: 'Κατάσταση Αίτησης', αγγλικά: 'Application Status', σουηδικά: 'Ansökningsstatus' },
+  {
+    ελληνικά:
+      'Κατανοώ ότι θέλεις να μάθεις περισσότερα για εμένα (και γιατί όχι άλλωστε; Είμαι πολύ ενδιαφέρον άτομο. 😏) αλλά η ανάπτυξη αυτού του μέρους είναι ακόμη σε βασικό επίπεδο. Προς το παρόν μπορείς να απολαύσεις την πορεία μου στον προγραμματισμό και σύντομα θα ολοκληρωθούν κι άλλα.',
+    αγγλικά:
+      "I understand that you want to know more about me (and why not? I'm a very interesting person. 😏) but the development of this part is still at a basic level. For now you can enjoy my programming journey and more will be completed soon.",
+    σουηδικά:
+      'Jag förstår att du vill veta mer om mig (och varför inte? Jag är en mycket intressant person. 😏) men utvecklingen av denna del är fortfarande på en grundläggande nivå. För nu kan du njuta av min programmeringsresa och mer kommer att slutföras snart.',
+  },
+  {
+    ελληνικά: 'Κάποιο λάθος προέκυψε',
+    αγγλικά: 'An error occurred',
+    σουηδικά: 'Ett fel uppstod',
+  },
+  {
+    ελληνικά: 'Καθαρισμός Φίλτρων',
+    αγγλικά: 'Clear Filters',
+    σουηδικά: 'Rensa Filter',
+  },
+  {
+    ελληνικά: 'Κατάσταση Αίτησης',
+    αγγλικά: 'Application Status',
+    σουηδικά: 'Ansökningsstatus',
+  },
   { ελληνικά: 'Κενό', αγγλικά: 'Null', σουηδικά: 'Noll' },
   { ελληνικά: 'Κομμάτι', αγγλικά: 'Component', σουηδικά: 'Komponent' },
   { ελληνικά: 'Κολλέγιο DEI', αγγλικά: 'DEI College', σουηδικά: 'DEI College' },
   { ελληνικά: 'Κωδικός', αγγλικά: 'Password', σουηδικά: 'Lösenord' },
   // Λ //
-  { ελληνικά: 'Λάθος στοιχεία.', αγγλικά: 'Wrong data.', σουηδικά: 'Fel data.' },
+  {
+    ελληνικά: 'Λάθος στοιχεία.',
+    αγγλικά: 'Wrong data.',
+    σουηδικά: 'Fel data.',
+  },
   { ελληνικά: 'Λειτουργία', αγγλικά: 'Function', σουηδικά: 'Funktion' },
   // Μ //
   { ελληνικά: 'Μαρτυρίες', αγγλικά: 'Testimonials', σουηδικά: 'Vittnesmål' },
   { ελληνικά: 'Μετάφραση', αγγλικά: 'Translation', σουηδικά: 'Översättning' },
-  { ελληνικά: 'Μηνιαία Δεδομένα', αγγλικά: 'Monthly Data', σουηδικά: 'Månadsdata' },
+  {
+    ελληνικά: 'Μηνιαία Δεδομένα',
+    αγγλικά: 'Monthly Data',
+    σουηδικά: 'Månadsdata',
+  },
   // Ν //
   { ελληνικά: 'Ναι', αγγλικά: 'Yes', σουηδικά: 'Ja' },
   { ελληνικά: 'Νεότερες', αγγλικά: 'Newest', σουηδικά: 'Nyaste' },
@@ -196,7 +399,11 @@ export const έννοιες = [
     αγγλικά: 'User Created! Redirect...',
     σουηδικά: 'Användare skapad! Dirigera om...',
   },
-  { ελληνικά: 'Οδηγός Ανάπτυξης Εφαρμογών iOS', αγγλικά: 'iOS Application Development Guide', σουηδικά: 'Utvecklingsguide för iOS-Appar' },
+  {
+    ελληνικά: 'Οδηγός Ανάπτυξης Εφαρμογών iOS',
+    αγγλικά: 'iOS Application Development Guide',
+    σουηδικά: 'Utvecklingsguide för iOS-Appar',
+  },
   { ελληνικά: 'Ολοκληρωμένα', αγγλικά: 'Completed', σουηδικά: 'Avslutad' },
   { ελληνικά: 'Οργάνωση', αγγλικά: 'Sort', σουηδικά: 'Sortera' },
   // Π //
@@ -210,24 +417,80 @@ export const έννοιες = [
   },
   { ελληνικά: 'Πίνακας', αγγλικά: 'Dashboard', σουηδικά: 'Instrumentbräda' },
   { ελληνικά: 'Παλαιότερες', αγγλικά: 'Oldest', σουηδικά: 'Äldst' },
-  { ελληνικά: 'Πανεπιστήμιο Κρήτης', αγγλικά: 'University of Crete', σουηδικά: 'Universitetet på Kreta' },
-  { ελληνικά: 'Πανεπιστήμιο του Πόρτσμουθ', αγγλικά: 'University of Portsmouth', σουηδικά: 'Universitetet på Portsmouth' },
-  { ελληνικά: 'Παρακαλώ Περιμένετε...', αγγλικά: 'Please Wait...', σουηδικά: 'Vänta Snäll...' },
+  {
+    ελληνικά: 'Πανεπιστήμιο Κρήτης',
+    αγγλικά: 'University of Crete',
+    σουηδικά: 'Universitetet på Kreta',
+  },
+  {
+    ελληνικά: 'Πανεπιστήμιο του Πόρτσμουθ',
+    αγγλικά: 'University of Portsmouth',
+    σουηδικά: 'Universitetet på Portsmouth',
+  },
+  {
+    ελληνικά: 'Παρακαλώ Περιμένετε...',
+    αγγλικά: 'Please Wait...',
+    σουηδικά: 'Vänta Snäll...',
+  },
   { ελληνικά: 'Πιστοποιητικό', αγγλικά: 'Certificate', σουηδικά: 'Intyg' },
-  { ελληνικά: 'Πλήρες Όνομα', αγγλικά: 'Full Name', σουηδικά: 'Fullständigt Namn' },
+  {
+    ελληνικά: 'Πλήρες Όνομα',
+    αγγλικά: 'Full Name',
+    σουηδικά: 'Fullständigt Namn',
+  },
   { ελληνικά: 'Πλήρης Απασχόληση', αγγλικά: 'Full-Time', σουηδικά: 'Heltid' },
-  { ελληνικά: 'Πλήρης Οδηγός React 2024 & 2025', αγγλικά: 'Complete React 2024 & 2025 Guide', σουηδικά: 'React 2024 & 2025 Komplett Guide' },
-  { ελληνικά: 'Πλήρους-Εύρους Ανάπτυξη Ιστού 2024', αγγλικά: 'Full-Stack Web Development 2024', σουηδικά: 'Full-Stack Webbutveckling 2024' },
-  { ελληνικά: 'Πλήρους-Εύρους Javascript', αγγλικά: 'Full-Stack Javascript', σουηδικά: 'Full-Stack Javascript' },
+  {
+    ελληνικά: 'Πλήρης Οδηγός React 2024 & 2025',
+    αγγλικά: 'Complete React 2024 & 2025 Guide',
+    σουηδικά: 'React 2024 & 2025 Komplett Guide',
+  },
+  {
+    ελληνικά: 'Πλήρους-Εύρους Ανάπτυξη Ιστού 2024',
+    αγγλικά: 'Full-Stack Web Development 2024',
+    σουηδικά: 'Full-Stack Webbutveckling 2024',
+  },
+  {
+    ελληνικά: 'Πλήρους-Εύρους Javascript',
+    αγγλικά: 'Full-Stack Javascript',
+    σουηδικά: 'Full-Stack Javascript',
+  },
   { ελληνικά: 'Πρακτική', αγγλικά: 'Internship', σουηδικά: 'Praktik' },
-  { ελληνικά: 'Προγραμματιστής Εφαρμογών', αγγλικά: 'Application Developer', σουηδικά: 'Applikationsutvecklare' },
-  { ελληνικά: 'Προγραμματιστής Ιστού', αγγλικά: 'Web Developer', σουηδικά: 'Webbutvecklare' },
-  { ελληνικά: 'Προγραμματιστής Μπροστά Μέρους', αγγλικά: 'Frontend Developer', σουηδικά: 'Frontend Utvecklare' },
-  { ελληνικά: 'Προγραμματιστής Πίσω Μέρους', αγγλικά: 'Backend Developer', σουηδικά: 'Backend Utvecklare' },
-  { ελληνικά: 'Προγραμματιστής Πλήρους-Εύρους', αγγλικά: 'Full-Stack Developer', σουηδικά: 'Full-Stack Utvecklare' },
-  { ελληνικά: 'Πρόγραμμα Εκκίνησης', αγγλικά: 'Bootcamp', σουηδικά: 'Bootcamp' },
+  {
+    ελληνικά: 'Προγραμματιστής Εφαρμογών',
+    αγγλικά: 'Application Developer',
+    σουηδικά: 'Applikationsutvecklare',
+  },
+  {
+    ελληνικά: 'Προγραμματιστής Ιστού',
+    αγγλικά: 'Web Developer',
+    σουηδικά: 'Webbutvecklare',
+  },
+  {
+    ελληνικά: 'Προγραμματιστής Μπροστά Μέρους',
+    αγγλικά: 'Frontend Developer',
+    σουηδικά: 'Frontend Utvecklare',
+  },
+  {
+    ελληνικά: 'Προγραμματιστής Πίσω Μέρους',
+    αγγλικά: 'Backend Developer',
+    σουηδικά: 'Backend Utvecklare',
+  },
+  {
+    ελληνικά: 'Προγραμματιστής Πλήρους-Εύρους',
+    αγγλικά: 'Full-Stack Developer',
+    σουηδικά: 'Full-Stack Utvecklare',
+  },
+  {
+    ελληνικά: 'Πρόγραμμα Εκκίνησης',
+    αγγλικά: 'Bootcamp',
+    σουηδικά: 'Bootcamp',
+  },
   { ελληνικά: 'Προηγούμενη', αγγλικά: 'Previous ', σουηδικά: 'Tidigare' },
-  { ελληνικά: 'Προς Υλοποίηση', αγγλικά: 'To Be Implemented', σουηδικά: 'För Implementering' },
+  {
+    ελληνικά: 'Προς Υλοποίηση',
+    αγγλικά: 'To Be Implemented',
+    σουηδικά: 'För Implementering',
+  },
   {
     ελληνικά: 'Προσθήκη επιλογών φίλτρου',
     αγγλικά: 'Add filter options',
@@ -248,9 +511,17 @@ export const έννοιες = [
     αγγλικά: 'Add event duration time',
     σουηδικά: 'Lägg till händelsens varaktighetstid',
   },
-  { ελληνικά: 'Προσθήκη Εργασίας', αγγλικά: 'Add Job', σουηδικά: 'Lägg Τill Jobb' },
+  {
+    ελληνικά: 'Προσθήκη Εργασίας',
+    αγγλικά: 'Add Job',
+    σουηδικά: 'Lägg Τill Jobb',
+  },
   { ελληνικά: 'Πρόσληψη', αγγλικά: 'Hire Me', σουηδικά: 'Αnställ Mig' },
-  { ελληνικά: 'Προσωπικός Ιστότοπος', αγγλικά: 'Personal Website', σουηδικά: 'Personlig Webbplats' },
+  {
+    ελληνικά: 'Προσωπικός Ιστότοπος',
+    αγγλικά: 'Personal Website',
+    σουηδικά: 'Personlig Webbplats',
+  },
   // Ρ //
   { ελληνικά: 'Ραβδόγραμμα', αγγλικά: 'Bar Chart', σουηδικά: 'Stapeldiagram' },
   // Σ //
@@ -258,23 +529,45 @@ export const έννοιες = [
   { ελληνικά: 'Σελίδα', αγγλικά: 'Page', σουηδικά: 'Sida' },
   { ελληνικά: 'Σελίδα Χρήστη', αγγλικά: 'Profile', σουηδικά: 'Profil' },
   { ελληνικά: 'Σελίδα «Αρχική»', αγγλικά: 'Page "Home"', σουηδικά: 'Hemsida' },
-  { ελληνικά: 'Σελίδα «Επικοινωνία»', αγγλικά: 'Page "Contact"', σουηδικά: 'Sidan "Kontakt"' },
-  { ελληνικά: 'Σελίδα «Προς Υλοποίηση»', αγγλικά: 'Page "To Be Implemented"', σουηδικά: 'Sidan "För Implementering"' },
-  { ελληνικά: 'Σελίδα «Χρονολόγιο»', αγγλικά: 'Page "Timeline"', σουηδικά: 'Sidan "Tidslinje"' },
+  {
+    ελληνικά: 'Σελίδα «Επικοινωνία»',
+    αγγλικά: 'Page "Contact"',
+    σουηδικά: 'Sidan "Kontakt"',
+  },
+  {
+    ελληνικά: 'Σελίδα «Προς Υλοποίηση»',
+    αγγλικά: 'Page "To Be Implemented"',
+    σουηδικά: 'Sidan "För Implementering"',
+  },
+  {
+    ελληνικά: 'Σελίδα «Χρονολόγιο»',
+    αγγλικά: 'Page "Timeline"',
+    σουηδικά: 'Sidan "Tidslinje"',
+  },
   { ελληνικά: 'Σε εξέλιξη', αγγλικά: 'In progress', σουηδικά: 'Pågår' },
   { ελληνικά: 'Σπουδές', αγγλικά: 'Studies', σουηδικά: 'Studier' },
-  { ελληνικά: 'Σπουδές Προγραμματισμού', αγγλικά: 'Programming Studies', σουηδικά: 'Programmeringsstudier' },
+  {
+    ελληνικά: 'Σπουδές Προγραμματισμού',
+    αγγλικά: 'Programming Studies',
+    σουηδικά: 'Programmeringsstudier',
+  },
   { ελληνικά: 'Στατικό', αγγλικά: 'Static', σουηδικά: 'Statisk' },
-  { 
-    ελληνικά: 'Στις δεύτερες Πανελλήνιες Εξετάσεις κατάφερα να περάσω στο Πολυτεχνείο του Πανεπιστημίου Κρήτης όπου όμως επίσης επέλεξα να μην πάω.', 
-    αγγλικά: 'In the second Panhellenic Exams, I managed to pass the Technical University of Crete, but I also chose not to go.', 
-    σουηδικά: 'I det andra panhelleniska provet lyckades jag gå vidare till yrkeshögskolan vid universitetet på Kreta, men jag valde också att inte gå.', 
+  {
+    ελληνικά:
+      'Στις δεύτερες Πανελλήνιες Εξετάσεις κατάφερα να περάσω στο Πολυτεχνείο του Πανεπιστημίου Κρήτης όπου όμως επίσης επέλεξα να μην πάω.',
+    αγγλικά:
+      'In the second Panhellenic Exams, I managed to pass the Technical University of Crete, but I also chose not to go.',
+    σουηδικά:
+      'I det andra panhelleniska provet lyckades jag gå vidare till yrkeshögskolan vid universitetet på Kreta, men jag valde också att inte gå.',
   },
   { ελληνικά: 'Συμβουλευτική', αγγλικά: 'Consulting', σουηδικά: 'Konsultera' },
   {
-    ελληνικά: 'Συμμετοχή σε τρίμηνο εντατικό πρόγραμμα εκκίνησης για εκπαίδευση επάνω σε τεχνολογίες ανάπτυξης ιστού για πλήρους-εύρους JavaScript.',
-    αγγλικά: 'Participation in a three-month intensive bootcamp for training on web development technologies for full-stack JavaScript.',
-    σουηδικά: 'Deltagande i en tre månader lång intensiv bootcamp för utbildning i webbutvecklingsteknologier för fullstack JavaScript.',
+    ελληνικά:
+      'Συμμετοχή σε τρίμηνο εντατικό πρόγραμμα εκκίνησης για εκπαίδευση επάνω σε τεχνολογίες ανάπτυξης ιστού για πλήρους-εύρους JavaScript.',
+    αγγλικά:
+      'Participation in a three-month intensive bootcamp for training on web development technologies for full-stack JavaScript.',
+    σουηδικά:
+      'Deltagande i en tre månader lång intensiv bootcamp för utbildning i webbutvecklingsteknologier för fullstack JavaScript.',
   },
   {
     ελληνικά: 'Συμπλήρωσε όλα τα πεδία!',
@@ -292,7 +585,11 @@ export const έννοιες = [
   { ελληνικά: 'Σύνδεση', αγγλικά: 'Login', σουηδικά: 'Logga In' },
   { ελληνικά: 'Συχνές Ερωτήσεις', αγγλικά: 'FAQ', σουηδικά: 'Vanliga Frågor' },
   { ελληνικά: 'Σχετικά με εμένα', αγγλικά: 'About me', σουηδικά: 'Om mig' },
-  { ελληνικά: 'Σχεδιαστής ΔΧ / ΕΧ', αγγλικά: 'UI / UX Designer', σουηδικά: 'UI / UX Designer' },
+  {
+    ελληνικά: 'Σχεδιαστής ΔΧ / ΕΧ',
+    αγγλικά: 'UI / UX Designer',
+    σουηδικά: 'UI / UX Designer',
+  },
   // Τ //
   {
     ελληνικά: 'Τα Στοιχεία Χρήστη Ενημερώθηκαν!',
@@ -310,9 +607,17 @@ export const έννοιες = [
     αγγλικά: 'There was a problem. Please try again shortly.',
     σουηδικά: 'Det var ett problem. Försök snart igen.',
   },
-  { ελληνικά: 'Υπό Ανάπτυξη', αγγλικά: 'Under Development', σουηδικά: 'Under Utveckling' },
+  {
+    ελληνικά: 'Υπό Ανάπτυξη',
+    αγγλικά: 'Under Development',
+    σουηδικά: 'Under Utveckling',
+  },
   // Φ //
-  { ελληνικά: 'Φίλτρα Αναζήτησης', αγγλικά: 'Search Filters', σουηδικά: 'Sökfilter' },
+  {
+    ελληνικά: 'Φίλτρα Αναζήτησης',
+    αγγλικά: 'Search Filters',
+    σουηδικά: 'Sökfilter',
+  },
   {
     ελληνικά:
       'Φαίνεται ότι δεν μπορούμε να ξετρυπώσουμε την σελίδα που ψάχνεις.',
@@ -351,5 +656,9 @@ export const έννοιες = [
   { ελληνικά: 'HTML', αγγλικά: 'HTML', σουηδικά: 'HTML' },
   { ελληνικά: 'JavaScript', αγγλικά: 'JavaScript', σουηδικά: 'JavaScript' },
   { ελληνικά: 'MERN 2023', αγγλικά: 'MERN 2023', σουηδικά: 'MERN 2023' },
-  { ελληνικά: 'React Native 2023', αγγλικά: 'React Native 2023', σουηδικά: 'React Native 2023' },
+  {
+    ελληνικά: 'React Native 2023',
+    αγγλικά: 'React Native 2023',
+    σουηδικά: 'React Native 2023',
+  },
 ];
