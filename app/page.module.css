@@ -6,9 +6,16 @@
   text-align: center;
 }
 
+.κείμενο {
+  font-size: 2rem;
+  max-width: 70vw;
+  margin-bottom: 20px;
+}
+
 .landing__action {
   text-decoration: none;
   color: white;
+  margin-bottom: 20px;
 }
 
 .landing__action-button {
@@ -39,7 +46,7 @@
     rgba(135, 74, 88, 0.75),
     rgba(201, 136, 130, 0.84),
     rgba(131, 118, 135, 0.95),
-    rgba(63, 66, 83, 0.80),
+    rgba(63, 66, 83, 0.8),
     rgba(0, 108, 186, 0.373)
   );
   position: absolute;
