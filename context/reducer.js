@@ -49,7 +49,7 @@ const reducer = (state, action) => {
   if (action.type === 'TOGGLE_EVENT_COLORS') {
     return {
       ...state,
-      showEventColors: !state.showEventColors,
+      showEventColors: action.payload.εμφάνισηΧρωμάτων,
     };
   }
 

@@ -33,10 +33,12 @@ const AppProvider = ({ children }) => {
     });
   };
 
-  const toggleEventColors = (showEventColors) => {
-    localStorage.setItem('showEventColors', !showEventColors);
+  const toggleEventColors = () => {
+    const εμφάνισηΧρωμάτων = state.φίλτροΚατάστασηςΓεγονότωνΧρονολογίου === '' ? !state.showEventColors : true
+    localStorage.setItem('showEventColors', εμφάνισηΧρωμάτων);
     dispatch({
       type: 'TOGGLE_EVENT_COLORS',
+      payload: { εμφάνισηΧρωμάτων },
     });
   };
 
