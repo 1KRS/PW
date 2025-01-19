@@ -37,7 +37,6 @@
     height: fit-content;
     width: 55px;
     padding: 15px;
-    background-color: var(--second-bg-color-blurred);
     gap: 1.5vh;
     list-style: none;
     transition: 0.3s ease-in;
@@ -48,7 +47,30 @@
     width: 150px;
   }
 
+  .στοιχείο,
+  .στοιχείο.επιλεγμένο {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 5px;
+    transition: 0.3s ease-in;
+  }
+
+  .στοιχείο:hover {
+    transform: scale(115%);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+
+  .στοιχείο.επιλεγμένο {
+    color: gold;
+    transform: scale(115%);
+    cursor: pointer;
+  }
+  
   .εικονίδια .κείμενο {
+    display: none;
     visibility: hidden;
     opacity: 0;
     text-wrap: nowrap;
@@ -56,10 +78,15 @@
   }
 
   .εικονίδια:hover .κείμενο {
+    display: flex;
     visibility: visible;
     opacity: 1;
     transition: opacity 0.5s 0.1s ease-in-out;
   }
+  
+  /* .στοιχείο:hover .κείμενο {
+    transform: scale(115%);
+  } */
 
   .χρώμα-εικονιδίου-ολοκληρωμένο {
     color: var(--χρώμα-ολοκληρωμένου);

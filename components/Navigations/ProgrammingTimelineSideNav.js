@@ -2,68 +2,32 @@ import styles from './ProgrammingTimelineSideNav.module.css';
 
 import TranslatedText from '@/components/TranslatedText';
 import ΠερίβλημαΠλήκτροΕπιμονήςΧρωμάτωνΓεγονότος from '@/components/ToggleButtons/ΠερίβλημαΠλήκτροΕπιμονήςΧρωμάτωνΓεγονότος';
-import ΕικονίδιοΠλαϊνήςΣτήλης from '@/components/Πλήκτρα/ΕικονίδιοΠλαϊνήςΣτήλης';
+import ΣτοιχείοΠλαϊνήςΣτήλης from '@/components/Πλήκτρα/ΣτοιχείοΠλαϊνήςΣτήλης';
 
 import { FaMinus } from 'react-icons/fa6';
 import { TiMinusOutline } from 'react-icons/ti';
+import { RiAlibabaCloudLine } from 'react-icons/ri';
 
 const ProgrammingTimelineSideNav = ({ σελίδα }) => {
   return (
     <nav className={styles['timeline-side-nav']}>
       <ΠερίβλημαΠλήκτροΕπιμονήςΧρωμάτωνΓεγονότος σελίδα={σελίδα}>
         <ul className={styles['εικονίδια']}>
-          <ΕικονίδιοΠλαϊνήςΣτήλης είδοςΚατηγορίας='Εν αναμονή'>
-            <TiMinusOutline className={styles['χρώμα-εικονιδίου-εν-αναμονή']} />{' '}
-            <div className={styles['κείμενο']}>
-              <TranslatedText>Εν αναμονή</TranslatedText>
-            </div>
-          </ΕικονίδιοΠλαϊνήςΣτήλης>
-          <ΕικονίδιοΠλαϊνήςΣτήλης είδοςΚατηγορίας='Εν εξελίξει'>
-            <TiMinusOutline
-              className={styles['χρώμα-εικονιδίου-εν-εξελίξει']}
-            />{' '}
-            <div className={styles['κείμενο']}>
-              <TranslatedText>Εν εξελίξει</TranslatedText>
-            </div>
-          </ΕικονίδιοΠλαϊνήςΣτήλης>
+          <ΣτοιχείοΠλαϊνήςΣτήλης είδοςΚατηγορίας="Εν αναμονή" />
+
+          <ΣτοιχείοΠλαϊνήςΣτήλης είδοςΚατηγορίας="Εν εξελίξει" />
+
           {σελίδα === 'Χρονολόγιο' && (
             <>
-              <ΕικονίδιοΠλαϊνήςΣτήλης είδοςΚατηγορίας='Ολοκληρωμένο'>
-                <TiMinusOutline
-                  className={styles['χρώμα-εικονιδίου-ολοκληρωμένο']}
-                />{' '}
-                <div className={styles['κείμενο']}>
-                  <TranslatedText>Ολοκληρωμένα</TranslatedText>
-                </div>
-              </ΕικονίδιοΠλαϊνήςΣτήλης>
-              <ΕικονίδιοΠλαϊνήςΣτήλης είδοςΚατηγορίας='Παρατημένο'>
-                <TiMinusOutline
-                  className={styles['χρώμα-εικονιδίου-παρατημένο']}
-                />{' '}
-                <div className={styles['κείμενο']}>
-                  <TranslatedText>Παρατημένα</TranslatedText>
-                </div>
-              </ΕικονίδιοΠλαϊνήςΣτήλης>
-              <ΕικονίδιοΠλαϊνήςΣτήλης είδοςΚατηγορίας='Σπουδές'>
-                {' '}
-                <FaMinus className={styles['χρώμα-εικονιδίου-σπουδές']} />{' '}
-                <div className={styles['κείμενο']}>
-                  <TranslatedText>Σπουδές</TranslatedText>
-                </div>
-              </ΕικονίδιοΠλαϊνήςΣτήλης>
-              <ΕικονίδιοΠλαϊνήςΣτήλης είδοςΚατηγορίας='Εργασία'>
-                <FaMinus className={styles['χρώμα-εικονιδίου-εργασία']} />{' '}
-                <div className={styles['κείμενο']}>
-                  <TranslatedText>Εργασίες</TranslatedText>
-                </div>
-              </ΕικονίδιοΠλαϊνήςΣτήλης>
-              <ΕικονίδιοΠλαϊνήςΣτήλης είδοςΚατηγορίας='Έργα'>
-                {' '}
-                <FaMinus className={styles['χρώμα-εικονιδίου-έργα']} />{' '}
-                <div className={styles['κείμενο']}>
-                  <TranslatedText>Έργα</TranslatedText>
-                </div>
-              </ΕικονίδιοΠλαϊνήςΣτήλης>
+              <ΣτοιχείοΠλαϊνήςΣτήλης είδοςΚατηγορίας="Ολοκληρωμένο" />
+
+              <ΣτοιχείοΠλαϊνήςΣτήλης είδοςΚατηγορίας="Παρατημένο" />
+
+              <ΣτοιχείοΠλαϊνήςΣτήλης είδοςΚατηγορίας="Σπουδές" />
+
+              <ΣτοιχείοΠλαϊνήςΣτήλης είδοςΚατηγορίας="Εργασία" />
+
+              <ΣτοιχείοΠλαϊνήςΣτήλης είδοςΚατηγορίας="Έργα" />
             </>
           )}
         </ul>
