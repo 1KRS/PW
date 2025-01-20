@@ -32,6 +32,13 @@ const ΣτοιχείοΠλαϊνήςΣτήλης = ({ σελίδα, ύπαρξη
     .toLowerCase()
     .replace(' ', '-')}`;
 
+  const κείμενοΣτοιχείου =
+    είδοςΚατηγορίας === 'Ολοκληρωμένο'
+      ? 'Ολοκληρωμένα'
+      : είδοςΚατηγορίας === 'Παρατημένο'
+      ? 'Παρατημένα'
+      : είδοςΚατηγορίας;
+
   const περιεχόμενοΣτοιχείου =
     σελίδα === 'Χρονολόγιο' ? (
       <li
@@ -55,7 +62,7 @@ const ΣτοιχείοΠλαϊνήςΣτήλης = ({ σελίδα, ύπαρξη
           <FaMinus className={styles[`${χρώμαΕικονιδίου}`]} />
         )}
         <div className={styles['κείμενο']}>
-          <TranslatedText>{είδοςΚατηγορίας}</TranslatedText>
+          <TranslatedText>{κείμενοΣτοιχείου}</TranslatedText>
         </div>
       </li>
     ) : (
@@ -69,30 +76,12 @@ const ΣτοιχείοΠλαϊνήςΣτήλης = ({ σελίδα, ύπαρξη
           <FaMinus className={styles[`${χρώμαΕικονιδίου}`]} />
         )}
         <div className={styles['κείμενο']}>
-          <TranslatedText>{είδοςΚατηγορίας}</TranslatedText>
+          <TranslatedText>{κείμενοΣτοιχείου}</TranslatedText>
         </div>
       </li>
     );
 
   return περιεχόμενοΣτοιχείου;
-  // <li
-  //   className={styles['στοιχείο'] + ' ' + styles[`${επιλεγμένοΉΜη}`]}
-  //   onClick={() => handleClickEvent()}
-  // >
-  //   {φίλτροΚατάστασηςΓεγονότωνΧρονολογίου === είδοςΚατηγορίας ? (
-  //     <RiAlibabaCloudLine className={styles[`${χρώμαΕικονιδίου}`]} />
-  //   ) : είδοςΚατηγορίας === 'Εν αναμονή' ||
-  //     είδοςΚατηγορίας === 'Εν εξελίξει' ||
-  //     είδοςΚατηγορίας === 'Ολοκληρωμένο' ||
-  //     είδοςΚατηγορίας === 'Παρατημένο' ? (
-  //     <TiMinusOutline className={styles[`${χρώμαΕικονιδίου}`]} />
-  //   ) : (
-  //     <FaMinus className={styles[`${χρώμαΕικονιδίου}`]} />
-  //   )}
-  //   <div className={styles['κείμενο']}>
-  //     <TranslatedText>{είδοςΚατηγορίας}</TranslatedText>
-  //   </div>
-  // </li>
 };
 
 export default ΣτοιχείοΠλαϊνήςΣτήλης;
