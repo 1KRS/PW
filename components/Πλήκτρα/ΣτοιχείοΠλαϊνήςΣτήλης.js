@@ -10,7 +10,7 @@ import { RiAlibabaCloudLine } from 'react-icons/ri';
 
 import { useAppContext } from '@/context/AppContext';
 
-const ΣτοιχείοΠλαϊνήςΣτήλης = ({ είδοςΚατηγορίας }) => {
+const ΣτοιχείοΠλαϊνήςΣτήλης = ({ σελίδα, ύπαρξηΦίλτρων, είδοςΚατηγορίας }) => {
   const { φίλτροΚατάστασηςΓεγονότωνΧρονολογίου, changeEventFilter } =
     useAppContext();
 
@@ -19,6 +19,9 @@ const ΣτοιχείοΠλαϊνήςΣτήλης = ({ είδοςΚατηγορί
       ? changeEventFilter('')
       : changeEventFilter(είδοςΚατηγορίας);
   };
+
+  const ενεργάΦίλτραΉΜη =
+    ύπαρξηΦίλτρων === 'υπαρκτά' ? 'με-φίλτρα' : 'χωρίς-φίλτρα';
 
   const επιλεγμένοΉΜη =
     φίλτροΚατάστασηςΓεγονότωνΧρονολογίου === είδοςΚατηγορίας
@@ -29,26 +32,67 @@ const ΣτοιχείοΠλαϊνήςΣτήλης = ({ είδοςΚατηγορί
     .toLowerCase()
     .replace(' ', '-')}`;
 
-  return (
-    <li
-      className={styles['στοιχείο'] + ' ' + styles[`${επιλεγμένοΉΜη}`]}
-      onClick={() => handleClickEvent()}
-    >
-      {φίλτροΚατάστασηςΓεγονότωνΧρονολογίου === είδοςΚατηγορίας ? (
-        <RiAlibabaCloudLine className={styles[`${χρώμαΕικονιδίου}`]} />
-      ) : (είδοςΚατηγορίας === 'Εν αναμονή' ||
+  const περιεχόμενοΣτοιχείου =
+    σελίδα === 'Χρονολόγιο' ? (
+      <li
+        className={
+          styles['στοιχείο'] +
+          ' ' +
+          styles[`${ενεργάΦίλτραΉΜη}`] +
+          ' ' +
+          styles[`${επιλεγμένοΉΜη}`]
+        }
+        onClick={() => handleClickEvent()}
+      >
+        {φίλτροΚατάστασηςΓεγονότωνΧρονολογίου === είδοςΚατηγορίας ? (
+          <RiAlibabaCloudLine className={styles[`${χρώμαΕικονιδίου}`]} />
+        ) : είδοςΚατηγορίας === 'Εν αναμονή' ||
           είδοςΚατηγορίας === 'Εν εξελίξει' ||
           είδοςΚατηγορίας === 'Ολοκληρωμένο' ||
-          είδοςΚατηγορίας === 'Παρατημένο') ? (
+          είδοςΚατηγορίας === 'Παρατημένο' ? (
           <TiMinusOutline className={styles[`${χρώμαΕικονιδίου}`]} />
         ) : (
-        <FaMinus className={styles[`${χρώμαΕικονιδίου}`]} />
-      )}
-      <div className={styles['κείμενο']}>
-        <TranslatedText>{είδοςΚατηγορίας}</TranslatedText>
-      </div>
-    </li>
-  );
+          <FaMinus className={styles[`${χρώμαΕικονιδίου}`]} />
+        )}
+        <div className={styles['κείμενο']}>
+          <TranslatedText>{είδοςΚατηγορίας}</TranslatedText>
+        </div>
+      </li>
+    ) : (
+      <li className={styles['στοιχείο']}>
+        {είδοςΚατηγορίας === 'Εν αναμονή' ||
+        είδοςΚατηγορίας === 'Εν εξελίξει' ||
+        είδοςΚατηγορίας === 'Ολοκληρωμένο' ||
+        είδοςΚατηγορίας === 'Παρατημένο' ? (
+          <TiMinusOutline className={styles[`${χρώμαΕικονιδίου}`]} />
+        ) : (
+          <FaMinus className={styles[`${χρώμαΕικονιδίου}`]} />
+        )}
+        <div className={styles['κείμενο']}>
+          <TranslatedText>{είδοςΚατηγορίας}</TranslatedText>
+        </div>
+      </li>
+    );
+
+  return περιεχόμενοΣτοιχείου;
+  // <li
+  //   className={styles['στοιχείο'] + ' ' + styles[`${επιλεγμένοΉΜη}`]}
+  //   onClick={() => handleClickEvent()}
+  // >
+  //   {φίλτροΚατάστασηςΓεγονότωνΧρονολογίου === είδοςΚατηγορίας ? (
+  //     <RiAlibabaCloudLine className={styles[`${χρώμαΕικονιδίου}`]} />
+  //   ) : είδοςΚατηγορίας === 'Εν αναμονή' ||
+  //     είδοςΚατηγορίας === 'Εν εξελίξει' ||
+  //     είδοςΚατηγορίας === 'Ολοκληρωμένο' ||
+  //     είδοςΚατηγορίας === 'Παρατημένο' ? (
+  //     <TiMinusOutline className={styles[`${χρώμαΕικονιδίου}`]} />
+  //   ) : (
+  //     <FaMinus className={styles[`${χρώμαΕικονιδίου}`]} />
+  //   )}
+  //   <div className={styles['κείμενο']}>
+  //     <TranslatedText>{είδοςΚατηγορίας}</TranslatedText>
+  //   </div>
+  // </li>
 };
 
 export default ΣτοιχείοΠλαϊνήςΣτήλης;
