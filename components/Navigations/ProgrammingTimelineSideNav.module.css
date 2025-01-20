@@ -27,7 +27,7 @@
     height: 100%;
     z-index: 150;
   }
-  
+
   .εικονίδια {
     position: relative;
     display: flex;
@@ -58,10 +58,14 @@
     transition: 0.3s ease-in;
   }
 
-  .στοιχείο:hover {
+  .στοιχείο.με-φίλτρα:hover {
     transform: scale(115%);
     transition: 0.3s ease-in;
     cursor: pointer;
+  }
+
+  .στοιχείο.χωρίς-φίλτρα {
+    cursor: default;
   }
 
   .στοιχείο.επιλεγμένο {
@@ -69,7 +73,7 @@
     transform: scale(115%);
     cursor: pointer;
   }
-  
+
   .εικονίδια .κείμενο {
     display: none;
     visibility: hidden;
@@ -84,7 +88,7 @@
     opacity: 1;
     transition: opacity 0.5s 0.1s ease-in-out;
   }
-  
+
   /* .στοιχείο:hover .κείμενο {
     transform: scale(115%);
   } */
