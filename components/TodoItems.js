@@ -12,7 +12,7 @@ const TodoItems = () => {
     <>
       <div className={styles['todo-items']}>
         {
-          προςΥλοποίηση.filter(todo => todo.ολοκλήρωση === false).map((todo, index) => {
+          προςΥλοποίηση.filter(todo => todo.τομέας === 'Προγραμματισμός').filter(todo => todo.ολοκλήρωση === false).map((todo, index) => {
           const { ταυτότητα, τομέας, μέρος, τύπος, επεξήγηση, κρίσιμο, ενΕξελίξει, ολοκλήρωση } = todo;
           
           const μορφήΠεριβλήματος = ολοκλήρωση === true ? 'ολοκληρωμένο' : ενΕξελίξει ? 'ενΕξελίξει' : 'ενΑναμονή'
