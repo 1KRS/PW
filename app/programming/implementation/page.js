@@ -8,7 +8,7 @@ const Implementation = () => {
     <>
     <main className={styles.main}>
       <Heading text="Προς Υλοποίηση" />
-      <ProgrammingTimelineSideNav σελίδα='Προς υλοποίηση'/>
+      <ProgrammingTimelineSideNav σελίδα='Προς υλοποίηση' ύπαρξηΦίλτρων='ανύπαρκτα'/>
       <section className={styles.todos} id="todos">
         <div className={styles['todos-container']}>
           <TodoItems />
