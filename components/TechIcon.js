@@ -7,7 +7,7 @@ import {
 } from 'react-icons/tb';
 import { IoLogoReact } from 'react-icons/io5';
 import { BiLogoMongodb, BiLogoPostgresql } from 'react-icons/bi';
-import { FaGitAlt } from 'react-icons/fa';
+import { FaGitAlt, FaBootstrap } from 'react-icons/fa';
 import { SiEjs, SiExpress } from 'react-icons/si';
 import { RiNpmjsFill } from 'react-icons/ri';
 import { IoLogoGithub } from 'react-icons/io';
@@ -52,6 +52,8 @@ const TechIcon = ({ όνομαΤεχνολογίας }) => {
       <RiNpmjsFill className={styles['tech-icon']} />
     ) : όνομαΤεχνολογίας === 'Express' ? (
       <SiExpress className={styles['tech-icon']} />
+    ) : όνομαΤεχνολογίας === 'Bootstrap' ? (
+      <FaBootstrap className={styles['tech-icon']} />
     ) : null;
 
   return (
