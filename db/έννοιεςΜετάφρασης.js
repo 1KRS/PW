@@ -385,6 +385,14 @@ export const έννοιες = [
   { ελληνικά: 'Μαρτυρίες', αγγλικά: 'Testimonials', σουηδικά: 'Vittnesmål' },
   { ελληνικά: 'Μετάφραση', αγγλικά: 'Translation', σουηδικά: 'Översättning' },
   {
+    ελληνικά:
+      'Μια υλοποίηση ενός ηλεκτρονικού καταστήματος εμπορίου μέσω δικτυακού εκπαιδευτικού βίντεο στο YT.',
+    αγγλικά:
+      'An implementation of an e-commerce store via online video tutorial on YT.',
+    σουηδικά:
+      'En implementering av en e-handelsbutik via onlinevideohandledning på YT.',
+  },
+  {
     ελληνικά: 'Μηνιαία Δεδομένα',
     αγγλικά: 'Monthly Data',
     σουηδικά: 'Månadsdata',
