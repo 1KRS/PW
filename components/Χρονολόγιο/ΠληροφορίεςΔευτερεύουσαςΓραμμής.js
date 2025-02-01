@@ -16,7 +16,7 @@ const ΠληροφορίεςΔευτερεύουσαςΓραμμής = ({
   const { γεγονός, οντότητα, σπουδές, εργασία, τοποθεσία } = στιγμή;
 
   const { είδος } = γεγονός;
-  const { όνομα, τύπος } = οντότητα;
+  const { όνομα, τύπος, ιστότοπος } = οντότητα;
 
   const { τύποςΣπουδών } = σπουδές;
 
@@ -59,25 +59,59 @@ const ΠληροφορίεςΔευτερεύουσαςΓραμμής = ({
       {κείμενοΔεδομένωνH6Δευτερεύον && (
         <pre className={styles['middle-line']}> | </pre>
       )}
-      {είδος !== '' && (
-        <h6
-          data-types-sec={μετάφραση(τύποςΔεδομένωνH6Βασικό, language)}
-          className={styles[`sec-h6`] + ' ' + styles[`sec-h6${χρώμαΕίδους}`]}
-        >
-          <TranslatedText>{`${κείμενοΔεδομένωνH6Βασικό}`}</TranslatedText>
-        </h6>
-      )}
+      {είδος !== '' &&
+        (ιστότοπος ? (
+          <a
+            target="_blank"
+            href={ιστότοπος}
+            rel="noopener noreferrer"
+            className={styles['σύνδεσμος-οντότητας']}
+          >
+            <h6
+              data-types-sec={μετάφραση(τύποςΔεδομένωνH6Βασικό, language)}
+              className={
+                styles[`sec-h6`] + ' ' + styles[`sec-h6${χρώμαΕίδους}`]
+              }
+            >
+              <TranslatedText>{`${κείμενοΔεδομένωνH6Βασικό}`}</TranslatedText>
+            </h6>
+          </a>
+        ) : (
+          <h6
+            data-types-sec={μετάφραση(τύποςΔεδομένωνH6Βασικό, language)}
+            className={styles[`sec-h6`] + ' ' + styles[`sec-h6${χρώμαΕίδους}`]}
+          >
+            <TranslatedText>{`${κείμενοΔεδομένωνH6Βασικό}`}</TranslatedText>
+          </h6>
+        ))}
     </>
   ) : (
     <>
-      {είδος !== '' && (
-        <h6
-          data-types-sec={μετάφραση(τύποςΔεδομένωνH6Βασικό, language)}
-          className={styles[`sec-h6`] + ' ' + styles[`sec-h6${χρώμαΕίδους}`]}
-        >
-          <TranslatedText>{`${κείμενοΔεδομένωνH6Βασικό}`}</TranslatedText>
-        </h6>
-      )}
+      {είδος !== '' &&
+        (ιστότοπος ? (
+          <a
+            target="_blank"
+            href={ιστότοπος}
+            rel="noopener noreferrer"
+            className={styles['σύνδεσμος-οντότητας']}
+          >
+            <h6
+              data-types-sec={μετάφραση(τύποςΔεδομένωνH6Βασικό, language)}
+              className={
+                styles[`sec-h6`] + ' ' + styles[`sec-h6${χρώμαΕίδους}`]
+              }
+            >
+              <TranslatedText>{`${κείμενοΔεδομένωνH6Βασικό}`}</TranslatedText>
+            </h6>
+          </a>
+        ) : (
+          <h6
+            data-types-sec={μετάφραση(τύποςΔεδομένωνH6Βασικό, language)}
+            className={styles[`sec-h6`] + ' ' + styles[`sec-h6${χρώμαΕίδους}`]}
+          >
+            <TranslatedText>{`${κείμενοΔεδομένωνH6Βασικό}`}</TranslatedText>
+          </h6>
+        ))}
       {κείμενοΔεδομένωνH6Δευτερεύον && (
         <pre className={styles['middle-line']}> | </pre>
       )}
