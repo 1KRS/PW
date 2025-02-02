@@ -33,11 +33,14 @@ const AppProvider = ({ children }) => {
     });
   };
 
-  const toggleEventColors = () => {
+  const toggleEventColors = (εμφάνισηΧρωμάτωνΑρχική) => {
     const εμφάνισηΧρωμάτων =
-      state.φίλτροΚατάστασηςΓεγονότωνΧρονολογίου === ''
+      εμφάνισηΧρωμάτωνΑρχική === 'αρχική'
+        ? false
+        : state.φίλτροΚατάστασηςΓεγονότωνΧρονολογίου === ''
         ? !state.showEventColors
         : true;
+
     localStorage.setItem('showEventColors', εμφάνισηΧρωμάτων);
     dispatch({
       type: 'TOGGLE_EVENT_COLORS',
@@ -63,7 +66,8 @@ const AppProvider = ({ children }) => {
   useEffect(() => {
     const αποθηκευμένηΓλώσσα = localStorage.getItem('language');
     const αποθηκευμένοΥπόβαθρο = localStorage.getItem('programming-background');
-    const εμφάνισηΧρωμάτων = localStorage.getItem('showEventColors');
+    // const αρχικήΕμφάνισηΧρωμάτων = localStorage.getItem('showEventColors');
+    const αρχικήΕμφάνισηΧρωμάτων = 'αρχική';
 
     if (αποθηκευμένηΓλώσσα) {
       changeLanguage(αποθηκευμένηΓλώσσα);
@@ -73,9 +77,7 @@ const AppProvider = ({ children }) => {
       changeBackground(αποθηκευμένοΥπόβαθρο);
     }
 
-    if (εμφάνισηΧρωμάτων) {
-      toggleEventColors();
-    }
+    toggleEventColors(αρχικήΕμφάνισηΧρωμάτων);
   }, []);
 
   return (
