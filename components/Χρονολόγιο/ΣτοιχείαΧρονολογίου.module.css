@@ -360,43 +360,43 @@
 .event-info .sec-h6 {
   font-size: 0.7vw;
   width: auto;
-  text-decoration: none;
-  cursor: pointer;
+  cursor: default;
 }
+
 .event-info .middle-line {
   font-size: 0.7vw;
 }
 
-.event-info .main-h6:hover {
-  font-size: 0;
-}
 .event-info .sec-h6:hover {
   font-size: 0;
 }
+.event-info .main-h6:hover {
+  font-size: 0;
+}
 
-.event-info .main-h6::after,
-.event-info .sec-h6::after {
+.event-info .sec-h6::after,
+.event-info .main-h6::after {
   font-size: 0.7vw;
   text-align: center;
 }
 
-.event-info .main-h6:hover::after {
+.event-info .sec-h6:hover::after {
   content: attr(data-types-main);
 }
 
-.event-info .sec-h6:hover::after {
+.event-info .main-h6:hover::after {
   content: attr(data-types-sec);
 }
-.event-info .sec-h6-normal:hover::after {
+.event-info .main-h6-normal:hover::after {
   color: var(--main-color);
 }
-.event-info .sec-h6-orange:hover::after {
+.event-info .main-h6-orange:hover::after {
   color: var(--χρώμα-σπουδών);
 }
-.event-info .sec-h6-gold:hover::after {
+.event-info .main-h6-gold:hover::after {
   color: var(--χρώμα-εργασίας);
 }
-.event-info .sec-h6-tirquaz:hover::after {
+.event-info .main-h6-tirquaz:hover::after {
   color: var(--χρώμα-έργων);
 }
 

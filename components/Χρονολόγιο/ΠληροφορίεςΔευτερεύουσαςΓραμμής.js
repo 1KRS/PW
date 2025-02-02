@@ -51,7 +51,7 @@ const ΠληροφορίεςΔευτερεύουσαςΓραμμής = ({
       {
         <h6
           data-types-main={μετάφραση(τύποςΔεδομένωνH6Δευτερεύον, language)}
-          className={styles[`main-h6`] + ' ' + styles[`main-h6${χρώμαΕίδους}`]}
+          className={styles[`sec-h6`] + ' ' + styles[`sec-h6${χρώμαΕίδους}`]}
         >
           <TranslatedText>{κείμενοΔεδομένωνH6Δευτερεύον}</TranslatedText>
         </h6>
@@ -70,7 +70,7 @@ const ΠληροφορίεςΔευτερεύουσαςΓραμμής = ({
             <h6
               data-types-sec={μετάφραση(τύποςΔεδομένωνH6Βασικό, language)}
               className={
-                styles[`sec-h6`] + ' ' + styles[`sec-h6${χρώμαΕίδους}`]
+                styles[`main-h6`] + ' ' + styles[`main-h6${χρώμαΕίδους}`]
               }
             >
               <TranslatedText>{`${κείμενοΔεδομένωνH6Βασικό}`}</TranslatedText>
@@ -79,7 +79,9 @@ const ΠληροφορίεςΔευτερεύουσαςΓραμμής = ({
         ) : (
           <h6
             data-types-sec={μετάφραση(τύποςΔεδομένωνH6Βασικό, language)}
-            className={styles[`sec-h6`] + ' ' + styles[`sec-h6${χρώμαΕίδους}`]}
+            className={
+              styles[`main-h6`] + ' ' + styles[`main-h6${χρώμαΕίδους}`]
+            }
           >
             <TranslatedText>{`${κείμενοΔεδομένωνH6Βασικό}`}</TranslatedText>
           </h6>
@@ -98,7 +100,7 @@ const ΠληροφορίεςΔευτερεύουσαςΓραμμής = ({
             <h6
               data-types-sec={μετάφραση(τύποςΔεδομένωνH6Βασικό, language)}
               className={
-                styles[`sec-h6`] + ' ' + styles[`sec-h6${χρώμαΕίδους}`]
+                styles[`main-h6`] + ' ' + styles[`main-h6${χρώμαΕίδους}`]
               }
             >
               <TranslatedText>{`${κείμενοΔεδομένωνH6Βασικό}`}</TranslatedText>
@@ -107,7 +109,9 @@ const ΠληροφορίεςΔευτερεύουσαςΓραμμής = ({
         ) : (
           <h6
             data-types-sec={μετάφραση(τύποςΔεδομένωνH6Βασικό, language)}
-            className={styles[`sec-h6`] + ' ' + styles[`sec-h6${χρώμαΕίδους}`]}
+            className={
+              styles[`main-h6`] + ' ' + styles[`main-h6${χρώμαΕίδους}`]
+            }
           >
             <TranslatedText>{`${κείμενοΔεδομένωνH6Βασικό}`}</TranslatedText>
           </h6>
@@ -117,7 +121,7 @@ const ΠληροφορίεςΔευτερεύουσαςΓραμμής = ({
       )}
       <h6
         data-types-main={μετάφραση(τύποςΔεδομένωνH6Δευτερεύον, language)}
-        className={styles[`main-h6`] + ' ' + styles[`main-h6${χρώμαΕίδους}`]}
+        className={styles[`sec-h6`] + ' ' + styles[`sec-h6${χρώμαΕίδους}`]}
       >
         <TranslatedText>{κείμενοΔεδομένωνH6Δευτερεύον}</TranslatedText>
       </h6>

@@ -14,9 +14,13 @@ const ΠερίβλημαΠλήκτροΕπιμονήςΧρωμάτωνΓεγον
             type="checkbox"
             className={styles['πεδίο-επιλογής']}
             checked={showEventColors}
-            onClick={() => toggleEventColors()}
+            onChange={() => toggleEventColors()}
           />
-          <div className={styles['περίβλημα-πλήκτρο'] + ' ' + styles['μεΠαλμό']}>{children}</div>
+          <div
+            className={styles['περίβλημα-πλήκτρο'] + ' ' + styles['μεΠαλμό']}
+          >
+            {children}
+          </div>
         </label>
       ) : (
         <div className={styles['περιέκτης']}>

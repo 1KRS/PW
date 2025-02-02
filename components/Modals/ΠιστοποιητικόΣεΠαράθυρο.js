@@ -39,7 +39,7 @@ const ΠιστοποιητικόΣεΠαράθυρο = () => {
         <button
           className={styles.πλήκτρο}
           onClick={() => handleCloseModal()}
-          autofocus
+          autoFocus
         >
           <IoClose />
         </button>

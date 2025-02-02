@@ -19,7 +19,7 @@ const BackgroundToggle2 = () => {
           type="checkbox"
           className={styles['input']}
           checked={backgroundType === 'static' ? true : false}
-          onClick={() => changeBackground(backgroundType)}
+          onChange={() => changeBackground(backgroundType)}
         />
         <div className={styles['button']}></div>
       </label>
