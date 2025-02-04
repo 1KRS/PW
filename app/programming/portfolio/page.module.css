@@ -11,8 +11,10 @@
   top: 20vh;
   grid-template-columns: repeat(3, 1fr);
   gap: 1vw;
-  height: 75vh;
+  height: 73vh;
   width: 80vw;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
   overflow-y: auto;
   overflow-x: hidden;
   mask-image: linear-gradient(
