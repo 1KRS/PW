@@ -1,7 +1,17 @@
+import styles from './page.module.css';
+
 import Heading from '@/components/Heading';
 import Image from 'next/image';
+
 import { FaStar } from 'react-icons/fa';
-import styles from './page.module.css';
+
+export const metadata = {
+  title: 'ΔΜ - Μαρτυρίες',
+  description: 'Μαρτυρίες πελατών και συνεργατών',
+  keywords: ['Μαρτυρίες', 'Testimonials', 'Vittnesmål'],
+  creator: 'Δημήτρης Μανωλόπουλος',
+  publisher: 'Δημήτρης Μανωλόπουλος',
+};
 
 const Testimonials = () => {
   return (
