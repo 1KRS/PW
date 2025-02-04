@@ -1,6 +1,14 @@
 import styles from './page.module.css';
 import Heading from '@/components/Heading';
 
+export const metadata = {
+  title: 'ΔΜ - Υπηρεσίες',
+  description: 'Οι υπηρεσίες που προσφέρω',
+  keywords: ['Υπηρεσίες', 'Services', 'Vittnesmål'],
+  creator: 'Δημήτρης Μανωλόπουλος',
+  publisher: 'Δημήτρης Μανωλόπουλος',
+};
+
 const Services = () => {
   return (
     <>
