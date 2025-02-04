@@ -4,6 +4,7 @@ import {
   TbBrandJavascript,
   TbBrandNextjs,
   TbBrandReactNative,
+  TbBrandVercel,
 } from 'react-icons/tb';
 import { IoLogoReact } from 'react-icons/io5';
 import { BiLogoMongodb, BiLogoPostgresql } from 'react-icons/bi';
@@ -11,10 +12,10 @@ import { FaGitAlt, FaBootstrap } from 'react-icons/fa';
 import { SiEjs, SiExpress } from 'react-icons/si';
 import { RiNpmjsFill } from 'react-icons/ri';
 import { IoLogoGithub } from 'react-icons/io';
+
 import styles from './TechIcon.module.css';
 
 const TechIcon = ({ όνομαΤεχνολογίας }) => {
-
   const findChild = (array, id) => {
     let result;
     array.some(
@@ -54,6 +55,8 @@ const TechIcon = ({ όνομαΤεχνολογίας }) => {
       <SiExpress className={styles['tech-icon']} />
     ) : όνομαΤεχνολογίας === 'Bootstrap' ? (
       <FaBootstrap className={styles['tech-icon']} />
+    ) : όνομαΤεχνολογίας === 'Vercel' ? (
+      <TbBrandVercel className={styles['tech-icon']} />
     ) : null;
 
   return (
