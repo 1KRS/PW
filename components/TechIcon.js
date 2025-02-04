@@ -7,7 +7,11 @@ import {
   TbBrandVercel,
 } from 'react-icons/tb';
 import { IoLogoReact } from 'react-icons/io5';
-import { BiLogoMongodb, BiLogoPostgresql } from 'react-icons/bi';
+import {
+  BiLogoVisualStudio,
+  BiLogoMongodb,
+  BiLogoPostgresql,
+} from 'react-icons/bi';
 import { FaGitAlt, FaBootstrap } from 'react-icons/fa';
 import { SiEjs, SiExpress } from 'react-icons/si';
 import { RiNpmjsFill } from 'react-icons/ri';
@@ -34,7 +38,7 @@ const TechIcon = ({ όνομαΤεχνολογίας }) => {
     ) : όνομαΤεχνολογίας === 'JavaScript' ? (
       <TbBrandJavascript className={styles['tech-icon']} />
     ) : όνομαΤεχνολογίας === 'EJS' ? (
-      <TbBrandJavascript className={styles['tech-icon']} />
+      <SiEjs className={styles['tech-icon']} />
     ) : όνομαΤεχνολογίας === 'ReactJS' ? (
       <IoLogoReact className={styles['tech-icon']} />
     ) : όνομαΤεχνολογίας === 'NextJS' ? (
@@ -57,6 +61,8 @@ const TechIcon = ({ όνομαΤεχνολογίας }) => {
       <FaBootstrap className={styles['tech-icon']} />
     ) : όνομαΤεχνολογίας === 'Vercel' ? (
       <TbBrandVercel className={styles['tech-icon']} />
+    ) : όνομαΤεχνολογίας === 'VSC' ? (
+      <BiLogoVisualStudio className={styles['tech-icon']} />
     ) : null;
 
   return (
