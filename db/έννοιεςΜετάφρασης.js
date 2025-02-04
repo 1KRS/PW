@@ -182,6 +182,11 @@ export const έννοιες = [
     αγγλικά: 'Online Learning Library',
     σουηδικά: 'Online Lärande Bibliotek',
   },
+  {
+    ελληνικά: 'Διαδικτυακό Φροντιστήριο',
+    αγγλικά: 'Online Tutorial',
+    σουηδικά: 'Handledning Online',
+  },
   { ελληνικά: 'Δια ζώσης', αγγλικά: 'In person', σουηδικά: 'För livet' },
   { ελληνικά: 'Δυναμική', αγγλικά: 'Dynamic', σουηδικά: 'Dynamisk' },
   { ελληνικά: 'Δυναμικό', αγγλικά: 'Dynamic', σουηδικά: 'Dynamisk' },
@@ -349,11 +354,11 @@ export const έννοιες = [
   },
   {
     ελληνικά:
-      'Κατανοώ ότι θέλεις να μάθεις περισσότερα για εμένα (και γιατί όχι άλλωστε; Είμαι πολύ ενδιαφέρον άτομο. 😏) αλλά η ανάπτυξη αυτού του μέρους είναι ακόμη σε βασικό επίπεδο. Προς το παρόν μπορείς να απολαύσεις την πορεία μου στον προγραμματισμό και σύντομα θα ολοκληρωθούν κι άλλα.',
+      'Κατανοώ ότι θέλεις να μάθεις περισσότερα για εμένα (Και γιατί όχι; Είμαι πολύ ενδιαφέρον άτομο. 😏) αλλά η ανάπτυξη αυτού του μέρους είναι ακόμη σε βασικό επίπεδο. Προς το παρόν μπορείς να απολαύσεις την πορεία μου στην ανάπτυξη ιστού και σύντομα θα έρθουν κι άλλα.',
     αγγλικά:
-      "I understand that you want to know more about me (and why not? I'm a very interesting person. 😏) but the development of this part is still at a basic level. For now you can enjoy my programming journey and more will be completed soon.",
+      "I understand that you would like to know more about me (And why not? I'm a very interesting person. 😏) but the development of this part is still at a basic level. At the moment you can enjoy my journey in web development and more will come soon.",
     σουηδικά:
-      'Jag förstår att du vill veta mer om mig (och varför inte? Jag är en mycket intressant person. 😏) men utvecklingen av denna del är fortfarande på en grundläggande nivå. För nu kan du njuta av min programmeringsresa och mer kommer att slutföras snart.',
+      'Jag förstår att du vill veta mer om mig (Och varför inte? Jag är en väldigt intressant person. 😏) men utvecklingen av denna del är fortfarande på en grundläggande nivå. För nu kan du njuta av min resa inom webbutveckling och mer kommer snart.',
   },
   {
     ελληνικά: 'Κάποιο λάθος προέκυψε',
