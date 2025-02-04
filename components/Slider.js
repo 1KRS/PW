@@ -6,6 +6,7 @@ import {
   TbBrandJavascript,
   TbBrandNextjs,
   TbBrandReactNative,
+  TbBrandVercel,
 } from 'react-icons/tb';
 import { BiLogoMongodb, BiLogoPostgresql } from 'react-icons/bi';
 import { FaGitAlt, FaBootstrap } from 'react-icons/fa';
@@ -13,7 +14,6 @@ import { IoLogoGithub, IoLogoNodejs } from 'react-icons/io';
 import { IoLogoReact } from 'react-icons/io5';
 import { RiNpmjsFill } from 'react-icons/ri';
 import { SiEjs, SiExpress } from 'react-icons/si';
-import { TbBrandVercel } from 'react-icons/tb';
 
 // const technologies = [
 //   {
