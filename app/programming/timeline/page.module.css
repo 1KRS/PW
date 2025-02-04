@@ -3,15 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 150px;
-  padding-left: 150px;
 }
 
 .timeline-container {
   position: absolute;
-  top: 26vh;
-  height: 63vh;
-  width: 80vw;
+  top: 20vh;
+  height: 75vh;
+  width: 85vw;
   overflow-y: hidden;
   overflow-x: hidden;
 }
