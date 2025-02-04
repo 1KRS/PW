@@ -6,9 +6,9 @@ import Link from 'next/link';
 import { έργα } from '@/db/έργα';
 
 export const metadata = {
-  title: 'Το Χαρτοφυλάκιό μου',
+  title: 'ΔΜ - Χαρτοφυλάκιο',
   description: 'Ο προσωπικός μου ιστότοπος ως προγραμματιστής',
-  keywords: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NextJS'],
+  keywords: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NextJS', 'Προσωπικός Ιστότοπος', 'Personal Website', 'Personlig Webbplats'],
   creator: 'Δημήτρης Μανωλόπουλος',
   publisher: 'Δημήτρης Μανωλόπουλος',
 };
