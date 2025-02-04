@@ -757,6 +757,7 @@ export const χρονολόγιο = [
       ιστότοποςΈργου: 'https://dm-lilac.vercel.app/programming',
     },
     τεχνολογίες: [
+      'VSC',
       'HTML',
       'CSS',
       'JavaScript',
