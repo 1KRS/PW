@@ -3,6 +3,14 @@ import Heading from '@/components/Heading';
 import Input from '@/components/Inputs/Input';
 import Textarea from '@/components/Inputs/Textarea';
 
+export const metadata = {
+  title: 'ΔΜ - Επικοινωνία',
+  description: 'Σελίδα επικοινωνίας με Δημήτρη Μανωλόπουλο',
+  keywords: ['Σελίδα επικοινωνίας', 'Contact page', 'Kontaktsida'],
+  creator: 'Δημήτρης Μανωλόπουλος',
+  publisher: 'Δημήτρης Μανωλόπουλος',
+};
+
 const Contact = () => {
   return (
     <>

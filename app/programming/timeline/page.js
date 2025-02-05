@@ -5,7 +5,7 @@ import ΣτοιχείαΧρονολογίου from '@/components/Χρονολό�
 import ProgrammingTimelineSideNav from '@/components/Navigations/ProgrammingTimelineSideNav';
 
 export const metadata = {
-  title: 'ΔΜ - Χρονολόγιό',
+  title: 'ΔΜ - Χρονολόγιο',
   description: 'Η πορεία μου ως προγραμματιστής',
   keywords: ['Χρονολόγιο', 'Timeline', 'Tidlinje'],
   creator: 'Δημήτρης Μανωλόπουλος',

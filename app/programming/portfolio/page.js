@@ -8,15 +8,10 @@ import { έργα } from '@/db/έργα';
 export const metadata = {
   title: 'ΔΜ - Χαρτοφυλάκιο',
   description: 'Ο προσωπικός μου ιστότοπος ως προγραμματιστής',
-  keywords: ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NextJS', 'Προσωπικός Ιστότοπος', 'Personal Website', 'Personlig Webbplats'],
+  keywords: ['Προσωπικός Ιστότοπος', 'Personal Website', 'Personlig Webbplats'],
   creator: 'Δημήτρης Μανωλόπουλος',
   publisher: 'Δημήτρης Μανωλόπουλος',
 };
-
-// const projects = [
-//     { id: 1, title: 'Εργασιομανία', text: 'Οργάνωσε το κυνήγι εργασίας σου με αυτήν την εφαρμογή ιχνηλάτησης.', link:'http://ergasiomania.onrender.com' , imageSrc: '/images/Εργασιομανία.png', imageAlt: 'Ιστότοπος Εργασιομανίας'},
-
-//   ];
 
 const Portfolio = () => {
   return (
@@ -46,140 +41,6 @@ const Portfolio = () => {
                 </div>
               );
             })}
-
-            {/* <div className={styles['portfolio-item']}>
-              <Image
-                className={styles.img}
-                src="/images/Εργασιομανία.png"
-                fill
-                alt="Ιστότοπος Εργασιομανίας"
-              />
-              <Link
-                href={'http://ergasiomania.onrender.com'}
-                className={styles['portfolio-layer']}
-              >
-                <h4>Εργασιομανία</h4>
-                <p>
-                  Οργάνωσε το κυνήγι εργασίας σου με αυτήν την εφαρμογή
-                  ιχνηλάτησης.
-                </p>
-                <FaRegHandPointer className={styles['link-icon']} />
-              </Link>
-            </div>
-            <div className={styles['portfolio-item']}>
-              <Image
-                className={styles.img}
-                src="/images/Εργασιομανία.png"
-                fill
-                alt="Ιστότοπος Εργασιομανίας"
-              />
-              <Link
-                href={'http://ergasiomania.onrender.com'}
-                className={styles['portfolio-layer']}
-              >
-                <h4>Εργασιομανία</h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis.
-                </p>
-                <FaRegHandPointer className={styles['link-icon']} />
-              </Link>
-            </div>
-            <div className={styles['portfolio-item']}>
-              <Image
-                className={styles.img}
-                src="/images/Εργασιομανία.png"
-                fill
-                alt="Ιστότοπος Εργασιομανίας"
-              />
-              <Link
-                href={'http://ergasiomania.onrender.com'}
-                className={styles['portfolio-layer']}
-              >
-                <h4>Εργασιομανία</h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis.
-                </p>
-                <FaRegHandPointer className={styles['link-icon']} />
-              </Link>
-            </div>
-            <div className={styles['portfolio-item']}>
-              <Image
-                className={styles.img}
-                src="/images/Εργασιομανία.png"
-                fill
-                alt="Ιστότοπος Εργασιομανίας"
-              />
-              <Link
-                href={'http://ergasiomania.onrender.com'}
-                className={styles['portfolio-layer']}
-              >
-                <h4>Εργασιομανία</h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis.
-                </p>
-                <FaRegHandPointer className={styles['link-icon']} />
-              </Link>
-            </div>
-            <div className={styles['portfolio-item']}>
-              <Image
-                className={styles.img}
-                src="/images/Εργασιομανία.png"
-                fill
-                alt="Ιστότοπος Εργασιομανίας"
-              />
-              <Link
-                href={'http://ergasiomania.onrender.com'}
-                className={styles['portfolio-layer']}
-              >
-                <h4>Εργασιομανία</h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis.
-                </p>
-                <FaRegHandPointer className={styles['link-icon']} />
-              </Link>
-            </div>
-            <div className={styles['portfolio-item']}>
-              <Image
-                className={styles.img}
-                src="/images/Εργασιομανία.png"
-                fill
-                alt="Ιστότοπος Εργασιομανίας"
-              />
-              <Link
-                href={'http://ergasiomania.onrender.com'}
-                className={styles['portfolio-layer']}
-              >
-                <h4>Εργασιομανία</h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis.
-                </p>
-                <FaRegHandPointer className={styles['link-icon']} />
-              </Link>
-            </div>
-            <div className={styles['portfolio-item']}>
-              <Image
-                className={styles.img}
-                src="/images/Εργασιομανία.png"
-                fill
-                alt="Ιστότοπος Εργασιομανίας"
-              />
-              <Link
-                href={'http://ergasiomania.onrender.com'}
-                className={styles['portfolio-layer']}
-              >
-                <h4>Εργασιομανία</h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis.
-                </p>
-                <FaRegHandPointer className={styles['link-icon']} />
-              </Link>
-            </div> */}
           </div>
         </section>
       </main>
