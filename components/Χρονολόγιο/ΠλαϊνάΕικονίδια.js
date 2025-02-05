@@ -9,10 +9,10 @@ const ΠλαϊνάΕικονίδια = ({
   γεγονόςΣεΜονόΑριθμό,
   κατάστασηΓεγονότος,
 }) => {
-  const { γεγονός, οντότητα, σπουδές } = στιγμή;
+  const { γεγονός, σπουδές, έργο } = στιγμή;
 
   const { είδος } = γεγονός;
-  const { ιστότοπος } = οντότητα;
+  const { ιστότοποςΈργου } = έργο;
   const { φωτογραφίαΕγγράφου } = σπουδές;
 
   return γεγονόςΣεΜονόΑριθμό ? (
@@ -21,16 +21,16 @@ const ΠλαϊνάΕικονίδια = ({
         styles[`icons-container`] + ' ' + styles['icons-container-right']
       }
     >
-      {κατάστασηΓεγονότος === 'Παρατημένο' ? null : είδος ===
-        'Εργασία' ? null : φωτογραφίαΕγγράφου ? (
+      {κατάστασηΓεγονότος === 'Παρατημένο' ? null : είδος === 'Εργασία' ||
+        είδος === 'Έργα' ? null : φωτογραφίαΕγγράφου ? (
         <ΕικονίδιοΠιστοποιητικούΓεγονότος
           φωτογραφίαΕγγράφου={φωτογραφίαΕγγράφου}
         />
       ) : (
         <TbCertificate className={styles['icon-inactive']} />
       )}
-      {ιστότοπος ? (
-        <a target="_blank" href={ιστότοπος} rel="noopener noreferrer">
+      {ιστότοποςΈργου ? (
+        <a target="_blank" href={ιστότοποςΈργου} rel="noopener noreferrer">
           <TbWorldWww className={styles['icon-active']} />
         </a>
       ) : (
@@ -43,15 +43,16 @@ const ΠλαϊνάΕικονίδια = ({
         styles[`icons-container`] + ' ' + styles['icons-container-left']
       }
     >
-      {κατάστασηΓεγονότος === 'Παρατημένο' ? null : είδος === 'Εργασία' ? null : φωτογραφίαΕγγράφου ? (
+      {κατάστασηΓεγονότος === 'Παρατημένο' ? null : είδος === 'Εργασία' ||
+        είδος === 'Έργα' ? null : φωτογραφίαΕγγράφου ? (
         <ΕικονίδιοΠιστοποιητικούΓεγονότος
           φωτογραφίαΕγγράφου={φωτογραφίαΕγγράφου}
         />
       ) : (
         <TbCertificate className={styles['icon-inactive']} />
       )}
-      {ιστότοπος ? (
-        <a target="_blank" href={ιστότοπος} rel="noopener noreferrer">
+      {ιστότοποςΈργου ? (
+        <a target="_blank" href={ιστότοποςΈργου} rel="noopener noreferrer">
           <TbWorldWww className={styles['icon-active']} />
         </a>
       ) : (
