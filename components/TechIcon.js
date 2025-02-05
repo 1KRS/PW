@@ -20,15 +20,15 @@ import { IoLogoGithub } from 'react-icons/io';
 import styles from './TechIcon.module.css';
 
 const TechIcon = ({ όνομαΤεχνολογίας }) => {
-  const findChild = (array, id) => {
-    let result;
-    array.some(
-      (child) =>
-        (child.id === id && (result = child)) ||
-        (result = findChild(child.options || [], id))
-    );
-    return result;
-  };
+  // const findChild = (array, id) => {
+  //   let result;
+  //   array.some(
+  //     (child) =>
+  //       (child.id === id && (result = child)) ||
+  //       (result = findChild(child.options || [], id))
+  //   );
+  //   return result;
+  // };
 
   const εικονίδιο =
     όνομαΤεχνολογίας === 'HTML' ? (
