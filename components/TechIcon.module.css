@@ -3,9 +3,6 @@
   justify-content: center;
   align-items: center;
   font-size: 2vh;
-  /* width: var(--slide-item-width); */
-  /* height: calc(var(--slide-item-width) / 2); */
-  /* background-color: var(--second-bg-color-blurred); */
   border-radius: 10px;
   left: max(calc(var(--slide-item-width) * var(--tech-number)), 100%);
 }
