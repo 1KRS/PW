@@ -356,19 +356,23 @@
 .σύνδεσμος-οντότητας:focus,
 .σύνδεσμος-οντότητας:hover,
 .σύνδεσμος-οντότητας:active,
-.σύνδεσμος-οντότητας:visited {
+.σύνδεσμος-οντότητας:visited,
+.σύνδεσμος-σπουδών:link,
+.σύνδεσμος-σπουδών:focus,
+.σύνδεσμος-σπουδών:hover,
+.σύνδεσμος-σπουδών:active,
+.σύνδεσμος-σπουδών:visited {
   color: white;
+  cursor: pointer;
 }
 
 .event-info .main-h6 {
   font-size: 0.7vw;
   width: auto;
-  cursor: pointer;
 }
 .event-info .sec-h6 {
   font-size: 0.7vw;
   width: auto;
-  cursor: default;
 }
 
 .event-info .middle-line {
@@ -389,23 +393,49 @@
 }
 
 .event-info .sec-h6:hover::after {
-  content: attr(data-types-main);
+  content: attr(data-types-sec);
 }
 
 .event-info .main-h6:hover::after {
-  content: attr(data-types-sec);
+  content: attr(data-types-main);
 }
 .event-info .main-h6-normal:hover::after {
-  color: var(--main-color);
+  /* color: var(--main-color); */
+  color: gold;
 }
 .event-info .main-h6-orange:hover::after {
-  color: var(--χρώμα-σπουδών);
+  /* color: var(--χρώμα-σπουδών); */
+  color: gold;
 }
 .event-info .main-h6-gold:hover::after {
-  color: var(--χρώμα-εργασίας);
+  /* color: var(--χρώμα-εργασίας); */
+  color: gold;
 }
 .event-info .main-h6-tirquaz:hover::after {
-  color: var(--χρώμα-έργων);
+  /* color: var(--χρώμα-έργων); */
+  color: gold;
+}
+
+.περιέκτης-εικονιδίων {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3vh;
+}
+
+.περιέκτης-εικονιδίων:hover {
+  font-size: 0;
+}
+
+.περιέκτης-εικονιδίων:hover::after {
+  content: attr(data-types-icon);
+  font-size: 1.3vh;
+  text-align: end;
+  padding: 0;
+}
+
+.εικονίδιο-δευτερεύουσας-γραμμής {
+  color: white;
 }
 
 .περιεχόμενο-γεγονότος.με-κείμενο .κείμενο-γεγονότος {
