@@ -1,8 +1,11 @@
-import Heading from '@/components/Heading';
 import styles from './page.module.css';
+
 import Image from 'next/image';
-import { FaRegHandPointer } from 'react-icons/fa6';
 import Link from 'next/link';
+import Heading from '@/components/Heading';
+import TranslatedText from '@/components/TranslatedText';
+
+import { FaRegHandPointer } from 'react-icons/fa6';
 import { έργα } from '@/db/έργα';
 
 export const metadata = {
@@ -21,7 +24,7 @@ const Portfolio = () => {
 
         <section className={styles.portfolio} id="portfolio">
           <div className={styles['portfolio-container']}>
-            {έργα.map((project) => {
+            {έργα.reverse().map((project) => {
               return (
                 <div key={project.id} className={styles['portfolio-item']}>
                   <Image
@@ -30,14 +33,20 @@ const Portfolio = () => {
                     fill
                     alt={project.imageAlt}
                   />
-                  <Link
+                  <a
+                    target="_blank"
                     href={project.link}
+                    rel="noopener noreferrer"
                     className={styles['portfolio-layer']}
                   >
-                    <h4>{project.title}</h4>
-                    <p>{project.text}</p>
+                    <h4>
+                      <TranslatedText>{project.title}</TranslatedText>
+                    </h4>
+                    <p>
+                      <TranslatedText>{project.text}</TranslatedText>
+                    </p>
                     <FaRegHandPointer className={styles['link-icon']} />
-                  </Link>
+                  </a>
                 </div>
               );
             })}
