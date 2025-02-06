@@ -201,6 +201,11 @@ export const έννοιες = [
       'Jag är en junior Full-Stack Webbutvecklare med ett stort engagemang för utveckling och som strävar efter den bästa lösningen.',
   },
   {
+    ελληνικά: 'Ένας ιστότοπος που μπορείς να παίξεις τύμπανα και κρουστά.',
+    αγγλικά: 'A website where you can play drums and percussion.',
+    σουηδικά: 'En webbplats där du kan spela trummor och slagverk.',
+  },
+  {
     ελληνικά: 'Είσαι ήδη μέλος; ',
     αγγλικά: 'Already a member? ',
     σουηδικά: 'Redan medlem? ',
@@ -214,6 +219,11 @@ export const έννοιες = [
   { ελληνικά: 'Εκκαθάριση', αγγλικά: 'Clear', σουηδικά: 'Klar' },
   { ελληνικά: 'Εκκρεμεί', αγγλικά: 'Pending', σουηδικά: 'I Väntan På' },
   { ελληνικά: 'Εκκρεμούν', αγγλικά: 'Pending', σουηδικά: 'I Väntan På' },
+  {
+    ελληνικά: 'Εκπαίδευσε το εσωτερικό σου ωρολόι για να συγχρονιστεί με τον πραγματικό χρόνο.',
+    αγγλικά: 'Train your internal clock to synchronize with real time.',
+    σουηδικά: 'Träna din interna klocka att synkronisera med realtid.',
+  },
   { ελληνικά: 'Εν αναμονή', αγγλικά: 'Pending', σουηδικά: 'I Väntan På' },
   { ελληνικά: 'Εν εξελίξει', αγγλικά: 'In progress', σουηδικά: 'Pågår' },
   {
@@ -286,6 +296,8 @@ export const έννοιες = [
   { ελληνικά: 'Επώνυμο', αγγλικά: 'Surname', σουηδικά: 'Efternamn' },
   { ελληνικά: 'Εργασία', αγγλικά: 'Job', σουηδικά: 'Jobb' },
   { ελληνικά: 'Εργασίες', αγγλικά: 'Jobs', σουηδικά: 'Jobb' },
+  { ελληνικά: 'Εργασιομανία', αγγλικά: 'Ergasiomania', σουηδικά: 'Ergasiomania' },
+  { ελληνικά: 'Εσωτερικό Ωρολόι', αγγλικά: 'Internal Clock', σουηδικά: 'Intern klocka' },
   { ελληνικά: 'Εταιρεία', αγγλικά: 'Company', σουηδικά: 'Företag' },
   {
     ελληνικά: 'Εταιρεία Εκπαίδευσης Προγραμματιστών',
@@ -408,6 +420,11 @@ export const έννοιες = [
   // Ξ //
   // Ο //
   {
+    ελληνικά: 'Ο νέος μου προσωπικός ιστότοπος αναπτυγμένος εκ του μηδενός σε NextJS.',
+    αγγλικά: 'My new personal website developed from scratch in NextJS.',
+    σουηδικά: 'Min nya personliga hemsida utvecklad från grunden i NextJS.',
+  },
+  {
     ελληνικά: 'Ο Χρήστης Δημιουργήθηκε! Ανακατεύθυνση...',
     αγγλικά: 'User Created! Redirect...',
     σουηδικά: 'Användare skapad! Dirigera om...',
@@ -418,6 +435,11 @@ export const έννοιες = [
     σουηδικά: 'Utvecklingsguide för iOS-Appar',
   },
   { ελληνικά: 'Ολοκληρωμένα', αγγλικά: 'Completed', σουηδικά: 'Avslutad' },
+  { 
+    ελληνικά: 'Οργάνωσε το κυνήγι εργασίας σου με αυτήν την εφαρμογή ιχνηλάτησης.',
+    αγγλικά: 'Organize your job hunt with this tracking app.',
+    σουηδικά: 'Organisera din jobbjakt med denna spårningsapp.',
+  },
   { ελληνικά: 'Οργάνωση', αγγλικά: 'Sort', σουηδικά: 'Sortera' },
   // Π //
   {
@@ -609,7 +631,24 @@ export const έννοιες = [
     αγγλικά: 'User Details Updated!',
     σουηδικά: 'Användarinformation uppdaterad!',
   },
+  {
+    ελληνικά: 'Το γνωστό σε όλους μας παίγνιο μνήμης.',
+    αγγλικά: "The memory game we all know.",
+    σουηδικά: 'Minnesspelet känner vi alla till.',
+  },
+  {
+    ελληνικά: 'Το γνωστό σε όλους μας παίγνιο στρατηγικής.',
+    αγγλικά: "The strategy game we all know.",
+    σουηδικά: 'Strategispelet vi alla känner till.',
+  },
+  {
+    ελληνικά: 'Το Παίγνιο Του Σάιμον',
+    αγγλικά: "Simon's Game",
+    σουηδικά: 'Simons Spel',
+  },
   { ελληνικά: 'Τοποθεσία', αγγλικά: 'Location', σουηδικά: 'Spårande' },
+  { ελληνικά: 'Τρίλιζα', αγγλικά: 'Tic Tac Toe', σουηδικά: 'Luffarschack' },
+  { ελληνικά: 'Τύμπανα & Κρουστά', αγγλικά: 'Drums & Percussion', σουηδικά: 'Trummor & Slagverk' },
   { ελληνικά: 'Τύπος Εργασίας', αγγλικά: 'Job Type', σουηδικά: 'Arbetstyp' },
   // Υ //
   { ελληνικά: 'Υβριδικά', αγγλικά: 'Hybrid', σουηδικά: 'Hybrid' },
@@ -624,6 +663,16 @@ export const έννοιες = [
     ελληνικά: 'Υπό Ανάπτυξη',
     αγγλικά: 'Under Development',
     σουηδικά: 'Under Utveckling',
+  },
+  {
+    ελληνικά: 'Υπολόγισε την απόδοση της επένδυσής σου με αυτό το διαδικτυακό εργαλείο.',
+    αγγλικά: 'Calculate your return on investment with this online tool.',
+    σουηδικά: 'Beräkna din avkastning på investeringen med detta onlineverktyg.',
+  },
+  {
+    ελληνικά: 'Υπολογιστής Επένδυσης',
+    αγγλικά: 'Investment Calculator',
+    σουηδικά: 'Investerings Kalkylator',
   },
   // Φ //
   {
