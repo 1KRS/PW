@@ -3,7 +3,7 @@
 import { μετάφραση } from '@/utils/μετάφραση';
 import styles from './BackgroundToggle.module.css';
 import { useAppContext } from '@/context/AppContext';
-import Input from '../Inputs/Input';
+import Input from '../Επικοινωνία/Inputs/Input';
 
 const BackgroundToggle = () => {
   const { language, programmingBackground, changeBackground } = useAppContext();
