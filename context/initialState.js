@@ -1,7 +1,8 @@
 const initialState = {
   language: 'ελληνικά',
-  programmingBackground: 'static',
+  programmingBackground: 'dynamic',
   showEventColors: false,
+  // φίλτροΚατηγορίαςΧρονολογίου: 'Προγραμματισμός',
   φίλτροΚατάστασηςΓεγονότωνΧρονολογίου: '',
   isLoading: false,
   showAlert: false,
