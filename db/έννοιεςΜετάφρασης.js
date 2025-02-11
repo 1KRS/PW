@@ -378,6 +378,11 @@ export const έννοιες = [
     σουηδικά: 'Ett fel uppstod',
   },
   {
+    ελληνικά: 'Κάποιο λάθος προέκυψε κατά την αποστολή του μηνύματος',
+    αγγλικά: 'An error occurred while sending your message',
+    σουηδικά: 'Ett fel uppstod när meddelandet skickades.',
+  },
+  {
     ελληνικά: 'Καθαρισμός Φίλτρων',
     αγγλικά: 'Clear Filters',
     σουηδικά: 'Rensa Filter',
@@ -470,6 +475,16 @@ export const έννοιες = [
   { ελληνικά: 'Πιστοποιητικό', αγγλικά: 'Certificate', σουηδικά: 'Intyg' },
   {
     ελληνικά: 'Πλήρες Όνομα',
+    αγγλικά: 'Full Name',
+    σουηδικά: 'Fullständigt Namn',
+  },
+  {
+    ελληνικά: 'Πλήρες  Όνομα', // με διπλό κενό λόγω τόνου στο Ο που το κάνει να φαίνεται κολλητά σε μερικές γραμματοσειρές
+    αγγλικά: 'Full Name',
+    σουηδικά: 'Fullständigt Namn',
+  },
+  {
+    ελληνικά: 'Πλήρες Ονοματεπώνυμο',
     αγγλικά: 'Full Name',
     σουηδικά: 'Fullständigt Namn',
   },
@@ -640,6 +655,11 @@ export const έννοιες = [
     ελληνικά: 'Το γνωστό σε όλους μας παίγνιο στρατηγικής.',
     αγγλικά: "The strategy game we all know.",
     σουηδικά: 'Strategispelet vi alla känner till.',
+  },
+  {
+    ελληνικά: 'Το μήνυμα εστάλη',
+    αγγλικά: "Message has been sent",
+    σουηδικά: 'Meddelandet har skickats',
   },
   {
     ελληνικά: 'Το Παίγνιο Του Σάιμον',
