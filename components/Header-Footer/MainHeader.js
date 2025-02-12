@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import styles from './MainHeader.module.css';
 import LanguagesDropdown from '../LanguagesDropdown';
-import BackgroundToggle from '../ToggleButtons/BackgroundToggle';
-import BackgroundToggle2 from '../ToggleButtons/BackgroundToggle2';
+import BackgroundToggle from '../Πλήκτρα/ToggleButtons/BackgroundToggle';
+import BackgroundToggle2 from '../Πλήκτρα/ToggleButtons/BackgroundToggle2';
 
 const MainHeader = () => {
   return (
