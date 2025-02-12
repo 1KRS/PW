@@ -1,7 +1,7 @@
 import styles from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου.module.css';
 
-import { SiSololearn, SiUdemy, SiYoutube } from 'react-icons/si';
-import { FaCode } from 'react-icons/fa';
+// import { SiSololearn, SiUdemy, SiYoutube } from 'react-icons/si';
+// import { FaCode } from 'react-icons/fa';
 // import { SiKoenigsegg } from 'react-icons/si';
 
 const ΠληροφορίεςΟντότητας = ({
@@ -9,29 +9,8 @@ const ΠληροφορίεςΟντότητας = ({
   ιστότοποςΟντότητας,
   χρώμαΕίδους,
   κείμενοΔεδομένωνΟντότητας,
-  τύποςΔεδομένωνΟντότητας,
+  // τύποςΔεδομένωνΟντότητας,
 }) => {
-  // const σύμβολοΟντότητας =
-  //   είδος === 'Εργασία' ? (
-  //     κείμενοΔεδομένωνΟντότητας === 'Koenigsegg' ? (
-  //       <FaCode />
-  //     ) : (
-  //       κείμενοΔεδομένωνΟντότητας
-  //     )
-  //   ) : είδος === 'Σπουδές' ? (
-  //     κείμενοΔεδομένωνΟντότητας === 'Sololearn' ? (
-  //       <SiSololearn />
-  //     ) : κείμενοΔεδομένωνΟντότητας === 'Udemy' ? (
-  //       <SiUdemy />
-  //     ) : κείμενοΔεδομένωνΟντότητας === 'YouTube' ||
-  //       κείμενοΔεδομένωνΟντότητας === 'YT' ? (
-  //       <SiYoutube />
-  //     ) : (
-  //       κείμενοΔεδομένωνΟντότητας
-  //     )
-  //   ) : (
-  //     <FaCode />
-  //   );
 
   return (
     είδος !== '' &&
