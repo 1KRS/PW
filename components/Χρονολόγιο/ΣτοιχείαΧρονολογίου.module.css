@@ -348,10 +348,12 @@
   font-size: 1.3vw;
 }
 
+/* ΠΛΗΡΟΦΟΡΙΕΣ ΔΕΥΤΕΡΕΥΟΥΣΑΣ ΓΡΑΜΜΗΣ */
 .event-info {
   display: flex;
 }
 
+/* Σύνδεσμοι*/
 .σύνδεσμος-οντότητας:link,
 .σύνδεσμος-οντότητας:focus,
 .σύνδεσμος-οντότητας:hover,
@@ -362,60 +364,63 @@
 .σύνδεσμος-σπουδών:hover,
 .σύνδεσμος-σπουδών:active,
 .σύνδεσμος-σπουδών:visited {
-  color: white;
+  color: gold;
   cursor: pointer;
 }
 
-.event-info .οντότητα {
+.οντότητα,
+.σπουδές,
+.διαχωριστικό {
   font-size: 0.7vw;
+  color: white;
+}
+.οντότητα,
+.σπουδές {
   width: auto;
 }
-.event-info .σπουδές {
-  font-size: 0.7vw;
-  width: auto;
-}
 
-.event-info .διαχωριστικό {
-  font-size: 0.7vw;
-}
-
-.event-info .σπουδές:hover {
-  font-size: 0;
-}
-.event-info .οντότητα:hover {
-  font-size: 0;
-}
-
-.event-info .σπουδές::after,
-.event-info .οντότητα::after {
+/* .οντότητα::after,
+.σπουδές::after {
   font-size: 0.7vw;
   text-align: center;
+} */
+
+.σύνδεσμος-οντότητας:hover > .οντότητα,
+.σύνδεσμος-σπουδών:hover > .σπουδές {
+  /* font-size: 0; */
+  color: gold;
 }
 
-.event-info .σπουδές:hover::after {
+/* .οντότητα:hover + .σπουδές,
+.σπουδές:hover + .οντότητα {
+  font-size: 0;
+} */
+
+.οντότητα:hover::after {
+  content: attr(data-types-main);
+}
+.σπουδές:hover::after {
   content: attr(data-types-sec);
 }
 
-.event-info .οντότητα:hover::after {
-  content: attr(data-types-main);
-}
-.event-info .οντότητα-normal:hover::after {
+.οντότητα-normal:hover::after {
   /* color: var(--main-color); */
   color: gold;
 }
-.event-info .οντότητα-orange:hover::after {
+.οντότητα-orange:hover::after {
   /* color: var(--χρώμα-σπουδών); */
   color: gold;
 }
-.event-info .οντότητα-gold:hover::after {
+.οντότητα-gold:hover::after {
   /* color: var(--χρώμα-εργασίας); */
   color: gold;
 }
-.event-info .οντότητα-tirquaz:hover::after {
+.οντότητα-tirquaz:hover::after {
   /* color: var(--χρώμα-έργων); */
   color: gold;
 }
 
+/* Εικονίδια δευτερεύουσας γραμμής */
 .περιέκτης-εικονιδίων {
   display: flex;
   justify-content: center;
