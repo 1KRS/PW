@@ -1,0 +1,35 @@
+.container {
+  --container-height: 210px;
+  --container-width: 210px;
+  --container-padding: 0px;
+  --button-margin: 6px;
+  --border-thickness: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--container-width);
+  height: var(--container-height);
+  padding: var(--container-padding);
+  background-color: var(--bg-color);
+  /* border: var(--border-thickness) solid var(--main-color); */
+}
+
+
+.button {
+  /* position: absolute;
+  left: 0;  */
+  height: 15%;
+  width: 15%;
+  /* height: calc(var(--container-height) - 2*var(--container-padding) - var(--button-margin) - 2*var(--border-thickness)); */
+  /* width: calc(var(--container-height) - 2*var(--container-padding) - var(--button-margin) - 2*var(--border-thickness)); */
+  /* margin: calc((var(--button-margin)/2)); */
+  background-color: gold;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.icon {
+  margin: 4px 0 0;
+  font-size: 15px;
+  font-weight: bold;
+}
