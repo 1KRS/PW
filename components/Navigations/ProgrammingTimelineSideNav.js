@@ -1,6 +1,6 @@
 import styles from './ProgrammingTimelineSideNav.module.css';
 
-import ΠερίβλημαΠλήκτροΕπιμονήςΧρωμάτωνΓεγονότος from '@/components/ToggleButtons/ΠερίβλημαΠλήκτροΕπιμονήςΧρωμάτωνΓεγονότος';
+import ΠερίβλημαΠλήκτροΕπιμονήςΧρωμάτωνΓεγονότος from '@/components/Πλήκτρα/ToggleButtons/ΠερίβλημαΠλήκτροΕπιμονήςΧρωμάτωνΓεγονότος';
 import ΣτοιχείοΠλαϊνήςΣτήλης from '@/components/Πλήκτρα/ΣτοιχείοΠλαϊνήςΣτήλης';
 
 const ProgrammingTimelineSideNav = ({ σελίδα, ύπαρξηΦίλτρων }) => {
