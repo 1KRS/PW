@@ -366,52 +366,52 @@
   cursor: pointer;
 }
 
-.event-info .main-h6 {
+.event-info .οντότητα {
   font-size: 0.7vw;
   width: auto;
 }
-.event-info .sec-h6 {
+.event-info .σπουδές {
   font-size: 0.7vw;
   width: auto;
 }
 
-.event-info .middle-line {
+.event-info .διαχωριστικό {
   font-size: 0.7vw;
 }
 
-.event-info .sec-h6:hover {
+.event-info .σπουδές:hover {
   font-size: 0;
 }
-.event-info .main-h6:hover {
+.event-info .οντότητα:hover {
   font-size: 0;
 }
 
-.event-info .sec-h6::after,
-.event-info .main-h6::after {
+.event-info .σπουδές::after,
+.event-info .οντότητα::after {
   font-size: 0.7vw;
   text-align: center;
 }
 
-.event-info .sec-h6:hover::after {
+.event-info .σπουδές:hover::after {
   content: attr(data-types-sec);
 }
 
-.event-info .main-h6:hover::after {
+.event-info .οντότητα:hover::after {
   content: attr(data-types-main);
 }
-.event-info .main-h6-normal:hover::after {
+.event-info .οντότητα-normal:hover::after {
   /* color: var(--main-color); */
   color: gold;
 }
-.event-info .main-h6-orange:hover::after {
+.event-info .οντότητα-orange:hover::after {
   /* color: var(--χρώμα-σπουδών); */
   color: gold;
 }
-.event-info .main-h6-gold:hover::after {
+.event-info .οντότητα-gold:hover::after {
   /* color: var(--χρώμα-εργασίας); */
   color: gold;
 }
-.event-info .main-h6-tirquaz:hover::after {
+.event-info .οντότητα-tirquaz:hover::after {
   /* color: var(--χρώμα-έργων); */
   color: gold;
 }
