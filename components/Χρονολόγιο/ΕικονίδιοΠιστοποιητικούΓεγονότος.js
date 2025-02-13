@@ -4,7 +4,7 @@ import styles from '@/components/Χρονολόγιο/ΣτοιχείαΧρονο
 
 import { useAppContext } from '@/context/AppContext';
 
-import { TbCertificate, TbWorldWww } from 'react-icons/tb';
+import { TbCertificate } from 'react-icons/tb';
 
 const ΕικονίδιοΠιστοποιητικούΓεγονότος = ({ φωτογραφίαΕγγράφου }) => {
   const { toggleCertificateModal } = useAppContext();
