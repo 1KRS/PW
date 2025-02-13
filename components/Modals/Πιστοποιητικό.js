@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './ΠιστοποιητικόΣεΠαράθυρο.module.css';
+import styles from './Πιστοποιητικό.module.css';
 import { useRef, useEffect } from 'react';
 
 import { IoClose } from 'react-icons/io5';
@@ -8,7 +8,7 @@ import { IoClose } from 'react-icons/io5';
 import { useAppContext } from '@/context/AppContext';
 import { μετάφραση } from '@/utils/μετάφραση';
 
-const ΠιστοποιητικόΣεΠαράθυρο = () => {
+const Πιστοποιητικό = () => {
   const { certificate, language, toggleCertificateModal } = useAppContext();
 
   const dialog = useRef();
@@ -48,4 +48,4 @@ const ΠιστοποιητικόΣεΠαράθυρο = () => {
   );
 };
 
-export default ΠιστοποιητικόΣεΠαράθυρο;
+export default Πιστοποιητικό;
