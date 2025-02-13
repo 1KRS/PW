@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './Φόρμα.module.css';
+import styles from './Form.module.css';
 
 import Input from '@/components/Επικοινωνία/Inputs/Input';
 import Textarea from '@/components/Επικοινωνία/Inputs/Textarea';
@@ -9,7 +9,7 @@ import { useAppContext } from '@/context/AppContext';
 import { useState } from 'react';
 import { μετάφραση } from '@/utils/μετάφραση';
 
-const Φόρμα = ({ id }) => {
+const Form = ({ id }) => {
   const [loading, setLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
   const [ονοματεπώνυμο, setΟνοματεπώνυμο] = useState('');
@@ -135,4 +135,4 @@ const Φόρμα = ({ id }) => {
   );
 };
 
-export default Φόρμα;
+export default Form;

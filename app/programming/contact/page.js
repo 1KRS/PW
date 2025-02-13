@@ -1,6 +1,6 @@
 import styles from './page.module.css';
 import Heading from '@/components/Heading';
-import Φόρμα from '@/components/Επικοινωνία/Φόρμα';
+import Φόρμα from '@/components/Επικοινωνία/Form';
 
 export const metadata = {
   title: 'ΔΜ - Επικοινωνία',
