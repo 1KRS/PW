@@ -4,7 +4,7 @@ import ProgrammingSideNav from '@/components/Navigations/ProgrammingSideNav';
 import MainFooter from '@/components/Header-Footer/MainFooter';
 // import MainSubheader from '@/components/MainSubheader';
 import UnderConstructionRibbon from '@/components/UnderDevelopmentRibbon';
-import ΠιστοποιητικόΣεΠαράθυρο from '@/components/Modals/Πιστοποιητικό';
+import ΠιστοποιητικόΣεΠαράθυρο from '@/components/Modals/Certificate';
 
 export const metadata = {
   title: 'ΔΜ',
