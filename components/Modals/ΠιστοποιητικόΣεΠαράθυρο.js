@@ -21,7 +21,7 @@ const ΠιστοποιητικόΣεΠαράθυρο = () => {
 
   const handleCloseModal = () => {
     toggleCertificateModal();
-    dialog.current.close()
+    dialog.current.close();
   };
 
   return (
