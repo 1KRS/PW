@@ -50,17 +50,18 @@
   border: 2px solid transparent;
   border-radius: 15px;
   letter-spacing: 0.1rem;
-  cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 
 .φόρμα .btn {
   background: var(--main-color);
   color: black;
+  cursor: pointer;
 }
 .φόρμα .btn-success {
   background: var(--success);
   color: white;
+  cursor: default;
 }
 
 .φόρμα .btn:hover {
