@@ -12,11 +12,12 @@ const initialState = {
   technologies: [],
   totalTechnologies: 0,
   certificate: '',
-  search: '',
-  searchStatus: 'Όλα',
-  searchType: 'Όλα',
-  sortOptions: ['Νεότερες', 'Παλαιότερες', 'Α -> Ω', 'Ω -> Α'],
-  sort: 'Νεότερες',
+  settings: false,
+  // search: '',
+  // searchStatus: 'Όλα',
+  // searchType: 'Όλα',
+  // sortOptions: ['Νεότερες', 'Παλαιότερες', 'Α -> Ω', 'Ω -> Α'],
+  // sort: 'Νεότερες',
 };
 
 export default initialState;
