@@ -1,0 +1,13 @@
+.περιέκτης-ρυθμίσεων {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.απόκρυψη {
+  visibility: hidden;
+}
