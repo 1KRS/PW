@@ -7,7 +7,7 @@ import { useAppContext } from '@/context/AppContext';
 
 import { στοιχείαΗμερομηνιών } from '@/utils/στοιχείαΗμερομηνιών';
 
-const ΦίλτραΓεγονότων = () => {
+const EventFilters = () => {
   const { φίλτροΚατάστασηςΓεγονότωνΧρονολογίου } = useAppContext();
 
   return (
@@ -47,4 +47,4 @@ const ΦίλτραΓεγονότων = () => {
     </>
   );
 };
-export default ΦίλτραΓεγονότων;
+export default EventFilters;

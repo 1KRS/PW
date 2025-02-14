@@ -6,7 +6,7 @@ import { useAppContext } from '@/context/AppContext';
 
 import { TbCertificate } from 'react-icons/tb';
 
-const ΕικονίδιοΠιστοποιητικούΓεγονότος = ({ φωτογραφίαΕγγράφου }) => {
+const EventCertificateIcon = ({ φωτογραφίαΕγγράφου }) => {
   const { toggleCertificateModal } = useAppContext();
 
   const handleCertificateClick = (e, φωτογραφίαΕγγράφου) => {
@@ -22,4 +22,4 @@ const ΕικονίδιοΠιστοποιητικούΓεγονότος = ({ φω
   );
 };
 
-export default ΕικονίδιοΠιστοποιητικούΓεγονότος;
+export default EventCertificateIcon;

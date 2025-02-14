@@ -8,7 +8,7 @@ import ΕνδιάμεσοΔιαχωριστικό from '@/components/Χρονο�
 import { useAppContext } from '@/context/AppContext';
 import { μετάφραση } from '@/utils/μετάφραση';
 
-const ΠληροφορίεςΔευτερεύουσαςΓραμμής = ({
+const SecondaryLineInfo = ({
   στιγμή,
   γεγονόςΣεΜονόΑριθμό,
   χρώμαΕίδους,
@@ -119,4 +119,4 @@ const ΠληροφορίεςΔευτερεύουσαςΓραμμής = ({
   );
 };
 
-export default ΠληροφορίεςΔευτερεύουσαςΓραμμής;
+export default SecondaryLineInfo;

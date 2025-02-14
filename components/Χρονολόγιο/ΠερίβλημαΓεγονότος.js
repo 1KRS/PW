@@ -3,7 +3,7 @@
 import styles from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου.module.css';
 import { useAppContext } from '@/context/AppContext';
 
-const ΠερίβλημαΓεγονότος = ({
+const EventContainer = ({
   μεΉΧωρίςΔευτερεύουσαΓραμμή,
   μεΉΧωρίςΚείμενο,
   μορφήΠεριβλήματος,
@@ -33,4 +33,4 @@ const ΠερίβλημαΓεγονότος = ({
   );
 };
 
-export default ΠερίβλημαΓεγονότος;
+export default EventContainer;

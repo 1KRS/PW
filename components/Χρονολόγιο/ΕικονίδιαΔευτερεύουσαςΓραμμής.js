@@ -9,7 +9,7 @@ import { FaSchoolFlag } from 'react-icons/fa6';
 import { useAppContext } from '@/context/AppContext';
 import { μετάφραση } from '@/utils/μετάφραση';
 
-const ΕικονίδιαΔευτερεύουσαςΓραμμής = ({ είδος, τοποθεσία }) => {
+const SecondaryLineIcons = ({ είδος, τοποθεσία }) => {
   const { language } = useAppContext();
 
   return (
@@ -32,4 +32,4 @@ const ΕικονίδιαΔευτερεύουσαςΓραμμής = ({ είδος
   );
 };
 
-export default ΕικονίδιαΔευτερεύουσαςΓραμμής;
+export default SecondaryLineIcons;

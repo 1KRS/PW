@@ -10,7 +10,7 @@ import { RiAlibabaCloudLine } from 'react-icons/ri';
 
 import { useAppContext } from '@/context/AppContext';
 
-const ΣτοιχείοΠλαϊνήςΣτήλης = ({ σελίδα, ύπαρξηΦίλτρων, είδοςΚατηγορίας }) => {
+const SideNavItem = ({ σελίδα, ύπαρξηΦίλτρων, είδοςΚατηγορίας }) => {
   const { φίλτροΚατάστασηςΓεγονότωνΧρονολογίου, changeEventFilter } =
     useAppContext();
 
@@ -84,4 +84,4 @@ const ΣτοιχείοΠλαϊνήςΣτήλης = ({ σελίδα, ύπαρξη
   return περιεχόμενοΣτοιχείου;
 };
 
-export default ΣτοιχείοΠλαϊνήςΣτήλης;
+export default SideNavItem;

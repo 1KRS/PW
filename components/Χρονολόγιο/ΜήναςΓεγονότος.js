@@ -4,7 +4,7 @@ import { useAppContext } from '@/context/AppContext';
 import { μετάφραση } from '@/utils/μετάφραση';
 import { DateTime } from 'luxon';
 
-const ΜήναςΓεγονότος = ({ έναρξη }) => {
+const EventMonth = ({ έναρξη }) => {
   const { language } = useAppContext();
 
   let μήναςΈναρξης =
@@ -28,4 +28,4 @@ const ΜήναςΓεγονότος = ({ έναρξη }) => {
   return <>{μήναςΈναρξης}</>;
 };
 
-export default ΜήναςΓεγονότος;
+export default EventMonth;
