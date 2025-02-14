@@ -113,7 +113,6 @@ const Form = ({ id }) => {
         </div>
       </div>
       <div className={styles['input-group-2']}>
-        {successMessage && <p>{successMessage}</p>}
         <div className={styles['input-box']}>
           <Textarea
             cols="30"
@@ -126,8 +125,8 @@ const Form = ({ id }) => {
         </div>
         <Input
           type="submit"
-          style="btn"
-          value="Αποστολή Μηνύματος"
+          style={successMessage ? 'btn-success' : 'btn'}
+          value={successMessage ? successMessage : 'Αποστολή Μηνύματος'}
           disabled={loading}
           onSubmit={onSubmit}
         />

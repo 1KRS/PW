@@ -40,19 +40,27 @@
   /* resize: none; */
 }
 
-.φόρμα .btn {
+.φόρμα .btn, 
+.φόρμα .btn-success {
   display: inline-block;
   padding: 1vh 2.8vw;
-  background: var(--main-color);
   box-shadow: 0 0 25px var(--main-color);
   font-size: 1rem;
   font-weight: 600;
-  color: black;
   border: 2px solid transparent;
   border-radius: 15px;
   letter-spacing: 0.1rem;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+}
+
+.φόρμα .btn {
+  background: var(--main-color);
+  color: black;
+}
+.φόρμα .btn-success {
+  background: var(--success);
+  color: white;
 }
 
 .φόρμα .btn:hover {
