@@ -1,10 +1,10 @@
 import ProgrammingBackground from '@/components/Backgrounds/ProgrammingBackground';
-import MainHeader from '@/components/Header-Footer/MainHeader';
+import Κεφαλίδα from '@/components/Κεφαλίδες-Υποσέλιδα/Κεφαλίδα';
 import ProgrammingSideNav from '@/components/Navigations/ProgrammingSideNav';
-import MainFooter from '@/components/Header-Footer/MainFooter';
+import Υποσέλιδο from '@/components/Κεφαλίδες-Υποσέλιδα/Υποσέλιδο';
 // import MainSubheader from '@/components/MainSubheader';
 import UnderConstructionRibbon from '@/components/UnderDevelopmentRibbon';
-import ΠιστοποιητικόΣεΠαράθυρο from '@/components/Modals/Certificate';
+import ΠιστοποιητικόΣεΠαράθυρο from '@/components/Modals/Πιστοποιητικό';
 
 export const metadata = {
   title: 'ΔΜ',
@@ -17,14 +17,14 @@ export const metadata = {
 const ProgrammingLayout = ({ children }) => {
   return (
     <ProgrammingBackground>
-      <MainHeader />
+      <Κεφαλίδα />
       <UnderConstructionRibbon />
       <ΠιστοποιητικόΣεΠαράθυρο />
 
       {/* <MainSubheader /> */}
       <ProgrammingSideNav />
       {children}
-      <MainFooter />
+      <Υποσέλιδο />
     </ProgrammingBackground>
   );
 };

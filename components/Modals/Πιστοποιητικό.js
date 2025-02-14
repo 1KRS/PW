@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './Certificate.module.css';
+import styles from './Πιστοποιητικό.module.css';
 
 import { useRef, useEffect } from 'react';
 import { useAppContext } from '@/context/AppContext';
@@ -31,11 +31,14 @@ const Certificate = () => {
       className={styles['παράθυρο-πιστοποιητικού']}
       onClick={() => handleCloseModal()}
     >
-      <img
-        className={styles.img}
-        src={certificate}
-        alt={certificate && μετάφραση('Πιστοποιητικό', language)}
-      />
+      {/* 👇🏼 Στα ξαφνικά δημιουργούσε θέμα η πιθανή έλλειψη 'src' στην εικόνα οπότε το έβαλα μέσα σε όρο */}
+      {certificate && (
+        <img
+          className={styles.img}
+          src={certificate}
+          alt={certificate && μετάφραση('Πιστοποιητικό', language)}
+        />
+      )}
       <form method="dialog">
         <button
           className={styles.πλήκτρο}

@@ -1,10 +1,19 @@
 'use client';
 
-import styles from '@/components/Επικοινωνία/Form.module.css';
+import styles from '@/components/Επικοινωνία/Φόρμα.module.css';
 import { useAppContext } from '@/context/AppContext';
 import { μετάφραση } from '@/utils/μετάφραση';
 
-const Textarea = ({ id, name, cols, rows, style, placeholder, χειρισμόςΠληκτρισμού, children }) => {
+const Textarea = ({
+  id,
+  name,
+  cols,
+  rows,
+  style,
+  placeholder,
+  χειρισμόςΠληκτρισμού,
+  children,
+}) => {
   const { language } = useAppContext();
 
   return (

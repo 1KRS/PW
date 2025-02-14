@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import styles from './MainFooter.module.css';
+import styles from './Υποσέλιδο.module.css';
 
 import { στοιχείαΗμερομηνιών } from '@/utils/στοιχείαΗμερομηνιών';
 
 import SocialIcons from '../SocialIcons';
 import TranslatedText from '../TranslatedText';
 
-const MainFooter = () => {
+const Υποσέλιδο = () => {
   const { τρέχονΈτος } = στοιχείαΗμερομηνιών();
 
   return (
@@ -30,4 +30,4 @@ const MainFooter = () => {
     </footer>
   );
 };
-export default MainFooter;
+export default Υποσέλιδο;

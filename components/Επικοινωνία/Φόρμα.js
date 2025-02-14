@@ -1,12 +1,13 @@
 'use client';
 
-import styles from './Form.module.css';
+import styles from './Φόρμα.module.css';
 
 import Input from '@/components/Επικοινωνία/Inputs/Input';
 import Textarea from '@/components/Επικοινωνία/Inputs/Textarea';
 
 import { useAppContext } from '@/context/AppContext';
 import { useState } from 'react';
+
 import { μετάφραση } from '@/utils/μετάφραση';
 
 const Form = ({ id }) => {
