@@ -38,8 +38,8 @@ const AppProvider = ({ children }) => {
       εμφάνισηΧρωμάτωνΑρχική === 'αρχική'
         ? false
         : state.φίλτροΚατάστασηςΓεγονότωνΧρονολογίου === ''
-        ? !state.showEventColors
-        : true;
+          ? !state.showEventColors
+          : true;
 
     localStorage.setItem('showEventColors', εμφάνισηΧρωμάτων);
     dispatch({
@@ -49,10 +49,16 @@ const AppProvider = ({ children }) => {
   };
 
   const toggleCertificateModal = (certificate) => {
-    const paperLink = certificate ? certificate : '';
+    const certificateLink = certificate ? certificate : '';
     dispatch({
       type: 'TOGGLE_CERTIFICATE_MODAL',
-      payload: { paperLink },
+      payload: { certificateLink },
+    });
+  };
+
+  const toggleSettingsModal = () => {
+    dispatch({
+      type: 'TOGGLE_SETTINGS_MODAL',
     });
   };
 
@@ -89,6 +95,7 @@ const AppProvider = ({ children }) => {
         changeBackground,
         toggleEventColors,
         toggleCertificateModal,
+        toggleSettingsModal,
         changeEventFilter,
       }}
     >
