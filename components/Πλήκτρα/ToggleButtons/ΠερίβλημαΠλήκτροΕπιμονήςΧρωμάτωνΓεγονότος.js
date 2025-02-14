@@ -3,7 +3,7 @@
 import styles from './ΠερίβλημαΠλήκτροΕπιμονήςΧρωμάτωνΓεγονότος.module.css';
 import { useAppContext } from '@/context/AppContext';
 
-const ΠερίβλημαΠλήκτροΕπιμονήςΧρωμάτωνΓεγονότος = ({ σελίδα, children }) => {
+const EventColorPersistenceContainerButton = ({ σελίδα, children }) => {
   const { showEventColors, toggleEventColors } = useAppContext();
 
   return (
@@ -32,4 +32,4 @@ const ΠερίβλημαΠλήκτροΕπιμονήςΧρωμάτωνΓεγον
   );
 };
 
-export default ΠερίβλημαΠλήκτροΕπιμονήςΧρωμάτωνΓεγονότος;
+export default EventColorPersistenceContainerButton;
