@@ -10,14 +10,14 @@ const Υποσέλιδο = () => {
   const { τρέχονΈτος } = στοιχείαΗμερομηνιών();
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.υποσέλιδο}>
       <nav className={styles['home-bottom-nav']}>
-        <ul className={styles.items}>
-          <Link href="/home" className={styles.item}>
+        <ul className={styles.στοιχεία}>
+          <Link href="/home" className={styles.στοιχείο}>
             <TranslatedText>Συχνές Ερωτήσεις</TranslatedText>
           </Link>
           <SocialIcons />
-          <Link href="/home" className={styles.item}>
+          <Link href="/home" className={styles.στοιχείο}>
             <TranslatedText>Σχετικά με εμένα</TranslatedText>
           </Link>
         </ul>
