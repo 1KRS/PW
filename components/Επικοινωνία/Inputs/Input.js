@@ -17,7 +17,7 @@ const Input = ({
 }) => {
   const { language } = useAppContext();
 
-  return (style === 'btn' || style === 'btn-success') ? (
+  return style === 'btn' || style === 'btn-success' ? (
     <button
       id={id}
       type={type}
