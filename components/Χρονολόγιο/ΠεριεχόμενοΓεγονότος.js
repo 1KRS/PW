@@ -3,7 +3,7 @@ import styles from '@/components/Χρονολόγιο/ΣτοιχείαΧρονο
 import ΕπάνωΓραμμή from '@/components/Χρονολόγιο/ΕπάνωΓραμμή';
 import ΚείμενοΓεγονότος from '@/components/Χρονολόγιο/ΚείμενοΓεγονότος';
 import ΠερίβλημαΓεγονότος from '@/components/Χρονολόγιο/ΠερίβλημαΓεγονότος';
-import ΣχετιζόμεναΈργα from '@/components/Χρονολόγιο/ΣχετιζόμεναΈργα';
+// import ΣχετιζόμεναΈργα from '@/components/Χρονολόγιο/ΣχετιζόμεναΈργα';
 import ΠλαϊνάΕικονίδια from '@/components/Χρονολόγιο/ΠλαϊνάΕικονίδια';
 import ΤεχνολογίεςΓεγονότος from '@/components/Χρονολόγιο/ΤεχνολογίεςΓεγονότος';
 
