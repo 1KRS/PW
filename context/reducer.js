@@ -1,9 +1,7 @@
 // import { initialState } from "./initialState";
-import { μετάφραση } from "@/utils/μετάφραση";
-
+import { μετάφραση } from '@/utils/μετάφραση';
 
 const reducer = (state, action) => {
-
   if (action.type === 'DISPLAY_ALERT') {
     return {
       ...state,
@@ -38,7 +36,7 @@ const reducer = (state, action) => {
       language: action.payload.newLanguage,
     };
   }
-  
+
   if (action.type === 'CHANGE_BACKGROUND') {
     return {
       ...state,
@@ -56,7 +54,14 @@ const reducer = (state, action) => {
   if (action.type === 'TOGGLE_CERTIFICATE_MODAL') {
     return {
       ...state,
-      certificate: action.payload.paperLink,
+      certificate: action.payload.certificateLink,
+    };
+  }
+
+  if (action.type === 'TOGGLE_SETTINGS_MODAL') {
+    return {
+      ...state,
+      settings: !state.settings,
     };
   }
 
@@ -91,7 +96,7 @@ const reducer = (state, action) => {
     };
   }
   if (action.type === 'REGISTER_USER_SUCCESS') {
-    console.log(action.payload.language)
+    console.log(action.payload.language);
     return {
       ...state,
       user: action.payload.user,
@@ -338,8 +343,6 @@ const reducer = (state, action) => {
   }
 
   throw new Error(`Η ενέργεια ${action.type} δεν υπάρχει.`);
-}
-
-
+};
 
 export default reducer;
