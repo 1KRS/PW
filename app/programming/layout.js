@@ -4,7 +4,9 @@ import ProgrammingSideNav from '@/components/Navigations/ProgrammingSideNav';
 import Υποσέλιδο from '@/components/Κεφαλίδες-Υποσέλιδα/Υποσέλιδο';
 // import MainSubheader from '@/components/MainSubheader';
 import UnderConstructionRibbon from '@/components/UnderDevelopmentRibbon';
-import ΠιστοποιητικόΣεΠαράθυρο from '@/components/Modals/Πιστοποιητικό';
+import ΠιστοποιητικόΣεΠαράθυρο from '@/components/Modals/ΠιστοποιητικόΣεΠαράθυρο';
+import ΠαράθυροΡυθμίσεων from '@/components/Modals/ΑναδυόμενοΠαράθυροΡυθμίσεων';
+import ΠλήκτροΡυθμίσεων from '@/components/ΠλήκτροΡυθμίσεων';
 
 export const metadata = {
   title: 'ΔΜ',
@@ -20,10 +22,12 @@ const ProgrammingLayout = ({ children }) => {
       <Κεφαλίδα />
       <UnderConstructionRibbon />
       <ΠιστοποιητικόΣεΠαράθυρο />
+      <ΠαράθυροΡυθμίσεων />
 
       {/* <MainSubheader /> */}
       <ProgrammingSideNav />
       {children}
+      <ΠλήκτροΡυθμίσεων />
       <Υποσέλιδο />
     </ProgrammingBackground>
   );
