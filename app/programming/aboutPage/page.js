@@ -1,5 +1,7 @@
 import styles from './page.module.css';
 
+import Heading from '@/components/Heading';
+
 const aboutPage = () => {
   return (
     <main className={styles.main}>
