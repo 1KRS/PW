@@ -19,11 +19,12 @@ export const metadata = {
 const ProgrammingLayout = ({ children }) => {
   return (
     <ProgrammingBackground>
-      <Κεφαλίδα />
-      <UnderConstructionRibbon />
+      {/* -- Αναδυόμενα Παράθυρα -- */}
       <ΠιστοποιητικόΣεΠαράθυρο />
       <ΠαράθυροΡυθμίσεων />
-
+      
+      <Κεφαλίδα />
+      <UnderConstructionRibbon />
       {/* <MainSubheader /> */}
       <ProgrammingSideNav />
       {children}
