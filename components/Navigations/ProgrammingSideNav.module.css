@@ -4,7 +4,7 @@
 
 @media (min-width: 40rem) {
   .home-side-nav {
-    --list-items: 7;
+    --list-items: 6;
     display: flex;
     position: fixed;
     right: 50px;
@@ -22,7 +22,7 @@
     align-items: center;
     height: calc((var(--list-items) * 5vh) + 5vh + 2.5vh);
     width: calc(3.5vh + 2.5vh);
-    padding: 10px 15px;
+    padding: 10px 15px 0;
     gap: 1.5vh;
     background-color: var(--second-bg-color-blurred);
     border: 1px solid var(--main-color);
