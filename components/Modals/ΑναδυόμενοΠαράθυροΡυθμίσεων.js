@@ -44,7 +44,6 @@ const Settings = () => {
             <TranslatedText>Γλώσσα:</TranslatedText>
           </h6>
           <LanguagesContainer μέγεθος="μεσαίο" />
-          {/* <ΔιακόπτηςΕναλλαγήςΥποβάθρου /> */}
         </div>
         <div className={styles['γραμμή-διακόπτη']}>
           <h6 className={styles['τίτλος-διακόπτη']}>
