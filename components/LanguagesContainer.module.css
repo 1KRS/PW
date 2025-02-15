@@ -2,14 +2,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 0 15px;
+  gap: 0.5rem;
 }
+
 .flag-btn {
-  width: 60px;
   height: 60px;
+  width: 40px;
   border: none;
   background-color: transparent;
   transition: 0.3s ease-in-out all;
 }
+
+.flag-btn.μεγάλο {
+  height: 40px;
+  width: 40px;
+}
+.flag-btn.μεσαίο {
+  height: 25px;
+  width: 25px;
+}
+.flag-btn.μικρό {
+  height: 15px;
+  width: 15px;
+}
+
 .flag {
   display: inline-flex;
   justify-content: center;
@@ -17,15 +34,31 @@
   height: 40px;
   width: 40px;
   background: transparent;
-  font-size: 1.3rem;
   border-radius: 50%;
   color: var(--main-color);
   margin: 1rem 0.5rem;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
+
+.flag.μεγάλο {
+  width: 40px;
+  height: 40px;
+  margin: 0.6rem 0;
+}
+.flag.μεσαίο {
+  width: 25px;
+  height: 25px;
+  margin: 0.5rem 0;
+}
+.flag.μικρό {
+  width: 15px;
+  height: 15px;
+  margin: 0.12rem 0;
+}
+
 .flag:hover {
   background: var(--main-color);
   box-shadow: 0 0 25px 5px var(--main-color);
-  transform: scale(1.2) ;
+  transform: scale(1.2);
 }
