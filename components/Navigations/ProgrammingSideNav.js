@@ -1,13 +1,11 @@
-import Image from 'next/image';
 import styles from './ProgrammingSideNav.module.css';
 import NavLinkThatStartsWith from '../NavLinks/NavLinkThatStartsWith';
 import NavLinkThatEndsWith from '../NavLinks/NavLinkThatEndsWith';
-import { MdOutlineStarRate } from 'react-icons/md';
+// import { MdOutlineStarRate } from 'react-icons/md';
 import { IoMdCodeWorking } from 'react-icons/io';
 import { FaBusinessTime, FaStar, FaTimeline } from 'react-icons/fa6';
 import { TiMessages } from 'react-icons/ti';
 import { GiAngelWings } from 'react-icons/gi';
-import BackgroundToggle2 from '../Πλήκτρα/ToggleButtons/BackgroundToggle2';
 
 const ProgrammingSideNav = () => {
   return (
@@ -43,20 +41,6 @@ const ProgrammingSideNav = () => {
             <TiMessages />
           </NavLinkThatStartsWith>
         </li>
-        <li>
-          <BackgroundToggle2 />
-        </li>
-
-        {/* <li className={styles['home-side-nav__item']}>
-          <NavLinkThatEndsWith href="/programming">
-            <Image
-              src="/icons/Φτερά Ικάρου (Λευκά Χωρίς Υπόβαθρο).png"
-              width={45}
-              height={45}
-              alt="Φτερά Ικάρου"
-            />
-          </NavLinkThatEndsWith>
-        </li> */}
       </ul>
     </nav>
   );
