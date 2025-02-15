@@ -1,9 +1,9 @@
 'use client';
 
-import styles from './BackgroundToggle2.module.css';
+import styles from './ΔιακόπτηςΕναλλαγήςΥποβάθρου.module.css';
 import { useAppContext } from '@/context/AppContext';
 
-const BackgroundToggle2 = () => {
+const BackgroundToggleButton = () => {
   const { programmingBackground, changeBackground } = useAppContext();
 
   // let checked = programmingBackground === 'static' ? 'Δυναμικό' : 'Στατικό';
@@ -27,4 +27,4 @@ const BackgroundToggle2 = () => {
   );
 };
 
-export default BackgroundToggle2;
+export default BackgroundToggleButton;
