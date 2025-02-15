@@ -15,7 +15,6 @@ const Κεφαλίδα = () => {
       <nav className={styles['home-top-nav']}>
         <ul className={styles.items}>
           <LanguagesDropdown />
-          {/* <Link href="/" className={styles.item}>Ιστορικό Ανάπτυξης</Link> */}
         </ul>
       </nav>
     </header>
