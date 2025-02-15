@@ -3,8 +3,6 @@ import styles from './Κεφαλίδα.module.css';
 import Link from 'next/link';
 
 import LanguagesDropdown from '../LanguagesDropdown';
-import BackgroundToggle from '../Πλήκτρα/ToggleButtons/BackgroundToggle';
-import BackgroundToggle2 from '../Πλήκτρα/ToggleButtons/BackgroundToggle2';
 
 const Κεφαλίδα = () => {
   return (
