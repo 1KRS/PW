@@ -1,4 +1,5 @@
 import styles from './page.module.css';
+
 import Heading from '@/components/Heading';
 import Φόρμα from '@/components/Επικοινωνία/Φόρμα';
 
@@ -12,14 +13,15 @@ export const metadata = {
 
 const Contact = () => {
   return (
-    <>
-      <main className={styles.main}>
-        <Heading text="Επικοινωνία" />
-        <section className={styles['τομέας-επικοινωνίας']} id="τομέας-επικοινωνίας">
-          <Φόρμα id='φόρμα-γενικής-επικοινωνίας' />
-        </section>
-      </main>
-    </>
+    <main className={styles.main}>
+      <Heading text="Επικοινωνία" />
+      <section
+        className={styles['τομέας-επικοινωνίας']}
+        id="τομέας-επικοινωνίας"
+      >
+        <Φόρμα id="φόρμα-γενικής-επικοινωνίας" />
+      </section>
+    </main>
   );
 };
 
