@@ -5,8 +5,9 @@ import Link from 'next/link';
 import Heading from '@/components/Heading';
 import TranslatedText from '@/components/TranslatedText';
 
-import { FaRegHandPointer } from 'react-icons/fa6';
 import { έργα } from '@/db/έργα';
+
+import { FaRegHandPointer } from 'react-icons/fa6';
 
 export const metadata = {
   title: 'ΔΜ - Χαρτοφυλάκιο',
@@ -22,13 +23,16 @@ const Portfolio = () => {
       <main className={styles.main}>
         <Heading text="Χαρτοφυλάκιο" />
 
-        <section className={styles.portfolio} id="portfolio">
-          <div className={styles['portfolio-container']}>
+        <section className={styles['χαρτοφυλάκιο']} id="χαρτοφυλάκιο">
+          <div className={styles['περιέκτης-χαρτοφυλακίου']}>
             {έργα.reverse().map((project) => {
               return (
-                <div key={project.id} className={styles['portfolio-item']}>
+                <div
+                  key={project.id}
+                  className={styles['στοιχείο-χαρτοφυλακίου']}
+                >
                   <Image
-                    className={styles.img}
+                    className={styles['εικόνα']}
                     src={project.imageSrc}
                     fill
                     alt={project.imageAlt}
@@ -37,7 +41,7 @@ const Portfolio = () => {
                     target="_blank"
                     href={project.link}
                     rel="noopener noreferrer"
-                    className={styles['portfolio-layer']}
+                    className={styles['στρώση-χαρτοφυλακίου']}
                   >
                     <h4>
                       <TranslatedText>{project.title}</TranslatedText>
@@ -45,7 +49,9 @@ const Portfolio = () => {
                     <p>
                       <TranslatedText>{project.text}</TranslatedText>
                     </p>
-                    <FaRegHandPointer className={styles['link-icon']} />
+                    <FaRegHandPointer
+                      className={styles['εικονίδιο-συνδέσμου']}
+                    />
                   </a>
                 </div>
               );
