@@ -19,8 +19,8 @@ const Υποσέλιδο = () => {
               <TranslatedText>Συχνές Ερωτήσεις</TranslatedText>
             </Link>
             <SocialIcons />
-            <Link href="/home" className={styles.στοιχείο}>
-              <TranslatedText>Σχετικά με εμένα</TranslatedText>
+            <Link href="/programming/about-this-site" className={styles.στοιχείο}>
+              <TranslatedText>Σχετικά</TranslatedText>
             </Link>
           </ul>
         </nav>
