@@ -6,7 +6,7 @@ import Υποσέλιδο from '@/components/Κεφαλίδες-Υποσέλιδ
 import UnderConstructionRibbon from '@/components/UnderDevelopmentRibbon';
 import ΠιστοποιητικόΣεΠαράθυρο from '@/components/Modals/ΠιστοποιητικόΣεΠαράθυρο';
 import ΠαράθυροΡυθμίσεων from '@/components/Modals/ΑναδυόμενοΠαράθυροΡυθμίσεων';
-import ΠλήκτροΡυθμίσεων from '@/components/ΠλήκτροΡυθμίσεων';
+import ΠλήκτροΡυθμίσεων from '@/components/Πλήκτρα/ΠλήκτροΡυθμίσεων';
 
 export const metadata = {
   title: 'ΔΜ',
