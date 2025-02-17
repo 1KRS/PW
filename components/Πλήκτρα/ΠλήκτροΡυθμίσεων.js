@@ -2,9 +2,9 @@
 
 import styles from './ΠλήκτροΡυθμίσεων.module.css';
 
-import ΕικονίδιοΡυθμίσεων from '@/components/ΕικονίδιοΡυθμίσεων';
-
 import { useAppContext } from '@/context/AppContext';
+
+import { VscSettings } from 'react-icons/vsc';
 
 const SettingsButton = ({}) => {
   const { settings, toggleSettingsModal } = useAppContext();
@@ -22,7 +22,7 @@ const SettingsButton = ({}) => {
       className={styles['περιέκτης-ρυθμίσεων'] + ' ' + styles[`${απόκρυψη}`]}
       onClick={(e) => handleSettingsClick(e)}
     >
-      <ΕικονίδιοΡυθμίσεων />
+      <VscSettings className={styles['εικονίδιο-ρυθμίσεων']} />
     </div>
   );
 };
