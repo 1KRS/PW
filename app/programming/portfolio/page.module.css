@@ -1,19 +1,19 @@
-.portfolio {
+.χαρτοφυλάκιο {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.portfolio-container {
-  display: grid;
+.περιέκτης-χαρτοφυλακίου {
   position: absolute;
   top: 20vh;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1vw;
   height: 73vh;
   width: 80vw;
-  padding-top: 5vh;
+  padding: 5vh 0 10vh;
   padding-bottom: 10vh;
   overflow-y: auto;
   overflow-x: hidden;
@@ -26,7 +26,7 @@
   );
 }
 
-.portfolio-item {
+.στοιχείο-χαρτοφυλακίου {
   position: relative;
   min-height: 250px;
   max-height: 250px;
@@ -41,16 +41,16 @@
   overflow: hidden;
 }
 
-.portfolio-item .img {
+.στοιχείο-χαρτοφυλακίου .εικόνα {
   box-shadow: 0 0 25px var(--main-color);
   transition: 0.5s ease;
   /* filter: blur(2px); */
 }
-.portfolio-item:hover .img {
+.στοιχείο-χαρτοφυλακίου:hover .εικόνα {
   transform: scale(1.1);
 }
 
-.portfolio-item .portfolio-layer {
+.στοιχείο-χαρτοφυλακίου .στρώση-χαρτοφυλακίου {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -70,20 +70,20 @@
   transition: 0.5s ease;
 }
 
-.portfolio-item:hover .portfolio-layer {
+.στοιχείο-χαρτοφυλακίου:hover .στρώση-χαρτοφυλακίου {
   transform: translateY(0);
 }
 
-.portfolio-layer h4 {
+.στρώση-χαρτοφυλακίου h4 {
   font-size: 2.2rem;
 }
 
-.portfolio-layer p {
+.στρώση-χαρτοφυλακίου p {
   font-size: 1.2rem;
   padding: 0.3rem 0 1rem;
 }
 
-.link-icon {
+.εικονίδιο-συνδέσμου {
   position: absolute;
   bottom: 15px;
   right: 20px;
@@ -109,12 +109,12 @@
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.portfolio-container::-webkit-scrollbar {
+.περιέκτης-χαρτοφυλακίου::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.portfolio-container {
+.περιέκτης-χαρτοφυλακίου {
 -ms-overflow-style: none;  /* IE and Edge */
 scrollbar-width: none;  /* Firefox */
 }
