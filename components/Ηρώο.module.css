@@ -27,24 +27,27 @@
   }
 
   /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
-  .με-υαλομορφισμό {
-    border-radius: 35px;
-    background-color: rgba(0, 253, 253, 0.005);
-    backdrop-filter: blur(2px);
-  }
+  .με-υαλομορφισμό,
   .με-αδιαφανή-στοιχεία,
   .με-ημιδιαφανή-στοιχεία {
     border: 2px solid var(--border-color-blurred);
     border-radius: 35px;
   }
+
+  .με-υαλομορφισμό {
+    background-color: rgba(0, 253, 253, 0.005);
+    backdrop-filter: blur(2px);
+  }
+
   .με-αδιαφανή-στοιχεία {
     background-color: var(--second-bg-color);
   }
   .με-ημιδιαφανή-στοιχεία {
     background-color: var(--second-bg-color-blurred);
   }
-  .με-λάμψη-στοιχείων {
+  .με-φέγγος-στοιχείων {
     box-shadow: 0 0px 20px var(--main-color);
+    border-color: transparent;
   }
 
   .περιεχόμενο-αρχικής span {
