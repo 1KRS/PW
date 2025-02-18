@@ -3,7 +3,7 @@
 import styles from './ΑναδυόμενοΠαράθυροΡυθμίσεων.module.css';
 
 import ΔιακόπτηςΕναλλαγήςΥποβάθρου from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΕναλλαγήςΥποβάθρου';
-import ΔιακόπτηςΑδιαφάνειας from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΑδιαφάνειας';
+import ΔιακόπτηςΕναλλαγήςΑδιαφάνειας from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΕναλλαγήςΑδιαφάνειας';
 import ΔιακόπτηςΥαλομορφισμού from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΥαλομορφισμού';
 import ΔιακόπτηςΕναλλαγήςΦέγγους from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΕναλλαγήςΦέγγους';
 import TranslatedText from '../TranslatedText';
@@ -64,7 +64,7 @@ const Settings = () => {
           <h6 className={styles['τίτλος-διακόπτη']}>
             <TranslatedText>Αδιαφάνεια:</TranslatedText>
           </h6>
-          <ΔιακόπτηςΑδιαφάνειας />
+          <ΔιακόπτηςΕναλλαγήςΑδιαφάνειας />
         </div>
         <div className={styles['γραμμή-διακόπτη']}>
           <h6 className={styles['τίτλος-διακόπτη']}>
