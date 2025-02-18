@@ -3,6 +3,9 @@
 import styles from './ΑναδυόμενοΠαράθυροΡυθμίσεων.module.css';
 
 import ΔιακόπτηςΕναλλαγήςΥποβάθρου from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΕναλλαγήςΥποβάθρου';
+import ΔιακόπτηςΑδιαφάνειας from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΑδιαφάνειας';
+import ΔιακόπτηςΥαλομορφισμού from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΥαλομορφισμού';
+import ΔιακόπτηςΕναλλαγήςΦέγγους from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΕναλλαγήςΦέγγους';
 import TranslatedText from '../TranslatedText';
 import LanguagesContainer from '../LanguagesContainer';
 
@@ -50,6 +53,24 @@ const Settings = () => {
             <TranslatedText>Δυναμικό υπόβαθρο:</TranslatedText>
           </h6>
           <ΔιακόπτηςΕναλλαγήςΥποβάθρου />
+        </div>
+        <div className={styles['γραμμή-διακόπτη']}>
+          <h6 className={styles['τίτλος-διακόπτη']}>
+            <TranslatedText>Υαλομορφισμός:</TranslatedText>
+          </h6>
+          <ΔιακόπτηςΥαλομορφισμού />
+        </div>
+        <div className={styles['γραμμή-διακόπτη']}>
+          <h6 className={styles['τίτλος-διακόπτη']}>
+            <TranslatedText>Αδιαφάνεια:</TranslatedText>
+          </h6>
+          <ΔιακόπτηςΑδιαφάνειας />
+        </div>
+        <div className={styles['γραμμή-διακόπτη']}>
+          <h6 className={styles['τίτλος-διακόπτη']}>
+            <TranslatedText>Φέγγος ορίων:</TranslatedText>
+          </h6>
+          <ΔιακόπτηςΕναλλαγήςΦέγγους />
         </div>
       </div>
     </dialog>
