@@ -10,9 +10,33 @@
   z-index: 160;
   max-height: none;
   max-width: none;
+
+  transition: all 2s ease-in-out;
+  z-index: 250;
+}
+
+/* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
+.με-υαλομορφισμό,
+.με-αδιαφανή-στοιχεία,
+.με-ημιδιαφανή-στοιχεία {
   border: 1px solid var(--main-color);
   border-radius: 25px;
-  z-index: 250;
+}
+
+.με-υαλομορφισμό {
+  background-color: rgba(0, 253, 253, 0.005);
+  backdrop-filter: blur(3px);
+}
+
+.με-αδιαφανή-στοιχεία {
+  background-color: var(--second-bg-color);
+}
+.με-ημιδιαφανή-στοιχεία {
+  background-color: var(--second-bg-color-blurred);
+}
+.με-φέγγος-στοιχείων {
+  box-shadow: 0 0px 20px var(--main-color);
+  border-color: transparent;
 }
 
 .τίτλος-παραθύρου {
