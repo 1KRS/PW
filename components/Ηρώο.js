@@ -10,13 +10,13 @@ import TranslatedText from '@/components/TranslatedText';
 import { useAppContext } from '@/context/AppContext';
 
 const Hero = () => {
-  const { language, programmingBackground, μορφήΣτοιχείων, φέγγοςΣτοιχείων } =
+  const { language, υπόβαθροΠρογραμματισμού, μορφήΣτοιχείων, φέγγοςΣτοιχείων } =
     useAppContext();
 
   return (
     <section
       className={
-        styles[`${programmingBackground === 'dynamic' ? 'αρχική' : 'αρχική'}`]
+        styles[`${υπόβαθροΠρογραμματισμού === 'δυναμικό' ? 'αρχική' : 'αρχική'}`] //<-----
       }
       id="αρχική"
     >
