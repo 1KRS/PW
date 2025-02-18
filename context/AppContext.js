@@ -33,6 +33,22 @@ const AppProvider = ({ children }) => {
     });
   };
 
+  const αλλαγήΜορφήςΣτοιχείων = (μορφήΣτοιχείων) => {
+    localStorage.setItem('μορφή-στοιχείων', μορφήΣτοιχείων);
+    dispatch({
+      type: 'ΑΛΛΑΓΗ_ΜΟΡΦΗΣ_ΣΤΟΙΧΕΙΩΝ',
+      payload: { μορφήΣτοιχείων },
+    });
+  };
+
+  const εναλλαγήΦέγγουςΣτοιχείων = (επιλογήΦέγγους) => {
+    localStorage.setItem('φέγγος-στοιχείων', επιλογήΦέγγους);
+    dispatch({
+      type: 'ΕΝΑΛΛΑΓΗ_ΦΕΓΓΟΥΣ_ΣΤΟΙΧΕΙΩΝ',
+      payload: { επιλογήΦέγγους },
+    });
+  };
+
   const toggleEventColors = (εμφάνισηΧρωμάτωνΑρχική) => {
     const εμφάνισηΧρωμάτων =
       εμφάνισηΧρωμάτωνΑρχική === 'αρχική'
@@ -72,6 +88,9 @@ const AppProvider = ({ children }) => {
   useEffect(() => {
     const αποθηκευμένηΓλώσσα = localStorage.getItem('language');
     const αποθηκευμένοΥπόβαθρο = localStorage.getItem('programming-background');
+    const αποθηκευμένηΜορφή = localStorage.getItem('μορφή-στοιχείων');
+    const αποθηκευμένοΦέγγος =
+      localStorage.getItem('φέγγος-στοιχείων') === 'true' ? true : false;
     // const αρχικήΕμφάνισηΧρωμάτων = localStorage.getItem('showEventColors');
     const αρχικήΕμφάνισηΧρωμάτων = 'αρχική';
 
@@ -81,6 +100,14 @@ const AppProvider = ({ children }) => {
 
     if (αποθηκευμένοΥπόβαθρο) {
       changeBackground(αποθηκευμένοΥπόβαθρο);
+    }
+
+    if (αποθηκευμένηΜορφή) {
+      αλλαγήΜορφήςΣτοιχείων(αποθηκευμένηΜορφή);
+    }
+
+    if (αποθηκευμένοΦέγγος) {
+      εναλλαγήΦέγγουςΣτοιχείων(αποθηκευμένοΦέγγος);
     }
 
     toggleEventColors(αρχικήΕμφάνισηΧρωμάτων);
@@ -93,6 +120,8 @@ const AppProvider = ({ children }) => {
         displayAlert,
         changeLanguage,
         changeBackground,
+        αλλαγήΜορφήςΣτοιχείων,
+        εναλλαγήΦέγγουςΣτοιχείων,
         toggleEventColors,
         toggleCertificateModal,
         toggleSettingsModal,
