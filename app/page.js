@@ -1,11 +1,13 @@
 import styles from './page.module.css';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import LandingMain from '@/components/Backgrounds/LandingMain';
+
 import Link from 'next/link';
+
+import LandingMain from '@/components/Backgrounds/LandingMain';
 import UnderConstructionRibbon from '@/components/UnderDevelopmentRibbon';
 import TranslatedText from '@/components/TranslatedText';
 import LanguagesContainer from '@/components/LanguagesContainer';
 
+import { SpeedInsights } from '@vercel/speed-insights/next';
 const Home = () => {
   return (
     <LandingMain>
