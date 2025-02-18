@@ -1,6 +1,8 @@
 const initialState = {
   language: 'ελληνικά',
   programmingBackground: 'dynamic',
+  μορφήΣτοιχείων: 'υαλομορφισμός',
+  φέγγοςΣτοιχείων: false,
   showEventColors: false,
   // φίλτροΚατηγορίαςΧρονολογίου: 'Προγραμματισμός',
   φίλτροΚατάστασηςΓεγονότωνΧρονολογίου: '',
