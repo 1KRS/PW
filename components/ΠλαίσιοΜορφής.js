@@ -4,7 +4,7 @@ import styles from './ΠλαίσιοΜορφής.module.css';
 
 import { useAppContext } from '@/context/AppContext';
 
-const ΠλαίσιοΜορφής = ({ καθορισμόςΔιαστάσεων, ακτίναΓωνίας, ενεργόςΔιακόπτηςΦέγγους, children }) => {
+const LooksContainer = ({ καθορισμόςΔιαστάσεων, ακτίναΓωνίας, ενεργόςΔιακόπτηςΦέγγους, children }) => {
   const { μορφήΣτοιχείων, φέγγοςΣτοιχείων } = useAppContext();
   const ακτίνα =
     ακτίναΓωνίας === 35
@@ -35,4 +35,4 @@ const ΠλαίσιοΜορφής = ({ καθορισμόςΔιαστάσεων, 
   );
 };
 
-export default ΠλαίσιοΜορφής;
+export default LooksContainer;
