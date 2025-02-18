@@ -6,9 +6,9 @@ import BinaryRain from './BinaryRain';
 import { useAppContext } from '@/context/AppContext';
 
 const ProgrammingBackground = ({ screenType, fontSize, speed, children }) => {
-  const { programmingBackground } = useAppContext();
+  const { υπόβαθροΠρογραμματισμού } = useAppContext();
 
-  return programmingBackground === 'dynamic' ? (
+  return υπόβαθροΠρογραμματισμού === 'δυναμικό' ? (
     <>
       <BinaryRain
         screenType={screenType || 'normal'}
