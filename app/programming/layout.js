@@ -1,6 +1,6 @@
 import ProgrammingBackground from '@/components/Backgrounds/ProgrammingBackground';
 import Κεφαλίδα from '@/components/Κεφαλίδες-Υποσέλιδα/Κεφαλίδα';
-import ProgrammingSideNav from '@/components/Navigations/ProgrammingSideNav';
+import ΠλαϊνήΣτήληΠρογραμματισμού from '@/components/Navigations/ΠλαϊνήΣτήληΠρογραμματισμού';
 import Υποσέλιδο from '@/components/Κεφαλίδες-Υποσέλιδα/Υποσέλιδο';
 // import MainSubheader from '@/components/MainSubheader';
 import UnderConstructionRibbon from '@/components/UnderDevelopmentRibbon';
@@ -26,7 +26,7 @@ const ProgrammingLayout = ({ children }) => {
       <Κεφαλίδα />
       <UnderConstructionRibbon />
       {/* <MainSubheader /> */}
-      <ProgrammingSideNav />
+      <ΠλαϊνήΣτήληΠρογραμματισμού />
       {children}
       <ΠλήκτροΡυθμίσεων />
       <Υποσέλιδο />
