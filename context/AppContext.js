@@ -25,11 +25,11 @@ const AppProvider = ({ children }) => {
     });
   };
 
-  const changeBackground = (backgroundType) => {
-    localStorage.setItem('programming-background', backgroundType);
+  const αλλαγήΥποβάθρου = (τύποςΥποβάθρου) => {
+    localStorage.setItem('υπόβαθρο-προγραμματισμού', τύποςΥποβάθρου);
     dispatch({
-      type: 'CHANGE_BACKGROUND',
-      payload: { backgroundType },
+      type: 'ΑΛΛΑΓΗ_ΥΠΟΒΑΘΡΟΥ',
+      payload: { τύποςΥποβάθρου },
     });
   };
 
@@ -87,7 +87,7 @@ const AppProvider = ({ children }) => {
 
   useEffect(() => {
     const αποθηκευμένηΓλώσσα = localStorage.getItem('language');
-    const αποθηκευμένοΥπόβαθρο = localStorage.getItem('programming-background');
+    const αποθηκευμένοΥπόβαθρο = localStorage.getItem('υπόβαθρο-προγραμματισμού');
     const αποθηκευμένηΜορφή = localStorage.getItem('μορφή-στοιχείων');
     const αποθηκευμένοΦέγγος =
       localStorage.getItem('φέγγος-στοιχείων') === 'true' ? true : false;
@@ -99,7 +99,7 @@ const AppProvider = ({ children }) => {
     }
 
     if (αποθηκευμένοΥπόβαθρο) {
-      changeBackground(αποθηκευμένοΥπόβαθρο);
+      αλλαγήΥποβάθρου(αποθηκευμένοΥπόβαθρο);
     }
 
     if (αποθηκευμένηΜορφή) {
@@ -119,7 +119,7 @@ const AppProvider = ({ children }) => {
         ...state,
         displayAlert,
         changeLanguage,
-        changeBackground,
+        αλλαγήΥποβάθρου,
         αλλαγήΜορφήςΣτοιχείων,
         εναλλαγήΦέγγουςΣτοιχείων,
         toggleEventColors,
