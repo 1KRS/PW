@@ -37,10 +37,10 @@ const reducer = (state, action) => {
     };
   }
 
-  if (action.type === 'CHANGE_BACKGROUND') {
+  if (action.type === 'ΑΛΛΑΓΗ_ΥΠΟΒΑΘΡΟΥ') {
     return {
       ...state,
-      programmingBackground: action.payload.backgroundType,
+      υπόβαθροΠρογραμματισμού: action.payload.τύποςΥποβάθρου,
     };
   }
   if (action.type === 'ΑΛΛΑΓΗ_ΜΟΡΦΗΣ_ΣΤΟΙΧΕΙΩΝ') {
