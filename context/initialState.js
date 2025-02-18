@@ -1,6 +1,6 @@
 const initialState = {
   language: 'ελληνικά',
-  programmingBackground: 'dynamic',
+  υπόβαθροΠρογραμματισμού: 'δυναμικό',
   μορφήΣτοιχείων: 'ημιδιαφανή στοιχεία',
   φέγγοςΣτοιχείων: true,
   showEventColors: false,
