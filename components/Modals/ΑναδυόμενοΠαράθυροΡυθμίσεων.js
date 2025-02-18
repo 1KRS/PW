@@ -17,7 +17,7 @@ import { μετάφραση } from '@/utils/μετάφραση';
 import { IoClose } from 'react-icons/io5';
 
 const Settings = () => {
-  const { settings, toggleSettingsModal } = useAppContext();
+  const { settings, toggleSettingsModal, μορφήΣτοιχείων, φέγγοςΣτοιχείων } = useAppContext();
 
   const dialog = useRef();
 
@@ -28,7 +28,18 @@ const Settings = () => {
   }, [settings]);
 
   return (
-    <dialog ref={dialog} className={styles['παράθυρο-ρυθμίσεων']}>
+    <dialog
+      ref={dialog}
+      className={
+        styles['παράθυρο-ρυθμίσεων'] +
+        ' ' +
+        styles[
+          `${μορφήΣτοιχείων === 'υαλομορφισμός' ? 'με-υαλομορφισμό' : μορφήΣτοιχείων === 'ημιδιαφανή στοιχεία' ? 'με-ημιδιαφανή-στοιχεία' : μορφήΣτοιχείων === 'αδιαφανή στοιχεία' ? 'με-αδιαφανή-στοιχεία' : ''}`
+        ] +
+        ' ' +
+        styles[`${φέγγοςΣτοιχείων === true ? 'με-φέγγος-στοιχείων' : ''}`]
+      }
+    >
       <h6 className={styles['τίτλος-παραθύρου']}>
         <TranslatedText>Ρυθμίσεις</TranslatedText>
       </h6>
