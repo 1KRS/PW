@@ -43,6 +43,18 @@ const reducer = (state, action) => {
       programmingBackground: action.payload.backgroundType,
     };
   }
+  if (action.type === 'ΑΛΛΑΓΗ_ΜΟΡΦΗΣ_ΣΤΟΙΧΕΙΩΝ') {
+    return {
+      ...state,
+      μορφήΣτοιχείων: action.payload.μορφήΣτοιχείων,
+    };
+  }
+  if (action.type === 'ΕΝΑΛΛΑΓΗ_ΦΕΓΓΟΥΣ_ΣΤΟΙΧΕΙΩΝ') {
+    return {
+      ...state,
+      φέγγοςΣτοιχείων: action.payload.επιλογήΦέγγους,
+    };
+  }
 
   if (action.type === 'TOGGLE_EVENT_COLORS') {
     return {
