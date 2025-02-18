@@ -1,0 +1,45 @@
+.πλαίσιο-μορφής {
+  background-color: var(--second-bg-color-blurred);
+  border-radius: 15px;
+  transition: all 2s ease-in-out;
+}
+.διαστάσεις-από-έξω {
+  height: 100%;
+  width: 100%;
+}
+.διαστάσεις-από-μέσα {
+  display: inline-block;
+}
+
+/* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
+.με-υαλομορφισμό,
+.με-αδιαφανή-στοιχεία,
+.με-ημιδιαφανή-στοιχεία {
+  border: 1px solid var(--main-color);
+}
+
+.ακτίνα-γωνίας-15 {
+  border-radius: 15px;
+}
+.ακτίνα-γωνίας-25 {
+  border-radius: 25px;
+}
+.ακτίνα-γωνίας-35 {
+  border-radius: 35px;
+}
+
+.με-υαλομορφισμό {
+  background-color: rgba(0, 253, 253, 0.005);
+  backdrop-filter: blur(3px);
+}
+
+.με-αδιαφανή-στοιχεία {
+  background-color: var(--second-bg-color);
+}
+.με-ημιδιαφανή-στοιχεία {
+  background-color: var(--second-bg-color-blurred);
+}
+.με-φέγγος-στοιχείων {
+  box-shadow: 0 0px 20px var(--main-color);
+  border-color: transparent;
+}
