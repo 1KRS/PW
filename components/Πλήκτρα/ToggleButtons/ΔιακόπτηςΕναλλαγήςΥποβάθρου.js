@@ -5,15 +5,15 @@ import styles from './ΔιακόπτηςΕναλλαγήςΥποβάθρου.mod
 import { useAppContext } from '@/context/AppContext';
 
 const BackgroundToggleButton = () => {
-  const { programmingBackground, changeBackground } = useAppContext();
+  const { υπόβαθροΠρογραμματισμού, αλλαγήΥποβάθρου } = useAppContext();
 
-  // let checked = programmingBackground === 'static' ? 'Δυναμικό' : 'Στατικό';
-  // let unchecked = programmingBackground === 'static' ? 'Στατικό' : 'Δυναμικό';
+  // let checked = υπόβαθροΠρογραμματισμού === 'static' ? 'Δυναμικό' : 'Στατικό';
+  // let unchecked = υπόβαθροΠρογραμματισμού === 'static' ? 'Στατικό' : 'Δυναμικό';
 
   let τύποςΥποβάθρου =
-    programmingBackground === 'static' ? 'dynamic' : 'static';
+    υπόβαθροΠρογραμματισμού === 'στατικό' ? 'δυναμικό' : 'στατικό';
 
-  const κατάστασηΠεριγράμματος = programmingBackground === 'static' ? 'ανενεργό' : 'ενεργό'  
+  const κατάστασηΠεριγράμματος = υπόβαθροΠρογραμματισμού === 'στατικό' ? 'ανενεργό' : 'ενεργό'  
 
   return (
     <div className={styles['περιέκτης-διακόπτη'] + ' ' + styles[`${κατάστασηΠεριγράμματος}`]}>
@@ -21,8 +21,8 @@ const BackgroundToggleButton = () => {
         <input
           type="checkbox"
           className={styles['input']}
-          checked={τύποςΥποβάθρου === 'static' ? true : false}
-          onChange={() => changeBackground(τύποςΥποβάθρου)}
+          checked={τύποςΥποβάθρου === 'στατικό' ? true : false}
+          onChange={() => αλλαγήΥποβάθρου(τύποςΥποβάθρου)}
         />
         <div className={styles['διακόπτης']} />
       </label>
