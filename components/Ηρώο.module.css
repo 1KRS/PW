@@ -1,0 +1,145 @@
+@media (min-width: 40rem) {
+  .αρχική {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5vw;
+    color: white;
+    text-align: center;
+    transition: all 2s ease-in-out;
+  }
+
+  /* .αρχική-με-δυναμικό-υπόβαθρο {
+    gap: 4.5vw;
+    transition: 2s ease-in-out
+  } */
+
+  .περιεχόμενο-αρχικής {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    text-align: left;
+    height: 43vh;
+    width: 60%;
+    padding: 0 2vw 3vh;
+    transition: all 2s ease-in-out;
+  }
+
+  /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
+  .με-υαλομορφισμό {
+    border-radius: 35px;
+    background-color: rgba(0, 253, 253, 0.005);
+    backdrop-filter: blur(2px);
+  }
+  .με-αδιαφανή-στοιχεία,
+  .με-ημιδιαφανή-στοιχεία {
+    border: 2px solid var(--border-color-blurred);
+    border-radius: 35px;
+  }
+  .με-αδιαφανή-στοιχεία {
+    background-color: var(--second-bg-color);
+  }
+  .με-ημιδιαφανή-στοιχεία {
+    background-color: var(--second-bg-color-blurred);
+  }
+  .με-λάμψη-στοιχείων {
+    box-shadow: 0 0px 20px var(--main-color);
+  }
+
+  .περιεχόμενο-αρχικής span {
+    color: var(--main-color);
+  }
+
+  .περιεχόμενο-αρχικής h1 {
+    display: flex;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 2vh;
+    line-height: 1;
+  }
+
+  .περιεχόμενο-αρχικής h3 {
+    display: flex;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2vh;
+  }
+
+  .περιέκτης-ταινιών-κύλισης {
+    width: 95%;
+    margin: 2vh 0;
+  }
+
+  .περιέκτης-πλήκτρων {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+  }
+
+  .βασικό-πλήκτρο,
+  .δευτερεύον-πλήκτρο {
+    display: inline-block;
+    padding: 1vh 2.8vw;
+    background: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .βασικό-πλήκτρο:hover,
+  .δευτερεύον-πλήκτρο:hover {
+    transform: scale(1.05) translateY(-5px);
+    background: var(--main-color);
+    color: white;
+    box-shadow: 0 0 50px var(--main-color);
+  }
+
+  .δευτερεύον-πλήκτρο {
+    background: var(--second-bg-color-blurred);
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 25px transparent;
+  }
+
+  .εικόνα-αρχικής .εικόνα {
+    border-radius: 40%;
+    /* padding: 20px; */
+    padding: 10px;
+    border: none;
+    background-color: var(--main-color);
+    /* background-color: transparent; */
+    box-shadow: 0 0 25px var(--main-color);
+    /* box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
+      0 0 100px var(--main-color); */
+    /* box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color); */
+    cursor: pointer;
+    transform: scale(1.05);
+    /* transform: scale(.95); */
+    /* transition: border 0.7s ease-in-out; */
+    transition: 0.7s ease-in-out;
+  }
+
+  .εικόνα-αρχικής .εικόνα:hover {
+    padding: 20px;
+    /* padding: 10px; */
+    /* border: 10px solid var(--main-color); */
+    /* background-color: var(--main-color); */
+    background-color: transparent;
+    box-shadow:
+      0 0 25px var(--main-color),
+      0 0 50px var(--main-color),
+      0 0 100px var(--main-color),
+      0 0 125px var(--main-color);
+    /* box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color); */
+    /* transform: scale(1.05); */
+    transform: scale(0.95);
+    transition: 0.7s ease-in-out;
+  }
+}
