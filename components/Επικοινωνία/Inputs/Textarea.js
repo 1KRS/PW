@@ -14,7 +14,7 @@ const Textarea = ({
   χειρισμόςΠληκτρισμού,
   children,
 }) => {
-  const { language } = useAppContext();
+  const { language, μορφήΣτοιχείων, φέγγοςΣτοιχείων } = useAppContext();
 
   return (
     <textarea
@@ -22,7 +22,15 @@ const Textarea = ({
       name={name}
       cols={cols}
       rows={rows}
-      className={styles[`${style}`]}
+      className={
+        styles[`${style}`] +
+        ' ' +
+        styles[
+          `${μορφήΣτοιχείων === 'υαλομορφισμός' ? 'με-υαλομορφισμό' : μορφήΣτοιχείων === 'ημιδιαφανή στοιχεία' ? 'με-ημιδιαφανή-στοιχεία' : μορφήΣτοιχείων === 'αδιαφανή στοιχεία' ? 'με-αδιαφανή-στοιχεία' : ''}`
+        ] +
+        ' ' +
+        styles[`${φέγγοςΣτοιχείων === true ? 'με-φέγγος-στοιχείων' : ''}`]
+      }
       onChange={(e) => χειρισμόςΠληκτρισμού(e)}
       placeholder={μετάφραση(`${placeholder}`, language)}
     >
