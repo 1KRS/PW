@@ -36,7 +36,6 @@
     width: calc(3.5vh + 2.5vh);
     padding: 15px;
     gap: 1.5vh;
-    /* background-color: var(--second-bg-color-blurred); */
     list-style: none;
     transition: 0.3s ease-in;
   }
