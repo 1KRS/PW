@@ -35,7 +35,7 @@
 .περίβλημα-πλήκτρο.με-φέγγος-στοιχείων.ενεργό,
 .περίβλημα-πλήκτρο.με-φέγγος-στοιχείων.ανενεργό {
   box-shadow: 0 0 20px var(--main-color);
-  border-color: transparent;
+  /* border-color: transparent; */
 }
 /* --------------- */
 
