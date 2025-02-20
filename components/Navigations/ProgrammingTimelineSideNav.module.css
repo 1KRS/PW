@@ -3,7 +3,7 @@
 }
 
 @media (min-width: 40rem) {
-  .timeline-side-nav {
+  .πλαϊνή-στήλη-πλοήγησης-χρονολογίου {
     --χρώμα-σπουδών: rgb(197, 68, 84);
     --χρώμα-εργασίας: rgb(0, 128, 255);
     --χρώμα-έργων: rgb(88, 0, 196);
@@ -17,33 +17,31 @@
     /* rgb(0, 187, 0); */
     /* rgb(190, 196, 0); */
     --list-items: 7;
-    position: absolute;
-    left: 50px;
+    position: fixed;
     top: 0;
+    left: 50px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     z-index: 150;
   }
 
-  .εικονίδια {
-    position: relative;
+  .στοιχεία {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     height: fit-content;
-    width: 55px;
+    width: calc(3.5vh + 2.5vh);
     padding: 15px;
     gap: 1.5vh;
-    background-color: var(--second-bg-color-blurred);
+    /* background-color: var(--second-bg-color-blurred); */
     list-style: none;
     transition: 0.3s ease-in;
   }
 
-  .εικονίδια:hover {
+  .στοιχεία:hover {
     display: flex;
     width: 150px;
   }
@@ -74,7 +72,7 @@
     cursor: pointer;
   }
 
-  .εικονίδια .κείμενο {
+  .στοιχεία .κείμενο {
     display: none;
     visibility: hidden;
     opacity: 0;
@@ -82,7 +80,7 @@
     font-size: 0.8rem;
   }
 
-  .εικονίδια:hover .κείμενο {
+  .στοιχεία:hover .κείμενο {
     display: flex;
     visibility: visible;
     opacity: 1;
