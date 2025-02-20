@@ -10,13 +10,14 @@ import { FaBusinessTime, FaStar, FaTimeline } from 'react-icons/fa6';
 import { TiMessages } from 'react-icons/ti';
 import { GiAngelWings } from 'react-icons/gi';
 
-const ΠλαϊνήΣτήληΠρογραμματισμού = ({ εικονίδια }) => {
+const ΠλαϊνήΣτήληΠρογραμματισμού = () => {
   return (
     <nav className={styles['βασική-πλαϊνή-στήλη-πλοήγησης']}>
       <ΠλαίσιοΜορφής
         καθορισμόςΔιαστάσεων="από μέσα"
         ακτίναΓωνίας={15}
-        ενεργόςΔιακόπτηςΦέγγους={false}
+        πάχοςΟρίου={1}
+        ενεργόςΔιακόπτηςΦέγγους={true}
       >
         <ul className={styles['στοιχεία']}>
           <li className={styles['στοιχείο']}>
