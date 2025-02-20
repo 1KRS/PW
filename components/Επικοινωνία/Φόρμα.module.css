@@ -34,11 +34,29 @@
   padding: 1.6vh 2vw;
   font-size: 1vw;
   color: var(--text-color);
-  background-color: var(--second-bg-color);
   border: 2px solid var(--main-color);
-  border-radius: 1.3rem;
+  border-radius: 20px;
+  transition: 2s ease-in-out;
   /* resize: none; */
 }
+
+/* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
+.με-υαλομορφισμό {
+  background-color: rgba(0, 253, 253, 0.005);
+  backdrop-filter: blur(3px);
+}
+
+.με-αδιαφανή-στοιχεία {
+  background-color: var(--second-bg-color);
+}
+.με-ημιδιαφανή-στοιχεία {
+  background-color: var(--second-bg-color-blurred);
+}
+.με-φέγγος-στοιχείων {
+  box-shadow: 0 0px 20px var(--main-color);
+  border-color: transparent;
+}
+/* --------------- */
 
 .φόρμα .btn, 
 .φόρμα .btn-success {
