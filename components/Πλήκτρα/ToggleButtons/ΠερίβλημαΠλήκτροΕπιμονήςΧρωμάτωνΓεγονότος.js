@@ -4,7 +4,7 @@ import styles from './ΠερίβλημαΠλήκτροΕπιμονήςΧρωμά
 import { useAppContext } from '@/context/AppContext';
 
 const EventColorPersistenceContainerButton = ({ σελίδα, children }) => {
-  const { showEventColors, toggleEventColors } = useAppContext();
+  const { φέγγοςΣτοιχείων, showEventColors, toggleEventColors } = useAppContext();
 
   return (
     <>
@@ -17,7 +17,15 @@ const EventColorPersistenceContainerButton = ({ σελίδα, children }) => {
             onChange={() => toggleEventColors()}
           />
           <div
-            className={styles['περίβλημα-πλήκτρο'] + ' ' + styles['ενεργό']}
+            className={
+              styles['περίβλημα-πλήκτρο'] +
+              ' ' +
+              styles[
+                `${φέγγοςΣτοιχείων === true ? 'με-φέγγος-στοιχείων' : ''}`
+              ] +
+              ' ' +
+              styles['ενεργό']
+            }
           >
             {children}
           </div>
@@ -25,7 +33,11 @@ const EventColorPersistenceContainerButton = ({ σελίδα, children }) => {
       ) : (
         <div className={styles['περιέκτης']}>
           <div className={styles['πεδίο-επιλογής']} />
-          <div className={styles['περίβλημα-πλήκτρο'] + ' ' + styles['ανενεργό']}>{children}</div>
+          <div
+            className={styles['περίβλημα-πλήκτρο'] + ' ' + styles['ανενεργό']}
+          >
+            {children}
+          </div>
         </div>
       )}
     </>
