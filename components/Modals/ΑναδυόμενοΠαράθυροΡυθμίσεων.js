@@ -8,16 +8,16 @@ import ΔιακόπτηςΥαλομορφισμού from '@/components/Πλήκ�
 import ΔιακόπτηςΕναλλαγήςΦέγγους from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΕναλλαγήςΦέγγους';
 import TranslatedText from '../TranslatedText';
 import LanguagesContainer from '../LanguagesContainer';
+// import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής';
 
 import { useRef, useEffect } from 'react';
 import { useAppContext } from '@/context/AppContext';
 
-import { μετάφραση } from '@/utils/μετάφραση';
-
 import { IoClose } from 'react-icons/io5';
 
 const Settings = () => {
-  const { settings, toggleSettingsModal, μορφήΣτοιχείων, φέγγοςΣτοιχείων } = useAppContext();
+  const { settings, toggleSettingsModal, μορφήΣτοιχείων, φέγγοςΣτοιχείων } =
+    useAppContext();
 
   const dialog = useRef();
 
