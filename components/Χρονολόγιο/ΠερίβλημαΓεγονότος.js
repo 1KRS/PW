@@ -1,6 +1,7 @@
 'use client';
 
 import styles from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου.module.css';
+
 import { useAppContext } from '@/context/AppContext';
 
 const EventContainer = ({
@@ -9,7 +10,7 @@ const EventContainer = ({
   μορφήΠεριβλήματος,
   children,
 }) => {
-  const { showEventColors } = useAppContext();
+  const { showEventColors, μορφήΣτοιχείων, φέγγοςΣτοιχείων } = useAppContext();
 
   const μόνιμαΧρώματαΉΠροσωρινά = showEventColors ? 'μεΜόνιμαΧρώματα' : '';
 
@@ -17,6 +18,12 @@ const EventContainer = ({
     <div
       className={
         styles['περιεχόμενο-γεγονότος'] +
+        ' ' +
+        styles[
+          `${μορφήΣτοιχείων === 'υαλομορφισμός' ? 'με-υαλομορφισμό' : μορφήΣτοιχείων === 'ημιδιαφανή στοιχεία' ? 'με-ημιδιαφανή-στοιχεία' : μορφήΣτοιχείων === 'αδιαφανή στοιχεία' ? 'με-αδιαφανή-στοιχεία' : ''}`
+        ] +
+        ' ' +
+        styles[`${φέγγοςΣτοιχείων === true ? 'με-φέγγος-στοιχείων' : ''}`] +
         ' ' +
         styles[`${μεΉΧωρίςΔευτερεύουσαΓραμμή}`] +
         ' ' +
@@ -28,7 +35,6 @@ const EventContainer = ({
       }
     >
       {children}
-      
     </div>
   );
 };
