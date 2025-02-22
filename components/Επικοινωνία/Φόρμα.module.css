@@ -34,7 +34,7 @@
   padding: 1.6vh 2vw;
   font-size: 1vw;
   color: var(--text-color);
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 20px;
   transition: 2s ease-in-out;
 }
@@ -66,6 +66,7 @@ textarea.με-φέγγος-ορίων {
 
 input.με-φέγγος-στοιχείων,
 textarea.με-φέγγος-στοιχείων {
+  /* border-width: 1px; */
   box-shadow: 0 0px 20px var(--main-color);
 }
 /* --------------- */
