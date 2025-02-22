@@ -1,5 +1,5 @@
 .παράθυρο-ρυθμίσεων {
-  --ύψος: 245px;
+  --ύψος: 270px;
   --πλάτος: 300px;
   position: absolute;
   top: calc(100% - (var(--ύψος) + 25px));
@@ -7,8 +7,8 @@
   height: var(--ύψος);
   width: var(--πλάτος);
   background-color: var(--second-bg-color-blurred);
-  border: 1px solid var(--main-color);
-  border-radius: 25px;
+  border: 1px solid transparent;
+  border-radius: 20px;
   max-height: none;
   max-width: none;
   transition: all 2s ease-in-out;
@@ -17,22 +17,26 @@
 
 /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
 .με-υαλομορφισμό {
+  border-color: var(--border-color-blurred);
   background-color: rgba(0, 253, 253, 0.005);
   backdrop-filter: blur(3px);
 }
 
 .με-αδιαφανή-στοιχεία {
+  border-color: var(--border-color-blurred);
   background-color: var(--second-bg-color);
 }
 .με-ημιδιαφανή-στοιχεία {
+  border-color: var(--border-color-blurred);
   background-color: var(--second-bg-color-blurred);
+}
+.με-φέγγος-ορίων {
+  border-color: var(--main-color);
 }
 .με-φέγγος-στοιχείων {
   box-shadow: 0 0px 20px var(--main-color);
-  border-color: transparent;
 }
 /* --------------- */
-
 
 .τίτλος-παραθύρου {
   position: absolute;
