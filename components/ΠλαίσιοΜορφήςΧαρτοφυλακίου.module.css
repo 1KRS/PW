@@ -1,0 +1,74 @@
+.πλαίσιο-μορφής-στοιχείου-χαρτοφυλακίου {
+  position: relative;
+  min-height: 250px;
+  max-height: 250px;
+  min-width: 330px;
+  max-width: 450px;
+  margin: 0.6rem;
+  background: var(--second-bg-color-blurred);
+  color: var(--text-color);
+  /* border: 2px solid var(--border-color-blurred);
+  border-radius: 25px; */
+  background: var(--second-bg-color-blurred);
+  border: none;
+  transition: all 2s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+} 
+
+.διαστάσεις-από-έξω {
+  height: 100%;
+  width: 100%;
+}
+.διαστάσεις-από-μέσα {
+  display: inline-block;
+}
+
+/* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
+.με-υαλομορφισμό {
+  border-color: var(--border-color-blurred);
+  background-color: rgba(0, 253, 253, 0.005);
+  /* backdrop-filter: blur(3px); */ 
+}
+
+.με-αδιαφανή-στοιχεία {
+  border-color: var(--border-color-blurred);
+  background-color: var(--second-bg-color);
+}
+.με-ημιδιαφανή-στοιχεία {
+  border-color: var(--border-color-blurred);
+  background-color: var(--second-bg-color-blurred);
+}
+.με-φέγγος-ορίων {
+  border-color: var(--main-color);
+}
+.με-φέγγος-στοιχείων {
+  box-shadow: 0 0px 20px var(--main-color);
+}
+
+.πάχος-ορίου-0 {
+  border-width: 0px;
+  border-style: solid;
+}
+.πάχος-ορίου-1 {
+  border-width: 1px;
+  border-style: solid;
+}
+.πάχος-ορίου-2 {
+  border-width: 2px;
+  border-style: solid;
+}
+.πάχος-ορίου-3 {
+  border-width: 3px;
+  border-style: solid;
+}
+
+.ακτίνα-γωνίας-15 {
+  border-radius: 15px;
+}
+.ακτίνα-γωνίας-25 {
+  border-radius: 25px;
+}
+.ακτίνα-γωνίας-35 {
+  border-radius: 35px;
+}
