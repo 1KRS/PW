@@ -21,32 +21,41 @@
 } */
 
 .με-υαλομορφισμό {
+  border-color: var(--border-color-blurred);
   background-color: rgba(0, 253, 253, 0.005);
   backdrop-filter: blur(3px);
 }
 
 .με-αδιαφανή-στοιχεία {
+  border-color: var(--border-color-blurred);
   background-color: var(--second-bg-color);
 }
 .με-ημιδιαφανή-στοιχεία {
+  border-color: var(--border-color-blurred);
   background-color: var(--second-bg-color-blurred);
+}
+.με-φέγγος-ορίων {
+  border-color: var(--main-color);
 }
 .με-φέγγος-στοιχείων {
   box-shadow: 0 0px 20px var(--main-color);
-  border-color: transparent;
 }
 
 .πάχος-ορίου-0 {
-  border: 0px solid var(--main-color);
+  border-width: 0px;
+  border-style: solid;
 }
 .πάχος-ορίου-1 {
-  border: 1px solid var(--main-color);
+  border-width: 1px;
+  border-style: solid;
 }
 .πάχος-ορίου-2 {
-  border: 2px solid var(--main-color);
+  border-width: 2px;
+  border-style: solid;
 }
 .πάχος-ορίου-3 {
-  border: 3px solid var(--main-color);
+  border-width: 3px;
+  border-style: solid;
 }
 
 .ακτίνα-γωνίας-15 {
