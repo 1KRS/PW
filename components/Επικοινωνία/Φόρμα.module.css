@@ -28,37 +28,49 @@
   height: 20vh;
 }
 
-.φόρμα .input-box input,
+.φόρμα input,
 .φόρμα textarea {
   width: 100%;
   padding: 1.6vh 2vw;
   font-size: 1vw;
   color: var(--text-color);
-  border: 2px solid var(--main-color);
+  border: 1px solid transparent;
   border-radius: 20px;
   transition: 2s ease-in-out;
-  /* resize: none; */
 }
 
 /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
-.με-υαλομορφισμό {
+input.με-υαλομορφισμό,
+textarea.με-υαλομορφισμό {
+  border-color: var(--border-color-blurred);
   background-color: rgba(0, 253, 253, 0.005);
   backdrop-filter: blur(3px);
 }
 
-.με-αδιαφανή-στοιχεία {
+input.με-αδιαφανή-στοιχεία,
+textarea.με-αδιαφανή-στοιχεία {
+  border-color: var(--border-color-blurred);
   background-color: var(--second-bg-color);
 }
-.με-ημιδιαφανή-στοιχεία {
+
+input.με-ημιδιαφανή-στοιχεία,
+textarea.με-ημιδιαφανή-στοιχεία {
+  border-color: var(--border-color-blurred);
   background-color: var(--second-bg-color-blurred);
 }
-.με-φέγγος-στοιχείων {
+
+input.με-φέγγος-ορίων,
+textarea.με-φέγγος-ορίων {
+  border-color: var(--main-color);
+}
+
+input.με-φέγγος-στοιχείων,
+textarea.με-φέγγος-στοιχείων {
   box-shadow: 0 0px 20px var(--main-color);
-  border-color: transparent;
 }
 /* --------------- */
 
-.φόρμα .btn, 
+.φόρμα .btn,
 .φόρμα .btn-success {
   display: inline-block;
   padding: 1vh 2.8vw;
