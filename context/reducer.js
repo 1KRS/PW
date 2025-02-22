@@ -49,10 +49,16 @@ const reducer = (state, action) => {
       μορφήΣτοιχείων: action.payload.μορφήΣτοιχείων,
     };
   }
+  if (action.type === 'ΕΝΑΛΛΑΓΗ_ΦΕΓΓΟΥΣ_ΟΡΙΩΝ') {
+    return {
+      ...state,
+      φέγγοςΟρίων: action.payload.επιλογήΦέγγουςΟρίων,
+    };
+  }
   if (action.type === 'ΕΝΑΛΛΑΓΗ_ΦΕΓΓΟΥΣ_ΣΤΟΙΧΕΙΩΝ') {
     return {
       ...state,
-      φέγγοςΣτοιχείων: action.payload.επιλογήΦέγγους,
+      φέγγοςΣτοιχείων: action.payload.επιλογήΦέγγουςΣτοιχείων,
     };
   }
 
