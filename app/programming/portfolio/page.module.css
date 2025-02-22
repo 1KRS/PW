@@ -12,9 +12,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1vw;
   height: 73vh;
-  width: 80vw;
-  padding: 5vh 0 10vh;
-  padding-bottom: 10vh;
+  width: 90vw;
+  padding: 5vh 5vw 10vh;
   overflow-y: auto;
   overflow-x: hidden;
   mask-image: linear-gradient(
@@ -28,23 +27,14 @@
 
 .στοιχείο-χαρτοφυλακίου {
   position: relative;
-  min-height: 250px;
-  max-height: 250px;
-  min-width: 330px;
-  max-width: 450px;
-  margin: 0.5rem;
-  background: var(--second-bg-color-blurred);
+  height: 100%;
+  width: 100%;
   color: var(--text-color);
-  border: 2px solid var(--border-color-blurred);
-  border-radius: 2rem;
-  cursor: pointer;
-  overflow: hidden;
 }
 
 .στοιχείο-χαρτοφυλακίου .εικόνα {
   box-shadow: 0 0 25px var(--main-color);
   transition: 0.5s ease;
-  /* filter: blur(2px); */
 }
 .στοιχείο-χαρτοφυλακίου:hover .εικόνα {
   transform: scale(1.1);
@@ -93,7 +83,6 @@
 }
 
 @keyframes click-motion {
-
   5% {
     transform: scale(0.7);
   }
@@ -115,6 +104,6 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .περιέκτης-χαρτοφυλακίου {
--ms-overflow-style: none;  /* IE and Edge */
-scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
