@@ -11,8 +11,7 @@ import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής'
 import { useAppContext } from '@/context/AppContext';
 
 const Hero = () => {
-  const { language, υπόβαθροΠρογραμματισμού, μορφήΣτοιχείων, φέγγοςΣτοιχείων } =
-    useAppContext();
+  const { language, υπόβαθροΠρογραμματισμού } = useAppContext();
 
   return (
     <section
@@ -26,8 +25,9 @@ const Hero = () => {
       <ΠλαίσιοΜορφής
         καθορισμόςΔιαστάσεων="από μέσα"
         ακτίναΓωνίας={35}
-        πάχοςΟρίου={1}
-        ενεργόςΔιακόπτηςΦέγγους={true}
+        πάχοςΟρίου={2}
+        ενεργόςΔιακόπτηςΦέγγουςΟρίων={true}
+        ενεργόςΔιακόπτηςΦέγγουςΣτοιχείων={true}
       >
         <div className={styles['περιεχόμενο-αρχικής']}>
           {language === 'english' ? (
