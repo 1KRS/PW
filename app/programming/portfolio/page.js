@@ -1,7 +1,7 @@
 import styles from './page.module.css';
 
 import Image from 'next/image';
-import Link from 'next/link';
+import ΠλαίσιοΜορφήςΧαρτοφυλακίου from '@/components/ΠλαίσιοΜορφήςΧαρτοφυλακίου';
 import Heading from '@/components/Heading';
 import TranslatedText from '@/components/TranslatedText';
 
@@ -27,33 +27,39 @@ const Portfolio = () => {
           <div className={styles['περιέκτης-χαρτοφυλακίου']}>
             {έργα.reverse().map((project) => {
               return (
-                <div
+                <ΠλαίσιοΜορφήςΧαρτοφυλακίου
                   key={project.id}
-                  className={styles['στοιχείο-χαρτοφυλακίου']}
+                  // καθορισμόςΔιαστάσεων="από μέσα"
+                  ακτίναΓωνίας={35}
+                  πάχοςΟρίου={2}
+                  ενεργόςΔιακόπτηςΦέγγουςΟρίων={true}
+                  ενεργόςΔιακόπτηςΦέγγουςΣτοιχείων={true}
                 >
-                  <Image
-                    className={styles['εικόνα']}
-                    src={project.imageSrc}
-                    fill
-                    alt={project.imageAlt}
-                  />
-                  <a
-                    target="_blank"
-                    href={project.link}
-                    rel="noopener noreferrer"
-                    className={styles['στρώση-χαρτοφυλακίου']}
-                  >
-                    <h4>
-                      <TranslatedText>{project.title}</TranslatedText>
-                    </h4>
-                    <p>
-                      <TranslatedText>{project.text}</TranslatedText>
-                    </p>
-                    <FaRegHandPointer
-                      className={styles['εικονίδιο-συνδέσμου']}
+                  <div className={styles['στοιχείο-χαρτοφυλακίου']}>
+                    <Image
+                      className={styles['εικόνα']}
+                      src={project.imageSrc}
+                      fill
+                      alt={project.imageAlt}
                     />
-                  </a>
-                </div>
+                    <a
+                      target="_blank"
+                      href={project.link}
+                      rel="noopener noreferrer"
+                      className={styles['στρώση-χαρτοφυλακίου']}
+                    >
+                      <h4>
+                        <TranslatedText>{project.title}</TranslatedText>
+                      </h4>
+                      <p>
+                        <TranslatedText>{project.text}</TranslatedText>
+                      </p>
+                      <FaRegHandPointer
+                        className={styles['εικονίδιο-συνδέσμου']}
+                      />
+                    </a>
+                  </div>
+                </ΠλαίσιοΜορφήςΧαρτοφυλακίου>
               );
             })}
           </div>
