@@ -2,7 +2,7 @@ import styles from '@/components/Χρονολόγιο/ΣτοιχείαΧρονο
 
 const ΤελείαΓεγονότος = () => {
 
-  return <div className={styles['timeline-dot']} />;
+  return <div className={styles['τελεία-γεγονότος']} />;
 };
 
 export default ΤελείαΓεγονότος;
