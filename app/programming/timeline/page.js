@@ -12,7 +12,7 @@ export const metadata = {
   publisher: 'Δημήτρης Μανωλόπουλος',
 };
 
-const Timeline = () => {
+const Χρονολόγιο = () => {
   return (
     <>
       <main className={styles.main}>
@@ -22,8 +22,8 @@ const Timeline = () => {
           ύπαρξηΦίλτρων="υπαρκτά"
         />
 
-        <section className={styles.timeline} id="timeline">
-          <div className={styles['timeline-container']}>
+        <section className={styles.χρονολόγιο} id="χρονολόγιο">
+          <div className={styles['περιέκτης-χρονολογίου']}>
             <ΣτοιχείαΧρονολογίου />
           </div>
         </section>
@@ -32,4 +32,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline;
+export default Χρονολόγιο;
