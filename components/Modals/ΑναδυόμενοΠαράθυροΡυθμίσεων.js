@@ -73,12 +73,12 @@ const Settings = () => {
           </h6>
           <ΔιακόπτηςΕναλλαγήςΥποβάθρου />
         </div>
-        <div className={styles['γραμμή-διακόπτη']}>
+        {/* <div className={styles['γραμμή-διακόπτη']}>
           <h6 className={styles['τίτλος-διακόπτη']}>
             <TranslatedText>Υαλομορφισμός:</TranslatedText>
           </h6>
           <ΔιακόπτηςΥαλομορφισμού />
-        </div>
+        </div> */}
         <div className={styles['γραμμή-διακόπτη']}>
           <h6 className={styles['τίτλος-διακόπτη']}>
             <TranslatedText>Αδιαφάνεια:</TranslatedText>
