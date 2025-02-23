@@ -21,6 +21,10 @@
   border-radius: 50px;
   overflow-y: auto;
   overflow-x: hidden;
+  /* transition: all 2s ease-in-out; */
+}
+
+.στοιχεία-χρονολογίου.με-θολό-κάλυμμα {
   mask-image: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0),
@@ -28,6 +32,7 @@
     var(--main-color) 85%,
     rgba(255, 255, 255, 0)
   );
+  /* transition: all 2s ease-in-out; */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -99,12 +104,41 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: var(--second-bg-color-blurred);
+  background: rgba(0, 0, 0, 0.32);
   border: 2px solid var(--border-color-blurred);
-  padding: 2vh 1.2vw;
   border-radius: 30px;
-  /* overflow: hidden; */
+  padding: 2vh 1.2vw;
+  transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
 }
+
+/* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
+.περιεχόμενο-γεγονότος.με-υαλομορφισμό {
+  border-color: var(--border-color-blurred);
+  background-color: rgba(0, 253, 253, 0.005);
+  mask-image: none;
+  backdrop-filter: blur(3px);
+  transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
+}
+
+.περιεχόμενο-γεγονότος.με-αδιαφανή-στοιχεία {
+  border-color: var(--border-color-blurred);
+  background-color: var(--second-bg-color);
+  transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
+}
+.περιεχόμενο-γεγονότος.με-ημιδιαφανή-στοιχεία {
+  border-color: var(--border-color-blurred);
+  background-color: var(--second-bg-color-blurred);
+  transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
+}
+.περιεχόμενο-γεγονότος.με-φέγγος-ορίων {
+  border-color: var(--main-color);
+  transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
+}
+.περιεχόμενο-γεγονότος.με-φέγγος-στοιχείων {
+  box-shadow: 0 0px 20px var(--main-color);
+  transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
+}
+/* --------------- */
 
 .περιεχόμενο-γεγονότος.με-δευτερεύουσα-γραμμή {
   height: 9.5vh;
@@ -124,11 +158,11 @@
   justify-content: default;
   background-color: var(--second-bg-color);
   border: 2px solid var(--main-color);
-  transition: 0.5s ease-in-out;
+  /* transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out; */
 }
 
 .περιεχόμενο-γεγονότος:not(:hover) {
-  transition: 0.5s ease-in-out;
+  transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
 }
 
 .περιεχόμενο-γεγονότος.με-κείμενο.ολοκληρωμένο.μεΜόνιμαΧρώματα,
@@ -140,6 +174,7 @@
 .περιεχόμενο-γεγονότος:hover.χωρίς-κείμενο.ολοκληρωμένο {
   border: 2px solid var(--χρώμα-ολοκληρωμένου);
   box-shadow: 0 0 50px var(--χρώμα-ολοκληρωμένου);
+  /* animation: 0.5s εναλλαγή-μορφής-ορίου-για-ολοκληρωμένο 0s; */
 }
 .περιεχόμενο-γεγονότος:hover.με-κείμενο.ολοκληρωμένο {
   height: 16vh;
@@ -160,6 +195,7 @@
 .περιεχόμενο-γεγονότος:hover.χωρίς-κείμενο.παρατημένο {
   border: 2px solid var(--χρώμα-παρατημένου);
   box-shadow: 0 0 50px var(--χρώμα-παρατημένου);
+  /* animation: 0.5s εναλλαγή-μορφής-ορίου-για-παρατημένο 0s; */
 }
 .περιεχόμενο-γεγονότος:hover.με-κείμενο.παρατημένο {
   height: 16vh;
@@ -180,6 +216,7 @@
 .περιεχόμενο-γεγονότος:hover.χωρίς-κείμενο.εν-εξελίξει {
   border: 2px solid var(--χρώμα-εν-εξελίξει);
   box-shadow: 0 0 50px var(--χρώμα-εν-εξελίξει);
+  /* animation: 0.5s εναλλαγή-μορφής-ορίου-για-εν-εξελίξει 0s; */
 }
 .περιεχόμενο-γεγονότος:hover.με-κείμενο.εν-εξελίξει {
   height: 16vh;
@@ -200,6 +237,7 @@
 .περιεχόμενο-γεγονότος:hover.χωρίς-κείμενο.εν-αναμονή {
   border: 2px solid var(--χρώμα-εν-αναμονή);
   box-shadow: 0 0 50px var(--χρώμα-εν-αναμονή);
+  /* animation: 0.5s εναλλαγή-μορφής-ορίου-για-εν-αναμονή 0s; */
 }
 .περιεχόμενο-γεγονότος:hover.με-κείμενο.εν-αναμονή {
   height: 16vh;
@@ -625,7 +663,7 @@
   background-color: transparent;
   border-top: 2px solid transparent;
   border-top-right-radius: 5px;
-  transition: 0.7s ease-in-out;
+  transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
 }
 .tech-container::after {
   content: '';
@@ -637,7 +675,7 @@
   background-color: transparent;
   border-top: 2px solid transparent;
   border-top-left-radius: 5px;
-  transition: 0.7s ease-in-out;
+  transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
 }
 
 .περιεχόμενο-γεγονότος:hover.με-κείμενο.ολοκληρωμένο .tech-container,
@@ -693,5 +731,29 @@
     opacity: 1;
     bottom: -13px;
     transform: rotateX(0);
+  }
+}
+
+@keyframes εναλλαγή-μορφής-ορίου-για-ολοκληρωμένο {
+  to {
+    border-color: var(--χρώμα-ολοκληρωμένου);
+  }
+}
+
+@keyframes εναλλαγή-μορφής-ορίου-για-παρατημένο {
+  to {
+    border-color: var(--χρώμα-παρατημένου);
+  }
+}
+
+@keyframes εναλλαγή-μορφής-ορίου-εν-εξελίξει {
+  to {
+    border-color: var(--χρώμα-εν-εξελίξει);
+  }
+}
+
+@keyframes εναλλαγή-μορφής-ορίου-για-εν-αναμονή {
+  to {
+    border-color: var(--χρώμα-εν-αναμονή);
   }
 }
