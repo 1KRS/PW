@@ -1,5 +1,5 @@
 .παράθυρο-ρυθμίσεων {
-  --ύψος: 270px;
+  --ύψος: 240px;
   --πλάτος: 300px;
   position: absolute;
   top: calc(100% - (var(--ύψος) + 25px));
@@ -11,7 +11,7 @@
   border-radius: 20px;
   max-height: none;
   max-width: none;
-  transition: all 2s ease-in-out;
+  transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
   z-index: 250;
 }
 
