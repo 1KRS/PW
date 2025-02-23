@@ -1,11 +1,11 @@
-.timeline {
+.χρονολόγιο {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.timeline-container {
+.περιέκτης-χρονολογίου {
   position: absolute;
   top: 20vh;
   height: 75vh;
