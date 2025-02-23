@@ -1,11 +1,11 @@
-export const γλώσσες = ['HTML', 'CSS', 'Javascript', 'EJS'];
+export const γλώσσες = ['HTML', 'CSS', 'JavaScript', 'EJS'];
 export const βιβλιοθήκες = ['ReactJS', 'Bootstrap'];
 export const πλαίσια = ['NextJS', 'React Native', 'Express'];
 export const περιβάλλοντα = ['NodeJS'];
+export const διαχειριστέςΠακέτων = ['NPM'];
 export const προγράμματα = ['MongoDB'];
 export const συστήματα = ['PostGre SQL', 'GIT'];
 export const πλατφόρμες = ['GitHub', 'Vercel'];
-export const διαχειριστέςΠακέτων = ['NPM'];
 export const πακέτα = [
   'Axios',
   'JavaScript Cookie',
@@ -19,3 +19,13 @@ export const πακέτα = [
   'Resend',
   'Styled Components',
 ];
+
+export const σύνολοΤεχνολογιών = γλώσσες.concat(
+  βιβλιοθήκες,
+  πλαίσια,
+  περιβάλλοντα,
+  διαχειριστέςΠακέτων,
+  προγράμματα,
+  συστήματα,
+  πλατφόρμες
+);
