@@ -1,10 +1,11 @@
 'use client';
 
 import styles from './Ηρώο.module.css';
+
 import Image from 'next/image';
 import Link from 'next/link';
-import Slider from '@/components/Slider';
-import Slider2 from '@/components/Slider2';
+import ΔεξιόστροφηΤαινίαΚύλισης from '@/components/ΤαινίεςΚύλισης/ΑριστερόστροφηΤαινίαΚύλισης';
+import ΑριστερόστροφηΤαινίαΚύλισης from '@/components/ΤαινίεςΚύλισης/ΔεξιόστροφηΤαινίαΚύλισης';
 import TranslatedText from '@/components/TranslatedText';
 import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής';
 
@@ -17,8 +18,8 @@ const Hero = () => {
     <section
       className={
         styles[
-          `${υπόβαθροΠρογραμματισμού === 'δυναμικό' ? 'αρχική' : 'αρχική'}`
-        ] //<-----
+          `${υπόβαθροΠρογραμματισμού === 'δυναμικό' ? 'αρχική' : 'αρχική'}`  //<-------------- Στο τέλος να ελέγξω αν χρειάζεται
+        ]
       }
       id="αρχική"
     >
@@ -56,8 +57,8 @@ const Hero = () => {
           </h3>
 
           <div className={styles['περιέκτης-ταινιών-κύλισης']}>
-            <Slider />
-            <Slider2 />
+            <ΔεξιόστροφηΤαινίαΚύλισης />
+            <ΑριστερόστροφηΤαινίαΚύλισης />
           </div>
 
           <div className={styles['περιέκτης-πλήκτρων']}>
