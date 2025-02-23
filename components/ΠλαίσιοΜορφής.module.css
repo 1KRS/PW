@@ -2,7 +2,7 @@
   background: var(--second-bg-color-blurred);
   border: none;
   border-radius: none;
-  transition: all 2s ease-in-out;
+  transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
 }
 .διαστάσεις-από-έξω {
   height: 100%;
@@ -13,12 +13,6 @@
 }
 
 /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
-
-/* .με-υαλομορφισμό,
-.με-αδιαφανή-στοιχεία,
-.με-ημιδιαφανή-στοιχεία {
-  border-radius: 15px;
-} */
 
 .με-υαλομορφισμό {
   border-color: var(--border-color-blurred);
