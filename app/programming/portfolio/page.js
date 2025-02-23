@@ -17,7 +17,7 @@ export const metadata = {
   publisher: 'Δημήτρης Μανωλόπουλος',
 };
 
-const Portfolio = () => {
+const Χαρτοφυλάκιο = () => {
   return (
     <>
       <main className={styles.main}>
@@ -68,4 +68,4 @@ const Portfolio = () => {
     </>
   );
 };
-export default Portfolio;
+export default Χαρτοφυλάκιο;
