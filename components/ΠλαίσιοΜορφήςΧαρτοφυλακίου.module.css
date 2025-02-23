@@ -5,13 +5,10 @@
   min-width: 330px;
   max-width: 450px;
   margin: 0.6rem;
-  background: var(--second-bg-color-blurred);
   color: var(--text-color);
-  /* border: 2px solid var(--border-color-blurred);
-  border-radius: 25px; */
   background: var(--second-bg-color-blurred);
   border: none;
-  transition: all 2s ease-in-out;
+  transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
   cursor: pointer;
   overflow: hidden;
 } 
