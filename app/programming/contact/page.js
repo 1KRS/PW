@@ -15,6 +15,7 @@ const Contact = () => {
   return (
     <main className={styles.main}>
       <Heading text="Επικοινωνία" />
+
       <section
         className={styles['τομέας-επικοινωνίας']}
         id="τομέας-επικοινωνίας"
