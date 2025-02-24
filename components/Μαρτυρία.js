@@ -1,11 +1,10 @@
-import styles from './μαρτυρία.module.css';
+import styles from './Μαρτυρία.module.css';
 
 import Image from 'next/image';
 
 import { FaStar } from 'react-icons/fa';
 
 const Μαρτυρία = ({
-  id,
   όνομα,
   βαθμολογία,
   κείμενο,
