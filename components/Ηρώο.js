@@ -12,6 +12,7 @@ import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής'
 import { useAppContext } from '@/context/AppContext';
 
 import {
+  γλώσσες,
   βιβλιοθήκες,
   πλαίσια,
   περιβάλλοντα,
@@ -34,6 +35,8 @@ const Hero = () => {
     συστήματα,
     πλατφόρμες
   );
+
+
 
   return (
     <section
