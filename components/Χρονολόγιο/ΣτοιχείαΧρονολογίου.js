@@ -6,7 +6,7 @@ import ΦίλτραΓεγονότων from '@/components/Χρονολόγιο/Φ
 
 import { useAppContext } from '@/context/AppContext';
 
-const ΣτοιχείαΧρονολογίου = () => {
+const TimelineElements = () => {
   const { μορφήΣτοιχείων } = useAppContext();
 
   return (
@@ -25,6 +25,6 @@ const ΣτοιχείαΧρονολογίου = () => {
     </>
   );
 };
-export default ΣτοιχείαΧρονολογίου;
+export default TimelineElements;
 
 
