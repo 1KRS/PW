@@ -36,8 +36,6 @@ const Hero = () => {
     πλατφόρμες
   );
 
-  console.log('τεχνολογίες', σύνολοΤεχνολογιών);
-
   return (
     <section
       className={
