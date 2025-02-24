@@ -20,7 +20,7 @@ export const πακέτα = [
   'Styled Components',
 ];
 
-export const σύνολοΤεχνολογιών = γλώσσες.concat(
+export const σύνολοΤεχνολογιώνΠληνΠακέτων = γλώσσες.concat(
   βιβλιοθήκες,
   πλαίσια,
   περιβάλλοντα,
