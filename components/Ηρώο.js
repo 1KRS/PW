@@ -21,7 +21,7 @@ import {
   συστήματα,
   πλατφόρμες,
   πακέτα,
-} from '../db/τεχνολογίες';
+} from '../db/τεχνολογίες';
 
 const Hero = () => {
   const { language, υπόβαθροΠρογραμματισμού } = useAppContext();
