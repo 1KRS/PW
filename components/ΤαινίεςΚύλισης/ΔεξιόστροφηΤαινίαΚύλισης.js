@@ -1,21 +1,22 @@
-import styles from './ΔεξιόστροφηΤαινίαΚύλισης.module.css';
+import styles from './ΣτοιχείοΤαινίαςΚύλισης.module.css';
 
-import { πακέτα } from '@/db/τεχνολογίες';
+import ΣτοιχείοΤαινίαςΚύλισηςΜόνοΚείμενο from '@/components/ΤαινίεςΚύλισης/ΣτοιχείοΤαινίαςΚύλισηςΜόνοΚείμενο';
 
-const ΔεξιόστροφηΤαινίαΚύλισης = () => {
+const ΔεξιόστροφηΤαινίαΚύλισης = ({ στοιχείαΠροςΑνάπτυξη }) => {
   return (
-    <div className={styles.wrapper}>
-      {πακέτα.map((tech, index) => {
+    <div className={styles['περιέκτης'] + ' ' + styles['περιέκτης-προς-δεξιά']}>
+      {στοιχείαΠροςΑνάπτυξη.map((στοιχείο, index) => {
         return (
-          <div
-            key={index + 1}
-            className={styles.item + ' ' + styles[`item${index}`]}
-          >
-            {tech}
-          </div>
+          <ΣτοιχείοΤαινίαςΚύλισηςΜόνοΚείμενο
+            key={index}
+            αριθμόςΣτοιχείου={index}
+            όνομαΣτοιχείου={στοιχείο}
+          />
         );
       })}
     </div>
   );
 };
 export default ΔεξιόστροφηΤαινίαΚύλισης;
+
+
