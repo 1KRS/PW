@@ -15,49 +15,50 @@ import { IoLogoReact } from 'react-icons/io5';
 import { RiNpmjsFill } from 'react-icons/ri';
 import { SiEjs, SiExpress } from 'react-icons/si';
 
-const ΣτοιχείοΤαινίαςΚύλισης = ({ αριθμόςΣτοιχείου, όνομαΤεχνολογίας }) => {
-
+const ΣτοιχείοΤαινίαςΚύλισης = ({ αριθμόςΣτοιχείου, όνομαΣτοιχείου }) => {
   return (
-      <div
-        className={styles.item + ' ' + styles[`item${αριθμόςΣτοιχείου}`]}
-        data-types={όνομαΤεχνολογίας}
-      >
-        {όνομαΤεχνολογίας === 'HTML' ? (
-          <TbBrandHtml5 className={styles['tech-icon']} />
-        ) : όνομαΤεχνολογίας === 'CSS' ? (
-          <TbBrandCss3 className={styles['tech-icon']} />
-        ) : όνομαΤεχνολογίας === 'JavaScript' ? (
-          <TbBrandJavascript className={styles['tech-icon']} />
-        ) : όνομαΤεχνολογίας === 'EJS' ? (
-          <SiEjs className={styles['tech-icon']} />
-        ) : όνομαΤεχνολογίας === 'ReactJS' ? (
-          <IoLogoReact className={styles['tech-icon']} />
-        ) : όνομαΤεχνολογίας === 'NextJS' ? (
-          <TbBrandNextjs className={styles['tech-icon']} />
-        ) : όνομαΤεχνολογίας === 'React Native' ? (
-          <TbBrandReactNative className={styles['tech-icon']} />
-        ) : όνομαΤεχνολογίας === 'MongoDB' ? (
-          <BiLogoMongodb className={styles['tech-icon']} />
-        ) : όνομαΤεχνολογίας === 'PostGre SQL' ? (
-          <BiLogoPostgresql className={styles['tech-icon']} />
-        ) : όνομαΤεχνολογίας === 'GIT' ? (
-          <FaGitAlt className={styles['tech-icon']} />
-        ) : όνομαΤεχνολογίας === 'GitHub' ? (
-          <IoLogoGithub className={styles['tech-icon']} />
-        ) : όνομαΤεχνολογίας === 'NodeJS' ? (
-          <IoLogoNodejs className={styles['tech-icon']} />
-        ) : όνομαΤεχνολογίας === 'NPM' ? (
-          <RiNpmjsFill className={styles['tech-icon']} />
-        ) : όνομαΤεχνολογίας === 'Express' ? (
-          <SiExpress className={styles['tech-icon']} />
-        ) : όνομαΤεχνολογίας === 'Bootstrap' ? (
-          <FaBootstrap className={styles['tech-icon']} />
-        ) : όνομαΤεχνολογίας === 'Vercel' ? (
-          <TbBrandVercel className={styles['tech-icon']} />
-        ) : (
-          ''
-        )}
-      </div>
+    <div
+      className={
+        styles['στοιχείο'] + ' ' + styles[`στοιχείο${αριθμόςΣτοιχείου}`]
+      }
+      data-types={όνομαΣτοιχείου}
+    >
+      {όνομαΣτοιχείου === 'HTML' ? (
+        <TbBrandHtml5 className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'CSS' ? (
+        <TbBrandCss3 className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'JavaScript' ? (
+        <TbBrandJavascript className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'EJS' ? (
+        <SiEjs className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'ReactJS' ? (
+        <IoLogoReact className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'NextJS' ? (
+        <TbBrandNextjs className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'React Native' ? (
+        <TbBrandReactNative className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'MongoDB' ? (
+        <BiLogoMongodb className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'PostGre SQL' ? (
+        <BiLogoPostgresql className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'GIT' ? (
+        <FaGitAlt className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'GitHub' ? (
+        <IoLogoGithub className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'NodeJS' ? (
+        <IoLogoNodejs className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'NPM' ? (
+        <RiNpmjsFill className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'Express' ? (
+        <SiExpress className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'Bootstrap' ? (
+        <FaBootstrap className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'Vercel' ? (
+        <TbBrandVercel className={styles['tech-icon']} />
+      ) : (
+        ''
+      )}
+    </div>
   );
 };
 export default ΣτοιχείοΤαινίαςΚύλισης;
