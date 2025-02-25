@@ -1,12 +1,9 @@
 import styles from './page.module.css';
 
-import Image from 'next/image';
 import Heading from '@/components/Heading';
 import Μαρτυρία from '@/components/Μαρτυρία';
 
-
 import { μαρτυρίες } from '@/db/μαρτυρίες';
-import { FaStar } from 'react-icons/fa';
 
 export const metadata = {
   title: 'ΔΜ - Μαρτυρίες',
