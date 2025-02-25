@@ -8,7 +8,7 @@ import { useAppContext } from '@/context/AppContext';
 
 import { FaStar } from 'react-icons/fa';
 
-const Μαρτυρία = ({
+const Testimonial = ({
   όνομα,
   βαθμολογία,
   κείμενο,
@@ -76,4 +76,4 @@ const Μαρτυρία = ({
   );
 };
 
-export default Μαρτυρία;
+export default Testimonial;
