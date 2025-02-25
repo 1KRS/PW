@@ -3,6 +3,7 @@
   border: none;
   border-radius: none;
   transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
+  overflow: hidden;
 }
 .διαστάσεις-από-έξω {
   height: 100%;
