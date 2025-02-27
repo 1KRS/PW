@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151.73 131.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #00fcfd;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #00fcfd;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: #ad0000;
+        stroke-width: .75px;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-2" points="75.87 1 .87 130.9 150.87 130.9 75.87 1"/>
+  <polygon class="cls-1" points="75.87 24.02 51.62 66.02 100.11 66.02 75.87 24.02"/>
+  <polygon class="cls-1" points="44.44 78.89 20.19 120.89 68.69 120.89 44.44 78.89"/>
+  <polygon class="cls-1" points="107.29 78.71 83.04 120.71 131.54 120.71 107.29 78.71"/>
+  <polygon class="cls-1" points="75.87 108.03 51.62 66.03 100.11 66.03 75.87 108.03"/>
+  <line class="cls-3" x1="20.1" y1="121.08" x2="44.44" y2="78.89"/>
+  <line class="cls-3" x1="82.59" y1="120.95" x2="106.93" y2="78.76"/>
+  <line class="cls-3" x1="75.72" y1="108.03" x2="100.05" y2="65.84"/>
+  <line class="cls-3" x1="75.87" y1="108.03" x2="51.62" y2="66.02"/>
+  <line class="cls-3" x1="68.63" y1="121.2" x2="44.38" y2="79.19"/>
+  <line class="cls-3" x1="131.38" y1="120.69" x2="107.13" y2="78.68"/>
+  <line class="cls-3" x1="5.92" y1="121.12" x2="37.7" y2="66.03"/>
+  <line class="cls-3" x1="145.6" y1="120.89" x2="113.74" y2="65.7"/>
+</svg>
