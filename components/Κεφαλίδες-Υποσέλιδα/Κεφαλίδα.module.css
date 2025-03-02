@@ -1,4 +1,4 @@
-.header {
+.κεφαλίδα {
   position: fixed;
   top: 0;
   display: flex;
@@ -13,26 +13,38 @@
   z-index: 5;
 }
 
-.logo {
+.περιέκτης-λογότυπου {
   display: flex;
+  justify-content: flex-start;
   width: 100%;
+}
+
+.λογότυπο {
   font-size: 1.4rem;
   color: var(--text-color);
   font-weight: 800;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: 0.5s ease-in-out;
 }
 
-.logo:hover {
-  transform: scale(1.1);
+.λογότυπο:hover {
+  transform: scale(1.25);
 }
 
-.logo span {
+.εικόνα {
+  background-color: transparent;
+}
+
+.εικόνα:hover {
+  box-shadow: 0 0px 20px gold;
+}
+
+.λογότυπο span {
   text-shadow: 0 0 25px var(--main-color);
   color: var(--main-color);
 }
 
-.home-top-nav {
+.γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +54,7 @@
   min-width: 140px;
 }
 
-.home-top-nav .items {
+.γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού .στοιχεία {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -51,7 +63,7 @@
   list-style: none;
 }
 
-.home-top-nav .item {
+.γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού .item {
   font-size: 1.3rem;
   color: var(--text-color);
   font-weight: 700;
@@ -59,27 +71,27 @@
   border-bottom: 2px solid transparent;
 }
 
-.home-top-nav .item:hover,
-.home-top-nav .item:active {
+.γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού .item:hover,
+.γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού .item:active {
   color: var(--main-color);
   border-bottom: 3px solid var(--main-color);
   transform: scale(1.1);
 }
 
 @media (min-width: 40rem) {
-  .header {
+  .κεφαλίδα {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
   }
 
-  .home-top-nav .items {
+  .γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού .στοιχεία {
     width: 100%;
     list-style: none;
   }
 
-  .home-top-nav .item {
+  .γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού .item {
     color: white;
   }
 }
