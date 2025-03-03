@@ -1,0 +1,26 @@
+.λογότυπο {
+  color: var(--text-color);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.λογότυπο:hover {
+  transform: scale(1.25);
+}
+
+.εικόνα1,
+.εικόνα2 {
+  stroke: var(--main-color);
+  fill: var(--main-color);
+}
+
+.εικόνα1:hover,
+.εικόνα2:hover {
+  stroke: gold;
+  fill: gold;
+}
+
+.λογότυπο span {
+  text-shadow: 0 0 25px var(--main-color);
+  color: var(--main-color);
+}
