@@ -19,6 +19,49 @@
   width: 100%;
 }
 
+.λογότυπο {
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+}
+
+.λογότυπο:hover {
+  transform: scale(1.25);
+}
+
+/* .λογότυπο {
+  display: inline-block;
+  height: 450px;
+  width: 500px;
+  border-radius: 40%;
+  padding: 10px;
+  border: none;
+  background-color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  transform: scale(1.05);
+} */
+
+/* .λογότυπο:hover {
+  padding: 20px;
+  background-color: transparent;
+  box-shadow:
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color),
+    0 0 100px var(--main-color),
+    0 0 125px var(--main-color);
+  transform: scale(0.95);
+  transition: 0.7s ease-in-out;
+} */
+
+.λογότυπο .εικόνα {
+  stroke: var(--main-color);
+  fill: var(--main-color);
+}
+
+.λογότυπο .εικόνα:hover {
+  stroke: gold;
+  fill: gold;
+}
+
 .γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού {
   display: flex;
   justify-content: center;
