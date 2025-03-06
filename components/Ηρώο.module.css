@@ -24,7 +24,6 @@
     transition: all 2s ease-in-out;
   }
 
-
   .περιεχόμενο-αρχικής span {
     color: var(--main-color);
   }
@@ -86,38 +85,55 @@
     box-shadow: 0 0 25px transparent;
   }
 
-  .εικόνα-αρχικής .εικόνα {
+  .περιέκτης-λογότυπου {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 40%;
-    /* padding: 20px; */
-    padding: 10px;
+    padding: 60px;
     border: none;
     background-color: var(--main-color);
-    /* background-color: transparent; */
     box-shadow: 0 0 25px var(--main-color);
-    /* box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
-      0 0 100px var(--main-color); */
-    /* box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color); */
-    cursor: pointer;
-    transform: scale(1.05);
-    /* transform: scale(.95); */
-    /* transition: border 0.7s ease-in-out; */
     transition: 0.7s ease-in-out;
   }
 
-  .εικόνα-αρχικής .εικόνα:hover {
-    padding: 20px;
-    /* padding: 10px; */
-    /* border: 10px solid var(--main-color); */
-    /* background-color: var(--main-color); */
+  .περιέκτης-λογότυπου:hover {
     background-color: transparent;
     box-shadow:
       0 0 25px var(--main-color),
       0 0 50px var(--main-color),
       0 0 100px var(--main-color),
       0 0 125px var(--main-color);
-    /* box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color); */
-    /* transform: scale(1.05); */
-    transform: scale(0.95);
+  }
+
+  .περιέκτης-λογότυπου .λογότυπο {
+    /* cursor: pointer; */
     transition: 0.7s ease-in-out;
+  }
+
+  .περιέκτης-λογότυπου:hover .λογότυπο {
+    transform: scale(0.95);
+  }
+
+  .περιέκτης-λογότυπου .εικόνα {
+    fill: var(--second-bg-color-blurred);
+    transition: 0.7s ease-in-out;
+  }
+
+  .περιέκτης-λογότυπου:hover .εικόνα {
+    fill: gold;
+    stroke: white;
+    stroke-width: 5px;
+    transition: 0.4s ease-in-out;
+  }
+
+  .περιέκτης-λογότυπου .εικόνα:not(:hover) {
+    stroke-width: 0px;
+    transition: 0.4s ease-in-out;
+  }
+
+  .περιέκτης-λογότυπου:hover .εικόνα:hover {
+    fill: white;
+    stroke: gold;
   }
 }
