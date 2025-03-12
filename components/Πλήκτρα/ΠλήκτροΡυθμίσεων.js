@@ -19,7 +19,7 @@ const SettingsButton = ({}) => {
 
   return (
     <div
-      className={styles['περιέκτης-ρυθμίσεων'] + ' ' + styles[`${απόκρυψη}`]}
+      className={styles['περιέκτης-εικονιδίου-ρυθμίσεων'] + ' ' + styles[`${απόκρυψη}`]}
       onClick={(e) => handleSettingsClick(e)}
     >
       <VscSettings className={styles['εικονίδιο-ρυθμίσεων']} />
