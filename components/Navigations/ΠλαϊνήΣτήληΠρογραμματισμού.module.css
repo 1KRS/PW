@@ -1,12 +1,38 @@
-.home-side-nav {
-  display: none;
+.βασική-πλαϊνή-στήλη-ή-γραμμή-πλοήγησης {
+  --list-items: 6;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 150;
 }
 
-@media (min-width: 40rem) {
-  .βασική-πλαϊνή-στήλη-πλοήγησης {
-    --list-items: 6;
-    position: fixed;
+.στοιχεία {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(3.5vh + 2.5vh);
+  width: calc((var(--list-items) * 5vh) + 5vh + 2.5vh);
+  padding: 10px 0 5px;
+  gap: 1.5vh;
+  list-style: none;
+  transition: 0.3s ease-in;
+}
+
+/* ================================================ */
+
+@media (min-width: 480px) {
+}
+
+/* ================================================ */
+
+@media (min-width: 768px) {
+  .βασική-πλαϊνή-στήλη-ή-γραμμή-πλοήγησης {
     top: 0;
+    left: auto;
     right: 50px;
     display: flex;
     justify-content: center;
@@ -16,10 +42,7 @@
   }
 
   .στοιχεία {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: calc((var(--list-items) * 5vh) + 5vh + 2.5vh);
     width: calc(3.5vh + 2.5vh);
     padding: 10px 15px 0;
@@ -40,4 +63,14 @@
     transition: 0.3s ease-in;
     cursor: pointer;
   }
+}
+
+/* ================================================ */
+
+@media (min-width: 1024px) {
+}
+
+/* ================================================ */
+
+@media (min-width: 1366px) {
 }
