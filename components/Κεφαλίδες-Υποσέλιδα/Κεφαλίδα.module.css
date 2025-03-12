@@ -1,25 +1,27 @@
 .κεφαλίδα {
   position: fixed;
   top: 0;
+  left: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 5vh;
   width: 100vw;
-  padding: 1vh 12%;
   background: transparent;
   backdrop-filter: blur(2px);
-  /* border-bottom: 1px solid gold; */
   z-index: 5;
 }
 
 .περιέκτης-λογότυπου {
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
 }
 
 .λογότυπο {
+  padding: 3px 3px 0;
+
   cursor: pointer;
   transition: 0.7s ease-in-out;
 }
@@ -27,30 +29,6 @@
 .λογότυπο:hover {
   transform: scale(1.25);
 }
-
-/* .λογότυπο {
-  display: inline-block;
-  height: 450px;
-  width: 500px;
-  border-radius: 40%;
-  padding: 10px;
-  border: none;
-  background-color: var(--main-color);
-  box-shadow: 0 0 25px var(--main-color);
-  transform: scale(1.05);
-} */
-
-/* .λογότυπο:hover {
-  padding: 20px;
-  background-color: transparent;
-  box-shadow:
-    0 0 25px var(--main-color),
-    0 0 50px var(--main-color),
-    0 0 100px var(--main-color),
-    0 0 125px var(--main-color);
-  transform: scale(0.95);
-  transition: 0.7s ease-in-out;
-} */
 
 .λογότυπο .εικόνα {
   stroke: var(--main-color);
@@ -63,53 +41,81 @@
 }
 
 .γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  max-height: 30px;
-  width: 80%;
-  min-width: 140px;
+  display: none;
 }
 
-.γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού .στοιχεία {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  gap: 5vw;
-  list-style: none;
+/* ================ */
+
+@media (min-width: 480px) {
 }
 
-.γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού .item {
-  font-size: 1.3rem;
-  color: var(--text-color);
-  font-weight: 700;
-  transition: 0.3s ease;
-  border-bottom: 2px solid transparent;
-}
+/* ================ */
 
-.γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού .item:hover,
-.γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού .item:active {
-  color: var(--main-color);
-  border-bottom: 3px solid var(--main-color);
-  transform: scale(1.1);
-}
-
-@media (min-width: 40rem) {
+@media (min-width: 768px) {
   .κεφαλίδα {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
+    justify-content: space-between;
+    height: 5vh;
+    padding: 1vh 12%;
   }
 
-  .γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού .στοιχεία {
+  .περιέκτης-λογότυπου {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-height: 30px;
+    /* min-width: 140px; */
+  }
+
+  .επιλογές-ρυθμίσεων-κεφαλίδας-προγραμματισμού {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
     width: 100%;
+    gap: 5vw;
+    padding: 3px;
     list-style: none;
   }
 
-  .γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού .item {
-    color: white;
+  /* .στοιχείο {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 700;
+    transition: 0.3s ease;
+    border-bottom: 2px solid transparent;
   }
+
+  .στοιχείο:hover,
+  .στοιχείο:active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    transform: scale(1.1);
+  } */
+
+  /* .πλήκτρο-ρυθμίσεων {
+    visibility: hidden;
+  }
+
+  .αναδυόμενο-γλωσσών {
+    visibility: visible;
+  } */
+
+  /* .στοιχείο {
+    color: white;
+  } */
+}
+
+/* ================ */
+
+@media (min-width: 1024px) {
+}
+
+/* ================ */
+
+@media (min-width: 1366px) {
 }
