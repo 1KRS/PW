@@ -1,7 +1,7 @@
-.περιέκτης-ρυθμίσεων {
+.περιέκτης-εικονιδίου-ρυθμίσεων {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  right: 15px;
+  bottom: 15px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -14,7 +14,7 @@
 
 .εικονίδιο-ρυθμίσεων {
   color: var(--main-color);
-  font-size: 1.5vw;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -22,3 +22,22 @@
   color: gold;
 }
 
+/* ================================================ */
+
+@media (min-width: 480px) {
+}
+
+/* ================================================ */
+
+@media (min-width: 768px) {
+}
+
+/* ================================================ */
+
+@media (min-width: 1024px) {
+}
+
+/* ================================================ */
+
+@media (min-width: 1366px) {
+}
