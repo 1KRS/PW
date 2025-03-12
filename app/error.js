@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import BinaryRain from '@/components/Backgrounds/BinaryRain';
+import ΔυαδικήΒροχή from '@/components/Backgrounds/ΔυαδικήΒροχή';
 import styles from './error.module.css';
 import Link from 'next/link';
 import LanguagesContainer from '@/components/LanguagesContainer';
@@ -9,7 +9,7 @@ import TranslatedText from '@/components/TranslatedText';
 const Error = () => {
   return (
     <div className={styles['error']}>
-      <BinaryRain screenType="error" fontSize="14" speed="60" />
+      <ΔυαδικήΒροχή screenType="error" fontSize="14" speed="60" />
       <div className={styles.container}>
         <h1>500</h1>
         <div className={styles.text}>
