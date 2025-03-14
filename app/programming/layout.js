@@ -1,11 +1,13 @@
-import ProgrammingBackground from '@/components/Backgrounds/ProgrammingBackground';
+import styles from './page.module.css';
+
+import ΥπόβαθροΠρογραμματισμού from '@/components/Backgrounds/ΥπόβαθροΠρογραμματισμού';
 import Κεφαλίδα from '@/components/Κεφαλίδες-Υποσέλιδα/Κεφαλίδα';
 import ΠλαϊνήΣτήληΠρογραμματισμού from '@/components/Navigations/ΠλαϊνήΣτήληΠρογραμματισμού';
 import Υποσέλιδο from '@/components/Κεφαλίδες-Υποσέλιδα/Υποσέλιδο';
 // import MainSubheader from '@/components/MainSubheader';
 import UnderConstructionRibbon from '@/components/UnderDevelopmentRibbon';
 import ΠιστοποιητικόΣεΠαράθυρο from '@/components/Modals/ΠιστοποιητικόΣεΠαράθυρο';
-import ΠαράθυροΡυθμίσεων from '@/components/Modals/ΑναδυόμενοΠαράθυροΡυθμίσεων';
+import ΑναδυόμενοΠαράθυροΡυθμίσεων from '@/components/Modals/ΑναδυόμενοΠαράθυροΡυθμίσεων';
 import ΠλήκτροΡυθμίσεων from '@/components/Πλήκτρα/ΠλήκτροΡυθμίσεων';
 
 export const metadata = {
@@ -18,11 +20,13 @@ export const metadata = {
 
 const ProgrammingLayout = ({ children }) => {
   return (
-    <ProgrammingBackground>
+    <ΥπόβαθροΠρογραμματισμού>
       {/* -- Αναδυόμενα Παράθυρα -- */}
-      <ΠιστοποιητικόΣεΠαράθυρο />
-      <ΠαράθυροΡυθμίσεων />
-      
+      <div className={styles['περιέκτης-αναδυόμενων-παραθύρων']}>
+        <ΠιστοποιητικόΣεΠαράθυρο />
+        <ΑναδυόμενοΠαράθυροΡυθμίσεων />
+      </div>
+      {/* --  -- */}
       <Κεφαλίδα />
       <UnderConstructionRibbon />
       {/* <MainSubheader /> */}
@@ -30,7 +34,7 @@ const ProgrammingLayout = ({ children }) => {
       {children}
       <ΠλήκτροΡυθμίσεων />
       <Υποσέλιδο />
-    </ProgrammingBackground>
+    </ΥπόβαθροΠρογραμματισμού>
   );
 };
 export default ProgrammingLayout;
