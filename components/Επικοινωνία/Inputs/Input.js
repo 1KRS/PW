@@ -17,7 +17,7 @@ const Input = ({
 }) => {
   const { language, μορφήΣτοιχείων, φέγγοςΟρίων, φέγγοςΣτοιχείων } = useAppContext();
 
-  return style === 'btn' || style === 'btn-success' ? (
+  return style === 'πλήκτρο' || style === 'πλήκτρο-επιτυχίας' ? (
     <button
       id={id}
       type={type}
