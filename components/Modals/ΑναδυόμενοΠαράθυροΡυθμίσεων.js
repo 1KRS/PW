@@ -3,7 +3,7 @@
 import styles from './ΑναδυόμενοΠαράθυροΡυθμίσεων.module.css';
 
 import ΔιακόπτηςΕναλλαγήςΥποβάθρου from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΕναλλαγήςΥποβάθρου';
-import ΔιακόπτηςΥαλομορφισμού from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΥαλομορφισμού';
+// import ΔιακόπτηςΥαλομορφισμού from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΥαλομορφισμού';
 import ΔιακόπτηςΕναλλαγήςΑδιαφάνειας from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΕναλλαγήςΑδιαφάνειας';
 import ΔιακόπτηςΕναλλαγήςΦέγγουςΟρίων from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΕναλλαγήςΦέγγουςΟρίων';
 import ΔιακόπτηςΕναλλαγήςΦέγγουςΣτοιχείων from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΕναλλαγήςΦέγγουςΣτοιχείων';
