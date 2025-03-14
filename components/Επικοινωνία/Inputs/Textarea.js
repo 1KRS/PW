@@ -14,7 +14,8 @@ const Textarea = ({
   χειρισμόςΠληκτρισμού,
   children,
 }) => {
-  const { language, μορφήΣτοιχείων, φέγγοςΟρίων, φέγγοςΣτοιχείων } = useAppContext();
+  const { language, μορφήΣτοιχείων, φέγγοςΟρίων, φέγγοςΣτοιχείων } =
+    useAppContext();
 
   return (
     <textarea
