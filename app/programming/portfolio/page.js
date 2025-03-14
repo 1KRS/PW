@@ -2,7 +2,7 @@ import styles from './page.module.css';
 
 import Image from 'next/image';
 import ΠλαίσιοΜορφήςΧαρτοφυλακίου from '@/components/ΠλαίσιοΜορφήςΧαρτοφυλακίου';
-import Heading from '@/components/Heading';
+import Τίτλος from '@/components/Τίτλος';
 import TranslatedText from '@/components/TranslatedText';
 
 import { έργα } from '@/db/έργα';
@@ -17,11 +17,11 @@ export const metadata = {
   publisher: 'Δημήτρης Μανωλόπουλος',
 };
 
-const Χαρτοφυλάκιο = () => {
+const ΣελίδαΧαρτοφυλακίου = () => {
   return (
     <>
       <main className={styles.main}>
-        <Heading text="Χαρτοφυλάκιο" />
+        <Τίτλος text="Χαρτοφυλάκιο" />
 
         <section className={styles['χαρτοφυλάκιο']} id="χαρτοφυλάκιο">
           <div className={styles['περιέκτης-χαρτοφυλακίου']}>
@@ -68,4 +68,4 @@ const Χαρτοφυλάκιο = () => {
     </>
   );
 };
-export default Χαρτοφυλάκιο;
+export default ΣελίδαΧαρτοφυλακίου;
