@@ -1,4 +1,6 @@
 .τομέας-επικοινωνίας {
+  position: absolute;
+  top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
