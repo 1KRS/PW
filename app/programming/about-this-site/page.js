@@ -1,6 +1,6 @@
 import styles from './page.module.css';
 
-import Heading from '@/components/Heading';
+import Τίτλος from '@/components/Τίτλος';
 import TranslatedText from '@/components/TranslatedText';
 
 export const metadata = {
@@ -11,11 +11,10 @@ export const metadata = {
   publisher: 'Δημήτρης Μανωλόπουλος',
 };
 
-
 const aboutSite = () => {
   return (
     <main className={styles.main}>
-      <Heading text="Σχετικά με τον ιστότοπο" />
+      <Τίτλος text="Σχετικά με τον ιστότοπο" />
       <section
         className={styles['σχετικά-με-ιστότοπο']}
         id="σχετικά-με-ιστότοπο"
