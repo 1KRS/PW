@@ -1,5 +1,6 @@
 import styles from './page.module.css';
-import Heading from '@/components/Heading';
+
+import Τίτλος from '@/components/Τίτλος';
 
 export const metadata = {
   title: 'ΔΜ - Υπηρεσίες',
@@ -9,11 +10,11 @@ export const metadata = {
   publisher: 'Δημήτρης Μανωλόπουλος',
 };
 
-const Services = () => {
+const ΣελίδαΥπηρεσιών = () => {
   return (
     <>
       <main className={styles.main}>
-        <Heading text="Υπηρεσίες" />
+        <Τίτλος text="Υπηρεσίες" />
 
         <section className={styles.services} id="services">
           <div className={styles['services-container']}>
@@ -66,4 +67,4 @@ const Services = () => {
     </>
   );
 };
-export default Services;
+export default ΣελίδαΥπηρεσιών;
