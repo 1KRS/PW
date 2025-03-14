@@ -70,41 +70,41 @@ const Form = ({ id }) => {
 
   return (
     <form action="" onSubmit={onSubmit} className={styles['φόρμα']} id={id}>
-      <div className={styles['input-group']}>
-        <div className={styles['input-box']}>
+      <div className={styles['ομάδα-πεδίων']}>
+        <div className={styles['περιέκτης-πεδίου']}>
           <Input
             type="text"
-            style="text"
+            style="κείμενο"
             name="name"
             placeholder="Πλήρες Ονοματεπώνυμο"
             χειρισμόςΠληκτρισμού={χειρισμόςΟνοματεπώνυμου}
             required
           />
         </div>
-        <div className={styles['input-box']}>
+        <div className={styles['περιέκτης-πεδίου']}>
           <Input
             type="email"
-            style="email"
+            style="ηΤαχυδρομείο"
             name="email"
             placeholder="ηΤαχυδρομείο"
             χειρισμόςΠληκτρισμού={χειρισμόςΤαχυδρομείου}
             required
           />
         </div>
-        <div className={styles['input-box']}>
+        <div className={styles['περιέκτης-πεδίου']}>
           <Input
             type="number"
-            style="phone-number"
+            style="αριθμός-τηλεφώνου"
             name="phone-number"
             placeholder="Αριθμός Τηλεφώνου"
             χειρισμόςΠληκτρισμού={χειρισμόςΑριθμού}
             required
           />
         </div>
-        <div className={styles['input-box']}>
+        <div className={styles['περιέκτης-πεδίου']}>
           <Input
             type="text"
-            style="text"
+            style="κείμενο"
             name="subject"
             placeholder="Θέμα"
             χειρισμόςΠληκτρισμού={χειρισμόςΘέματος}
@@ -112,8 +112,8 @@ const Form = ({ id }) => {
           />
         </div>
       </div>
-      <div className={styles['input-group-2']}>
-        <div className={styles['input-box']}>
+      <div className={styles['ομάδα-πεδίων-2']}>
+        <div className={styles['περιέκτης-πεδίου']}>
           <Textarea
             cols="30"
             rows="10"
@@ -125,7 +125,7 @@ const Form = ({ id }) => {
         </div>
         <Input
           type="submit"
-          style={successMessage ? 'btn-success' : 'btn'}
+          style={successMessage ? 'πλήκτρο-επιτυχίας' : 'πλήκτρο'}
           value={successMessage ? successMessage : 'Αποστολή Μηνύματος'}
           disabled={loading}
           onSubmit={onSubmit}
