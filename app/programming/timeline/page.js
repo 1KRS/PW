@@ -1,6 +1,6 @@
 import styles from './page.module.css';
 
-import Heading from '@/components/Heading';
+import Τίτλος from '@/components/Τίτλος';
 import ΣτοιχείαΧρονολογίου from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου';
 import ProgrammingTimelineSideNav from '@/components/Navigations/ProgrammingTimelineSideNav';
 
@@ -12,17 +12,20 @@ export const metadata = {
   publisher: 'Δημήτρης Μανωλόπουλος',
 };
 
-const Χρονολόγιο = () => {
+const ΣελίδαΧρονολόγιο = () => {
   return (
     <>
       <main className={styles.main}>
-        <Heading text="Χρονολόγιο" />
+        <Τίτλος text="Χρονολόγιο" />
         <ProgrammingTimelineSideNav
           σελίδα="Χρονολόγιο"
           ύπαρξηΦίλτρων="υπαρκτά"
         />
 
-        <section className={styles['τομέας-χρονολογίου']} id="τομέας-χρονολογίου">
+        <section
+          className={styles['τομέας-χρονολογίου']}
+          id="τομέας-χρονολογίου"
+        >
           <div className={styles['περιέκτης-χρονολογίου']}>
             <ΣτοιχείαΧρονολογίου />
           </div>
@@ -32,4 +35,4 @@ const Χρονολόγιο = () => {
   );
 };
 
-export default Χρονολόγιο;
+export default ΣελίδαΧρονολόγιο;
