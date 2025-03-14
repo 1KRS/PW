@@ -1,6 +1,6 @@
 import styles from './page.module.css';
 
-import Heading from '@/components/Heading';
+import Τίτλος from '@/components/Τίτλος';
 import Μαρτυρία from '@/components/Μαρτυρία';
 
 import { μαρτυρίες } from '@/db/μαρτυρίες';
@@ -13,10 +13,10 @@ export const metadata = {
   publisher: 'Δημήτρης Μανωλόπουλος',
 };
 
-const Μαρτυρίες = () => {
+const ΣελίδαΜαρτυριών = () => {
   return (
     <main className={styles.main}>
-      <Heading text="Μαρτυρίες" />
+      <Τίτλος text="Μαρτυρίες" />
 
       <section className={styles['τομέας-μαρτυριών']} id="τομέας-μαρτυριών">
         <div className={styles['περιέκτης-μαρτυριών']}>
@@ -39,4 +39,4 @@ const Μαρτυρίες = () => {
   );
 };
 
-export default Μαρτυρίες;
+export default ΣελίδαΜαρτυριών;
