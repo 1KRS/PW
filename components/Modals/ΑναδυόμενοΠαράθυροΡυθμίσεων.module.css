@@ -6,11 +6,28 @@
   width: auto;
   max-width: 400px;
   margin: 20px;
-  background-color: var(--second-bg-color-blurred);
+  background-color: var(--second-bg-color-extra-blurred);
   border: 1px solid transparent;
   border-radius: 20px;
   transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
   z-index: 250;
+}
+
+.λογότυπο {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  padding: 3px 3px 0;
+  transition: 0.7s ease-in-out;
+}
+
+.λογότυπο:hover {
+  transform: scale(1.25);
+}
+
+.λογότυπο .εικόνα {
+  stroke: var(--main-color);
+  fill: var(--main-color);
 }
 
 .τίτλος-παραθύρου {
@@ -29,7 +46,7 @@
   top: 10px;
   right: 10px;
   color: red;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 900;
   background-color: transparent;
 }
@@ -73,6 +90,15 @@
     left: calc(100% - (var(--πλάτος) + 40px));
     height: var(--ύψος);
     width: var(--πλάτος);
+    background-color: var(--second-bg-color-blurred);
+  }
+
+  .λογότυπο {
+    display: none;
+  }
+
+  .πλήκτρο-εξόδου {
+    font-size: 40px;
   }
 
   .τίτλος-παραθύρου {
@@ -100,7 +126,6 @@
 }
 .με-ημιδιαφανή-στοιχεία {
   border-color: var(--border-color-blurred);
-  background-color: var(--second-bg-color-blurred);
 }
 .με-φέγγος-ορίων {
   border-color: var(--main-color);
