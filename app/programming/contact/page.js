@@ -1,6 +1,6 @@
 import styles from './page.module.css';
 
-import Heading from '@/components/Heading';
+import Τίτλος from '@/components/Τίτλος';
 import Φόρμα from '@/components/Επικοινωνία/Φόρμα';
 
 export const metadata = {
@@ -11,10 +11,10 @@ export const metadata = {
   publisher: 'Δημήτρης Μανωλόπουλος',
 };
 
-const Contact = () => {
+const ΣελίδαΕπικοινωνίας = () => {
   return (
     <main className={styles.main}>
-      <Heading text="Επικοινωνία" />
+      <Τίτλος text="Επικοινωνία" />
 
       <section
         className={styles['τομέας-επικοινωνίας']}
@@ -26,4 +26,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ΣελίδαΕπικοινωνίας;
