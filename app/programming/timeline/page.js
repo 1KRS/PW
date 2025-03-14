@@ -12,7 +12,7 @@ export const metadata = {
   publisher: 'Δημήτρης Μανωλόπουλος',
 };
 
-const ΣελίδαΧρονολόγιο = () => {
+const ΣελίδαΧρονολογίου = () => {
   return (
     <>
       <main className={styles.main}>
@@ -35,4 +35,4 @@ const ΣελίδαΧρονολόγιο = () => {
   );
 };
 
-export default ΣελίδαΧρονολόγιο;
+export default ΣελίδαΧρονολογίου;
