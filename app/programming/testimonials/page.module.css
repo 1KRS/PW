@@ -3,18 +3,49 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 .περιέκτης-μαρτυριών {
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr); */
+  position: absolute;
+  top: 120px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  height: 100%;
-  width: 80vw;
+  height: 45vh;
+  width: 90vw;
   gap: 2vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    var(--main-color) 15%,
+    var(--main-color) 85%,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.περιέκτης-μαρτυριών::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.περιέκτης-μαρτυριών {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.υπόδειξη-αυθεντικότητας-μαρτυριών {
+  position: absolute;
+  bottom: 13vh;
+  font-size: 22px;
+  width: 60vw;
+  color: gold;
+  text-align: center;
 }
 
 /* .wrapper {
@@ -22,3 +53,61 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 3px;
 } */
+
+/* ======================= Ύψος ======================= */
+@media (min-height: 300px) {
+  .περιέκτης-μαρτυριών {
+    height: 50vh;
+  }
+}
+@media (min-height: 320px) {
+  .περιέκτης-μαρτυριών {
+    height: 55vh;
+  }
+}
+@media (min-height: 360px) {
+  .περιέκτης-μαρτυριών {
+    height: 60vh;
+  }
+}
+@media (min-height: 420px) {
+  .περιέκτης-μαρτυριών {
+    height: 70vh;
+  }
+}
+@media (min-height: 480px) {
+  .περιέκτης-μαρτυριών {
+    height: 75vh;
+  }
+}
+/* @media (min-height: 650px) {
+  .περιέκτης-μαρτυριών {
+    height: 78vh;
+  }
+} */
+/* ====================== Μήκος ====================== */
+@media (min-width: 480px) {
+}
+/* ================================================ */
+@media (min-width: 768px) {
+  .περιέκτης-μαρτυριών {
+    position: static;
+    flex-direction: row;
+    padding: 8vh 6vw 10vh;
+    overflow-y: hidden;
+    overflow-x: auto;
+    mask-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      var(--main-color) 10%,
+      var(--main-color) 90%,
+      rgba(255, 255, 255, 0)
+    );
+  }
+}
+/* ================================================ */
+@media (min-width: 1024px) {
+}
+/* ================================================ */
+@media (min-width: 1366px) {
+}
