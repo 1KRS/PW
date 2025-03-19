@@ -1,6 +1,6 @@
 'use client';
 
-import styles from '@/components/Navigations/ProgrammingTimelineSideNav.module.css';
+import styles from '@/components/Navigations/ΠλαϊνήΣτήληΧρονολογίουΠρογραμματισμού.module.css';
 
 import TranslatedText from '@/components/TranslatedText';
 
