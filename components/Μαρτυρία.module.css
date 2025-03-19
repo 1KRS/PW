@@ -3,19 +3,132 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 450px;
-  width: 300px;
-  min-height: 270px;
-  min-width: 200px;
+  height: auto;
+  width: auto;
+  max-width: 90%;
   background: var(--second-bg-color-blurred);
   color: var(--text-color);
   border: 2px solid transparent;
-  border-radius: 30px; 
-  padding: 1.5vw 2vw;
+  border-radius: 30px;
+  padding: 0 2vw 15px;
   text-align: center;
-  gap: 1rem;
+  gap: 5px;
   cursor: pointer;
   transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
+}
+
+.μαρτυρία:hover {
+  border: 2px solid var(--ποιότητα);
+  transform: scale(1.05);
+  box-shadow: 0 0 50px var(--ποιότητα);
+  background-color: var(--second-bg-color);
+}
+
+.μαρτυρία .επάνω-γραμμή {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.επάνω-γραμμή.αληθινή {
+  padding: 10px 15px 0;
+}
+.επάνω-γραμμή.ψεύτικη {
+  padding: 0 15px 0;
+}
+
+.μαρτυρία .εικόνα {
+  width: 10vw;
+  height: 10vw;
+  border: 1px solid var(--ποιότητα);
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--ποιότητα);
+}
+
+.μαρτυρία .όνομα-και-βαθμολογία {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.μαρτυρία .όνομα {
+  font-size: clamp(0.8rem, 4.5vw, 1.8rem);
+}
+
+.μαρτυρία .βαθμολογία {
+  color: var(--ποιότητα);
+  font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+}
+
+.μαρτυρία .κείμενο {
+  font-size: clamp(0.6rem, 3vw, 1.2rem);
+  margin-top: 5px;
+}
+.μαρτυρία .υπόδειξη-αυθεντικότητας-μαρτυρίας {
+  color: var(--ποιότητα);
+  font-size: clamp(0.6rem, 1.3vw, 0.8rem);
+  font-weight: bold;
+  margin-top: 2px;
+  padding: 1px 5px;
+  border: 2px solid var(--error);
+  border-radius: 5px;
+}
+
+/* ================================================ */
+@media (min-width: 480px) {
+}
+/* ================================================ */
+@media (min-width: 768px) {
+  .μαρτυρία {
+    width: 300px;
+    min-height: 435px;
+    min-width: 300px;
+    padding: 0 2vw;
+    gap: 15px;
+  }
+
+  .μαρτυρία:hover {
+    transform: translateY(-10px) scale(1.03);
+  }
+
+  .μαρτυρία .επάνω-γραμμή {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .επάνω-γραμμή.αληθινή {
+    padding: 35px 15px 0;
+  }
+  .επάνω-γραμμή.ψεύτικη {
+    padding: 5px 15px 0;
+  }
+
+  .μαρτυρία .όνομα-και-βαθμολογία {
+    align-items: center;
+    gap: 15px;
+  }
+
+  .μαρτυρία .όνομα {
+    font-size: 1.8rem;
+  }
+
+  .μαρτυρία .βαθμολογία {
+    font-size: 1.5rem;
+  }
+
+  .μαρτυρία .κείμενο {
+    font-size: 1rem;
+  }
+}
+/* ================================================ */
+@media (min-width: 1024px) {
+}
+/* ================================================ */
+@media (min-width: 1366px) {
 }
 
 /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
@@ -40,31 +153,3 @@
   box-shadow: 0 0px 20px var(--main-color);
 }
 /* --------------- */
-
-.μαρτυρία:hover {
-  border: 2px solid gold;
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 0 50px gold;
-  background-color: var(--second-bg-color);
-}
-
-.μαρτυρία .εικόνα {
-  width: 10vw;
-  height: 10vw;
-  border: 1px solid gold;
-  border-radius: 50%;
-  box-shadow: 0 0 25px #ffd700;
-}
-
-.μαρτυρία .όνομα {
-  font-size: 1.8rem;
-}
-
-.μαρτυρία .κείμενο {
-  font-size: 1rem;
-}
-
-.βαθμολογία {
-  color: gold;
-  font-size: 1.5rem;
-}
