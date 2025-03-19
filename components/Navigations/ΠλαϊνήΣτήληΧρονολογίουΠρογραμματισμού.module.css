@@ -1,0 +1,235 @@
+.πλαϊνή-στήλη-ή-γραμμή-πλοήγησης-χρονολογίου {
+  --χρώμα-σπουδών: rgb(197, 68, 84);
+  --χρώμα-εργασίας: rgb(0, 128, 255);
+  --χρώμα-έργων: rgb(88, 0, 196);
+  --χρώμα-ολοκληρωμένου: rgb(0, 187, 0);
+  --χρώμα-εν-εξελίξει: rgb(255, 128, 2);
+  --χρώμα-εν-αναμονή: white;
+  --χρώμα-παρατημένου: rgb(196, 0, 0);
+  /* rgb(165, 42, 42); */
+  /* rgb(0, 206, 148); */
+  /* rgb(88, 0, 196); */
+  /* rgb(0, 187, 0); */
+  /* rgb(190, 196, 0); */
+  --list-items: 7;
+  position: absolute;
+  bottom: 65px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 150;
+}
+
+.στοιχεία {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: calc(3.5vh + 1vh);
+  padding: 2px 15px 0;
+  gap: 1.5vh;
+  list-style: none;
+  transition: 0.3s ease-in;
+}
+
+.στοιχεία:hover {
+  display: flex;
+  width: 150px;
+}
+
+.στοιχείο,
+.στοιχείο.επιλεγμένο {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 5px;
+  transition: 0.3s ease-in;
+}
+
+.στοιχείο.με-φίλτρα:hover {
+  transform: scale(115%);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.στοιχείο.χωρίς-φίλτρα {
+  cursor: default;
+}
+
+.στοιχείο.επιλεγμένο {
+  color: gold;
+  transform: scale(115%);
+  cursor: pointer;
+}
+
+.στοιχεία .κείμενο {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  text-wrap: nowrap;
+  font-size: 0.8rem;
+}
+
+.στοιχεία:hover .κείμενο {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in-out;
+}
+
+/* .στοιχείο:hover .κείμενο {
+    transform: scale(115%);
+  } */
+
+.χρώμα-εικονιδίου-ολοκληρωμένο {
+  color: var(--χρώμα-ολοκληρωμένου);
+}
+.χρώμα-εικονιδίου-εν-εξελίξει {
+  color: var(--χρώμα-εν-εξελίξει);
+}
+.χρώμα-εικονιδίου-εν-αναμονή {
+  color: var(--χρώμα-εν-αναμονή);
+}
+.χρώμα-εικονιδίου-παρατημένο {
+  color: var(--χρώμα-παρατημένου);
+}
+.χρώμα-εικονιδίου-σπουδές {
+  color: var(--χρώμα-σπουδών);
+  transform: rotateZ(90deg);
+}
+.χρώμα-εικονιδίου-εργασία {
+  color: var(--χρώμα-εργασίας);
+  transform: rotateZ(90deg);
+}
+.χρώμα-εικονιδίου-έργα {
+  color: var(--χρώμα-έργων);
+  transform: rotateZ(90deg);
+}
+
+/* ================================================ */
+@media (min-width: 480px) {
+}
+/* ================================================ */
+@media (min-width: 768px) {
+}
+/* ================================================ */
+@media (min-width: 1024px) {
+  .πλαϊνή-στήλη-ή-γραμμή-πλοήγησης-χρονολογίου {
+    --χρώμα-σπουδών: rgb(197, 68, 84);
+    --χρώμα-εργασίας: rgb(0, 128, 255);
+    --χρώμα-έργων: rgb(88, 0, 196);
+    --χρώμα-ολοκληρωμένου: rgb(0, 187, 0);
+    --χρώμα-εν-εξελίξει: rgb(255, 128, 2);
+    --χρώμα-εν-αναμονή: white;
+    --χρώμα-παρατημένου: rgb(196, 0, 0);
+    /* rgb(165, 42, 42); */
+    /* rgb(0, 206, 148); */
+    /* rgb(88, 0, 196); */
+    /* rgb(0, 187, 0); */
+    /* rgb(190, 196, 0); */
+    --list-items: 7;
+    position: fixed;
+    top: 0;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 150;
+  }
+
+  .στοιχεία {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: fit-content;
+    width: calc(3.5vh + 2.5vh);
+    padding: 15px;
+    gap: 1.5vh;
+    list-style: none;
+    transition: 0.3s ease-in;
+  }
+
+  .στοιχεία:hover {
+    display: flex;
+    width: 150px;
+  }
+
+  .στοιχείο,
+  .στοιχείο.επιλεγμένο {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 5px;
+    transition: 0.3s ease-in;
+  }
+
+  .στοιχείο.με-φίλτρα:hover {
+    transform: scale(115%);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+
+  .στοιχείο.χωρίς-φίλτρα {
+    cursor: default;
+  }
+
+  .στοιχείο.επιλεγμένο {
+    color: gold;
+    transform: scale(115%);
+    cursor: pointer;
+  }
+
+  .στοιχεία .κείμενο {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    text-wrap: nowrap;
+    font-size: 0.8rem;
+  }
+
+  .στοιχεία:hover .κείμενο {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in-out;
+  }
+
+  /* .στοιχείο:hover .κείμενο {
+    transform: scale(115%);
+  } */
+
+  .χρώμα-εικονιδίου-ολοκληρωμένο {
+    color: var(--χρώμα-ολοκληρωμένου);
+  }
+  .χρώμα-εικονιδίου-εν-εξελίξει {
+    color: var(--χρώμα-εν-εξελίξει);
+  }
+  .χρώμα-εικονιδίου-εν-αναμονή {
+    color: var(--χρώμα-εν-αναμονή);
+  }
+  .χρώμα-εικονιδίου-παρατημένο {
+    color: var(--χρώμα-παρατημένου);
+  }
+  .χρώμα-εικονιδίου-σπουδές {
+    color: var(--χρώμα-σπουδών);
+    transform: rotateZ(90deg);
+  }
+  .χρώμα-εικονιδίου-εργασία {
+    color: var(--χρώμα-εργασίας);
+    transform: rotateZ(90deg);
+  }
+  .χρώμα-εικονιδίου-έργα {
+    color: var(--χρώμα-έργων);
+    transform: rotateZ(90deg);
+  }
+}
+/* ================================================ */
+@media (min-width: 1366px) {
+}
