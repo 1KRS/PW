@@ -1,7 +1,7 @@
 import styles from './page.module.css';
 import TodoItems from '@/components/TodoItems';
 import Τίτλος from '@/components/Τίτλος';
-import ProgrammingTimelineSideNav from '@/components/Navigations/ProgrammingTimelineSideNav';
+import ProgrammingTimelineSideNav from '@/components/Navigations/ΠλαϊνήΣτήληΧρονολογίουΠρογραμματισμού';
 
 const Implementation = () => {
   return (
