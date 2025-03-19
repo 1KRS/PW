@@ -2,7 +2,7 @@ import styles from './page.module.css';
 
 import Τίτλος from '@/components/Τίτλος';
 import ΣτοιχείαΧρονολογίου from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου';
-import ProgrammingTimelineSideNav from '@/components/Navigations/ProgrammingTimelineSideNav';
+import ΠλαϊνήΣτήληΧρονολογίουΠρογραμματισμού from '@/components/Navigations/ΠλαϊνήΣτήληΧρονολογίουΠρογραμματισμού';
 
 export const metadata = {
   title: 'ΔΜ - Χρονολόγιο',
@@ -17,7 +17,7 @@ const ΣελίδαΧρονολογίου = () => {
     <>
       <main className={styles.main}>
         <Τίτλος text="Χρονολόγιο" />
-        <ProgrammingTimelineSideNav
+        <ΠλαϊνήΣτήληΧρονολογίουΠρογραμματισμού
           σελίδα="Χρονολόγιο"
           ύπαρξηΦίλτρων="υπαρκτά"
         />
