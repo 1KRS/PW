@@ -9,7 +9,7 @@
   position: absolute;
   top: 20vh;
   height: 75vh;
-  width: 85vw;
+  width: 100vw;
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -19,6 +19,21 @@
 }
 /* ================================================ */
 @media (min-width: 768px) {
+  .τομέας-χρονολογίου {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .περιέκτης-χρονολογίου {
+    position: absolute;
+    top: 20vh;
+    height: 75vh;
+    width: 85vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
 }
 /* ================================================ */
 @media (min-width: 1024px) {
