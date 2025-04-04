@@ -32,10 +32,9 @@
 @media (min-width: 768px) {
   .βασική-πλαϊνή-στήλη-ή-γραμμή-πλοήγησης {
     position: absolute;
-
     top: 0;
     left: auto;
-    right: 50px;
+    right: min(2.5vw, 50px);
     display: flex;
     justify-content: center;
     align-items: center;
