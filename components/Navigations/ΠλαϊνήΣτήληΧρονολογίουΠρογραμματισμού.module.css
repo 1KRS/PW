@@ -19,7 +19,7 @@
     --list-items: 7;
     position: fixed;
     top: 0;
-    left: 50px;
+    left: min(2.5vw, 50px);
     display: flex;
     justify-content: center;
     align-items: center;
