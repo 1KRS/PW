@@ -193,7 +193,11 @@ export const έννοιες = [
   { ελληνικά: 'Δια ζώσης', αγγλικά: 'In person', σουηδικά: 'För livet' },
   { ελληνικά: 'Δυναμική', αγγλικά: 'Dynamic', σουηδικά: 'Dynamisk' },
   { ελληνικά: 'Δυναμικό', αγγλικά: 'Dynamic', σουηδικά: 'Dynamisk' },
-  { ελληνικά: 'Δυναμικό υπόβαθρο:', αγγλικά: 'Dynamic background:', σουηδικά: 'Dynamisk bakgrund:' },
+  {
+    ελληνικά: 'Δυναμικό υπόβαθρο:',
+    αγγλικά: 'Dynamic background:',
+    σουηδικά: 'Dynamisk bakgrund:',
+  },
   // Ε //
   { ελληνικά: 'ΕΠΙΣΤΡΟΦΗ', αγγλικά: 'RETURN', σουηδικά: 'LÄMNA TILLBAKA' },
   {
@@ -224,7 +228,8 @@ export const έννοιες = [
   { ελληνικά: 'Εκκρεμεί', αγγλικά: 'Pending', σουηδικά: 'I Väntan På' },
   { ελληνικά: 'Εκκρεμούν', αγγλικά: 'Pending', σουηδικά: 'I Väntan På' },
   {
-    ελληνικά: 'Εκπαίδευσε το εσωτερικό σου ωρολόι για να συγχρονιστεί με τον πραγματικό χρόνο.',
+    ελληνικά:
+      'Εκπαίδευσε το εσωτερικό σου ωρολόι για να συγχρονιστεί με τον πραγματικό χρόνο.',
     αγγλικά: 'Train your internal clock to synchronize with real time.',
     σουηδικά: 'Träna din interna klocka att synkronisera med realtid.',
   },
@@ -305,8 +310,16 @@ export const έννοιες = [
   { ελληνικά: 'Επώνυμο', αγγλικά: 'Surname', σουηδικά: 'Efternamn' },
   { ελληνικά: 'Εργασία', αγγλικά: 'Job', σουηδικά: 'Jobb' },
   { ελληνικά: 'Εργασίες', αγγλικά: 'Jobs', σουηδικά: 'Jobb' },
-  { ελληνικά: 'Εργασιομανία', αγγλικά: 'Ergasiomania', σουηδικά: 'Ergasiomania' },
-  { ελληνικά: 'Εσωτερικό Ωρολόι', αγγλικά: 'Internal Clock', σουηδικά: 'Intern klocka' },
+  {
+    ελληνικά: 'Εργασιομανία',
+    αγγλικά: 'Ergasiomania',
+    σουηδικά: 'Ergasiomania',
+  },
+  {
+    ελληνικά: 'Εσωτερικό Ωρολόι',
+    αγγλικά: 'Internal Clock',
+    σουηδικά: 'Intern klocka',
+  },
   { ελληνικά: 'Εταιρεία', αγγλικά: 'Company', σουηδικά: 'Företag' },
   {
     ελληνικά: 'Εταιρεία Εκπαίδευσης Προγραμματιστών',
@@ -417,6 +430,14 @@ export const έννοιες = [
   { ελληνικά: 'Μετάφραση', αγγλικά: 'Translation', σουηδικά: 'Översättning' },
   {
     ελληνικά:
+      'Μετά από προτάσεις βελτίωσης των επισκεπτών γίνονται οι απαραίτητες αλλαγές στο χρονολόγιο. Οπότε προς το παρόν τα γεγονότα χρονολογίου είναι ορατά μόνο σε υπολογιστές. Σύντομα θα γίνουν προσβάσιμα και στις υπόλοιπες συσκευές. Ευχαριστώ για την κατανόηση.',
+    αγγλικά:
+      'After improvement suggestions from visitors, the necessary changes are being made to the timeline. So for now, timeline events are only visible on computers. They will soon be accessible on other devices. Thank you for your understanding.',
+    σουηδικά:
+      'Efter förslag till förbättringar från besökare görs nödvändiga ändringar i tidslinje. Så för närvarande är tidslinjehändelser endast synliga på stationära datorer. De kommer snart att finnas tillgängliga på andra enheter också. Tack för din förståelse.',
+  },
+  {
+    ελληνικά:
       'Μια υλοποίηση ενός ηλεκτρονικού καταστήματος εμπορίου μέσω δικτυακού εκπαιδευτικού βίντεο στο YT.',
     αγγλικά:
       'An implementation of an e-commerce store via online video tutorial on YT.',
@@ -434,7 +455,8 @@ export const έννοιες = [
   // Ξ //
   // Ο //
   {
-    ελληνικά: 'Ο νέος μου προσωπικός ιστότοπος αναπτυγμένος εκ του μηδενός σε NextJS.',
+    ελληνικά:
+      'Ο νέος μου προσωπικός ιστότοπος αναπτυγμένος εκ του μηδενός σε NextJS.',
     αγγλικά: 'My new personal website developed from scratch in NextJS.',
     σουηδικά: 'Min nya personliga hemsida utvecklad från grunden i NextJS.',
   },
@@ -449,8 +471,9 @@ export const έννοιες = [
     σουηδικά: 'Utvecklingsguide för iOS-Appar',
   },
   { ελληνικά: 'Ολοκληρωμένα', αγγλικά: 'Completed', σουηδικά: 'Avslutad' },
-  { 
-    ελληνικά: 'Οργάνωσε το κυνήγι εργασίας σου με αυτήν την εφαρμογή ιχνηλάτησης.',
+  {
+    ελληνικά:
+      'Οργάνωσε το κυνήγι εργασίας σου με αυτήν την εφαρμογή ιχνηλάτησης.',
     αγγλικά: 'Organize your job hunt with this tracking app.',
     σουηδικά: 'Organisera din jobbjakt med denna spårningsapp.',
   },
@@ -647,7 +670,11 @@ export const έννοιες = [
   { ελληνικά: 'Συχνές Ερωτήσεις', αγγλικά: 'FAQ', σουηδικά: 'Vanliga Frågor' },
   { ελληνικά: 'Σχετικά', αγγλικά: 'About', σουηδικά: 'Om' },
   { ελληνικά: 'Σχετικά με εμένα', αγγλικά: 'About me', σουηδικά: 'Om mig' },
-  { ελληνικά: 'Σχετικά με τον ιστότοπο', αγγλικά: 'About this website', σουηδικά: 'Om denna webbplats' },
+  {
+    ελληνικά: 'Σχετικά με τον ιστότοπο',
+    αγγλικά: 'About this website',
+    σουηδικά: 'Om denna webbplats',
+  },
   {
     ελληνικά: 'Σχεδιαστής ΔΧ / ΕΧ',
     αγγλικά: 'UI / UX Designer',
@@ -661,17 +688,17 @@ export const έννοιες = [
   },
   {
     ελληνικά: 'Το γνωστό σε όλους μας παίγνιο μνήμης.',
-    αγγλικά: "The memory game we all know.",
+    αγγλικά: 'The memory game we all know.',
     σουηδικά: 'Minnesspelet känner vi alla till.',
   },
   {
     ελληνικά: 'Το γνωστό σε όλους μας παίγνιο στρατηγικής.',
-    αγγλικά: "The strategy game we all know.",
+    αγγλικά: 'The strategy game we all know.',
     σουηδικά: 'Strategispelet vi alla känner till.',
   },
   {
     ελληνικά: 'Το μήνυμα εστάλη',
-    αγγλικά: "Message has been sent",
+    αγγλικά: 'Message has been sent',
     σουηδικά: 'Meddelandet har skickats',
   },
   {
@@ -681,10 +708,18 @@ export const έννοιες = [
   },
   { ελληνικά: 'Τοποθεσία', αγγλικά: 'Location', σουηδικά: 'Spårande' },
   { ελληνικά: 'Τρίλιζα', αγγλικά: 'Tic Tac Toe', σουηδικά: 'Luffarschack' },
-  { ελληνικά: 'Τύμπανα & Κρουστά', αγγλικά: 'Drums & Percussion', σουηδικά: 'Trummor & Slagverk' },
+  {
+    ελληνικά: 'Τύμπανα & Κρουστά',
+    αγγλικά: 'Drums & Percussion',
+    σουηδικά: 'Trummor & Slagverk',
+  },
   { ελληνικά: 'Τύπος Εργασίας', αγγλικά: 'Job Type', σουηδικά: 'Arbetstyp' },
   // Υ //
-  { ελληνικά: 'Υαλομορφισμός:', αγγλικά: 'Glassmorphism:', σουηδικά: 'Glasmorfism:' },
+  {
+    ελληνικά: 'Υαλομορφισμός:',
+    αγγλικά: 'Glassmorphism:',
+    σουηδικά: 'Glasmorfism:',
+  },
   { ελληνικά: 'Υβριδικά', αγγλικά: 'Hybrid', σουηδικά: 'Hybrid' },
   { ελληνικά: 'Υβριδική', αγγλικά: 'Hybrid', σουηδικά: 'Hybrid' },
   { ελληνικά: 'Υπηρεσίες', αγγλικά: 'Services', σουηδικά: 'Tjänster' },
@@ -699,9 +734,11 @@ export const έννοιες = [
     σουηδικά: 'Under Utveckling',
   },
   {
-    ελληνικά: 'Υπολόγισε την απόδοση της επένδυσής σου με αυτό το διαδικτυακό εργαλείο.',
+    ελληνικά:
+      'Υπολόγισε την απόδοση της επένδυσής σου με αυτό το διαδικτυακό εργαλείο.',
     αγγλικά: 'Calculate your return on investment with this online tool.',
-    σουηδικά: 'Beräkna din avkastning på investeringen med detta onlineverktyg.',
+    σουηδικά:
+      'Beräkna din avkastning på investeringen med detta onlineverktyg.',
   },
   {
     ελληνικά: 'Υπολογιστής Επένδυσης',
@@ -709,8 +746,16 @@ export const έννοιες = [
     σουηδικά: 'Investerings Kalkylator',
   },
   // Φ //
-  { ελληνικά: 'Φέγγος ορίων:', αγγλικά: 'Border glow:', σουηδικά: 'Gränsen glöd:' },
-  { ελληνικά: 'Φέγγος στοιχείων:', αγγλικά: 'Element glow:', σουηδικά: 'Element glöd:' },
+  {
+    ελληνικά: 'Φέγγος ορίων:',
+    αγγλικά: 'Border glow:',
+    σουηδικά: 'Gränsen glöd:',
+  },
+  {
+    ελληνικά: 'Φέγγος στοιχείων:',
+    αγγλικά: 'Element glow:',
+    σουηδικά: 'Element glöd:',
+  },
   {
     ελληνικά: 'Φίλτρα Αναζήτησης',
     αγγλικά: 'Search Filters',
