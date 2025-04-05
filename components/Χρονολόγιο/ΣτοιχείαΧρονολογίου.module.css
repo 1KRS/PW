@@ -1,3 +1,19 @@
+.περιέκτης-κειμένου-αναμονής {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 25vh 12vw 0;
+  border: 2px solid var(--main-color);
+  border-radius: 35px;
+  background-color: var(--second-bg-color-blurred);
+}
+.κείμενο-αναμονής {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(196, 0, 0);
+  text-align: center;
+}
 .στοιχεία-χρονολογίου {
   --χρώμα-σπουδών: rgb(197, 68, 84);
   --χρώμα-εργασίας: rgb(0, 128, 255);
@@ -12,7 +28,7 @@
   /* rgb(0, 187, 0); */
   /* rgb(190, 196, 0); */
   position: relative;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
@@ -48,6 +64,7 @@
 
 .γεγονός-χρονολογίου {
   position: relative;
+  /* height: 75px; */
   width: 95%;
   cursor: default;
   text-align: right;
@@ -95,11 +112,11 @@
 }
 
 .περιεχόμενο-γεγονότος1.με-δευτερεύουσα-γραμμή2 {
-  height: 7vh;
+  height: 62px;
 }
 
 .περιεχόμενο-γεγονότος1.χωρίς-δευτερεύουσα-γραμμή3 {
-  height: 7vh;
+  height: 62px;
 }
 .περιεχόμενο-γεγονότος1.χωρίς-δευτερεύουσα-γραμμή3.με-κείμενο {
   padding: 1.65vh 1.2vw;
@@ -231,23 +248,22 @@
 }
 
 .περιττή-επάνω-γραμμή-χρονολογίου .χρονικές-πληροφορίες {
-  padding: 0 0 0 0.3vw;
+  padding: 0 0 0 6px;
   border-left: 4px solid;
 }
 
 .άρτια-επάνω-γραμμή-χρονολογίου .χρονικές-πληροφορίες {
-  padding: 0 0 0 0.3vw;
+  padding: 0 0 0 6px;
   border-left: 4px solid;
 }
 
 .ημερομηνία-γεγονότος {
   display: flex;
-  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 1.5vw;
-  width: max(65px, 10vw);
+  width: min(85px, 14vw);
   gap: 0;
 }
 
@@ -264,11 +280,11 @@
 .περιττή-επάνω-γραμμή-χρονολογίου .περιττός-μήνας-γεγονότος-χρονολογίου,
 .άρτια-επάνω-γραμμή-χρονολογίου .άρτιος-μήνας-γεγονότος-χρονολογίου {
   width: 10px;
-  font-size: 11px;
+  font-size: min(2vw, 11px);
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: rotateZ(270deg); */
+  transform: rotateZ(270deg);
 }
 
 .περιττή-επάνω-γραμμή-χρονολογίου .περιττός-μήνας-γεγονότος-χρονολογίου {
@@ -431,18 +447,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 9px;
+  font-size: min(2.5vw, 8px);
+  padding-bottom: 2px;
 }
 
 .περιέκτης-εικονιδίων:hover {
   font-size: 0;
+  padding-bottom: 0;
 }
 
 .περιέκτης-εικονιδίων:hover::after {
   content: attr(data-types-icon);
-  font-size: 9px;
+  font-size: 10px;
   text-align: end;
-  padding: 0;
+  padding-bottom: 2px;
 }
 
 .εικονίδιο-δευτερεύουσας-γραμμής {
@@ -511,7 +529,7 @@
 }
 
 .icons-container-right {
-  height: var(--icons-container-length);
+  height: 100%;
   top: 0;
   left: 0;
   padding: 5px 0 0 0;
@@ -521,9 +539,9 @@
 }
 
 .icons-container-left {
-  height: var(--icons-container-length);
+  height: 100%;
   top: 0;
-  right: 0;
+  left: 0;
   padding: 5px 0 0 0;
   border-left: 2px dotted var(--main-color);
   border-top-right-radius: 27px;
@@ -652,8 +670,10 @@
 }
 .περιεχόμενο-γεγονότος1:hover.με-κείμενο.ολοκληρωμένο .tech-container::before,
 .περιεχόμενο-γεγονότος1:hover.με-κείμενο.ολοκληρωμένο .tech-container::after,
-.περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.ολοκληρωμένο .tech-container::before,
-.περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.ολοκληρωμένο .tech-container::after {
+.περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.ολοκληρωμένο
+  .tech-container::before,
+.περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.ολοκληρωμένο
+  .tech-container::after {
   border-top: 2px solid var(--χρώμα-ολοκληρωμένου);
 }
 
@@ -696,12 +716,18 @@
 
 /* ================================================ */
 @media (min-width: 480px) {
-  /* .γεγονός-χρονολογίου {
-    width: 95%;
-  } */
 }
 /* ================================================ */
 @media (min-width: 768px) {
+}
+/* ================================================ */
+@media (min-width: 1024px) {
+}
+/* ================================================ */
+@media (min-width: 1366px) {
+  .περιέκτης-κειμένου-αναμονής {
+    display: none;
+  }
   .στοιχεία-χρονολογίου {
     --χρώμα-σπουδών: rgb(197, 68, 84);
     --χρώμα-εργασίας: rgb(0, 128, 255);
@@ -752,6 +778,7 @@
 
   .γεγονός-χρονολογίου {
     position: relative;
+    /* height: 87px; */
     width: 100%;
     cursor: default;
     margin-right: 0px;
@@ -1243,7 +1270,7 @@
   .icons-container-left {
     height: var(--icons-container-length);
     top: 0;
-    right: 0;
+    left: calc(100% - var(--icons-container-width));
     padding: 5px 0 0 0;
     border-left: 2px dotted var(--main-color);
     border-top-right-radius: 27px;
@@ -1264,13 +1291,16 @@
 
   .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.παρατημένο .icons-container-left,
   .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.παρατημένο .icons-container-right,
-  .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.ολοκληρωμένο .icons-container-left,
+  .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.ολοκληρωμένο
+    .icons-container-left,
   .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.ολοκληρωμένο
     .icons-container-right,
   .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.εν-εξελίξει .icons-container-left,
-  .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.εν-εξελίξει .icons-container-right,
+  .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.εν-εξελίξει
+    .icons-container-right,
   .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.εν-αναμονή .icons-container-left,
-  .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.εν-αναμονή .icons-container-right {
+  .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.εν-αναμονή
+    .icons-container-right {
     opacity: 1;
     transition-delay: 0.2s;
   }
@@ -1386,8 +1416,10 @@
   }
   .περιεχόμενο-γεγονότος1:hover.με-κείμενο.παρατημένο .tech-container::before,
   .περιεχόμενο-γεγονότος1:hover.με-κείμενο.παρατημένο .tech-container::after,
-  .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.παρατημένο .tech-container::before,
-  .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.παρατημένο .tech-container::after {
+  .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.παρατημένο
+    .tech-container::before,
+  .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.παρατημένο
+    .tech-container::after {
     border-top: 2px solid var(--χρώμα-παρατημένου);
   }
 
@@ -1410,16 +1442,12 @@
   }
   .περιεχόμενο-γεγονότος1:hover.με-κείμενο.εν-αναμονή .tech-container::before,
   .περιεχόμενο-γεγονότος1:hover.με-κείμενο.εν-αναμονή .tech-container::after,
-  .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.εν-αναμονή .tech-container::before,
-  .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.εν-αναμονή .tech-container::after {
+  .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.εν-αναμονή
+    .tech-container::before,
+  .περιεχόμενο-γεγονότος1:hover.χωρίς-κείμενο.εν-αναμονή
+    .tech-container::after {
     border-top: 2px solid var(--χρώμα-εν-αναμονή);
   }
-}
-/* ================================================ */
-@media (min-width: 1024px) {
-}
-/* ================================================ */
-@media (min-width: 1366px) {
 }
 
 /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
