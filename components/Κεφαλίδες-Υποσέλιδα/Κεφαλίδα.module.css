@@ -3,20 +3,19 @@
   top: 0;
   left: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 5vh;
   width: 100vw;
+  padding: 10px 10px;
   background: transparent;
   backdrop-filter: blur(2px);
   z-index: 5;
 }
 
-.περιέκτης-λογότυπου {
+.περιέκτης-λογότυπου-κεφαλίδας-προγραμματισμού {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px;
 }
 
 .λογότυπο {
@@ -40,9 +39,16 @@
   fill: gold;
 }
 
+.περιέκτης-πλήκτρου-ρυθμίσεων-κεφαλίδας-προγραμματισμού {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού {
   display: none;
 }
+
 
 /* ================ */
 
@@ -58,7 +64,7 @@
     padding: 1vh 12%;
   }
 
-  .περιέκτης-λογότυπου {
+  .περιέκτης-λογότυπου-κεφαλίδας-προγραμματισμού {
     display: flex;
     justify-content: flex-start;
   }
@@ -69,6 +75,10 @@
     align-items: center;
     max-height: 30px;
     /* min-width: 140px; */
+  }
+
+  .περιέκτης-πλήκτρου-ρυθμίσεων-κεφαλίδας-προγραμματισμού {
+    display: none;
   }
 
   .επιλογές-ρυθμίσεων-κεφαλίδας-προγραμματισμού {
