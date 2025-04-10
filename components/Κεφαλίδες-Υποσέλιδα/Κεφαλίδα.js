@@ -5,11 +5,10 @@ import LanguagesDropdown from '../LanguagesDropdown';
 import Link from 'next/link';
 import ΠλήκτροΡυθμίσεων from '@/components/Πλήκτρα/ΠλήκτροΡυθμίσεων';
 
-
 const Κεφαλίδα = () => {
   return (
     <header className={styles.κεφαλίδα}>
-      <div className={styles['περιέκτης-λογότυπου']}>
+      <div className={styles['περιέκτης-λογότυπου-κεφαλίδας-προγραμματισμού']}>
         <Link href="/" className={styles.λογότυπο}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,6 +29,9 @@ const Κεφαλίδα = () => {
             />
           </svg>
         </Link>
+      </div>
+      <div className={styles['περιέκτης-πλήκτρου-ρυθμίσεων-κεφαλίδας-προγραμματισμού']}>
+        <ΠλήκτροΡυθμίσεων />
       </div>
       <nav className={styles['γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού']}>
         <ul className={styles['επιλογές-ρυθμίσεων-κεφαλίδας-προγραμματισμού']}>
