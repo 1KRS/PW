@@ -1,6 +1,163 @@
-@media (min-width: 40rem) {
+.αρχική {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100vw;
+  color: white;
+  text-align: center;
+  transition: all 2s ease-in-out;
+}
+
+/* .αρχική-με-δυναμικό-υπόβαθρο {
+  gap: 4.5vw;
+  transition: 2s ease-in-out
+} */
+
+.περιεχόμενο-αρχικής {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  text-align: left;
+  padding: 0 2vw 3vh;
+  transition: all 2s ease-in-out;
+}
+
+.περιεχόμενο-αρχικής span {
+  color: var(--main-color);
+}
+
+.περιεχόμενο-αρχικής h1 {
+  display: flex;
+  font-weight: 700;
+  margin-top: 2vh;
+  line-height: 1;
+}
+
+.περιεχόμενο-αρχικής h3 {
+  display: flex;
+  font-size: 0.9rem;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  text-align: center;
+}
+
+.περιέκτης-ταινιών-κύλισης {
+  width: 100%;
+  margin: 2vh 0;
+}
+
+.περιέκτης-πλήκτρων {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.βασικό-πλήκτρο,
+.δευτερεύον-πλήκτρο {
+  display: inline-block;
+  padding: 1vh 2.8vw;
+  background: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.βασικό-πλήκτρο:hover,
+.δευτερεύον-πλήκτρο:hover {
+  transform: scale(1.05) translateY(-5px);
+  background: var(--main-color);
+  color: white;
+  box-shadow: 0 0 50px var(--main-color);
+}
+
+.δευτερεύον-πλήκτρο {
+  background: var(--second-bg-color-blurred);
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  box-shadow: 0 0 25px transparent;
+}
+
+.περιέκτης-λογότυπου {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40%;
+  padding: 60px;
+  border: none;
+  background-color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.7s ease-in-out;
+  scale: 0.6;
+}
+
+.περιέκτης-λογότυπου:hover {
+  background-color: transparent;
+  box-shadow:
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color),
+    0 0 100px var(--main-color),
+    0 0 125px var(--main-color);
+}
+
+.περιέκτης-λογότυπου .λογότυπο {
+  /* cursor: pointer; */
+  transition: 0.7s ease-in-out;
+}
+
+.περιέκτης-λογότυπου:hover .λογότυπο {
+  transform: scale(0.95);
+}
+
+.logo-to-480px {
+  display: flex;
+}
+.logo-from-1024px {
+  display: none;
+}
+
+.περιέκτης-λογότυπου .εικόνα {
+  fill: var(--second-bg-color-blurred);
+  transition: 0.7s ease-in-out;
+}
+
+.περιέκτης-λογότυπου:hover .εικόνα {
+  fill: gold;
+  stroke: white;
+  stroke-width: 5px;
+  transition: 0.4s ease-in-out;
+}
+
+.περιέκτης-λογότυπου .εικόνα:not(:hover) {
+  stroke-width: 0px;
+  transition: 0.4s ease-in-out;
+}
+
+.περιέκτης-λογότυπου:hover .εικόνα:hover {
+  fill: white;
+  stroke: gold;
+}
+
+/* ================================================ */
+@media (min-width: 480px) {
+}
+/* ================================================ */
+@media (min-width: 768px) {
+}
+/* ================================================ */
+@media (min-width: 1024px) {
   .αρχική {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 4.5vw;
@@ -95,6 +252,7 @@
     background-color: var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.7s ease-in-out;
+    scale: 1;
   }
 
   .περιέκτης-λογότυπου:hover {
@@ -113,6 +271,13 @@
 
   .περιέκτης-λογότυπου:hover .λογότυπο {
     transform: scale(0.95);
+  }
+
+  .logo-to-480px {
+    display: none;
+  }
+  .logo-from-1024px {
+    display: flex;
   }
 
   .περιέκτης-λογότυπου .εικόνα {
@@ -136,4 +301,7 @@
     fill: white;
     stroke: gold;
   }
+}
+/* ================================================ */
+@media (min-width: 1366px) {
 }
