@@ -1,4 +1,4 @@
-import styles from './page.module.css';
+import styles from './layout.module.css';
 
 import ΥπόβαθροΠρογραμματισμού from '@/components/Backgrounds/ΥπόβαθροΠρογραμματισμού';
 import Κεφαλίδα from '@/components/Κεφαλίδες-Υποσέλιδα/Κεφαλίδα';
@@ -18,7 +18,7 @@ export const metadata = {
   publisher: 'Δημήτρης Μανωλόπουλος',
 };
 
-const ProgrammingLayout = ({ children }) => {
+const ΠλαίσιοΠρογραμματισμού = ({ children }) => {
   return (
     <ΥπόβαθροΠρογραμματισμού>
       {/* -- Αναδυόμενα Παράθυρα -- */}
@@ -32,9 +32,11 @@ const ProgrammingLayout = ({ children }) => {
       {/* <MainSubheader /> */}
       <ΠλαϊνήΣτήληΠρογραμματισμού />
       {children}
-      <ΠλήκτροΡυθμίσεων />
+      <div className={styles['περιέκτης-πλήκτρου-ρυθμίσεων-πλαισίου-προγραμματισμού']}>
+        <ΠλήκτροΡυθμίσεων />
+      </div>
       <Υποσέλιδο />
     </ΥπόβαθροΠρογραμματισμού>
   );
 };
-export default ProgrammingLayout;
+export default ΠλαίσιοΠρογραμματισμού;
