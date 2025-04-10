@@ -1,15 +1,8 @@
 .περιέκτης-εικονιδίου-ρυθμίσεων {
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
   display: flex;
   align-items: center;
   cursor: pointer;
   z-index: 200;
-}
-
-.απόκρυψη {
-  visibility: hidden;
 }
 
 .εικονίδιο-ρυθμίσεων {
@@ -30,14 +23,35 @@
 /* ================================================ */
 
 @media (min-width: 768px) {
+  .περιέκτης-εικονιδίου-ρυθμίσεων {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 200;
+  }
+  
+  .εικονίδιο-ρυθμίσεων {
+    color: var(--main-color);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .εικονίδιο-ρυθμίσεων:hover {
+    color: gold;
+  }
 }
 
 /* ================================================ */
 
 @media (min-width: 1024px) {
+
 }
 
 /* ================================================ */
 
 @media (min-width: 1366px) {
+}
+
+.απόκρυψη {
+  visibility: hidden;
 }
