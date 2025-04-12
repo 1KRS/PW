@@ -1,10 +1,8 @@
 .παράθυρο-ρυθμίσεων {
   position: absolute;
-  bottom: 0;
-  right: 0;
   height: auto;
+  min-height: 510px;
   width: auto;
-  max-width: 400px;
   margin: 20px;
   background-color: var(--second-bg-color-extra-blurred);
   border: 1px solid transparent;
@@ -31,8 +29,8 @@
 }
 
 .τίτλος-παραθύρου {
-  position: relative;
-  top: calc(100% - 230px);
+  position: absolute;
+  bottom: 235px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -51,9 +49,47 @@
   background-color: transparent;
 }
 
+.περιέκτης-πλοήγησης-παραθύρου-ρυθμίσεων {
+  position: absolute;
+  top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 140px;
+  margin: 5vh 0;
+}
+
+.περιέκτης-πλοήγησης-παραθύρου-ρυθμίσεων .στοιχεία {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1vh;
+  list-style: none;
+}
+
+.περιέκτης-πλοήγησης-παραθύρου-ρυθμίσεων .στοιχείο {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-weight: 700;
+  transition: 0.3s ease;
+  border-bottom: 2px solid transparent;
+  text-align: center;
+}
+
+.περιέκτης-πλοήγησης-παραθύρου-ρυθμίσεων .στοιχείο:hover,
+.περιέκτης-πλοήγησης-παραθύρου-ρυθμίσεων .στοιχείο:active {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+  transform: scale(1.1);
+}
+
 .διακόπτες-ρυθμίσεων {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   right: 0;
   display: flex;
   flex-direction: column;
@@ -77,11 +113,34 @@
   font-size: 18px;
 }
 
+.περιέκτης-υποσέλιδου {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ================================================ */
 @media (min-width: 480px) {
+  .παράθυρο-ρυθμίσεων {
+    --πλάτος: 300px;
+    position: absolute;
+    left: calc(100% - (var(--πλάτος) + 40px));
+    height: auto;
+    width: auto;
+    max-width: 400px;
+    margin: 20px;
+    background-color: var(--second-bg-color-extra-blurred);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
+    z-index: 250;
+  }
 }
 /* ================================================ */
 @media (min-width: 768px) {
+}
+/* ================================================ */
+@media (min-width: 1024px) {
   .παράθυρο-ρυθμίσεων {
     --ύψος: 240px;
     --πλάτος: 300px;
@@ -89,6 +148,8 @@
     top: calc(100% - (var(--ύψος) + 40px));
     left: calc(100% - (var(--πλάτος) + 40px));
     height: var(--ύψος);
+    min-height: fit-content;
+
     width: var(--πλάτος);
     background-color: var(--second-bg-color-blurred);
   }
@@ -101,13 +162,24 @@
     font-size: 40px;
   }
 
+  .διακόπτες-ρυθμίσεων {
+    bottom: 0;
+  }
+
   .τίτλος-παραθύρου {
+    top: 10px;
     left: 15px;
     justify-content: flex-start;
+    width: fit-content;
   }
-}
-/* ================================================ */
-@media (min-width: 1024px) {
+
+  .περιέκτης-πλοήγησης-παραθύρου-ρυθμίσεων {
+    display: none;
+  }
+
+  .περιέκτης-υποσέλιδου {
+    display: none;
+  }
 }
 /* ================================================ */
 @media (min-width: 1366px) {
