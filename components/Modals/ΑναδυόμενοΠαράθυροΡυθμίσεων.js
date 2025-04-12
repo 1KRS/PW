@@ -7,6 +7,7 @@ import ΔιακόπτηςΕναλλαγήςΥποβάθρου from '@/components
 import ΔιακόπτηςΕναλλαγήςΑδιαφάνειας from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΕναλλαγήςΑδιαφάνειας';
 import ΔιακόπτηςΕναλλαγήςΦέγγουςΟρίων from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΕναλλαγήςΦέγγουςΟρίων';
 import ΔιακόπτηςΕναλλαγήςΦέγγουςΣτοιχείων from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΕναλλαγήςΦέγγουςΣτοιχείων';
+import Υποσέλιδο from '@/components/Κεφαλίδες-Υποσέλιδα/Υποσέλιδο';
 import TranslatedText from '../TranslatedText';
 import LanguagesContainer from '../LanguagesContainer';
 // import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής';
@@ -15,6 +16,8 @@ import { useRef, useEffect } from 'react';
 import { useAppContext } from '@/context/AppContext';
 
 import { IoClose } from 'react-icons/io5';
+import Link from 'next/link';
+import SocialIcons from '../SocialIcons';
 
 const Settings = () => {
   const {
@@ -68,9 +71,6 @@ const Settings = () => {
           />
         </svg>
       </div>
-      <h6 className={styles['τίτλος-παραθύρου']}>
-        <TranslatedText>Ρυθμίσεις</TranslatedText>
-      </h6>
       <form method="dialog">
         <button
           className={styles['πλήκτρο-εξόδου']}
@@ -80,6 +80,23 @@ const Settings = () => {
           <IoClose />
         </button>
       </form>
+      <nav className={styles['περιέκτης-πλοήγησης-παραθύρου-ρυθμίσεων']}>
+          <ul className={styles.στοιχεία}>
+            <Link href="/home" className={styles.στοιχείο}>
+              <TranslatedText>Συχνές Ερωτήσεις</TranslatedText>
+            </Link>
+            <Link
+              href="/programming/about-this-site"
+              className={styles.στοιχείο}
+            >
+              <TranslatedText>Σχετικά</TranslatedText>
+            </Link>
+            <SocialIcons />
+          </ul>
+        </nav>
+      <h6 className={styles['τίτλος-παραθύρου']}>
+        <TranslatedText>Ρυθμίσεις</TranslatedText>
+      </h6>
       <div className={styles['διακόπτες-ρυθμίσεων']}>
         <div className={styles['γραμμή-διακόπτη']}>
           <h6 className={styles['τίτλος-διακόπτη']}>
@@ -117,6 +134,9 @@ const Settings = () => {
           </h6>
           <ΔιακόπτηςΕναλλαγήςΦέγγουςΣτοιχείων />
         </div>
+      </div>
+      <div className={styles['περιέκτης-υποσέλιδου']}>
+        <Υποσέλιδο />
       </div>
     </dialog>
   );
