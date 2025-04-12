@@ -10,20 +10,13 @@ import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής'
 
 import { useAppContext } from '@/context/AppContext';
 
-import { σύνολοΤεχνολογιώνΠληνΠακέτων, πακέτα } from '../db/τεχνολογίες';
+import { σύνολοΤεχνολογιώνΠληνΠακέτων, πακέτα } from '@/db/τεχνολογίες';
 
 const Hero = () => {
-  const { language, υπόβαθροΠρογραμματισμού } = useAppContext();
-
+    const { language } = useAppContext();
+  
   return (
-    <section
-      className={
-        styles[
-          `${υπόβαθροΠρογραμματισμού === 'δυναμικό' ? 'αρχική' : 'αρχική'}` //<-------------- Στο τέλος να ελέγξω αν χρειάζεται
-        ]
-      }
-      id="αρχική"
-    >
+    <>
       <ΠλαίσιοΜορφής
         καθορισμόςΔιαστάσεων="από μέσα"
         ακτίναΓωνίας={35}
@@ -137,7 +130,7 @@ const Hero = () => {
           </div>
         </Link>
       </div>
-    </section>
+    </>
   );
 };
 
