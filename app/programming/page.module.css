@@ -1,0 +1,44 @@
+.αρχική {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100vw;
+  color: white;
+  text-align: center;
+  transition: all 2s ease-in-out;
+}
+
+/* .αρχική-με-δυναμικό-υπόβαθρο {
+  gap: 4.5vw;
+  transition: 2s ease-in-out
+} */
+
+/* ================================================ */
+@media (min-width: 480px) {
+}
+/* ================================================ */
+@media (min-width: 768px) {
+}
+/* ================================================ */
+@media (min-width: 1024px) {
+  .αρχική {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5vw;
+    color: white;
+    text-align: center;
+    transition: all 2s ease-in-out;
+  }
+
+  /* .αρχική-με-δυναμικό-υπόβαθρο {
+    gap: 4.5vw;
+    transition: 2s ease-in-out
+  } */
+}
+/* ================================================ */
+@media (min-width: 1366px) {
+}
