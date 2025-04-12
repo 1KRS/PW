@@ -1,20 +1,3 @@
-.αρχική {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-  width: 100vw;
-  color: white;
-  text-align: center;
-  transition: all 2s ease-in-out;
-}
-
-/* .αρχική-με-δυναμικό-υπόβαθρο {
-  gap: 4.5vw;
-  transition: 2s ease-in-out
-} */
-
 .περιεχόμενο-αρχικής {
   display: flex;
   flex-direction: column;
@@ -47,7 +30,7 @@
 
 .περιέκτης-ταινιών-κύλισης {
   width: 100%;
-  margin: 2vh 0;
+  margin: 1vh 0;
 }
 
 .περιέκτης-πλήκτρων {
@@ -92,7 +75,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 40%;
-  padding: 60px;
+  padding: 40px;
   border: none;
   background-color: var(--main-color);
   box-shadow: 0 0 25px var(--main-color);
@@ -155,22 +138,6 @@
 }
 /* ================================================ */
 @media (min-width: 1024px) {
-  .αρχική {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 4.5vw;
-    color: white;
-    text-align: center;
-    transition: all 2s ease-in-out;
-  }
-
-  /* .αρχική-με-δυναμικό-υπόβαθρο {
-    gap: 4.5vw;
-    transition: 2s ease-in-out
-  } */
-
   .περιεχόμενο-αρχικής {
     display: flex;
     flex-direction: column;
