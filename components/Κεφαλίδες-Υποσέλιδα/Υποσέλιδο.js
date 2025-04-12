@@ -19,15 +19,22 @@ const Υποσέλιδο = () => {
               <TranslatedText>Συχνές Ερωτήσεις</TranslatedText>
             </Link>
             <SocialIcons />
-            <Link href="/programming/about-this-site" className={styles.στοιχείο}>
+            <Link
+              href="/programming/about-this-site"
+              className={styles.στοιχείο}
+            >
               <TranslatedText>Σχετικά</TranslatedText>
             </Link>
           </ul>
         </nav>
-        <div className={styles['copyright-container']}>
-          <TranslatedText>Δημήτρης Μανωλόπουλος</TranslatedText>
-          {` © ${τρέχονΈτος} `}
-          <TranslatedText>Επιφύλαξη Παντός Δικαιώματος</TranslatedText>
+        <div className={styles['περιέκτης-πνευματικών-δικαιωμάτων']}>
+          <div className={styles['όνομα-και-έτος']}>
+            <TranslatedText>Δημήτρης Μανωλόπουλος</TranslatedText>
+            {` © ${τρέχονΈτος} `}
+          </div>
+          <div className={styles['επιφύλαξη']}>
+            <TranslatedText>Επιφύλαξη Παντός Δικαιώματος</TranslatedText>
+          </div>
         </div>
       </div>
     </footer>
