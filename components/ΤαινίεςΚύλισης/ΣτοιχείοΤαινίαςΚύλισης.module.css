@@ -17,7 +17,7 @@
 .περιέκτης-προς-αριστερά {
   --στοιχείο-αριστερόστροφης-ταινίας-κύλισης: 85px;
   --αριθμός-στοιχείων-αριστερόστροφης-ταινίας-κύλισης: 16;
-  height: 7vh;
+  height: 5.5vh;
   mask-image: linear-gradient(
     to left,
     rgba(255, 255, 255, 0),
@@ -34,7 +34,7 @@
   align-items: center;
   font-size: 3.5vh;
   width: var(--στοιχείο-αριστερόστροφης-ταινίας-κύλισης);
-  height: calc(var(--στοιχείο-αριστερόστροφης-ταινίας-κύλισης) / 2);
+  /* height: calc(var(--στοιχείο-αριστερόστροφης-ταινίας-κύλισης) / 2); */
   /* background-color: var(--second-bg-color-blurred); */
   background-color: transparent;
   border: 1px solid var(--main-color);
@@ -60,11 +60,12 @@
 
 .περιέκτης-προς-αριστερά .στοιχείο:hover {
   font-size: 0;
+  width: calc(var(--στοιχείο-αριστερόστροφης-ταινίας-κύλισης))
 }
 
 .περιέκτης-προς-αριστερά .στοιχείο:hover::after {
   content: attr(data-types);
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: center;
   color: var(--main-color);
 }
@@ -211,8 +212,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5vh;
-  height: 2.2vh;
+  font-size: 1.7vh;
+  height: 2.75vh;
   width: var(--στοιχείο-δεξιόστροφης-ταινίας-κύλισης);
   padding: 0 0 2px 0;
   background-color: transparent;
