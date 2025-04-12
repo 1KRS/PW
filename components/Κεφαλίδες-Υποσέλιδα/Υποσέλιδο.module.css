@@ -1,13 +1,37 @@
 .υποσέλιδο {
+  position: absolute;
+  bottom: 0;
+  /* padding: 0 20%; */
+  z-index: 5;
+}
+
+.home-bottom-nav {
   display: none;
 }
 
-
+.υποσέλιδο .περιέκτης-πνευματικών-δικαιωμάτων {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 6px 0 4px;
+  height: auto;
+  width: auto;
+  min-width: 140px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-color);
+  backdrop-filter: blur(2px);
+}
 
 /* ================================================ */
-@media (min-width: 480px) {}
+@media (min-width: 480px) {
+}
 /* ================================================ */
 @media (min-width: 768px) {
+}
+/* ================================================ */
+@media (min-width: 1024px) {
   .υποσέλιδο {
     position: fixed;
     bottom: 0;
@@ -22,7 +46,7 @@
     /* border-top: 1px solid var(--border-color-blurred); */
     z-index: 5;
   }
-  
+
   .home-bottom-nav {
     display: flex;
     justify-content: center;
@@ -33,7 +57,7 @@
     min-width: 140px;
     backdrop-filter: blur(2px);
   }
-  
+
   .home-bottom-nav .στοιχεία {
     display: flex;
     justify-content: center;
@@ -42,7 +66,7 @@
     gap: 2.4rem;
     list-style: none;
   }
-  
+
   .home-bottom-nav .στοιχείο {
     font-size: 1.1rem;
     color: var(--text-color);
@@ -51,29 +75,21 @@
     border-bottom: 2px solid transparent;
     text-align: center;
   }
-  
+
   .home-bottom-nav .στοιχείο:hover,
   .home-bottom-nav .στοιχείο:active {
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
     transform: scale(1.1);
   }
-  
-  .υποσέλιδο .copyright-container {
+
+  .υποσέλιδο .περιέκτης-πνευματικών-δικαιωμάτων {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    margin: 6px 0 4px;
-    height: auto;
-    width: auto;
-    min-width: 140px;
-    text-align: center;
-    font-size: 0.8rem;
-    color: var(--text-color);
-    backdrop-filter: blur(2px);
   }
 }
 /* ================================================ */
-@media (min-width: 1024px) {}
-/* ================================================ */
-@media (min-width: 1366px) {}
+@media (min-width: 1366px) {
+}
