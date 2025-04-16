@@ -1,10 +1,10 @@
-import styles from './UnderDevelopmentRibbon.module.css';
+import styles from './ΣήμαΥπόΚατασκευή.module.css';
 
 import ΠοσοστόΥλοποίησης from '@/components/Ποσοστά/ΠοσοστόΥλοποίησης';
 import Link from 'next/link';
 import Μετάφραση from '@/components/Μετάφραση';
 
-const UnderDevelopmentRibbon = () => {
+const ΣήμαΥπόΚατασκευή = () => {
   return (
     <Link href={'/programming/implementation'} className={styles.ribbon}>
       <Μετάφραση>Υπό Ανάπτυξη</Μετάφραση>
@@ -14,4 +14,4 @@ const UnderDevelopmentRibbon = () => {
   );
 };
 
-export default UnderDevelopmentRibbon;
+export default ΣήμαΥπόΚατασκευή;

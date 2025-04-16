@@ -5,7 +5,7 @@ import Κεφαλίδα from '@/components/Κεφαλίδες-Υποσέλιδα
 import ΠλαϊνήΣτήληΠρογραμματισμού from '@/components/Navigations/ΠλαϊνήΣτήληΠρογραμματισμού';
 import Υποσέλιδο from '@/components/Κεφαλίδες-Υποσέλιδα/Υποσέλιδο';
 // import MainSubheader from '@/components/MainSubheader';
-import UnderConstructionRibbon from '@/components/UnderDevelopmentRibbon';
+import ΣήμαΥπόΚατασκευή from '@/components/ΣήμαΥπόΚατασκευή';
 import ΠιστοποιητικόΣεΠαράθυρο from '@/components/Modals/ΠιστοποιητικόΣεΠαράθυρο';
 import ΑναδυόμενοΠαράθυροΡυθμίσεων from '@/components/Modals/ΑναδυόμενοΠαράθυροΡυθμίσεων';
 import ΠλήκτροΡυθμίσεων from '@/components/Πλήκτρα/ΠλήκτροΡυθμίσεων';
@@ -29,7 +29,7 @@ const ΠλαίσιοΠρογραμματισμού = ({ children }) => {
       </div>
       {/* --  -- */}
       <Κεφαλίδα />
-      <UnderConstructionRibbon />
+      <ΣήμαΥπόΚατασκευή />
       {/* <MainSubheader /> */}
       <ΠλαϊνήΣτήληΠρογραμματισμού />
       {children}

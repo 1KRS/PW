@@ -3,7 +3,7 @@ import styles from './page.module.css';
 import Link from 'next/link';
 
 import LandingMain from '@/components/Backgrounds/LandingMain';
-import UnderConstructionRibbon from '@/components/UnderDevelopmentRibbon';
+import ΣήμαΥπόΚατασκευή from '@/components/ΣήμαΥπόΚατασκευή';
 import LanguagesContainer from '@/components/LanguagesContainer';
 import Μετάφραση from '@/components/Μετάφραση';
 
@@ -11,7 +11,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 const Home = () => {
   return (
     <LandingMain>
-      <UnderConstructionRibbon />
+      <ΣήμαΥπόΚατασκευή />
       <div className={styles['name']}>Δημήτρης Μανωλόπουλος</div>
       <p className={styles['κείμενο']}>
         <Μετάφραση>
