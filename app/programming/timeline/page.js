@@ -3,6 +3,7 @@ import styles from './page.module.css';
 import Τίτλος from '@/components/Τίτλος';
 import ΣτοιχείαΧρονολογίου from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου';
 import ΠλαϊνήΣτήληΧρονολογίουΠρογραμματισμού from '@/components/Navigations/ΠλαϊνήΣτήληΧρονολογίουΠρογραμματισμού';
+import ΚείμενοΜικρήςΟθόνης from '@/components/Κείμενα/ΚείμενοΜικρήςΟθόνης';
 
 export const metadata = {
   title: 'ΔΜ - Χρονολόγιο',
@@ -30,6 +31,7 @@ const ΣελίδαΧρονολογίου = () => {
             <ΣτοιχείαΧρονολογίου />
           </div>
         </section>
+        <ΚείμενοΜικρήςΟθόνης />
       </main>
     </>
   );
