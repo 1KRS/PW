@@ -1,6 +1,7 @@
 import styles from './page.module.css';
 
 import Τίτλος from '@/components/Τίτλος';
+import ΚείμενοΜικρήςΟθόνης from '@/components/Κείμενα/ΚείμενοΜικρήςΟθόνης';
 
 export const metadata = {
   title: 'ΔΜ - Υπηρεσίες',
@@ -63,6 +64,7 @@ const ΣελίδαΥπηρεσιών = () => {
             </div>
           </div>
         </section>
+        <ΚείμενοΜικρήςΟθόνης />
       </main>
     </>
   );
