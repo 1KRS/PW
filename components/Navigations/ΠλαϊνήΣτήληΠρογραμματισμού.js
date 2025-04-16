@@ -36,11 +36,11 @@ const ΠλαϊνήΣτήληΠρογραμματισμού = () => {
               <FaTimeline style={{ transform: 'rotate(90deg)' }} />
             </NavLinkThatStartsWith>
           </li>
-          <li className={styles['στοιχείο']}>
+          {/* <li className={styles['στοιχείο']}>
             <NavLinkThatStartsWith href="/programming/services">
               <FaBusinessTime />
             </NavLinkThatStartsWith>
-          </li>
+          </li> */}
           <li className={styles['στοιχείο']}>
             <NavLinkThatStartsWith href="/programming/testimonials">
               <FaStar />
