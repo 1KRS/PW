@@ -4,7 +4,7 @@ import Τίτλος from '@/components/Τίτλος';
 import Μαρτυρία from '@/components/Μαρτυρία';
 
 import { μαρτυρίες } from '@/db/μαρτυρίες';
-import TranslatedText from '@/components/TranslatedText';
+import Μετάφραση from '@/components/Μετάφραση';
 
 export const metadata = {
   title: 'ΔΜ - Μαρτυρίες',

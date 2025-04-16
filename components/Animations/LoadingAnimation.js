@@ -1,5 +1,6 @@
-import TranslatedText from '../TranslatedText';
 import styles from './LoadingAnimation.module.css';
+
+import Μετάφραση from '../Μετάφραση';
 
 const LoadingAnimation = () => {
   return (
@@ -8,7 +9,7 @@ const LoadingAnimation = () => {
       <div className={styles.ring}></div>
       <div className={styles.ring}></div>
       <span className={styles.loading}>
-        <TranslatedText>Φόρτωση...</TranslatedText>
+        <Μετάφραση>Φόρτωση...</Μετάφραση>
       </span>
     </div>
   );

@@ -9,6 +9,7 @@ import UnderConstructionRibbon from '@/components/UnderDevelopmentRibbon';
 import ΠιστοποιητικόΣεΠαράθυρο from '@/components/Modals/ΠιστοποιητικόΣεΠαράθυρο';
 import ΑναδυόμενοΠαράθυροΡυθμίσεων from '@/components/Modals/ΑναδυόμενοΠαράθυροΡυθμίσεων';
 import ΠλήκτροΡυθμίσεων from '@/components/Πλήκτρα/ΠλήκτροΡυθμίσεων';
+import Μετάφραση from '@/components/Μετάφραση';
 
 export const metadata = {
   title: 'ΔΜ',
@@ -32,7 +33,11 @@ const ΠλαίσιοΠρογραμματισμού = ({ children }) => {
       {/* <MainSubheader /> */}
       <ΠλαϊνήΣτήληΠρογραμματισμού />
       {children}
-      <div className={styles['περιέκτης-πλήκτρου-ρυθμίσεων-πλαισίου-προγραμματισμού']}>
+      <div
+        className={
+          styles['περιέκτης-πλήκτρου-ρυθμίσεων-πλαισίου-προγραμματισμού']
+        }
+      >
         <ΠλήκτροΡυθμίσεων />
       </div>
       <div className={styles['περιέκτης-υποσέλιδου']}>

@@ -2,7 +2,7 @@ import ΔυαδικήΒροχή from '@/components/Backgrounds/ΔυαδικήΒ�
 import styles from './not-found.module.css';
 import Link from 'next/link';
 import LanguagesContainer from '@/components/LanguagesContainer';
-import TranslatedText from '@/components/TranslatedText';
+import Μετάφραση from '@/components/Μετάφραση';
 
 const NotFound = () => {
   return (
@@ -12,10 +12,10 @@ const NotFound = () => {
         <h1>404</h1>
         <div className={styles.text}>
           <h2>
-            <TranslatedText>Η σελίδα δεν βρέθηκε</TranslatedText>
+            <Μετάφραση>Η σελίδα δεν βρέθηκε</Μετάφραση>
           </h2>
           <Link href="/programming" className={styles.btn}>
-            <TranslatedText>Επιστροφή στην αρχική σελίδα</TranslatedText>
+            <Μετάφραση>Επιστροφή στην αρχική σελίδα</Μετάφραση>
           </Link>
         </div>
         <LanguagesContainer />

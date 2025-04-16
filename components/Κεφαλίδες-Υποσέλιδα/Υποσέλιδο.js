@@ -3,7 +3,7 @@ import styles from './Υποσέλιδο.module.css';
 import Link from 'next/link';
 
 import SocialIcons from '../SocialIcons';
-import TranslatedText from '../TranslatedText';
+import Μετάφραση from '../Μετάφραση';
 
 import { στοιχείαΗμερομηνιών } from '@/utils/στοιχείαΗμερομηνιών';
 
@@ -16,24 +16,24 @@ const Υποσέλιδο = () => {
         <nav className={styles['home-bottom-nav']}>
           <ul className={styles.στοιχεία}>
             <Link href="/home" className={styles.στοιχείο}>
-              <TranslatedText>Συχνές Ερωτήσεις</TranslatedText>
+              <Μετάφραση>Συχνές Ερωτήσεις</Μετάφραση>
             </Link>
             <SocialIcons />
             <Link
               href="/programming/about-this-site"
               className={styles.στοιχείο}
             >
-              <TranslatedText>Σχετικά</TranslatedText>
+              <Μετάφραση>Σχετικά</Μετάφραση>
             </Link>
           </ul>
         </nav>
         <div className={styles['περιέκτης-πνευματικών-δικαιωμάτων']}>
           <div className={styles['όνομα-και-έτος']}>
-            <TranslatedText>Δημήτρης Μανωλόπουλος</TranslatedText>
+            <Μετάφραση>Δημήτρης Μανωλόπουλος</Μετάφραση>
             {` © ${τρέχονΈτος} `}
           </div>
           <div className={styles['επιφύλαξη']}>
-            <TranslatedText>Επιφύλαξη Παντός Δικαιώματος</TranslatedText>
+            <Μετάφραση>Επιφύλαξη Παντός Δικαιώματος</Μετάφραση>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@
 
 import styles from '@/components/Navigations/ΠλαϊνήΣτήληΧρονολογίουΠρογραμματισμού.module.css';
 
-import TranslatedText from '@/components/TranslatedText';
+import Μετάφραση from '@/components/Μετάφραση';
 
 import { FaMinus } from 'react-icons/fa6';
 import { TiMinusOutline } from 'react-icons/ti';
@@ -36,8 +36,8 @@ const SideNavItem = ({ σελίδα, ύπαρξηΦίλτρων, είδοςΚα�
     είδοςΚατηγορίας === 'Ολοκληρωμένο'
       ? 'Ολοκληρωμένα'
       : είδοςΚατηγορίας === 'Παρατημένο'
-      ? 'Παρατημένα'
-      : είδοςΚατηγορίας;
+        ? 'Παρατημένα'
+        : είδοςΚατηγορίας;
 
   const περιεχόμενοΣτοιχείου =
     σελίδα === 'Χρονολόγιο' ? (
@@ -62,7 +62,7 @@ const SideNavItem = ({ σελίδα, ύπαρξηΦίλτρων, είδοςΚα�
           <FaMinus className={styles[`${χρώμαΕικονιδίου}`]} />
         )}
         <div className={styles['κείμενο']}>
-          <TranslatedText>{κείμενοΣτοιχείου}</TranslatedText>
+          <Μετάφραση>{κείμενοΣτοιχείου}</Μετάφραση>
         </div>
       </li>
     ) : (
@@ -76,7 +76,7 @@ const SideNavItem = ({ σελίδα, ύπαρξηΦίλτρων, είδοςΚα�
           <FaMinus className={styles[`${χρώμαΕικονιδίου}`]} />
         )}
         <div className={styles['κείμενο']}>
-          <TranslatedText>{κείμενοΣτοιχείου}</TranslatedText>
+          <Μετάφραση>{κείμενοΣτοιχείου}</Μετάφραση>
         </div>
       </li>
     );

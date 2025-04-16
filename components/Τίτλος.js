@@ -1,11 +1,11 @@
 import styles from '@/components/Τίτλος.module.css';
 
-import TranslatedText from '@/components/TranslatedText';
+import Μετάφραση from '@/components/Μετάφραση';
 
 const Τίτλος = ({ text }) => {
   return (
     <h2 className={styles.τίτλος}>
-      <TranslatedText>{text}</TranslatedText>
+      <Μετάφραση>{text}</Μετάφραση>
     </h2>
   );
 };

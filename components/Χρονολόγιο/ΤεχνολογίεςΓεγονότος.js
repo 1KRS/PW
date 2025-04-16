@@ -1,10 +1,9 @@
 import styles from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου.module.css';
 
-import TranslatedText from '../TranslatedText';
+import Μετάφραση from '../Μετάφραση';
 import TechIcon from '../TechIcon';
 
 const ΤεχνολογίεςΓεγονότος = ({ στιγμή }) => {
-
   const { τεχνολογίες } = στιγμή;
 
   return τεχνολογίες.length !== 0 ? (

@@ -5,7 +5,7 @@ import styles from './Ηρώο.module.css';
 import Link from 'next/link';
 import ΔεξιόστροφηΤαινίαΚύλισης from '@/components/ΤαινίεςΚύλισης/ΔεξιόστροφηΤαινίαΚύλισης';
 import ΑριστερόστροφηΤαινίαΚύλισης from '@/components/ΤαινίεςΚύλισης/ΑριστερόστροφηΤαινίαΚύλισης';
-import TranslatedText from '@/components/TranslatedText';
+import Μετάφραση from '@/components/Μετάφραση';
 import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής';
 
 import { useAppContext } from '@/context/AppContext';
@@ -13,8 +13,8 @@ import { useAppContext } from '@/context/AppContext';
 import { σύνολοΤεχνολογιώνΠληνΠακέτων, πακέτα } from '@/db/τεχνολογίες';
 
 const Hero = () => {
-    const { language } = useAppContext();
-  
+  const { language } = useAppContext();
+
   return (
     <>
       <ΠλαίσιοΜορφής
@@ -44,10 +44,10 @@ const Hero = () => {
           )}
 
           <h3>
-            <TranslatedText>
+            <Μετάφραση>
               Είμαι ένας νεαρός Πλήρους-Εύρους Προγραμματιστής Ιστού με
               προσήλωση στην εξέλιξη και στόχο την βέλτιστη λύση.
-            </TranslatedText>
+            </Μετάφραση>
           </h3>
 
           <div className={styles['περιέκτης-ταινιών-κύλισης']}>
@@ -59,13 +59,13 @@ const Hero = () => {
 
           <div className={styles['περιέκτης-πλήκτρων']}>
             <Link href="#" className={styles['βασικό-πλήκτρο']}>
-              <TranslatedText>Πρόσληψη</TranslatedText>
+              <Μετάφραση>Πρόσληψη</Μετάφραση>
             </Link>
             <Link
               href="/programming/contact"
               className={styles['δευτερεύον-πλήκτρο']}
             >
-              <TranslatedText>Επικοινωνία</TranslatedText>
+              <Μετάφραση>Επικοινωνία</Μετάφραση>
             </Link>
           </div>
         </div>

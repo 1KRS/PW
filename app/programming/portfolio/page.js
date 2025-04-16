@@ -2,8 +2,9 @@ import styles from './page.module.css';
 
 import Image from 'next/image';
 import ΠλαίσιοΜορφήςΧαρτοφυλακίου from '@/components/ΠλαίσιοΜορφήςΧαρτοφυλακίου';
+import ΚείμενοΜικρήςΟθόνης from '@/components/Κείμενα/ΚείμενοΜικρήςΟθόνης';
 import Τίτλος from '@/components/Τίτλος';
-import TranslatedText from '@/components/TranslatedText';
+import Μετάφραση from '@/components/Μετάφραση';
 
 import { έργα } from '@/db/έργα';
 
@@ -50,10 +51,10 @@ const ΣελίδαΧαρτοφυλακίου = () => {
                       className={styles['στρώση-χαρτοφυλακίου']}
                     >
                       <h4>
-                        <TranslatedText>{project.title}</TranslatedText>
+                        <Μετάφραση>{project.title}</Μετάφραση>
                       </h4>
                       <p>
-                        <TranslatedText>{project.text}</TranslatedText>
+                        <Μετάφραση>{project.text}</Μετάφραση>
                       </p>
                       <FaRegHandPointer
                         className={styles['εικονίδιο-συνδέσμου']}
@@ -65,6 +66,7 @@ const ΣελίδαΧαρτοφυλακίου = () => {
             })}
           </div>
         </section>
+        <ΚείμενοΜικρήςΟθόνης />
       </main>
     </>
   );

@@ -8,8 +8,8 @@ import ΔιακόπτηςΕναλλαγήςΑδιαφάνειας from '@/compon
 import ΔιακόπτηςΕναλλαγήςΦέγγουςΟρίων from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΕναλλαγήςΦέγγουςΟρίων';
 import ΔιακόπτηςΕναλλαγήςΦέγγουςΣτοιχείων from '@/components/Πλήκτρα/ToggleButtons/ΔιακόπτηςΕναλλαγήςΦέγγουςΣτοιχείων';
 import Υποσέλιδο from '@/components/Κεφαλίδες-Υποσέλιδα/Υποσέλιδο';
-import TranslatedText from '../TranslatedText';
 import LanguagesContainer from '../LanguagesContainer';
+import Μετάφραση from '../Μετάφραση';
 // import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής';
 
 import { useRef, useEffect } from 'react';
@@ -81,56 +81,53 @@ const Settings = () => {
         </button>
       </form>
       <nav className={styles['περιέκτης-πλοήγησης-παραθύρου-ρυθμίσεων']}>
-          <ul className={styles.στοιχεία}>
-            <Link href="/home" className={styles.στοιχείο}>
-              <TranslatedText>Συχνές Ερωτήσεις</TranslatedText>
-            </Link>
-            <Link
-              href="/programming/about-this-site"
-              className={styles.στοιχείο}
-            >
-              <TranslatedText>Σχετικά</TranslatedText>
-            </Link>
-            <SocialIcons />
-          </ul>
-        </nav>
+        <ul className={styles.στοιχεία}>
+          <Link href="/home" className={styles.στοιχείο}>
+            <Μετάφραση>Συχνές Ερωτήσεις</Μετάφραση>
+          </Link>
+          <Link href="/programming/about-this-site" className={styles.στοιχείο}>
+            <Μετάφραση>Σχετικά</Μετάφραση>
+          </Link>
+          <SocialIcons />
+        </ul>
+      </nav>
       <h6 className={styles['τίτλος-παραθύρου']}>
-        <TranslatedText>Ρυθμίσεις</TranslatedText>
+        <Μετάφραση>Ρυθμίσεις</Μετάφραση>
       </h6>
       <div className={styles['διακόπτες-ρυθμίσεων']}>
         <div className={styles['γραμμή-διακόπτη']}>
           <h6 className={styles['τίτλος-διακόπτη']}>
-            <TranslatedText>Γλώσσα:</TranslatedText>
+            <Μετάφραση>Γλώσσα:</Μετάφραση>
           </h6>
           <LanguagesContainer μέγεθος="μεσαίο" />
         </div>
         <div className={styles['γραμμή-διακόπτη']}>
           <h6 className={styles['τίτλος-διακόπτη']}>
-            <TranslatedText>Δυναμικό υπόβαθρο:</TranslatedText>
+            <Μετάφραση>Δυναμικό υπόβαθρο:</Μετάφραση>
           </h6>
           <ΔιακόπτηςΕναλλαγήςΥποβάθρου />
         </div>
         {/* <div className={styles['γραμμή-διακόπτη']}>
           <h6 className={styles['τίτλος-διακόπτη']}>
-            <TranslatedText>Υαλομορφισμός:</TranslatedText>
+            <Μετάφραση>Υαλομορφισμός:</Μετάφραση>
           </h6>
           <ΔιακόπτηςΥαλομορφισμού />
         </div> */}
         <div className={styles['γραμμή-διακόπτη']}>
           <h6 className={styles['τίτλος-διακόπτη']}>
-            <TranslatedText>Αδιαφάνεια:</TranslatedText>
+            <Μετάφραση>Αδιαφάνεια:</Μετάφραση>
           </h6>
           <ΔιακόπτηςΕναλλαγήςΑδιαφάνειας />
         </div>
         <div className={styles['γραμμή-διακόπτη']}>
           <h6 className={styles['τίτλος-διακόπτη']}>
-            <TranslatedText>Φέγγος ορίων:</TranslatedText>
+            <Μετάφραση>Φέγγος ορίων:</Μετάφραση>
           </h6>
           <ΔιακόπτηςΕναλλαγήςΦέγγουςΟρίων />
         </div>
         <div className={styles['γραμμή-διακόπτη']}>
           <h6 className={styles['τίτλος-διακόπτη']}>
-            <TranslatedText>Φέγγος στοιχείων:</TranslatedText>
+            <Μετάφραση>Φέγγος στοιχείων:</Μετάφραση>
           </h6>
           <ΔιακόπτηςΕναλλαγήςΦέγγουςΣτοιχείων />
         </div>

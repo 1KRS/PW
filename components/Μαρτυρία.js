@@ -3,11 +3,11 @@
 import styles from './Μαρτυρία.module.css';
 
 import Image from 'next/image';
+import Μετάφραση from './Μετάφραση';
 
 import { useAppContext } from '@/context/AppContext';
 
 import { FaStar } from 'react-icons/fa';
-import TranslatedText from './TranslatedText';
 
 const Testimonial = ({
   όνομα,
@@ -66,7 +66,7 @@ const Testimonial = ({
     >
       {αυθεντικότητα === 'Ψεύτικη' && (
         <p className={styles['υπόδειξη-αυθεντικότητας-μαρτυρίας']}>
-          <TranslatedText>Παράδειγμα</TranslatedText>
+          <Μετάφραση>Παράδειγμα</Μετάφραση>
         </p>
       )}
       <div

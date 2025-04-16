@@ -4,7 +4,7 @@ import ΔυαδικήΒροχή from '@/components/Backgrounds/ΔυαδικήΒ�
 import styles from './error.module.css';
 import Link from 'next/link';
 import LanguagesContainer from '@/components/LanguagesContainer';
-import TranslatedText from '@/components/TranslatedText';
+import Μετάφραση from '@/components/Μετάφραση';
 
 const Error = () => {
   return (
@@ -14,10 +14,10 @@ const Error = () => {
         <h1>500</h1>
         <div className={styles.text}>
           <h2>
-            <TranslatedText>Κάποιο λάθος προέκυψε</TranslatedText>
+            <Μετάφραση>Κάποιο λάθος προέκυψε</Μετάφραση>
           </h2>
           <Link href="/programming" className={styles.btn}>
-            <TranslatedText>Επιστροφή στην αρχική σελίδα</TranslatedText>
+            <Μετάφραση>Επιστροφή στην αρχική σελίδα</Μετάφραση>
           </Link>
         </div>
         <LanguagesContainer />
