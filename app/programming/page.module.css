@@ -1,4 +1,4 @@
-.αρχική {
+/* .αρχική {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -8,7 +8,7 @@
   color: white;
   text-align: center;
   transition: all 2s ease-in-out;
-}
+} */
 
 /* .αρχική-με-δυναμικό-υπόβαθρο {
   gap: 4.5vw;
@@ -38,6 +38,8 @@
     gap: 4.5vw;
     transition: 2s ease-in-out
   } */
+
+
 }
 /* ================================================ */
 @media (min-width: 1366px) {
