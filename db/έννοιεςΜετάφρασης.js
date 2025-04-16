@@ -456,6 +456,14 @@ export const έννοιες = [
   // Ο //
   {
     ελληνικά:
+      'Αυτός ο ιστότοπος δημιουργήθηκε με στόχο την επίδειξη των δεξιοτήτων μου στην ανάπτυξη ιστού, με αποτέλεσμα πολύπλοκα στοιχεία (π.χ. «Χρονολόγιο») που λειτουργούν ιδανικά σε μεγαλύτερες οθόνες. Για μια ολοκληρωμένη εμπειρία, συνιστάται η περιήγηση σε συσκευή με μεγαλύτερο μέγεθος οθόνης (iPad ή μεγαλύτερη).',
+    αγγλικά:
+      'This website was created with the goal of showcasing my skills in web development, resulting in complex elements (e.g. «Timeline») that work ideally on larger screens. For a complete experience, browsing on a device with larger screen sizes (iPad or larger) is recommended.',
+    σουηδικά:
+      'Den här webbplatsen skapades med målet att visa upp mina färdigheter inom webbutveckling, vilket resulterar i komplexa element (t.ex. «Tidslinje») som fungerar idealiskt på större skärmar. För en komplett upplevelse rekommenderas att surfa på en enhet med större skärmstorlekar (iPad eller större).',
+  },
+  {
+    ελληνικά:
       'Ο νέος μου προσωπικός ιστότοπος αναπτυγμένος εκ του μηδενός σε NextJS.',
     αγγλικά: 'My new personal website developed from scratch in NextJS.',
     σουηδικά: 'Min nya personliga hemsida utvecklad från grunden i NextJS.',
