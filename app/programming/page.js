@@ -3,6 +3,7 @@
 import styles from './page.module.css';
 
 import Ηρώο from '@/components/Ηρώο';
+import ΚείμενοΜικρήςΟθόνης from '@/components/Κείμενα/ΚείμενοΜικρήςΟθόνης';
 
 // import { useAppContext } from '@/context/AppContext'; //<-------------- Στο τέλος να ελέγξω αν χρειάζεται
 
@@ -22,6 +23,7 @@ const Αρχική = () => {
       >
         <Ηρώο />
       </section>
+      <ΚείμενοΜικρήςΟθόνης />
     </main>
   );
 };
