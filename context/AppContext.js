@@ -86,6 +86,12 @@ const AppProvider = ({ children }) => {
     });
   };
 
+  const toggleSmallScreenTextModal = () => {
+    dispatch({
+      type: 'TOGGLE_SMALL_SCREEN_TEXT_MODAL',
+    });
+  };
+
   const changeEventFilter = (filterName) => {
     dispatch({
       type: 'CHANGE_EVENT_FILTER',
@@ -139,6 +145,7 @@ const AppProvider = ({ children }) => {
         toggleEventColors,
         toggleCertificateModal,
         toggleSettingsModal,
+        toggleSmallScreenTextModal,
         changeEventFilter,
       }}
     >
