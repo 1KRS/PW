@@ -16,6 +16,7 @@ const initialState = {
   totalTechnologies: 0,
   certificate: '',
   settings: false,
+  κείμενοΜικρήςΟθόνης: false,
   // search: '',
   // searchStatus: 'Όλα',
   // searchType: 'Όλα',
