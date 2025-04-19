@@ -83,6 +83,13 @@ const reducer = (state, action) => {
     };
   }
 
+  if (action.type === 'TOGGLE_SMALL_SCREEN_TEXT_MODAL') {
+    return {
+      ...state,
+      κείμενοΜικρήςΟθόνης: !state.κείμενοΜικρήςΟθόνης,
+    };
+  }
+
   if (action.type === 'CHANGE_EVENT_FILTER') {
     return {
       ...state,
