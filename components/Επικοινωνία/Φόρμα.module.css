@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   width:var(--πλάτος-φόρμας);
-  gap: 3vw;
+  gap: 1.5vh;
   text-align: center;
 }
 
@@ -18,7 +18,7 @@
   justify-content: center;
   width: var(--πλάτος-φόρμας);
   max-width: 450px;
-  gap: 2.5vh;
+  gap: 1.5vh;
 }
 
 .φόρμα .περιέκτης-πεδίου {
