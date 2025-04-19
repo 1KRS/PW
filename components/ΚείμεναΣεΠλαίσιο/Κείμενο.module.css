@@ -1,0 +1,66 @@
+.περιέκτης-κειμένου {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4vw;
+  padding: 20px 15px;
+  border: 2px solid var(--main-color);
+  border-radius: 35px;
+  background-color: var(--second-bg-color-blurred);
+  gap: 15px;
+}
+
+.κείμενο {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--ποιότητα);
+  text-align: center;
+}
+
+/* ================================================ */
+@media (min-width: 480px) {
+  .περιέκτης-κειμένου {
+    margin: 0 8vw;
+  }
+
+  .κείμενο {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--ποιότητα);
+    text-align: center;
+  }
+}
+/* ================================================ */
+@media (min-width: 768px) {
+  .περιέκτης-κειμένου {
+    margin: 0 10vw;
+  }
+
+  .κείμενο {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--ποιότητα);
+    text-align: center;
+  }
+}
+/* ================================================ */
+@media (min-width: 1024px) {
+  .περιέκτης-κειμένου {
+    display: none;
+  }
+}
+/* ================================================ */
+@media (min-width: 1366px) {
+}
+
+/* ================================================ */
+@media (min-height: 600px) {
+  .κείμενο {
+    font-size: 1rem;
+  }
+}
+
+/* ================================================ */
+@media (min-height: 550px) {
+}
