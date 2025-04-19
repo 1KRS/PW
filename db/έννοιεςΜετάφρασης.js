@@ -114,6 +114,14 @@ export const έννοιες = [
   { ελληνικά: 'Βάση Δεδομένων', αγγλικά: 'Database', σουηδικά: 'Databas' },
   // Γ //
   { ελληνικά: 'για', αγγλικά: 'for', σουηδικά: 'för' },
+  {
+    ελληνικά:
+      'Για βέλτιστη εμπειρία, συνιστάται η περιήγηση σε συσκευή με μεγαλύτερη οθόνη (iPad ή μεγαλύτερη).',
+    αγγλικά:
+      'For the best experience, it is recommended to browse on a device with a larger screen (iPad or larger).',
+    σουηδικά:
+      'För bästa upplevelse rekommenderas det att surfa på en enhet med större skärm (iPad eller storre).',
+  },
   { ελληνικά: 'Γλώσσα', αγγλικά: 'Language', σουηδικά: 'Språk' },
   { ελληνικά: 'Γλώσσα:', αγγλικά: 'Language:', σουηδικά: 'Språk:' },
   {
@@ -199,6 +207,14 @@ export const έννοιες = [
     σουηδικά: 'Dynamisk bakgrund:',
   },
   // Ε //
+  {
+    ελληνικά:
+      'Εάν χρησιμοποιείτε συσκευή τύπου iPad και το μήνυμα συνεχίζει να εμφανίζεται δοκιμάστε να την στρέψετε στο πλάι σε οριζόντιο προσανατολισμό.',
+    αγγλικά:
+      'If you are using an iPad-type device and the message continues to appear, try turning it sideways in landscape orientation.',
+    σουηδικά:
+      'Om du använder en iPad-enhet och meddelandet fortsätter att visas, försök att vända det åt sidan i liggande riktning.',
+  },
   { ελληνικά: 'ΕΠΙΣΤΡΟΦΗ', αγγλικά: 'RETURN', σουηδικά: 'LÄMNA TILLBAKA' },
   {
     ελληνικά:
@@ -334,6 +350,14 @@ export const έννοιες = [
   // Ζ //
   // Η //
   {
+    ελληνικά:
+      'Η ανάπτυξη συνεχίζεται και σταδιακά προστίθεται αποκρισιμότητα και για μικρότερες οθόνες. Ορισμένες σελίδες θα εμφανίζουν αυτό το μήνυμα μέχρι το πέρας τους, καθώς η προσαρμογή για κινητές συσκευές δεν αποτελεί άμεση προτεραιότητα.',
+    αγγλικά:
+      'Development is ongoing and responsiveness for smaller screens is gradually being added. Some pages will display this message until they are completed, as adaptation for mobile devices is not an immediate priority.',
+    σουηδικά:
+      'Utvecklingen fortsätter och lyhördhet för mindre skärmar tillkommer successivt. Vissa sidor kommer att visa detta meddelande tills de är klara, eftersom mobilvänlighet inte är en omedelbar prioritet.',
+  },
+  {
     ελληνικά: 'Η Εργασία Ενημερώθηκε!',
     αγγλικά: 'Job Updated!',
     σουηδικά: 'Jobb uppdaterat!',
@@ -456,11 +480,11 @@ export const έννοιες = [
   // Ο //
   {
     ελληνικά:
-      'Αυτός ο ιστότοπος δημιουργήθηκε με στόχο την επίδειξη των δεξιοτήτων μου στην ανάπτυξη ιστού, με αποτέλεσμα πολύπλοκα στοιχεία (π.χ. «Χρονολόγιο») που λειτουργούν ιδανικά σε μεγαλύτερες οθόνες. Για μια ολοκληρωμένη εμπειρία, συνιστάται η περιήγηση σε συσκευή με μεγαλύτερο μέγεθος οθόνης (iPad ή μεγαλύτερη).',
+      'Ο ιστότοπος αυτός δημιουργήθηκε για την επίδειξη των δεξιοτήτων μου στην ανάπτυξη ιστού, με αποτέλεσμα σύνθετα στοιχεία (όπως το "Χρονολόγιο") που αποδίδουν καλύτερα σε μεγαλύτερες οθόνες.',
     αγγλικά:
-      'This website was created with the goal of showcasing my skills in web development, resulting in complex elements (e.g. «Timeline») that work ideally on larger screens. For a complete experience, browsing on a device with larger screen sizes (iPad or larger) is recommended.',
+      'This website was created to showcase my web development skills, resulting in complex elements (like the "Timeline") that perform better on larger screens.',
     σουηδικά:
-      'Den här webbplatsen skapades med målet att visa upp mina färdigheter inom webbutveckling, vilket resulterar i komplexa element (t.ex. «Tidslinje») som fungerar idealiskt på större skärmar. För en komplett upplevelse rekommenderas att surfa på en enhet med större skärmstorlekar (iPad eller större).',
+      'Den här webbplatsen skapades för att visa upp mina färdigheter i webbutveckling, vilket resulterade i komplexa element (som "Tidslinjen") som presterar bättre på större skärmar.',
   },
   {
     ελληνικά:
