@@ -10,7 +10,7 @@ const SmallScreenTextButton = () => {
   const { toggleSmallScreenTextModal } = useAppContext();
 
   const χειρισμόςΠίεσηςΠλήκτρου = (e) => {
-    console.log("Ζουλιήχτκε")
+    console.log('Ζουλιήχτκε');
     e.preventDefault();
 
     toggleSmallScreenTextModal();
@@ -21,7 +21,7 @@ const SmallScreenTextButton = () => {
       className={styles['βασικό-πλήκτρο']}
       onClick={(e) => χειρισμόςΠίεσηςΠλήκτρου(e)}
     >
-      <Μετάφραση>Μάθε περισσότερα</Μετάφραση>
+      <Μετάφραση>Μάθε Περισσότερα</Μετάφραση>
     </div>
   );
 };
