@@ -1,9 +1,13 @@
-.χαρτοφυλάκιο {
+.τομέας-χαρτοφυλακίου {
+  display: none;
+}
+
+/* .τομέας-χαρτοφυλακίου {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .περιέκτης-χαρτοφυλακίου {
   position: absolute;
@@ -115,7 +119,7 @@
 }
 /* ================================================ */
 @media (min-width: 1366px) {
-  .χαρτοφυλάκιο {
+  .τομέας-χαρτοφυλακίου {
     display: flex;
     flex-direction: column;
     justify-content: center;
