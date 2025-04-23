@@ -6,7 +6,7 @@ import Μαρτυρία from '@/components/Μαρτυρία';
 import { μαρτυρίες } from '@/db/μαρτυρίες';
 import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής';
 import ΚείμενοΤίτλοςΜικρήςΟθόνης from '@/components/Κείμενα/ΚείμενοΤίτλοςΜικρήςΟθόνης';
-import SmallScreenTextButton from '@/components/Πλήκτρα/ΠλήκτροΚειμένουΜικρήςΟθόνης';
+// import ΠλήκτροΚειμένουΜικρήςΟθόνης from '@/components/Πλήκτρα/ΠλήκτροΚειμένουΜικρήςΟθόνης';
 
 export const metadata = {
   title: 'ΔΜ - Μαρτυρίες',
@@ -62,7 +62,7 @@ const ΣελίδαΜαρτυριών = () => {
       >
         <ΚείμενοΤίτλοςΜικρήςΟθόνης />
       </ΠλαίσιοΜορφής>
-      <SmallScreenTextButton />
+      {/* <ΠλήκτροΚειμένουΜικρήςΟθόνης /> */}
     </main>
   );
 };
