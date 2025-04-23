@@ -1,7 +1,8 @@
 import styles from './page.module.css';
 
 import Τίτλος from '@/components/Τίτλος';
-import ΚείμενοΤίτλοςΜικρήςΟθόνης from '@/components/ΚείμεναΣεΠλαίσιο/ΚείμενοΤίτλοςΜικρήςΟθόνης';
+import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής';
+import ΚείμενοΤίτλοςΜικρήςΟθόνης from '@/components/Κείμενα/ΚείμενοΤίτλοςΜικρήςΟθόνης';
 import ΠλήκτροΚειμένουΜικρήςΟθόνης from '@/components/Πλήκτρα/ΠλήκτροΚειμένουΜικρήςΟθόνης';
 
 export const metadata = {
@@ -18,7 +19,7 @@ const ΣελίδαΥπηρεσιών = () => {
       <main className={styles.main}>
         <Τίτλος text="Υπηρεσίες" />
 
-        <section className={styles.services} id="services">
+        <section className={styles['τομέας-υπηρεσιών']} id="τομέας-υπηρεσιών">
           <div className={styles['services-container']}>
             <div className={styles['service-item']}>
               <div className={styles['service-info']}>
@@ -65,7 +66,15 @@ const ΣελίδαΥπηρεσιών = () => {
             </div>
           </div>
         </section>
-        <ΚείμενοΤίτλοςΜικρήςΟθόνης />
+        <ΠλαίσιοΜορφής
+          καθορισμόςΔιαστάσεων="από μέσα"
+          ακτίναΓωνίας={15}
+          πάχοςΟρίου={1}
+          ενεργόςΔιακόπτηςΦέγγουςΟρίων
+          ενεργόςΔιακόπτηςΦέγγουςΣτοιχείων
+        >
+          <ΚείμενοΤίτλοςΜικρήςΟθόνης />
+        </ΠλαίσιοΜορφής>
         <ΠλήκτροΚειμένουΜικρήςΟθόνης />
       </main>
     </>
