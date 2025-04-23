@@ -2,7 +2,7 @@
 
 import styles from './ΚείμενοΜικρήςΟθόνηςΣεΠαράθυρο.module.css';
 
-import ΚείμενοΜικρήςΟθόνης from '@/components/ΚείμεναΣεΠλαίσιο/ΚείμενοΜικρήςΟθόνης'
+import ΚείμενοΜικρήςΟθόνης from '@/components/Κείμενα/ΚείμενοΜικρήςΟθόνης';
 
 import { useRef, useEffect } from 'react';
 import { useAppContext } from '@/context/AppContext';
