@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './SmallScreenTextButton.module.css';
+import styles from './ΠλήκτροΚειμένουΜικρήςΟθόνης.module.css';
 
 import Μετάφραση from '@/components/Μετάφραση';
 
