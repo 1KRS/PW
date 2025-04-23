@@ -1,9 +1,13 @@
-.services {
+.τομέας-υπηρεσιών {
+  display: none;
+}
+
+/* .τομέας-υπηρεσιών {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .services-container {
   display: grid;
@@ -22,10 +26,10 @@
   min-width: 300px;
   background: var(--second-bg-color-blurred);
   color: var(--text-color);
-  border: 2px solid var(--border-color-blurred);;
+  border: 2px solid var(--border-color-blurred);
   border-radius: 2rem;
   text-align: center;
-  gap:  1rem;
+  gap: 1rem;
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
@@ -59,4 +63,23 @@
   max-height: 100px;
   line-height: 1.7;
   margin: auto;
+}
+
+/* ================================================ */
+@media (min-width: 480px) {
+}
+/* ================================================ */
+@media (min-width: 768px) {
+}
+/* ================================================ */
+@media (min-width: 1024px) {
+  .τομέας-υπηρεσιών {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* ================================================ */
+@media (min-width: 1366px) {
 }
