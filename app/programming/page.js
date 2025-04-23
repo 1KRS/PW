@@ -5,7 +5,7 @@ import styles from './page.module.css';
 import Ηρώο from '@/components/Ηρώο';
 import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής';
 import ΚείμενοΤίτλοςΜικρήςΟθόνης from '@/components/Κείμενα/ΚείμενοΤίτλοςΜικρήςΟθόνης';
-import ΠλήκτροΚειμένουΜικρήςΟθόνης from '@/components/Πλήκτρα/ΠλήκτροΚειμένουΜικρήςΟθόνης';
+import SmallScreenTextButton from '@/components/Πλήκτρα/SmallScreenTextButton';
 
 // import { useAppContext } from '@/context/AppContext'; //<-------------- Στο τέλος να ελέγξω αν χρειάζεται
 
@@ -34,7 +34,7 @@ const Αρχική = () => {
       >
         <ΚείμενοΤίτλοςΜικρήςΟθόνης />
       </ΠλαίσιοΜορφής>
-      <ΠλήκτροΚειμένουΜικρήςΟθόνης />
+      <SmallScreenTextButton />
     </main>
   );
 };
