@@ -1,9 +1,13 @@
 .τομέας-μαρτυριών {
+  display: none;
+}
+
+/* .τομέας-μαρτυριών {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .περιέκτης-μαρτυριών {
   position: absolute;
@@ -107,6 +111,12 @@
 }
 /* ================================================ */
 @media (min-width: 1024px) {
+  .τομέας-μαρτυριών {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 /* ================================================ */
 @media (min-width: 1366px) {
