@@ -4,7 +4,7 @@ import Τίτλος from '@/components/Τίτλος';
 import Φόρμα from '@/components/Επικοινωνία/Φόρμα';
 import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής';
 import ΚείμενοΤίτλοςΜικρήςΟθόνης from '@/components/Κείμενα/ΚείμενοΤίτλοςΜικρήςΟθόνης';
-import ΠλήκτροΚειμένουΜικρήςΟθόνης from '@/components/Πλήκτρα/ΠλήκτροΚειμένουΜικρήςΟθόνης';
+import ΠλήκτροΚειμένουΜικρήςΟθόνης from '@/components/Πλήκτρα/ΠλήκτρΚειμένουΜικρήςΟθόνης';
 
 export const metadata = {
   title: 'ΔΜ - Επικοινωνία',
