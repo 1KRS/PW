@@ -9,7 +9,7 @@ import ΣήμαΥπόΚατασκευή from '@/components/ΣήμαΥπόΚατ�
 import ΠιστοποιητικόΣεΠαράθυρο from '@/components/Modals/ΠιστοποιητικόΣεΠαράθυρο';
 import ΑναδυόμενοΠαράθυροΡυθμίσεων from '@/components/Modals/ΑναδυόμενοΠαράθυροΡυθμίσεων';
 import ΚείμενοΜικρήςΟθόνηςΣεΠαράθυρο from '@/components/Modals/ΚείμενοΜικρήςΟθόνηςΣεΠαράθυρο';
-import ΠλήκτροΡυθμίσεων from '@/components/Πλήκτρα/ΠλήκτροΡυθμίσεων';
+import ΠλήκτροΡυθμίσεων from '@/components/Κουμπιά/ΠλήκτροΡυθμίσεων';
 
 export const metadata = {
   title: 'ΔΜ',

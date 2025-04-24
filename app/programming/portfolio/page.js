@@ -4,7 +4,7 @@ import Image from 'next/image';
 import ΠλαίσιοΜορφήςΧαρτοφυλακίου from '@/components/ΠλαίσιοΜορφήςΧαρτοφυλακίου';
 import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής';
 import ΚείμενοΤίτλοςΜικρήςΟθόνης from '@/components/Κείμενα/ΚείμενοΤίτλοςΜικρήςΟθόνης';
-import ΠλήκτροΚειμένουΜικρήςΟθόνης from '@/components/Πλήκτρα/ΠλήκτρΚειμένουΜικρήςΟθόνης';
+import ΠλήκτροΚειμένουΜικρήςΟθόνης from '@/components/Πλήκτρα/ΠλήκτροΚειμένουΜικρήςΟθόνης';
 import Τίτλος from '@/components/Τίτλος';
 import Μετάφραση from '@/components/Μετάφραση';
 

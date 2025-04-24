@@ -3,7 +3,7 @@ import styles from './Κεφαλίδα.module.css';
 import LanguagesDropdown from '../LanguagesDropdown';
 // import Λογότυπο from '@/components/Λογότυπο';
 import Link from 'next/link';
-import ΠλήκτροΡυθμίσεων from '@/components/Πλήκτρα/ΠλήκτροΡυθμίσεων';
+import ΠλήκτροΡυθμίσεων from '@/components/Κουμπιά/ΠλήκτροΡυθμίσεων';
 
 const Κεφαλίδα = () => {
   return (
@@ -30,7 +30,11 @@ const Κεφαλίδα = () => {
           </svg>
         </Link>
       </div>
-      <div className={styles['περιέκτης-πλήκτρου-ρυθμίσεων-κεφαλίδας-προγραμματισμού']}>
+      <div
+        className={
+          styles['περιέκτης-πλήκτρου-ρυθμίσεων-κεφαλίδας-προγραμματισμού']
+        }
+      >
         <ΠλήκτροΡυθμίσεων />
       </div>
       <nav className={styles['γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού']}>
