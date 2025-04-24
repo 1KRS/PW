@@ -3,7 +3,7 @@ import styles from './page.module.css';
 import Τίτλος from '@/components/Τίτλος';
 import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής';
 import ΚείμενοΤίτλοςΜικρήςΟθόνης from '@/components/Κείμενα/ΚείμενοΤίτλοςΜικρήςΟθόνης';
-import ΠλήκτροΚειμένουΜικρήςΟθόνης from '@/components/Πλήκτρα/ΠλήκτροΚειμένουΜικρήςΟθόνης';
+import ΠλήκτροΚειμένουΜικρήςΟθόνης from '@/components/Κουμπιά/ΠλήκτροΚειμένουΜικρήςΟθόνης';
 
 export const metadata = {
   title: 'ΔΜ - Υπηρεσίες',
