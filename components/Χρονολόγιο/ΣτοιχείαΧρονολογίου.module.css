@@ -347,10 +347,10 @@
   justify-content: end;
 }
 .πληροφορίες-δευτερεύουσας-γραμμής.περιττή {
-  flex-direction: row-reverse;
-}
-.πληροφορίες-δευτερεύουσας-γραμμής.περιττή {
   flex-direction: row;
+}
+.πληροφορίες-δευτερεύουσας-γραμμής.άρτια {
+  flex-direction: row-reverse;
 }
 
 /* Σύνδεσμοι*/
