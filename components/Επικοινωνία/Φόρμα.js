@@ -2,6 +2,8 @@
 
 import styles from './Φόρμα.module.css';
 
+import { useRef } from 'react';
+
 import Input from '@/components/Επικοινωνία/Inputs/Input';
 import Textarea from '@/components/Επικοινωνία/Inputs/Textarea';
 
@@ -11,8 +13,8 @@ import { useState } from 'react';
 import { μετάφραση } from '@/utils/μετάφραση';
 
 const Form = ({ id }) => {
-  const [loading, setLoading] = useState(false);
-  const [successMessage, setSuccessMessage] = useState('');
+  const [φόρτωση, setΦόρτωση] = useState(false);
+  const [μήνυμαΕπιτυχίας, setΜήνυμαΕπιτυχίας] = useState('');
   const [ονοματεπώνυμο, setΟνοματεπώνυμο] = useState('');
   const [ηΤαχυδρομείο, setΗΤαχυδρομείο] = useState('');
   const [αριθμός, setΑριθμός] = useState('');
@@ -20,6 +22,8 @@ const Form = ({ id }) => {
   const [κείμενο, setΚείμενο] = useState('');
 
   const { language } = useAppContext();
+
+  const formRef = useRef(null);
 
   // 👇 Λήψη όλων των τιμών της φόρμας
   const χειρισμόςΟνοματεπώνυμου = (e) => {
@@ -43,12 +47,12 @@ const Form = ({ id }) => {
     e.preventDefault();
 
     // Αποτροπή διπλής υποβολής
-    if (loading) {
+    if (φόρτωση) {
       return;
     }
 
-    setLoading(true);
-    setSuccessMessage('');
+    setΦόρτωση(true);
+    setΜήνυμαΕπιτυχίας('');
 
     await fetch('/api/emails', {
       method: 'POST',
@@ -61,15 +65,27 @@ const Form = ({ id }) => {
       }),
     });
 
-    setLoading(false);
-    setSuccessMessage(μετάφραση('Το μήνυμα εστάλη', language));
+    setΦόρτωση(false);
+    setΜήνυμαΕπιτυχίας(μετάφραση('Το μήνυμα εστάλη', language));
 
-    // ❗️ Επαναφορά των τιμών της φόρμας μετά από επιτυχή υποβολή
-    // form.reset();
+    // ❗️ Επαναφορά των τιμών της φόρμας και του πλήκτρου αποστολής μετά από επιτυχή υποβολή
+    setTimeout(() => {
+      if (formRef.current) {
+        formRef.current.reset();
+      }
+
+      setΜήνυμαΕπιτυχίας('');
+    }, [4000]);
   };
 
   return (
-    <form action="" onSubmit={onSubmit} className={styles['φόρμα']} id={id}>
+    <form
+      action=""
+      ref={formRef}
+      onSubmit={onSubmit}
+      className={styles['φόρμα']}
+      id={id}
+    >
       <div className={styles['ομάδα-πεδίων']}>
         <div className={styles['περιέκτης-πεδίου']}>
           <Input
@@ -125,9 +141,9 @@ const Form = ({ id }) => {
         </div>
         <Input
           type="submit"
-          style={successMessage ? 'πλήκτρο-επιτυχίας' : 'πλήκτρο'}
-          value={successMessage ? successMessage : 'Αποστολή Μηνύματος'}
-          disabled={loading}
+          style={μήνυμαΕπιτυχίας ? 'πλήκτρο-επιτυχίας' : 'πλήκτρο'}
+          value={μήνυμαΕπιτυχίας ? μήνυμαΕπιτυχίας : 'Αποστολή Μηνύματος'}
+          disabled={φόρτωση}
           onSubmit={onSubmit}
         />
       </div>
