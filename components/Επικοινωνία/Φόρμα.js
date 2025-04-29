@@ -73,7 +73,9 @@ const Form = ({ id }) => {
       if (formRef.current) {
         formRef.current.reset();
       }
+    }, [1000]);
 
+    setTimeout(() => {
       setΜήνυμαΕπιτυχίας('');
     }, [4000]);
   };
