@@ -33,7 +33,6 @@
     align-items: center;
     height: 100%;
     z-index: 150;
-    border: 1px solid red;
   }
 
   .στοιχεία {
@@ -44,7 +43,6 @@
     height: fit-content;
     width: calc(3.5vh + 2.5vh);
     padding: 15px;
-    /* margin: 10px 0; */
     gap: 1.5vh;
     list-style: none;
     transition: 0.3s ease-in;
