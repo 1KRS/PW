@@ -5,15 +5,16 @@
   transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
   overflow: hidden;
 }
+.αρχική-ρύθμιση-διαστάσεων {
+  display: block;
+}
 .διαστάσεις-από-έξω {
   height: 100%;
   width: 100%;
 }
 .διαστάσεις-από-μέσα {
   display: inline-block;
-  
 }
-
 
 /* ================================================ */
 @media (min-width: 480px) {
@@ -39,7 +40,6 @@
     display: none;
   }
 }
-
 
 /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
 
@@ -90,4 +90,3 @@
 .ακτίνα-γωνίας-35 {
   border-radius: 35px;
 }
-
