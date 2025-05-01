@@ -475,7 +475,6 @@
     font-size: 3.5vh;
     width: var(--στοιχείο-αριστερόστροφης-ταινίας-κύλισης);
     height: calc(var(--στοιχείο-αριστερόστροφης-ταινίας-κύλισης) / 2);
-    /* background-color: var(--second-bg-color-blurred); */
     background-color: transparent;
     border: 1px solid var(--main-color);
     border-radius: 10px;
@@ -871,6 +870,12 @@
 }
 /* ================================================ */
 @media (min-width: 1366px) {
+}
+/* ================================================ */
+@media (max-height: 900px) {
+  .περιέκτης-προς-αριστερά .στοιχείο {
+    height: fit-content;
+  }
 }
 
 @keyframes scrollLeft {
