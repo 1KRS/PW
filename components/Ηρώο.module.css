@@ -37,6 +37,7 @@
   display: flex;
   align-items: center;
   gap: 1.5vw;
+  z-index: 150;
 }
 
 .βασικό-πλήκτρο,
