@@ -107,7 +107,7 @@ export const έννοιες = [
   {
     ελληνικά: "Αριθμός Τηλεφώνου (για iMessage, Viber, What's App κ.λπ)",
     αγγλικά: "Phone Number (for iMessage, Viber, What's App etc",
-    σουηδικά: "Telefonnummer (för iMessage, Viber, WhatsApp, etc.)",
+    σουηδικά: 'Telefonnummer (för iMessage, Viber, WhatsApp, etc.)',
   },
   { ελληνικά: 'Αρχική Σελίδα', αγγλικά: 'Home Page', σουηδικά: 'Hemsida' },
   {
@@ -680,7 +680,7 @@ export const έννοιες = [
     αγγλικά:
       'In the second Panhellenic Exams, I managed to pass the Technical University of Crete, but I also chose not to go.',
     σουηδικά:
-      'I det andra panhelleniska provet lyckades jag gå vidare till yrkeshögskolan vid universitetet på Kreta, men jag valde också att inte gå.',
+      'I det andra Panhelleniska provet lyckades jag gå vidare till yrkeshögskolan vid universitetet på Kreta, men jag valde också att inte gå.',
   },
   { ελληνικά: 'Συμβουλευτική', αγγλικά: 'Consulting', σουηδικά: 'Konsultera' },
   {
@@ -841,5 +841,47 @@ export const έννοιες = [
     ελληνικά: 'React Native 2023',
     αγγλικά: 'React Native 2023',
     σουηδικά: 'React Native 2023',
+  },
+  // ΣΕΛΙΔΕΣ
+  // Σχετικά με αυτόν τον Ιστότοπο //
+  {
+    ελληνικά:
+      'Καλωσορίσατε στον προσωπικό μου ιστότοπο, ένα έργο που αντικατοπτρίζει το πάθος μου για την ανάπτυξη σύγχρονων και καινοτόμων διαδικτυακών εφαρμογών.',
+    αγγλικά:
+      'Welcome to my personal website, a project that reflects my passion for developing modern and innovative web applications.',
+    σουηδικά:
+      'Välkommen till min personliga webbplats, ett projekt som återspeglar min passion för att utveckla moderna och innovativa webbapplikationer.',
+  },
+  {
+    ελληνικά:
+      'Ο ιστότοπος έχει σχεδιαστεί και αναπτυχθεί εξ ολοκλήρου από εμένα, χρησιμοποιώντας το πανίσχυρο πλαίσιο NextJS, με απώτερο στόχο την επίδειξη των ικανοτήτων μου με τον ευκολότερο και ταχύτερο δυνατό τρόπο.',
+    αγγλικά:
+      'The website has been designed and developed entirely by me, using the powerful NextJS framework, with the ultimate goal of demonstrating my skills in the easiest and fastest way possible.',
+    σουηδικά:
+      'Webbplatsen har designats och utvecklats helt av mig, med hjälp av det kraftfulla NextJS-ramverket, med det yttersta målet att visa mina färdigheter på det enklaste och snabbaste sättet.',
+  },
+  {
+    ελληνικά:
+      'Αυτό έγινε προσπάθεια να επιτευχθεί μέσω μιας εξαιρετικής εμπειρίας χρήστη και την βέλτιστη απόδοση. Για παράδειγμα ένα από αυτά που ξεχωρίζουν στον ιστότοπο είναι η πλήρως δυναμική του φύση. Κάθε στοιχείο, από το διαδραστικό χρονολόγιο μέχρι και την μετάφραση και του μικρότερου κειμένου, τροφοδοτείται δυναμικά από προσεκτικά σχεδιασμένες βάσεις δεδομένων.',
+    αγγλικά:
+      'This was attempted to be achieved through an excellent user experience and optimal performance. For example, one of the things that stands out about the site is its fully dynamic nature. Every element, from the interactive timeline to the translation of even the smallest text, is dynamically powered by carefully designed databases.',
+    σουηδικά:
+      'Detta försökte uppnås genom en utmärkt användarupplevelse och optimal prestanda. Till exempel är en av de saker som sticker ut med webbplatsen dess helt dynamiska natur. Varje element, från den interaktiva tidslinjen till översättningen av även den minsta text, drivs dynamiskt av noggrant utformade databaser.',
+  },
+  {
+    ελληνικά:
+      'Ακόμη πιο συγκεκριμένα όσον αφορά την μετάφραση ιδιαίτερη έμφαση έχει δοθεί στην πολυγλωσσική υποστήριξη, με ένα προσαρμοσμένο σύστημα μετάφρασης που αναπτύχθηκε εκ του μηδενός, εξασφαλίζοντας άψογη λειτουργία χωρίς εξάρτηση από εξωτερικές υπηρεσίες.',
+    αγγλικά:
+      'Even more specifically, regarding translation, special emphasis has been placed on multilingual support, with a customized translation system developed from scratch, ensuring flawless operation without dependence on external services.',
+    σουηδικά:
+      'Ännu mer specifikt, när det gäller översättning, har särskild vikt lagts vid flerspråkigt stöd, med ett anpassat översättningssystem som utvecklats från grunden, vilket säkerställer felfri drift utan beroende av externa tjänster.',
+  },
+  {
+    ελληνικά:
+      'Οι προσεγγίσεις αυτές αποδεικνύουν όχι μόνο την τεχνική μου κατάρτιση, αλλά και την προσήλωσή μου στη δημιουργία εξατομικευμένων λύσεων που ανταποκρίνονται πλήρως στις ανάγκες του κάθε έργου. Αν αναζητάτε έναν συνεργάτη με βασικό του στόχο την συνεχή του εξέλιξη, ώστε να μπορεί να μετατρέψει το όραμά σας σε πραγματικότητα, είμαι εδώ για να συζητήσουμε το επόμενό σας έργο ή ιδέα.',
+    αγγλικά:
+      'These approaches demonstrate not only my technical training, but also my dedication to creating customized solutions that fully meet the needs of each project. If you are looking for a partner whose main goal is continuous development, so that he can turn your vision into reality, I am here to discuss your next project or idea.',
+    σουηδικά:
+      'Dessa tillvägagångssätt visar inte bara min tekniska utbildning, utan också mitt engagemang för att skapa skräddarsydda lösningar som helt uppfyller behoven i varje projekt. Om du letar efter en partner vars huvudmål är kontinuerlig utveckling, så att de kan förverkliga din vision, är jag här för att diskutera ditt nästa projekt eller din idé.',
   },
 ];
