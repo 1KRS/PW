@@ -104,6 +104,11 @@ export const έννοιες = [
     αγγλικά: 'Phone Number',
     σουηδικά: 'Telefonnummer',
   },
+  {
+    ελληνικά: "Αριθμός Τηλεφώνου (για iMessage, Viber, What's App κ.λπ)",
+    αγγλικά: "Phone Number (for iMessage, Viber, What's App etc",
+    σουηδικά: "Telefonnummer (för iMessage, Viber, WhatsApp, etc.)",
+  },
   { ελληνικά: 'Αρχική Σελίδα', αγγλικά: 'Home Page', σουηδικά: 'Hemsida' },
   {
     ελληνικά: 'Αυτοκινητοβιομηχανία',
