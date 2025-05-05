@@ -1,4 +1,4 @@
-.todos {
+.εκκρεμότητες {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +7,7 @@
   padding-left: 150px;
 }
 
-.todos-container {
+.περιέκτης-εκκρεμοτήτων {
   position: absolute;
   top: 26vh;
   height: 63vh;
