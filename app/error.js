@@ -10,13 +10,13 @@ const Error = () => {
   return (
     <div className={styles['error']}>
       <ΔυαδικήΒροχή screenType="error" fontSize="14" speed="60" />
-      <div className={styles.container}>
+      <div className={styles.περιέκτης}>
         <h1>500</h1>
-        <div className={styles.text}>
+        <div className={styles.κείμενο}>
           <h2>
             <Μετάφραση>Κάποιο λάθος προέκυψε</Μετάφραση>
           </h2>
-          <Link href="/programming" className={styles.btn}>
+          <Link href="/programming" className={styles.πλήκτρο}>
             <Μετάφραση>Επιστροφή στην αρχική σελίδα</Μετάφραση>
           </Link>
         </div>
