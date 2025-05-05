@@ -7,7 +7,7 @@ import { προςΥλοποίηση } from '@/db/προςΥλοποίηση';
 
 import { μετάφραση } from '@/utils/μετάφραση';
 
-const TodoItems = () => {
+const Εκκρεμότητες = () => {
   const εναπομείνασεςΚρίσιμεςΕκκρεμότητες = προςΥλοποίηση
     .filter((todo) => todo.τομέας === 'Προγραμματισμός')
     .filter((todo) => todo.ολοκλήρωση === false)
@@ -77,4 +77,4 @@ const TodoItems = () => {
     </>
   );
 };
-export default TodoItems;
+export default Εκκρεμότητες;
