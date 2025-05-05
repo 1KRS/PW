@@ -1,10 +1,10 @@
-.container {
+.περιέκτης {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: space-around;
   text-align: center;
-  width: 55vw;
+  width: 95vw;
   height: 55vh;
   color: var(--main-color);
   font-size: 6rem;
@@ -30,7 +30,7 @@
   );
 }
 
-.container h1 {
+.περιέκτης h1 {
   font-size: 8vw;
   margin-bottom: 5vh;
 }
@@ -38,20 +38,20 @@
 /* .text {
   margin-bottom: 15vh;
   } */
-.container h2 {
-  font-size: 3vw;
+.περιέκτης h2 {
+  font-size: 5vw;
 }
-.container p {
+.περιέκτης p {
   font-size: 1rem;
 }
 
-.btn {
+.πλήκτρο {
   display: inline-block;
   padding: 1vh 2.8vw;
   background: var(--main-color);
   box-shadow: 0 0 25px var(--main-color);
   margin-bottom: 2vh;
-  font-size: clamp(0.6rem, 1vw, 1rem);
+  font-size: clamp(0.6rem, 3vw, 1rem);
   text-wrap: wrap;
   font-weight: 600;
   color: black;
@@ -62,9 +62,44 @@
   transition: 0.3s ease-in-out;
 }
 
-.btn:hover {
+.πλήκτρο:hover {
   transform: scale(1.05) translateY(-5px);
   background: var(--main-color);
   color: white;
   box-shadow: 0 0 50px var(--main-color);
+}
+
+/* ================================================ */
+@media (min-width: 480px) {
+}
+/* ================================================ */
+@media (min-width: 768px) {
+  .περιέκτης {
+    width: 80vw;
+  }
+
+  .περιέκτης h2 {
+    font-size: 4vw;
+  }
+
+  .πλήκτρο {
+    font-size: clamp(0.6rem, 2vw, 1rem);
+  }
+}
+/* ================================================ */
+@media (min-width: 1024px) {
+  .περιέκτης {
+    width: 55vw;
+  }
+
+  .περιέκτης h2 {
+    font-size: 3vw;
+  }
+
+  .πλήκτρο {
+    font-size: clamp(0.6rem, 3vw, 1rem);
+  }
+}
+/* ================================================ */
+@media (min-width: 1366px) {
 }
