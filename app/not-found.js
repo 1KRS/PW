@@ -8,13 +8,13 @@ const NotFound = () => {
   return (
     <div className={styles['not-found']}>
       <ΔυαδικήΒροχή screenType="not-found" fontSize="14" speed="60" />
-      <div className={styles.container}>
+      <div className={styles.περιέκτης}>
         <h1>404</h1>
-        <div className={styles.text}>
+        <div className={styles.κείμενο}>
           <h2>
             <Μετάφραση>Η σελίδα δεν βρέθηκε</Μετάφραση>
           </h2>
-          <Link href="/programming" className={styles.btn}>
+          <Link href="/programming" className={styles.πλήκτρο}>
             <Μετάφραση>Επιστροφή στην αρχική σελίδα</Μετάφραση>
           </Link>
         </div>
