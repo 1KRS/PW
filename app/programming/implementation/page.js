@@ -3,7 +3,7 @@ import TodoItems from '@/components/TodoItems';
 import Τίτλος from '@/components/Τίτλος';
 import ProgrammingTimelineSideNav from '@/components/Navigations/ΠλαϊνήΣτήληΧρονολογίουΠρογραμματισμού';
 
-const Implementation = () => {
+const ΣελίδαΥλοποίησης = () => {
   return (
     <>
       <main className={styles.main}>
@@ -12,8 +12,8 @@ const Implementation = () => {
           σελίδα="Προς υλοποίηση"
           ύπαρξηΦίλτρων="ανύπαρκτα"
         />
-        <section className={styles.todos} id="todos">
-          <div className={styles['todos-container']}>
+        <section className={styles.εκκρεμότητες} id="τομέας-εκκρεμοτήτων">
+          <div className={styles['περιέκτης-εκκρεμοτήτων']}>
             <TodoItems />
           </div>
         </section>
@@ -22,4 +22,4 @@ const Implementation = () => {
   );
 };
 
-export default Implementation;
+export default ΣελίδαΥλοποίησης;
