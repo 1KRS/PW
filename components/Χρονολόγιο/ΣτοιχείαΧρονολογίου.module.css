@@ -344,7 +344,7 @@
 /* ΠΛΗΡΟΦΟΡΙΕΣ ΔΕΥΤΕΡΕΥΟΥΣΑΣ ΓΡΑΜΜΗΣ */
 .πληροφορίες-δευτερεύουσας-γραμμής {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .πληροφορίες-δευτερεύουσας-γραμμής.περιττή {
   flex-direction: row;
