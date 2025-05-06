@@ -428,24 +428,21 @@
 }
 
 /* Εικονίδια δευτερεύουσας γραμμής */
-.περιέκτης-εικονιδίων {
+.περιέκτης-εικονιδίων-δευτερεύουσας-γραμμής {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: min(2.5vw, 8px);
-  padding-bottom: 0;
 }
 
-.περιέκτης-εικονιδίων:hover {
+.περιέκτης-εικονιδίων-δευτερεύουσας-γραμμής:hover {
   font-size: 0;
-  padding-bottom: 2px;
 }
 
-.περιέκτης-εικονιδίων:hover::after {
+.περιέκτης-εικονιδίων-δευτερεύουσας-γραμμής:hover::after {
   content: attr(data-types-icon);
   font-size: 10px;
   text-align: end;
-  padding-bottom: 2px;
 }
 
 .εικονίδιο-δευτερεύουσας-γραμμής {
@@ -1161,18 +1158,18 @@
   }
 
   /* Εικονίδια δευτερεύουσας γραμμής */
-  .περιέκτης-εικονιδίων {
+  .περιέκτης-εικονιδίων-δευτερεύουσας-γραμμής {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.3vh;
   }
 
-  .περιέκτης-εικονιδίων:hover {
+  .περιέκτης-εικονιδίων-δευτερεύουσας-γραμμής:hover {
     font-size: 0;
   }
 
-  .περιέκτης-εικονιδίων:hover::after {
+  .περιέκτης-εικονιδίων-δευτερεύουσας-γραμμής:hover::after {
     content: attr(data-types-icon);
     font-size: 1.3vh;
     text-align: end;
