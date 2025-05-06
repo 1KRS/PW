@@ -73,13 +73,14 @@
 }
 
 .τελεία-γεγονότος {
+  --ύψος-τελείας: max(1.3vw, 25px);
   position: relative;
-  height: max(1.3vw, 25px);
+  top: calc(50% - (var(--ύψος-τελείας) / 2));
+  left: calc(100% + 15px - 5px + 1px);
+  height: var(--ύψος-τελείας);
   width: 10px;
   background-color: var(--second-bg-color);
   box-shadow: 0 0 25px var(--main-color) 0 0 50px var(--main-color);
-  top: calc(50%);
-  left: calc(100% + 15px - 5px + 1px);
   border: max(0.3vw, 2px) solid var(--main-color);
   border-radius: 50px;
 }
@@ -272,15 +273,16 @@
 }
 
 .περιττή-επάνω-γραμμή-χρονολογίου .περιττός-μήνας-γεγονότος-χρονολογίου {
-  padding: 0 3px 0 0;
+  padding: 0;
 }
 
 .άρτια-επάνω-γραμμή-χρονολογίου .άρτιος-μήνας-γεγονότος-χρονολογίου {
-  padding: 0 3px 0 0;
+  padding: 0 0 2px;
 }
 
 .έτος-γεγονότος-χρονολογίου {
   font-size: min(4.5vw, 30px);
+  padding-bottom: 2px;
 }
 
 .περιττή-επάνω-γραμμή-χρονολογίου .color-normal,
@@ -584,6 +586,8 @@
   transition: 0.5s ease-in-out;
 }
 
+
+
 .tech-1,
 .tech-2,
 .tech-3 {
@@ -805,7 +809,6 @@
     width: 1.3vw;
     background-color: var(--second-bg-color);
     box-shadow: 0 0 25px var(--main-color) 0 0 50px var(--main-color);
-    top: calc(50% - 0.5vw);
     left: calc(50% - 0.5vw);
     border: 0.3vw solid var(--main-color);
     border-radius: 50px;
@@ -1009,15 +1012,16 @@
   }
 
   .περιττή-επάνω-γραμμή-χρονολογίου .περιττός-μήνας-γεγονότος-χρονολογίου {
-    padding: 0 3px 0 0;
+    padding: 0;
   }
 
   .άρτια-επάνω-γραμμή-χρονολογίου .άρτιος-μήνας-γεγονότος-χρονολογίου {
-    padding: 0 3px 2px 0;
+    padding: 0 0 2px;
   }
 
   .έτος-γεγονότος-χρονολογίου {
     font-size: max(1.75vw, 30px);
+    padding-bottom: 2px;
   }
 
   .περιττή-επάνω-γραμμή-χρονολογίου .color-normal,
@@ -1245,7 +1249,6 @@
     height: var(--icons-container-length);
     top: 0;
     left: 0;
-    padding: 5px 0 0 0;
     border-right: 2px dotted var(--main-color);
     border-top-left-radius: 28px;
     border-bottom-left-radius: 28px;
@@ -1255,7 +1258,6 @@
     height: var(--icons-container-length);
     top: 0;
     left: calc(100% - var(--icons-container-width));
-    padding: 5px 0 0 0;
     border-left: 2px dotted var(--main-color);
     border-top-right-radius: 28px;
     border-bottom-right-radius: 28px;
