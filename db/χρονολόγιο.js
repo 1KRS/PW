@@ -815,7 +815,7 @@ export const χρονολόγιο = [
     },
     έργο: {
       τίτλοςΈργου: 'Προσωπικός Ιστότοπος',
-      ιστότοποςΈργου: 'www.d-man.dev/programming',
+      ιστότοποςΈργου: 'http://www.d-man.dev/programming',
     },
     τεχνολογίες: [
       'VSC',
