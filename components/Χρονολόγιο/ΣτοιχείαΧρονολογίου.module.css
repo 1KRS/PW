@@ -517,7 +517,6 @@
   height: 100%;
   top: 0;
   left: 0;
-  padding: 5px 0 0 0;
   border-right: 2px dotted var(--main-color);
   border-top-left-radius: 27px;
   border-bottom-left-radius: 27px;
@@ -527,7 +526,6 @@
   height: 100%;
   top: 0;
   left: 0;
-  padding: 5px 0 0 0;
   border-left: 2px dotted var(--main-color);
   border-top-right-radius: 27px;
   border-bottom-right-radius: 27px;
