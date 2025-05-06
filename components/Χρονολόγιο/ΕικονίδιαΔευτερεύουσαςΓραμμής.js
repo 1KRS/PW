@@ -14,7 +14,7 @@ const SecondaryLineIcons = ({ είδος, τοποθεσία }) => {
 
   return (
     <div
-      className={styles['περιέκτης-εικονιδίων']}
+      className={styles['περιέκτης-εικονιδίων-δευτερεύουσας-γραμμής']}
       data-types-icon={μετάφραση(τοποθεσία, language)}
     >
       {τοποθεσία === 'Απομακρυσμένα' ? (
