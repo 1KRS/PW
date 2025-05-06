@@ -515,8 +515,8 @@
   top: 0;
   left: 0;
   border-right: 2px dotted var(--main-color);
-  border-top-left-radius: 27px;
-  border-bottom-left-radius: 27px;
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
 }
 
 .icons-container-left {
@@ -524,8 +524,8 @@
   top: 0;
   left: 0;
   border-left: 2px dotted var(--main-color);
-  border-top-right-radius: 27px;
-  border-bottom-right-radius: 27px;
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
 }
 
 .περιεχόμενο-γεγονότος1:hover.με-κείμενο.παρατημένο .icons-container-left,
