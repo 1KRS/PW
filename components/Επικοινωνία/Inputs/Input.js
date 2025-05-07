@@ -1,6 +1,6 @@
 'use client';
 
-import styles from '@/components/Επικοινωνία/Φόρμα.module.css';
+import styles from '@/components/Επικοινωνία/ΦόρμεςΚαιΠεδία.module.css';
 import { useAppContext } from '@/context/AppContext';
 import { μετάφραση } from '@/utils/μετάφραση';
 
@@ -10,14 +10,19 @@ const Input = ({
   style,
   value,
   placeholder,
+  κίνησηΑιώρησης, // Τιμές: "προς-επάνω" / "προς-κάτω" / "προς-δεξιά" / "προς-αριστερά" / "επιτόπια"
   χειρισμόςΠληκτρισμού,
   onSubmit,
   required,
   children,
 }) => {
-  const { language, μορφήΣτοιχείων, φέγγοςΟρίων, φέγγοςΣτοιχείων } = useAppContext();
+  const { language, μορφήΣτοιχείων, φέγγοςΟρίων, φέγγοςΣτοιχείων } =
+    useAppContext();
 
-  return style === 'πλήκτρο' || style === 'πλήκτρο-επιτυχίας' ? (
+  return style === 'πλήκτρο' ||
+    style === 'βασικό-πλήκτρο' ||
+    style === 'δευτερεύον-πλήκτρο' ||
+    style === 'πλήκτρο-επιτυχίας' ? (
     <button
       id={id}
       type={type}
@@ -30,7 +35,11 @@ const Input = ({
         ' ' +
         styles[`${φέγγοςΟρίων === true ? 'με-φέγγος-ορίων' : ''}`] +
         ' ' +
-        styles[`${φέγγοςΣτοιχείων === true ? 'με-φέγγος-στοιχείων' : ''}`]
+        styles[`${φέγγοςΣτοιχείων === true ? 'με-φέγγος-στοιχείων' : ''}`] +
+        ' ' +
+        styles[
+          `${κίνησηΑιώρησης !== 'επιτόπια' ? `αιώρηση-${κίνησηΑιώρησης}` : 'αιώρηση-επιτόπια'}`
+        ]
       }
       onSubmit={(e) => onSubmit(e)}
     >
