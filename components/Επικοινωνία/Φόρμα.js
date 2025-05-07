@@ -1,9 +1,10 @@
 'use client';
 
-import styles from './Φόρμα.module.css';
+import styles from './ΦόρμεςΚαιΠεδία.module.css';
 
 import { useRef } from 'react';
 
+import ΚοινόΠλήκτρο from '@/components/Κουμπιά/ΚοινόΠλήκτρο';
 import Input from '@/components/Επικοινωνία/Inputs/Input';
 import Textarea from '@/components/Επικοινωνία/Inputs/Textarea';
 
@@ -141,10 +142,12 @@ const Form = ({ id }) => {
             required
           />
         </div>
-        <Input
+        <ΚοινόΠλήκτρο
+          είδος="αποστολή"
           type="submit"
           style={μήνυμαΕπιτυχίας ? 'πλήκτρο-επιτυχίας' : 'πλήκτρο'}
           value={μήνυμαΕπιτυχίας ? μήνυμαΕπιτυχίας : 'Αποστολή Μηνύματος'}
+          κίνησηΑιώρησης="επιτόπια"
           disabled={φόρτωση}
           onSubmit={onSubmit}
         />
