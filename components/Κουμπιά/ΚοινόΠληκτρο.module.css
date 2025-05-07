@@ -40,6 +40,7 @@
 .πλήκτρο-επιτυχίας {
   background: var(--success);
   color: white;
+  box-shadow: 0 0 25px var(--success);
   cursor: default;
 }
 
