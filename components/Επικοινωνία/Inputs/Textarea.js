@@ -1,6 +1,6 @@
 'use client';
 
-import styles from '@/components/Επικοινωνία/Φόρμα.module.css';
+import styles from '@/components/Επικοινωνία/ΦόρμεςΚαιΠεδία.module.css';
 import { useAppContext } from '@/context/AppContext';
 import { μετάφραση } from '@/utils/μετάφραση';
 
