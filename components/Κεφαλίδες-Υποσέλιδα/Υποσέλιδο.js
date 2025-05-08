@@ -20,7 +20,7 @@ const Υποσέλιδο = () => {
             </Link>
             <SocialIcons />
             <Link
-              href="/programming/about-this-site"
+              href="/programming/about/me"
               className={styles.στοιχείο}
             >
               <Μετάφραση>Σχετικά</Μετάφραση>
