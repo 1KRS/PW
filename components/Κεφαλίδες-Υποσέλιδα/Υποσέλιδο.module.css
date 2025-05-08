@@ -66,6 +66,7 @@
     width: 100%;
     gap: 2.4rem;
     list-style: none;
+  
   }
 
   .home-bottom-nav .στοιχείο {
@@ -78,10 +79,12 @@
   }
 
   .home-bottom-nav .στοιχείο:hover,
-  .home-bottom-nav .στοιχείο:active {
+  .home-bottom-nav .στοιχείο:active,
+  .home-bottom-nav .στοιχείο:visited {
     color: var(--main-color);
-    border-bottom: 3px solid var(--main-color);
+    border-bottom: 2px solid gold;
     transform: scale(1.1);
+    text-decoration: none;
   }
 
   .υποσέλιδο .περιέκτης-πνευματικών-δικαιωμάτων {
