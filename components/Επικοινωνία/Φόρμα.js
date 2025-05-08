@@ -115,7 +115,7 @@ const Form = ({ id }) => {
             type="number"
             style="αριθμός-τηλεφώνου"
             name="phone-number"
-            placeholder="Αριθμός Τηλεφώνου (για iMessage, Viber, What's App κ.λπ)"
+            placeholder="Αριθμός Τηλεφώνου (για iMessage, Viber, WhatsApp κ.λπ)"
             χειρισμόςΠληκτρισμού={χειρισμόςΑριθμού}
             required
           />
