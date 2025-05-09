@@ -114,12 +114,16 @@ export const έννοιες = [
     σουηδικά: 'Telefonnummer',
   },
   {
-    ελληνικά: "Αριθμός Τηλεφώνου (για iMessage, Viber, WhatsApp κ.λπ)",
-    αγγλικά: "Phone Number (for iMessage, Viber, WhatsApp etc)",
+    ελληνικά: 'Αριθμός Τηλεφώνου (για iMessage, Viber, WhatsApp κ.λπ)',
+    αγγλικά: 'Phone Number (for iMessage, Viber, WhatsApp etc)',
     σουηδικά: 'Telefonnummer (för iMessage, Viber, WhatsApp, etc)',
   },
   { ελληνικά: 'Αρχική Σελίδα', αγγλικά: 'Home Page', σουηδικά: 'Hemsida' },
-  { ελληνικά: 'Ας μιλήσουμε', αγγλικά: "Let's talk", σουηδικά: 'Låt oss prata' },
+  {
+    ελληνικά: 'Ας μιλήσουμε',
+    αγγλικά: "Let's talk",
+    σουηδικά: 'Låt oss prata',
+  },
   {
     ελληνικά:
       'Αυτό έγινε προσπάθεια να επιτευχθεί μέσω μιας εξαιρετικής εμπειρίας χρήστη και την βέλτιστη απόδοση. Για παράδειγμα ένα από αυτά που ξεχωρίζουν στον ιστότοπο είναι η πλήρως δυναμική του φύση. Κάθε στοιχείο, από το διαδραστικό χρονολόγιο μέχρι και την μετάφραση και του μικρότερου κειμένου, τροφοδοτείται δυναμικά από προσεκτικά σχεδιασμένες βάσεις δεδομένων.',
@@ -405,6 +409,14 @@ export const έννοιες = [
     αγγλικά: 'The route does not exist!',
     σουηδικά: 'Rutten finns inte!',
   },
+  {
+    ελληνικά:
+      'Η μετάβασή μου αυτή ξεκίνησε με έντονη διάθεση για μάθηση και δημιουργικότητα, οδηγώντας με σήμερα στη θέση του Νεαρού Πλήρους-Εύρους Προγραμματιστή (Junior Full-Stack Developer).',
+    αγγλικά:
+      'My transition began with a strong desire for learning and creativity, leading me today to the position of Junior Full-Stack Developer.',
+    σουηδικά:
+      'Min övergång började med en stark längtan efter lärande och kreativitet, vilket idag ledde mig till tjänsten som Junior Full-Stack Utvecklare.',
+  },
   { ελληνικά: 'Η πόλη μου', αγγλικά: 'My city', σουηδικά: 'Min stad' },
   {
     ελληνικά: 'Η σελίδα δεν βρέθηκε',
@@ -440,19 +452,27 @@ export const έννοιες = [
   },
   {
     ελληνικά:
+      'Καθώς το βασικό μου ακαδημαϊκό υπόβαθρο είναι στην Πολιτική Μηχανική, η πορεία μου χαρακτηρίζεται από διαρκή εξέλιξη και προσαρμοστικότητα.',
+    αγγλικά:
+      'As my main academic background is in Civil Engineering, my career path is characterized by constant evolution and adaptability.',
+    σουηδικά:
+      'Eftersom min huvudsakliga akademiska bakgrund är inom väg- och vattenbyggnad, kännetecknas min karriärväg av ständig utveckling och anpassningsförmåga.',
+  },
+  {
+    ελληνικά:
+      'Καλώς ήλθατε! Ονομάζομαι Δημήτρης, κατάγομαι από την υπέροχη και ιστορική Ελλάδα και επί του παρόντος ζω και δραστηριοποιούμαι στην Σουηδία.',
+    αγγλικά:
+      'Welcome! My name is Dimitris, I come from the wonderful and historic Greece and I currently live and work in Sweden.',
+    σουηδικά:
+      'Välkomna! Mitt namn är Dimitris, jag kommer från det underbara och historiska Grekland och jag bor och arbetar för närvarande i Sverige.',
+  },
+  {
+    ελληνικά:
       'Καλωσορίσατε στον προσωπικό μου ιστότοπο, ένα έργο που αντικατοπτρίζει το πάθος μου για την ανάπτυξη σύγχρονων και καινοτόμων διαδικτυακών εφαρμογών.',
     αγγλικά:
       'Welcome to my personal website, a project that reflects my passion for developing modern and innovative web applications.',
     σουηδικά:
       'Välkommen till min personliga webbplats, ett projekt som återspeglar min passion för att utveckla moderna och innovativa webbapplikationer.',
-  },
-  {
-    ελληνικά:
-      'Κατανοώ ότι θέλεις να μάθεις περισσότερα για εμένα (Και γιατί όχι; Είμαι πολύ ενδιαφέρον άτομο. 😏) αλλά η ανάπτυξη αυτού του μέρους είναι ακόμη σε βασικό επίπεδο. Προς το παρόν μπορείς να απολαύσεις την πορεία μου στην ανάπτυξη ιστού και σύντομα θα έρθουν κι άλλα.',
-    αγγλικά:
-      "I understand that you would like to know more about me (And why not? I'm a very interesting person. 😏) but the development of this part is still at a basic level. At the moment you can enjoy my journey in web development and more will come soon.",
-    σουηδικά:
-      'Jag förstår att du vill veta mer om mig (Och varför inte? Jag är en väldigt intressant person. 😏) men utvecklingen av denna del är fortfarande på en grundläggande nivå. För nu kan du njuta av min resa inom webbutveckling och mer kommer snart.',
   },
   {
     ελληνικά: 'Κάποιο λάθος προέκυψε',
@@ -468,6 +488,14 @@ export const έννοιες = [
     ελληνικά: 'Καθαρισμός Φίλτρων',
     αγγλικά: 'Clear Filters',
     σουηδικά: 'Rensa Filter',
+  },
+  {
+    ελληνικά:
+      'Κατανοώ ότι θέλεις να μάθεις περισσότερα για εμένα (Και γιατί όχι; Είμαι πολύ ενδιαφέρον άτομο. 😏) αλλά η ανάπτυξη αυτού του μέρους είναι ακόμη σε βασικό επίπεδο. Προς το παρόν μπορείς να απολαύσεις την πορεία μου στην ανάπτυξη ιστού και σύντομα θα έρθουν κι άλλα.',
+    αγγλικά:
+      "I understand that you would like to know more about me (And why not? I'm a very interesting person. 😏) but the development of this part is still at a basic level. At the moment you can enjoy my journey in web development and more will come soon.",
+    σουηδικά:
+      'Jag förstår att du vill veta mer om mig (Och varför inte? Jag är en väldigt intressant person. 😏) men utvecklingen av denna del är fortfarande på en grundläggande nivå. För nu kan du njuta av min resa inom webbutveckling och mer kommer snart.',
   },
   {
     ελληνικά: 'Κατάσταση Αίτησης',
@@ -486,10 +514,20 @@ export const έννοιες = [
   },
   { ελληνικά: 'Λειτουργία', αγγλικά: 'Function', σουηδικά: 'Funktion' },
   // Μ //
-  { ελληνικά: 'Μάθε Περισσότερα', αγγλικά: 'Learn More', σουηδικά: 'Läs Mer' },
-  { ελληνικά: 'Μάθε περισσότερα', αγγλικά: 'Learn more', σουηδικά: 'Läs mer' },
+  { ελληνικά: 'Μάθε Περισσότερα', αγγλικά: 'Learn More', σουηδικά: 'Läs Mer' }, // Μεγάλα πρώτα γράμματα
+  { ελληνικά: 'Μάθε περισσότερα', αγγλικά: 'Learn more', σουηδικά: 'Läs mer' }, // Μικρά πρώτα γράμματα
   { ελληνικά: 'Μαρτυρίες', αγγλικά: 'Testimonials', σουηδικά: 'Vittnesmål' },
+  { ελληνικά: 'με Εμένα', αγγλικά: 'Me', σουηδικά: 'Mig' },
+  { ελληνικά: 'με Ιστότοπο', αγγλικά: 'this Website', σουηδικά: 'denna Webbplats' },
   { ελληνικά: 'Μετάφραση', αγγλικά: 'Translation', σουηδικά: 'Översättning' },
+  {
+    ελληνικά:
+      'Μετά από μια εξίσου δύσκολη περίοδο αλλαγών, μεταξύ πόλεων της Αγγλίας και της Σουηδίας, κατέληξα στην Στοκχόλμη, όπου ζω τα τελευταία τρία χρόνια, και όπου αποφάσισα να αλλάξω επαγγελματική κατεύθυνση στον κόσμο της τεχνολογίας, καθότι ήταν και μεγάλη επιθυμία μου όπως και απώτερός μου στόχος.',
+    αγγλικά:
+      'After an equally difficult period of change, between cities in England and Sweden, I ended up in Stockholm, where I have been living for the last three years, and where I decided to change my professional direction to the world of technology, as it was both my great desire and my ultimate goal.',
+    σουηδικά:
+      'Efter en lika svår period av förändring, mellan städer i England och Sverige, hamnade jag i Stockholm, där jag har bott de senaste tre åren, och där jag bestämde mig för att byta yrkesinriktning till teknikens värld, eftersom det var både min stora önskan och mitt yttersta mål.',
+  },
   {
     ελληνικά:
       'Μετά από προτάσεις βελτίωσης επισκεπτών γίνονται οι απαραίτητες αλλαγές στο χρονολόγιο. Οπότε προς το παρόν τα γεγονότα χρονολογίου είναι ορατά μόνο σε υπολογιστές. Σύντομα θα γίνουν προσβάσιμα και στις υπόλοιπες συσκευές. Ευχαριστώ για την κατανόηση.',
@@ -500,17 +538,26 @@ export const έννοιες = [
   },
   {
     ελληνικά:
-      'Μια υλοποίηση ενός ηλεκτρονικού καταστήματος εμπορίου μέσω δικτυακού εκπαιδευτικού βίντεο στο YT.',
+      'Μετά από σπουδές στην Ελλάδα και την Αγγλία, ακολούθησε μια δύσκολη περίοδος ανεύρεσης εργασίας, στην υπό οικονομική κρίση χώρα μου, η οποία με οδήγησε να φύγω εκ νέου στο εξωτερικό.',
     αγγλικά:
-      'An implementation of an e-commerce store via online video tutorial on YT.',
+      'After studying in Greece and England, a difficult period of finding work followed in my country, which was in economic crisis, which led me to go abroad again.',
     σουηδικά:
-      'En implementering av en e-handelsbutik via onlinevideohandledning på YT.',
+      'Efter studier i Grekland och England följde en svår period med att hitta arbete i mitt land, som befann sig i ekonomisk kris, vilket ledde till att jag åkte utomlands igen.',
   },
   {
     ελληνικά: 'Μηνιαία Δεδομένα',
     αγγλικά: 'Monthly Data',
     σουηδικά: 'Månadsdata',
   },
+  {
+    ελληνικά:
+      'Μια υλοποίηση ενός ηλεκτρονικού καταστήματος εμπορίου μέσω δικτυακού εκπαιδευτικού βίντεο στο YT.',
+    αγγλικά:
+      'An implementation of an e-commerce store via online video tutorial on YT.',
+    σουηδικά:
+      'En implementering av en e-handelsbutik via onlinevideohandledning på YT.',
+  },
+
   // Ν //
   { ελληνικά: 'Ναι', αγγλικά: 'Yes', σουηδικά: 'Ja' },
   { ελληνικά: 'Νεότερες', αγγλικά: 'Newest', σουηδικά: 'Nyaste' },
@@ -574,7 +621,6 @@ export const έννοιες = [
     σουηδικά:
       'För många förfrågningar från denna IP-adress, försök igen om 15 minuter.',
   },
-  { ελληνικά: 'Πίνακας', αγγλικά: 'Dashboard', σουηδικά: 'Instrumentbräda' },
   { ελληνικά: 'Παλαιότερες', αγγλικά: 'Oldest', σουηδικά: 'Äldst' },
   {
     ελληνικά: 'Πανεπιστήμιο Κρήτης',
@@ -591,6 +637,15 @@ export const έννοιες = [
     αγγλικά: 'Please Wait...',
     σουηδικά: 'Vänta Snäll...',
   },
+  {
+    ελληνικά:
+      'Παράλληλα, στοχεύω να διευρύνω τις γνώσεις μου στην Τεχνητή Νοημοσύνη (TN) και στις τεχνολογίες WEB3, με στόχο να συμβαδίζω με τις τεχνολογικές εξελίξεις και να προσφέρω καινοτόμες λύσεις. Η πορεία μου αποτυπώνει το πάθος για συνεχή βελτίωση και την επιθυμία να συμβάλλω ενεργά στον σύγχρονο ψηφιακό κόσμο.',
+    αγγλικά:
+      'At the same time, I aim to expand my knowledge in Artificial Intelligence (AI) and WEB3 technologies, with the aim of keeping up with technological developments and offering innovative solutions. My path reflects the passion for continuous improvement and the desire to actively contribute to the modern digital world.',
+    σουηδικά:
+      'Samtidigt strävar jag efter att utöka mina kunskaper inom Artificiell Intelligens (AI) och WEB3-teknik, med målet att hålla mig à jour med den tekniska utvecklingen och erbjuda innovativa lösningar. Min karriärväg återspeglar en passion för ständig förbättring och en önskan att aktivt bidra till den moderna digitala världen.',
+  },
+  { ελληνικά: 'Πίνακας', αγγλικά: 'Dashboard', σουηδικά: 'Instrumentbräda' },
   { ελληνικά: 'Πιστοποιητικό', αγγλικά: 'Certificate', σουηδικά: 'Intyg' },
   {
     ελληνικά: 'Πλήρες Όνομα',
@@ -656,6 +711,14 @@ export const έννοιες = [
   },
   { ελληνικά: 'Προηγούμενη', αγγλικά: 'Previous ', σουηδικά: 'Tidigare' },
   {
+    ελληνικά:
+      'Προς το παρόν εστιάζω κυρίως στην ανάπτυξη διαδικτυακών εφαρμογών, έχοντας αποκτήσει αρκετές γνώσεις και εμπειρία στη δημιουργία σύγχρονων ιστοτόπων και εφαρμογών ιστού.',
+    αγγλικά:
+      'Currently, I focus mainly on web application development, having gained considerable knowledge and experience in creating modern websites and web applications.',
+    σουηδικά:
+      'För närvarande fokuserar jag främst på webbapplikationsutveckling, efter att ha skaffat mig betydande kunskap och erfarenhet av att skapa moderna webbplatser och webbapplikationer.',
+  },
+  {
     ελληνικά: 'Προς Υλοποίηση',
     αγγλικά: 'To Be Implemented',
     σουηδικά: 'För Implementering',
@@ -686,6 +749,14 @@ export const έννοιες = [
     σουηδικά: 'Lägg Τill Jobb',
   },
   { ελληνικά: 'Πρόσληψη', αγγλικά: 'Hire Me', σουηδικά: 'Αnställ Mig' },
+  {
+    ελληνικά:
+      'Πρόσφατα, ανέπτυξα τον παρόντα ιστότοπο, για προσωπική χρήση, χρησιμοποιώντας το NextJS, ένα ισχυρό πλαίσιο (framework) React που μου επέτρεψε να παρουσιάσω τις δεξιότητές μου και τα έργα μου με επαγγελματικό τρόπο.',
+    αγγλικά:
+      'Recently, I developed this website, for personal use, using NextJS, a powerful React framework that allowed me to showcase my skills and projects in a professional manner.',
+    σουηδικά:
+      'Nyligen utvecklade jag den här webbplatsen, för personligt bruk, med hjälp av NextJS, ett kraftfullt React-ramverk som gjorde det möjligt för mig att visa upp mina färdigheter och projekt på ett professionellt sätt.',
+  },
   {
     ελληνικά: 'Προσωπικός Ιστότοπος',
     αγγλικά: 'Personal Website',
