@@ -5,6 +5,7 @@ import styles from './ΚοινόΠληκτρο.module.css';
 import Link from 'next/link';
 
 import { useAppContext } from '@/context/AppContext';
+import { usePathname } from 'next/navigation';
 import { μετάφραση } from '@/utils/μετάφραση';
 
 const BasicButton = ({
@@ -20,6 +21,14 @@ const BasicButton = ({
 }) => {
   const { language, μορφήΣτοιχείων, φέγγοςΟρίων, φέγγοςΣτοιχείων } =
     useAppContext();
+
+  const path = usePathname();
+
+  // const διεύθυνση =
+  //   σύνδεσμος === '/programming/about/me' ||
+  //   σύνδεσμος === '/programming/about/site'
+  //     ? '/programming/about'
+  //     : σύνδεσμος;
 
   return είδος === 'αποστολή' ? (
     <button
@@ -64,7 +73,9 @@ const BasicButton = ({
           κίνησηΑιώρησης !== 'επιτόπια'
             ? `αιώρηση-προς-${κίνησηΑιώρησης}`
             : 'αιώρηση-επιτόπια'
-        ]
+        ] +
+        ' ' +
+        styles[path.endsWith(σύνδεσμος) ? 'active' : '']
       }
     >
       {children}
