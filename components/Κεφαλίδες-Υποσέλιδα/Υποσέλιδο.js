@@ -10,7 +10,7 @@ import { usePathname } from 'next/navigation';
 
 import { στοιχείαΗμερομηνιών } from '@/utils/στοιχείαΗμερομηνιών';
 
-const Υποσέλιδο = () => {
+const Footer = () => {
   const path = usePathname();
 
   const { τρέχονΈτος } = στοιχείαΗμερομηνιών();
@@ -57,4 +57,4 @@ const Υποσέλιδο = () => {
     </footer>
   );
 };
-export default Υποσέλιδο;
+export default Footer;
