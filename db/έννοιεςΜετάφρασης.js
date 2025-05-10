@@ -395,6 +395,11 @@ export const έννοιες = [
     σουηδικά: 'Tillämpning av Glasmorfism',
   },
   {
+    ελληνικά: 'Έχω άλλη ερώτηση',
+    αγγλικά: 'I have another question',
+    σουηδικά: 'Jag har en annan fråga',
+  },
+  {
     ελληνικά: 'Έχω ερώτηση',
     αγγλικά: 'I have a question',
     σουηδικά: 'Jag har en fråga',
@@ -536,6 +541,11 @@ export const έννοιες = [
   // Μ //
   { ελληνικά: 'Μάθε Περισσότερα', αγγλικά: 'Learn More', σουηδικά: 'Läs Mer' }, // Μεγάλα πρώτα γράμματα
   { ελληνικά: 'Μάθε περισσότερα', αγγλικά: 'Learn more', σουηδικά: 'Läs mer' }, // Μικρά πρώτα γράμματα
+  {
+    ελληνικά: 'Μάθετε περισσότερα για εμένα',
+    αγγλικά: 'Learn more about me',
+    σουηδικά: 'Läs mer om mig',
+  },
   { ελληνικά: 'Μαρτυρίες', αγγλικά: 'Testimonials', σουηδικά: 'Vittnesmål' },
   { ελληνικά: 'με Εμένα', αγγλικά: 'Me', σουηδικά: 'Mig' },
   {
@@ -831,6 +841,16 @@ export const έννοιες = [
       'In the second Panhellenic Exams, I managed to pass the Technical University of Crete, but I also chose not to go.',
     σουηδικά:
       'I det andra Panhelleniska provet lyckades jag gå vidare till yrkeshögskolan vid universitetet på Kreta, men jag valde också att inte gå.',
+  },
+  {
+    ελληνικά: 'στις Μαρτυρίες',
+    αγγλικά: 'in Testimonials',
+    σουηδικά: 'i Vittnesmål',
+  },
+  {
+    ελληνικά: 'στο Χρονολόγιο',
+    αγγλικά: 'in Timeline',
+    σουηδικά: 'på Tidslinjen',
   },
   { ελληνικά: 'Συμβουλευτική', αγγλικά: 'Consulting', σουηδικά: 'Konsultera' },
   {
