@@ -1,4 +1,9 @@
 export const έννοιες = [
+  { ελληνικά: '1η', αγγλικά: '1st', σουηδικά: '1:a' },
+  { ελληνικά: '2η', αγγλικά: '2nd', σουηδικά: '2:a' },
+  { ελληνικά: '3η', αγγλικά: '3rd', σουηδικά: '3:a' },
+  { ελληνικά: '4η', αγγλικά: '4th', σουηδικά: '4:a' },
+  { ελληνικά: '5η', αγγλικά: '5th', σουηδικά: '5:a' },
   { ελληνικά: '', αγγλικά: '', σουηδικά: '' },
   { ελληνικά: 'el', αγγλικά: 'en', σουηδικά: 'swe' },
   { ελληνικά: 'gr', αγγλικά: 'uk', σουηδικά: 'se' },
@@ -17,12 +22,6 @@ export const έννοιες = [
   { ελληνικά: 'Μήνας', αγγλικά: 'Month', σουηδικά: 'Månad' },
   { ελληνικά: 'Μήνες', αγγλικά: 'Months', σουηδικά: 'Månader' },
   { ελληνικά: 'Έργα', αγγλικά: 'Projects', σουηδικά: 'Projekt' },
-  {
-    ελληνικά: 'Έλλειψη εξουσιοδότησης για  πρόσβαση σε αυτήν τη διαδρομή',
-    αγγλικά: 'Lack of authorization to access this path',
-    σουηδικά: 'Avsaknad av behörighet att komma åt den här sökvägen',
-  },
-  { ελληνικά: 'Έξοδος', αγγλικά: 'Logout', σουηδικά: 'Logga ut' },
   { ελληνικά: 'Ίσως', αγγλικά: 'Maybe', σουηδικά: 'Kanske' },
   { ελληνικά: 'Όλα', αγγλικά: 'All', σουηδικά: 'Allt' },
   { ελληνικά: 'Όνομα', αγγλικά: 'Name', σουηδικά: 'Namn' },
@@ -46,6 +45,11 @@ export const έννοιες = [
     σουηδικά: 'Ändra Diagram',
   },
 
+  {
+    ελληνικά: 'Ανάπτυξη αποκρισιμότητας ιστοτόπου',
+    αγγλικά: 'Website responsive development',
+    σουηδικά: 'Responsiv utveckling av webbplatser',
+  },
   {
     ελληνικά: 'Ανάπτυξη Εφαρμογών',
     αγγλικά: 'Application Development',
@@ -251,6 +255,12 @@ export const έννοιες = [
     ελληνικά: 'Εάν έχετε κάποιαν ερώτηση παρακαλώ επικοινωνήστε μαζί μου.',
     αγγλικά: 'If you have any questions please contact me.',
     σουηδικά: 'Om du har några frågor, vänligen kontakta mig.',
+  },
+  { ελληνικά: 'Έξοδος', αγγλικά: 'Logout', σουηδικά: 'Logga ut' },
+  {
+    ελληνικά: 'Έλλειψη εξουσιοδότησης για  πρόσβαση σε αυτήν τη διαδρομή',
+    αγγλικά: 'Lack of authorization to access this path',
+    σουηδικά: 'Avsaknad av behörighet att komma åt den här sökvägen',
   },
   { ελληνικά: 'ΕΠΙΣΤΡΟΦΗ', αγγλικά: 'RETURN', σουηδικά: 'LÄMNA TILLBAKA' },
   {
@@ -596,8 +606,10 @@ export const έννοιες = [
   {
     ελληνικά:
       'Ο νέος μου προσωπικός ιστότοπος αναπτυγμένος εκ του μηδενός σε NextJS.',
-    αγγλικά: 'My new personal website developed from scratch in NextJS.',
-    σουηδικά: 'Min nya personliga hemsida utvecklad från grunden i NextJS.',
+    αγγλικά:
+      'My new personal website developed completely from scratch in NextJS.',
+    σουηδικά:
+      'Min nya personliga webbplats utvecklades helt från grunden i NextJS.',
   },
   {
     ελληνικά: 'Ο Χρήστης Δημιουργήθηκε! Ανακατεύθυνση...',
@@ -922,6 +934,11 @@ export const έννοιες = [
     σουηδικά: 'Investerings Kalkylator',
   },
   // Φ //
+  {
+    ελληνικά: 'Φάση',
+    αγγλικά: 'Phase',
+    σουηδικά: 'Fas',
+  },
   {
     ελληνικά: 'Φέγγος ορίων:',
     αγγλικά: 'Border glow:',
