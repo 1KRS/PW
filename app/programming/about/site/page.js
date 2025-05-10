@@ -4,6 +4,14 @@ import Τίτλος from '@/components/Τίτλος';
 import ΓραμμήΠλήκτρωνΣελίδαςΣχετικά from '@/components/Navigations/ΓραμμήΠλήκτρωνΣελίδαςΣχετικά';
 import Μετάφραση from '@/components/Μετάφραση';
 
+export const metadata = {
+  title: 'ΔΜ - Σχετικά με ιστότοπο',
+  description: 'Λεπτομέρειες σχετικά με αυτόν τον ιστότοπο',
+  keywords: ['Σχετικά με ιστότοπο', 'About this website', 'Om denna webbplats'],
+  creator: 'Δημήτρης Μανωλόπουλος',
+  publisher: 'Δημήτρης Μανωλόπουλος',
+};
+
 const ΣελίδαΣχετικάΜεΙστότοπο = () => {
   return (
     <main className={styles.main}>
