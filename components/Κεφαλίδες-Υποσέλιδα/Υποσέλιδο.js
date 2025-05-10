@@ -21,9 +21,9 @@ const Footer = () => {
         <nav className={styles['home-bottom-nav']}>
           <ul className={styles.στοιχεία}>
             <Link
-              href="/home"
+              href="/programming/faq"
               className={
-                path.startsWith('/home')
+                path.startsWith('/programming/faq')
                   ? styles.στοιχείο + ' ' + styles.active
                   : styles.στοιχείο
               }
