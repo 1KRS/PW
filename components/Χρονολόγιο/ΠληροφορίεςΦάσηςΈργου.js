@@ -1,15 +1,15 @@
 import styles from '@/components/Χρονολόγιο/ΣτοιχείαΧρονολογίου.module.css';
-import TranslatedText from '../Μετάφραση';
+import Μετάφραση from '@/components/Μετάφραση';
 
 const ΠληροφορίεςΦάσηςΈργου = ({ πλήθοςΦάσεωνΈργου, τίτλοςΦάσηςΈργου }) => {
   return (
     <h6 className={styles[`φάση-έργου`]}>
       <div className={styles[`περιέκτης-κειμένου-φάσης-έργου`]}>
-        <TranslatedText>{`${πλήθοςΦάσεωνΈργου}η`}</TranslatedText>
+        <Μετάφραση>{`${πλήθοςΦάσεωνΈργου}η`}</Μετάφραση>
         <pre> </pre>
-        <TranslatedText>Φάση</TranslatedText>
+        <Μετάφραση>Φάση</Μετάφραση>
         <pre>{' - '}</pre>
-        <TranslatedText>{`${τίτλοςΦάσηςΈργου}`}</TranslatedText>
+        <Μετάφραση>{`${τίτλοςΦάσηςΈργου}`}</Μετάφραση>
       </div>
     </h6>
   );
