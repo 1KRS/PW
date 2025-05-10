@@ -247,6 +247,11 @@ export const έννοιες = [
     σουηδικά:
       'Om du använder en iPad-enhet och meddelandet fortsätter att visas, försök att vända det åt sidan i liggande riktning.',
   },
+  {
+    ελληνικά: 'Εάν έχετε κάποιαν ερώτηση παρακαλώ επικοινωνήστε μαζί μου.',
+    αγγλικά: 'If you have any questions please contact me.',
+    σουηδικά: 'Om du har några frågor, vänligen kontakta mig.',
+  },
   { ελληνικά: 'ΕΠΙΣΤΡΟΦΗ', αγγλικά: 'RETURN', σουηδικά: 'LÄMNA TILLBAKA' },
   {
     ελληνικά:
@@ -378,6 +383,11 @@ export const έννοιες = [
     ελληνικά: 'Εφαρμογή Υαλομορφισμού',
     αγγλικά: 'Glassmorphism Application',
     σουηδικά: 'Tillämpning av Glasmorfism',
+  },
+  {
+    ελληνικά: 'Έχω ερώτηση',
+    αγγλικά: 'I have a question',
+    σουηδικά: 'Jag har en fråga',
   },
   // Ζ //
   // Η //
@@ -518,7 +528,11 @@ export const έννοιες = [
   { ελληνικά: 'Μάθε περισσότερα', αγγλικά: 'Learn more', σουηδικά: 'Läs mer' }, // Μικρά πρώτα γράμματα
   { ελληνικά: 'Μαρτυρίες', αγγλικά: 'Testimonials', σουηδικά: 'Vittnesmål' },
   { ελληνικά: 'με Εμένα', αγγλικά: 'Me', σουηδικά: 'Mig' },
-  { ελληνικά: 'με Ιστότοπο', αγγλικά: 'this Website', σουηδικά: 'denna Webbplats' },
+  {
+    ελληνικά: 'με Ιστότοπο',
+    αγγλικά: 'this Website',
+    σουηδικά: 'denna Webbplats',
+  },
   { ελληνικά: 'Μετάφραση', αγγλικά: 'Translation', σουηδικά: 'Översättning' },
   {
     ελληνικά:
@@ -722,6 +736,11 @@ export const έννοιες = [
     ελληνικά: 'Προς Υλοποίηση',
     αγγλικά: 'To Be Implemented',
     σουηδικά: 'För Implementering',
+  },
+  {
+    ελληνικά: 'Προς το παρόν δεν υπάρχουν συχνές ερωτήσεις.',
+    αγγλικά: 'There are no frequently asked questions at the moment',
+    σουηδικά: 'Det finns för närvarande inga vanliga frågor.',
   },
   {
     ελληνικά: 'Προσθήκη επιλογών φίλτρου',
