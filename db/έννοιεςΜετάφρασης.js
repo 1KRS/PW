@@ -130,11 +130,11 @@ export const έννοιες = [
   },
   {
     ελληνικά:
-      'Αυτό έγινε προσπάθεια να επιτευχθεί μέσω μιας εξαιρετικής εμπειρίας χρήστη και την βέλτιστη απόδοση. Για παράδειγμα ένα από αυτά που ξεχωρίζουν στον ιστότοπο είναι η πλήρως δυναμική του φύση. Κάθε στοιχείο, από το διαδραστικό χρονολόγιο μέχρι και την μετάφραση και του μικρότερου κειμένου, τροφοδοτείται δυναμικά από προσεκτικά σχεδιασμένες βάσεις δεδομένων.',
+      'Αυτό έγινε προσπάθεια να επιτευχθεί μέσω μιας εξαιρετικής εμπειρίας χρήστη και την βέλτιστη απόδοση. Για παράδειγμα ένα από αυτά που ξεχωρίζουν στον ιστότοπο είναι η πλήρως δυναμική του φύση. Κάθε στοιχείο, από το διαδραστικό χρονολόγιο μέχρι και την μετάφραση και του μικρότερου κειμένου, δημιουργείται δυναμικά από προσεκτικά σχεδιασμένες βάσεις δεδομένων.',
     αγγλικά:
-      'This was attempted to be achieved through an excellent user experience and optimal performance. For example, one of the things that stands out about the site is its fully dynamic nature. Every element, from the interactive timeline to the translation of even the smallest text, is dynamically powered by carefully designed databases.',
+      'This was attempted to be achieved through an excellent user experience and optimal performance. For example, one of the things that stands out about the site is its fully dynamic nature. Every element, from the interactive timeline to the translation of even the smallest text, is dynamically generated from carefully designed databases.',
     σουηδικά:
-      'Detta försökte uppnås genom en utmärkt användarupplevelse och optimal prestanda. Till exempel är en av de saker som sticker ut med webbplatsen dess helt dynamiska natur. Varje element, från den interaktiva tidslinjen till översättningen av även den minsta text, drivs dynamiskt av noggrant utformade databaser.',
+      'Detta försökte uppnås genom en utmärkt användarupplevelse och optimal prestanda. Till exempel är en av de saker som sticker ut med webbplatsen dess helt dynamiska natur. Varje element, från den interaktiva tidslinjen till översättningen av även den minsta text, genereras dynamiskt från noggrant utformade databaser.',
   },
   {
     ελληνικά: 'Αυτοκινητοβιομηχανία',
