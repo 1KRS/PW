@@ -1,21 +1,9 @@
-.φόρμα input,
-.φόρμα textarea {
-  width: 100%;
-  padding: 1.6vh 2vw;
-  font-size: max(1vw, 16px);
-  color: var(--text-color);
-  border: 2px solid transparent;
-  border-radius: 20px;
-  transition: var(--χρόνος-μετάβασης) ease-in-out;
-}
-
 .πλήκτρο,
 .βασικό-πλήκτρο,
 .δευτερεύον-πλήκτρο,
 .πλήκτρο-επιτυχίας {
-  display: inline-block;
   padding: 1vh 2.8vw;
-  box-shadow: 0 0 25px var(--main-color);
+  box-shadow: 0 0 25px transparent;
   font-size: 1rem;
   font-weight: 600;
   border: 2px solid transparent;
@@ -34,8 +22,8 @@
 .δευτερεύον-πλήκτρο {
   background: var(--second-bg-color-blurred);
   color: var(--main-color);
-  border: 2px solid var(--main-color);
-  box-shadow: 0 0 25px transparent;
+  border-color: var(--main-color);
+
   cursor: pointer;
 }
 .πλήκτρο-επιτυχίας {
@@ -43,24 +31,6 @@
   color: white;
   box-shadow: 0 0 25px var(--success);
   cursor: default;
-}
-
-.πλήκτρο.active,
-.βασικό-πλήκτρο.active,
-.δευτερεύον-πλήκτρο.active {
-  /* color: gold; */
-  border: 2px solid gold;
-  transition: 0.3s ease-in;
-  cursor: pointer;
-}
-
-.πλήκτρο:hover,
-.βασικό-πλήκτρο:hover,
-.δευτερεύον-πλήκτρο:hover {
-  background: var(--main-color);
-  color: white;
-  border: 2px solid gold;
-  box-shadow: 0 0 50px gold;
 }
 
 .πλήκτρο:hover.αιώρηση-επιτόπια,
@@ -103,33 +73,59 @@
 }
 
 /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
-input.με-υαλομορφισμό,
-textarea.με-υαλομορφισμό {
-  border-color: var(--border-color-blurred);
-  background-color: rgba(0, 253, 253, 0.005);
+.πλήκτρο.με-υαλομορφισμό,
+.δευτερεύον-πλήκτρο.με-υαλομορφισμό,
+.πλήκτρο-επιτυχίας.με-υαλομορφισμό {
+  border: 2px solid var(--border-color-blurred);
+  /* background-color: rgba(0, 253, 253, 0.005); */
+  background-color: inherit;
   backdrop-filter: blur(3px);
 }
 
-input.με-αδιαφανή-στοιχεία,
-textarea.με-αδιαφανή-στοιχεία {
-  border-color: var(--border-color-blurred);
+.πλήκτρο.με-αδιαφανή-στοιχεία,
+.δευτερεύον-πλήκτρο.με-αδιαφανή-στοιχεία,
+.πλήκτρο-επιτυχίας.με-αδιαφανή-στοιχεία {
+  border: 2px solid var(--border-color-blurred);
   background-color: var(--second-bg-color);
 }
 
-input.με-ημιδιαφανή-στοιχεία,
-textarea.με-ημιδιαφανή-στοιχεία {
-  border-color: var(--border-color-blurred);
+.πλήκτρο.με-ημιδιαφανή-στοιχεία,
+.δευτερεύον-πλήκτρο.με-ημιδιαφανή-στοιχεία,
+.πλήκτρο-επιτυχίας.με-ημιδιαφανή-στοιχεία {
+  border: 2px solid var(--border-color-blurred);
   background-color: var(--second-bg-color-blurred);
 }
 
-input.με-φέγγος-ορίων,
-textarea.με-φέγγος-ορίων {
-  border-color: var(--main-color);
+.πλήκτρο.με-φέγγος-ορίων,
+.βασικό-πλήκτρο.με-φέγγος-ορίων,
+.δευτερεύον-πλήκτρο.με-φέγγος-ορίων,
+.πλήκτρο-επιτυχίας.με-φέγγος-ορίων {
+  border: 2px solid var(--main-color);
 }
 
-input.με-φέγγος-στοιχείων,
-textarea.με-φέγγος-στοιχείων {
-  /* border-width: 1px; */
+.πλήκτρο.με-φέγγος-στοιχείων,
+.βασικό-πλήκτρο.με-φέγγος-στοιχείων,
+.δευτερεύον-πλήκτρο.με-φέγγος-στοιχείων,
+.πλήκτρο-επιτυχίας.με-φέγγος-στοιχείων {
   box-shadow: 0 0px 20px var(--main-color);
+}
+
+.πλήκτρο.active,
+.βασικό-πλήκτρο.active,
+.δευτερεύον-πλήκτρο.active {
+  border: 2px solid gold;
+  box-shadow: 0 0px 20px gold;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.πλήκτρο:hover,
+.βασικό-πλήκτρο:hover,
+.δευτερεύον-πλήκτρο:hover {
+  padding: 0.95vh 2.8vw 1.05vh; /* Αναγκάστηκα να προσθέσω αυτήν την γραμμή γιατί το κείμενο κουνιόταν λίγο προς τα κάνω */
+  background: var(--main-color);
+  color: white;
+  border: 2px solid gold;
+  box-shadow: 0 0 50px gold;
 }
 /* --------------- */
