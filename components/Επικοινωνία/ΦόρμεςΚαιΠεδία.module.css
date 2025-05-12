@@ -41,7 +41,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 70vw;
+    width: 75vw;
     gap: 3vw;
     text-align: center;
   }
@@ -72,7 +72,7 @@
   .φόρμα textarea {
     width: 100%;
     padding: 1.6vh 2vw;
-    font-size: max(1vw, 14px);
+    font-size: max(1vw, 12px);
     color: var(--text-color);
     border: 2px solid transparent;
     border-radius: 20px;
