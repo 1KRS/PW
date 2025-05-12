@@ -1,11 +1,10 @@
-.πλήκτρο,
 .βασικό-πλήκτρο,
 .δευτερεύον-πλήκτρο,
 .πλήκτρο-επιτυχίας {
   padding: 1vh 2.8vw;
-  box-shadow: 0 0 25px transparent;
   font-size: 1rem;
   font-weight: 600;
+  box-shadow: 0 0 25px transparent;
   border: 2px solid transparent;
   border-radius: 15px;
   letter-spacing: 0.1rem;
@@ -13,7 +12,6 @@
   z-index: 150;
 }
 
-.πλήκτρο,
 .βασικό-πλήκτρο {
   background: var(--main-color);
   color: black;
@@ -23,7 +21,6 @@
   background: var(--second-bg-color-blurred);
   color: var(--main-color);
   border-color: var(--main-color);
-
   cursor: pointer;
 }
 .πλήκτρο-επιτυχίας {
@@ -31,32 +28,6 @@
   color: white;
   box-shadow: 0 0 25px var(--success);
   cursor: default;
-}
-
-.πλήκτρο:hover.αιώρηση-επιτόπια,
-.βασικό-πλήκτρο:hover.αιώρηση-επιτόπια,
-.δευτερεύον-πλήκτρο:hover.αιώρηση-επιτόπια {
-  transform: scale(1.05);
-}
-.πλήκτρο:hover.αιώρηση-προς-επάνω,
-.βασικό-πλήκτρο:hover.αιώρηση-προς-επάνω,
-.δευτερεύον-πλήκτρο:hover.αιώρηση-προς-επάνω {
-  transform: scale(1.05) translateY(-5px);
-}
-.πλήκτρο:hover.αιώρηση-προς-κάτω,
-.βασικό-πλήκτρο:hover.αιώρηση-προς-κάτω,
-.δευτερεύον-πλήκτρο:hover.αιώρηση-προς-κάτω {
-  transform: scale(1.05) translateY(5px);
-}
-.πλήκτρο:hover.αιώρηση-προς-δεξιά,
-.βασικό-πλήκτρο:hover.αιώρηση-προς-δεξιά,
-.δευτερεύον-πλήκτρο:hover.αιώρηση-προς-δεξιά {
-  transform: scale(1.05) translateX(5px);
-}
-.πλήκτρο:hover.αιώρηση-προς-αριστερά,
-.βασικό-πλήκτρο:hover.αιώρηση-προς-αριστερά,
-.δευτερεύον-πλήκτρο:hover.αιώρηση-προς-αριστερά {
-  transform: scale(1.05) translateX(-5px);
 }
 
 /* ================================================ */
@@ -72,26 +43,47 @@
 @media (min-width: 1366px) {
 }
 
-/* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
+/* ΚΙΝΗΣΗ ΑΙΩΡΗΣΗΣ */
+.βασικό-πλήκτρο:hover.αιώρηση-επιτόπια,
+.δευτερεύον-πλήκτρο:hover.αιώρηση-επιτόπια {
+  transform: scale(1.05);
+}
+.βασικό-πλήκτρο:hover.αιώρηση-προς-επάνω,
+.δευτερεύον-πλήκτρο:hover.αιώρηση-προς-επάνω {
+  transform: scale(1.05) translateY(-5px);
+}
+.βασικό-πλήκτρο:hover.αιώρηση-προς-κάτω,
+.δευτερεύον-πλήκτρο:hover.αιώρηση-προς-κάτω {
+  transform: scale(1.05) translateY(5px);
+}
+.βασικό-πλήκτρο:hover.αιώρηση-προς-δεξιά,
+.δευτερεύον-πλήκτρο:hover.αιώρηση-προς-δεξιά {
+  transform: scale(1.05) translateX(5px);
+}
+.βασικό-πλήκτρο:hover.αιώρηση-προς-αριστερά,
+.δευτερεύον-πλήκτρο:hover.αιώρηση-προς-αριστερά {
+  transform: scale(1.05) translateX(-5px);
+}
+/* --------------- */ 
+
+
+/* ΜΟΡΦΗ ΠΛΗΚΤΡΩΝ */
 .πλήκτρο.με-υαλομορφισμό,
-.δευτερεύον-πλήκτρο.με-υαλομορφισμό,
-.πλήκτρο-επιτυχίας.με-υαλομορφισμό {
+.δευτερεύον-πλήκτρο.με-υαλομορφισμό {
   border: 2px solid var(--border-color-blurred);
-  /* background-color: rgba(0, 253, 253, 0.005); */
-  background-color: inherit;
+  background-color: rgba(0, 253, 253, 0.005);
+  /* background-color: inherit; */
   backdrop-filter: blur(3px);
 }
 
 .πλήκτρο.με-αδιαφανή-στοιχεία,
-.δευτερεύον-πλήκτρο.με-αδιαφανή-στοιχεία,
-.πλήκτρο-επιτυχίας.με-αδιαφανή-στοιχεία {
+.δευτερεύον-πλήκτρο.με-αδιαφανή-στοιχεία {
   border: 2px solid var(--border-color-blurred);
   background-color: var(--second-bg-color);
 }
 
 .πλήκτρο.με-ημιδιαφανή-στοιχεία,
-.δευτερεύον-πλήκτρο.με-ημιδιαφανή-στοιχεία,
-.πλήκτρο-επιτυχίας.με-ημιδιαφανή-στοιχεία {
+.δευτερεύον-πλήκτρο.με-ημιδιαφανή-στοιχεία {
   border: 2px solid var(--border-color-blurred);
   background-color: var(--second-bg-color-blurred);
 }
