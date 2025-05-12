@@ -8,20 +8,19 @@
   border: 2px solid transparent;
   border-radius: 15px;
   letter-spacing: 0.1rem;
-  transition: 0.3s ease-in-out;
+  transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
   z-index: 150;
+  cursor: pointer;
 }
 
 .βασικό-πλήκτρο {
   background: var(--main-color);
   color: black;
-  cursor: pointer;
 }
 .δευτερεύον-πλήκτρο {
   background: var(--second-bg-color-blurred);
   color: var(--main-color);
   border-color: var(--main-color);
-  cursor: pointer;
 }
 .πλήκτρο-επιτυχίας {
   background: var(--success);
@@ -64,60 +63,71 @@
 .δευτερεύον-πλήκτρο:hover.αιώρηση-προς-αριστερά {
   transform: scale(1.05) translateX(-5px);
 }
-/* --------------- */ 
-
+/* --------------- */
 
 /* ΜΟΡΦΗ ΠΛΗΚΤΡΩΝ */
-.πλήκτρο.με-υαλομορφισμό,
 .δευτερεύον-πλήκτρο.με-υαλομορφισμό {
   border: 2px solid var(--border-color-blurred);
   background-color: rgba(0, 253, 253, 0.005);
-  /* background-color: inherit; */
   backdrop-filter: blur(3px);
+  transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
 }
 
-.πλήκτρο.με-αδιαφανή-στοιχεία,
 .δευτερεύον-πλήκτρο.με-αδιαφανή-στοιχεία {
   border: 2px solid var(--border-color-blurred);
   background-color: var(--second-bg-color);
+  transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
 }
 
-.πλήκτρο.με-ημιδιαφανή-στοιχεία,
 .δευτερεύον-πλήκτρο.με-ημιδιαφανή-στοιχεία {
   border: 2px solid var(--border-color-blurred);
   background-color: var(--second-bg-color-blurred);
+  transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
 }
 
-.πλήκτρο.με-φέγγος-ορίων,
 .βασικό-πλήκτρο.με-φέγγος-ορίων,
 .δευτερεύον-πλήκτρο.με-φέγγος-ορίων,
 .πλήκτρο-επιτυχίας.με-φέγγος-ορίων {
   border: 2px solid var(--main-color);
+  transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
 }
 
-.πλήκτρο.με-φέγγος-στοιχείων,
 .βασικό-πλήκτρο.με-φέγγος-στοιχείων,
 .δευτερεύον-πλήκτρο.με-φέγγος-στοιχείων,
 .πλήκτρο-επιτυχίας.με-φέγγος-στοιχείων {
   box-shadow: 0 0px 20px var(--main-color);
+  transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
 }
 
-.πλήκτρο.active,
 .βασικό-πλήκτρο.active,
-.δευτερεύον-πλήκτρο.active {
+.βασικό-πλήκτρο.με-φέγγος-στοιχείων.active,
+.δευτερεύον-πλήκτρο.active,
+.δευτερεύον-πλήκτρο.με-φέγγος-στοιχείων.active {
   border: 2px solid gold;
-  box-shadow: 0 0px 20px gold;
-  transition: 0.3s ease-in;
+  transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
   cursor: pointer;
 }
+.βασικό-πλήκτρο.με-φέγγος-στοιχείων.active,
+.δευτερεύον-πλήκτρο.με-φέγγος-στοιχείων.active {
+  box-shadow: 0 0px 20px gold;
+}
 
-.πλήκτρο:hover,
 .βασικό-πλήκτρο:hover,
 .δευτερεύον-πλήκτρο:hover {
   padding: 0.95vh 2.8vw 1.05vh; /* Αναγκάστηκα να προσθέσω αυτήν την γραμμή γιατί το κείμενο κουνιόταν λίγο προς τα κάνω */
   background: var(--main-color);
   color: white;
   border: 2px solid gold;
-  box-shadow: 0 0 50px gold;
+  transition: 0.3s ease-in-out;
 }
+.βασικό-πλήκτρο:hover.με-φέγγος-στοιχείων {
+  border: 2px solid gold;
+  box-shadow: 0 0px 20px var(--main-color);
+  transition: 0.3s ease-in-out;
+}
+.δευτερεύον-πλήκτρο:hover.με-φέγγος-στοιχείων {
+  box-shadow: 0 0px 20px gold;
+  transition: 0.3s ease-in-out;
+}
+
 /* --------------- */
