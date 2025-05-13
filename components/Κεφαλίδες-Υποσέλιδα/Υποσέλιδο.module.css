@@ -87,7 +87,7 @@
     color: var(--main-color);
     border-bottom: 2px solid gold;
     transform: scale(1.1);
-    text-decoration: none;
+    /* text-decoration: none; */
   }
 
   .home-bottom-nav .στοιχείο.active {
