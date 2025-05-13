@@ -14,6 +14,7 @@ import Μετάφραση from '../Μετάφραση';
 
 import { useRef, useEffect } from 'react';
 import { useAppContext } from '@/context/AppContext';
+import { usePathname } from 'next/navigation';
 
 import { IoClose } from 'react-icons/io5';
 import Link from 'next/link';
@@ -29,6 +30,7 @@ const Settings = () => {
   } = useAppContext();
 
   const dialog = useRef();
+  const path = usePathname();
 
   useEffect(() => {
     {
@@ -82,10 +84,24 @@ const Settings = () => {
       </form>
       <nav className={styles['περιέκτης-πλοήγησης-παραθύρου-ρυθμίσεων']}>
         <ul className={styles.στοιχεία}>
-          <Link href="/home" className={styles.στοιχείο}>
+          <Link
+            href="/programming/faq"
+            className={
+              path.startsWith('/programming/faq')
+                ? styles.στοιχείο + ' ' + styles.active
+                : styles.στοιχείο
+            }
+          >
             <Μετάφραση>Συχνές Ερωτήσεις</Μετάφραση>
           </Link>
-          <Link href="/programming/about-this-site" className={styles.στοιχείο}>
+          <Link
+            href={'/programming/about/me'}
+            className={
+              path.startsWith('/programming/about')
+                ? styles.στοιχείο + ' ' + styles.active
+                : styles.στοιχείο
+            }
+          >
             <Μετάφραση>Σχετικά</Μετάφραση>
           </Link>
           <SocialIcons />
