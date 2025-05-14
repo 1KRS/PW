@@ -1,13 +1,13 @@
-.τομέας-επικοινωνίας {
-  display: none;
-}
-
 /* .τομέας-επικοινωνίας {
+  display: none;
+} */
+
+.τομέας-επικοινωνίας {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
+}
 
 /* ================================================ */
 @media (min-width: 480px) {
@@ -18,7 +18,7 @@
 /* ================================================ */
 @media (min-width: 1024px) {
   .τομέας-επικοινωνίας {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     flex-direction: column;
     justify-content: center;
