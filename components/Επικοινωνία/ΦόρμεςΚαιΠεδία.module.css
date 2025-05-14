@@ -1,5 +1,5 @@
 .φόρμα {
-  --πλάτος-φόρμας: 90vw;
+  --πλάτος-φόρμας: 95vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,62 +31,58 @@
   height: 20vh;
 }
 
+.φόρμα input,
+.φόρμα textarea {
+  width: 100%;
+  padding: 1.6vh 2vw;
+  font-size: max(1vw, 11px);
+  color: var(--text-color);
+  border: 2px solid transparent;
+  border-radius: 14px;
+  transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
+}
+
 /* ================================================ */
 @media (min-width: 480px) {
+  .φόρμα input,
+  .φόρμα textarea {
+    font-size: max(1vw, 12px);
+    border-radius: 15px;
+  }
 }
 /* ================================================ */
 @media (min-width: 768px) {
-  .φόρμα {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 95vw;
-    gap: 3vw;
-    text-align: center;
-  }
-
   .ομάδα-πεδίων,
   .ομάδα-πεδίων-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50vw;
+    width: 70vw;
     max-width: none;
-    gap: 2.5vh;
-  }
-
-  .φόρμα .περιέκτης-πεδίου {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .περιέκτης-πεδίου textarea {
-    height: 20vh;
   }
 
   .φόρμα input,
   .φόρμα textarea {
-    width: 100%;
-    padding: 1.6vh 2vw;
-    font-size: max(1vw, 12px);
-    color: var(--text-color);
-    border: 2px solid transparent;
+    font-size: max(1vw, 14px);
     border-radius: 20px;
-    transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
   }
 }
 /* ================================================ */
 @media (min-width: 1024px) {
-  .φόρμα {
-    width: 75vw;
+  .ομάδα-πεδίων,
+  .ομάδα-πεδίων-2 {
+    width: 50vw;
   }
 }
 /* ================================================ */
 @media (min-width: 1366px) {
+  .φόρμα {
+    flex-direction: row;
+    width: 75vw;
+    gap: 3vw;
+  }
+
+  .ομάδα-πεδίων,
+  .ομάδα-πεδίων-2 {
+    gap: 2.5vh;
+  }
 }
 
 /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
