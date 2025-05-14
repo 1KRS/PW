@@ -2,11 +2,11 @@
 .δευτερεύον-πλήκτρο,
 .πλήκτρο-επιτυχίας {
   padding: 1vh 2.8vw;
-  font-size: 1rem;
+  font-size: max(1vw, 12px);
   font-weight: 600;
   box-shadow: 0 0 25px transparent;
   border: 2px solid transparent;
-  border-radius: 15px;
+  border-radius: 12px;
   letter-spacing: 0.1rem;
   transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
   z-index: 150;
@@ -34,6 +34,12 @@
 }
 /* ================================================ */
 @media (min-width: 768px) {
+  .βασικό-πλήκτρο,
+  .δευτερεύον-πλήκτρο,
+  .πλήκτρο-επιτυχίας {
+    font-size: max(1vw, 1rem);
+    border-radius: 15px;
+  }
 }
 /* ================================================ */
 @media (min-width: 1024px) {
