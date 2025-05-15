@@ -2,7 +2,7 @@
   --καμπύλη-γωνίας: 14px;
   position: relative;
   width: fit-content;
-  min-width: 180px;
+  min-width: 150px;
 }
 .περιέκτης-κυρίως-πλήκτρου {
   display: flex;
@@ -13,10 +13,19 @@
   border: 2px solid var(--main-color);
   border-radius: var(--καμπύλη-γωνίας);
   background: var(--second-bg-color-blurred);
-  color: var(--main-color);
-  font-size: max(1vw, 11px);
+  color: #8c949b;
   gap: 8px;
   cursor: pointer;
+  max-height: 60px;
+}
+
+.εικονίδιο-κυρίως-πλήκτρου {
+  display: flex;
+  align-items: center;
+  font-size: max(1vw, 15px);
+}
+.ετικέτα-κυρίως-πλήκτρου {
+  font-size: max(1vw, 12px);
 }
 
 .βελάκι-κυρίως-πλήκτρου {
@@ -32,7 +41,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin-top: 5px;
   background: transparent;
   padding: 0;
   gap: 2px;
@@ -57,22 +66,43 @@
   color: gold;
 }
 
+.εικονίδιο-στοιχείου {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
 /* ================================================ */
 @media (min-width: 480px) {
   .περιέκτης-κυρίως-πλήκτρου {
     border-radius: 15px;
   }
+
+  .εικονίδιο-κυρίως-πλήκτρου {
+    font-size: max(1vw, 18px);
+  }
+
+  .ετικέτα-κυρίως-πλήκτρου {
+    font-size: max(1vw, 13px);
+  }
 }
 
 /* ================================================ */
 @media (min-width: 768px) {
+  .περιέκτης-καταλόγου {
+    min-width: 180px;
+  }
+
   .περιέκτης-κυρίως-πλήκτρου {
     border-radius: 20px;
+  }
+
+  .ετικέτα-κυρίως-πλήκτρου {
+    font-size: max(1vw, 15px);
   }
 }
 /* ================================================ */
 @media (min-width: 1024px) {
- 
 }
 /* ================================================ */
 @media (min-width: 1366px) {
