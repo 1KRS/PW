@@ -7,22 +7,21 @@ import React, { useState } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { SiImessage, SiViber } from 'react-icons/si';
 
-
 const εικονίδια = [
   {
     κλειδί: 'imessage',
     ετικέτα: 'iMessage',
-    εικονίδιο: <SiImessage color="#25D366" size={24} />,
+    εικονίδιο: <SiImessage color="#25D366" />,
   },
   {
     κλειδί: 'whatsapp',
     ετικέτα: 'WhatsApp',
-    εικονίδιο: <FaWhatsapp color="#25D366" size={24} />,
+    εικονίδιο: <FaWhatsapp color="#25D366" />,
   },
   {
     κλειδί: 'viber',
     ετικέτα: 'Viber',
-    εικονίδιο: <SiViber color="#665CAC" size={24} />,
+    εικονίδιο: <SiViber color="#665CAC" />,
   },
 ];
 
@@ -42,9 +41,18 @@ export default function MessagingDropdown({ χειρισμόςΕπιλογής }
         className={styles['περιέκτης-κυρίως-πλήκτρου']}
         onClick={() => setΕπέκτασηΚαταλόγου((v) => !v)}
       >
-        {επιλεγμένηΕφαρμογή.εικονίδιο}
-        <span>{επιλεγμένηΕφαρμογή.ετικέτα}</span>
-        <span  className={styles['βελάκι-κυρίως-πλήκτρου']} style={{ marginLeft: 'auto' }}>▼</span>
+        <div className={styles['εικονίδιο-κυρίως-πλήκτρου']}>
+          {επιλεγμένηΕφαρμογή.εικονίδιο}
+        </div>
+        <span className={styles['ετικέτα-κυρίως-πλήκτρου']}>
+          {επιλεγμένηΕφαρμογή.ετικέτα}
+        </span>
+        <span
+          className={styles['βελάκι-κυρίως-πλήκτρου']}
+          style={{ marginLeft: 'auto' }}
+        >
+          ▼
+        </span>
       </button>
       {επέκτασηΚαταλόγου && (
         <ul className={styles['περιέκτης-στοιχείων-καταλόγου']}>
@@ -54,7 +62,9 @@ export default function MessagingDropdown({ χειρισμόςΕπιλογής }
               className={styles['στοιχείο-καταλόγου']}
               onClick={() => χειρισμόςΕπιλογήςΕικονιδίου(εικονίδιοΣεΔείκτη)}
             >
-              {εικονίδιοΣεΔείκτη.εικονίδιο}
+              <div className={styles['εικονίδιο-στοιχείου']}>
+                {εικονίδιοΣεΔείκτη.εικονίδιο}
+              </div>
               <span>{εικονίδιοΣεΔείκτη.ετικέτα}</span>
             </li>
           ))}
