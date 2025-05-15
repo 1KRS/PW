@@ -7,6 +7,8 @@ import { useRef } from 'react';
 import ΚοινόΠλήκτρο from '@/components/Κουμπιά/ΚοινόΠλήκτρο';
 import Input from '@/components/Επικοινωνία/Inputs/Input';
 import Textarea from '@/components/Επικοινωνία/Inputs/Textarea';
+import ΚατάλογοςΕφαρμογώνΕπικοινωνίας from '@/components/Κατάλογοι/ΚατάλογοςΕφαρμογώνΕπικοινωνίας';
+import Μετάφραση from '@/components/Μετάφραση';
 
 import { useAppContext } from '@/context/AppContext';
 import { useState } from 'react';
@@ -19,6 +21,7 @@ const Form = ({ id }) => {
   const [ονοματεπώνυμο, setΟνοματεπώνυμο] = useState('');
   const [ηΤαχυδρομείο, setΗΤαχυδρομείο] = useState('');
   const [αριθμός, setΑριθμός] = useState('');
+  const [εφαρμογήΕπικοινωνίας, setΕφαρμογήΕπικοινωνίας] = useState('iMessage');
   const [θέμα, setΘέμα] = useState('');
   const [κείμενο, setΚείμενο] = useState('');
 
@@ -35,6 +38,9 @@ const Form = ({ id }) => {
   };
   const χειρισμόςΑριθμού = (e) => {
     setΑριθμός(e.target.value);
+  };
+  const χειρισμόςΕφαρμογήςΕπικοινωνίας = (εφαρμογή) => {
+    setΕφαρμογήΕπικοινωνίας(εφαρμογή);
   };
   const χειρισμόςΘέματος = (e) => {
     setΘέμα(e.target.value);
@@ -61,11 +67,20 @@ const Form = ({ id }) => {
         fullName: ονοματεπώνυμο,
         email: ηΤαχυδρομείο,
         number: αριθμός,
+        app: εφαρμογήΕπικοινωνίας,
         subject: θέμα,
         text: κείμενο,
       }),
     });
 
+    console.log('Στοιχεία',
+      ονοματεπώνυμο,
+      ηΤαχυδρομείο,
+      αριθμός,
+      εφαρμογήΕπικοινωνίας,
+      θέμα,
+      κείμενο
+    );
     setΦόρτωση(false);
     setΜήνυμαΕπιτυχίας(μετάφραση('Το μήνυμα εστάλη', language));
 
@@ -115,9 +130,17 @@ const Form = ({ id }) => {
             type="number"
             style="αριθμός-τηλεφώνου"
             name="phone-number"
-            placeholder="Αριθμός Τηλεφώνου (για iMessage, Viber, WhatsApp κ.λπ)"
+            placeholder="Αριθμός Τηλεφώνου"
             χειρισμόςΠληκτρισμού={χειρισμόςΑριθμού}
             required
+          />
+          <pre>{'   '}</pre>
+          <p className={styles['κείμενο-περιέκτη-πεδίου']}>
+            <Μετάφραση>για</Μετάφραση>
+          </p>
+          <pre>{'   '}</pre>
+          <ΚατάλογοςΕφαρμογώνΕπικοινωνίας
+            χειρισμόςΕπιλογής={χειρισμόςΕφαρμογήςΕπικοινωνίας}
           />
         </div>
         <div className={styles['περιέκτης-πεδίου']}>
