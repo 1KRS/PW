@@ -1,0 +1,79 @@
+.περιέκτης-καταλόγου {
+  --καμπύλη-γωνίας: 14px;
+  position: relative;
+  width: fit-content;
+  min-width: 180px;
+}
+.περιέκτης-κυρίως-πλήκτρου {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+  padding: 1.4vh 12px;
+  border: 2px solid var(--main-color);
+  border-radius: var(--καμπύλη-γωνίας);
+  background: var(--second-bg-color-blurred);
+  color: var(--main-color);
+  font-size: max(1vw, 11px);
+  gap: 8px;
+  cursor: pointer;
+}
+
+.βελάκι-κυρίως-πλήκτρου {
+  margin-left: auto;
+}
+
+.περιέκτης-στοιχείων-καταλόγου {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: transparent;
+  padding: 0;
+  gap: 2px;
+  list-style: none;
+  z-index: 10;
+}
+.στοιχείο-καταλόγου {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: var(--second-bg-color-blurred);
+  border: 1px solid var(--main-color);
+  border-radius: var(--καμπύλη-γωνίας);
+  width: 90%;
+  color: var(--main-color);
+  font-size: 15px;
+  gap: 8px;
+  cursor: pointer;
+}
+.στοιχείο-καταλόγου:hover {
+  border: 1px solid gold;
+  color: gold;
+}
+
+/* ================================================ */
+@media (min-width: 480px) {
+  .περιέκτης-κυρίως-πλήκτρου {
+    border-radius: 15px;
+  }
+}
+
+/* ================================================ */
+@media (min-width: 768px) {
+  .περιέκτης-κυρίως-πλήκτρου {
+    border-radius: 20px;
+  }
+}
+/* ================================================ */
+@media (min-width: 1024px) {
+ 
+}
+/* ================================================ */
+@media (min-width: 1366px) {
+}
