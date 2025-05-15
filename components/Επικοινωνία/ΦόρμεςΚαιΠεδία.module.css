@@ -1,7 +1,6 @@
 .φόρμα {
   --πλάτος-φόρμας: 95vw;
   position: relative;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,40 +23,64 @@
 
 .φόρμα .περιέκτης-πεδίου {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.περιέκτης-πεδίου .κείμενο-περιέκτη-πεδίου {
-  font-size: max(1vw, 11px);
-  font-weight: bold;
-  color: var(--main-color);
-}
+.περιέκτης-πεδίου input,
 .περιέκτης-πεδίου textarea {
-  height: 20vh;
-}
-
-.φόρμα input,
-.φόρμα textarea {
-  /* width: 100%; */
-  flex-grow: 1;
   padding: 1.6vh 2vw;
   font-size: max(1vw, 11px);
   color: var(--text-color);
+  width: inherit;
   border: 2px solid transparent;
   border-radius: 14px;
   transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
 }
 
+.περιέκτης-πεδίου input {
+  max-height: 60px;
+}
+
+.περιέκτης-πεδίου .βέλος-περιέκτη-πεδίου-αριστερά,
+.περιέκτης-πεδίου .βέλος-περιέκτη-πεδίου-κάτω {
+  font-size: max(1.3vw, 13px);
+  font-weight: bold;
+  color: var(--main-color);
+  margin-bottom: 3px;
+}
+
+.περιέκτης-πεδίου .βέλος-περιέκτη-πεδίου-αριστερά {
+  display: none;
+}
+
+.περιέκτης-πεδίου textarea {
+  height: 20vh;
+}
+
 /* ================================================ */
 @media (min-width: 480px) {
-  .φόρμα input,
-  .φόρμα textarea {
+  .φόρμα .περιέκτης-πεδίου {
+    flex-direction: row;
+  }
+
+  .περιέκτης-πεδίου input,
+  .περιέκτης-πεδίου textarea {
     font-size: max(1vw, 12px);
     border-radius: 15px;
+    flex-grow: 1;
+    width: initial;
+  }
+
+  .περιέκτης-πεδίου .βέλος-περιέκτη-πεδίου-αριστερά {
+    display: initial;
+    margin-bottom: 0;
+  }
+  .περιέκτης-πεδίου .βέλος-περιέκτη-πεδίου-κάτω {
+    display: none;
   }
 }
 /* ================================================ */
@@ -68,18 +91,14 @@
     max-width: none;
   }
 
-  .φόρμα input,
-  .φόρμα textarea {
+  .περιέκτης-πεδίου input,
+  .περιέκτης-πεδίου textarea {
     font-size: max(1vw, 14px);
     border-radius: 20px;
   }
 }
 /* ================================================ */
 @media (min-width: 1024px) {
-  .ομάδα-πεδίων,
-  .ομάδα-πεδίων-2 {
-    width: 50vw;
-  }
 }
 /* ================================================ */
 @media (min-width: 1366px) {
