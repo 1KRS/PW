@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import {
   Body,
   Button,
@@ -16,6 +17,7 @@ export const ΜνμΑπόΕπισκέπτες = ({
   fullName,
   email,
   number,
+  app,
   subject,
   text,
 }) => (
@@ -25,10 +27,10 @@ export const ΜνμΑπόΕπισκέπτες = ({
     <Body style={main}>
       <Container style={container}>
         <Text style={subjectStyles}>{`${subject}`}</Text>
-        <Text style={name}>{`${fullName}`}</Text>
         <Hr style={hr} />
+        <Text style={name}>{`${fullName}`}</Text>
         <Text style={field}>{`ηΤαχυδρομείο: ${email}`}</Text>
-        <Text style={field}>{`Αριθμός Τηλεφώνου: ${number}`}</Text>
+        <Text style={field}>{`Αριθμός Τηλεφώνου: ${number} (για  ${app})`}</Text>
         <Hr style={hr} />
         <Text style={paragraph}>{`${text}`}</Text>
         <Hr style={hr} />
@@ -54,7 +56,7 @@ const name = {
   color: '#00fcfd',
   margin: '0 auto',
   textAlign: 'center',
-  fontSize: '15px',
+  fontSize: '16px',
   fontWeight: 'bold',
   lineHeight: '20px',
 };
