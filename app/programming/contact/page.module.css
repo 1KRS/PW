@@ -18,7 +18,6 @@
 /* ================================================ */
 @media (min-width: 1024px) {
   .τομέας-επικοινωνίας {
-    /* position: absolute; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,4 +26,10 @@
 }
 /* ================================================ */
 @media (min-width: 1366px) {
+}
+
+@media (max-height: 550px) {
+  .τομέας-επικοινωνίας {
+    display: none;
+  }
 }
