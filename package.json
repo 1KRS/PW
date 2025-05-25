@@ -11,7 +11,7 @@
     "email": "email dev --dir app/emails"
   },
   "dependencies": {
-    "@react-email/components": "^0.0.33",
+    "@react-email/components": "^0.0.41",
     "@vercel/speed-insights": "^1.2.0",
     "js-cookie": "^3.0.5",
     "luxon": "^3.5.0",
@@ -25,6 +25,6 @@
   "devDependencies": {
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
-    "react-email": "3.0.7"
+    "react-email": "^4.0.15"
   }
 }
