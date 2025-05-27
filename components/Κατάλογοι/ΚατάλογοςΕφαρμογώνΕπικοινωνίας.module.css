@@ -2,6 +2,7 @@
   --καμπύλη-γωνίας: 14px;
   position: relative;
   width: fit-content;
+  min-width: 135px;
 }
 .περιέκτης-κυρίως-πλήκτρου {
   display: flex;
@@ -78,7 +79,6 @@
 /* ================================================ */
 @media (min-width: 480px) {
   .περιέκτης-καταλόγου {
-    max-width: 50px;
     min-width: 150px;
   }
 
