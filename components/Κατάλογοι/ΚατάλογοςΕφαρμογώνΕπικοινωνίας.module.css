@@ -8,7 +8,7 @@
   align-items: center;
   height: fit-content;
   width: 100%;
-  padding: 1.4vh 12px;
+  padding: 1.4vh 10px;
   border: 2px solid var(--main-color);
   border-radius: var(--καμπύλη-γωνίας);
   background: var(--second-bg-color-blurred);
@@ -23,8 +23,9 @@
   align-items: center;
   font-size: max(1vw, 15px);
 }
+
 .ετικέτα-κυρίως-πλήκτρου {
-  font-size: max(1vw, 15px);
+  font-size: max(1vw, 1rem);
 }
 
 .βελάκι-κυρίως-πλήκτρου {
@@ -94,8 +95,7 @@
   }
 
   .στοιχείο-καταλόγου {
-      font-size: 15px;
-
+    font-size: 15px;
   }
 }
 
