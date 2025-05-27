@@ -2,7 +2,7 @@
   --καμπύλη-γωνίας: 14px;
   position: relative;
   width: fit-content;
-  min-width: 135px;
+  min-width: 145px;
 }
 .περιέκτης-κυρίως-πλήκτρου {
   display: flex;
