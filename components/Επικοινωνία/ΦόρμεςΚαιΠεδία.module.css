@@ -23,17 +23,15 @@
 
 .φόρμα .περιέκτης-πεδίου {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   width: 100%;
 }
 
 .περιέκτης-πεδίου input,
 .περιέκτης-πεδίου textarea {
   padding: 1.2vh 4vw;
-  font-size: max(1vw, 1rem);
+  font-size: max(1vw, 15px);
   color: var(--text-color);
   width: inherit;
   border: 2px solid transparent;
@@ -69,8 +67,8 @@
 
   .περιέκτης-πεδίου input,
   .περιέκτης-πεδίου textarea {
-    /* font-size: max(1vw, 12px); */
-        padding: 1.4vh 3vw;
+    font-size: max(1vw, 1rem);
+    padding: 1.4vh 3vw;
 
     border-radius: 15px;
     flex-grow: 1;
