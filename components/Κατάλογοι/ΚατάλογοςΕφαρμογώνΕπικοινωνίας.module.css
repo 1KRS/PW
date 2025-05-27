@@ -2,7 +2,7 @@
   --καμπύλη-γωνίας: 14px;
   position: relative;
   width: fit-content;
-  min-width: 150px;
+  /* min-width: 150px; */
 }
 
 .περιέκτης-κυρίως-πλήκτρου {
@@ -27,7 +27,8 @@
 }
 
 .ετικέτα-κυρίως-πλήκτρου {
-  font-size: max(1vw, 1rem);
+  display: none;
+  /* font-size: max(1vw, 1rem); */
 }
 
 .βελάκι-κυρίως-πλήκτρου {
@@ -37,12 +38,11 @@
 .περιέκτης-στοιχείων-καταλόγου {
   position: absolute;
   top: 100%;
-  left: 0;
   right: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   margin-top: 5px;
   background: transparent;
   padding: 0;
@@ -57,7 +57,7 @@
   background: var(--second-bg-color-blurred);
   border: 1px solid var(--main-color);
   border-radius: var(--καμπύλη-γωνίας);
-  width: 90%;
+  width: fit-content;
   color: var(--main-color);
   font-size: 12px;
   gap: 8px;
@@ -92,11 +92,18 @@
   }
 
   .ετικέτα-κυρίως-πλήκτρου {
+    display: initial;
     font-size: max(1vw, 1rem);
+  }
+
+  .περιέκτης-στοιχείων-καταλόγου {
+    left: 0;
+    align-items: center;
   }
 
   .στοιχείο-καταλόγου {
     font-size: 15px;
+    width: 90%;
   }
 }
 
