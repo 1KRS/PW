@@ -11,17 +11,17 @@ const εικονίδια = [
   {
     κλειδί: 'imessage',
     ετικέτα: 'iMessage',
-    εικονίδιο: <SiImessage color="#25D366" />,
+    εικονίδιο: <SiImessage color="#25D366" size={20} />,
   },
   {
     κλειδί: 'whatsapp',
     ετικέτα: 'WhatsApp',
-    εικονίδιο: <FaWhatsapp color="#25D366" />,
+    εικονίδιο: <FaWhatsapp color="#25D366" size={20} />,
   },
   {
     κλειδί: 'viber',
     ετικέτα: 'Viber',
-    εικονίδιο: <SiViber color="#665CAC" />,
+    εικονίδιο: <SiViber color="#665CAC" size={20} />,
   },
 ];
 
