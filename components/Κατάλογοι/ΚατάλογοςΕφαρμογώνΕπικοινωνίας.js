@@ -65,7 +65,9 @@ export default function MessagingDropdown({ χειρισμόςΕπιλογής }
               <div className={styles['εικονίδιο-στοιχείου']}>
                 {εικονίδιοΣεΔείκτη.εικονίδιο}
               </div>
-              <span>{εικονίδιοΣεΔείκτη.ετικέτα}</span>
+              <span >
+                {εικονίδιοΣεΔείκτη.ετικέτα}
+              </span>
             </li>
           ))}
         </ul>
