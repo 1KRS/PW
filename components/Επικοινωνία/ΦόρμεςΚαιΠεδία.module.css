@@ -67,9 +67,7 @@
 
   .περιέκτης-πεδίου input,
   .περιέκτης-πεδίου textarea {
-    /* font-size: max(1vw, 12px); */
     padding: 1.4vh 3vw;
-
     border-radius: 15px;
     flex-grow: 1;
     width: initial;
