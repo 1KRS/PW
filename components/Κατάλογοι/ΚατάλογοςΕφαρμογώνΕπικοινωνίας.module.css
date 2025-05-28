@@ -56,7 +56,7 @@
   border: 1px solid var(--main-color);
   border-radius: var(--καμπύλη-γωνίας);
   width: fit-content;
-  min-width: 130px;
+  min-width: 135px;
   color: var(--main-color);
   gap: 8px;
   cursor: pointer;
