@@ -103,11 +103,13 @@ const Form = ({ id }) => {
       ref={formRef}
       onSubmit={onSubmit}
       className={styles['φόρμα']}
+      autoComplete='on'
       id={id}
     >
       <div className={styles['ομάδα-πεδίων']}>
         <div className={styles['περιέκτης-πεδίου']}>
           <Input
+            id="name"
             type="text"
             style="κείμενο"
             name="name"
@@ -118,6 +120,7 @@ const Form = ({ id }) => {
         </div>
         <div className={styles['περιέκτης-πεδίου']}>
           <Input
+            id="email"
             type="email"
             style="ηΤαχυδρομείο"
             name="email"
@@ -132,6 +135,7 @@ const Form = ({ id }) => {
           }
         >
           <Input
+            id="phone-number"
             type="number"
             style="αριθμός-τηλεφώνου"
             name="phone-number"
