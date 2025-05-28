@@ -4,6 +4,8 @@
 import styles from '@/components/Κατάλογοι/ΚατάλογοςΕφαρμογώνΕπικοινωνίας.module.css';
 
 import React, { useState } from 'react';
+import { useAppContext } from '@/context/AppContext';
+
 import { FaWhatsapp } from 'react-icons/fa';
 import { SiImessage, SiViber } from 'react-icons/si';
 
@@ -29,6 +31,9 @@ export default function MessagingDropdown({ χειρισμόςΕπιλογής }
   const [επέκτασηΚαταλόγου, setΕπέκτασηΚαταλόγου] = useState(false);
   const [επιλεγμένηΕφαρμογή, setΕπιλεγμένηΕφαρμογή] = useState(εικονίδια[0]);
 
+  const { language, μορφήΣτοιχείων, φέγγοςΟρίων, φέγγοςΣτοιχείων } =
+    useAppContext();
+
   const χειρισμόςΕπιλογήςΕικονιδίου = (επιλογή) => {
     setΕπιλεγμένηΕφαρμογή(επιλογή);
     setΕπέκτασηΚαταλόγου(false);
@@ -38,7 +43,17 @@ export default function MessagingDropdown({ χειρισμόςΕπιλογής }
   return (
     <div className={styles['περιέκτης-καταλόγου']}>
       <button
-        className={styles['περιέκτης-κυρίως-πλήκτρου']}
+        className={
+          styles['περιέκτης-κυρίως-πλήκτρου'] +
+          ' ' +
+          styles[
+            `${μορφήΣτοιχείων === 'υαλομορφισμός' ? 'με-υαλομορφισμό' : μορφήΣτοιχείων === 'ημιδιαφανή στοιχεία' ? 'με-ημιδιαφανή-στοιχεία' : μορφήΣτοιχείων === 'αδιαφανή στοιχεία' ? 'με-αδιαφανή-στοιχεία' : ''}`
+          ] +
+          ' ' +
+          styles[`${φέγγοςΟρίων === true ? 'με-φέγγος-ορίων' : ''}`] +
+          ' ' +
+          styles[`${φέγγοςΣτοιχείων === true ? 'με-φέγγος-στοιχείων' : ''}`]
+        }
         onClick={() => setΕπέκτασηΚαταλόγου((v) => !v)}
       >
         <div className={styles['εικονίδιο-κυρίως-πλήκτρου']}>
@@ -47,19 +62,34 @@ export default function MessagingDropdown({ χειρισμόςΕπιλογής }
         <span className={styles['ετικέτα-κυρίως-πλήκτρου']}>
           {επιλεγμένηΕφαρμογή.ετικέτα}
         </span>
-        <span
-          className={styles['βελάκι-κυρίως-πλήκτρου']}
-          style={{ marginLeft: 'auto' }}
-        >
-          ▼
-        </span>
+        {επέκτασηΚαταλόγου ? (
+          <span
+            className={styles['βελάκι-κυρίως-πλήκτρου']}
+            style={{ marginLeft: 'auto' }}
+          >
+            ▲
+          </span>
+        ) : (
+          <span
+            className={styles['βελάκι-κυρίως-πλήκτρου']}
+            style={{ marginLeft: 'auto' }}
+          >
+            ▼
+          </span>
+        )}
       </button>
       {επέκτασηΚαταλόγου && (
         <ul className={styles['περιέκτης-στοιχείων-καταλόγου']}>
           {εικονίδια.map((εικονίδιοΣεΔείκτη) => (
             <li
               key={εικονίδιοΣεΔείκτη.κλειδί}
-              className={styles['στοιχείο-καταλόγου']}
+              className={styles['στοιχείο-καταλόγου'] +
+          ' ' +
+          styles[
+            `${μορφήΣτοιχείων === 'υαλομορφισμός' ? 'με-υαλομορφισμό' : μορφήΣτοιχείων === 'ημιδιαφανή στοιχεία' ? 'με-ημιδιαφανή-στοιχεία' : μορφήΣτοιχείων === 'αδιαφανή στοιχεία' ? 'με-αδιαφανή-στοιχεία' : ''}`
+          ] +
+          ' ' +
+          styles[`${φέγγοςΟρίων === true ? 'με-φέγγος-ορίων' : ''}`] }
               onClick={() => χειρισμόςΕπιλογήςΕικονιδίου(εικονίδιοΣεΔείκτη)}
             >
               <div className={styles['εικονίδιο-στοιχείου']}>
