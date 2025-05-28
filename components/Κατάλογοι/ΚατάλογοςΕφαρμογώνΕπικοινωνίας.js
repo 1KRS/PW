@@ -11,12 +11,12 @@ const εικονίδια = [
   {
     κλειδί: 'imessage',
     ετικέτα: 'iMessage',
-    εικονίδιο: <SiImessage color="#25D366" size={20} />,
+    εικονίδιο: <SiImessage color="#25D366" size={19} />,
   },
   {
     κλειδί: 'whatsapp',
     ετικέτα: 'WhatsApp',
-    εικονίδιο: <FaWhatsapp color="#25D366" size={20} />,
+    εικονίδιο: <FaWhatsapp color="#25D366" size={21} />,
   },
   {
     κλειδί: 'viber',
@@ -65,7 +65,7 @@ export default function MessagingDropdown({ χειρισμόςΕπιλογής }
               <div className={styles['εικονίδιο-στοιχείου']}>
                 {εικονίδιοΣεΔείκτη.εικονίδιο}
               </div>
-              <span >
+              <span className={styles['ετικέτα-στοιχείου']}>
                 {εικονίδιοΣεΔείκτη.ετικέτα}
               </span>
             </li>
