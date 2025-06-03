@@ -1,23 +1,23 @@
-.τομέας-μαρτυριών {
-  display: none;
-}
-
 /* .τομέας-μαρτυριών {
+  display: none;
+} */
+
+.τομέας-μαρτυριών {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
+}
 
 .περιέκτης-μαρτυριών {
   position: absolute;
-  top: 120px;
+  top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   height: 45vh;
-  width: 90vw;
+  width: 100vw;
   gap: 2vw;
   overflow-y: auto;
   overflow-x: hidden;
@@ -87,15 +87,25 @@
 /* @media (min-height: 650px) {
   .περιέκτης-μαρτυριών {
     height: 78vh;
+    }
+    } */
+/* ====================== Πλάτος ====================== */
+@media (min-width: 330px) {
+  .περιέκτης-μαρτυριών {
+    top: 120px;
   }
-} */
-/* ====================== Μήκος ====================== */
+}
 @media (min-width: 480px) {
 }
 /* ================================================ */
 @media (min-width: 768px) {
-  .περιέκτης-μαρτυριών {
+
+}
+/* ================================================ */
+@media (min-width: 1024px) {
+   .περιέκτης-μαρτυριών {
     position: static;
+    top: 120px;
     flex-direction: row;
     padding: 8vh 6vw 10vh;
     overflow-y: hidden;
@@ -110,14 +120,11 @@
   }
 }
 /* ================================================ */
-@media (min-width: 1024px) {
-  .τομέας-μαρτυριών {
+@media (min-width: 1366px) {
+   .τομέας-μαρτυριών {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-}
-/* ================================================ */
-@media (min-width: 1366px) {
 }
