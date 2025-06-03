@@ -93,11 +93,10 @@
 }
 /* ================================================ */
 @media (min-width: 768px) {
- 
 }
 /* ================================================ */
 @media (min-width: 1024px) {
-   .μαρτυρία {
+  .μαρτυρία {
     justify-content: flex-start;
     height: fit-content;
     width: 300px;
@@ -128,16 +127,12 @@
 
   .μαρτυρία .υπόδειξη-αυθεντικότητας-μαρτυρίας-επάνω {
     display: block;
-    /* position: absolute;
-    top: 150px; */
     color: var(--ποιότητα);
     font-size: clamp(0.6rem, 1.3vw, 0.8rem);
     font-weight: bold;
-    /* margin-top: 2px; */
     padding: 1px 5px;
     border: 2px solid var(--error);
     border-radius: 5px;
-    /* display: none; */
   }
   .μαρτυρία .υπόδειξη-αυθεντικότητας-μαρτυρίας-μέση {
     display: none;
