@@ -1,4 +1,4 @@
-/* .τομέας-χρονολογίου {
+.τομέας-χρονολογίου {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,36 +12,29 @@
   width: 100vw;
   overflow-y: hidden;
   overflow-x: hidden;
-} */
+}
 
 /* ================================================ */
 @media (min-width: 480px) {
+  .περιέκτης-χρονολογίου {
+    width: 95vw;
+  }
 }
 /* ================================================ */
 @media (min-width: 768px) {
-  .τομέας-χρονολογίου {
-    display: none;
+  .περιέκτης-χρονολογίου {
+    width: 90vw;
   }
 }
 /* ================================================ */
 @media (min-width: 1024px) {
-
+  .περιέκτης-χρονολογίου {
+    width: 85vw;
+  }
 }
 /* ================================================ */
 @media (min-width: 1366px) {
-    .τομέας-χρονολογίου {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .περιέκτης-χρονολογίου {
-    position: absolute;
-    top: 20vh;
-    height: 75vh;
     width: 85vw;
-    overflow-y: hidden;
-    overflow-x: hidden;
   }
 }
