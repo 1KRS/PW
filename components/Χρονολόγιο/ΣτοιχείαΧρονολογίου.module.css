@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
   padding: 8vh 3vw 10vh;
   height: 73vh;
   border-radius: 50px;
@@ -51,17 +51,17 @@
   /* height: 75px; */
   width: 95%;
   cursor: default;
-  text-align: right;
-  margin: 5px 15px 5px 0;
+  text-align: left;
+  margin: 5px 0 5px 15px;
 }
 
 .γεγονός-χρονολογίου::before {
   content: '';
   position: absolute;
+  left: -15px;
   width: 0;
   height: 120%;
   border-right: max(0.3vw, 2px) solid var(--main-color);
-  margin-left: 15px;
 }
 
 .γεγονός-χρονολογίου:first-child {
@@ -76,7 +76,8 @@
   --ύψος-τελείας: max(1.3vw, 25px);
   position: absolute;
   top: calc(50% - (var(--ύψος-τελείας) / 2));
-  left: calc(100% + 15px - 5px + 1px);
+  /* left: calc(100% + 15px - 5px + 1px); */
+  left: calc(-15px - 5px + 1px);
   height: var(--ύψος-τελείας);
   width: 10px;
   background-color: var(--second-bg-color);
@@ -213,17 +214,17 @@
   align-items: center;
   font-weight: bold;
   color: var(--text-color);
-  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .περιττή-επάνω-γραμμή-χρονολογίου {
-  flex-direction: row-reverse;
-  justify-content: end;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .άρτια-επάνω-γραμμή-χρονολογίου {
-  flex-direction: row-reverse;
-  justify-content: end;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .χρονικές-πληροφορίες {
@@ -235,13 +236,13 @@
 }
 
 .περιττή-επάνω-γραμμή-χρονολογίου .χρονικές-πληροφορίες {
-  padding: 2px 0 0 6px;
-  border-left: 4px solid;
+  padding: 2px 6px 0 0;
+  border-right: 4px solid;
 }
 
 .άρτια-επάνω-γραμμή-χρονολογίου .χρονικές-πληροφορίες {
-  padding: 2px 0 0 6px;
-  border-left: 4px solid;
+  padding: 2px 6px 0 0;
+  border-right: 4px solid;
 }
 
 .ημερομηνία-γεγονότος {
@@ -327,7 +328,7 @@
 }
 
 .event-odd {
-  align-items: end;
+  align-items: flex-start;
 }
 
 .event-odd.με-δευτερεύουσα-γραμμή2 {
@@ -338,7 +339,7 @@
 }
 
 .event-even {
-  align-items: end;
+  align-items: flex-start;
 }
 
 .event-even.με-δευτερεύουσα-γραμμή2 {
@@ -356,10 +357,10 @@
 /* ΠΛΗΡΟΦΟΡΙΕΣ ΔΕΥΤΕΡΕΥΟΥΣΑΣ ΓΡΑΜΜΗΣ */
 .πληροφορίες-δευτερεύουσας-γραμμής {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .πληροφορίες-δευτερεύουσας-γραμμής.περιττή {
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 .πληροφορίες-δευτερεύουσας-γραμμής.άρτια {
   flex-direction: row-reverse;
@@ -506,15 +507,15 @@
 
 .icons-container {
   --icons-container-length: 100%;
-  --icons-container-width: 2.5vw;
-  opacity: 0;
+  --icons-container-width: 5vw;
+  /* opacity: 0; */
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: var(--icons-container-length);
-  width: var(--icons-container-width);
+  height: 100%;
+  width: 5vw;
   gap: clamp(0.5vw, 0.75vw, 1vw);
   background-color: var(--second-bg-color-blurred);
   transition: opacity 0.5s ease-in-out;
@@ -531,16 +532,16 @@
 .icons-container-right {
   height: 100%;
   top: 0;
-  left: 0;
-  border-right: 2px dotted var(--main-color);
-  border-top-left-radius: 28px;
-  border-bottom-left-radius: 28px;
+  right: 0;
+  border-left: 2px dotted var(--main-color);
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
 }
 
 .icons-container-left {
   height: 100%;
   top: 0;
-  left: 0;
+  right: 0;
   border-left: 2px dotted var(--main-color);
   border-top-right-radius: 28px;
   border-bottom-right-radius: 28px;
@@ -572,14 +573,14 @@
 
 .icon-active {
   color: var(--main-color);
-  font-size: 1.3vw;
+  font-size: 2.5vw;
   font-weight: bold;
   cursor: pointer;
 }
 
 .icon-inactive {
   color: grey;
-  font-size: 1.3vw;
+  font-size: 2.5vw;
   font-weight: bold;
   cursor: default;
 }
@@ -715,6 +716,14 @@
   .περιεχόμενο-γεγονότος.με-κείμενο .κείμενο-γεγονότος {
     font-size: 0.8rem;
   }
+
+  .γεγονός-χρονολογίου::before {
+    left: -20px;
+  }
+
+  .τελεία-γεγονότος {
+    left: calc(-20px - 5px + 1px);
+  }
 }
 /* ================================================ */
 @media (min-width: 768px) {
@@ -747,7 +756,7 @@
 
   .περιττή-επάνω-γραμμή-χρονολογίου .χρονικές-πληροφορίες .ημερομηνία-γεγονότος,
   .άρτια-επάνω-γραμμή-χρονολογίου .χρονικές-πληροφορίες .ημερομηνία-γεγονότος {
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 
   .περιττή-επάνω-γραμμή-χρονολογίου .περιττός-μήνας-γεγονότος-χρονολογίου,
@@ -774,6 +783,18 @@
     padding-bottom: 2px;
     line-height: 2.5vw;
   }
+
+  .icons-container {
+    width: 3.5vw;
+  }
+
+  .icon-active,
+  .icon-inactive {
+  font-size: 2.0vw;
+
+}
+
+
 }
 /* ================================================ */
 @media (min-width: 1024px) {
@@ -1027,6 +1048,7 @@
 
   .περιττή-επάνω-γραμμή-χρονολογίου .χρονικές-πληροφορίες {
     padding: 0 0 0 0.3vw;
+    border-right: none;
     border-left: 4px solid;
   }
 
@@ -1151,6 +1173,13 @@
   /* ΠΛΗΡΟΦΟΡΙΕΣ ΔΕΥΤΕΡΕΥΟΥΣΑΣ ΓΡΑΜΜΗΣ */
   .πληροφορίες-δευτερεύουσας-γραμμής {
     display: flex;
+  }
+
+  .πληροφορίες-δευτερεύουσας-γραμμής.περιττή {
+    flex-direction: row;
+  }
+  .πληροφορίες-δευτερεύουσας-γραμμής.άρτια {
+    flex-direction: row-reverse;
   }
 
   /* Σύνδεσμοι*/
@@ -1315,9 +1344,12 @@
     height: var(--icons-container-length);
     top: 0;
     left: 0;
+    border-left: none; /* No left border for right container */
     border-right: 2px dotted var(--main-color);
     border-top-left-radius: 28px;
     border-bottom-left-radius: 28px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .icons-container-left {
