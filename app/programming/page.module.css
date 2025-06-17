@@ -1,14 +1,14 @@
-/* .αρχική {
+.αρχική {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  /* height: 80vh; */
   width: 100vw;
   color: white;
   text-align: center;
   transition: all 2s ease-in-out;
-} */
+}
 
 /* .αρχική-με-δυναμικό-υπόβαθρο {
   gap: 4.5vw;
