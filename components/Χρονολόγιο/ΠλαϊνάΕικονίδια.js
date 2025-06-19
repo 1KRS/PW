@@ -6,7 +6,7 @@ import { TbCertificate, TbWorldWww } from 'react-icons/tb';
 
 const ΠλαϊνάΕικονίδια = ({
   στιγμή,
-  γεγονόςΣεΜονόΑριθμό,
+  γεγονόςΣεΠεριττόΑριθμό,
   κατάστασηΓεγονότος,
 }) => {
   const { γεγονός, σπουδές, έργο } = στιγμή;
@@ -23,7 +23,7 @@ const ΠλαϊνάΕικονίδια = ({
       ? false
       : true;
 
-  return !εμφάνισηΠλαϊνώνΕικονιδίων ? null : γεγονόςΣεΜονόΑριθμό ? (
+  return !εμφάνισηΠλαϊνώνΕικονιδίων ? null : γεγονόςΣεΠεριττόΑριθμό ? (
     <div
       className={
         styles[`icons-container`] + ' ' + styles['icons-container-right']

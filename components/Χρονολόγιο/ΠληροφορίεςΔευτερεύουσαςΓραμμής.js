@@ -11,7 +11,7 @@ import ΕνδιάμεσοΔιαχωριστικό from '@/components/Χρονο�
 import { useAppContext } from '@/context/AppContext';
 import { μετάφραση } from '@/utils/μετάφραση';
 
-const SecondaryLineInfo = ({ στιγμή, γεγονόςΣεΜονόΑριθμό, χρώμαΕίδους }) => {
+const SecondaryLineInfo = ({ στιγμή, γεγονόςΣεΠεριττόΑριθμό, χρώμαΕίδους }) => {
   const { language } = useAppContext();
 
   const { γεγονός, οντότητα, σπουδές, εργασία, τοποθεσία } = στιγμή;
@@ -53,7 +53,7 @@ const SecondaryLineInfo = ({ στιγμή, γεγονόςΣεΜονόΑριθμ�
           ? τύποςΣπουδών && τύποςΣπουδών
           : null;
 
-  const περιττήΉΆρτιαΔευτερεύουσαΓραμμή = γεγονόςΣεΜονόΑριθμό
+  const περιττήΉΆρτιαΔευτερεύουσαΓραμμή = γεγονόςΣεΠεριττόΑριθμό
     ? 'περιττή'
     : 'άρτια';
 
