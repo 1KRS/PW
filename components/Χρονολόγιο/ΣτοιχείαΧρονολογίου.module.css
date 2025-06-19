@@ -845,7 +845,7 @@
   .βασικές-πληροφορίες-περιττού-γεγονότος .τίτλος-γεγονότος,
   .βασικές-πληροφορίες-άρτιου-γεγονότος .τίτλος-γεγονότος {
     /* height: 3vw; */
-    line-height: 1.5vw;
+    line-height: 100%;
     font-size: min(3.3vw, 24px);
   }
 
@@ -873,6 +873,7 @@
 /* ================================================ */
 @media (min-width: 1366px) {
   .στοιχεία-χρονολογίου {
+    --ύψος-βασικών-πληροφοριών: 2.5vw;
     align-items: center;
   }
 
@@ -930,14 +931,20 @@
   }
 
   .περιεχόμενο-γεγονότος {
+    --padding-top: 1vh;
+    --padding-bottom: 1vh;
+    --πάχος-ορίου-γεγονότος: 2px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 7vh;
-    padding: 1vh 1.5vh;
+    height: calc(
+      var(--padding-top) + var(--ύψος-βασικών-πληροφοριών) +
+        var(--padding-bottom) + (var(--πάχος-ορίου-γεγονότος) * 2)
+    );
+    padding: var(--padding-top) 1.5vh;
     background: rgba(0, 0, 0, 0.32);
-    border: 2px solid var(--border-color-blurred);
+    border: var(--πάχος-ορίου-γεγονότος) solid var(--border-color-blurred);
     border-radius: 30px;
     transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
   }
@@ -1165,12 +1172,13 @@
     width: 100%;
   }
 
+  /* ΒΑΣΙΚΕΣ ΠΛΗΡΟΦΟΡΙΕΣ */
   .βασικές-πληροφορίες-περιττού-γεγονότος,
   .βασικές-πληροφορίες-άρτιου-γεγονότος {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: min(2.5vw);
+    height: var(--ύψος-βασικών-πληροφοριών);
     /* gap: 0.15vw; */
   }
 
@@ -1203,7 +1211,13 @@
 
   /* ΠΛΗΡΟΦΟΡΙΕΣ ΔΕΥΤΕΡΕΥΟΥΣΑΣ ΓΡΑΜΜΗΣ */
   .πληροφορίες-δευτερεύουσας-γραμμής {
+    display: none;
+  }
+
+  .περιεχόμενο-γεγονότος:hover.με-δευτερεύουσα-γραμμή2
+    .πληροφορίες-δευτερεύουσας-γραμμής {
     display: flex;
+    transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
   }
 
   .πληροφορίες-δευτερεύουσας-γραμμής.περιττή {
