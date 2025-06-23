@@ -7,6 +7,7 @@ import { useAppContext } from '@/context/AppContext';
 const EventContainer = ({
   μεΉΧωρίςΔευτερεύουσαΓραμμή,
   μεΉΧωρίςΚείμενο,
+  μεΉΧωρίςΤεχνολογίες,
   μορφήΠεριβλήματος,
   children,
 }) => {
@@ -30,6 +31,8 @@ const EventContainer = ({
         styles[`${μεΉΧωρίςΔευτερεύουσαΓραμμή}`] +
         ' ' +
         styles[`${μεΉΧωρίςΚείμενο}`] +
+        ' ' +
+        styles[`${μεΉΧωρίςΤεχνολογίες}`] +
         ' ' +
         styles[`${μορφήΠεριβλήματος}`] +
         ' ' +
