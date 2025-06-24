@@ -584,6 +584,11 @@ export const έννοιες = [
       'Efter studier i Grekland och England följde en svår period med att hitta arbete i mitt land, som befann sig i ekonomisk kris, vilket ledde till att jag åkte utomlands igen.',
   },
   {
+    ελληνικά: 'Με την πρώτη ευκαιρία που θα μου δοθεί μελλοντικά θέλω να ασχοληθώ με εφαρμογές ΙΣΤΟΥ 3.0 (WEB3).',
+    αγγλικά: 'At the first opportunity I get in the future, I want to work ον WEB3 applications.',
+    σουηδικά: 'Vid första tillfälle jag får i framtiden vill jag arbeta med WEB3-applikationer.',
+  },
+  {
     ελληνικά: 'Μηνιαία Δεδομένα',
     αγγλικά: 'Monthly Data',
     σουηδικά: 'Månadsdata',
