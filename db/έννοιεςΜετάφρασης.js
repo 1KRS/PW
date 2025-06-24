@@ -277,6 +277,11 @@ export const έννοιες = [
     σουηδικά: 'En webbplats där du kan spela trummor och slagverk.',
   },
   {
+    ελληνικά: 'Εισαγωγή στα Νεότερα Εργαλεία ΤΝ',
+    αγγλικά: 'Introduction to the Latest AI Tools',
+    σουηδικά: 'Introduktion till de Senaste AI-Verktygen',
+  },
+  {
     ελληνικά: 'Είσαι ήδη μέλος; ',
     αγγλικά: 'Already a member? ',
     σουηδικά: 'Redan medlem? ',
