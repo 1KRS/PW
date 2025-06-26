@@ -880,9 +880,9 @@
     margin: 0px;
   }
 
-  .γεγονός-χρονολογίου:hover {
+  /* .γεγονός-χρονολογίου:hover {
     height: 100%;
-  }
+  } */
 
   .γεγονός-χρονολογίου:nth-child(odd) {
     padding-right: calc(50% + 1.5vw);
