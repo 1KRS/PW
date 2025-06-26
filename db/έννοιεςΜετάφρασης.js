@@ -585,9 +585,12 @@ export const έννοιες = [
       'Efter studier i Grekland och England följde en svår period med att hitta arbete i mitt land, som befann sig i ekonomisk kris, vilket ledde till att jag åkte utomlands igen.',
   },
   {
-    ελληνικά: 'Με την πρώτη ευκαιρία που θα μου δοθεί μελλοντικά θέλω να ασχοληθώ με εφαρμογές ΙΣΤΟΥ 3.0 (WEB3).',
-    αγγλικά: 'At the first opportunity I get in the future, I want to work ον WEB3 applications.',
-    σουηδικά: 'Vid första tillfälle jag får i framtiden vill jag arbeta med WEB3-applikationer.',
+    ελληνικά:
+      'Με την πρώτη ευκαιρία που θα μου δοθεί μελλοντικά θέλω να ασχοληθώ με εφαρμογές ΙΣΤΟΥ 3.0 (WEB3).',
+    αγγλικά:
+      'At the first opportunity I get in the future, I want to work ον WEB3 applications.',
+    σουηδικά:
+      'Vid första tillfälle jag får i framtiden vill jag arbeta med WEB3-applikationer.',
   },
   {
     ελληνικά: 'Μηνιαία Δεδομένα',
@@ -904,6 +907,17 @@ export const έννοιες = [
     ελληνικά: 'Τα Στοιχεία Χρήστη Ενημερώθηκαν!',
     αγγλικά: 'User Details Updated!',
     σουηδικά: 'Användarinformation uppdaterad!',
+  },
+  {
+    ελληνικά: 'ΤΝ για Προγραμματιστές',
+    αγγλικά: 'AI for Developers',
+    σουηδικά: 'AI för Utvecklare',
+  },
+  {
+    ελληνικά:
+      'ΤΝ για Προγραμματιστές με τα GitHub Copilot, Cursor AI & ChatGPT',
+    αγγλικά: 'AI for Developers with GitHub Copilot, Cursor AI & ChatGPT',
+    σουηδικά: 'AI för Utvecklare med GitHub Copilot, Cursor AI & ChatGPT',
   },
   {
     ελληνικά: 'Το γνωστό σε όλους μας παίγνιο μνήμης.',
