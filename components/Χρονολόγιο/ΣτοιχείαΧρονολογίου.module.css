@@ -420,20 +420,11 @@
   content: attr(data-types-sec);
 }
 
-.οντότητα-κανονικό:hover::after {
-  /* color: var(--main-color); */
-  color: gold;
-}
-.οντότητα-πορτοκαλί:hover::after {
-  /* color: var(--χρώμα-σπουδών); */
-  color: gold;
-}
-.οντότητα-χρυσό:hover::after {
-  /* color: var(--χρώμα-εργασίας); */
-  color: gold;
-}
+.οντότητα-κανονικό:hover::after,
+.οντότητα-πορτοκαλί:hover::after,
+.οντότητα-χρυσό:hover::after,
 .οντότητα-γαλαζοπράσινο:hover::after {
-  /* color: var(--χρώμα-έργων); */
+  /* color: var(--main-color); */
   color: gold;
 }
 
@@ -1040,7 +1031,7 @@
     );
   }
 
- .κρυφό {
+  .κρυφό {
     border-style: dashed;
   }
 
