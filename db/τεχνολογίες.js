@@ -6,6 +6,7 @@ export const διαχειριστέςΠακέτων = ['NPM'];
 export const προγράμματα = ['MongoDB'];
 export const συστήματα = ['PostGre SQL', 'GIT'];
 export const πλατφόρμες = ['GitHub', 'Vercel'];
+export const βοηθοίΤΝ = ['GitHub Copilot', 'Perplexity'];
 export const πακέτα = [
   'Axios',
   'JavaScript Cookie',
@@ -27,5 +28,6 @@ export const σύνολοΤεχνολογιώνΠληνΠακέτων = γλώσ
   διαχειριστέςΠακέτων,
   προγράμματα,
   συστήματα,
-  πλατφόρμες
+  πλατφόρμες,
+  βοηθοίΤΝ
 );
