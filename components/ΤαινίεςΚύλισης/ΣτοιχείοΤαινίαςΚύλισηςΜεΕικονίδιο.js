@@ -12,8 +12,8 @@ import { BiLogoMongodb, BiLogoPostgresql } from 'react-icons/bi';
 import { FaGitAlt, FaBootstrap } from 'react-icons/fa';
 import { IoLogoGithub, IoLogoNodejs } from 'react-icons/io';
 import { IoLogoReact } from 'react-icons/io5';
-import { RiNpmjsFill } from 'react-icons/ri';
-import { SiEjs, SiExpress } from 'react-icons/si';
+import { RiNpmjsFill, RiPerplexityFill } from 'react-icons/ri';
+import { SiEjs, SiExpress, SiGithubcopilot } from 'react-icons/si';
 
 const ΣτοιχείοΤαινίαςΚύλισηςΜεΕικονίδιο = ({ αριθμόςΣτοιχείου, όνομαΣτοιχείου }) => {
   return (
@@ -55,6 +55,10 @@ const ΣτοιχείοΤαινίαςΚύλισηςΜεΕικονίδιο = ({ α
         <FaBootstrap className={styles['tech-icon']} />
       ) : όνομαΣτοιχείου === 'Vercel' ? (
         <TbBrandVercel className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'GitHub Copilot' ? (
+        <SiGithubcopilot className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'Perplexity' ? (
+        <RiPerplexityFill className={styles['tech-icon']} />
       ) : (
         ''
       )}
