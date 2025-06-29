@@ -13,7 +13,7 @@ import {
   BiLogoPostgresql,
 } from 'react-icons/bi';
 import { FaGitAlt, FaBootstrap } from 'react-icons/fa';
-import { SiEjs, SiExpress } from 'react-icons/si';
+import { SiEjs, SiExpress, SiGithubcopilot } from 'react-icons/si';
 import { RiNpmjsFill } from 'react-icons/ri';
 import { IoLogoGithub } from 'react-icons/io';
 
@@ -61,8 +61,8 @@ const TechIcon = ({ όνομαΤεχνολογίας }) => {
       <FaBootstrap className={styles['tech-icon']} />
     ) : όνομαΤεχνολογίας === 'Vercel' ? (
       <TbBrandVercel className={styles['tech-icon']} />
-    ) : όνομαΤεχνολογίας === 'VSC' ? (
-      <BiLogoVisualStudio className={styles['tech-icon']} />
+    ) : όνομαΤεχνολογίας === 'GitHub Copilot' ? (
+      <SiGithubcopilot className={styles['tech-icon']} />
     ) : null;
 
   return (
