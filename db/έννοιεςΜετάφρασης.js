@@ -82,6 +82,7 @@ export const έννοιες = [
     αγγλικά: 'Higher Educational Institution',
     σουηδικά: 'Högre Läroanstalt',
   },
+  { ελληνικά: 'Αξιολόγηση', αγγλικά: 'Assessment', σουηδικά: 'Bedömning' },
   { ελληνικά: 'Αποθήκευση', αγγλικά: 'Submit', σουηδικά: 'Skicka In' },
   {
     ελληνικά: 'Αποθήκευση Αλλαγών',
@@ -448,6 +449,11 @@ export const έννοιες = [
       'Min övergång började med en stark längtan efter lärande och kreativitet, vilket idag ledde mig till tjänsten som Junior Full-Stack Utvecklare.',
   },
   { ελληνικά: 'Η πόλη μου', αγγλικά: 'My city', σουηδικά: 'Min stad' },
+  {
+    ελληνικά: 'Η πρώτη μου επαφή με την «Υποβοηθούμενη Ανάπτυξη μέσω ΤΝ».',
+    αγγλικά: 'My first contact with "AI-Assisted Development".',
+    σουηδικά: 'Min första kontakt med "AI-Assisterad Utveckling".',
+  },
   {
     ελληνικά: 'Η σελίδα δεν βρέθηκε',
     αγγλικά: 'Page not found',
@@ -1034,6 +1040,11 @@ export const έννοιες = [
   },
   { ελληνικά: 'CSS', αγγλικά: 'CSS', σουηδικά: 'CSS' },
   { ελληνικά: 'CSS 2024', αγγλικά: 'CSS 2024', σουηδικά: 'CSS 2024' },
+  {
+    ελληνικά: 'Github Copilot & Εργαλεία ΤΝ για Γενική Ανάπτυξη',
+    αγγλικά: 'Github Copilot & AI Tools for General Development',
+    σουηδικά: 'Github Copilot & AI-Verktyg för Allmän Utveckling',
+  },
   { ελληνικά: 'HTML', αγγλικά: 'HTML', σουηδικά: 'HTML' },
   { ελληνικά: 'JavaScript', αγγλικά: 'JavaScript', σουηδικά: 'JavaScript' },
   { ελληνικά: 'MERN 2023', αγγλικά: 'MERN 2023', σουηδικά: 'MERN 2023' },
