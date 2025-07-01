@@ -926,7 +926,8 @@ export const χρονολόγιο = [
       πιστοποιητικό: '',
       ιστότοποςΣπουδών:
         'https://www.udemy.com/share/10c4EV3@bbYWdhxM_3JHZGE9Yub2BmQgpHXZpsT8f8_HmEZCeYNX-RV4VTjUWtZCTDdSBHWLUg==/',
-      φωτογραφίαΕγγράφου: '',
+      φωτογραφίαΕγγράφου:
+        '/images/ΤΝ για Προγραμματιστές Πιστοποιητικό | Udemy.png',
     },
     εργασία: {
       θέση: '',
