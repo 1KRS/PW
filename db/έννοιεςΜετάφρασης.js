@@ -338,7 +338,7 @@ export const έννοιες = [
     ελληνικά:
       'Ενημέρωση του API για την υποστήριξη νέων λειτουργιών και βελτιώσεων και αλλαγή σε NextJS με χρήση ΤΝ.',
     αγγλικά:
-      'Update the API to support new features and improvements and switch to NextJS using AI.',
+      'Update the API to support new features and improvements while switching it to NextJS using AI.',
     σουηδικά:
       'Uppdatera API:et för att stödja nya funktioner och förbättringar och byta till NextJS med hjälp av AI.',
   },
