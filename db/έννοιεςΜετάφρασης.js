@@ -174,6 +174,16 @@ export const έννοιες = [
     σουηδικά: 'Visa mig mer',
   },
   {
+    ελληνικά: 'Δελφικά Παραγγέλματα API',
+    αγγλικά: 'Delphic Maxims API',
+    σουηδικά: 'Delphic Maxims API',
+  },
+  {
+    ελληνικά: 'Δελφικά Παραγγέλματα API (Ενημέρωση)',
+    αγγλικά: 'Delphic Maxims API (Update)',
+    σουηδικά: 'Delphic Maxims API (Uppdatering)',
+  },
+  {
     ελληνικά: 'Δεν βρέθηκαν εργασίες...',
     αγγλικά: 'No jobs found...',
     σουηδικά: 'Inga jobb hittades...',
@@ -323,6 +333,14 @@ export const έννοιες = [
     ελληνικά: 'Ενεργοποίηση Φόρμας Επικοινωνίας',
     αγγλικά: 'Contact Form Activation',
     σουηδικά: 'Aktivering av Kontaktformulär',
+  },
+  {
+    ελληνικά:
+      'Ενημέρωση του API για την υποστήριξη νέων λειτουργιών και βελτιώσεων και αλλαγή σε NextJS με χρήση ΤΝ.',
+    αγγλικά:
+      'Update the API to support new features and improvements and switch to NextJS using AI.',
+    σουηδικά:
+      'Uppdatera API:et för att stödja nya funktioner och förbättringar och byta till NextJS med hjälp av AI.',
   },
   {
     ελληνικά: 'Επίδειξη Εφαρμογής',
