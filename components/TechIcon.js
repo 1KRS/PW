@@ -14,7 +14,7 @@ import {
 } from 'react-icons/bi';
 import { FaGitAlt, FaBootstrap } from 'react-icons/fa';
 import { SiEjs, SiExpress, SiGithubcopilot } from 'react-icons/si';
-import { RiNpmjsFill } from 'react-icons/ri';
+import { RiNpmjsFill, RiPerplexityFill } from 'react-icons/ri';
 import { IoLogoGithub } from 'react-icons/io';
 
 import styles from './TechIcon.module.css';
@@ -61,6 +61,8 @@ const TechIcon = ({ όνομαΤεχνολογίας }) => {
       <FaBootstrap className={styles['tech-icon']} />
     ) : όνομαΤεχνολογίας === 'Vercel' ? (
       <TbBrandVercel className={styles['tech-icon']} />
+    ) : όνομαΤεχνολογίας === 'Perplexity' ? (
+      <RiPerplexityFill className={styles['tech-icon']} />
     ) : όνομαΤεχνολογίας === 'GitHub Copilot' ? (
       <SiGithubcopilot className={styles['tech-icon']} />
     ) : null;
