@@ -975,7 +975,7 @@ export const χρονολόγιο = [
     },
     έργο: {
       τίτλοςΈργου: 'Δελφικά Παραγγέλματα API (Ενημέρωση)',
-      ιστότοποςΈργου: '',
+      ιστότοποςΈργου: 'https://rapidapi.com/1KRS/api/delfika-paraggelmata-delphic-maxims',
     },
     τεχνολογίες: [
       'VSC',
