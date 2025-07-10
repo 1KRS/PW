@@ -493,7 +493,8 @@ export const χρονολόγιο = [
     },
     έργο: {
       τίτλοςΈργου: 'Δελφικά Παραγγέλματα API',
-      ιστότοποςΈργου: '',
+      ιστότοποςΈργου:
+        'https://rapidapi.com/1KRS/api/delfika-paraggelmata-delphic-maxims',
     },
     τεχνολογίες: [],
     τοποθεσία: 'Απομακρυσμένα',
@@ -975,7 +976,8 @@ export const χρονολόγιο = [
     },
     έργο: {
       τίτλοςΈργου: 'Δελφικά Παραγγέλματα API (Ενημέρωση)',
-      ιστότοποςΈργου: 'https://rapidapi.com/1KRS/api/delfika-paraggelmata-delphic-maxims',
+      ιστότοποςΈργου:
+        'https://rapidapi.com/1KRS/api/delfika-paraggelmata-delphic-maxims',
     },
     τεχνολογίες: [
       'VSC',
