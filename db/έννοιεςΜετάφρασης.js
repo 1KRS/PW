@@ -660,6 +660,14 @@ export const έννοιες = [
       'Min nya personliga webbplats utvecklades helt från grunden i NextJS.',
   },
   {
+    ελληνικά:
+      'Ο πρώτος μου ιστότοπος φτιαγμένος με βοηθητική ΤΝ ο οποίος εμφανίζει ένα νέο Δελφικό Παράγγελμα κάθε ημέρα.',
+    αγγλικά:
+      'My first website built with assistive AI that displays a new Delphic Maxim every day.',
+    σουηδικά:
+      'Min första webbplats byggdes med hjälp av assistiv AI som visar ett nytt Delphic Maxim varje dag.',
+  },
+  {
     ελληνικά: 'Ο Χρήστης Δημιουργήθηκε! Ανακατεύθυνση...',
     αγγλικά: 'User Created! Redirect...',
     σουηδικά: 'Användare skapad! Dirigera om...',
