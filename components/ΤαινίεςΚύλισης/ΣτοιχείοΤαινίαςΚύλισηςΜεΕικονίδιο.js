@@ -29,6 +29,8 @@ const ΣτοιχείοΤαινίαςΚύλισηςΜεΕικονίδιο = ({ α
         <TbBrandCss3 className={styles['tech-icon']} />
       ) : όνομαΣτοιχείου === 'JavaScript' ? (
         <TbBrandJavascript className={styles['tech-icon']} />
+      ) : όνομαΣτοιχείου === 'TypeScript' ? (
+        <TbBrandJavascript className={styles['tech-icon']} />  // !! Να αλλαχτεί το εικονίδιο
       ) : όνομαΣτοιχείου === 'EJS' ? (
         <SiEjs className={styles['tech-icon']} />
       ) : όνομαΣτοιχείου === 'ReactJS' ? (
