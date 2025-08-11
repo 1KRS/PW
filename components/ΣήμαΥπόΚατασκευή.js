@@ -6,7 +6,7 @@ import Μετάφραση from '@/components/Μετάφραση';
 
 const ΣήμαΥπόΚατασκευή = () => {
   return (
-    <Link href={'/programming/implementation'} className={styles.ribbon}>
+    <Link href={'/programming/implementation'} className={styles.κορδέλα}>
       <Μετάφραση>Υπό Ανάπτυξη</Μετάφραση>
       <div className={styles.παύλες}> -- </div>
       <ΠοσοστόΥλοποίησης />
