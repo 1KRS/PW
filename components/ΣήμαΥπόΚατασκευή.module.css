@@ -1,17 +1,39 @@
-.ribbon {
-  position: absolute;
-  top: 1px;
+.κορδέλα {
+  position: fixed;
+  top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--main-color);
   text-align: center;
-  font-size: 1.2vw;
+  font-size: 4vw;
   font-weight: bold;
-  padding: 0.6vh 1vw;
-  margin: 0.2vw;
+  padding: 0.6vh 2vw;
   z-index: 5;
   gap: 10px;
   border: 2px solid crimson;
   border-radius: 15px;
+}
+
+/* ================================================ */
+@media (min-width: 480px) {
+}
+/* ================================================ */
+@media (min-width: 768px) {
+  .κορδέλα {
+    font-size: 2vw;
+  }
+}
+/* ================================================ */
+@media (min-width: 1024px) {
+  .κορδέλα {
+    position: absolute;
+    top: 1px;
+    font-size: 1.2vw;
+    padding: 0.6vh 1vw;
+    margin: 0.2vw;
+  }
+}
+/* ================================================ */
+@media (min-width: 1366px) {
 }
