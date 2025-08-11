@@ -1,4 +1,5 @@
 export const γλώσσες = ['HTML', 'CSS', 'JavaScript', 'EJS'];
+export const υπερσύνολα = ['Typescript'];
 export const βιβλιοθήκες = ['ReactJS', 'Bootstrap'];
 export const πλαίσια = ['NextJS', 'React Native', 'Express'];
 export const περιβάλλοντα = ['NodeJS'];
@@ -22,6 +23,7 @@ export const πακέτα = [
 ];
 
 export const σύνολοΤεχνολογιώνΠληνΠακέτων = γλώσσες.concat(
+  υπερσύνολα,
   βιβλιοθήκες,
   πλαίσια,
   περιβάλλοντα,
