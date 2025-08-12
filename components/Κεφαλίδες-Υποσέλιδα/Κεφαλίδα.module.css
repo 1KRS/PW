@@ -6,6 +6,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100vw;
+  height: var(--ύψος-κεφαλίδας-προγραμματισμού);
+  min-height: 52px; /* 32px τα εικονίδια + 20px το padding */
   padding: 10px 10px;
   background: transparent;
   backdrop-filter: blur(2px);
@@ -20,7 +22,6 @@
 
 .λογότυπο {
   padding: 3px 3px 0;
-
   cursor: pointer;
   transition: 0.7s ease-in-out;
 }
@@ -30,8 +31,8 @@
 }
 
 .λογότυπο .εικόνα {
-  stroke: var(--main-color);
-  fill: var(--main-color);
+  stroke: var(--βασικό-χρώμα);
+  fill: var(--βασικό-χρώμα);
 }
 
 .λογότυπο .εικόνα:hover {
@@ -49,7 +50,6 @@
   display: none;
 }
 
-
 /* ================ */
 
 @media (min-width: 480px) {
@@ -60,7 +60,7 @@
 @media (min-width: 768px) {
   .κεφαλίδα {
     justify-content: space-between;
-    height: 5vh;
+    height: var(--ύψος-κεφαλίδας-προγραμματισμού);
     padding: 1vh 12%;
   }
 
@@ -94,7 +94,7 @@
 
   /* .στοιχείο {
     font-size: 1.3rem;
-    color: var(--text-color);
+    color: var(--κείμενο-βασικό-χρώμα);
     font-weight: 700;
     transition: 0.3s ease;
     border-bottom: 2px solid transparent;
@@ -102,8 +102,8 @@
 
   .στοιχείο:hover,
   .στοιχείο:active {
-    color: var(--main-color);
-    border-bottom: 3px solid var(--main-color);
+    color: var(--βασικό-χρώμα);
+    border-bottom: 3px solid var(--βασικό-χρώμα);
     transform: scale(1.1);
   } */
 

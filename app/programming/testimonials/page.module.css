@@ -26,8 +26,8 @@
   mask-image: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0),
-    var(--main-color) 15%,
-    var(--main-color) 85%,
+    var(--βασικό-χρώμα) 15%,
+    var(--βασικό-χρώμα) 85%,
     rgba(255, 255, 255, 0)
   );
 }
@@ -113,8 +113,8 @@
     mask-image: linear-gradient(
       to right,
       rgba(255, 255, 255, 0),
-      var(--main-color) 10%,
-      var(--main-color) 90%,
+      var(--βασικό-χρώμα) 10%,
+      var(--βασικό-χρώμα) 90%,
       rgba(255, 255, 255, 0)
     );
   }

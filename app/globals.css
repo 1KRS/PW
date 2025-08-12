@@ -1,21 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&display=swap');
 
 :root {
-  --bg-color: #011321;
-  --second-bg-color: #001729;
-  --second-bg-color-blurred: rgba(0, 23, 41, 0.8);
-  --second-bg-color-extra-blurred: rgba(0, 23, 41, 0.95);
-  --text-color: white;
-  --text-dark-color: #001729;
-  --main-color: #00fcfd;
-  --secondary-color: #006eba;
-  --border-color-blurred: #00fdfd33;
-  --sidenav-icons-number: 6;
-  --sidenav-icon-size: 6vh;
-  --success: #00a200;
-  --not-found: #dda200;
-  --error: #ad0000;
+  /* Χρώματα */
+  --υβ-βασικό-χρώμα: #011321;
+  --υπ-δευτερεύον-χρώμα: #001729;
+  --υβ-δευτερεύον-χρώμα-θολό: rgba(0, 23, 41, 0.8);
+  --υβ-δευτερεύον-χρώμα-επιπλέον-θολό: rgba(0, 23, 41, 0.95);
+  --κείμενο-βασικό-χρώμα: white;
+  --κείμενο-σκοτεινό-χρώμα: #001729;
+  --βασικό-χρώμα: #00fcfd;
+  --δευτερεύον-χρώμα: #006eba;
+  --όριο-χρώμα-θολό: #00fdfd33;
+  --επιτυχία: #00a200;
+  --δεν-βρέθηκε: #dda200;
+  --σφάλμα: #ad0000;
   --ποιότητα: #ffd700;
+  /* Αριθμοί */
+  --αριθμός-εικονιδίων-πλαϊνής-στήλης: 6;
+  /* Μεγέθη */
+  --μικρή-καμπύλη-γωνίας: 14px;
+  --μέγεθος-εικονιδίων-πλαϊνής-στήλης: 6vh;
+  --ύψος-κεφαλίδας-προγραμματισμού: 5vh;
+  --ύψος-τίτλου: 50px;
+  --πλάτος-φόρμας: 95vw;
+  /* Τοποθεσίες */
+  /* --τοποθεσία-κεφαλίδας: top; */
+  --τοποθεσία-τίτλου-προγραμματισμού: calc(
+    var(--ύψος-κεφαλίδας-προγραμματισμού) + 3vh
+  );
+  /* --τοποθεσία-περιεχομένου: center; */
+  /* --τοποθεσία-υποσέλιδας: bottom; */
+  /* Χρόνοι */
   --χρόνος-μετάβασης-μορφής: 0.7s;
 }
 
@@ -59,7 +74,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  color: var(--text-color);
+  color: var(--κείμενο-βασικό-χρώμα);
 }
 
 main {
@@ -86,11 +101,11 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
+  background-color: var(--βασικό-χρώμα);
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--main-color);
+  background-color: var(--βασικό-χρώμα);
 }
 
 input[type='number'] {

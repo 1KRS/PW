@@ -1,5 +1,4 @@
 .φόρμα {
-  --πλάτος-φόρμας: 95vw;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -32,7 +31,7 @@
 .περιέκτης-πεδίου textarea {
   padding: 1.4vh 8px;
   font-size: max(1vw, 1rem);
-  color: var(--text-color);
+  color: var(--κείμενο-βασικό-χρώμα);
   width: inherit;
   border: 2px solid transparent;
   border-radius: 14px;
@@ -47,7 +46,7 @@
 .περιέκτης-πεδίου .βέλος-περιέκτη-πεδίου-κάτω {
   font-size: max(1.3vw, 13px);
   font-weight: bold;
-  color: var(--main-color);
+  color: var(--βασικό-χρώμα);
   margin-bottom: 3px;
 }
 
@@ -93,7 +92,6 @@
   .περιέκτης-πεδίου textarea {
     /* font-size: max(1vw, 14px); */
     padding: 1.4vh 2vw;
-
     border-radius: 20px;
   }
 }
@@ -117,31 +115,31 @@
 /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
 input.με-υαλομορφισμό,
 textarea.με-υαλομορφισμό {
-  border-color: var(--border-color-blurred);
+  border-color: var(--όριο-χρώμα-θολό);
   background-color: rgba(0, 253, 253, 0.005);
   backdrop-filter: blur(3px);
 }
 
 input.με-αδιαφανή-στοιχεία,
 textarea.με-αδιαφανή-στοιχεία {
-  border-color: var(--border-color-blurred);
-  background-color: var(--second-bg-color);
+  border-color: var(--όριο-χρώμα-θολό);
+  background-color: var(--υπ-δευτερεύον-χρώμα);
 }
 
 input.με-ημιδιαφανή-στοιχεία,
 textarea.με-ημιδιαφανή-στοιχεία {
-  border-color: var(--border-color-blurred);
-  background-color: var(--second-bg-color-blurred);
+  border-color: var(--όριο-χρώμα-θολό);
+  background-color: var(--υβ-δευτερεύον-χρώμα-θολό);
 }
 
 input.με-φέγγος-ορίων,
 textarea.με-φέγγος-ορίων {
-  border-color: var(--main-color);
+  border-color: var(--βασικό-χρώμα);
 }
 
 input.με-φέγγος-στοιχείων,
 textarea.με-φέγγος-στοιχείων {
   /* border-width: 1px; */
-  box-shadow: 0 0px 20px var(--main-color);
+  box-shadow: 0 0px 20px var(--βασικό-χρώμα);
 }
 /* --------------- */

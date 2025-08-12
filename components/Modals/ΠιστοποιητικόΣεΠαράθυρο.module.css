@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
   padding: 10vh 10vw;
-  background-color: var(--bg-color);
+  background-color: var(--υβ-βασικό-χρώμα);
   z-index: 160;
   max-height: none;
   max-width: none;
@@ -14,7 +14,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  color: var(--main-color);
+  color: var(--βασικό-χρώμα);
 }
 
 .πλήκτρο {

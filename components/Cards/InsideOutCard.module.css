@@ -7,22 +7,30 @@
   --gap-between-icons: 25px;
   --container-padding-ver: 15px;
   --container-padding-hor: 15px;
-  --container-height: calc((var(--icon-height) + (2 * var(--container-padding-ver))))
-  --container-height: calc((var(--icon-height) + (2 * var(--container-padding-ver))))
-  --container-width: calc(
-    var(--icon-number) * var(--icon-width) +
-      ((var(--icon-number) - 1) * var(--gap-between-icons)) +
-      (2 * var(--container-padding-hor))
+  --container-height: calc(
+      (var(--icon-height) + (2 * var(--container-padding-ver)))
+    )
+    --container-height: calc(
+      (var(--icon-height) + (2 * var(--container-padding-ver)))
+    )
+    --container-width: calc(
+      var(--icon-number) * var(--icon-width) +
+        ((var(--icon-number) - 1) * var(--gap-between-icons)) +
+        (2 * var(--container-padding-hor))
+    );
+  --container-initial-position: calc(
+    0px - (var(--icon-width) + var(--container-padding-ver))
   );
-  --container-initial-position: calc(0px - (var(--icon-width) + var(--container-padding-ver)));
-  --container-final-position: calc(0px - (var(--icon-width) + (var(--container-padding-ver) / 3)));
+  --container-final-position: calc(
+    0px - (var(--icon-width) + (var(--container-padding-ver) / 3))
+  );
   position: relative;
   /* display: flex;
   flex-direction: column;
   justify-self: center;
   align-items: center; */
-  background-color: var(--second-bg-color-blurred);
-  border: 2px solid var(--main-color);
+  background-color: var(--υβ-δευτερεύον-χρώμα-θολό);
+  border: 2px solid var(--βασικό-χρώμα);
   border-radius: 15px;
   overflow: hidden;
 }
@@ -32,7 +40,7 @@
   opacity: 1;
   top: 0;
   left: 0;
-  background-color: var(--bg-color);
+  background-color: var(--υβ-βασικό-χρώμα);
   width: var(--image-width);
   animation: intro 4s;
   z-index: 20;
@@ -55,7 +63,7 @@
   height: var(--icon-height);
   /* width: var(--container-width); */
   padding: var(--container-padding-ver) var(--container-padding-hor);
-  background-color: var(--second-bg-color);
+  background-color: var(--υπ-δευτερεύον-χρώμα);
   border: 0.5px solid yellow;
   border-radius: 10px;
   font-size: var(--icon-width);
@@ -75,47 +83,46 @@
 .card:hover .card-hidden-container {
   animation: show-hidden-container 1s forwards;
   opacity: 1;
-  transition: opacity 0.3s ;
+  transition: opacity 0.3s;
 }
 
 .card:not(:hover) .card-hidden-container {
   animation: hide-hidden-container 1s forwards;
 }
 
-
 @keyframes remove-overflow {
-  to{
+  to {
     overflow: initial;
   }
 }
 
 @keyframes reapply-overflow {
-  0%{
+  0% {
     overflow: initial;
     pointer-events: none;
   }
-  50%{
+  50% {
     overflow: hidden;
   }
 }
 
 @keyframes show-hidden-container {
-  50%{
+  50% {
     bottom: 5px;
   }
-  100%{
+  100% {
     bottom: var(--container-final-position);
   }
 }
 
 @keyframes hide-hidden-container {
-  0%{
+  0% {
     bottom: var(--container-final-position);
   }
-  50%{
+  50% {
     bottom: 5px;
   }
-  100%{
+  100% {
     bottom: var(--container-initial-position);
   }
 }

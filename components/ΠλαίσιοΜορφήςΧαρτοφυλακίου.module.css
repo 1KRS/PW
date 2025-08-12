@@ -5,13 +5,13 @@
   min-width: 330px;
   max-width: 450px;
   margin: 0.6rem;
-  color: var(--text-color);
-  background: var(--second-bg-color-blurred);
+  color: var(--κείμενο-βασικό-χρώμα);
+  background: var(--υβ-δευτερεύον-χρώμα-θολό);
   border: none;
   transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
   cursor: pointer;
   overflow: hidden;
-} 
+}
 
 .χωρίς-εξωτερικό-περιθώριο {
   margin: 0;
@@ -27,24 +27,24 @@
 
 /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
 .με-υαλομορφισμό {
-  border-color: var(--border-color-blurred);
+  border-color: var(--όριο-χρώμα-θολό);
   background-color: rgba(0, 253, 253, 0.005);
-  /* backdrop-filter: blur(3px); */ 
+  /* backdrop-filter: blur(3px); */
 }
 
 .με-αδιαφανή-στοιχεία {
-  border-color: var(--border-color-blurred);
-  background-color: var(--second-bg-color);
+  border-color: var(--όριο-χρώμα-θολό);
+  background-color: var(--υπ-δευτερεύον-χρώμα);
 }
 .με-ημιδιαφανή-στοιχεία {
-  border-color: var(--border-color-blurred);
-  background-color: var(--second-bg-color-blurred);
+  border-color: var(--όριο-χρώμα-θολό);
+  background-color: var(--υβ-δευτερεύον-χρώμα-θολό);
 }
 .με-φέγγος-ορίων {
-  border-color: var(--main-color);
+  border-color: var(--βασικό-χρώμα);
 }
 .με-φέγγος-στοιχείων {
-  box-shadow: 0 0px 20px var(--main-color);
+  box-shadow: 0 0px 20px var(--βασικό-χρώμα);
 }
 
 .πάχος-ορίου-0 {

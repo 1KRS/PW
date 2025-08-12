@@ -1,6 +1,6 @@
 .τίτλος {
   position: fixed;
-  top: 8vh;
+  top: calc(var(--ύψος-κεφαλίδας-προγραμματισμού) + 3vh);
   display: flex;
   justify-content: center;
   /* font-size: 1vh; */
@@ -9,7 +9,6 @@
 
 @media (orientation: landscape) and (min-height: 700px) {
   .τίτλος {
-    top: 8vh;
     font-size: 2rem;
   }
 }
@@ -39,10 +38,14 @@
   }
 }
 
+/* ================================================ */
+/* ================================================ */
+
+
 @media (orientation: portrait) {
   .τίτλος {
     position: fixed;
-    top: 8vh;
+    top: calc(var(--ύψος-κεφαλίδας-προγραμματισμού) + 3vh);
     display: flex;
     justify-content: center;
     font-size: 2rem;
@@ -51,15 +54,26 @@
 }
 
 /* ================================================ */
-@media (min-height: 400px) {
+
+@media (orientation: portrait) and (min-height: 400px) {
   /* .τίτλος {
     top: 45px;
   } */
 }
 
 /* ================================================ */
-@media (min-height: 550px) {
-  /* .τίτλος {
-    top: 10vh;
-  } */
+
+@media (orientation: portrait) and (min-height: 768px) {
+  .τίτλος {
+    top: calc(var(--ύψος-κεφαλίδας-προγραμματισμού) + 2vh);
+    /* font-size: 3rem; */
+  }
+}
+
+/* ================================================ */
+
+@media (orientation: portrait) and (min-height: 768px) and (min-width: 480px) {
+  .τίτλος {
+    font-size: 3rem;
+  }
 }

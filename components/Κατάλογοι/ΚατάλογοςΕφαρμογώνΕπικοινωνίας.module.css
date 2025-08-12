@@ -1,5 +1,4 @@
 .περιέκτης-καταλόγου {
-  --καμπύλη-γωνίας: 14px;
   position: relative;
   width: fit-content;
 }
@@ -10,9 +9,9 @@
   height: fit-content;
   width: 100%;
   padding: 1.4vh 8px;
-  border: 2px solid var(--main-color);
-  border-radius: var(--καμπύλη-γωνίας);
-  background: var(--second-bg-color-blurred);
+  border: 2px solid var(--βασικό-χρώμα);
+  border-radius: var(--μικρή-καμπύλη-γωνίας);
+  background: var(--υβ-δευτερεύον-χρώμα-θολό);
   color: #8c949b;
   gap: 8px;
   cursor: pointer;
@@ -63,12 +62,12 @@
   display: flex;
   align-items: center;
   padding: 8px 12px;
-  background: var(--second-bg-color-blurred);
-  border: 1px solid var(--main-color);
-  border-radius: var(--καμπύλη-γωνίας);
+  background: var(--υβ-δευτερεύον-χρώμα-θολό);
+  border: 1px solid var(--βασικό-χρώμα);
+  border-radius: var(--μικρή-καμπύλη-γωνίας);
   width: fit-content;
   min-width: 135px;
-  color: var(--main-color);
+  color: var(--βασικό-χρώμα);
   gap: 8px;
   cursor: pointer;
   transition:
@@ -145,30 +144,30 @@
 /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
 .περιέκτης-κυρίως-πλήκτρου.με-υαλομορφισμό,
 .στοιχείο-καταλόγου.με-υαλομορφισμό {
-  border-color: var(--border-color-blurred);
+  border-color: var(--όριο-χρώμα-θολό);
   background-color: rgba(0, 253, 253, 0.005);
   backdrop-filter: blur(3px);
 }
 
 .περιέκτης-κυρίως-πλήκτρου.με-αδιαφανή-στοιχεία,
 .στοιχείο-καταλόγου.με-αδιαφανή-στοιχεία {
-  border-color: var(--border-color-blurred);
-  background-color: var(--second-bg-color);
+  border-color: var(--όριο-χρώμα-θολό);
+  background-color: var(--υπ-δευτερεύον-χρώμα);
 }
 
 .περιέκτης-κυρίως-πλήκτρου.με-ημιδιαφανή-στοιχεία,
 .στοιχείο-καταλόγου.με-ημιδιαφανή-στοιχεία {
-  border-color: var(--border-color-blurred);
-  background-color: var(--second-bg-color-blurred);
+  border-color: var(--όριο-χρώμα-θολό);
+  background-color: var(--υβ-δευτερεύον-χρώμα-θολό);
 }
 
 .περιέκτης-κυρίως-πλήκτρου.με-φέγγος-ορίων,
 .στοιχείο-καταλόγου.με-φέγγος-ορίων {
-  border-color: var(--main-color);
+  border-color: var(--βασικό-χρώμα);
 }
 
 .περιέκτης-κυρίως-πλήκτρου.με-φέγγος-στοιχείων,
 .στοιχείο-καταλόγου.με-φέγγος-στοιχείων {
-  box-shadow: 0 0px 20px var(--main-color);
+  box-shadow: 0 0px 20px var(--βασικό-χρώμα);
 }
 /* --------------- */

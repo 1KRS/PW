@@ -22,7 +22,7 @@
   height: fit-content;
   width: fit-content;
   margin: 0;
-  border: var(--border-thickness) solid var(--border-color-blurred);
+  border: var(--border-thickness) solid var(--όριο-χρώμα-θολό);
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(255, 217, 0, 0);
   transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
@@ -32,13 +32,13 @@
 
 /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
 .περίβλημα-πλήκτρο.με-φέγγος-ορίων {
-  border-color: var(--main-color);
+  border-color: var(--βασικό-χρώμα);
 }
 
 .περίβλημα-πλήκτρο.με-φέγγος-στοιχείων,
 .περίβλημα-πλήκτρο.με-φέγγος-στοιχείων.ενεργό,
 .περίβλημα-πλήκτρο.με-φέγγος-στοιχείων.ανενεργό {
-  box-shadow: 0 0 20px var(--main-color);
+  box-shadow: 0 0 20px var(--βασικό-χρώμα);
   /* border-color: transparent; */
 }
 /* --------------- */

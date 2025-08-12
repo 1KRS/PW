@@ -16,9 +16,9 @@
   font-size: 1.3vh;
   text-align: center;
   padding: 0 0 1px 0;
-  color: var(--main-color);
+  color: var(--βασικό-χρώμα);
 }
 
 .tech-icon {
-  color: var(--main-color);
+  color: var(--βασικό-χρώμα);
 }

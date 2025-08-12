@@ -14,10 +14,10 @@
 }
 
 .περιέκτης-διακόπτη.ενεργό {
-  border: var(--border-thickness) solid var(--success);
+  border: var(--border-thickness) solid var(--επιτυχία);
 }
 .περιέκτης-διακόπτη.ανενεργό {
-  border: var(--border-thickness) solid var(--error);
+  border: var(--border-thickness) solid var(--σφάλμα);
 }
 
 .τετράγωνο-επιλογής {

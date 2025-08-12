@@ -19,14 +19,14 @@
   padding: 5vh 2vw 10vh;
   overflow-y: auto;
   overflow-x: hidden;
-  background-color: var(--second-bg-color-blurred);
-  border: 2px solid var(--main-color);
+  background-color: var(--υβ-δευτερεύον-χρώμα-θολό);
+  border: 2px solid var(--βασικό-χρώμα);
   border-radius: 25px;
   mask-image: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0),
-    var(--main-color) 15%,
-    var(--main-color) 80%,
+    var(--βασικό-χρώμα) 15%,
+    var(--βασικό-χρώμα) 80%,
     rgba(255, 255, 255, 0)
   );
 }
@@ -37,7 +37,7 @@
   font-size: 1.5rem;
   margin-top: 2.3vh;
   text-align: center;
-  color: var(--main-color);
+  color: var(--βασικό-χρώμα);
 }
 
 /* ================================================ */

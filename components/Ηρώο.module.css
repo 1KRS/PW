@@ -10,7 +10,7 @@
 }
 
 .περιεχόμενο-αρχικής span {
-  color: var(--main-color);
+  color: var(--βασικό-χρώμα);
 }
 
 .περιεχόμενο-αρχικής h1 {
@@ -21,7 +21,7 @@
   line-height: 1;
 }
 
-.περιεχόμενο-αρχικής h3 {
+.περιεχόμενο-αρχικής p {
   display: flex;
   font-size: clamp(0.9rem, 3vw, 2rem);
   margin-top: 2vh;
@@ -41,8 +41,8 @@
   border-radius: 40%;
   padding: 40px;
   border: none;
-  background-color: var(--main-color);
-  box-shadow: 0 0 25px var(--main-color);
+  background-color: var(--βασικό-χρώμα);
+  box-shadow: 0 0 25px var(--βασικό-χρώμα);
   transition: 0.7s ease-in-out;
   scale: 0.6;
 }
@@ -50,10 +50,10 @@
 .περιέκτης-λογότυπου:hover {
   background-color: transparent;
   box-shadow:
-    0 0 25px var(--main-color),
-    0 0 50px var(--main-color),
-    0 0 100px var(--main-color),
-    0 0 125px var(--main-color);
+    0 0 25px var(--βασικό-χρώμα),
+    0 0 50px var(--βασικό-χρώμα),
+    0 0 100px var(--βασικό-χρώμα),
+    0 0 125px var(--βασικό-χρώμα);
 }
 
 .περιέκτης-λογότυπου .λογότυπο {
@@ -73,7 +73,7 @@
 }
 
 .περιέκτης-λογότυπου .εικόνα {
-  fill: var(--second-bg-color-blurred);
+  fill: var(--υβ-δευτερεύον-χρώμα-θολό);
   transition: 0.7s ease-in-out;
 }
 
@@ -114,7 +114,7 @@
   }
 
   .περιεχόμενο-αρχικής span {
-    color: var(--main-color);
+    color: var(--βασικό-χρώμα);
   }
 
   .περιεχόμενο-αρχικής h1 {
@@ -151,8 +151,8 @@
     border-radius: 40%;
     padding: 60px;
     border: none;
-    background-color: var(--main-color);
-    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--βασικό-χρώμα);
+    box-shadow: 0 0 25px var(--βασικό-χρώμα);
     transition: 0.7s ease-in-out;
     scale: 1;
   }
@@ -160,10 +160,10 @@
   .περιέκτης-λογότυπου:hover {
     background-color: transparent;
     box-shadow:
-      0 0 25px var(--main-color),
-      0 0 50px var(--main-color),
-      0 0 100px var(--main-color),
-      0 0 125px var(--main-color);
+      0 0 25px var(--βασικό-χρώμα),
+      0 0 50px var(--βασικό-χρώμα),
+      0 0 100px var(--βασικό-χρώμα),
+      0 0 125px var(--βασικό-χρώμα);
   }
 
   .περιέκτης-λογότυπου .λογότυπο {
@@ -183,7 +183,7 @@
   }
 
   .περιέκτης-λογότυπου .εικόνα {
-    fill: var(--second-bg-color-blurred);
+    fill: var(--υβ-δευτερεύον-χρώμα-θολό);
     transition: 0.7s ease-in-out;
   }
 

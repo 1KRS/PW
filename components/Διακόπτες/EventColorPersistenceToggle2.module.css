@@ -10,7 +10,7 @@
   width: var(--container-width);
   height: var(--container-height);
   padding: var(--container-padding);
-  border: var(--border-thickness) solid var(--main-color);
+  border: var(--border-thickness) solid var(--βασικό-χρώμα);
   border-radius: 50px;
 }
 

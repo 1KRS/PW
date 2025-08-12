@@ -31,8 +31,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: var(--second-bg-color-blurred);
-  border: 2px solid var(--border-color-blurred);
+  background-color: var(--υβ-δευτερεύον-χρώμα-θολό);
+  border: 2px solid var(--όριο-χρώμα-θολό);
   padding: 0.4vh 1vw;
   margin: 0.5vh 0.5vw;
   text-align: center;

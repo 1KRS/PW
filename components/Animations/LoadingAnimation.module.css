@@ -9,13 +9,13 @@
   position: absolute;
   width: 220px;
   height: 220px;
-  border: 0px solid var(--main-color);
+  border: 0px solid var(--βασικό-χρώμα);
   border-radius: 50%;
 }
 
 .ring:nth-child(1) {
   border-bottom-width: 8px;
-  border-color: var(--main-color);
+  border-color: var(--βασικό-χρώμα);
   animation: rotate 2s linear infinite;
 }
 
@@ -27,7 +27,7 @@
 
 .ring:nth-child(3) {
   border-top-width: 8px;
-  border-color: var(--main-color);
+  border-color: var(--βασικό-χρώμα);
   animation: rotate3 2s linear infinite;
 }
 
@@ -63,13 +63,13 @@
 }
 @keyframes pulsing {
   0% {
-    color: var(--main-color);
+    color: var(--βασικό-χρώμα);
   }
   50% {
     color: #00fdfd80;
     
   }
   100% {
-    color: var(--main-color);
+    color: var(--βασικό-χρώμα);
   }
 }

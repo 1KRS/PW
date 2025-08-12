@@ -6,8 +6,8 @@
   height: auto;
   width: auto;
   max-width: 90%;
-  background: var(--second-bg-color-blurred);
-  color: var(--text-color);
+  background: var(--υβ-δευτερεύον-χρώμα-θολό);
+  color: var(--κείμενο-βασικό-χρώμα);
   border: 2px solid transparent;
   border-radius: 20px;
   padding: 2vw;
@@ -21,7 +21,7 @@
   border: 2px solid var(--ποιότητα);
   transform: scale(1.05);
   box-shadow: 0 0 50px var(--ποιότητα);
-  background-color: var(--second-bg-color);
+  background-color: var(--υπ-δευτερεύον-χρώμα);
 }
 
 .μαρτυρία .επάνω-γραμμή {
@@ -84,7 +84,7 @@
   margin: 0 auto;
   padding: 1px 2vw;
 
-  border: 2px solid var(--error);
+  border: 2px solid var(--σφάλμα);
   border-radius: 5px;
 }
 
@@ -131,7 +131,7 @@
     font-size: clamp(0.6rem, 1.3vw, 0.8rem);
     font-weight: bold;
     padding: 1px 5px;
-    border: 2px solid var(--error);
+    border: 2px solid var(--σφάλμα);
     border-radius: 5px;
   }
   .μαρτυρία .υπόδειξη-αυθεντικότητας-μαρτυρίας-μέση {
@@ -166,23 +166,23 @@
 
 /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
 .με-υαλομορφισμό {
-  border-color: var(--border-color-blurred);
+  border-color: var(--όριο-χρώμα-θολό);
   background-color: rgba(0, 253, 253, 0.005);
   backdrop-filter: blur(3px);
 }
 
 .με-αδιαφανή-στοιχεία {
-  border-color: var(--border-color-blurred);
-  background-color: var(--second-bg-color);
+  border-color: var(--όριο-χρώμα-θολό);
+  background-color: var(--υπ-δευτερεύον-χρώμα);
 }
 .με-ημιδιαφανή-στοιχεία {
-  border-color: var(--border-color-blurred);
-  background-color: var(--second-bg-color-blurred);
+  border-color: var(--όριο-χρώμα-θολό);
+  background-color: var(--υβ-δευτερεύον-χρώμα-θολό);
 }
 .με-φέγγος-ορίων {
-  border-color: var(--main-color);
+  border-color: var(--βασικό-χρώμα);
 }
 .με-φέγγος-στοιχείων {
-  box-shadow: 0 0px 20px var(--main-color);
+  box-shadow: 0 0px 20px var(--βασικό-χρώμα);
 }
 /* --------------- */

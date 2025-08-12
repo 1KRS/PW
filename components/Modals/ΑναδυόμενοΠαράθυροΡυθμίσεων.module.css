@@ -4,7 +4,7 @@
   min-height: 510px;
   width: auto;
   margin: 20px;
-  background-color: var(--second-bg-color-extra-blurred);
+  background-color: var(--υβ-δευτερεύον-χρώμα-επιπλέον-θολό);
   border: 1px solid transparent;
   border-radius: 20px;
   transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
@@ -24,8 +24,8 @@
 }
 
 .λογότυπο .εικόνα {
-  stroke: var(--main-color);
-  fill: var(--main-color);
+  stroke: var(--βασικό-χρώμα);
+  fill: var(--βασικό-χρώμα);
 }
 
 .τίτλος-παραθύρου {
@@ -35,7 +35,7 @@
   justify-content: center;
   width: 100%;
   font-size: 29px;
-  color: var(--main-color);
+  color: var(--βασικό-χρώμα);
   margin: 2px 0 0;
 }
 
@@ -73,7 +73,7 @@
 
 .περιέκτης-πλοήγησης-παραθύρου-ρυθμίσεων .στοιχείο {
   font-size: 1.5rem;
-  color: var(--main-color);
+  color: var(--βασικό-χρώμα);
   font-weight: 700;
   transition: 0.3s ease;
   border-bottom: 2px solid transparent;
@@ -82,16 +82,16 @@
 
 .περιέκτης-πλοήγησης-παραθύρου-ρυθμίσεων .στοιχείο:hover,
 .περιέκτης-πλοήγησης-παραθύρου-ρυθμίσεων .στοιχείο:active {
-  color: var(--main-color);
+  color: var(--βασικό-χρώμα);
   border-bottom: 2px solid gold;
   transform: scale(1.1);
 }
 
-  .περιέκτης-πλοήγησης-παραθύρου-ρυθμίσεων .στοιχείο.active {
-    color: gold;
-    transition: 0.3s ease-in;
-    cursor: pointer;
-  }
+.περιέκτης-πλοήγησης-παραθύρου-ρυθμίσεων .στοιχείο.active {
+  color: gold;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
 
 .διακόπτες-ρυθμίσεων {
   position: absolute;
@@ -115,7 +115,7 @@
 }
 
 .τίτλος-διακόπτη {
-  color: var(--main-color);
+  color: var(--βασικό-χρώμα);
   font-size: 18px;
 }
 
@@ -135,7 +135,7 @@
     width: auto;
     max-width: 400px;
     margin: 20px;
-    background-color: var(--second-bg-color-extra-blurred);
+    background-color: var(--υβ-δευτερεύον-χρώμα-επιπλέον-θολό);
     border: 1px solid transparent;
     border-radius: 20px;
     transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
@@ -157,7 +157,7 @@
     min-height: fit-content;
 
     width: var(--πλάτος);
-    background-color: var(--second-bg-color-blurred);
+    background-color: var(--υβ-δευτερεύον-χρώμα-θολό);
   }
 
   .λογότυπο {
@@ -193,22 +193,22 @@
 
 /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
 .με-υαλομορφισμό {
-  border-color: var(--border-color-blurred);
+  border-color: var(--όριο-χρώμα-θολό);
   background-color: rgba(0, 253, 253, 0.005);
   backdrop-filter: blur(3px);
 }
 
 .με-αδιαφανή-στοιχεία {
-  border-color: var(--border-color-blurred);
-  background-color: var(--second-bg-color);
+  border-color: var(--όριο-χρώμα-θολό);
+  background-color: var(--υπ-δευτερεύον-χρώμα);
 }
 .με-ημιδιαφανή-στοιχεία {
-  border-color: var(--border-color-blurred);
+  border-color: var(--όριο-χρώμα-θολό);
 }
 .με-φέγγος-ορίων {
-  border-color: var(--main-color);
+  border-color: var(--βασικό-χρώμα);
 }
 .με-φέγγος-στοιχείων {
-  box-shadow: 0 0px 20px var(--main-color);
+  box-shadow: 0 0px 20px var(--βασικό-χρώμα);
 }
 /* --------------- */

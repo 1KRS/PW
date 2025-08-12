@@ -35,7 +35,7 @@
   width: 40px;
   background: transparent;
   border-radius: 50%;
-  color: var(--main-color);
+  color: var(--βασικό-χρώμα);
   margin: 1rem 0.5rem;
   transition: 0.3s ease-in-out;
   cursor: pointer;
@@ -58,7 +58,7 @@
 }
 
 .flag:hover {
-  background: var(--main-color);
-  box-shadow: 0 0 10px 2px var(--main-color);
+  background: var(--βασικό-χρώμα);
+  box-shadow: 0 0 10px 2px var(--βασικό-χρώμα);
   transform: scale(1.2);
 }

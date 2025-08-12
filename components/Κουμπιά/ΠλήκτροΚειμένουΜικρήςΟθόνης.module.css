@@ -1,8 +1,8 @@
 .βασικό-πλήκτρο,
 .δευτερεύον-πλήκτρο {
   padding: 1vh 2.8vw;
-  background: var(--main-color);
-  box-shadow: 0 0 25px var(--main-color);
+  background: var(--βασικό-χρώμα);
+  box-shadow: 0 0 25px var(--βασικό-χρώμα);
   font-size: 1rem;
   font-weight: 600;
   color: black;
@@ -17,9 +17,9 @@
 .βασικό-πλήκτρο:hover,
 .δευτερεύον-πλήκτρο:hover {
   transform: scale(1.05) translateY(-5px);
-  background: var(--main-color);
+  background: var(--βασικό-χρώμα);
   color: white;
-  box-shadow: 0 0 50px var(--main-color);
+  box-shadow: 0 0 50px var(--βασικό-χρώμα);
 }
 
 /* ================================================ */

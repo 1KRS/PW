@@ -14,10 +14,10 @@
 .card:hover {
   height: 420px;
   transform: translateY(-10px);
-  background-color: var(--second-bg-color-blurred);
-  border: 2px solid var(--main-color);
+  background-color: var(--υβ-δευτερεύον-χρώμα-θολό);
+  border: 2px solid var(--βασικό-χρώμα);
   border-radius: 20px;
-  box-shadow: 0 0 50px var(--main-color);
+  box-shadow: 0 0 50px var(--βασικό-χρώμα);
 }
 
 .imgbx {
@@ -39,7 +39,7 @@
   margin-top: -140px;
   text-align: center;
   visibility: hidden;
-  color: var(--main-color);
+  color: var(--βασικό-χρώμα);
   opacity: 0;
   transition: 0.5s ease-in-out;
 }

@@ -1,8 +1,19 @@
 .landing-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
-  background: url('../../public/images/view-ancient-greek-architecture-with-temple-structure-σκοτεινή.jpg') center/cover;
+  height: 100dvh;
+  min-height: 100dvh;
+  width: 100dvw;
+  min-width: 100dvw;
+  background: url('../../public/images/view-ancient-greek-architecture-with-temple-structure-σκοτεινή.jpg')
+    center/cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
 }

@@ -1,5 +1,5 @@
 .πλαίσιο-μορφής {
-  background: var(--second-bg-color-blurred);
+  background: var(--υβ-δευτερεύον-χρώμα-θολό);
   border: none;
   border-radius: none;
   transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
@@ -44,24 +44,24 @@
 /* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
 
 .με-υαλομορφισμό {
-  border-color: var(--border-color-blurred);
+  border-color: var(--όριο-χρώμα-θολό);
   background-color: rgba(0, 253, 253, 0.005);
   backdrop-filter: blur(3px);
 }
 
 .με-αδιαφανή-στοιχεία {
-  border-color: var(--border-color-blurred);
-  background-color: var(--second-bg-color);
+  border-color: var(--όριο-χρώμα-θολό);
+  background-color: var(--υπ-δευτερεύον-χρώμα);
 }
 .με-ημιδιαφανή-στοιχεία {
-  border-color: var(--border-color-blurred);
-  background-color: var(--second-bg-color-blurred);
+  border-color: var(--όριο-χρώμα-θολό);
+  background-color: var(--υβ-δευτερεύον-χρώμα-θολό);
 }
 .με-φέγγος-ορίων {
-  border-color: var(--main-color);
+  border-color: var(--βασικό-χρώμα);
 }
 .με-φέγγος-στοιχείων {
-  box-shadow: 0 0px 20px var(--main-color);
+  box-shadow: 0 0px 20px var(--βασικό-χρώμα);
 }
 
 .πάχος-ορίου-0 {

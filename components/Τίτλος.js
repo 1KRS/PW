@@ -4,9 +4,9 @@ import Μετάφραση from '@/components/Μετάφραση';
 
 const Τίτλος = ({ text }) => {
   return (
-    <h2 className={styles.τίτλος}>
+    <h1 className={styles.τίτλος}>
       <Μετάφραση>{text}</Μετάφραση>
-    </h2>
+    </h1>
   );
 };
 export default Τίτλος;
