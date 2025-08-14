@@ -17,7 +17,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   padding: 8vh 3vw 10vh;
-  height: 73vh;
+  height: 100%;
   border-radius: 50px;
   overflow-y: auto;
   overflow-x: hidden;

@@ -5,9 +5,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: clamp(
+    52px,
+    var(--ύψος-κεφαλίδας-προγραμματισμού),
+    55px
+  ); /* Το ελάχιστο βγαίνει ως εξής; 32px τα εικονίδια + 20px το padding */
   width: 100vw;
-  height: var(--ύψος-κεφαλίδας-προγραμματισμού);
-  min-height: 52px; /* 32px τα εικονίδια + 20px το padding */
   padding: 10px 10px;
   background: transparent;
   backdrop-filter: blur(2px);

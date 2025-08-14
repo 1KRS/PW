@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <footer className={styles.υποσέλιδο}>
       <div className={styles['περιέκτης-κεντρικού-τμήματος-υποσέλιδου']}>
-        <nav className={styles['home-bottom-nav']}>
+        <nav className={styles['γραμμή-πλήκτρων-υποσέλιδου']}>
           <ul className={styles.στοιχεία}>
             <Link
               href="/programming/faq"

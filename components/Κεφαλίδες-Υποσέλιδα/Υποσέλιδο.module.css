@@ -1,11 +1,10 @@
 .υποσέλιδο {
   position: absolute;
   bottom: 0;
-  /* padding: 0 20%; */
   z-index: 5;
 }
 
-.home-bottom-nav {
+.γραμμή-πλήκτρων-υποσέλιδου {
   display: none;
 }
 
@@ -44,7 +43,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    height: auto;
+    height: clamp(52px, var(--υποσέλιδο-ύψος-προγραμματισμού), 55px);
     width: 100vw;
     padding: 0 12% 0;
     background: transparent;
@@ -52,7 +51,7 @@
     z-index: 5;
   }
 
-  .home-bottom-nav {
+  .γραμμή-πλήκτρων-υποσέλιδου {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +62,7 @@
     backdrop-filter: blur(2px);
   }
 
-  .home-bottom-nav .στοιχεία {
+  .γραμμή-πλήκτρων-υποσέλιδου .στοιχεία {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,7 +71,7 @@
     list-style: none;
   }
 
-  .home-bottom-nav .στοιχείο {
+  .γραμμή-πλήκτρων-υποσέλιδου .στοιχείο {
     font-size: 1.1rem;
     color: var(--κείμενο-βασικό-χρώμα);
     font-weight: 700;
@@ -81,16 +80,16 @@
     text-align: center;
   }
 
-  .home-bottom-nav .στοιχείο:hover,
-  .home-bottom-nav .στοιχείο:active,
-  .home-bottom-nav .στοιχείο:visited {
+  .γραμμή-πλήκτρων-υποσέλιδου .στοιχείο:hover,
+  .γραμμή-πλήκτρων-υποσέλιδου .στοιχείο:active,
+  .γραμμή-πλήκτρων-υποσέλιδου .στοιχείο:visited {
     color: var(--βασικό-χρώμα);
     border-bottom: 2px solid gold;
     transform: scale(1.1);
     /* text-decoration: none; */
   }
 
-  .home-bottom-nav .στοιχείο.active {
+  .γραμμή-πλήκτρων-υποσέλιδου .στοιχείο.active {
     color: gold;
     transition: 0.3s ease-in;
     cursor: pointer;

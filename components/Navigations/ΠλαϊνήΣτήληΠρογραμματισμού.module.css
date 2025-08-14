@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(3.5vh + 2.5vh);
+  height: var(--πλαϊνή-στήλη-προγραμματισμού-ύψος-βασικό); /* 3.5vh + 2.5vh */
   width: calc((var(--list-items) * 5vh) + 5vh + 2.5vh);
   padding: 10px 0 5px;
   gap: 2.5vh;
