@@ -16,12 +16,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 8vh 3vw 10vh;
   height: 100%;
+  padding: 8vh 3vw 10vh;
   border-radius: 50px;
   overflow-y: auto;
   overflow-x: hidden;
-  /* transition: all 2s ease-in-out; */
 }
 
 .στοιχεία-χρονολογίου.με-θολό-κάλυμμα {
@@ -32,7 +31,6 @@
     var(--βασικό-χρώμα) 85%,
     rgba(255, 255, 255, 0)
   );
-  /* transition: all 2s ease-in-out; */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
