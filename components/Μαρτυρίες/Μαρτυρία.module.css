@@ -1,0 +1,253 @@
+.μαρτυρία {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  max-width: 90%;
+  background: var(--υβ-δευτερεύον-χρώμα-θολό);
+  color: var(--κείμενο-βασικό-χρώμα);
+  border: 2px solid transparent;
+  border-radius: 20px;
+  /* margin: 5px 0; */
+  padding: 2vw;
+  text-align: center;
+  gap: var(--απόσταση-στοιχείων-μικρή);
+  cursor: pointer;
+  transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
+}
+
+.μαρτυρία:hover {
+  border: 2px solid var(--ποιότητα);
+  transform: scale(1.05);
+  box-shadow: 0 0 50px var(--ποιότητα);
+  background-color: var(--υπ-δευτερεύον-χρώμα);
+}
+
+.μαρτυρία .επάνω-γραμμή {
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  padding: 0 15px 0;
+}
+
+.μαρτυρία.ψεύτικη-μαρτυρία .επάνω-γραμμή {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.μαρτυρία.αληθινή-μαρτυρία .επάνω-γραμμή {
+  grid-template-columns: 1fr 1fr;
+}
+
+.μαρτυρία .εικόνα {
+  width: 10vw;
+  height: 10vw;
+  border: 1px solid var(--ποιότητα);
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--ποιότητα);
+}
+
+.μαρτυρία .όνομα-και-βαθμολογία {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--απόσταση-στοιχείων-πολύ-μικρή);
+}
+
+.μαρτυρία .όνομα {
+  font-size: clamp(0.8rem, 4.5vw, 1.8rem);
+}
+
+.μαρτυρία .βαθμολογία {
+  color: var(--ποιότητα);
+  font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+}
+
+.μαρτυρία .κείμενο {
+  width: 95%;
+  font-size: clamp(0.6rem, 3vw, 1.2rem);
+  margin-top: 5px;
+}
+
+.μαρτυρία .υπόδειξη-αυθεντικότητας-μαρτυρίας-επάνω {
+  display: none;
+}
+.μαρτυρία .υπόδειξη-αυθεντικότητας-μαρτυρίας-μέση {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  color: var(--ποιότητα);
+  font-size: clamp(0.45rem, 2vw, 0.8rem);
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 1px 2vw;
+  border: 2px solid var(--σφάλμα);
+  border-radius: 5px;
+}
+
+/* ================================================ */
+@media (min-width: 480px) {
+}
+/* ================================================ */
+@media (min-width: 768px) {
+  .μαρτυρία {
+  margin: 0 0;
+  }
+}
+/* ================================================ */
+@media (min-width: 1024px) {
+  .μαρτυρία {
+    justify-content: flex-start;
+    height: fit-content;
+    min-width: 270px;
+    gap: var(--απόσταση-στοιχείων-μεγάλη);
+  }
+
+  .μαρτυρία:hover {
+    transform: translateY(-10px) scale(1.03);
+  }
+
+  .μαρτυρία.αληθινή-μαρτυρία {
+    min-height: 436px;
+    padding: 25px 15px;
+  }
+  .μαρτυρία.ψεύτικη-μαρτυρία {
+    min-height: 400px;
+    padding: 20px 10px;
+  }
+
+  .μαρτυρία .επάνω-γραμμή {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--απόσταση-στοιχείων-μικρή);
+  }
+
+  .μαρτυρία .υπόδειξη-αυθεντικότητας-μαρτυρίας-επάνω {
+    display: block;
+    color: var(--ποιότητα);
+    font-size: clamp(0.6rem, 1.3vw, 0.8rem);
+    font-weight: bold;
+    padding: 1px 5px;
+    border: 2px solid var(--σφάλμα);
+    border-radius: 5px;
+  }
+  .μαρτυρία .υπόδειξη-αυθεντικότητας-μαρτυρίας-μέση {
+    display: none;
+  }
+
+  .μαρτυρία .εικόνα {
+    min-height: 152px;
+    min-width: 152px;
+  }
+
+  .μαρτυρία .όνομα-και-βαθμολογία {
+    align-items: center;
+    gap: var(--απόσταση-στοιχείων-μικρή);
+  }
+
+  .μαρτυρία .όνομα {
+    font-size: 1.8rem;
+  }
+
+  .μαρτυρία .βαθμολογία {
+    font-size: 1.5rem;
+  }
+
+  .μαρτυρία .κείμενο {
+    font-size: 1rem;
+  }
+}
+/* ================================================ */
+@media (min-width: 1366px) {
+  .μαρτυρία {
+    justify-content: flex-start;
+    height: fit-content;
+    width: 300px;
+    min-width: 300px;
+    gap: var(--απόσταση-στοιχείων-μεγάλη);
+  }
+
+  .μαρτυρία:hover {
+    transform: translateY(-10px) scale(1.03);
+  }
+
+  .μαρτυρία.αληθινή-μαρτυρία {
+    min-height: 436px;
+    padding: 25px 15px;
+  }
+  .μαρτυρία.ψεύτικη-μαρτυρία {
+    min-height: 460px;
+    padding: 20px 10px;
+  }
+
+  .μαρτυρία .επάνω-γραμμή {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--απόσταση-στοιχείων-μεγάλη);
+  }
+
+  .μαρτυρία .υπόδειξη-αυθεντικότητας-μαρτυρίας-επάνω {
+    display: block;
+    color: var(--ποιότητα);
+    font-size: clamp(0.6rem, 1.3vw, 0.8rem);
+    font-weight: bold;
+    padding: 1px 5px;
+    border: 2px solid var(--σφάλμα);
+    border-radius: 5px;
+  }
+  .μαρτυρία .υπόδειξη-αυθεντικότητας-μαρτυρίας-μέση {
+    display: none;
+  }
+
+  .μαρτυρία .εικόνα {
+    min-height: 192px;
+    min-width: 192px;
+  }
+
+  .μαρτυρία .όνομα-και-βαθμολογία {
+    align-items: center;
+    gap: var(--απόσταση-στοιχείων-μεγάλη);
+  }
+
+  .μαρτυρία .όνομα {
+    font-size: 1.8rem;
+  }
+
+  .μαρτυρία .βαθμολογία {
+    font-size: 1.5rem;
+  }
+
+  .μαρτυρία .κείμενο {
+    font-size: 1rem;
+  }
+}
+
+/* ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ */
+.με-υαλομορφισμό {
+  border-color: var(--όριο-χρώμα-θολό);
+  background-color: rgba(0, 253, 253, 0.005);
+  backdrop-filter: blur(3px);
+}
+
+.με-αδιαφανή-στοιχεία {
+  border-color: var(--όριο-χρώμα-θολό);
+  background-color: var(--υπ-δευτερεύον-χρώμα);
+}
+.με-ημιδιαφανή-στοιχεία {
+  border-color: var(--όριο-χρώμα-θολό);
+  background-color: var(--υβ-δευτερεύον-χρώμα-θολό);
+}
+.με-φέγγος-ορίων {
+  border-color: var(--βασικό-χρώμα);
+}
+.με-φέγγος-στοιχείων {
+  box-shadow: 0 0px 20px var(--βασικό-χρώμα);
+}
+/* --------------- */
