@@ -148,11 +148,11 @@ export const έννοιες = [
   { ελληνικά: 'για', αγγλικά: 'for', σουηδικά: 'för' },
   {
     ελληνικά:
-      'Για βέλτιστη εμπειρία, συνιστάται η περιήγηση σε συσκευή με μεγαλύτερη οθόνη (iPad ή μεγαλύτερη).',
+      ' Για προσανατολισμό τοπίου, συνιστάται η περιήγηση σε συσκευή με μεγαλύτερη οθόνη.',
     αγγλικά:
-      'For the best experience, it is recommended to browse on a device with a larger screen (iPad or larger).',
+      'For landscape orientation, it is recommended to browse on a device with a larger screen.',
     σουηδικά:
-      'För bästa upplevelse rekommenderas det att surfa på en enhet med större skärm (iPad eller storre).',
+      'För landskapsorientering rekommenderas det att surfa på en enhet med en större skärm.',
   },
   { ελληνικά: 'Γλώσσα', αγγλικά: 'Language', σουηδικά: 'Språk' },
   { ελληνικά: 'Γλώσσα:', αγγλικά: 'Language:', σουηδικά: 'Språk:' },
