@@ -6,11 +6,11 @@ import Μετάφραση from '@/components/Μετάφραση';
 
 import { useAppContext } from '@/context/AppContext';
 
-const SmallScreenTextButton = ({ pxΓιαΑπόκρυψη }) => {
+const SmallScreenTextButton = ({ pxΠλάτουςΓιαΑπόκρυψη }) => {
   const { toggleSmallScreenTextModal } = useAppContext();
 
-  const μέγεθοςΑπόκρυψης = pxΓιαΑπόκρυψη
-    ? pxΓιαΑπόκρυψη === 1024
+  const μέγεθοςΑπόκρυψης = pxΠλάτουςΓιαΑπόκρυψη
+    ? pxΠλάτουςΓιαΑπόκρυψη === 1024
       ? 'απόκρυψη-στα-1024px'
       : 'απόκρυψη-στα-1366px'
     : '';
