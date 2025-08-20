@@ -60,9 +60,15 @@
 @media (min-width: 768px) {
 }
 /* ---------------------------------------  */
-@media (min-width: 1024px) {
+@media (orientation: portrait) and (min-width: 1024px) {
   .τομέας-χρονολογίου {
-    /* top: initial; */
+    top: var(--τομέας-τοποθεσία-πορτραίτο-1024-κάθετη-κύλιση);
+    width: 85vw;
+  }
+}
+@media (orientation: landscape) and (min-width: 1024px) {
+  .τομέας-χρονολογίου {
+    top: var( --τομέας-τοποθεσία-τοπίο-1024-κάθετη-κύλιση);
     width: 85vw;
   }
 }
