@@ -1,70 +1,55 @@
 .τίτλος {
   position: fixed;
-  top: calc(var(--ύψος-κεφαλίδας-προγραμματισμού) + var(--τίτλος-πρόσθετη-απόσταση-επάνω-βασική));
+  top: var(--τίτλος-τοποθεσία-βασική);
   display: flex;
   justify-content: center;
-  /* font-size: 1vh; */
+  font-size: var(--τίτλος-μέγεθος-βασικό);
   text-align: center;
 }
 
-@media (orientation: landscape) and (min-height: 700px) {
+/* @media (orientation: landscape) and (min-height: 700px) {
+} */
+
+/* ================================================ */
+@media (orientation: landscape) and (min-height: 700px) and (min-width: 480px) {
   .τίτλος {
-    font-size: 2rem;
+    font-size: var(--τίτλος-μέγεθος-τοπίο-ύψος-700-πλάτος-480);
+  }
+}
+/* ================================================ */
+@media (orientation: landscape) and (min-height: 700px) and (min-width: 768px) {
+  .τίτλος {
+    font-size: var(--τίτλος-μέγεθος-τοπίο-ύψος-700-πλάτος-768);
+  }
+}
+/* ================================================ */
+@media (orientation: landscape) and (min-height: 700px) and (min-width: 1024px) {
+  .τίτλος {
+    font-size: var(--τίτλος-μέγεθος-τοπίο-ύψος-700-πλάτος-1024);
+  }
+}
+/* ================================================ */
+@media (orientation: landscape) and (min-height: 700px) and (min-width: 1366px) {
+  .τίτλος {
+    top: var(--τίτλος-τοποθεσία-τοπίο-ύψος-700-πλάτος-1366);
   }
 }
 
 /* ================================================ */
-@media (orientation: landscape) and (min-width: 480px) and (min-height: 700px) {
-  .τίτλος {
-    font-size: 2.5rem;
-  }
-}
-/* ================================================ */
-@media (orientation: landscape) and (min-width: 768px) and (min-height: 700px) {
-  .τίτλος {
-    font-size: 3rem;
-  }
-}
-/* ================================================ */
-@media (orientation: landscape) and (min-width: 1024px) and (min-height: 700px) {
-  .τίτλος {
-    font-size: 3.5rem;
-  }
-}
-/* ================================================ */
-@media (orientation: landscape) and (min-width: 1366px) and (min-height: 700px) {
-  .τίτλος {
-    top: 120px;
-  }
-}
 
-/* ================================================ */
-/* ================================================ */
-
-@media (orientation: portrait) {
-  .τίτλος {
-    position: fixed;
-    top: calc(var(--ύψος-κεφαλίδας-προγραμματισμού) + var(--τίτλος-πρόσθετη-απόσταση-επάνω-βασική));
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    text-align: center;
-  }
-}
+/* @media (orientation: portrait) {
+} */
 
 /* ================================================ */
 
 @media (orientation: portrait) and (min-height: 400px) {
-  /* .τίτλος {
-    top: 45px;
-  } */
 }
 
 /* ================================================ */
 
 @media (orientation: portrait) and (min-height: 768px) {
   .τίτλος {
-    top: calc(var(--ύψος-κεφαλίδας-προγραμματισμού) + var(--τίτλος-πρόσθετη-απόσταση-επάνω-πορτραίτο-768));
+    top: var(--τίτλος-τοποθεσία-πορτραίτο-ύψος-768);
     /* font-size: 3rem; */
   }
 }
