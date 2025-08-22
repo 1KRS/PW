@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: var(--τομέας-ύψος-βασικό);
+  height: var(--τομέας-ύψος-τοπίο-βασικό);
   width: 100dvw;
 }
 
@@ -65,6 +65,12 @@
 
 /* ===================== Πορτραίτο ===================== */
 
+/* ---------------------------------------  */
+@media (orientation: portrait) and (min-height: 550px) {
+  .τομέας-χρονολογίου {
+    height: var(--τομέας-ύψος-πορτραίτο-βασικό);
+  }
+}
 /* ---------------------------------------  */
 @media (orientation: portrait) and (min-height: 768px) {
   .τομέας-χρονολογίου {
