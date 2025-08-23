@@ -184,6 +184,11 @@ export const έννοιες = [
     σουηδικά: 'Delphic Maxims API (Uppdatering)',
   },
   {
+    ελληνικά: 'Δελφικό Παράγγελμα της Ημέρας',
+    αγγλικά: 'Delphic Maxim of the Day',
+    σουηδικά: 'Delphic Maxim av Dagen',
+  },
+  {
     ελληνικά: 'Δεν βρέθηκαν εργασίες...',
     αγγλικά: 'No jobs found...',
     σουηδικά: 'Inga jobb hittades...',
@@ -414,6 +419,11 @@ export const έννοιες = [
     σουηδικά: 'Utbildningsföretag för Utvecklare',
   },
   {
+    ελληνικά: 'Εφαρμογή αποκρισιμότητας ιστοτόπου',
+    αγγλικά: 'Website responsive application',
+    σουηδικά: 'Tillämpning av webbplatsens responsivitet',
+  },
+  {
     ελληνικά: 'Εφαρμογή Υαλομορφισμού',
     αγγλικά: 'Glassmorphism Application',
     σουηδικά: 'Tillämpning av Glasmorfism',
@@ -476,6 +486,11 @@ export const έννοιες = [
     ελληνικά: 'Η σελίδα δεν βρέθηκε',
     αγγλικά: 'Page not found',
     σουηδικά: 'Sidan hittades inte',
+  },
+  {
+    ελληνικά: `Ηλεκτρονικό Κατάστημα «Αμαζόνες»`,
+    αγγλικά: `"Amazones" Electronic Store`,
+    σουηδικά: `"Amazones" elektroniska butik`,
   },
   {
     ελληνικά: 'Ηλεκτρονικό Ταχυδρομείο',
