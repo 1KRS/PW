@@ -956,6 +956,11 @@ export const έννοιες = [
     σουηδικά: 'Användarinformation uppdaterad!',
   },
   {
+    ελληνικά: 'Τεχνολογίες που χρησιμοποιώ',
+    αγγλικά: 'Technologies I Use',
+    σουηδικά: 'Teknologier jag använder',
+  },
+  {
     ελληνικά: 'ΤΝ για Προγραμματιστές',
     αγγλικά: 'AI for Developers',
     σουηδικά: 'AI för Utvecklare',
