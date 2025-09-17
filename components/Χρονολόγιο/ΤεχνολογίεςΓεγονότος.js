@@ -9,7 +9,7 @@ const ΤεχνολογίεςΓεγονότος = ({ στιγμή }) => {
   return τεχνολογίες.length !== 0 ? (
     <div
       className={
-        styles['tech-container'] + ' ' + styles[`tech-${τεχνολογίες.length}`]
+        styles['περιέκτης-τεχνολογιών'] + ' ' + styles[`tech-${τεχνολογίες.length}`]
       }
     >
       {τεχνολογίες.map((τεχνολογία) => {
