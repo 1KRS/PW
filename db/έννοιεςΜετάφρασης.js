@@ -46,6 +46,11 @@ export const έννοιες = [
   },
 
   {
+    ελληνικά: 'Ανάπτυξη αποκρισιμότητας',
+    αγγλικά: 'Responsive development',
+    σουηδικά: 'Responsiv utveckling',
+  },
+  {
     ελληνικά: 'Ανάπτυξη αποκρισιμότητας ιστοτόπου',
     αγγλικά: 'Website responsive development',
     σουηδικά: 'Responsiv utveckling av webbplatser',
