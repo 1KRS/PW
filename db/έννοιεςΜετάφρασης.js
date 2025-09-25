@@ -44,7 +44,6 @@ export const έννοιες = [
     αγγλικά: 'Change Chart',
     σουηδικά: 'Ändra Diagram',
   },
-
   {
     ελληνικά: 'Ανάπτυξη αποκρισιμότητας',
     αγγλικά: 'Responsive development',
