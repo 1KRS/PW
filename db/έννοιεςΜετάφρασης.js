@@ -918,14 +918,15 @@ export const έννοιες = [
     αγγλικά: 'in Timeline',
     σουηδικά: 'på Tidslinjen',
   },
-  { ελληνικά: 'Συμβουλευτική', αγγλικά: 'Consulting', σουηδικά: 'Konsultera' },
+  { ελληνικά: 'Σύγχρονη JavaScript 2025', αγγλικά: 'Modern JavaScript 2025', σουηδικά: 'Modern JavaScript 2025' },
+  { ελληνικά: 'Συμβουλευτική', αγγλικά: 'Consulting', σουηδικά: 'Konsultation' },
   {
     ελληνικά:
       'Συμμετοχή σε τρίμηνο εντατικό πρόγραμμα εκκίνησης για εκπαίδευση επάνω σε τεχνολογίες ανάπτυξης ιστού για πλήρους-εύρους JavaScript.',
     αγγλικά:
       'Participation in a three-month intensive bootcamp for training on web development technologies for full-stack JavaScript.',
     σουηδικά:
-      'Deltagande i en tre månader lång intensiv bootcamp för utbildning i webbutvecklingsteknologier för fullstack JavaScript.',
+      'Deltagande i ett tre månader långt intensivt bootcamp för utbildning i webbutvecklingsteknologier för fullstack JavaScript.',
   },
   {
     ελληνικά: 'Συμπλήρωσε όλα τα πεδία!',
