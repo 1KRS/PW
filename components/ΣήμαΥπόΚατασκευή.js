@@ -8,8 +8,8 @@ const ΣήμαΥπόΚατασκευή = () => {
   return (
     <Link href={'/programming/implementation'} className={styles.κορδέλα}>
       <Μετάφραση>Υπό Ανάπτυξη</Μετάφραση>
-      <div className={styles.παύλες}> -- </div>
-      <ΠοσοστόΥλοποίησης />
+      {/* <div className={styles.παύλες}> -- </div>
+      <ΠοσοστόΥλοποίησης /> */}
     </Link>
   );
 };
