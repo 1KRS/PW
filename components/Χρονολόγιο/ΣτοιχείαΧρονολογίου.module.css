@@ -78,7 +78,7 @@
   left: calc(-15px - 5px + 1px);
   height: var(--ύψος-τελείας);
   width: 10px;
-  background-color: var(--υπ-δευτερεύον-χρώμα);
+  background-color: var(--υβ-δευτερεύον-χρώμα);
   box-shadow: 0 0 25px var(--βασικό-χρώμα) 0 0 50px var(--βασικό-χρώμα);
   border: max(0.3vw, 2px) solid var(--βασικό-χρώμα);
   border-radius: 50px;

@@ -21,7 +21,7 @@
   border: 2px solid var(--ποιότητα);
   transform: scale(1.05);
   box-shadow: 0 0 50px var(--ποιότητα);
-  background-color: var(--υπ-δευτερεύον-χρώμα);
+  background-color: var(--υβ-δευτερεύον-χρώμα);
 }
 
 .μαρτυρία .επάνω-γραμμή {

@@ -99,7 +99,7 @@
 
 .δευτερεύον-πλήκτρο.με-αδιαφανή-στοιχεία {
   border: 2px solid var(--όριο-χρώμα-θολό);
-  background-color: var(--υπ-δευτερεύον-χρώμα);
+  background-color: var(--υβ-δευτερεύον-χρώμα);
   transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
 }
 

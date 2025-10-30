@@ -63,7 +63,7 @@
   height: var(--icon-height);
   /* width: var(--container-width); */
   padding: var(--container-padding-ver) var(--container-padding-hor);
-  background-color: var(--υπ-δευτερεύον-χρώμα);
+  background-color: var(--υβ-δευτερεύον-χρώμα);
   border: 0.5px solid yellow;
   border-radius: 10px;
   font-size: var(--icon-width);
