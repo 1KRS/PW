@@ -113,7 +113,7 @@
 
 .περιεχόμενο-γεγονότος:hover {
   /* justify-content: initial;
-  background-color: var(--υπ-δευτερεύον-χρώμα);
+  background-color: var(--υβ-δευτερεύον-χρώμα);
   border: 2px solid var(--βασικό-χρώμα); */
   /* transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out; --*/
 }
@@ -578,7 +578,7 @@
   gap: 5px;
   height: 25px;
   padding: 0 var(--περιέκτης-τεχνολογιών-πλαϊνό-κενό);
-  background-color: var(--υπ-δευτερεύον-χρώμα);
+  background-color: var(--υβ-δευτερεύον-χρώμα);
   border-bottom: 2px solid var(--όριο-χρώμα-θολό);
   border-radius: 10px;
   z-index: 5;
@@ -1007,7 +1007,7 @@
     position: absolute;
     height: 1.3vw;
     width: 1.3vw;
-    background-color: var(--υπ-δευτερεύον-χρώμα);
+    background-color: var(--υβ-δευτερεύον-χρώμα);
     box-shadow: 0 0 25px var(--βασικό-χρώμα) 0 0 50px var(--βασικό-χρώμα);
     left: calc(50% - 0.5vw);
     border: 0.3vw solid var(--βασικό-χρώμα);
@@ -1038,7 +1038,7 @@
     --γέμισμα-αιώρησης: 1vh;
     --ύψος-κειμένου-γεγονότος: 55px;
     justify-content: initial;
-    background-color: var(--υπ-δευτερεύον-χρώμα);
+    background-color: var(--υβ-δευτερεύον-χρώμα);
     border: 2px solid var(--βασικό-χρώμα);
     height: calc(var(--ύψος-περιεχομένου-γεγονότος));
   }
@@ -1534,7 +1534,7 @@
     gap: 5px;
     height: 25px;
     padding: 0 20px;
-    background-color: var(--υπ-δευτερεύον-χρώμα);
+    background-color: var(--υβ-δευτερεύον-χρώμα);
     border-bottom: 2px solid var(--όριο-χρώμα-θολό);
     border-radius: 10px;
     z-index: 5;
@@ -1754,7 +1754,7 @@
 
 .περιεχόμενο-γεγονότος.με-αδιαφανή-στοιχεία {
   border-color: var(--όριο-χρώμα-θολό);
-  background-color: var(--υπ-δευτερεύον-χρώμα);
+  background-color: var(--υβ-δευτερεύον-χρώμα);
   transition: all var(--χρόνος-μετάβασης-μορφής) ease-in-out;
 }
 .περιεχόμενο-γεγονότος.με-ημιδιαφανή-στοιχεία {
