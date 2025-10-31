@@ -263,3 +263,58 @@ input[type='number']::-webkit-outer-spin-button {
 /* ================================================ */
 @media (min-width: 1366px) {
 }
+
+
+/* ====== ΠΡΟΣΑΝΑΤΟΛΙΣΜΟΣ ΠΟΡΤΡΑΙΤΟΥ ====== */
+
+@media (orientation: portrait) {
+}
+
+@media (orientation: portrait) and (min-width: 480px) {
+}
+@media (orientation: portrait) and (min-width: 768px) {
+}
+@media (orientation: portrait) and (min-width: 1024px) {
+}
+@media (orientation: portrait) and (min-width: 1366px) {
+}
+@media (orientation: portrait) and (min-height: 300px) {
+}
+@media (orientation: portrait) and (min-height: 320px) {
+}
+@media (orientation: portrait) and (min-height: 360px) {
+}
+@media (orientation: portrait) and (min-height: 400px) {
+}
+@media (orientation: portrait) and (min-height: 420px) {
+}
+@media (orientation: portrait) and (min-height: 480px) {
+}
+@media (orientation: portrait) and (min-height: 550px) {
+}
+@media (orientation: portrait) and (min-height: 600px) {
+}
+@media (orientation: portrait) and (min-height: 650px) {
+}
+@media (orientation: portrait) and (min-height: 700px) {
+}
+@media (orientation: portrait) and (min-height: 800px) {
+}
+@media (orientation: portrait) and (min-height: 900px) {
+}
+
+/* ====== ΠΡΟΣΑΝΑΤΟΛΙΣΜΟΣ ΤΟΠΙΟΥ ====== */
+@media (orientation: landscape) {
+}
+@media (orientation: landscape) and (min-height: 700px) {
+}
+@media (orientation: landscape) and (min-width: 480px) and (min-height: 700px) {
+}
+@media (orientation: landscape) and (min-width: 768px) and (min-height: 700px) {
+}
+@media (orientation: landscape) and (min-width: 1024px) and (min-height: 700px) {
+}
+@media (orientation: landscape) and (min-width: 1366px) and (min-height: 700px) {
+}
+
+/* ====== ΜΟΡΦΗ ΣΤΟΙΧΕΙΩΝ ====== */
