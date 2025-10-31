@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   width: 95vw;
-  text-align: left;
   padding: 0 2vw 1vh;
   transition: all 2s ease-in-out;
 }
@@ -109,15 +108,10 @@
 }
 /* ================================================ */
 @media (min-width: 1024px) {
-  .περιεχόμενο-αρχικής {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+ .περιεχόμενο-αρχικής {
     align-items: baseline;
-    text-align: left;
     width: 100%;
     padding: 0 2vw 3vh;
-    transition: all 2s ease-in-out;
   }
 
   .περιεχόμενο-αρχικής span {
@@ -140,6 +134,10 @@
     text-align: left;
   }
 
+  .περιεχόμενο-αρχικής p {
+    text-align: left;
+  }
+
   .περιέκτης-ταινιών-κύλισης {
     width: 100%;
     margin: 2vh 0;
@@ -159,7 +157,6 @@
     max-width: 500px;
     margin: 0 auto;
     aspect-ratio: var(--λόγος-πλευρών-λογότυπου);
-    
   }
 
   .περιέκτης-λογότυπου:hover {
