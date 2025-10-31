@@ -35,16 +35,21 @@
 }
 
 .περιέκτης-λογότυπου {
+  --λόγος-πλευρών-λογότυπου: 345 / 300;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 40%;
-  padding: 40px;
+  padding: 12px;
   border: none;
   background-color: var(--βασικό-χρώμα);
   box-shadow: 0 0 25px var(--βασικό-χρώμα);
-  transition: 0.7s ease-in-out;
-  scale: 0.6;
+  transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
+  height: auto;
+  width: 100%;
+  max-width: 345px;
+  margin: 0 auto;
+  aspect-ratio: var(--λόγος-πλευρών-λογότυπου);
 }
 
 .περιέκτης-λογότυπου:hover {
@@ -58,23 +63,25 @@
 
 .περιέκτης-λογότυπου .λογότυπο {
   /* cursor: pointer; */
-  transition: 0.7s ease-in-out;
+  transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
 }
 
 .περιέκτης-λογότυπου:hover .λογότυπο {
   transform: scale(0.95);
 }
 
-.logo-to-480px {
+.λογότυπο-ενιαίο {
   display: flex;
-}
-.logo-from-1024px {
-  display: none;
+  width: 100%;
+  height: 100%;
+  /* aspect-ratio: var(--λόγος-πλευρών-λογότυπου); */
+  margin: 0 auto;
+  transition: all 0.5s;
 }
 
 .περιέκτης-λογότυπου .εικόνα {
   fill: var(--υβ-δευτερεύον-χρώμα-θολό);
-  transition: 0.7s ease-in-out;
+  transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
 }
 
 .περιέκτης-λογότυπου:hover .εικόνα {
@@ -145,16 +152,14 @@
   }
 
   .περιέκτης-λογότυπου {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40%;
-    padding: 60px;
-    border: none;
-    background-color: var(--βασικό-χρώμα);
     box-shadow: 0 0 25px var(--βασικό-χρώμα);
-    transition: 0.7s ease-in-out;
-    scale: 1;
+    transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    aspect-ratio: var(--λόγος-πλευρών-λογότυπου);
+    
   }
 
   .περιέκτης-λογότυπου:hover {
@@ -168,23 +173,24 @@
 
   .περιέκτης-λογότυπου .λογότυπο {
     /* cursor: pointer; */
-    transition: 0.7s ease-in-out;
+    transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
   }
 
   .περιέκτης-λογότυπου:hover .λογότυπο {
     transform: scale(0.95);
   }
 
-  .logo-to-480px {
-    display: none;
-  }
-  .logo-from-1024px {
+  .λογότυπο-ενιαίο {
     display: flex;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    scale: 1.35;
   }
 
   .περιέκτης-λογότυπου .εικόνα {
     fill: var(--υβ-δευτερεύον-χρώμα-θολό);
-    transition: 0.7s ease-in-out;
+    transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
   }
 
   .περιέκτης-λογότυπου:hover .εικόνα {
