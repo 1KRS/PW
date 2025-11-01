@@ -110,7 +110,17 @@
     width: 100%;
     max-width: 450px;
     margin: 0 auto;
-    scale: 1.05;
+    scale: 1.35;
+  }
+}
+/* ================================================ */
+@media (min-width: 800px) {
+  .λογότυπο-ενιαίο {
+    display: flex;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    scale: 1.45;
   }
 }
 /* ================================================ */
@@ -222,6 +232,18 @@
 }
 /* ================================================ */
 @media (min-width: 1366px) {
+  .λογότυπο-ενιαίο {
+    scale: 1.35;
+  }
+}
+/* ================================================ */
+@media (orientation: landscape) and (min-width: 1024px) and (min-height: 700px) {
+.λογότυπο-ενιαίο {
+    scale: 1;
+  }
+}
+/* ================================================ */
+@media (orientation: landscape) and (min-width: 1366px) and (min-height: 700px) {
   .λογότυπο-ενιαίο {
     scale: 1.35;
   }
