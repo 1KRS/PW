@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 95vw;
+  width: 90vw;
   padding: 0 2vw 1vh;
   transition: all 2s ease-in-out;
 }
@@ -46,7 +46,7 @@
   transition: var(--χρόνος-μετάβασης-μορφής) ease-in-out;
   height: auto;
   width: 100%;
-  max-width: 345px;
+  max-width: 60vw;
   margin: 0 auto;
   aspect-ratio: var(--λόγος-πλευρών-λογότυπου);
 }
@@ -105,10 +105,17 @@
 }
 /* ================================================ */
 @media (min-width: 768px) {
+  .λογότυπο-ενιαίο {
+    display: flex;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    scale: 1.05;
+  }
 }
 /* ================================================ */
 @media (min-width: 1024px) {
- .περιεχόμενο-αρχικής {
+  .περιεχόμενο-αρχικής {
     align-items: baseline;
     width: 100%;
     padding: 0 2vw 3vh;
@@ -182,7 +189,7 @@
     width: 100%;
     max-width: 450px;
     margin: 0 auto;
-    scale: 1.35;
+    /* scale: 0.95; */
   }
 
   .περιέκτης-λογότυπου .εικόνα {
@@ -208,5 +215,14 @@
   }
 }
 /* ================================================ */
+@media (min-width: 1145px) {
+    .λογότυπο-ενιαίο {
+    scale: 1.15;
+  }
+}
+/* ================================================ */
 @media (min-width: 1366px) {
+  .λογότυπο-ενιαίο {
+    scale: 1.35;
+  }
 }
