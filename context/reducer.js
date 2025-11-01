@@ -33,7 +33,7 @@ const reducer = (state, action) => {
   if (action.type === 'CHANGE_LANGUAGE') {
     return {
       ...state,
-      language: action.payload.newLanguage,
+      γλώσσα: action.payload.νέαΓλώσσα,
     };
   }
 
