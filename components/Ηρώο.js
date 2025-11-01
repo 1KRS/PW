@@ -14,7 +14,7 @@ import { useAppContext } from '@/context/AppContext';
 import { σύνολοΤεχνολογιώνΠληνΠακέτων, πακέτα } from '@/db/τεχνολογίες';
 
 const Hero = () => {
-  const { language } = useAppContext();
+  const { γλώσσα } = useAppContext();
 
   return (
     <>
@@ -26,12 +26,12 @@ const Hero = () => {
         ενεργόςΔιακόπτηςΦέγγουςΣτοιχείων={true}
       >
         <div className={styles['περιεχόμενο-αρχικής']}>
-          {language === 'english' ? (
+          {γλώσσα === 'english' ? (
             <h1>
               Hi, it&apos;s<pre> </pre>
               <span> Dimitris</span>
             </h1>
-          ) : language === 'svenska' ? (
+          ) : γλώσσα === 'svenska' ? (
             <h1>
               Hej, jag heter<pre> </pre>
               <span>Dimitris</span>

@@ -5,9 +5,9 @@ const reducer = (state, action) => {
   if (action.type === 'DISPLAY_ALERT') {
     return {
       ...state,
-      showAlert: true,
-      alertType: 'danger',
-      alertText: μετάφραση(
+      εμφάνισηΕιδοποίησης: true,
+      τύποςΕιδοποίησης: 'danger',
+      κείμενοΕιδοποίησης: μετάφραση(
         'Συμπλήρωσε όλα τα πεδία!',
         `${action.payload.language}`
       ),
@@ -17,16 +17,16 @@ const reducer = (state, action) => {
   if (action.type === 'CLEAR_ALERT') {
     return {
       ...state,
-      showAlert: false,
-      alertType: '',
-      alertText: '',
+      εμφάνισηΕιδοποίησης: false,
+      τύποςΕιδοποίησης: '',
+      κείμενοΕιδοποίησης: '',
     };
   }
 
   if (action.type === 'TOGGLE_SIDEBAR') {
     return {
       ...state,
-      showSidebar: !state.showSidebar,
+      εμφάνισηΠλαϊνήςΣτήλης: !state.εμφάνισηΠλαϊνήςΣτήλης,
     };
   }
 
@@ -72,7 +72,7 @@ const reducer = (state, action) => {
   if (action.type === 'TOGGLE_CERTIFICATE_MODAL') {
     return {
       ...state,
-      certificate: action.payload.certificateLink,
+      πιστοποιητικό: action.payload.certificateLink,
     };
   }
 
@@ -101,7 +101,7 @@ const reducer = (state, action) => {
     return {
       ...state,
       userLoading: true,
-      showAlert: false,
+      εμφάνισηΕιδοποίησης: false,
     };
   }
   if (action.type === 'GET_CURRENT_USER_SUCCESS') {
@@ -117,7 +117,7 @@ const reducer = (state, action) => {
   if (action.type === 'REGISTER_USER_BEGIN') {
     return {
       ...state,
-      isLoading: true,
+      φορτώνει: true,
     };
   }
   if (action.type === 'REGISTER_USER_SUCCESS') {
@@ -127,10 +127,10 @@ const reducer = (state, action) => {
       user: action.payload.user,
       userLocation: action.payload.location,
       jobLocation: action.payload.location,
-      isLoading: false,
-      showAlert: true,
-      alertType: 'success',
-      alertText: μετάφραση(
+      φορτώνει: false,
+      εμφάνισηΕιδοποίησης: true,
+      τύποςΕιδοποίησης: 'success',
+      κείμενοΕιδοποίησης: μετάφραση(
         'Ο Χρήστης Δημιουργήθηκε! Ανακατεύθυνση...',
         `${action.payload.language}`
       ),
@@ -139,17 +139,17 @@ const reducer = (state, action) => {
   if (action.type === 'REGISTER_USER_ERROR') {
     return {
       ...state,
-      isLoading: false,
-      showAlert: true,
-      alertType: 'danger',
-      alertText: action.payload.msg,
+      φορτώνει: false,
+      εμφάνισηΕιδοποίησης: true,
+      τύποςΕιδοποίησης: 'danger',
+      κείμενοΕιδοποίησης: action.payload.msg,
     };
   }
 
   if (action.type === 'LOGIN_USER_BEGIN') {
     return {
       ...state,
-      isLoading: true,
+      φορτώνει: true,
     };
   }
   if (action.type === 'LOGIN_USER_SUCCESS') {
@@ -160,8 +160,8 @@ const reducer = (state, action) => {
       jobLocation: action.payload.location,
       isLoading: false,
       showAlert: true,
-      alertType: 'success',
-      alertText: μετάφραση(
+      τύποςΕιδοποίησης: 'success',
+      κείμενοΕιδοποίησης: μετάφραση(
         'Επιτυχής Είσοδος! Ανακατεύθυνση...',
         `${action.payload.language}`
       ),
@@ -172,8 +172,8 @@ const reducer = (state, action) => {
       ...state,
       isLoading: false,
       showAlert: true,
-      alertType: 'danger',
-      alertText: action.payload.msg,
+      τύποςΕιδοποίησης: 'danger',
+      κείμενοΕιδοποίησης: action.payload.msg,
     };
   }
 
@@ -191,7 +191,7 @@ const reducer = (state, action) => {
       jobLocation: action.payload.location,
       isLoading: false,
       showAlert: true,
-      alertType: 'success',
+      τύποςΕιδοποίησης: 'success',
       alertText: μετάφραση(
         'Τα Στοιχεία Χρήστη Ενημερώθηκαν!',
         `${action.payload.language}`
@@ -204,7 +204,7 @@ const reducer = (state, action) => {
       isLoading: false,
       showAlert: true,
       alertType: 'danger',
-      alertText: action.payload.msg,
+      κείμενοΕιδοποίησης: action.payload.msg,
     };
   }
 
@@ -300,7 +300,7 @@ const reducer = (state, action) => {
     return {
       ...state,
       isLoading: true,
-      showAlert: false,
+      εμφάνισηΕιδοποίησης: false,
     };
   }
   if (action.type === 'GET_JOBS_SUCCESS') {

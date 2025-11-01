@@ -8,7 +8,7 @@ import { useAppContext } from '@/context/AppContext';
 
 const LanguagesDropdown = () => {
   const [showDropdown, setShowDropdown] = useState(false);
-  const { language, changeLanguage } = useAppContext();
+  const { γλώσσα, changeLanguage } = useAppContext();
 
   return (
     <div
@@ -26,9 +26,9 @@ const LanguagesDropdown = () => {
       >
         {showDropdown === true ? (
           <GiEarthAfricaEurope className={styles['flag-icon']} />
-        ) : language === 'svenska' ? (
+        ) : γλώσσα === 'svenska' ? (
           <CircleFlag countryCode="se" className={styles['flag']} />
-        ) : language === 'english' ? (
+        ) : γλώσσα === 'english' ? (
           <CircleFlag countryCode="uk" className={styles['flag']} />
         ) : (
           <CircleFlag countryCode="gr" className={styles['flag']} />
@@ -49,14 +49,14 @@ const LanguagesDropdown = () => {
         <button
           type="button"
           onClick={() => {
-            const newLanguage =
-              language === 'ελληνικά' ? 'english' : 'ελληνικά';
-            changeLanguage(newLanguage);
-            setShowDropdown(false)
+            const νέαΓλώσσα =
+              γλώσσα === 'ελληνικά' ? 'english' : 'ελληνικά';
+            changeLanguage(νέαΓλώσσα);
+            setShowDropdown(false);
           }}
           className={styles['dropdown-btn']}
         >
-          {language === 'ελληνικά' ? (
+          {γλώσσα === 'ελληνικά' ? (
             <CircleFlag countryCode="uk" className={styles['flag-dropdown']} />
           ) : (
             <CircleFlag countryCode="gr" className={styles['flag-dropdown']} />
@@ -64,7 +64,7 @@ const LanguagesDropdown = () => {
           <p
             className={showDropdown ? styles['text-show'] : styles['text-hide']}
           >
-            {language === 'ελληνικά' ? 'English' : 'Ελληνικά'}
+            {γλώσσα === 'ελληνικά' ? 'English' : 'Ελληνικά'}
           </p>
         </button>
       </div>
@@ -83,13 +83,13 @@ const LanguagesDropdown = () => {
         <button
           type="button"
           onClick={() => {
-            const newLanguage = language === 'svenska' ? 'english' : 'svenska';
-            changeLanguage(newLanguage);
-            setShowDropdown(false)
+            const νέαΓλώσσα = γλώσσα === 'svenska' ? 'english' : 'svenska';
+            changeLanguage(νέαΓλώσσα);
+            setShowDropdown(false);
           }}
           className={styles['dropdown-btn']}
         >
-          {language === 'svenska' ? (
+          {γλώσσα === 'svenska' ? (
             <CircleFlag countryCode="uk" className={styles['flag-dropdown']} />
           ) : (
             <CircleFlag countryCode="se" className={styles['flag-dropdown']} />
@@ -97,7 +97,7 @@ const LanguagesDropdown = () => {
           <p
             className={showDropdown ? styles['text-show'] : styles['text-hide']}
           >
-            {language === 'svenska' ? 'English' : 'Svenska'}
+            {γλώσσα === 'svenska' ? 'English' : 'Svenska'}
           </p>
         </button>
       </div>

@@ -20,7 +20,7 @@ const BasicButton = ({
   onSubmit,
   children,
 }) => {
-  const { language, μορφήΣτοιχείων, φέγγοςΟρίων, φέγγοςΣτοιχείων } =
+  const { γλώσσα, μορφήΣτοιχείων, φέγγοςΟρίων, φέγγοςΣτοιχείων } =
     useAppContext();
 
   const path = usePathname();
@@ -56,7 +56,7 @@ const BasicButton = ({
       }
       onSubmit={(e) => onSubmit(e)}
     >
-      {μετάφραση(`${value}`, language)}
+      {μετάφραση(`${value}`, γλώσσα)}
     </button>
   ) : (
     <Link

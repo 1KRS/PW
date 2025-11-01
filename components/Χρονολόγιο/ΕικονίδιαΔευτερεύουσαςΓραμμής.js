@@ -10,12 +10,12 @@ import { useAppContext } from '@/context/AppContext';
 import { μετάφραση } from '@/utils/μετάφραση';
 
 const SecondaryLineIcons = ({ είδος, τοποθεσία }) => {
-  const { language } = useAppContext();
+  const { γλώσσα } = useAppContext();
 
   return (
     <div
       className={styles['περιέκτης-εικονιδίων-δευτερεύουσας-γραμμής']}
-      data-types-icon={μετάφραση(τοποθεσία, language)}
+      data-types-icon={μετάφραση(τοποθεσία, γλώσσα)}
     >
       {τοποθεσία === 'Απομακρυσμένα' ? (
         <RiHomeOfficeLine
