@@ -78,6 +78,7 @@ const Hero = () => {
               viewBox="0 0 345 300"
               xmlns="http://www.w3.org/2000/svg"
               data-name="Υπόβαθρο Λογότυπου"
+              className={styles.svg}
             >
               <g transform="translate(172.5,150) scale(0.85) translate(-172.5,-150)">
                 <title>Λογότυπο</title>
