@@ -30,21 +30,21 @@
 }
 
 .ηρώο-αριστερά {
-  border-bottom-left-radius: 25px;
+  border-bottom-left-radius: 27px;
   text-align: right;
 }
 .ηρώο-δεξιά {
-  border-bottom-right-radius: 25px;
+  border-bottom-right-radius: 27px;
+  text-align: left;
 }
 
 /* ================================================ */
 @media (min-width: 410px) {
   .ηρώο-αριστερά {
-    border-bottom-left-radius: 15px;
-    text-align: left;
+    border-bottom-left-radius: 25px;
   }
   .ηρώο-δεξιά {
-    border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 25px;
   }
 }
 /* ================================================ */
