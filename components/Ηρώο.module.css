@@ -22,7 +22,7 @@
 
 .περιεχόμενο-αρχικής p {
   display: flex;
-  font-size: clamp(0.9rem, 3vw, 2rem);
+  font-size: clamp(0.9rem, 3vw, 1.7rem);
   margin-top: 2vh;
   margin-bottom: 1vh;
   text-align: center;
@@ -197,9 +197,9 @@
   .λογότυπο-ενιαίο {
     display: flex;
     width: 100%;
-    max-width: 450px;
+    /* max-width: 450px; */
     margin: 0 auto;
-    /* scale: 0.95; */
+    scale: 0.95;
   }
 
   .περιέκτης-λογότυπου .εικόνα {
@@ -238,6 +238,10 @@
 }
 /* ================================================ */
 @media (orientation: landscape) and (min-width: 1024px) and (min-height: 700px) {
+  .περιέκτης-λογότυπου {
+    max-width: 500px;
+  }
+
   .λογότυπο-ενιαίο {
     scale: 1;
   }
