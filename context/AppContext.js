@@ -9,19 +9,19 @@ const AppContext = createContext();
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const displayAlert = (language) => {
+  const displayAlert = (γλώσσα) => {
     dispatch({
       type: 'DISPLAY_ALERT',
-      payload: { language },
+      payload: { γλώσσα },
     });
     clearAlert();
   };
 
-  const changeLanguage = (newLanguage) => {
-    localStorage.setItem('language', newLanguage);
+  const changeLanguage = (νέαΓλώσσα) => {
+    localStorage.setItem('γλώσσα', νέαΓλώσσα);
     dispatch({
       type: 'CHANGE_LANGUAGE',
-      payload: { newLanguage },
+      payload: { νέαΓλώσσα },
     });
   };
 
@@ -100,7 +100,7 @@ const AppProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    const αποθηκευμένηΓλώσσα = localStorage.getItem('language');
+    const αποθηκευμένηΓλώσσα = localStorage.getItem('γλώσσα');
     const αποθηκευμένοΥπόβαθρο = localStorage.getItem('υπόβαθρο-προγραμματισμού');
     const αποθηκευμένηΜορφή = localStorage.getItem('μορφή-στοιχείων');
     const αποθηκευμένοΦέγγοςΟρίων =
