@@ -43,3 +43,11 @@
     transition: 2s ease-in-out
   } */
 }
+
+/* ================================================ */
+@media (orientation: landscape) and (min-width: 1024px) and (min-height: 700px) {
+  .τομέας-χρονολογίου {
+    flex-direction: row;
+    width: 80dvw;
+  }
+}
