@@ -1,8 +1,9 @@
-.αρχική {
+.τομέας-χρονολογίου {
   display: flex;
   flex-direction: column-reverse;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 4.5vw;
   /* height: 80vh; */
   /* width: 100vw;
   color: white; */
@@ -23,12 +24,14 @@
 }
 /* ================================================ */
 @media (min-width: 1024px) {
-  .αρχική {
+}
+/* ================================================ */
+@media (min-width: 1366px) {
+  .τομέας-χρονολογίου {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 4.5vw;
     width: 80vw;
     color: white;
     text-align: center;
@@ -39,9 +42,4 @@
     gap: 4.5vw;
     transition: 2s ease-in-out
   } */
-
-
-}
-/* ================================================ */
-@media (min-width: 1366px) {
 }
