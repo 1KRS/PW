@@ -8,6 +8,7 @@ import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής'
 import { IoMdCodeWorking } from 'react-icons/io';
 import { FaBusinessTime, FaStar, FaTimeline } from 'react-icons/fa6';
 import { TiMessages } from 'react-icons/ti';
+import { PiArticleNyTimesFill } from 'react-icons/pi';
 import { GiAngelWings } from 'react-icons/gi';
 
 const ΠλαϊνήΣτήληΠρογραμματισμού = () => {
@@ -49,6 +50,11 @@ const ΠλαϊνήΣτήληΠρογραμματισμού = () => {
           <li className={styles['στοιχείο']}>
             <NavLinkThatStartsWith href="/programming/contact" s>
               <TiMessages />
+            </NavLinkThatStartsWith>
+          </li>
+          <li className={styles['στοιχείο']}>
+            <NavLinkThatStartsWith href="/programming/blog" s>
+              <PiArticleNyTimesFill />{' '}
             </NavLinkThatStartsWith>
           </li>
         </ul>
