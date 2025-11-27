@@ -14,7 +14,7 @@ const Textarea = ({
   χειρισμόςΠληκτρισμού,
   children,
 }) => {
-  const { language, μορφήΣτοιχείων, φέγγοςΟρίων, φέγγοςΣτοιχείων } =
+  const { γλώσσα, μορφήΣτοιχείων, φέγγοςΟρίων, φέγγοςΣτοιχείων } =
     useAppContext();
 
   return (
@@ -35,7 +35,7 @@ const Textarea = ({
         styles[`${φέγγοςΣτοιχείων === true ? 'με-φέγγος-στοιχείων' : ''}`]
       }
       onChange={(e) => χειρισμόςΠληκτρισμού(e)}
-      placeholder={μετάφραση(`${placeholder}`, language)}
+      placeholder={μετάφραση(`${placeholder}`, γλώσσα)}
     >
       {children}
     </textarea>
