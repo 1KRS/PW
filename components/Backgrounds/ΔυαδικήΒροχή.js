@@ -1,22 +1,76 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import styles from './ΔυαδικήΒροχή.module.css';
 
-const BinaryRain = ({ screenType, fontSize, speed }) => {
+const ΔυαδικήΒροχή = ({
+  τύποςΟθόνης = 'κανονικό', // 'κανονικό', 'not-found', 'error'
+  μέγεθος = 14, // px
+  ταχύτηταΒροχής = 80, // ms ανά πλαίσιο
+  καθυστέρησηΠρότασης = 10000, // ms
+  πιθανότηταΠρότασης = 10, // % (0-100) πιθανότητα εμφάνισης παραγγέλματος ανά στήλη που ξεκινάει
+  χρώμαΠρότασης = '#00fcfd',
+  χρώμαΒροχής = '#00fcfd',
+  απόσβεσηMs = 3500, // επιπλέον απόσβεση μετά την καθυστέρηση (ms)
+}) => {
   const canvasRef = useRef(null);
-
+  const [παραγγέλματα, setΠαραγγέλματα] = useState([]);
+  let χρώμαΣταγόνες = χρώμαΒροχής;
   const χαρακτήρες = 'ΑΒΓΔΕϜΖΗΘΙΚΛΜΝΞΟΠϘΡΣΤΥΦΧΨΩͶ├┤ϚϛϻϟϡϠͳ';
-  let rainColor = '';
-  const ταχύτηταΒροχής = Number(speed);
+  const ταχύτηταΒροχήςNum = Number(ταχύτηταΒροχής);
 
-  if (screenType === 'not-found') {
-    rainColor = '#ffbb00';
-  } else if (screenType === 'error') {
-    rainColor = '#ad0000';
-  } else {
-    rainColor = '#00fcfd';
-  }
+  // υπολογισμός ενεργού χρώματος βροχής (ορισμένοι τύποι οθόνης έχουν προτεραιότητα)
+  if (τύποςΟθόνης === 'not-found') χρώμαΣταγόνες = '#ffbb00';
+  else if (τύποςΟθόνης === 'error') χρώμαΣταγόνες = '#ad0000';
+  else χρώμαΣταγόνες = χρώμαΒροχής;
+
+  // χρώμα πρότασης ακολουθεί το χρώμα βροχής (που υπολογίστηκε με βάση τον τύπο οθόνης)
+  const χρώμαΠρ = χρώμαΣταγόνες;
+
+  // Λήψη παραγγελμάτων από API
+  useEffect(() => {
+    let isMounted = true;
+
+    const fetchΠαραγγέλματα = async () => {
+      try {
+        const res = await fetch('/api/kryle/ola');
+
+        if (!res.ok) {
+          throw new Error(`HTTP ${res.status}`);
+        }
+
+        const data = await res.json();
+        console.log('API Response:', data);
+
+        if (
+          isMounted &&
+          data?.αποτελέσματα &&
+          Array.isArray(data.αποτελέσματα) &&
+          data.αποτελέσματα.length > 0
+        ) {
+          console.log('Παραγγέλματα φορτώθηκαν:', data.αποτελέσματα.length);
+          setΠαραγγέλματα(data.αποτελέσματα);
+        } else if (isMounted) {
+          console.log('Χρήση fallback - δεν βρέθηκαν αποτελέσματα');
+          setΠαραγγέλματα([{ παράγγελμα: 'ΕΠΟΥ ΘΕΩ' }]);
+        }
+      } catch (err) {
+        console.warn(
+          'Χρήση fallback παραγγέλματος λόγω σφάλματος:',
+          err.message
+        );
+        if (isMounted) {
+          setΠαραγγέλματα([{ παράγγελμα: 'ΕΠΟΥ ΘΕΩ' }]);
+        }
+      }
+    };
+
+    fetchΠαραγγέλματα();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -28,55 +82,180 @@ const BinaryRain = ({ screenType, fontSize, speed }) => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const columns = canvas.width / fontSize;
+    const στήλες = Math.floor(canvas.width / μέγεθος);
 
-    const drops = [];
-    for (let i = 0; i < columns; i++) {
-      drops[i] = 1;
-    }
+    const σταγόνες = new Array(στήλες).fill(1);
 
-    const draw = () => {
+    // Συνάρτηση για μετατροπή ρήσης σε πίνακα χαρακτήρων με διαχωριστικά
+    const μετατροπήΡήσηςΣεΠίνακα = (ρήση) => {
+      if (!ρήση) return ['ϟ', 'Ε', 'Π', 'Ο', 'Υ', 'ϟ', 'Θ', 'Ε', 'Ω', 'ϟ'];
+      const χαρακτήρες = ρήση.split('');
+      const αποτέλεσμα = ['ϟ'];
+      χαρακτήρες.forEach((χ) => {
+        if (χ === ' ') {
+          αποτέλεσμα.push('ϟ');
+        } else {
+          αποτέλεσμα.push(χ.toUpperCase());
+        }
+      });
+      αποτέλεσμα.push('ϟ');
+      return αποτέλεσμα;
+    };
+
+    // Πρόταση και κατάσταση για Case Γ
+    const ενεργέςΠροτάσεις = {}; // στήλη -> { έναρξη, πρόταση }
+    const εμφανίσειςΠρότασης = {}; // στήλη -> πόσες φορές ξεκίνησε η πρόταση
+    const απόσβεση = []; // { x, y, χαρ, πλαίσιαΥπόλοιπα, συνολοΠλαισίων }
+    const χρόνοςΈναρξης = Date.now(); // χρησιμοποιείται για καθυστέρηση πριν την απόσβεση
+
+    const σχεδίαση = () => {
       if (!ctx || !canvas) return;
 
       ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = `${rainColor}`;
-      ctx.font = `${fontSize}px monospace`;
+      ctx.fillStyle = χρώμαΣταγόνες;
+      ctx.font = `${μέγεθος}px monospace`;
 
-      for (let i = 0; i < drops.length; i++) {
-        const text = χαρακτήρες.charAt(
-          Math.floor(Math.random() * χαρακτήρες.length)
-        );
-        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+      // βρόχος σχεδίασης βροχής
+      for (let i = 0; i < σταγόνες.length; i++) {
+        // Ενδεχομένως ξεκίνημα κάθετης πρότασης σε ΑΥΤΗ τη στήλη (πιθανότητα % ανά στήλη που ξεκινάει)
+        if (
+          Math.random() * 100 < πιθανότηταΠρότασης &&
+          !ενεργέςΠροτάσεις[i] &&
+          παραγγέλματα.length > 0
+        ) {
+          // Επιλογή τυχαίας ρήσης
+          const τυχαίαΡήση =
+            παραγγέλματα[Math.floor(Math.random() * παραγγέλματα.length)];
+          const κείμενοΡήσης =
+            τυχαίαΡήση?.παράγγελμα || τυχαίαΡήση?.ρήση || 'ΕΠΟΥ ΘΕΩ';
+          const πίνακαςΠρότασης = μετατροπήΡήσηςΣεΠίνακα(κείμενοΡήσης);
 
-        if (drops[i] * fontSize > canvas.height && Math.random() > 0.95) {
-          drops[i] = 0;
+          ενεργέςΠροτάσεις[i] = {
+            έναρξη: σταγόνες[i],
+            πρόταση: πίνακαςΠρότασης,
+          };
+          εμφανίσειςΠρότασης[i] = (εμφανίσειςΠρότασης[i] || 0) + 1;
         }
 
-        drops[i]++;
+        let χαρακτήρας = χαρακτήρες.charAt(
+          Math.floor(Math.random() * χαρακτήρες.length)
+        );
+        let απόΠρόταση = false;
+
+        if (ενεργέςΠροτάσεις[i]) {
+          const start = ενεργέςΠροτάσεις[i].έναρξη;
+          const πρότασηΠίνακας = ενεργέςΠροτάσεις[i].πρόταση;
+          const offset = Math.floor(σταγόνες[i] - start);
+          if (offset >= 0 && offset < πρότασηΠίνακας.length) {
+            χαρακτήρας = πρότασηΠίνακας[offset];
+            απόΠρόταση = true;
+          } else if (offset >= πρότασηΠίνακας.length) {
+            delete ενεργέςΠροτάσεις[i];
+          }
+        }
+
+        if (απόΠρόταση) {
+          // Αν είναι διαχωριστικό, συμπεριφέρεται ακριβώς όπως κανονικό
+          if (χαρακτήρας === 'ϟ') {
+            ctx.fillStyle = χρώμαΣταγόνες;
+            ctx.fillText(χαρακτήρας, i * μέγεθος, σταγόνες[i] * μέγεθος);
+          } else {
+            const appearances = εμφανίσειςΠρότασης[i] || 0;
+            const elapsed = Date.now() - χρόνοςΈναρξης;
+            // Αν είναι η πρώτη εμφάνιση Ή είμαστε ακόμα μέσα στο παράθυρο καθυστέρησης,
+            // σχεδίαση ακριβώς όπως κανονικά (χωρίς απόσβεση).
+            if (appearances <= 1 || elapsed < καθυστέρησηΠρότασης) {
+              // ΠΡΩΤΗ εμφάνιση: διασφάλιση ότι δεν υπάρχουν απόσβεση overlays στο ίδιο σημείο
+              for (let k = απόσβεση.length - 1; k >= 0; k--) {
+                const αντικείμενο = απόσβεση[k];
+                if (
+                  αντικείμενο.x === i * μέγεθος &&
+                  αντικείμενο.y === σταγόνες[i] * μέγεθος
+                )
+                  απόσβεση.splice(k, 1);
+              }
+              // σχεδίαση με χρώμα βροχής (ακολουθεί το χρώμα του τύπου οθόνης)
+              ctx.fillStyle = χρώμαΣταγόνες;
+              ctx.fillText(χαρακτήρας, i * μέγεθος, σταγόνες[i] * μέγεθος);
+            } else {
+              // Από τη δεύτερη εμφάνιση και μετά, διατήρηση των γραμμάτων πρότασης για περισσότερο
+              // πλαίσια απόσβεσης ισοδύναμα με επιπλέον ms μετατρεπόμενα σε πλαίσια
+              const πλαίσιαΑπόΚαθυστέρησης = Math.max(
+                1,
+                Math.round(απόσβεσηMs / ταχύτηταΒροχήςNum)
+              );
+              const αντικείμενο = {
+                x: i * μέγεθος,
+                y: σταγόνες[i] * μέγεθος,
+                χαρ: χαρακτήρας,
+                πλαίσιαΥπόλοιπα: πλαίσιαΑπόΚαθυστέρησης,
+                συνολοΠλαισίων: πλαίσιαΑπόΚαθυστέρησης,
+              };
+              απόσβεση.push(αντικείμενο);
+              // σχεδίαση άμεσου επικαλύμματος για αυτό το πλαίσιο χρησιμοποιώντας χρώμα πρότασης
+              ctx.globalAlpha = 1;
+              ctx.fillStyle = χρώμαΠρ;
+              ctx.fillText(αντικείμενο.χαρ, αντικείμενο.x, αντικείμενο.y);
+              ctx.globalAlpha = 1;
+            }
+          }
+        } else {
+          // κανονικός χαρακτήρας βροχής
+          ctx.fillStyle = χρώμαΣταγόνες;
+          ctx.fillText(χαρακτήρας, i * μέγεθος, σταγόνες[i] * μέγεθος);
+        }
+
+        if (σταγόνες[i] * μέγεθος > canvas.height && Math.random() > 0.95) {
+          σταγόνες[i] = 0;
+        }
+
+        σταγόνες[i]++;
+      }
+
+      // απόδοση επικαλυμμάτων απόσβεσης (γράμματα πρότασης που παραμένουν περισσότερο)
+      for (let λ = απόσβεση.length - 1; λ >= 0; λ--) {
+        const αντικείμενο = απόσβεση[λ];
+        const t = 1 - αντικείμενο.πλαίσιαΥπόλοιπα / αντικείμενο.συνολοΠλαισίων; // 0..1
+        const alpha = 1 - t; // ξεθώριασμα
+        ctx.globalAlpha = alpha;
+        ctx.fillStyle = χρώμαΠρ;
+        ctx.fillText(αντικείμενο.χαρ, αντικείμενο.x, αντικείμενο.y);
+        ctx.globalAlpha = 1;
+        αντικείμενο.πλαίσιαΥπόλοιπα--;
+        if (αντικείμενο.πλαίσιαΥπόλοιπα <= 0) απόσβεση.splice(λ, 1);
       }
     };
 
-    const intervalId = setInterval(draw, ταχύτηταΒροχής);
+    const idΜεσοδιαστήματος = setInterval(σχεδίαση, ταχύτηταΒροχήςNum);
 
-    function handleResize() {
+    function χειριστήςΑναπροσαρμογής() {
       if (!canvas) return;
 
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
-
     }
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', χειριστήςΑναπροσαρμογής);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
-      clearInterval(intervalId);
+      window.removeEventListener('resize', χειριστήςΑναπροσαρμογής);
+      clearInterval(idΜεσοδιαστήματος);
     };
-  }, [fontSize, rainColor, ταχύτηταΒροχής]);
+  }, [
+    μέγεθος,
+    ταχύτηταΒροχής,
+    πιθανότηταΠρότασης,
+    καθυστέρησηΠρότασης,
+    χρώμαΠρότασης,
+    χρώμαΒροχής,
+    απόσβεσηMs,
+    τύποςΟθόνης,
+    παραγγέλματα,
+  ]);
 
   return <canvas ref={canvasRef} className={styles.canvas} />;
 };
 
-export default BinaryRain;
+export default ΔυαδικήΒροχή;
