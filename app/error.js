@@ -9,7 +9,7 @@ import Μετάφραση from '@/components/Μετάφραση';
 const Error = () => {
   return (
     <div className={styles['error']}>
-      <ΔυαδικήΒροχή screenType="error" fontSize="14" speed="60" />
+      <ΔυαδικήΒροχή τύποςΟθόνης="error" μέγεθος={14} ταχύτηταΒροχής={60} />
       <div className={styles.περιέκτης}>
         <h1>500</h1>
         <div className={styles.κείμενο}>
