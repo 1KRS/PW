@@ -7,7 +7,7 @@ import Μετάφραση from '@/components/Μετάφραση';
 const NotFound = () => {
   return (
     <div className={styles['not-found']}>
-      <ΔυαδικήΒροχή screenType="not-found" fontSize="14" speed="60" />
+      <ΔυαδικήΒροχή τύποςΟθόνης="not-found" μέγεθος={14} ταχύτηταΒροχής={60} />
       <div className={styles.περιέκτης}>
         <h1>404</h1>
         <div className={styles.κείμενο}>
