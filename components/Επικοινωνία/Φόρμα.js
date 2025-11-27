@@ -25,7 +25,8 @@ const Form = ({ id }) => {
   const [θέμα, setΘέμα] = useState('');
   const [κείμενο, setΚείμενο] = useState('');
 
-  const { language } = useAppContext();
+  const { γλώσσα } = useAppContext();
+  console.log('❗️❗️❗️❗️❗️Τρέχουσα γλώσσα φόρμας:', γλώσσα);
 
   const formRef = useRef(null);
 
@@ -83,7 +84,7 @@ const Form = ({ id }) => {
       κείμενο
     );
     setΦόρτωση(false);
-    setΜήνυμαΕπιτυχίας(μετάφραση('Το μήνυμα εστάλη', language));
+    setΜήνυμαΕπιτυχίας(μετάφραση('Το μήνυμα εστάλη', γλώσσα));
 
     // ❗️ Επαναφορά των τιμών της φόρμας και του πλήκτρου αποστολής μετά από επιτυχή υποβολή
     setTimeout(() => {
@@ -113,7 +114,7 @@ const Form = ({ id }) => {
             type="text"
             style="κείμενο"
             name="name"
-            placeholder="Πλήρες Ονοματεπώνυμο"
+            placeholder={μετάφραση('Πλήρες Ονοματεπώνυμο', γλώσσα)}
             χειρισμόςΠληκτρισμού={χειρισμόςΟνοματεπώνυμου}
             required
           />
@@ -124,7 +125,7 @@ const Form = ({ id }) => {
             type="email"
             style="ηΤαχυδρομείο"
             name="email"
-            placeholder="ηΤαχυδρομείο"
+            placeholder={μετάφραση('ηΤαχυδρομείο', γλώσσα)}
             χειρισμόςΠληκτρισμού={χειρισμόςΤαχυδρομείου}
             required
           />
@@ -139,7 +140,7 @@ const Form = ({ id }) => {
             type="number"
             style="αριθμός-τηλεφώνου"
             name="phone-number"
-            placeholder="Αριθμός Τηλεφώνου"
+            placeholder={μετάφραση('Αριθμός Τηλεφώνου', γλώσσα)}
             χειρισμόςΠληκτρισμού={χειρισμόςΑριθμού}
             required
           />
@@ -153,7 +154,7 @@ const Form = ({ id }) => {
             type="text"
             style="κείμενο"
             name="subject"
-            placeholder="Θέμα"
+            placeholder={μετάφραση('Θέμα', γλώσσα)}
             χειρισμόςΠληκτρισμού={χειρισμόςΘέματος}
             required
           />
@@ -165,7 +166,7 @@ const Form = ({ id }) => {
             cols="30"
             rows="10"
             name="message"
-            placeholder="Γράψτε το μήνυμά σας στα ελληνικά."
+            placeholder={μετάφραση('Γράψτε το μήνυμά σας στα ελληνικά.', γλώσσα)}
             χειρισμόςΠληκτρισμού={χειρισμόςΚειμένου}
             required
           />
