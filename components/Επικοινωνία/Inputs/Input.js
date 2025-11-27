@@ -14,7 +14,7 @@ const Input = ({
   required,
   children,
 }) => {
-  const { language, μορφήΣτοιχείων, φέγγοςΟρίων, φέγγοςΣτοιχείων } =
+  const { γλώσσα, μορφήΣτοιχείων, φέγγοςΟρίων, φέγγοςΣτοιχείων } =
     useAppContext();
 
   return value ? (
@@ -33,7 +33,7 @@ const Input = ({
         styles[`${φέγγοςΣτοιχείων === true ? 'με-φέγγος-στοιχείων' : ''}`]
       }
       onChange={(e) => χειρισμόςΠληκτρισμού(e)}
-      value={μετάφραση(`${value}`, language)}
+      value={μετάφραση(`${value}`, γλώσσα)}
     />
   ) : placeholder ? (
     <input
@@ -50,7 +50,7 @@ const Input = ({
         ' ' +
         styles[`${φέγγοςΣτοιχείων === true ? 'με-φέγγος-στοιχείων' : ''}`]
       }
-      placeholder={μετάφραση(`${placeholder}`, language)}
+      placeholder={μετάφραση(`${placeholder}`, γλώσσα)}
       onChange={(e) => χειρισμόςΠληκτρισμού(e)}
       required={required}
     >
