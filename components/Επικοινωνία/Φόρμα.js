@@ -26,7 +26,6 @@ const Form = ({ id }) => {
   const [κείμενο, setΚείμενο] = useState('');
 
   const { γλώσσα } = useAppContext();
-  console.log('❗️❗️❗️❗️❗️Τρέχουσα γλώσσα φόρμας:', γλώσσα);
 
   const formRef = useRef(null);
 
