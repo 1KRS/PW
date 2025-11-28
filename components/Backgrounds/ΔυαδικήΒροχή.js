@@ -3,7 +3,7 @@
 import { useRef, useEffect, useState } from 'react';
 import styles from './ΔυαδικήΒροχή.module.css';
 
-const ΔυαδικήΒροχή = ({
+const BinaryRain = ({
   τύποςΟθόνης = 'κανονικό', // 'κανονικό', 'not-found', 'error'
   μέγεθοςΣταγόνων = 14, // px
   ταχύτηταΒροχής = 80, // ms ανά πλαίσιο
@@ -43,6 +43,7 @@ const ΔυαδικήΒροχή = ({
 
     const fetchΠαραγγέλματα = async () => {
       try {
+        console.log('🌐 Ξεκινάει fetch παραγγελμάτων...');
         const res = await fetch('/api/kryle/ola');
 
         if (!res.ok) {
@@ -268,4 +269,4 @@ const ΔυαδικήΒροχή = ({
   return <canvas ref={canvasRef} className={styles.canvas} />;
 };
 
-export default ΔυαδικήΒροχή;
+export default BinaryRain;
