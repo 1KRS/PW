@@ -1,4 +1,6 @@
-'use client';
+"use client";
+
+/* eslint-disable react-hooks/rules-of-hooks */
 
 import styles from './Ηρώο.module.css';
 
@@ -13,7 +15,7 @@ import { useAppContext } from '@/context/AppContext';
 
 import { σύνολοΤεχνολογιώνΠληνΠακέτων, πακέτα } from '@/db/τεχνολογίες';
 
-const Hero = () => {
+const Ηρώο = () => {
   const { γλώσσα } = useAppContext();
 
   return (
@@ -103,7 +105,7 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Ηρώο;
 
 {
   /* <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/gr/album/drakontas/767350412?i=767350497"></iframe> */

@@ -1,4 +1,6 @@
-'use client';
+"use client";
+
+/* eslint-disable react-hooks/rules-of-hooks */
 
 import styles from './ΠλήκτροΚειμένουΜικρήςΟθόνης.module.css';
 
@@ -6,8 +8,8 @@ import Μετάφραση from '@/components/Μετάφραση';
 
 import { useAppContext } from '@/context/AppContext';
 
-const SmallScreenTextButton = ({ pxΠλάτουςΓιαΑπόκρυψη }) => {
-  const { toggleSmallScreenTextModal } = useAppContext();
+const ΠλήκτροΚειμένουΜικρήςΟθόνης = ({ pxΠλάτουςΓιαΑπόκρυψη }) => {
+  const { εναλλαγήΚειμένουΜικρήςΟθόνης } = useAppContext();
 
   const μέγεθοςΑπόκρυψης = pxΠλάτουςΓιαΑπόκρυψη
     ? pxΠλάτουςΓιαΑπόκρυψη === 1024
@@ -18,7 +20,7 @@ const SmallScreenTextButton = ({ pxΠλάτουςΓιαΑπόκρυψη }) => {
   const χειρισμόςΠίεσηςΠλήκτρου = (e) => {
     e.preventDefault();
 
-    toggleSmallScreenTextModal();
+    εναλλαγήΚειμένουΜικρήςΟθόνης();
   };
 
   return (
@@ -31,4 +33,4 @@ const SmallScreenTextButton = ({ pxΠλάτουςΓιαΑπόκρυψη }) => {
   );
 };
 
-export default SmallScreenTextButton;
+export default ΠλήκτροΚειμένουΜικρήςΟθόνης;

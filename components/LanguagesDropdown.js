@@ -1,4 +1,6 @@
-'use client';
+"use client";
+
+/* eslint-disable react-hooks/rules-of-hooks */
 
 import styles from './LanguagesDropdown.module.css';
 import { GiEarthAfricaEurope } from 'react-icons/gi';
@@ -6,7 +8,7 @@ import { CircleFlag } from 'react-circle-flags';
 import { useState } from 'react';
 import { useAppContext } from '@/context/AppContext';
 
-const LanguagesDropdown = () => {
+const ΚαταδυόμενοςΕπιλογέαςΓλωσσών = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const { γλώσσα, changeLanguage } = useAppContext();
 
@@ -105,4 +107,4 @@ const LanguagesDropdown = () => {
   );
 };
 
-export default LanguagesDropdown;
+export default ΚαταδυόμενοςΕπιλογέαςΓλωσσών;

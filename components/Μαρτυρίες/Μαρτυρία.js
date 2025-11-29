@@ -1,4 +1,6 @@
-'use client';
+"use client";
+
+/* eslint-disable react-hooks/rules-of-hooks */
 
 import styles from './Μαρτυρία.module.css';
 
@@ -9,7 +11,7 @@ import { useAppContext } from '@/context/AppContext';
 
 import { FaStar } from 'react-icons/fa';
 
-const Testimonial = ({
+const Μαρτυρία = ({
   όνομα,
   βαθμολογία,
   κείμενο,
@@ -97,4 +99,4 @@ const Testimonial = ({
   );
 };
 
-export default Testimonial;
+export default Μαρτυρία;

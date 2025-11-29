@@ -1,4 +1,6 @@
-'use client';
+"use client";
+
+/* eslint-disable react-hooks/rules-of-hooks */
 
 // !! Αυτό μπήκε για μελλοντική χρήση φιλτραρίσματος των μαρτυριών όπως εφαρμόζεται ήδη στην σελίδα του χρονολογίου.
 
@@ -8,7 +10,7 @@ import ΦίλτραΜαρτυριών from '@/components/Μαρτυρίες/Φί
 
 import { useAppContext } from '@/context/AppContext';
 
-const TestimonialElements = () => {
+const ΣτοιχείαΜαρτυριών = () => {
     const { μορφήΣτοιχείων } = useAppContext();
 
   return (
@@ -24,4 +26,4 @@ const TestimonialElements = () => {
   );
 };
 
-export default TestimonialElements;
+export default ΣτοιχείαΜαρτυριών;

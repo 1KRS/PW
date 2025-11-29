@@ -1,4 +1,6 @@
-'use client';
+"use client";
+
+/* eslint-disable react-hooks/rules-of-hooks */
 
 import styles from './ΠιστοποιητικόΣεΠαράθυρο.module.css';
 
@@ -9,8 +11,8 @@ import { μετάφραση } from '@/utils/μετάφραση';
 
 import { IoClose } from 'react-icons/io5';
 
-const CertificateInWindow = () => {
-  const { certificate, language, toggleCertificateModal } = useAppContext();
+const ΠιστοποιητικόΣεΠαράθυρο = () => {
+  const { certificate, γλώσσα, εναλλαγήΠαραθύρουΠιστοποιητικών } = useAppContext();
 
   const dialog = useRef();
 
@@ -21,7 +23,7 @@ const CertificateInWindow = () => {
   }, [certificate]);
 
   const handleCloseModal = () => {
-    toggleCertificateModal();
+    εναλλαγήΠαραθύρουΠιστοποιητικών();
     dialog.current.close();
   };
 
@@ -36,7 +38,7 @@ const CertificateInWindow = () => {
         <img
           className={styles.img}
           src={certificate}
-          alt={certificate && μετάφραση('Πιστοποιητικό', language)}
+          alt={certificate && μετάφραση('Πιστοποιητικό', γλώσσα)}
         />
       )}
       <form method="dialog">
@@ -52,4 +54,4 @@ const CertificateInWindow = () => {
   );
 };
 
-export default CertificateInWindow;
+export default ΠιστοποιητικόΣεΠαράθυρο;

@@ -2,7 +2,7 @@ import styles from './page.module.css';
 
 import Link from 'next/link';
 
-import LandingMain from '@/components/Backgrounds/LandingMain';
+import ΣελίδαΥποδοχής from '@/components/Backgrounds/LandingMain';
 import ΣήμαΥπόΚατασκευή from '@/components/ΣήμαΥπόΚατασκευή';
 import LanguagesContainer from '@/components/LanguagesContainer';
 import Μετάφραση from '@/components/Μετάφραση';
@@ -10,7 +10,7 @@ import Μετάφραση from '@/components/Μετάφραση';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 const Home = () => {
   return (
-    <LandingMain>
+    <ΣελίδαΥποδοχής>
       <ΣήμαΥπόΚατασκευή />
       <div className={styles['name']}>Δημήτρης Μανωλόπουλος</div>
       <p className={styles['κείμενο']}>
@@ -28,7 +28,7 @@ const Home = () => {
       </Link>
       <LanguagesContainer />
       <SpeedInsights />
-    </LandingMain>
+    </ΣελίδαΥποδοχής>
   );
 };
 

@@ -2,7 +2,7 @@ import styles from './LoadingAnimation.module.css';
 
 import Μετάφραση from '../Μετάφραση';
 
-const LoadingAnimation = () => {
+const ΓραφικόΦόρτωσης = () => {
   return (
     <div className={styles.container}>
       <div className={styles.ring}></div>
@@ -15,4 +15,4 @@ const LoadingAnimation = () => {
   );
 };
 
-export default LoadingAnimation;
+export default ΓραφικόΦόρτωσης;

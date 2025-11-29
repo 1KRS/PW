@@ -57,7 +57,7 @@ const AppProvider = ({ children }) => {
     });
   };
 
-  const toggleEventColors = (εμφάνισηΧρωμάτωνΑρχική) => {
+  const εναλλαγήΕμφάνισηςΧρωμάτων = (εμφάνισηΧρωμάτωνΑρχική) => {
     const εμφάνισηΧρωμάτων =
       εμφάνισηΧρωμάτωνΑρχική === 'αρχική'
         ? false
@@ -71,37 +71,45 @@ const AppProvider = ({ children }) => {
       payload: { εμφάνισηΧρωμάτων },
     });
   };
+  // alias for backward compatibility
+  const toggleEventColors = εναλλαγήΕμφάνισηςΧρωμάτων;
 
-  const toggleCertificateModal = (certificate) => {
+  const εναλλαγήΠαραθύρουΠιστοποιητικών = (certificate) => {
     const certificateLink = certificate ? certificate : '';
     dispatch({
       type: 'TOGGLE_CERTIFICATE_MODAL',
       payload: { certificateLink },
     });
   };
+  const toggleCertificateModal = εναλλαγήΠαραθύρουΠιστοποιητικών;
 
-  const toggleSettingsModal = () => {
+  const εναλλαγήΠαραθύρουΡυθμίσεων = () => {
     dispatch({
       type: 'TOGGLE_SETTINGS_MODAL',
     });
   };
+  const toggleSettingsModal = εναλλαγήΠαραθύρουΡυθμίσεων;
 
-  const toggleSmallScreenTextModal = () => {
+  const εναλλαγήΚειμένουΜικρήςΟθόνης = () => {
     dispatch({
       type: 'TOGGLE_SMALL_SCREEN_TEXT_MODAL',
     });
   };
+  const toggleSmallScreenTextModal = εναλλαγήΚειμένουΜικρήςΟθόνης;
 
-  const changeEventFilter = (filterName) => {
+  const αλλαγήΦίλτρουΓεγονότος = (filterName) => {
     dispatch({
       type: 'CHANGE_EVENT_FILTER',
       payload: { filterName },
     });
   };
+  const changeEventFilter = αλλαγήΦίλτρουΓεγονότος;
 
   useEffect(() => {
     const αποθηκευμένηΓλώσσα = localStorage.getItem('γλώσσα');
-    const αποθηκευμένοΥπόβαθρο = localStorage.getItem('υπόβαθρο-προγραμματισμού');
+    const αποθηκευμένοΥπόβαθρο = localStorage.getItem(
+      'υπόβαθρο-προγραμματισμού'
+    );
     const αποθηκευμένηΜορφή = localStorage.getItem('μορφή-στοιχείων');
     const αποθηκευμένοΦέγγοςΟρίων =
       localStorage.getItem('φέγγος-ορίων') === 'true' ? true : false;
@@ -129,7 +137,61 @@ const AppProvider = ({ children }) => {
       εναλλαγήΦέγγουςΣτοιχείων(αποθηκευμένοΦέγγοςΣτοιχείων);
     }
 
-    toggleEventColors(αρχικήΕμφάνισηΧρωμάτων);
+    εναλλαγήΕμφάνισηςΧρωμάτων(αρχικήΕμφάνισηΧρωμάτων);
+  }, []);
+
+  // Φορτώνει τα παραγγέλματα μία φορά ανά συνεδρία και τα αποθηκεύει στο
+  // sessionStorage για να αποφευχθούν διπλά αιτήματα κατά την ανανέωση ή
+  // το επαν-τοποθέτημα (remount) στην ίδια καρτέλα.
+  useEffect(() => {
+    const key = 'pw_paraggelmata_data';
+    const tsKey = 'pw_paraggelmata_ts';
+    try {
+      const cached = sessionStorage.getItem(key);
+      const cachedTs = sessionStorage.getItem(tsKey);
+      const now = Date.now();
+      if (cached && cachedTs && now - Number(cachedTs) < 10000) {
+        // χρησιμοποιεί την αποθηκευμένη τιμή αν είναι πρόσφατη (παράθυρο 10s)
+        const parsed = JSON.parse(cached);
+        dispatch({
+          type: 'ΟΡΙΣΜΟΣ_ΠΑΡΑΓΓΕΛΜΑΤΩΝ',
+          payload: { παραγγέλματα: parsed },
+        });
+        return;
+      }
+    } catch (e) {
+      // αγνοεί σφάλματα sessionStorage
+    }
+
+    let cancelled = false;
+
+    const fetchΠαραγγέλματα = async () => {
+      try {
+        const res = await fetch('/api/kryle/ola');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        const αποτελέσματα = data?.αποτελέσματα || [];
+        if (cancelled) return;
+        dispatch({
+          type: 'ΟΡΙΣΜΟΣ_ΠΑΡΑΓΓΕΛΜΑΤΩΝ',
+          payload: { παραγγέλματα: αποτελέσματα },
+        });
+        try {
+          sessionStorage.setItem(key, JSON.stringify(αποτελέσματα));
+          sessionStorage.setItem(tsKey, String(Date.now()));
+        } catch (e) {
+          // αγνοεί σφάλματα κατά την αποθήκευση στο storage
+        }
+      } catch (err) {
+        console.warn('Σφάλμα ανάκτησης παραγγελμάτων στο context:', err);
+      }
+    };
+
+    fetchΠαραγγέλματα();
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   return (
@@ -142,6 +204,13 @@ const AppProvider = ({ children }) => {
         αλλαγήΜορφήςΣτοιχείων,
         εναλλαγήΦέγγουςΟρίων,
         εναλλαγήΦέγγουςΣτοιχείων,
+        // Ελληνικά ονόματα (προτιμώμενα)
+        εναλλαγήΕμφάνισηςΧρωμάτων,
+        εναλλαγήΠαραθύρουΠιστοποιητικών,
+        εναλλαγήΠαραθύρουΡυθμίσεων,
+        εναλλαγήΚειμένουΜικρήςΟθόνης,
+        αλλαγήΦίλτρουΓεγονότος,
+        // Αγγλικά aliases για συμβατότητα
         toggleEventColors,
         toggleCertificateModal,
         toggleSettingsModal,

@@ -1,4 +1,6 @@
-'use client';
+"use client";
+
+/* eslint-disable react-hooks/rules-of-hooks */
 
 import styles from './ΚείμενοΜικρήςΟθόνηςΣεΠαράθυρο.module.css';
 
@@ -9,8 +11,8 @@ import { useAppContext } from '@/context/AppContext';
 
 import { IoClose } from 'react-icons/io5';
 
-const SmallScreenTextInWindow = () => {
-  const { κείμενοΜικρήςΟθόνης, toggleSmallScreenTextModal } = useAppContext();
+const ΚείμενοΜικρήςΟθόνηςΣεΠαράθυρο = () => {
+  const { κείμενοΜικρήςΟθόνης, εναλλαγήΚειμένουΜικρήςΟθόνης } = useAppContext();
 
   const dialog = useRef();
 
@@ -21,7 +23,7 @@ const SmallScreenTextInWindow = () => {
   }, [κείμενοΜικρήςΟθόνης]);
 
   const handleCloseModal = () => {
-    toggleSmallScreenTextModal();
+    εναλλαγήΚειμένουΜικρήςΟθόνης();
     dialog.current.close();
   };
 
@@ -45,4 +47,4 @@ const SmallScreenTextInWindow = () => {
   );
 };
 
-export default SmallScreenTextInWindow;
+export default ΚείμενοΜικρήςΟθόνηςΣεΠαράθυρο;

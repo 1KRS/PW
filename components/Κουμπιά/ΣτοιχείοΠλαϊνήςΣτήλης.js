@@ -11,13 +11,13 @@ import { RiAlibabaCloudLine } from 'react-icons/ri';
 import { useAppContext } from '@/context/AppContext';
 
 const SideNavItem = ({ σελίδα, ύπαρξηΦίλτρων, είδοςΚατηγορίας }) => {
-  const { φίλτροΚατάστασηςΓεγονότωνΧρονολογίου, changeEventFilter } =
+  const { φίλτροΚατάστασηςΓεγονότωνΧρονολογίου, αλλαγήΦίλτρουΓεγονότος } =
     useAppContext();
 
   const handleClickEvent = () => {
     φίλτροΚατάστασηςΓεγονότωνΧρονολογίου === είδοςΚατηγορίας
-      ? changeEventFilter('')
-      : changeEventFilter(είδοςΚατηγορίας);
+      ? αλλαγήΦίλτρουΓεγονότος('')
+      : αλλαγήΦίλτρουΓεγονότος(είδοςΚατηγορίας);
   };
 
   const ενεργάΦίλτραΉΜη =

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
-const SocialIcons = () => {
+const ΕικονίδιαΜΚΔ = () => {
   return (
     <>
       <div className={styles['social-icons']}>
@@ -28,4 +28,4 @@ const SocialIcons = () => {
   );
 };
 
-export default SocialIcons;
+export default ΕικονίδιαΜΚΔ;

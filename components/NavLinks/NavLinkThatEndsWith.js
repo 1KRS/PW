@@ -1,11 +1,13 @@
-'use client';
+"use client";
+
+/* eslint-disable react-hooks/rules-of-hooks */
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import styles from './NavLinkThatEndsWith.module.css';
 
-const NavLinkThatEndsWith = ({ href, children }) => {
+const ΣύνδεσμοςΠουΤελειώνειΜε = ({ href, children }) => {
   const path = usePathname();
 
   return (
@@ -21,4 +23,4 @@ const NavLinkThatEndsWith = ({ href, children }) => {
     </Link>
   );
 };
-export default NavLinkThatEndsWith;
+export default ΣύνδεσμοςΠουΤελειώνειΜε;

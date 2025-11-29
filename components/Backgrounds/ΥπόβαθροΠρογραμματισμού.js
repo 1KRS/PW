@@ -1,25 +1,25 @@
-'use client';
+"use client";
+
+/* eslint-disable react-hooks/rules-of-hooks */
 
 import styles from './ΥπόβαθροΠρογραμματισμού.module.css';
 
 import ΔυαδικήΒροχή from './ΔυαδικήΒροχή';
 import { useAppContext } from '@/context/AppContext';
 
-const ProgrammingBackground = ({
-  children,
-}) => {
+const ΥπόβαθροΠρογραμματισμού = ({ children }) => {
   const { υπόβαθροΠρογραμματισμού } = useAppContext();
 
   return υπόβαθροΠρογραμματισμού === 'δυναμικό' ? (
     <>
       <ΔυαδικήΒροχή
-        τύποςΟθόνης='κανονικός'
+        τύποςΟθόνης="κανονικός"
         μέγεθοςΣταγόνων={12}
         ταχύτηταΒροχής={80}
         καθυστέρησηΠαραγγελμάτων={6000}
         πιθανότηταΠαραγγελμάτων={0.075}
-        χρώμαΠαραγγέλματος='gold'
-        απόσβεσηΠαραγγέλματος={3000}
+        χρώμαΠαραγγέλματος="gold"
+        απόσβεσηΠαραγγέλματος={2000}
       />
       {children}
     </>
@@ -27,4 +27,4 @@ const ProgrammingBackground = ({
     <div className={styles['εικόνα-υποβάθρου']}>{children}</div>
   );
 };
-export default ProgrammingBackground;
+export default ΥπόβαθροΠρογραμματισμού;

@@ -4,7 +4,7 @@ import Μαρτυρία from '@/components/Μαρτυρίες/Μαρτυρία';
 
 import { μαρτυρίες } from '@/db/μαρτυρίες';
 
-const TestimonialsFilters = () => {
+const ΦίλτραΜαρτυριών = () => {
   const αυθεντικέςΜαρτυρίες = μαρτυρίες.filter(
     (μαρτυρία) => μαρτυρία.αυθεντικότητα === 'Αληθινή'
   );
@@ -37,4 +37,4 @@ const TestimonialsFilters = () => {
   );
 };
 
-export default TestimonialsFilters;
+export default ΦίλτραΜαρτυριών;

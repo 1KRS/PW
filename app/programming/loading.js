@@ -1,7 +1,7 @@
-import LoadingAnimation from '@/components/Animations/LoadingAnimation';
+import ΓραφικόΦόρτωσης from '@/components/Animations/LoadingAnimation';
 
 const loading = () => {
-  return <LoadingAnimation />;
+  return <ΓραφικόΦόρτωσης />;
 };
 
 export default loading;

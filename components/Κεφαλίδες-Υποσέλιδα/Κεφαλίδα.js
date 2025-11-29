@@ -1,6 +1,6 @@
 import styles from './Κεφαλίδα.module.css';
 
-import LanguagesDropdown from '../LanguagesDropdown';
+import ΚαταδυόμενοςΕπιλογέαςΓλωσσών from '../LanguagesDropdown';
 // import Λογότυπο from '@/components/Λογότυπο';
 import Link from 'next/link';
 import ΠλήκτροΡυθμίσεων from '@/components/Κουμπιά/ΠλήκτροΡυθμίσεων';
@@ -39,7 +39,7 @@ const Κεφαλίδα = () => {
       </div>
       <nav className={styles['γραμμή-πλοήγησης-κεφαλίδας-προγραμματισμού']}>
         <ul className={styles['επιλογές-ρυθμίσεων-κεφαλίδας-προγραμματισμού']}>
-          <LanguagesDropdown />
+          <ΚαταδυόμενοςΕπιλογέαςΓλωσσών />
         </ul>
       </nav>
     </header>

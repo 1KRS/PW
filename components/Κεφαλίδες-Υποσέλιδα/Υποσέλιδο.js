@@ -3,7 +3,7 @@
 import styles from './Υποσέλιδο.module.css';
 
 import Link from 'next/link';
-import SocialIcons from '../SocialIcons';
+import ΕικονίδιαΜΚΔ from '../SocialIcons';
 import Μετάφραση from '../Μετάφραση';
 
 import { usePathname } from 'next/navigation';
@@ -30,7 +30,7 @@ const Footer = () => {
             >
               <Μετάφραση>Συχνές Ερωτήσεις</Μετάφραση>
             </Link>
-            <SocialIcons />
+            <ΕικονίδιαΜΚΔ />
             <Link
               href={'/programming/about/me'}
               className={

@@ -6,10 +6,10 @@ import Link from 'next/link';
 import LanguagesContainer from '@/components/LanguagesContainer';
 import Μετάφραση from '@/components/Μετάφραση';
 
-const Error = () => {
+const Σφάλμα = () => {
   return (
     <div className={styles['error']}>
-      <BinaryRain
+      <ΔυαδικήΒροχή
         τύποςΟθόνης="error"
         μέγεθοςΣταγόνων={12}
         ταχύτηταΒροχής={80}
@@ -31,4 +31,4 @@ const Error = () => {
   );
 };
 
-export default Error;
+export default Σφάλμα;

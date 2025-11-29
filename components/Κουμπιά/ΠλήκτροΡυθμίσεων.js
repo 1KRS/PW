@@ -1,4 +1,6 @@
-'use client';
+"use client";
+
+/* eslint-disable react-hooks/rules-of-hooks */
 
 import styles from './ΠλήκτροΡυθμίσεων.module.css';
 
@@ -6,20 +8,22 @@ import { useAppContext } from '@/context/AppContext';
 
 import { VscSettings } from 'react-icons/vsc';
 
-const SettingsButton = ({}) => {
-  const { settings, toggleSettingsModal } = useAppContext();
+const ΠλήκτροΡυθμίσεων = ({}) => {
+  const { settings, εναλλαγήΠαραθύρουΡυθμίσεων } = useAppContext();
 
   const handleSettingsClick = (e) => {
     e.preventDefault();
 
-    toggleSettingsModal();
+    εναλλαγήΠαραθύρουΡυθμίσεων();
   };
 
   const απόκρυψη = settings ? 'απόκρυψη' : '';
 
   return (
     <div
-      className={styles['περιέκτης-εικονιδίου-ρυθμίσεων'] + ' ' + styles[`${απόκρυψη}`]}
+      className={
+        styles['περιέκτης-εικονιδίου-ρυθμίσεων'] + ' ' + styles[`${απόκρυψη}`]
+      }
       onClick={(e) => handleSettingsClick(e)}
     >
       <VscSettings className={styles['εικονίδιο-ρυθμίσεων']} />
@@ -27,4 +31,4 @@ const SettingsButton = ({}) => {
   );
 };
 
-export default SettingsButton;
+export default ΠλήκτροΡυθμίσεων;

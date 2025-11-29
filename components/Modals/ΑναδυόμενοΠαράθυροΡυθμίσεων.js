@@ -18,12 +18,12 @@ import { usePathname } from 'next/navigation';
 
 import { IoClose } from 'react-icons/io5';
 import Link from 'next/link';
-import SocialIcons from '../SocialIcons';
+import ΕικονίδιαΜΚΔ from '../SocialIcons';
 
 const Settings = () => {
   const {
     settings,
-    toggleSettingsModal,
+    εναλλαγήΠαραθύρουΡυθμίσεων,
     μορφήΣτοιχείων,
     φέγγοςΟρίων,
     φέγγοςΣτοιχείων,
@@ -76,7 +76,7 @@ const Settings = () => {
       <form method="dialog">
         <button
           className={styles['πλήκτρο-εξόδου']}
-          onClick={() => toggleSettingsModal()}
+          onClick={() => εναλλαγήΠαραθύρουΡυθμίσεων()}
           autoFocus
         >
           <IoClose />
@@ -104,7 +104,7 @@ const Settings = () => {
           >
             <Μετάφραση>Σχετικά</Μετάφραση>
           </Link>
-          <SocialIcons />
+          <ΕικονίδιαΜΚΔ />
         </ul>
       </nav>
       <h6 className={styles['τίτλος-παραθύρου']}>

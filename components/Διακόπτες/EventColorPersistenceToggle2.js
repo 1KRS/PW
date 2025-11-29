@@ -7,7 +7,7 @@ import { TbBrandVercelFilled } from 'react-icons/tb';
 import { FiLoader } from 'react-icons/fi';
 
 const EventColorPersistenceToggle2 = () => {
-  const { showEventColors, toggleEventColors } = useAppContext();
+  const { showEventColors, εναλλαγήΕμφάνισηςΧρωμάτων } = useAppContext();
 
   // let checked = programmingBackground === 'static' ? 'Δυναμικό' : 'Στατικό';
   // let unchecked = programmingBackground === 'static' ? 'Στατικό' : 'Δυναμικό';
@@ -22,7 +22,7 @@ const EventColorPersistenceToggle2 = () => {
           type="checkbox"
           className={styles['input']}
           checked={showEventColors}
-          onClick={() => toggleEventColors(showEventColors)}
+          onClick={() => εναλλαγήΕμφάνισηςΧρωμάτων(showEventColors)}
         />
         <div className={styles['button']}></div>
       </label>

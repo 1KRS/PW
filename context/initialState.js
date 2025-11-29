@@ -1,4 +1,4 @@
-const initialState = {
+const αρχικήΚατάσταση = {
   γλώσσα: 'ελληνικά',
   υπόβαθροΠρογραμματισμού: 'δυναμικό',
   μορφήΣτοιχείων: 'ημιδιαφανή στοιχεία',
@@ -17,6 +17,7 @@ const initialState = {
   πιστοποιητικό: '',
   ρυθμίσεις: false,
   κείμενοΜικρήςΟθόνης: false,
+  παραγγέλματα: [],
   // search: '',
   // searchStatus: 'Όλα',
   // searchType: 'Όλα',
@@ -24,4 +25,4 @@ const initialState = {
   // sort: 'Νεότερες',
 };
 
-export default initialState;
+export default αρχικήΚατάσταση;

@@ -2,11 +2,10 @@
 import styles from './Heading.module.css'
 
 
-const MainSections = ({children, classes}) => {
-  const newClasses = classes
+const ΚύριεςΕνότητες = ({ children, classes }) => {
+  const newClasses = classes;
 
-  return (
-    <div className={styles.fixed}>{children}</div>
-  )
-}
-export default MainSections
+  return <div className={styles.fixed}>{children}</div>;
+};
+
+export default ΚύριεςΕνότητες;

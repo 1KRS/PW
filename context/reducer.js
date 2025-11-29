@@ -1,7 +1,7 @@
 // import { initialState } from "./initialState";
 import { μετάφραση } from '@/utils/μετάφραση';
 
-const reducer = (state, action) => {
+const αναγωγέας = (state, action) => {
   if (action.type === 'DISPLAY_ALERT') {
     return {
       ...state,
@@ -367,7 +367,14 @@ const reducer = (state, action) => {
     return { ...state, page: action.payload.page };
   }
 
+  if (action.type === 'ΟΡΙΣΜΟΣ_ΠΑΡΑΓΓΕΛΜΑΤΩΝ') {
+    return {
+      ...state,
+      παραγγέλματα: action.payload.παραγγέλματα,
+    };
+  }
+
   throw new Error(`Η ενέργεια ${action.type} δεν υπάρχει.`);
 };
 
-export default reducer;
+export default αναγωγέας;

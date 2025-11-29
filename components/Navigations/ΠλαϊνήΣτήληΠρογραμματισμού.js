@@ -1,7 +1,7 @@
 import styles from './ΠλαϊνήΣτήληΠρογραμματισμού.module.css';
 
-import NavLinkThatStartsWith from '@/components/NavLinks/NavLinkThatStartsWith';
-import NavLinkThatEndsWith from '@/components/NavLinks/NavLinkThatEndsWith';
+import ΣύνδεσμοςΠουΞεκινάΜε from '@/components/NavLinks/NavLinkThatStartsWith';
+import ΣύνδεσμοςΠουΤελειώνειΜε from '@/components/NavLinks/NavLinkThatEndsWith';
 import ΠλαίσιοΜορφής from '@/components/ΠλαίσιοΜορφής';
 
 // import { MdOutlineStarRate } from 'react-icons/md';
@@ -23,19 +23,19 @@ const ΠλαϊνήΣτήληΠρογραμματισμού = () => {
       >
         <ul className={styles['στοιχεία']}>
           <li className={styles['στοιχείο']}>
-            <NavLinkThatEndsWith href="/programming">
+            <ΣύνδεσμοςΠουΤελειώνειΜε href="/programming">
               <GiAngelWings />
-            </NavLinkThatEndsWith>
+            </ΣύνδεσμοςΠουΤελειώνειΜε>
           </li>
           <li className={styles['στοιχείο']}>
-            <NavLinkThatStartsWith href="/programming/portfolio">
+            <ΣύνδεσμοςΠουΞεκινάΜε href="/programming/portfolio">
               <IoMdCodeWorking />
-            </NavLinkThatStartsWith>
+            </ΣύνδεσμοςΠουΞεκινάΜε>
           </li>
           <li className={styles['στοιχείο']}>
-            <NavLinkThatStartsWith href="/programming/timeline">
+            <ΣύνδεσμοςΠουΞεκινάΜε href="/programming/timeline">
               <FaTimeline style={{ transform: 'rotate(90deg)' }} />
-            </NavLinkThatStartsWith>
+            </ΣύνδεσμοςΠουΞεκινάΜε>
           </li>
           {/* <li className={styles['στοιχείο']}>
             <NavLinkThatStartsWith href="/programming/services">
@@ -43,19 +43,19 @@ const ΠλαϊνήΣτήληΠρογραμματισμού = () => {
             </NavLinkThatStartsWith>
           </li> */}
           <li className={styles['στοιχείο']}>
-            <NavLinkThatStartsWith href="/programming/testimonials">
+            <ΣύνδεσμοςΠουΞεκινάΜε href="/programming/testimonials">
               <FaStar />
-            </NavLinkThatStartsWith>
+            </ΣύνδεσμοςΠουΞεκινάΜε>
           </li>
           <li className={styles['στοιχείο']}>
-            <NavLinkThatStartsWith href="/programming/contact" s>
+            <ΣύνδεσμοςΠουΞεκινάΜε href="/programming/contact" s>
               <TiMessages />
-            </NavLinkThatStartsWith>
+            </ΣύνδεσμοςΠουΞεκινάΜε>
           </li>
           <li className={styles['στοιχείο']}>
-            <NavLinkThatStartsWith href="/programming/blog" s>
+            <ΣύνδεσμοςΠουΞεκινάΜε href="/programming/blog" s>
               <PiArticleNyTimesFill />{' '}
-            </NavLinkThatStartsWith>
+            </ΣύνδεσμοςΠουΞεκινάΜε>
           </li>
         </ul>
       </ΠλαίσιοΜορφής>

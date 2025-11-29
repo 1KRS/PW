@@ -1,9 +1,12 @@
-'use client';
+"use client";
 
-import { useRef, useEffect, useState } from 'react';
+/* eslint-disable react-hooks/rules-of-hooks */
+
+import { useRef, useEffect } from 'react';
+import { useAppContext } from '@/context/AppContext';
 import styles from './ΔυαδικήΒροχή.module.css';
 
-const BinaryRain = ({
+const ΔυαδικήΒροχή = ({
   τύποςΟθόνης = 'κανονικό', // 'κανονικό', 'not-found', 'error'
   μέγεθοςΣταγόνων = 14, // px
   ταχύτηταΒροχής = 80, // ms ανά πλαίσιο
@@ -14,7 +17,8 @@ const BinaryRain = ({
   απόσβεσηΠαραγγέλματος = 2500, // επιπλέον απόσβεση μετά την καθυστέρηση (ms)
 }) => {
   const canvasRef = useRef(null);
-  const [παραγγέλματα, setΠαραγγέλματα] = useState([]);
+  const { παραγγέλματα = [] } = useAppContext();
+  const instanceId = useRef(Math.random().toString(36).slice(2, 9));
   let χρώμαΣταγόνες = χρώμαΒροχής;
   const χαρακτήρες = 'ΑΒΓΔΕϜΖΗΘΙΚΛΜΝΞΟΠϘΡΣΤΥΦΧΨΩͶ├┤ϚϛϻϟϡϠͳ';
   const μέγεθος = Number(μέγεθοςΣταγόνων);
@@ -37,49 +41,11 @@ const BinaryRain = ({
   else if (τύποςΟθόνης === 'error') χρώμαΠρ = '#ad0000';
   else χρώμαΠρ = χρώμαΠαραγγέλματος || χρώμαΣταγόνες;
 
-  // Λήψη παραγγελμάτων από API
+  // Καταγραφή instance για τον εντοπισμό διπλών mount/αιτήσεων
   useEffect(() => {
-    let isMounted = true;
-
-    const fetchΠαραγγέλματα = async () => {
-      try {
-        console.log('🌐 Ξεκινάει fetch παραγγελμάτων...');
-        const res = await fetch('/api/kryle/ola');
-
-        if (!res.ok) {
-          throw new Error(`HTTP ${res.status}`);
-        }
-
-        const data = await res.json();
-        console.log('API Response:', data);
-
-        if (
-          isMounted &&
-          data?.αποτελέσματα &&
-          Array.isArray(data.αποτελέσματα) &&
-          data.αποτελέσματα.length > 0
-        ) {
-          console.log('Παραγγέλματα φορτώθηκαν:', data.αποτελέσματα.length);
-          setΠαραγγέλματα(data.αποτελέσματα);
-        } else if (isMounted) {
-          console.log('Χρήση fallback - δεν βρέθηκαν αποτελέσματα');
-          setΠαραγγέλματα([{ παράγγελμα: 'ΕΠΟΥ ΘΕΩ' }]);
-        }
-      } catch (err) {
-        console.warn(
-          'Χρήση fallback παραγγέλματος λόγω σφάλματος:',
-          err.message
-        );
-        if (isMounted) {
-          setΠαραγγέλματα([{ παράγγελμα: 'ΕΠΟΥ ΘΕΩ' }]);
-        }
-      }
-    };
-
-    fetchΠαραγγέλματα();
-
+    console.log(`ΔυαδικήΒροχή mount: id=${instanceId.current}`);
     return () => {
-      isMounted = false;
+      console.log(`ΔυαδικήΒροχή unmount: id=${instanceId.current}`);
     };
   }, []);
 
@@ -269,4 +235,4 @@ const BinaryRain = ({
   return <canvas ref={canvasRef} className={styles.canvas} />;
 };
 
-export default BinaryRain;
+export default ΔυαδικήΒροχή;
