@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 /* eslint-disable react-hooks/rules-of-hooks */
 
@@ -11,7 +11,7 @@ import ΦίλτραΜαρτυριών from '@/components/Μαρτυρίες/Φί
 import { useAppContext } from '@/context/AppContext';
 
 const ΣτοιχείαΜαρτυριών = () => {
-    const { μορφήΣτοιχείων } = useAppContext();
+  const { μορφήΣτοιχείων } = useAppContext();
 
   return (
     <div

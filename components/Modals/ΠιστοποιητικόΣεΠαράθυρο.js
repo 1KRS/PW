@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 /* eslint-disable react-hooks/rules-of-hooks */
 
@@ -12,7 +12,8 @@ import { μετάφραση } from '@/utils/μετάφραση';
 import { IoClose } from 'react-icons/io5';
 
 const ΠιστοποιητικόΣεΠαράθυρο = () => {
-  const { certificate, γλώσσα, εναλλαγήΠαραθύρουΠιστοποιητικών } = useAppContext();
+  const { certificate, γλώσσα, εναλλαγήΠαραθύρουΠιστοποιητικών } =
+    useAppContext();
 
   const dialog = useRef();
 

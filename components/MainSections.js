@@ -1,6 +1,4 @@
-
-import styles from './Heading.module.css'
-
+import styles from './Heading.module.css';
 
 const ΚύριεςΕνότητες = ({ children, classes }) => {
   const newClasses = classes;

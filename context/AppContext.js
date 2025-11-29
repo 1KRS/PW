@@ -142,7 +142,7 @@ const AppProvider = ({ children }) => {
 
   // Φορτώνει τα παραγγέλματα μία φορά ανά συνεδρία και τα αποθηκεύει στο
   // sessionStorage για να αποφευχθούν διπλά αιτήματα κατά την ανανέωση ή
-  // το επαν-τοποθέτημα (remount) στην ίδια καρτέλα.
+  // το επαναπρόσδεση (remount) στην ίδια καρτέλα.
   useEffect(() => {
     const key = 'pw_paraggelmata_data';
     const tsKey = 'pw_paraggelmata_ts';

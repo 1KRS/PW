@@ -6,7 +6,7 @@ import Link from 'next/link';
 import LanguagesContainer from '@/components/LanguagesContainer';
 import Μετάφραση from '@/components/Μετάφραση';
 
-const Σφάλμα = () => {
+const ΣελίδαΣφάλματος = () => {
   return (
     <div className={styles['error']}>
       <ΔυαδικήΒροχή
@@ -31,4 +31,4 @@ const Σφάλμα = () => {
   );
 };
 
-export default Σφάλμα;
+export default ΣελίδαΣφάλματος;

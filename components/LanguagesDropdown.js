@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 /* eslint-disable react-hooks/rules-of-hooks */
 
@@ -51,8 +51,7 @@ const ΚαταδυόμενοςΕπιλογέαςΓλωσσών = () => {
         <button
           type="button"
           onClick={() => {
-            const νέαΓλώσσα =
-              γλώσσα === 'ελληνικά' ? 'english' : 'ελληνικά';
+            const νέαΓλώσσα = γλώσσα === 'ελληνικά' ? 'english' : 'ελληνικά';
             changeLanguage(νέαΓλώσσα);
             setShowDropdown(false);
           }}

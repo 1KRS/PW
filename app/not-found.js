@@ -4,7 +4,7 @@ import Link from 'next/link';
 import LanguagesContainer from '@/components/LanguagesContainer';
 import Μετάφραση from '@/components/Μετάφραση';
 
-const ΔενΒρέθηκε = () => {
+const ΣελίδαΔενΒρέθηκε = () => {
   return (
     <div className={styles['not-found']}>
       <ΔυαδικήΒροχή
@@ -29,4 +29,4 @@ const ΔενΒρέθηκε = () => {
   );
 };
 
-export default ΔενΒρέθηκε;
+export default ΣελίδαΔενΒρέθηκε;
