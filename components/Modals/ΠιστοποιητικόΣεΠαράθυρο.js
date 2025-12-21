@@ -12,16 +12,16 @@ import { μετάφραση } from '@/utils/μετάφραση';
 import { IoClose } from 'react-icons/io5';
 
 const ΠιστοποιητικόΣεΠαράθυρο = () => {
-  const { certificate, γλώσσα, εναλλαγήΠαραθύρουΠιστοποιητικών } =
+  const { πιστοποιητικό, γλώσσα, εναλλαγήΠαραθύρουΠιστοποιητικών } =
     useAppContext();
 
   const dialog = useRef();
 
   useEffect(() => {
     {
-      certificate && dialog.current.showModal();
+      πιστοποιητικό && dialog.current.showModal();
     }
-  }, [certificate]);
+  }, [πιστοποιητικό]);
 
   const handleCloseModal = () => {
     εναλλαγήΠαραθύρουΠιστοποιητικών();
@@ -35,11 +35,11 @@ const ΠιστοποιητικόΣεΠαράθυρο = () => {
       onClick={() => handleCloseModal()}
     >
       {/* 👇🏼 Στα ξαφνικά δημιουργούσε θέμα η πιθανή έλλειψη 'src' στην εικόνα οπότε το έβαλα μέσα σε όρο */}
-      {certificate && (
+      {πιστοποιητικό && (
         <img
           className={styles.img}
-          src={certificate}
-          alt={certificate && μετάφραση('Πιστοποιητικό', γλώσσα)}
+          src={πιστοποιητικό}
+          alt={πιστοποιητικό && μετάφραση('Πιστοποιητικό', γλώσσα)}
         />
       )}
       <form method="dialog">
